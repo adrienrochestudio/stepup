@@ -4,6 +4,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 import Home from './pages/Home';
 import ResourceMap from './pages/ResourceMap';
 import Webinars from './pages/Webinars';
+import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Course from './pages/Course';
 import Enroll from './pages/Enroll';
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/resources/map" element={<ResourceMap />} />
         <Route path="/resources/webinars" element={<Webinars />} />
+        <Route path="/login" element={<Login />} />
 
         <Route element={<ProtectedRoute />}>
           <Route path="/dashboard" element={<Dashboard />} />

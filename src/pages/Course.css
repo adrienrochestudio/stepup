@@ -1,0 +1,84 @@
+.course-page {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.5rem;
+  gap: 1rem;
+  height: calc(100vh - var(--nav-height));
+}
+
+.course-top-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--color-white);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.course-back-btn {
+  color: var(--color-kaki);
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+}
+
+.course-back-btn:hover {
+  color: var(--color-pomme);
+}
+
+.course-top-info {
+  flex: 1;
+}
+
+.course-top-info h1 {
+  font-size: 1.25rem;
+  color: var(--color-kaki);
+  line-height: 1.3;
+}
+
+.course-top-meta {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.25rem;
+}
+
+.course-top-progress {
+  min-width: 120px;
+  text-align: right;
+}
+
+.course-top-progress .progress-bar-track {
+  height: 8px;
+  background: var(--color-border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.course-top-progress .progress-bar-fill {
+  height: 100%;
+  background: var(--color-pomme);
+  border-radius: 4px;
+  transition: width 0.3s;
+}
+
+.course-top-progress-label {
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  margin-top: 0.25rem;
+}
+
+.course-not-found {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-light);
+  font-size: 1.1rem;
+}

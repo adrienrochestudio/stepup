@@ -1,4 +1,4 @@
-import { supabaseAdmin } from '../services/supabase.js';
+import { firebaseAdmin } from '../services/firebase.js';
 
 export async function requireAuth(req, res, next) {
   const token = req.headers.authorization?.replace('Bearer ', '');
@@ -7,16 +7,15 @@ export async function requireAuth(req, res, next) {
     return res.status(401).json({ error: 'Missing authorization token' });
   }
 
-  if (!supabaseAdmin) {
+  if (!firebaseAdmin) {
     return res.status(500).json({ error: 'Auth service not configured' });
   }
 
-  const { data: { user }, error } = await supabaseAdmin.auth.getUser(token);
-
-  if (error || !user) {
+  try {
+    const decoded = await firebaseAdmin.auth().verifyIdToken(token);
+    req.user = decoded;
+    next();
+  } catch (err) {
     return res.status(401).json({ error: 'Invalid token' });
   }
-
-  req.user = user;
-  next();
 }
