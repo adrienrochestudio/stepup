@@ -1,0 +1,99 @@
+.cohort-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 2rem;
+}
+
+.cohort-modal {
+  background: var(--color-white);
+  border-radius: 16px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.cohort-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.cohort-modal-header h2 {
+  color: var(--color-kaki);
+  font-size: 1.2rem;
+}
+
+.cohort-modal-close {
+  font-size: 1.5rem;
+  color: var(--color-text-light);
+  line-height: 1;
+}
+
+.cohort-modal-close:hover {
+  color: var(--color-text);
+}
+
+.cohort-modal-form {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.cohort-modal-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.cohort-modal-field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.cohort-modal-field input,
+.cohort-modal-field select {
+  font-family: var(--font-family);
+  font-size: 0.95rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.cohort-modal-field input:focus,
+.cohort-modal-field select:focus {
+  border-color: var(--color-pomme);
+}
+
+.cohort-modal-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.cohort-modal-row .cohort-modal-field {
+  flex: 1;
+}
+
+.cohort-modal-submit {
+  background: var(--color-kaki);
+  color: var(--color-white);
+  font-weight: 600;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+
+.cohort-modal-submit:hover {
+  background: var(--color-olive);
+}

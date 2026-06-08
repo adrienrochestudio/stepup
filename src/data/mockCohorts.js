@@ -1,0 +1,46 @@
+export const initialCohorts = [
+  {
+    id: 'cohort-1',
+    name: 'Promotion Printemps 2025',
+    courseId: 'eco-prod-101',
+    courseTitle: 'Éco-production : Les Fondamentaux',
+    startDate: '2025-03-15',
+    endDate: '2025-05-15',
+    maxStudents: 25,
+    enrolledStudents: [
+      { id: 's1', name: 'Alice Martin', email: 'alice@example.com', enrolledAt: '2025-02-20' },
+      { id: 's2', name: 'Bob Dupont', email: 'bob@example.com', enrolledAt: '2025-02-22' },
+      { id: 's3', name: 'Claire Moreau', email: 'claire@example.com', enrolledAt: '2025-03-01' },
+    ],
+    status: 'active',
+  },
+  {
+    id: 'cohort-2',
+    name: 'Formation Label Q4',
+    courseId: 'label-ecoprod',
+    courseTitle: 'Obtenir le Label Ecoprod',
+    startDate: '2025-09-01',
+    endDate: '2025-12-01',
+    maxStudents: 20,
+    enrolledStudents: [
+      { id: 's4', name: 'David Laurent', email: 'david@example.com', enrolledAt: '2025-07-15' },
+    ],
+    status: 'upcoming',
+  },
+  {
+    id: 'cohort-3',
+    name: 'Décors Automne 2024',
+    courseId: 'decors-durables',
+    courseTitle: 'Décors et Scénographie Durables',
+    startDate: '2024-09-01',
+    endDate: '2024-11-30',
+    maxStudents: 15,
+    enrolledStudents: [
+      { id: 's5', name: 'Emma Petit', email: 'emma@example.com', enrolledAt: '2024-08-10' },
+      { id: 's6', name: 'François Bernard', email: 'francois@example.com', enrolledAt: '2024-08-12' },
+      { id: 's7', name: 'Gisèle Thomas', email: 'gisele@example.com', enrolledAt: '2024-08-15' },
+      { id: 's8', name: 'Henri Robert', email: 'henri@example.com', enrolledAt: '2024-08-20' },
+    ],
+    status: 'completed',
+  },
+];

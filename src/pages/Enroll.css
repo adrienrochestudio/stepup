@@ -1,0 +1,159 @@
+.enroll-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 2rem;
+}
+
+.enroll-card {
+  background: var(--color-white);
+  border-radius: 16px;
+  overflow: hidden;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.enroll-card-header {
+  background: linear-gradient(135deg, var(--color-kaki), var(--color-olive));
+  padding: 2rem;
+  color: var(--color-white);
+}
+
+.enroll-card-header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-white);
+}
+
+.enroll-card-header p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  line-height: 1.5;
+}
+
+.enroll-card-body {
+  padding: 2rem;
+}
+
+.enroll-details {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.enroll-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.enroll-detail-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-text-light);
+}
+
+.enroll-detail-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-kaki);
+}
+
+.enroll-price {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  background: var(--color-bg);
+  border-radius: 12px;
+}
+
+.enroll-price-amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-kaki);
+}
+
+.enroll-price-currency {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-olive);
+}
+
+.enroll-cta {
+  width: 100%;
+  padding: 1rem;
+  background: var(--color-pomme);
+  color: var(--color-kaki);
+  font-weight: 700;
+  font-size: 1.05rem;
+  border-radius: 8px;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.enroll-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(189, 198, 9, 0.4);
+}
+
+.enroll-cta:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.enroll-error {
+  color: var(--color-rouge);
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+
+.enroll-not-found {
+  text-align: center;
+  color: var(--color-text-light);
+  padding: 3rem;
+}
+
+/* Success / Cancel pages */
+.enroll-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 3rem;
+  text-align: center;
+  gap: 1rem;
+}
+
+.enroll-result-icon {
+  font-size: 4rem;
+}
+
+.enroll-result h1 {
+  color: var(--color-kaki);
+}
+
+.enroll-result p {
+  color: var(--color-text-light);
+  max-width: 400px;
+}
+
+.enroll-result-cta {
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  background: var(--color-kaki);
+  color: var(--color-white);
+  transition: background 0.2s;
+}
+
+.enroll-result-cta:hover {
+  background: var(--color-olive);
+}

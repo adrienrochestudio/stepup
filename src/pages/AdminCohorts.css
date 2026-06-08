@@ -1,0 +1,45 @@
+.admin-cohorts {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.admin-cohorts-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.admin-cohorts-header h1 {
+  color: var(--color-kaki);
+}
+
+.admin-create-btn {
+  padding: 0.65rem 1.5rem;
+  background: var(--color-pomme);
+  color: var(--color-kaki);
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.admin-create-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(189, 198, 9, 0.4);
+}
+
+.admin-cohorts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.admin-cohorts-empty {
+  text-align: center;
+  padding: 3rem;
+  color: var(--color-text-light);
+}

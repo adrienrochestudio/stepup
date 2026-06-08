@@ -7,6 +7,7 @@ export const mockCourses = [
     modules: 8,
     progress: 75,
     status: 'in_progress',
+    price: 99,
     scormPackageUrl: '',
   },
   {
@@ -17,6 +18,7 @@ export const mockCourses = [
     modules: 12,
     progress: 100,
     status: 'completed',
+    price: 149,
     scormPackageUrl: '',
   },
   {
@@ -27,6 +29,7 @@ export const mockCourses = [
     modules: 6,
     progress: 30,
     status: 'in_progress',
+    price: 79,
     scormPackageUrl: '',
   },
   {
@@ -37,6 +40,7 @@ export const mockCourses = [
     modules: 5,
     progress: 0,
     status: 'not_started',
+    price: 59,
     scormPackageUrl: '',
   },
   {
@@ -47,6 +51,7 @@ export const mockCourses = [
     modules: 7,
     progress: 0,
     status: 'not_started',
+    price: 79,
     scormPackageUrl: '',
   },
   {
@@ -57,6 +62,7 @@ export const mockCourses = [
     modules: 10,
     progress: 50,
     status: 'in_progress',
+    price: 119,
     scormPackageUrl: '',
   },
 ];

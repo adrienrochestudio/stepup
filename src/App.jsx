@@ -8,6 +8,8 @@ import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Course from './pages/Course';
 import Enroll from './pages/Enroll';
+import EnrollSuccess from './pages/EnrollSuccess';
+import EnrollCancel from './pages/EnrollCancel';
 import AdminCohorts from './pages/AdminCohorts';
 
 export default function App() {
@@ -25,6 +27,8 @@ export default function App() {
         </Route>
 
         <Route path="/enroll/:courseId" element={<Enroll />} />
+        <Route path="/enroll/:courseId/success" element={<EnrollSuccess />} />
+        <Route path="/enroll/:courseId/cancel" element={<EnrollCancel />} />
 
         <Route element={<ProtectedRoute />}>
           <Route path="/admin/cohorts" element={<AdminCohorts />} />
