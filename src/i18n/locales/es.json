@@ -2,15 +2,24 @@
   "nav": {
     "map": "Mapa",
     "webinars": "Webinarios",
-    "dashboard": "Panel",
+    "dashboard": "Mis cursos",
     "login": "Iniciar sesión",
     "logout": "Cerrar sesión"
   },
   "home": {
     "title": "Bienvenido a StepUP",
-    "subtitle": "Explora recursos globales en un mapa interactivo y accede a nuestra biblioteca de webinarios — todo en un solo lugar.",
+    "tagline": "La plataforma e-learning de producción audiovisual sostenible",
+    "subtitle": "Fórmate en prácticas sostenibles para la industria audiovisual. Cursos online, recursos interactivos y certificaciones reconocidas.",
+    "ctaStart": "Empezar mi formación",
+    "ctaCourses": "Ir a mis cursos",
     "ctaMap": "Explorar el mapa",
-    "ctaWebinars": "Ver webinarios"
+    "ctaWebinars": "Ver webinarios",
+    "feature1Title": "Cursos certificados",
+    "feature1Desc": "Itinerarios formativos diseñados por expertos en eco-producción audiovisual.",
+    "feature2Title": "Recursos globales",
+    "feature2Desc": "Explora datos mundiales en un mapa interactivo y accede a webinarios exclusivos.",
+    "feature3Title": "Para toda la industria",
+    "feature3Desc": "Del cine a la animación, cursos adaptados a cada profesión del sector audiovisual."
   },
   "map": {
     "searchPlaceholder": "Buscar país o ciudad...",
@@ -42,17 +51,18 @@
     "toggleToLogin": "¿Ya tienes cuenta?",
     "signUp": "Registrarse",
     "logIn": "Iniciar sesión",
-    "devMode": "Modo Dev — Cualquier credencial funciona"
+    "devMode": "Modo Dev — Cualquier credencial funciona",
+    "profile": "Perfil",
+    "roleLearner": "Alumno",
+    "roleCohortManager": "Gestor de cohorte"
   },
   "dashboard": {
-    "title": "Mi panel",
+    "title": "Mis cursos",
+    "titleManager": "Seguimiento de alumnos",
     "welcome": "Bienvenido, {{name}}",
-    "stats": {
-      "courses": "Cursos",
-      "inProgress": "En progreso",
-      "completed": "Completados"
-    },
-    "myCourses": "Mis cursos"
+    "myCourses": "Mis cursos",
+    "catalog": "Catálogo de cursos",
+    "catalogSubtitle": "Inscríbete para acceder a estos cursos."
   },
   "courseCard": {
     "status": {
@@ -63,9 +73,11 @@
     "cta": {
       "not_started": "Comenzar",
       "in_progress": "Continuar",
-      "completed": "Revisar"
+      "completed": "Revisar",
+      "enroll": "Inscribirse"
     },
-    "modules": "módulos"
+    "modules": "módulos",
+    "free": "Gratis"
   },
   "course": {
     "back": "Volver",
@@ -83,8 +95,8 @@
     "notFound": "Curso no encontrado.",
     "success": {
       "title": "¡Inscripción exitosa!",
-      "message": "Se ha inscrito en el curso. Puede acceder desde su panel.",
-      "cta": "Ir al panel"
+      "message": "Se ha inscrito en el curso. Puede acceder desde sus cursos.",
+      "cta": "Ir a mis cursos"
     },
     "cancel": {
       "title": "Inscripción cancelada",
@@ -110,6 +122,17 @@
       "maxStudents": "Máximo de estudiantes",
       "submit": "Crear cohorte"
     }
+  },
+  "cohortTracker": {
+    "totalLearners": "Alumnos",
+    "online": "En línea",
+    "avgProgress": "Progreso prom.",
+    "learner": "Alumno",
+    "status": "Estado",
+    "progress": "Progreso",
+    "lastActive": "Última actividad",
+    "connected": "Conectado",
+    "offline": "Desconectado"
   },
   "common": {
     "loading": "Cargando..."

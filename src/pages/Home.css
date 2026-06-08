@@ -1,24 +1,37 @@
+.home {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .home-hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 6rem 2rem;
-  flex: 1;
+  padding: 5rem 2rem 3rem;
 }
 
 .home-hero h1 {
   color: var(--color-kaki);
   font-size: 3rem;
+  margin-bottom: 0.75rem;
+}
+
+.home-tagline {
+  color: var(--color-pomme);
+  font-size: 1.3rem;
+  font-weight: 600;
   margin-bottom: 1rem;
 }
 
-.home-hero p {
+.home-subtitle {
   color: var(--color-text-light);
-  font-size: 1.25rem;
-  max-width: 600px;
+  font-size: 1.1rem;
+  max-width: 640px;
   margin-bottom: 2.5rem;
+  line-height: 1.6;
 }
 
 .home-cta {
@@ -52,4 +65,49 @@
 .cta-secondary {
   background: var(--color-pomme);
   color: var(--color-kaki);
+}
+
+.home-features {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 2rem 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.home-feature {
+  flex: 1;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: var(--color-white);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.home-feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-feature h3 {
+  color: var(--color-kaki);
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-feature p {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .home-hero h1 {
+    font-size: 2rem;
+  }
+
+  .home-features {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
 }

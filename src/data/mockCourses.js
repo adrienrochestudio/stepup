@@ -1,68 +1,63 @@
-export const mockCourses = [
+export const allCourses = [
   {
-    id: 'eco-prod-101',
-    title: 'Éco-production : Les Fondamentaux',
-    description: 'Apprenez les bases de la production audiovisuelle éco-responsable selon le référentiel Ecoprod.',
-    duration: '4h',
-    modules: 8,
-    progress: 75,
-    status: 'in_progress',
-    price: 99,
+    id: 'intro-eco-production',
+    title: 'Introduction à l\'éco-production',
+    description: 'Découvrez les fondamentaux de la production audiovisuelle éco-responsable. Ce cours gratuit est automatiquement accessible à tous les apprenants inscrits.',
+    duration: '2h',
+    modules: 5,
+    price: 0,
+    free: true,
     scormPackageUrl: '',
   },
   {
-    id: 'label-ecoprod',
-    title: 'Obtenir le Label Ecoprod',
-    description: 'Guide complet pour préparer votre certification AFNOR et obtenir le Label Ecoprod.',
+    id: 'mastering-green-production',
+    title: 'Mastering Green Production',
+    description: 'Go beyond the basics and master sustainable production workflows, from pre-production to distribution.',
     duration: '6h',
     modules: 12,
-    progress: 100,
-    status: 'completed',
     price: 149,
+    free: false,
     scormPackageUrl: '',
   },
   {
-    id: 'decors-durables',
-    title: 'Décors et Scénographie Durables',
-    description: 'Techniques de conception et construction de décors à faible impact environnemental.',
-    duration: '3h',
-    modules: 6,
-    progress: 30,
-    status: 'in_progress',
-    price: 79,
-    scormPackageUrl: '',
-  },
-  {
-    id: 'transport-tournage',
-    title: 'Transport et Logistique de Tournage',
-    description: 'Optimiser les déplacements et la logistique pour réduire l\'empreinte carbone de vos tournages.',
-    duration: '2.5h',
-    modules: 5,
-    progress: 0,
-    status: 'not_started',
-    price: 59,
-    scormPackageUrl: '',
-  },
-  {
-    id: 'post-prod-verte',
-    title: 'Post-production Éco-responsable',
-    description: 'Bonnes pratiques pour un workflow de post-production durable : cloud, stockage, énergie.',
-    duration: '3h',
-    modules: 7,
-    progress: 0,
-    status: 'not_started',
-    price: 79,
-    scormPackageUrl: '',
-  },
-  {
-    id: 'bilan-carbone',
-    title: 'Bilan Carbone d\'une Production',
-    description: 'Méthodologie complète pour calculer et réduire le bilan carbone de vos projets audiovisuels.',
+    id: 'carbon-footprinting-film-tv',
+    title: 'Mastering Carbon Footprinting in the Film and TV Industry',
+    description: 'Learn to measure, report and reduce the carbon footprint of film and television productions using industry-standard methodologies.',
     duration: '5h',
     modules: 10,
-    progress: 50,
-    status: 'in_progress',
+    price: 129,
+    free: false,
+    scormPackageUrl: '',
+  },
+  {
+    id: 'green-animation',
+    title: 'Green Animation',
+    description: 'Sustainable practices specifically tailored for animation studios: render farms, energy use, remote collaboration, and eco-friendly pipelines.',
+    duration: '4h',
+    modules: 8,
     price: 119,
+    free: false,
     scormPackageUrl: '',
   },
 ];
+
+export const mockEnrollments = [
+  {
+    courseId: 'intro-eco-production',
+    progress: 35,
+    status: 'in_progress',
+    enrolledAt: '2025-01-15',
+  },
+];
+
+export function getEnrolledCourses(enrollments) {
+  return enrollments.map((enrollment) => {
+    const course = allCourses.find((c) => c.id === enrollment.courseId);
+    return { ...course, ...enrollment };
+  });
+}
+
+export function getCatalogCourses(enrollments) {
+  const enrolledIds = enrollments.map((e) => e.courseId);
+  return allCourses.filter((c) => !enrolledIds.includes(c.id));
+}

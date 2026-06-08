@@ -1,13 +1,13 @@
 import { useParams, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import ScormPlayer from '../components/ScormPlayer';
-import { mockCourses } from '../data/mockCourses';
+import { allCourses } from '../data/mockCourses';
 import './Course.css';
 
 export default function Course() {
   const { id } = useParams();
   const { t } = useTranslation();
-  const course = mockCourses.find((c) => c.id === id);
+  const course = allCourses.find((c) => c.id === id);
 
   if (!course) {
     return <div className="course-page"><p className="course-not-found">{t('course.notFound')}</p></div>;

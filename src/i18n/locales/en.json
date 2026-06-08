@@ -2,15 +2,24 @@
   "nav": {
     "map": "Map",
     "webinars": "Webinars",
-    "dashboard": "Dashboard",
+    "dashboard": "My Courses",
     "login": "Login",
     "logout": "Logout"
   },
   "home": {
     "title": "Welcome to StepUP",
-    "subtitle": "Explore global resources on an interactive map and access our curated webinar library — all in one place.",
+    "tagline": "The e-learning platform for sustainable audiovisual production",
+    "subtitle": "Train in sustainable practices for the audiovisual industry. Online courses, interactive resources, and recognized certifications.",
+    "ctaStart": "Start learning",
+    "ctaCourses": "Go to my courses",
     "ctaMap": "Explore the Map",
-    "ctaWebinars": "Watch Webinars"
+    "ctaWebinars": "Watch Webinars",
+    "feature1Title": "Certified courses",
+    "feature1Desc": "Training paths designed by eco-production experts from the audiovisual industry.",
+    "feature2Title": "Global resources",
+    "feature2Desc": "Explore worldwide data on an interactive map and access exclusive webinars.",
+    "feature3Title": "For the entire industry",
+    "feature3Desc": "From cinema to animation, courses tailored to every profession in the audiovisual sector."
   },
   "map": {
     "searchPlaceholder": "Search country or city...",
@@ -42,17 +51,18 @@
     "toggleToLogin": "Already have an account?",
     "signUp": "Sign Up",
     "logIn": "Log In",
-    "devMode": "Dev Mode — Any credentials work"
+    "devMode": "Dev Mode — Any credentials work",
+    "profile": "Profile",
+    "roleLearner": "Learner",
+    "roleCohortManager": "Cohort Manager"
   },
   "dashboard": {
-    "title": "My Dashboard",
+    "title": "My Courses",
+    "titleManager": "Learner Tracking",
     "welcome": "Welcome back, {{name}}",
-    "stats": {
-      "courses": "Courses",
-      "inProgress": "In Progress",
-      "completed": "Completed"
-    },
-    "myCourses": "My Courses"
+    "myCourses": "My Courses",
+    "catalog": "Course Catalog",
+    "catalogSubtitle": "Enroll to access these courses."
   },
   "courseCard": {
     "status": {
@@ -63,9 +73,11 @@
     "cta": {
       "not_started": "Start Course",
       "in_progress": "Continue",
-      "completed": "Review"
+      "completed": "Review",
+      "enroll": "Enroll"
     },
-    "modules": "modules"
+    "modules": "modules",
+    "free": "Free"
   },
   "course": {
     "back": "Back",
@@ -83,8 +95,8 @@
     "notFound": "Course not found.",
     "success": {
       "title": "Enrollment Successful!",
-      "message": "You have been enrolled in the course. You can now access it from your dashboard.",
-      "cta": "Go to Dashboard"
+      "message": "You have been enrolled in the course. You can now access it from your courses.",
+      "cta": "Go to My Courses"
     },
     "cancel": {
       "title": "Enrollment Cancelled",
@@ -110,6 +122,17 @@
       "maxStudents": "Max Students",
       "submit": "Create Cohort"
     }
+  },
+  "cohortTracker": {
+    "totalLearners": "Learners",
+    "online": "Online",
+    "avgProgress": "Avg. Progress",
+    "learner": "Learner",
+    "status": "Status",
+    "progress": "Progress",
+    "lastActive": "Last Active",
+    "connected": "Connected",
+    "offline": "Offline"
   },
   "common": {
     "loading": "Loading..."

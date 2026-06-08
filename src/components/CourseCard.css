@@ -44,6 +44,17 @@
   color: var(--color-white);
 }
 
+.badge-free {
+  background: var(--color-turquoise);
+  color: var(--color-kaki);
+}
+
+.badge-price {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--color-kaki);
+  font-weight: 700;
+}
+
 .badge-in_progress {
   background: var(--color-pomme);
   color: var(--color-kaki);
@@ -133,4 +144,17 @@
   background: transparent;
   color: var(--color-kaki);
   border: 1px solid var(--color-border);
+}
+
+.course-card-cta.enroll {
+  background: var(--color-pomme);
+  color: var(--color-kaki);
+}
+
+.course-card-cta.enroll:hover {
+  background: #a8b108;
+}
+
+.course-card-thumb.catalog {
+  background: linear-gradient(135deg, var(--color-olive), var(--color-kaki));
 }

@@ -12,6 +12,7 @@ export default function Login() {
   const [isSignup, setIsSignup] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [role, setRole] = useState('learner');
   const [error, setError] = useState('');
   const [submitting, setSubmitting] = useState(false);
 
@@ -24,9 +25,9 @@ export default function Login() {
 
     try {
       if (isSignup) {
-        await signup(email, password);
+        await signup(email, password, role);
       } else {
-        await login(email, password);
+        await login(email, password, role);
       }
       navigate('/dashboard');
     } catch (err) {
@@ -75,6 +76,28 @@ export default function Login() {
               minLength={6}
             />
           </div>
+
+          {!isConfigured && (
+            <div className="login-role-selector">
+              <label>{t('login.profile')}</label>
+              <div className="login-role-options">
+                <button
+                  type="button"
+                  className={`login-role-btn ${role === 'learner' ? 'active' : ''}`}
+                  onClick={() => setRole('learner')}
+                >
+                  {t('login.roleLearner')}
+                </button>
+                <button
+                  type="button"
+                  className={`login-role-btn ${role === 'cohort_manager' ? 'active' : ''}`}
+                  onClick={() => setRole('cohort_manager')}
+                >
+                  {t('login.roleCohortManager')}
+                </button>
+              </div>
+            </div>
+          )}
 
           {error && <p className="login-error">{error}</p>}
 

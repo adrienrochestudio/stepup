@@ -31,25 +31,23 @@ export function AuthProvider({ children }) {
     return () => unsubscribe();
   }, []);
 
-  const login = useCallback(async (email, password) => {
+  const login = useCallback(async (email, password, role = 'learner') => {
     if (isConfigured && auth) {
       const result = await signInWithEmailAndPassword(auth, email, password);
       return result.user;
     }
-    // Mock mode — persist in localStorage
-    const mockUser = { uid: 'mock-uid', email, displayName: email.split('@')[0] };
+    const mockUser = { uid: 'mock-uid', email, displayName: email.split('@')[0], role };
     localStorage.setItem(MOCK_USER_KEY, JSON.stringify(mockUser));
     setUser(mockUser);
     return mockUser;
   }, []);
 
-  const signup = useCallback(async (email, password) => {
+  const signup = useCallback(async (email, password, role = 'learner') => {
     if (isConfigured && auth) {
       const result = await createUserWithEmailAndPassword(auth, email, password);
       return result.user;
     }
-    // Mock mode — persist in localStorage
-    const mockUser = { uid: 'mock-uid', email, displayName: email.split('@')[0] };
+    const mockUser = { uid: 'mock-uid', email, displayName: email.split('@')[0], role };
     localStorage.setItem(MOCK_USER_KEY, JSON.stringify(mockUser));
     setUser(mockUser);
     return mockUser;

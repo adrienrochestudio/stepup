@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { mockCourses } from '../data/mockCourses';
+import { allCourses } from '../data/mockCourses';
 import { apiFetch } from '../services/api';
 import { isStripeConfigured } from '../services/stripe';
 import './Enroll.css';
@@ -12,7 +12,7 @@ export default function Enroll() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const course = mockCourses.find((c) => c.id === courseId);
+  const course = allCourses.find((c) => c.id === courseId);
 
   if (!course) {
     return <div className="enroll-page"><p className="enroll-not-found">{t('enroll.notFound')}</p></div>;

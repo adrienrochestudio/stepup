@@ -38,6 +38,9 @@ export default function Layout() {
             {user && (
               <li><NavLink to="/dashboard" onClick={() => setMenuOpen(false)}>{t('nav.dashboard')}</NavLink></li>
             )}
+            {user?.role === 'cohort_manager' && (
+              <li><NavLink to="/admin/cohorts" onClick={() => setMenuOpen(false)}>{t('admin.title')}</NavLink></li>
+            )}
           </ul>
 
           <LanguageSwitcher />

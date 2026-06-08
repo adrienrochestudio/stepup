@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { mockCourses } from '../data/mockCourses';
+import { allCourses } from '../data/mockCourses';
 import './CreateCohortModal.css';
 
 export default function CreateCohortModal({ onClose, onCreate }) {
   const { t } = useTranslation();
   const [name, setName] = useState('');
-  const [courseId, setCourseId] = useState(mockCourses[0]?.id || '');
+  const [courseId, setCourseId] = useState(allCourses[0]?.id || '');
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('');
   const [maxStudents, setMaxStudents] = useState(20);
@@ -19,7 +19,7 @@ export default function CreateCohortModal({ onClose, onCreate }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const course = mockCourses.find((c) => c.id === courseId);
+    const course = allCourses.find((c) => c.id === courseId);
     onCreate({
       id: `cohort-${Date.now()}`,
       name,
@@ -57,7 +57,7 @@ export default function CreateCohortModal({ onClose, onCreate }) {
           <div className="cohort-modal-field">
             <label>{t('admin.modal.course')}</label>
             <select value={courseId} onChange={(e) => setCourseId(e.target.value)}>
-              {mockCourses.map((c) => (
+              {allCourses.map((c) => (
                 <option key={c.id} value={c.id}>{c.title}</option>
               ))}
             </select>

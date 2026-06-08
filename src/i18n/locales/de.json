@@ -2,15 +2,24 @@
   "nav": {
     "map": "Karte",
     "webinars": "Webinare",
-    "dashboard": "Dashboard",
+    "dashboard": "Meine Kurse",
     "login": "Anmelden",
     "logout": "Abmelden"
   },
   "home": {
     "title": "Willkommen bei StepUP",
-    "subtitle": "Entdecken Sie globale Ressourcen auf einer interaktiven Karte und greifen Sie auf unsere Webinar-Bibliothek zu — alles an einem Ort.",
+    "tagline": "Die E-Learning-Plattform für nachhaltige audiovisuelle Produktion",
+    "subtitle": "Bilden Sie sich in nachhaltigen Praktiken der audiovisuellen Industrie weiter. Online-Kurse, interaktive Ressourcen und anerkannte Zertifizierungen.",
+    "ctaStart": "Ausbildung starten",
+    "ctaCourses": "Zu meinen Kursen",
     "ctaMap": "Karte erkunden",
-    "ctaWebinars": "Webinare ansehen"
+    "ctaWebinars": "Webinare ansehen",
+    "feature1Title": "Zertifizierte Kurse",
+    "feature1Desc": "Ausbildungswege, die von Experten für Öko-Produktion in der audiovisuellen Branche entwickelt wurden.",
+    "feature2Title": "Globale Ressourcen",
+    "feature2Desc": "Erkunden Sie weltweite Daten auf einer interaktiven Karte und greifen Sie auf exklusive Webinare zu.",
+    "feature3Title": "Für die gesamte Branche",
+    "feature3Desc": "Vom Kino bis zur Animation — Kurse, die auf jeden Beruf im audiovisuellen Sektor zugeschnitten sind."
   },
   "map": {
     "searchPlaceholder": "Land oder Stadt suchen...",
@@ -42,17 +51,18 @@
     "toggleToLogin": "Bereits ein Konto?",
     "signUp": "Registrieren",
     "logIn": "Anmelden",
-    "devMode": "Dev-Modus — Alle Anmeldedaten funktionieren"
+    "devMode": "Dev-Modus — Alle Anmeldedaten funktionieren",
+    "profile": "Profil",
+    "roleLearner": "Lernende/r",
+    "roleCohortManager": "Kohortenmanager"
   },
   "dashboard": {
-    "title": "Mein Dashboard",
+    "title": "Meine Kurse",
+    "titleManager": "Lernenden-Tracking",
     "welcome": "Willkommen, {{name}}",
-    "stats": {
-      "courses": "Kurse",
-      "inProgress": "In Bearbeitung",
-      "completed": "Abgeschlossen"
-    },
-    "myCourses": "Meine Kurse"
+    "myCourses": "Meine Kurse",
+    "catalog": "Kurskatalog",
+    "catalogSubtitle": "Schreiben Sie sich ein, um Zugang zu diesen Kursen zu erhalten."
   },
   "courseCard": {
     "status": {
@@ -63,9 +73,11 @@
     "cta": {
       "not_started": "Kurs starten",
       "in_progress": "Fortsetzen",
-      "completed": "Überprüfen"
+      "completed": "Überprüfen",
+      "enroll": "Einschreiben"
     },
-    "modules": "Module"
+    "modules": "Module",
+    "free": "Kostenlos"
   },
   "course": {
     "back": "Zurück",
@@ -83,8 +95,8 @@
     "notFound": "Kurs nicht gefunden.",
     "success": {
       "title": "Einschreibung erfolgreich!",
-      "message": "Sie wurden im Kurs eingeschrieben. Sie können ihn über Ihr Dashboard aufrufen.",
-      "cta": "Zum Dashboard"
+      "message": "Sie wurden im Kurs eingeschrieben. Sie können ihn über Ihre Kurse aufrufen.",
+      "cta": "Zu meinen Kursen"
     },
     "cancel": {
       "title": "Einschreibung abgebrochen",
@@ -110,6 +122,17 @@
       "maxStudents": "Max. Teilnehmer",
       "submit": "Kohorte erstellen"
     }
+  },
+  "cohortTracker": {
+    "totalLearners": "Lernende",
+    "online": "Online",
+    "avgProgress": "Durchschn. Fortschritt",
+    "learner": "Lernende/r",
+    "status": "Status",
+    "progress": "Fortschritt",
+    "lastActive": "Zuletzt aktiv",
+    "connected": "Verbunden",
+    "offline": "Offline"
   },
   "common": {
     "loading": "Laden..."
