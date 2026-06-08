@@ -1,0 +1,88 @@
+.map-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: var(--color-white);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  flex-wrap: wrap;
+}
+
+.map-search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.map-search-icon {
+  color: var(--color-text-light);
+  font-size: 1.1rem;
+}
+
+.map-search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-family: var(--font-family);
+  font-size: 0.95rem;
+  padding: 0.5rem 0;
+  background: transparent;
+  color: var(--color-text);
+}
+
+.map-search input::placeholder {
+  color: var(--color-text-light);
+}
+
+.map-region-select {
+  font-family: var(--font-family);
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-white);
+  color: var(--color-text);
+  cursor: pointer;
+  outline: none;
+}
+
+.map-region-select:focus {
+  border-color: var(--color-pomme);
+}
+
+.map-tabs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.map-tab {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.map-tab:hover,
+.map-tab.active {
+  background: var(--color-kaki);
+  color: var(--color-white);
+  border-color: var(--color-kaki);
+}
+
+@media (max-width: 768px) {
+  .map-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .map-tabs {
+    overflow-x: auto;
+  }
+}

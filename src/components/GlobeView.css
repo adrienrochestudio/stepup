@@ -1,0 +1,61 @@
+.globe-container {
+  flex: 1;
+  position: relative;
+  min-height: 500px;
+  overflow: hidden;
+  background: radial-gradient(ellipse at center, #1a1e0a 0%, #0d0f06 100%);
+  border-radius: 12px;
+}
+
+.globe-container canvas {
+  outline: none;
+}
+
+.globe-tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: var(--color-kaki);
+  color: var(--color-white);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  max-width: 220px;
+}
+
+.globe-tooltip strong {
+  display: block;
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+  color: var(--color-pomme);
+}
+
+.globe-zoom-controls {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+.globe-zoom-controls button {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: var(--color-kaki);
+  color: var(--color-white);
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  border: 1px solid rgba(189, 198, 9, 0.3);
+}
+
+.globe-zoom-controls button:hover {
+  background: var(--color-olive);
+}
