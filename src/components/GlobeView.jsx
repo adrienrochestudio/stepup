@@ -7,10 +7,10 @@ import './GlobeView.css';
 
 const COUNTRIES_WITH_DATA = Object.keys(countryData);
 
-const COLOR_SEA = '#c8ced8';
+const COLOR_SEA = '#dfe0e2';
 const COLOR_ACTIVE = '#bdc609';
-const COLOR_INACTIVE = '#d4d8c4';
-const COLOR_HOVER = '#a0b800';
+const COLOR_INACTIVE = '#c2c4b0';
+const COLOR_HOVER = '#d5d99a';
 const COLOR_SELECTED = '#3d4712';
 
 function hasData(feat) {
@@ -87,10 +87,10 @@ export default function GlobeView({ onCountryClick, selectedCountry }) {
   );
 
   const getPolygonSideColor = useCallback(() => 'rgba(0,0,0,0.05)', []);
-  const getPolygonStroke = useCallback(() => '#ffffff', []);
 
   const handlePolygonHover = useCallback((feat) => {
     setHovered(feat ? feat.properties.name || '' : null);
+    document.body.style.cursor = feat ? 'pointer' : 'default';
   }, []);
 
   const handlePolygonClick = useCallback(
@@ -116,7 +116,8 @@ export default function GlobeView({ onCountryClick, selectedCountry }) {
   const getPolygonLabel = useCallback(
     (feat) => {
       const name = feat.properties.name || '';
-      if (hasData(feat)) return `<span class="globe-label active">${name}</span>`;
+      if (hasData(feat))
+        return `<span class="globe-label active">${name}</span>`;
       return `<span class="globe-label">${name}</span>`;
     },
     [],
@@ -136,9 +137,9 @@ export default function GlobeView({ onCountryClick, selectedCountry }) {
         polygonsData={countries}
         polygonCapColor={getPolygonCapColor}
         polygonSideColor={getPolygonSideColor}
-        polygonStrokeColor={getPolygonStroke}
+        polygonStrokeColor={() => 'rgba(255,255,255,0.3)'}
         polygonAltitude={(feat) =>
-          (selectedCountry === (feat.properties.name || '')) ? 0.02 : 0.005
+          selectedCountry === (feat.properties.name || '') ? 0.015 : 0.004
         }
         polygonLabel={getPolygonLabel}
         onPolygonHover={handlePolygonHover}

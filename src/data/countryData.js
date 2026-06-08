@@ -8,52 +8,32 @@ export const countryData = {
         greenProductionStatus: {
           label: 'Status of green production',
           content:
-            'France is a European leader in sustainable audiovisual production. The CNC (Centre National du Cinématographie) has been actively promoting eco-responsible practices since 2021, with mandatory carbon reporting for funded productions.',
-        },
-        generalRegulation: {
-          label: 'General regulation',
-          content:
-            'Law n°2021-1104 (Climate & Resilience Act) includes provisions for the audiovisual sector. Productions receiving public funding must submit a carbon footprint assessment. The CSA (now ARCOM) integrates environmental criteria in broadcast licensing.',
+            'Green production is progressing steadily, driven by increasing demand and a dedicated group of stakeholders. While a solid core is engaged, fully mobilizing the entire sector remains a challenge. The CNC is advancing the film industry through its ambitious yet flexible Action Plan, aiming for nationwide impact. Simultaneously, companies are complying with regulations, especially in the area of Corporate Social Responsibility (CSR).',
         },
         decarbonizationPlan: {
           label: 'Decarbonization plan',
           content:
-            'France\'s National Low Carbon Strategy (SNBC) targets carbon neutrality by 2050. The audiovisual sector is included in the services sector roadmap, with interim targets for 2030 (-40% vs. 1990 levels).',
+            "France's environmental protection framework targets carbon neutrality by 2050, focusing on reducing emissions and promoting renewable energy. The 2015 Energy Transition Act aims for a 40% emissions reduction by 2030 and 50% energy consumption cut by 2050. The 2020 Circular Economy Law bans single-use plastics, promotes recycling, and enforces Extended Producer Responsibility (EPR).\n\nThe 2016 Biodiversity Law enhances habitat protection, and the 1996 LAURE Law regulates air quality. Water quality is governed by the EU Water Framework Directive, while urban planning follows Grenelle Environment Laws promoting sustainable development. Additional regulations cover noise pollution, sustainable forestry, and environmental impact assessments.",
         },
         laws: {
-          label: 'Laws',
+          label: 'Relevant national legislation',
           content:
-            'Climate & Resilience Act (2021), AGEC Law on circular economy (2020), Energy-Climate Law (2019). CNC decree on eco-conditionality for public funding (2024).',
+            '• Reduction of Carbon Footprint: Film productions must comply with European and French regulations on reducing greenhouse gas emissions, such as the law on energy transition for green growth.\n• Waste Management: Obligation to sort and recycle filming waste in accordance with national waste legislation (AGEC law — anti-waste for a circular economy).\n• CSR Reporting: Large companies (more than 500 employees) must publish an annual CSR report detailing their social, environmental, and economic impacts, in accordance with the European directive on the disclosure of non-financial information (Directive 2014/95/EU).\n• European Regulations, like the European Directive on Industrial Emissions (IED): Some large infrastructures of the film industry must comply with European standards on emissions and environmental protection.',
         },
-        biodiversityProtection: {
-          label: 'Biodiversity protection rules',
+        socialLegislation: {
+          label: 'Social legislation',
           content:
-            'Protected natural areas (Natura 2000, National Parks, Regional Nature Parks) require specific permits for filming. Environmental impact assessments are mandatory for shoots in sensitive zones. The OFB (French Office for Biodiversity) oversees compliance.',
-        },
-        nationalFigures: {
-          label: 'National figures on the impact of production',
-          content:
-            'Average carbon footprint of a French feature film: 750 tCO2e (Ecoprod 2023 study). The audiovisual sector represents approximately 1.7 MtCO2e annually. 92% of productions now use at least one eco-responsible practice.',
+            '• Production companies must comply with French anti-discrimination laws (Equality and Citizenship Law of 2017) and promote equal opportunities.\n• Working Conditions: Compliance with the French Labor Code, which governs working hours, health and safety conditions at work, and the fight against harassment.',
         },
         audiovisualRegulation: {
-          label: 'Audiovisual regulation (eco-bonus, eco-conditionality, etc.)',
+          label: 'Film & TV industry regulations and incentives',
           content:
-            'CNC eco-bonus: up to 15% additional funding for productions meeting green criteria. Eco-conditionality: since 2024, all CNC-funded productions must use a certified carbon calculator and submit a sustainability plan. ARCOM green charter for broadcasters.',
+            "As part of its Action Plan!, the CNC has implemented green conditionality for its grants, requiring the provision of two carbon assessments: a preliminary carbon assessment before filming and a final carbon assessment after the end of the production. This measure applies to all live-action works, including fiction and documentary, feature films and short films, series or standalone, financed by the CNC. This conditionality is not intended as an obligation of result. Only the submission of the carbon assessment is mandatory. However, the CNC has announced potential targeted checks to verify the accuracy of the information provided.\n\nAt the regional level, Île-de-France has a green bonus system ranging from €23,000 to €75,000 for specific expenses related to innovative practices or technologies. Several regions are implementing other green measures such as funding conditioning.",
         },
         existingInitiatives: {
-          label: 'Existing initiatives (associations, film commissions, etc.)',
+          label: 'Existing initiatives',
           content:
-            'Ecoprod (main industry body for sustainable production), Film Paris Region (green filming guide), Commission du Film d\'Île-de-France, Pictanovo, numerous regional film commissions with green programs. Albert certification gaining traction.',
-        },
-        stakeholderInvolvement: {
-          label: 'Stakeholder involvement (broadcasters, unions, etc.)',
-          content:
-            'France Télévisions: carbon neutrality target by 2030. TF1 & M6: annual sustainability reports with sector-specific goals. USPA, SPI, AnimFrance actively engaged. CCHSCT working groups on environmental practices on set.',
-        },
-        financingStructures: {
-          label: 'Existing financing structures (tax credit, trends and composition of budgets)',
-          content:
-            'Tax Rebate for International Production (TRIP): 30-40% with green bonus. SOFICA: tax-advantaged investment vehicles with growing ESG criteria. Regional funds increasingly require environmental commitments. Average French film budget: €4.4M (CNC 2023).',
+            'Ecoprod: Association of companies and professionals of the industry, developing tools such as a free carbon calculator, a label, training and studies on green production.\nhttps://www.ecoprod.com/fr/',
         },
       },
     },
@@ -61,44 +41,34 @@ export const countryData = {
       label: 'Sustainability & Logistics',
       subcategories: {
         trainTravel: {
-          label: 'How easy is it to get around by train?',
+          label: 'Train transport (4/5)',
           content:
-            'Excellent rail network via SNCF. TGV connects Paris to major cities in 1-3h (Lyon 2h, Marseille 3h, Bordeaux 2h). TER regional trains cover most departments. Eurostar/Thalys for international connections. SNCF offers group rates for production crews.',
+            'France has one of the most extensive and efficient train networks in Europe, with high-speed TGV services connecting major cities like Paris, Lyon, Marseille, and Bordeaux. Regional trains (TER) and Intercity services (Intercités) cover smaller towns and rural areas, ensuring comprehensive coverage. The integration with European networks and extensive urban rail systems, such as the Paris Metro and RER, further enhance accessibility. However, occasional strikes and maintenance issues can sometimes affect reliability.',
         },
         electricCars: {
-          label: 'Availability of electric cars (rental offers, charging stations)',
+          label: 'Electric cars (4/5)',
           content:
-            'Over 120,000 public charging points (2024). Major rental companies (Europcar, Sixt, Hertz) offer EV fleets. Specialty production vehicle rental: GreenKit, E-Truck. Paris: Mobilize (ex-Renault) car-sharing. Growing availability outside major cities.',
-        },
-        electricGenerators: {
-          label: 'Availability of electric generators',
-          content:
-            'Several providers: Mobiprods (mobile solar generators), Innovelec (battery generators), Aggreko (hybrid solutions). CNC-funded pilot programs for electric generator adoption. Average cost premium: 20-30% vs. diesel, declining.',
+            'In France, major car rental companies such as Hertz, Europcar, and Avis offer electric vehicles (EVs) in their fleets, especially in larger cities and popular tourist destinations. Additionally, specialized services like Bluecity and Share Now provide convenient options for short-term electric car rentals. The growing network of charging stations also supports this trend. However, the availability and accessibility of charging stations, particularly in rural areas, and the relatively higher initial cost of EVs compared to traditional vehicles slightly hinder their overall accessibility.\n\nCharging stations map: https://fr.chargemap.com/map',
         },
         gridConnection: {
-          label: 'Grid connection and energy mix',
+          label: 'Grid connection (3/5)',
           content:
-            'French electricity grid is 92% low-carbon (nuclear 67%, renewables 25%). Studio grid connections widely available. Temporary grid connections (raccordement provisoire) available via Enedis with 2-4 week lead time. Green energy contracts available from most suppliers.',
+            'France has a well-developed grid available for film productions, particularly in major cities like Paris, Lyon and Marseille, but also smaller cities. However, in more remote or less-developed areas, access to reliable grid connections can be a challenge.',
         },
         wasteManagement: {
           label: 'Waste management rules',
           content:
-            'AGEC Law mandates waste sorting in 7 categories for businesses. Production-specific waste services: Ecod\'Air, Paprec. Set decoration recycling networks: La Ressourcerie du Cinéma, Artstock. Mandatory waste reporting for productions over €2M budget.',
-        },
-        biodiversityRules: {
-          label: 'Biodiversity protection rules',
-          content:
-            'Same as General Information section. Additional production-specific guidelines from Film France for location scouting in protected areas.',
+            'France waste management rules follow European Union directives and national regulations, primarily outlined in the Environmental Code. Companies producing more than 1,100 liters of waste per week must entrust the management of their waste to an approved service provider. This includes companies specializing in waste collection, transportation and recovery.\n\nSeparate systems exist for packaging, electronic waste, hazardous waste, and construction waste. Authorities conduct inspections, and non-compliance can result in fines. Businesses must report their waste management practices.',
         },
         socialRules: {
-          label: 'Social rules (VHSS, etc.)',
+          label: 'Social rules (gender equality, inclusion)',
           content:
-            'VHSS (Violences et Harcèlement Sexistes et Sexuels): mandatory prevention referent on all sets since 2024. Convention collective du cinéma updated. Working time: 10h/day max, 48h/week. Mandatory rest periods. CNC funding conditional on VHSS compliance.',
+            'In France, comprehensive legislation and initiatives aim to combat gender-based violence, promote inclusion, and advance gender equality. Key laws include the 2010 law on violence against women and the 2014 law for real equality between women and men, criminalizing gender-based violence, including domestic abuse and sexual harassment. Victims have access to legal protection, support services, and emergency accommodations, such as the 3919 helpline for domestic violence victims.\n\nThe CNC also promotes gender parity in film crews through a financial bonus for gender-balanced teams. Anti-discrimination laws protect against bias based on gender, sexual orientation, and disability, while workplace policies promote diversity, inclusion, and parental leave.',
         },
         otherFacts: {
-          label: 'Any other important facts',
+          label: 'Other important facts',
           content:
-            'France hosts 350+ productions annually. Studio capacity growing (expansion at La Cité du Cinéma, new studios in Provence). Weather: temperate, 4 seasons. Diverse landscapes: mountains, coast, urban, rural. Paris remains the most-filmed city in Europe.',
+            'There is a national network called RESSAC (National Network of Artistic and Cultural Resource Centers) that includes several places in France. Created in 2020, this network allows cultural reuse professionals to share their expertise and work on common issues.\n\n• La Ressourcerie Culturelle in Montaigu-Vendée\n• ArtStock, with locations in Saint-Gaudens and Asnières-sur-Seine\n• La Ressourcerie du Cinéma\n• La Caverne\n• La Réserve des Arts',
         },
       },
     },
@@ -106,34 +76,29 @@ export const countryData = {
       label: 'Resources',
       subcategories: {
         greenConsultants: {
-          label: 'Green consultants – where can I find someone?',
+          label: 'Green consultants',
           content:
-            'Ecoprod directory: ecoprod.com/annuaire. Secoya Eco-tournage (consulting & certification). Greenly (carbon accounting for media). Several independent consultants listed on Film France website. Regional film commissions maintain local green consultant lists.',
+            '• Flying Secoya: green consultancy for productions, a carbon calculator and a label — https://www.flyingsecoya.com/\n• A Better Prod: green consultancy for productions — https://www.abetterprod.com/\n• The Ecoprod directory for green consultants and professionals — https://www.ecoprod.com/fr/les-outils-pour-agir/professionnels-les-de-l-eco-production.html\n• A list of green consultants by Nausicä — https://nausicacinemadurable.fr/2023/04/25/charges-deco-production/',
         },
         serviceProviders: {
-          label: 'Specialized service providers',
+          label: 'Service providers',
           content:
-            'La Ressourcerie du Cinéma (set recycling), GreenKit (green production equipment), Mobiprods (solar generators), Ecod\'Air (waste management), Artstock (prop sharing platform), Secoya Eco-tournage, EcoProd certified partners network.',
+            '• A list of green service providers by Ecoprod — https://www.ecoprod.com/fr/les-outils-pour-agir/ressources-utiles.html\n• A list of green service providers by Nausicä — https://nausicacinemadurable.fr/2023/06/13/liste-de-prestataires-eco-responsables-de-laudiovisuel-en-france/\n• A list of green service providers and other initiatives by the CUT! Collective — https://www.cut-collectif.fr/les-actions/',
         },
         trainings: {
           label: 'Trainings',
           content:
-            'Ecoprod training program (2-day intensive). La Fémis: sustainability module. INA: eco-production certificate. CNC-funded training via AFDAS. Regional programs via Pictanovo, Film Paris Region. The StepUP e-learning program.',
+            '• Ecoprod provides training for professionals of the industry, covered by AFDAS at 100% with no waiting period — https://www.ecoprod.com/fr/formations.html\n• The CST proposes short training sessions: "Climate change — Fundamentals and implications for the audiovisual sector", "Mastering the carbon footprint measurement tool", "Responsible audiovisual production", "Fundamentals of CSR"\n• Ecoprod proposes long training over several weeks: "Green management on set", "Implementing a green production", "Green digital production", "Green set design"\n• As part of the France 2030 plan, green production training courses are also deployed in several film schools.',
         },
         tools: {
-          label: 'Tools (guides, calculators, etc.)',
+          label: 'Calculators & tools',
           content:
-            'Carbon\'Clap (CNC-endorsed carbon calculator). Ecoprod Green Guide. Secoya certification framework. ADEME carbon database for audiovisual. Albert toolkit (UK-developed, adopted in France). Film France sustainable location guide.',
-        },
-        caseStudies: {
-          label: 'Existing green production case studies',
-          content:
-            'The Bureau des Légendes (Canal+): pioneering eco-production. Plus Belle La Vie (TF1): zero-waste set practices. Astérix et Obélix (Pathé): large-scale sustainable production. Un Monde (César 2022): micro-budget green production model.',
+            "The CNC has certified 3 calculators:\n• Carbon'Clap, free calculator powered by Ecoprod — https://www.ecoprod.com/fr/carbon-clap.html\n• SecoSet powered by Flying Secoya — https://www.flyingsecoya.com/\n• Carbon'Stage powered by Greenly — https://greenly.earth/fr-fr/climate-app-store/calculateur-production-audiovisuelle",
         },
         networks: {
-          label: 'Networks to join (online, in-person, events)',
+          label: 'Networks for professionals',
           content:
-            'Ecoprod (main network, annual conference). Film France sustainability working group. The Green Production Collective. European Green Screen network. Produrable (annual sustainable business event). Les Rencontres du Cinéma Vert (Toulouse).',
+            '• Les Toiles Vertes: a network of French "green professionals" of the film industry\n• Ecoprod: a network of companies\n• The CUT! Collective: a collective of professionals of the industry',
         },
       },
     },

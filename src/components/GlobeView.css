@@ -14,18 +14,17 @@
 
 .globe-label {
   font-family: var(--font-family);
-  font-size: 13px;
-  color: var(--color-text);
-  background: var(--color-white);
-  padding: 4px 10px;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  font-size: 12px;
+  color: #444;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 3px 8px;
+  border-radius: 4px;
+  pointer-events: none;
 }
 
 .globe-label.active {
   color: var(--color-kaki);
   font-weight: 600;
-  border-left: 3px solid var(--color-pomme);
 }
 
 .globe-zoom-controls {
@@ -39,20 +38,20 @@
 }
 
 .globe-zoom-controls button {
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-  background: var(--color-white);
-  color: var(--color-kaki);
-  font-size: 1.25rem;
-  font-weight: 700;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.85);
+  color: var(--color-text);
+  font-size: 1.1rem;
+  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.2s;
-  border: 1px solid var(--color-border);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  backdrop-filter: blur(4px);
 }
 
 .globe-zoom-controls button:hover {

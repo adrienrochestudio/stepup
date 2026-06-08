@@ -3,7 +3,6 @@ import GlobeView from '../components/GlobeView';
 import MapControls from '../components/MapControls';
 import CountryInfoPanel from '../components/CountryInfoPanel';
 import AddInfoModal from '../components/AddInfoModal';
-import { getCountryData } from '../data/countryData';
 import './ResourceMap.css';
 
 export default function ResourceMap() {
@@ -26,7 +25,9 @@ export default function ResourceMap() {
   const handleSearch = useCallback((query) => {
     if (!query.trim()) return;
     const normalized = query.trim();
-    setSelectedCountry(normalized.charAt(0).toUpperCase() + normalized.slice(1));
+    setSelectedCountry(
+      normalized.charAt(0).toUpperCase() + normalized.slice(1),
+    );
   }, []);
 
   return (
@@ -37,25 +38,32 @@ export default function ResourceMap() {
         onToggleFilter={handleToggleFilter}
       />
 
-      {selectedCountry && (
-        <CountryInfoPanel
-          country={selectedCountry}
-          activeFilters={activeFilters}
-          onClose={() => setSelectedCountry(null)}
-        />
-      )}
-
       <div className="resource-map-globe-area">
         <GlobeView
           onCountryClick={handleCountryClick}
           selectedCountry={selectedCountry}
         />
 
+        {selectedCountry && (
+          <CountryInfoPanel
+            country={selectedCountry}
+            activeFilters={activeFilters}
+            onClose={() => setSelectedCountry(null)}
+          />
+        )}
+
         <button
           className="resource-map-add-btn"
           onClick={() => setShowAddInfo(true)}
         >
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.5"
+          >
             <path d="M12 5v14M5 12h14" />
           </svg>
           Add info
