@@ -18,20 +18,8 @@
   font-size: 0.95rem;
 }
 
-.dashboard-section-title {
-  color: var(--color-kaki);
-  margin-bottom: 1.25rem;
-}
-
-.dashboard-section-catalog {
-  margin-top: 3rem;
-}
-
-.dashboard-catalog-subtitle {
-  color: var(--color-text-light);
-  font-size: 0.9rem;
-  margin-top: -0.75rem;
-  margin-bottom: 1.25rem;
+.dashboard-cohort-section {
+  margin-bottom: 2.5rem;
 }
 
 .dashboard-grid {

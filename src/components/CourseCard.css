@@ -158,3 +158,29 @@
 .course-card-thumb.catalog {
   background: linear-gradient(135deg, var(--color-olive), var(--color-kaki));
 }
+
+/* Locked / not-enrolled state */
+.course-card-locked {
+  opacity: 0.55;
+  filter: grayscale(30%);
+  transition: opacity 0.3s, filter 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.course-card-locked:hover {
+  opacity: 0.9;
+  filter: grayscale(0%);
+}
+
+.course-card-lock-icon {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 0.75rem;
+  font-size: 1.25rem;
+  opacity: 0.7;
+}
+
+.course-card-cta.enroll {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}

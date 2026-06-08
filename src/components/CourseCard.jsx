@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './CourseCard.css';
 
-export default function CourseCard({ course, enrolled }) {
+export default function CourseCard({ course, enrolled, onEnrollClick }) {
   const { t } = useTranslation();
 
   if (!enrolled) {
     return (
-      <div className="course-card">
+      <div className="course-card course-card-locked">
         <div className="course-card-thumb catalog">
           <span className="course-card-thumb-icon">&#128218;</span>
           {course.free ? (
@@ -15,6 +15,7 @@ export default function CourseCard({ course, enrolled }) {
           ) : (
             <span className="course-card-badge badge-price">{course.price} &euro;</span>
           )}
+          <span className="course-card-lock-icon">&#128274;</span>
         </div>
         <div className="course-card-body">
           <h3>{course.title}</h3>
@@ -23,9 +24,12 @@ export default function CourseCard({ course, enrolled }) {
             <span>{course.duration}</span>
             <span>{course.modules} {t('courseCard.modules')}</span>
           </div>
-          <Link to={`/enroll/${course.id}`} className="course-card-cta enroll">
+          <button
+            className="course-card-cta enroll"
+            onClick={() => onEnrollClick?.(course)}
+          >
             {t('courseCard.cta.enroll')}
-          </Link>
+          </button>
         </div>
       </div>
     );
