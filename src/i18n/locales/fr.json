@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "map": "Carte",
+    "webinars": "Webinaires",
+    "dashboard": "Tableau de bord",
+    "login": "Connexion",
+    "logout": "Déconnexion"
+  },
+  "home": {
+    "title": "Bienvenue sur StepUP",
+    "subtitle": "Explorez les ressources mondiales sur une carte interactive et accédez à notre bibliothèque de webinaires — tout en un seul endroit.",
+    "ctaMap": "Explorer la carte",
+    "ctaWebinars": "Voir les webinaires"
+  },
+  "map": {
+    "searchPlaceholder": "Rechercher un pays ou une ville...",
+    "region": "Région",
+    "tabs": {
+      "explore": "Explorer les données",
+      "target": "Cibler des territoires",
+      "scenarios": "Scénarios",
+      "select": "Sélectionner une donnée"
+    }
+  },
+  "webinars": {
+    "title": "Bibliothèque de webinaires",
+    "searchPlaceholder": "Rechercher un webinaire...",
+    "noResults": "Aucun webinaire trouvé.",
+    "videoNotConfigured": "URL de la vidéo non configurée"
+  },
+  "login": {
+    "titleLogin": "Content de vous revoir",
+    "titleSignup": "Créer un compte",
+    "subtitleLogin": "Connectez-vous à votre espace de formation",
+    "subtitleSignup": "Inscrivez-vous pour accéder à vos cours",
+    "email": "Email",
+    "password": "Mot de passe",
+    "submit": "Se connecter",
+    "submitSignup": "S'inscrire",
+    "submitting": "Veuillez patienter...",
+    "toggleToSignup": "Pas de compte ?",
+    "toggleToLogin": "Déjà un compte ?",
+    "signUp": "S'inscrire",
+    "logIn": "Se connecter",
+    "devMode": "Mode Dev — Tous les identifiants fonctionnent"
+  },
+  "dashboard": {
+    "title": "Mon tableau de bord",
+    "welcome": "Bienvenue, {{name}}",
+    "stats": {
+      "courses": "Cours",
+      "inProgress": "En cours",
+      "completed": "Terminés"
+    },
+    "myCourses": "Mes cours"
+  },
+  "courseCard": {
+    "status": {
+      "not_started": "Nouveau",
+      "in_progress": "En cours",
+      "completed": "Terminé"
+    },
+    "cta": {
+      "not_started": "Commencer",
+      "in_progress": "Continuer",
+      "completed": "Revoir"
+    },
+    "modules": "modules"
+  },
+  "course": {
+    "back": "Retour",
+    "complete": "{{progress}}% terminé",
+    "notFound": "Cours introuvable.",
+    "notConfigured": "Package SCORM non configuré",
+    "notConfiguredDesc": "Uploadez votre package SCORM dans <code>public/scorm/{{courseId}}/</code> et mettez à jour la configuration du cours.",
+    "modules": "modules"
+  },
+  "enroll": {
+    "duration": "Durée",
+    "modules": "Modules",
+    "enrollNow": "S'inscrire maintenant",
+    "redirecting": "Redirection...",
+    "notFound": "Cours introuvable.",
+    "success": {
+      "title": "Inscription réussie !",
+      "message": "Vous êtes inscrit au cours. Vous pouvez y accéder depuis votre tableau de bord.",
+      "cta": "Aller au tableau de bord"
+    },
+    "cancel": {
+      "title": "Inscription annulée",
+      "message": "Votre paiement a été annulé. Aucun frais n'a été prélevé.",
+      "cta": "Réessayer"
+    }
+  },
+  "admin": {
+    "title": "Gestion des cohortes",
+    "createCohort": "+ Créer une cohorte",
+    "noCohorts": "Aucune cohorte. Créez la première !",
+    "start": "Début",
+    "end": "Fin",
+    "enrolledStudents": "Étudiants inscrits ({{count}})",
+    "noStudents": "Aucun étudiant inscrit.",
+    "modal": {
+      "title": "Créer une cohorte",
+      "name": "Nom de la cohorte",
+      "namePlaceholder": "ex: Promotion Été 2025",
+      "course": "Cours",
+      "startDate": "Date de début",
+      "endDate": "Date de fin",
+      "maxStudents": "Nombre max d'étudiants",
+      "submit": "Créer la cohorte"
+    }
+  },
+  "common": {
+    "loading": "Chargement..."
+  }
+}

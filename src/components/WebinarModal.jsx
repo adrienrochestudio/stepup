@@ -1,7 +1,10 @@
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import './WebinarModal.css';
 
 export default function WebinarModal({ webinar, onClose }) {
+  const { t } = useTranslation();
+
   useEffect(() => {
     const handleEsc = (e) => { if (e.key === 'Escape') onClose(); };
     document.addEventListener('keydown', handleEsc);
@@ -10,7 +13,7 @@ export default function WebinarModal({ webinar, onClose }) {
 
   if (!webinar) return null;
 
-  const formattedDate = new Date(webinar.date).toLocaleDateString('fr-FR', {
+  const formattedDate = new Date(webinar.date).toLocaleDateString(undefined, {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -35,7 +38,7 @@ export default function WebinarModal({ webinar, onClose }) {
               allowFullScreen
             />
           ) : (
-            <span>Video embed URL not configured</span>
+            <span>{t('webinars.videoNotConfigured')}</span>
           )}
         </div>
 

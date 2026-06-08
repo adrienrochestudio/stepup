@@ -1,10 +1,12 @@
 import { useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useScorm } from '../hooks/useScorm';
 import './ScormPlayer.css';
 
 export default function ScormPlayer({ courseId, scormUrl }) {
   const iframeRef = useRef(null);
   const { initializeApi, terminate } = useScorm(courseId);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const iframe = iframeRef.current;
@@ -30,11 +32,8 @@ export default function ScormPlayer({ courseId, scormUrl }) {
       <div className="scorm-player">
         <div className="scorm-player-empty">
           <span className="scorm-player-empty-icon">&#128218;</span>
-          <h3>SCORM Package Not Configured</h3>
-          <p>
-            Upload your SCORM package to <code>public/scorm/{courseId}/</code> and
-            update the course configuration to enable this player.
-          </p>
+          <h3>{t('course.notConfigured')}</h3>
+          <p>{t('course.notConfiguredDesc', { courseId })}</p>
         </div>
       </div>
     );

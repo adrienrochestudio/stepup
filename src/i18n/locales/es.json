@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "map": "Mapa",
+    "webinars": "Webinarios",
+    "dashboard": "Panel",
+    "login": "Iniciar sesión",
+    "logout": "Cerrar sesión"
+  },
+  "home": {
+    "title": "Bienvenido a StepUP",
+    "subtitle": "Explora recursos globales en un mapa interactivo y accede a nuestra biblioteca de webinarios — todo en un solo lugar.",
+    "ctaMap": "Explorar el mapa",
+    "ctaWebinars": "Ver webinarios"
+  },
+  "map": {
+    "searchPlaceholder": "Buscar país o ciudad...",
+    "region": "Región",
+    "tabs": {
+      "explore": "Explorar datos",
+      "target": "Seleccionar territorios",
+      "scenarios": "Escenarios",
+      "select": "Seleccionar datos"
+    }
+  },
+  "webinars": {
+    "title": "Biblioteca de webinarios",
+    "searchPlaceholder": "Buscar webinarios...",
+    "noResults": "No se encontraron webinarios.",
+    "videoNotConfigured": "URL del vídeo no configurada"
+  },
+  "login": {
+    "titleLogin": "Bienvenido de nuevo",
+    "titleSignup": "Crear cuenta",
+    "subtitleLogin": "Inicia sesión en tu panel de formación",
+    "subtitleSignup": "Regístrate para acceder a tus cursos",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "submit": "Iniciar sesión",
+    "submitSignup": "Registrarse",
+    "submitting": "Espere...",
+    "toggleToSignup": "¿No tienes cuenta?",
+    "toggleToLogin": "¿Ya tienes cuenta?",
+    "signUp": "Registrarse",
+    "logIn": "Iniciar sesión",
+    "devMode": "Modo Dev — Cualquier credencial funciona"
+  },
+  "dashboard": {
+    "title": "Mi panel",
+    "welcome": "Bienvenido, {{name}}",
+    "stats": {
+      "courses": "Cursos",
+      "inProgress": "En progreso",
+      "completed": "Completados"
+    },
+    "myCourses": "Mis cursos"
+  },
+  "courseCard": {
+    "status": {
+      "not_started": "Nuevo",
+      "in_progress": "En progreso",
+      "completed": "Completado"
+    },
+    "cta": {
+      "not_started": "Comenzar",
+      "in_progress": "Continuar",
+      "completed": "Revisar"
+    },
+    "modules": "módulos"
+  },
+  "course": {
+    "back": "Volver",
+    "complete": "{{progress}}% completado",
+    "notFound": "Curso no encontrado.",
+    "notConfigured": "Paquete SCORM no configurado",
+    "notConfiguredDesc": "Suba su paquete SCORM a <code>public/scorm/{{courseId}}/</code> y actualice la configuración del curso.",
+    "modules": "módulos"
+  },
+  "enroll": {
+    "duration": "Duración",
+    "modules": "Módulos",
+    "enrollNow": "Inscribirse ahora",
+    "redirecting": "Redirigiendo...",
+    "notFound": "Curso no encontrado.",
+    "success": {
+      "title": "¡Inscripción exitosa!",
+      "message": "Se ha inscrito en el curso. Puede acceder desde su panel.",
+      "cta": "Ir al panel"
+    },
+    "cancel": {
+      "title": "Inscripción cancelada",
+      "message": "Su pago ha sido cancelado. No se ha realizado ningún cargo.",
+      "cta": "Intentar de nuevo"
+    }
+  },
+  "admin": {
+    "title": "Gestión de cohortes",
+    "createCohort": "+ Crear cohorte",
+    "noCohorts": "Sin cohortes. ¡Cree la primera!",
+    "start": "Inicio",
+    "end": "Fin",
+    "enrolledStudents": "Estudiantes inscritos ({{count}})",
+    "noStudents": "Sin estudiantes inscritos.",
+    "modal": {
+      "title": "Crear nueva cohorte",
+      "name": "Nombre de la cohorte",
+      "namePlaceholder": "ej: Cohorte Verano 2025",
+      "course": "Curso",
+      "startDate": "Fecha de inicio",
+      "endDate": "Fecha de fin",
+      "maxStudents": "Máximo de estudiantes",
+      "submit": "Crear cohorte"
+    }
+  },
+  "common": {
+    "loading": "Cargando..."
+  }
+}

@@ -1,12 +1,15 @@
 import { useState } from 'react';
 import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '../hooks/useAuth';
+import LanguageSwitcher from './LanguageSwitcher';
 import './Layout.css';
 
 export default function Layout() {
   const [menuOpen, setMenuOpen] = useState(false);
   const { user, logout } = useAuth();
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const handleLogout = async () => {
     await logout();
@@ -30,20 +33,22 @@ export default function Layout() {
 
         <div className="nav-right">
           <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
-            <li><NavLink to="/resources/map" onClick={() => setMenuOpen(false)}>Map</NavLink></li>
-            <li><NavLink to="/resources/webinars" onClick={() => setMenuOpen(false)}>Webinars</NavLink></li>
+            <li><NavLink to="/resources/map" onClick={() => setMenuOpen(false)}>{t('nav.map')}</NavLink></li>
+            <li><NavLink to="/resources/webinars" onClick={() => setMenuOpen(false)}>{t('nav.webinars')}</NavLink></li>
             {user && (
-              <li><NavLink to="/dashboard" onClick={() => setMenuOpen(false)}>Dashboard</NavLink></li>
+              <li><NavLink to="/dashboard" onClick={() => setMenuOpen(false)}>{t('nav.dashboard')}</NavLink></li>
             )}
           </ul>
 
+          <LanguageSwitcher />
+
           {user ? (
             <button className="nav-auth-btn" onClick={handleLogout}>
-              Logout
+              {t('nav.logout')}
             </button>
           ) : (
             <Link to="/login" className="nav-auth-btn">
-              Login
+              {t('nav.login')}
             </Link>
           )}
         </div>

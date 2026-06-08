@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "map": "Karte",
+    "webinars": "Webinare",
+    "dashboard": "Dashboard",
+    "login": "Anmelden",
+    "logout": "Abmelden"
+  },
+  "home": {
+    "title": "Willkommen bei StepUP",
+    "subtitle": "Entdecken Sie globale Ressourcen auf einer interaktiven Karte und greifen Sie auf unsere Webinar-Bibliothek zu — alles an einem Ort.",
+    "ctaMap": "Karte erkunden",
+    "ctaWebinars": "Webinare ansehen"
+  },
+  "map": {
+    "searchPlaceholder": "Land oder Stadt suchen...",
+    "region": "Region",
+    "tabs": {
+      "explore": "Daten erkunden",
+      "target": "Gebiete auswählen",
+      "scenarios": "Szenarien",
+      "select": "Daten auswählen"
+    }
+  },
+  "webinars": {
+    "title": "Webinar-Bibliothek",
+    "searchPlaceholder": "Webinare suchen...",
+    "noResults": "Keine Webinare gefunden.",
+    "videoNotConfigured": "Video-URL nicht konfiguriert"
+  },
+  "login": {
+    "titleLogin": "Willkommen zurück",
+    "titleSignup": "Konto erstellen",
+    "subtitleLogin": "Melden Sie sich in Ihrem Lernbereich an",
+    "subtitleSignup": "Registrieren Sie sich für Ihre Kurse",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "submit": "Anmelden",
+    "submitSignup": "Registrieren",
+    "submitting": "Bitte warten...",
+    "toggleToSignup": "Noch kein Konto?",
+    "toggleToLogin": "Bereits ein Konto?",
+    "signUp": "Registrieren",
+    "logIn": "Anmelden",
+    "devMode": "Dev-Modus — Alle Anmeldedaten funktionieren"
+  },
+  "dashboard": {
+    "title": "Mein Dashboard",
+    "welcome": "Willkommen, {{name}}",
+    "stats": {
+      "courses": "Kurse",
+      "inProgress": "In Bearbeitung",
+      "completed": "Abgeschlossen"
+    },
+    "myCourses": "Meine Kurse"
+  },
+  "courseCard": {
+    "status": {
+      "not_started": "Neu",
+      "in_progress": "In Bearbeitung",
+      "completed": "Abgeschlossen"
+    },
+    "cta": {
+      "not_started": "Kurs starten",
+      "in_progress": "Fortsetzen",
+      "completed": "Überprüfen"
+    },
+    "modules": "Module"
+  },
+  "course": {
+    "back": "Zurück",
+    "complete": "{{progress}}% abgeschlossen",
+    "notFound": "Kurs nicht gefunden.",
+    "notConfigured": "SCORM-Paket nicht konfiguriert",
+    "notConfiguredDesc": "Laden Sie Ihr SCORM-Paket in <code>public/scorm/{{courseId}}/</code> hoch und aktualisieren Sie die Kurskonfiguration.",
+    "modules": "Module"
+  },
+  "enroll": {
+    "duration": "Dauer",
+    "modules": "Module",
+    "enrollNow": "Jetzt einschreiben",
+    "redirecting": "Weiterleitung...",
+    "notFound": "Kurs nicht gefunden.",
+    "success": {
+      "title": "Einschreibung erfolgreich!",
+      "message": "Sie wurden im Kurs eingeschrieben. Sie können ihn über Ihr Dashboard aufrufen.",
+      "cta": "Zum Dashboard"
+    },
+    "cancel": {
+      "title": "Einschreibung abgebrochen",
+      "message": "Ihre Zahlung wurde abgebrochen. Es wurden keine Kosten erhoben.",
+      "cta": "Erneut versuchen"
+    }
+  },
+  "admin": {
+    "title": "Kohortenverwaltung",
+    "createCohort": "+ Kohorte erstellen",
+    "noCohorts": "Keine Kohorten. Erstellen Sie die erste!",
+    "start": "Beginn",
+    "end": "Ende",
+    "enrolledStudents": "Eingeschriebene Teilnehmer ({{count}})",
+    "noStudents": "Noch keine Teilnehmer eingeschrieben.",
+    "modal": {
+      "title": "Neue Kohorte erstellen",
+      "name": "Kohortenname",
+      "namePlaceholder": "z.B. Sommerkohorte 2025",
+      "course": "Kurs",
+      "startDate": "Startdatum",
+      "endDate": "Enddatum",
+      "maxStudents": "Max. Teilnehmer",
+      "submit": "Kohorte erstellen"
+    }
+  },
+  "common": {
+    "loading": "Laden..."
+  }
+}

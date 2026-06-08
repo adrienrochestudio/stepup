@@ -1,20 +1,20 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './Home.css';
 
 export default function Home() {
+  const { t } = useTranslation();
+
   return (
     <section className="home-hero">
-      <h1>Welcome to StepUP</h1>
-      <p>
-        Explore global resources on an interactive map and access our
-        curated webinar library — all in one place.
-      </p>
+      <h1>{t('home.title')}</h1>
+      <p>{t('home.subtitle')}</p>
       <div className="home-cta">
         <Link to="/resources/map" className="cta-primary">
-          Explore the Map
+          {t('home.ctaMap')}
         </Link>
         <Link to="/resources/webinars" className="cta-secondary">
-          Watch Webinars
+          {t('home.ctaWebinars')}
         </Link>
       </div>
     </section>

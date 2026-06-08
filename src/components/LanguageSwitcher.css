@@ -1,0 +1,52 @@
+.lang-switcher {
+  position: relative;
+}
+
+.lang-switcher-btn {
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.35rem 0.6rem;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.2s;
+}
+
+.lang-switcher-btn:hover {
+  border-color: var(--color-pomme);
+  color: var(--color-pomme);
+}
+
+.lang-switcher-dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  background: var(--color-white);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  min-width: 120px;
+  z-index: 110;
+}
+
+.lang-option {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+  color: var(--color-text);
+  transition: background 0.15s;
+}
+
+.lang-option:hover {
+  background: var(--color-bg);
+}
+
+.lang-option.active {
+  color: var(--color-kaki);
+  font-weight: 600;
+  background: rgba(189, 198, 9, 0.1);
+}

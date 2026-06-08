@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "map": "Map",
+    "webinars": "Webinars",
+    "dashboard": "Dashboard",
+    "login": "Login",
+    "logout": "Logout"
+  },
+  "home": {
+    "title": "Welcome to StepUP",
+    "subtitle": "Explore global resources on an interactive map and access our curated webinar library — all in one place.",
+    "ctaMap": "Explore the Map",
+    "ctaWebinars": "Watch Webinars"
+  },
+  "map": {
+    "searchPlaceholder": "Search country or city...",
+    "region": "Region",
+    "tabs": {
+      "explore": "Explore data",
+      "target": "Target territories",
+      "scenarios": "Scenarios",
+      "select": "Select data"
+    }
+  },
+  "webinars": {
+    "title": "Webinar Library",
+    "searchPlaceholder": "Search webinars...",
+    "noResults": "No webinars found.",
+    "videoNotConfigured": "Video embed URL not configured"
+  },
+  "login": {
+    "titleLogin": "Welcome Back",
+    "titleSignup": "Create Account",
+    "subtitleLogin": "Log in to your learning dashboard",
+    "subtitleSignup": "Sign up to access your courses",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Log In",
+    "submitSignup": "Sign Up",
+    "submitting": "Please wait...",
+    "toggleToSignup": "Don't have an account?",
+    "toggleToLogin": "Already have an account?",
+    "signUp": "Sign Up",
+    "logIn": "Log In",
+    "devMode": "Dev Mode — Any credentials work"
+  },
+  "dashboard": {
+    "title": "My Dashboard",
+    "welcome": "Welcome back, {{name}}",
+    "stats": {
+      "courses": "Courses",
+      "inProgress": "In Progress",
+      "completed": "Completed"
+    },
+    "myCourses": "My Courses"
+  },
+  "courseCard": {
+    "status": {
+      "not_started": "New",
+      "in_progress": "In Progress",
+      "completed": "Completed"
+    },
+    "cta": {
+      "not_started": "Start Course",
+      "in_progress": "Continue",
+      "completed": "Review"
+    },
+    "modules": "modules"
+  },
+  "course": {
+    "back": "Back",
+    "complete": "{{progress}}% complete",
+    "notFound": "Course not found.",
+    "notConfigured": "SCORM Package Not Configured",
+    "notConfiguredDesc": "Upload your SCORM package to <code>public/scorm/{{courseId}}/</code> and update the course configuration.",
+    "modules": "modules"
+  },
+  "enroll": {
+    "duration": "Duration",
+    "modules": "Modules",
+    "enrollNow": "Enroll Now",
+    "redirecting": "Redirecting...",
+    "notFound": "Course not found.",
+    "success": {
+      "title": "Enrollment Successful!",
+      "message": "You have been enrolled in the course. You can now access it from your dashboard.",
+      "cta": "Go to Dashboard"
+    },
+    "cancel": {
+      "title": "Enrollment Cancelled",
+      "message": "Your payment was cancelled. No charges have been made.",
+      "cta": "Try Again"
+    }
+  },
+  "admin": {
+    "title": "Cohort Manager",
+    "createCohort": "+ Create Cohort",
+    "noCohorts": "No cohorts yet. Create your first one!",
+    "start": "Start",
+    "end": "End",
+    "enrolledStudents": "Enrolled Students ({{count}})",
+    "noStudents": "No students enrolled yet.",
+    "modal": {
+      "title": "Create New Cohort",
+      "name": "Cohort Name",
+      "namePlaceholder": "e.g. Summer 2025 Cohort",
+      "course": "Course",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "maxStudents": "Max Students",
+      "submit": "Create Cohort"
+    }
+  },
+  "common": {
+    "loading": "Loading..."
+  }
+}

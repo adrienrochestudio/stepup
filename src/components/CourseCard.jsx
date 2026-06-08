@@ -1,25 +1,16 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './CourseCard.css';
 
-const statusLabels = {
-  not_started: 'New',
-  in_progress: 'In Progress',
-  completed: 'Completed',
-};
-
-const ctaLabels = {
-  not_started: 'Start Course',
-  in_progress: 'Continue',
-  completed: 'Review',
-};
-
 export default function CourseCard({ course }) {
+  const { t } = useTranslation();
+
   return (
     <div className="course-card">
       <div className="course-card-thumb">
         <span className="course-card-thumb-icon">&#128218;</span>
         <span className={`course-card-badge badge-${course.status}`}>
-          {statusLabels[course.status]}
+          {t(`courseCard.status.${course.status}`)}
         </span>
       </div>
 
@@ -29,7 +20,7 @@ export default function CourseCard({ course }) {
 
         <div className="course-card-meta">
           <span>{course.duration}</span>
-          <span>{course.modules} modules</span>
+          <span>{course.modules} {t('courseCard.modules')}</span>
         </div>
 
         <div className="course-card-progress">
@@ -43,7 +34,7 @@ export default function CourseCard({ course }) {
         </div>
 
         <Link to={`/course/${course.id}`} className={`course-card-cta ${course.status === 'completed' ? 'completed' : ''}`}>
-          {ctaLabels[course.status]}
+          {t(`courseCard.cta.${course.status}`)}
         </Link>
       </div>
     </div>

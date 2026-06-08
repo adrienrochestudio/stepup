@@ -1,19 +1,21 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { mockCourses } from '../data/mockCourses';
 import { apiFetch } from '../services/api';
-import { stripePromise, isStripeConfigured } from '../services/stripe';
+import { isStripeConfigured } from '../services/stripe';
 import './Enroll.css';
 
 export default function Enroll() {
   const { courseId } = useParams();
+  const { t } = useTranslation();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
   const course = mockCourses.find((c) => c.id === courseId);
 
   if (!course) {
-    return <div className="enroll-page"><p className="enroll-not-found">Course not found.</p></div>;
+    return <div className="enroll-page"><p className="enroll-not-found">{t('enroll.notFound')}</p></div>;
   }
 
   const handleCheckout = async () => {
@@ -22,7 +24,6 @@ export default function Enroll() {
 
     try {
       if (!isStripeConfigured) {
-        // Mock mode — simulate success
         window.location.href = `/enroll/${courseId}/success?mock=true`;
         return;
       }
@@ -36,7 +37,7 @@ export default function Enroll() {
         window.location.href = url;
       }
     } catch (err) {
-      setError(err.message || 'Checkout failed. Please try again.');
+      setError(err.message || 'Checkout failed.');
     } finally {
       setLoading(false);
     }
@@ -53,11 +54,11 @@ export default function Enroll() {
         <div className="enroll-card-body">
           <div className="enroll-details">
             <div className="enroll-detail">
-              <span className="enroll-detail-label">Duration</span>
+              <span className="enroll-detail-label">{t('enroll.duration')}</span>
               <span className="enroll-detail-value">{course.duration}</span>
             </div>
             <div className="enroll-detail">
-              <span className="enroll-detail-label">Modules</span>
+              <span className="enroll-detail-label">{t('enroll.modules')}</span>
               <span className="enroll-detail-value">{course.modules}</span>
             </div>
           </div>
@@ -67,12 +68,8 @@ export default function Enroll() {
             <span className="enroll-price-currency"> EUR</span>
           </div>
 
-          <button
-            className="enroll-cta"
-            onClick={handleCheckout}
-            disabled={loading}
-          >
-            {loading ? 'Redirecting...' : 'Enroll Now'}
+          <button className="enroll-cta" onClick={handleCheckout} disabled={loading}>
+            {loading ? t('enroll.redirecting') : t('enroll.enrollNow')}
           </button>
 
           {error && <p className="enroll-error">{error}</p>}

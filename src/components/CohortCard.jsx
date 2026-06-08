@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './CohortCard.css';
 
 export default function CohortCard({ cohort }) {
   const [expanded, setExpanded] = useState(false);
+  const { t } = useTranslation();
   const capacityPct = (cohort.enrolledStudents.length / cohort.maxStudents) * 100;
 
   return (
@@ -36,12 +38,12 @@ export default function CohortCard({ cohort }) {
       {expanded && (
         <div className="cohort-card-details">
           <div className="cohort-dates">
-            <span><strong>Start:</strong> {cohort.startDate}</span>
-            <span><strong>End:</strong> {cohort.endDate}</span>
+            <span><strong>{t('admin.start')}:</strong> {cohort.startDate}</span>
+            <span><strong>{t('admin.end')}:</strong> {cohort.endDate}</span>
           </div>
 
           <div className="cohort-students-title">
-            Enrolled Students ({cohort.enrolledStudents.length})
+            {t('admin.enrolledStudents', { count: cohort.enrolledStudents.length })}
           </div>
 
           {cohort.enrolledStudents.length > 0 ? (
@@ -54,7 +56,7 @@ export default function CohortCard({ cohort }) {
               ))}
             </ul>
           ) : (
-            <p className="cohort-empty">No students enrolled yet.</p>
+            <p className="cohort-empty">{t('admin.noStudents')}</p>
           )}
         </div>
       )}

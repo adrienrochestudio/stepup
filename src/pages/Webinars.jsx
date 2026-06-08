@@ -1,10 +1,12 @@
 import { useState, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import WebinarCard from '../components/WebinarCard';
 import WebinarModal from '../components/WebinarModal';
 import { mockWebinars } from '../data/mockWebinars';
 import './Webinars.css';
 
 export default function Webinars() {
+  const { t } = useTranslation();
   const [search, setSearch] = useState('');
   const [selectedWebinar, setSelectedWebinar] = useState(null);
 
@@ -21,12 +23,12 @@ export default function Webinars() {
   return (
     <div className="webinars-page">
       <div className="webinars-header">
-        <h1>Webinar Library</h1>
+        <h1>{t('webinars.title')}</h1>
         <div className="webinars-search">
           <span>&#128269;</span>
           <input
             type="text"
-            placeholder="Search webinars..."
+            placeholder={t('webinars.searchPlaceholder')}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
@@ -43,7 +45,7 @@ export default function Webinars() {
             />
           ))
         ) : (
-          <p className="webinars-empty">No webinars found.</p>
+          <p className="webinars-empty">{t('webinars.noResults')}</p>
         )}
       </div>
 
