@@ -1,0 +1,212 @@
+.addinfo-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  animation: overlayFadeIn 0.2s ease-out;
+}
+
+@keyframes overlayFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.addinfo-modal {
+  background: var(--color-white);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 720px;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+.addinfo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  background: var(--color-white);
+  z-index: 1;
+}
+
+.addinfo-header h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-kaki);
+}
+
+.addinfo-close {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s;
+}
+
+.addinfo-close:hover {
+  background: var(--color-border);
+}
+
+.addinfo-form {
+  padding: 1.5rem;
+}
+
+.addinfo-section {
+  margin-bottom: 1.75rem;
+}
+
+.addinfo-section h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-kaki);
+  margin: 0 0 0.75rem 0;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid var(--color-pomme);
+}
+
+.addinfo-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+@media (max-width: 640px) {
+  .addinfo-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.addinfo-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.addinfo-form input,
+.addinfo-form textarea {
+  font-family: var(--font-family);
+  font-size: 0.85rem;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  outline: none;
+  transition: border-color 0.2s;
+  resize: vertical;
+}
+
+.addinfo-form input:focus,
+.addinfo-form textarea:focus {
+  border-color: var(--color-pomme);
+}
+
+.addinfo-form input::placeholder,
+.addinfo-form textarea::placeholder {
+  color: var(--color-text-light);
+}
+
+.addinfo-field {
+  margin-bottom: 0.75rem;
+}
+
+.addinfo-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+  position: sticky;
+  bottom: 0;
+  background: var(--color-white);
+  padding-bottom: 0.25rem;
+}
+
+.addinfo-btn-primary {
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  background: var(--color-kaki);
+  color: var(--color-white);
+  font-family: var(--font-family);
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.addinfo-btn-primary:hover {
+  background: var(--color-olive);
+}
+
+.addinfo-btn-cancel {
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.addinfo-btn-cancel:hover {
+  background: var(--color-border);
+}
+
+.addinfo-success {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.addinfo-success-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-pomme);
+  color: var(--color-kaki);
+  font-size: 1.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.addinfo-success h3 {
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+  color: var(--color-kaki);
+}
+
+.addinfo-success p {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.5;
+}

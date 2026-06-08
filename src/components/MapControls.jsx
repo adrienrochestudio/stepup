@@ -1,58 +1,107 @@
-import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { regions } from '../data/mockLocations';
+import { useState, useRef, useEffect } from 'react';
+import { countryData, categoryKeys } from '../data/countryData';
 import './MapControls.css';
 
-export default function MapControls({ onSearch, onRegionChange }) {
-  const { t } = useTranslation();
-  const [activeTab, setActiveTab] = useState('explore');
-  const [searchValue, setSearchValue] = useState('');
+const CATEGORY_LABELS = {
+  generalInfo: 'General Information',
+  sustainability: 'Sustainability & Logistics',
+  resources: 'Resources',
+};
 
-  const tabs = [
-    { key: 'explore', label: t('map.tabs.explore') },
-    { key: 'target', label: t('map.tabs.target') },
-    { key: 'scenarios', label: t('map.tabs.scenarios') },
-    { key: 'select', label: t('map.tabs.select') },
-  ];
+function getSubcategories(catKey) {
+  const france = countryData.France;
+  if (!france || !france[catKey]) return [];
+  return Object.entries(france[catKey].subcategories).map(([key, val]) => ({
+    key,
+    label: val.label,
+  }));
+}
+
+export default function MapControls({
+  onSearch,
+  activeFilters,
+  onToggleFilter,
+}) {
+  const [searchValue, setSearchValue] = useState('');
+  const [expandedCategory, setExpandedCategory] = useState(null);
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    onSearch(searchValue);
+    if (onSearch) onSearch(searchValue);
   };
+
+  const toggleExpand = (catKey) => {
+    setExpandedCategory(expandedCategory === catKey ? null : catKey);
+  };
+
+  const expandedSubs = expandedCategory
+    ? getSubcategories(expandedCategory)
+    : [];
 
   return (
     <div className="map-controls">
-      <form className="map-search" onSubmit={handleSearchSubmit}>
-        <span className="map-search-icon">&#128269;</span>
-        <input
-          type="text"
-          placeholder={t('map.searchPlaceholder')}
-          value={searchValue}
-          onChange={(e) => setSearchValue(e.target.value)}
-        />
-      </form>
+      <div className="map-controls-bar">
+        <form className="map-search" onSubmit={handleSearchSubmit}>
+          <svg className="map-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.35-4.35" />
+          </svg>
+          <input
+            type="text"
+            placeholder="Search a country..."
+            value={searchValue}
+            onChange={(e) => setSearchValue(e.target.value)}
+          />
+        </form>
 
-      <select
-        className="map-region-select"
-        onChange={(e) => onRegionChange(e.target.value)}
-        defaultValue="All"
-      >
-        {regions.map((r) => (
-          <option key={r} value={r}>{r === 'All' ? t('map.region') : r}</option>
-        ))}
-      </select>
+        <div className="map-category-tabs">
+          {categoryKeys.map((catKey) => {
+            const isActive = activeFilters.includes(catKey);
+            const isExpanded = expandedCategory === catKey;
 
-      <div className="map-tabs">
-        {tabs.map((tab) => (
-          <button
-            key={tab.key}
-            className={`map-tab ${activeTab === tab.key ? 'active' : ''}`}
-            onClick={() => setActiveTab(tab.key)}
-          >
-            {tab.label}
-          </button>
-        ))}
+            return (
+              <button
+                key={catKey}
+                className={`map-category-tab ${isActive ? 'active' : ''} ${isExpanded ? 'expanded' : ''}`}
+                onClick={() => toggleExpand(catKey)}
+              >
+                {CATEGORY_LABELS[catKey]}
+                <svg
+                  className={`tab-chevron ${isExpanded ? 'open' : ''}`}
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                >
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
+            );
+          })}
+        </div>
       </div>
+
+      {expandedCategory && (
+        <div className="map-category-panel">
+          <label className="map-panel-toggle">
+            <input
+              type="checkbox"
+              checked={activeFilters.includes(expandedCategory)}
+              onChange={() => onToggleFilter(expandedCategory)}
+            />
+            <span>Filter by {CATEGORY_LABELS[expandedCategory]}</span>
+          </label>
+          <div className="map-panel-subs">
+            {expandedSubs.map((sub) => (
+              <span key={sub.key} className="map-panel-sub-tag">
+                {sub.label}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

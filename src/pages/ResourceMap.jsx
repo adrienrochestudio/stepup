@@ -1,28 +1,68 @@
-import { useState, useMemo } from 'react';
+import { useState, useCallback } from 'react';
 import GlobeView from '../components/GlobeView';
 import MapControls from '../components/MapControls';
-import { mockLocations } from '../data/mockLocations';
+import CountryInfoPanel from '../components/CountryInfoPanel';
+import AddInfoModal from '../components/AddInfoModal';
+import { getCountryData } from '../data/countryData';
 import './ResourceMap.css';
 
 export default function ResourceMap() {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedRegion, setSelectedRegion] = useState('All');
+  const [selectedCountry, setSelectedCountry] = useState(null);
+  const [activeFilters, setActiveFilters] = useState([]);
+  const [showAddInfo, setShowAddInfo] = useState(false);
 
-  const filteredLocations = useMemo(() => {
-    if (selectedRegion === 'All') return mockLocations;
-    return mockLocations.filter((loc) => loc.region === selectedRegion);
-  }, [selectedRegion]);
+  const handleCountryClick = useCallback((countryName) => {
+    setSelectedCountry((prev) => (prev === countryName ? null : countryName));
+  }, []);
+
+  const handleToggleFilter = useCallback((catKey) => {
+    setActiveFilters((prev) =>
+      prev.includes(catKey)
+        ? prev.filter((k) => k !== catKey)
+        : [...prev, catKey],
+    );
+  }, []);
+
+  const handleSearch = useCallback((query) => {
+    if (!query.trim()) return;
+    const normalized = query.trim();
+    setSelectedCountry(normalized.charAt(0).toUpperCase() + normalized.slice(1));
+  }, []);
 
   return (
     <div className="resource-map">
       <MapControls
-        onSearch={setSearchQuery}
-        onRegionChange={setSelectedRegion}
+        onSearch={handleSearch}
+        activeFilters={activeFilters}
+        onToggleFilter={handleToggleFilter}
       />
-      <GlobeView
-        locations={filteredLocations}
-        focusTarget={searchQuery}
-      />
+
+      {selectedCountry && (
+        <CountryInfoPanel
+          country={selectedCountry}
+          activeFilters={activeFilters}
+          onClose={() => setSelectedCountry(null)}
+        />
+      )}
+
+      <div className="resource-map-globe-area">
+        <GlobeView
+          onCountryClick={handleCountryClick}
+          selectedCountry={selectedCountry}
+        />
+
+        <button
+          className="resource-map-add-btn"
+          onClick={() => setShowAddInfo(true)}
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+            <path d="M12 5v14M5 12h14" />
+          </svg>
+          Add info
+        </button>
+      </div>
+
+      {showAddInfo && <AddInfoModal onClose={() => setShowAddInfo(false)} />}
     </div>
   );
 }

@@ -3,32 +3,29 @@
   position: relative;
   min-height: 500px;
   overflow: hidden;
-  background: radial-gradient(ellipse at center, #1a1e0a 0%, #0d0f06 100%);
+  background: #ffffff;
   border-radius: 12px;
+  z-index: 0;
 }
 
 .globe-container canvas {
   outline: none;
 }
 
-.globe-tooltip {
-  position: absolute;
-  pointer-events: none;
-  background: var(--color-kaki);
-  color: var(--color-white);
-  padding: 0.75rem 1rem;
-  border-radius: 8px;
-  font-size: 0.85rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-  z-index: 10;
-  max-width: 220px;
+.globe-label {
+  font-family: var(--font-family);
+  font-size: 13px;
+  color: var(--color-text);
+  background: var(--color-white);
+  padding: 4px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
-.globe-tooltip strong {
-  display: block;
-  font-size: 0.95rem;
-  margin-bottom: 0.25rem;
-  color: var(--color-pomme);
+.globe-label.active {
+  color: var(--color-kaki);
+  font-weight: 600;
+  border-left: 3px solid var(--color-pomme);
 }
 
 .globe-zoom-controls {
@@ -45,17 +42,21 @@
   width: 40px;
   height: 40px;
   border-radius: 8px;
-  background: var(--color-kaki);
-  color: var(--color-white);
+  background: var(--color-white);
+  color: var(--color-kaki);
   font-size: 1.25rem;
   font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.2s;
-  border: 1px solid rgba(189, 198, 9, 0.3);
+  transition: all 0.2s;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
 }
 
 .globe-zoom-controls button:hover {
-  background: var(--color-olive);
+  background: var(--color-kaki);
+  color: var(--color-white);
+  border-color: var(--color-kaki);
 }
