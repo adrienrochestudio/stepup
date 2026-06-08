@@ -2,6 +2,7 @@
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .dashboard-header {
@@ -9,13 +10,13 @@
 }
 
 .dashboard-header h1 {
-  color: var(--color-kaki);
-  margin-bottom: 0.25rem;
+  color: var(--color-text);
+  margin-bottom: 0.2rem;
 }
 
 .dashboard-header p {
   color: var(--color-text-light);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .dashboard-cohort-section {
@@ -25,7 +26,7 @@
 .dashboard-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 @media (max-width: 1024px) {

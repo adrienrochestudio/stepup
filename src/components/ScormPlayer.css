@@ -3,9 +3,9 @@
   display: flex;
   flex-direction: column;
   background: var(--color-white);
-  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .scorm-player-frame {
@@ -21,17 +21,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  color: var(--color-text-light);
+  gap: 0.75rem;
+  color: var(--color-text-muted);
   padding: 3rem;
   text-align: center;
 }
 
 .scorm-player-empty-icon {
-  font-size: 3rem;
-  opacity: 0.4;
+  font-size: 2.5rem;
+  opacity: 0.25;
 }
 
 .scorm-player-empty h3 {
-  color: var(--color-kaki);
+  color: var(--color-text);
 }

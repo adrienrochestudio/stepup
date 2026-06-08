@@ -1,7 +1,8 @@
 .webinar-modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,30 +12,32 @@
 
 .webinar-modal {
   background: var(--color-white);
-  border-radius: 16px;
+  border-radius: var(--radius-lg);
   width: 100%;
   max-width: 800px;
   overflow: hidden;
+  box-shadow: var(--shadow-overlay);
 }
 
 .webinar-modal-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.25rem 1.5rem;
+  padding: 1rem 1.25rem;
   border-bottom: 1px solid var(--color-border);
 }
 
 .webinar-modal-header h2 {
-  color: var(--color-kaki);
-  font-size: 1.2rem;
+  color: var(--color-text);
+  font-size: 1.1rem;
 }
 
 .webinar-modal-close {
-  font-size: 1.5rem;
-  color: var(--color-text-light);
+  font-size: 1.25rem;
+  color: var(--color-text-muted);
   padding: 0.25rem;
   line-height: 1;
+  transition: color var(--transition-fast);
 }
 
 .webinar-modal-close:hover {
@@ -43,12 +46,12 @@
 
 .webinar-modal-video {
   aspect-ratio: 16 / 9;
-  background: #000;
+  background: #0a0a0a;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-text-light);
-  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
 }
 
 .webinar-modal-video iframe {
@@ -58,20 +61,20 @@
 }
 
 .webinar-modal-info {
-  padding: 1.25rem 1.5rem;
+  padding: 1.125rem 1.25rem;
 }
 
 .webinar-modal-info p {
   color: var(--color-text-light);
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   line-height: 1.6;
 }
 
 .webinar-modal-meta {
   display: flex;
   gap: 1.5rem;
-  margin-top: 0.75rem;
-  font-size: 0.85rem;
-  color: var(--color-olive);
+  margin-top: 0.625rem;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
   font-weight: 500;
 }

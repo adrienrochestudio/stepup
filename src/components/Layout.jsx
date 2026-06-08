@@ -19,7 +19,9 @@ export default function Layout() {
   return (
     <div className="layout">
       <nav className="nav">
-        <Link to="/" className="nav-logo">StepUP</Link>
+        <Link to="/" className="nav-logo">
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="StepUP by Ecoprod" />
+        </Link>
 
         <button
           className="nav-toggle"

@@ -3,31 +3,32 @@
 }
 
 .lang-switcher-btn {
-  color: var(--color-white);
+  color: var(--color-text-light);
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  padding: 0.35rem 0.6rem;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  transition: all 0.2s;
+  letter-spacing: 0.04em;
+  padding: 0.3rem 0.5rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-fast);
 }
 
 .lang-switcher-btn:hover {
-  border-color: var(--color-pomme);
-  color: var(--color-pomme);
+  border-color: var(--color-kaki);
+  color: var(--color-kaki);
 }
 
 .lang-switcher-dropdown {
   position: absolute;
-  top: calc(100% + 0.5rem);
+  top: calc(100% + 0.375rem);
   right: 0;
   background: var(--color-white);
-  border-radius: 8px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg);
   overflow: hidden;
-  min-width: 120px;
+  min-width: 110px;
   z-index: 110;
 }
 
@@ -35,10 +36,10 @@
   display: block;
   width: 100%;
   text-align: left;
-  padding: 0.6rem 1rem;
-  font-size: 0.85rem;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.82rem;
   color: var(--color-text);
-  transition: background 0.15s;
+  transition: background var(--transition-fast);
 }
 
 .lang-option:hover {
@@ -48,5 +49,4 @@
 .lang-option.active {
   color: var(--color-kaki);
   font-weight: 600;
-  background: rgba(189, 198, 9, 0.1);
 }
