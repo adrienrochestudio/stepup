@@ -13,6 +13,7 @@ export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [role, setRole] = useState('learner');
+  const [organizationName, setOrganizationName] = useState('');
   const [error, setError] = useState('');
   const [submitting, setSubmitting] = useState(false);
 
@@ -25,7 +26,7 @@ export default function Login() {
 
     try {
       if (isSignup) {
-        await signup(email, password, role);
+        await signup(email, password, role, organizationName);
       } else {
         await login(email, password, role);
       }
@@ -96,6 +97,20 @@ export default function Login() {
                   {t('login.roleCohortManager')}
                 </button>
               </div>
+            </div>
+          )}
+
+          {isSignup && role === 'cohort_manager' && (
+            <div className="login-field">
+              <label htmlFor="organizationName">{t('login.organizationName')}</label>
+              <input
+                id="organizationName"
+                type="text"
+                value={organizationName}
+                onChange={(e) => setOrganizationName(e.target.value)}
+                placeholder={t('login.organizationNamePlaceholder')}
+                required
+              />
             </div>
           )}
 

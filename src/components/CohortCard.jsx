@@ -7,6 +7,11 @@ export default function CohortCard({ cohort }) {
   const { t } = useTranslation();
   const capacityPct = (cohort.enrolledStudents.length / cohort.maxStudents) * 100;
 
+  const statusCounts = cohort.enrolledStudents.reduce((acc, s) => {
+    acc[s.status] = (acc[s.status] || 0) + 1;
+    return acc;
+  }, {});
+
   return (
     <div className="cohort-card">
       <div className="cohort-card-header" onClick={() => setExpanded(!expanded)}>
@@ -42,6 +47,21 @@ export default function CohortCard({ cohort }) {
             <span><strong>{t('admin.end')}:</strong> {cohort.endDate}</span>
           </div>
 
+          <div className="cohort-status-summary">
+            {statusCounts.completed > 0 && (
+              <span className="cohort-mini-badge status-completed">{statusCounts.completed} {t('cohortTracker.statusCompleted')}</span>
+            )}
+            {statusCounts.in_progress > 0 && (
+              <span className="cohort-mini-badge status-in_progress">{statusCounts.in_progress} {t('cohortTracker.statusInProgress')}</span>
+            )}
+            {statusCounts.not_started > 0 && (
+              <span className="cohort-mini-badge status-not_started">{statusCounts.not_started} {t('cohortTracker.statusNotStarted')}</span>
+            )}
+            {statusCounts.never_connected > 0 && (
+              <span className="cohort-mini-badge status-never_connected">{statusCounts.never_connected} {t('cohortTracker.statusNeverConnected')}</span>
+            )}
+          </div>
+
           <div className="cohort-students-title">
             {t('admin.enrolledStudents', { count: cohort.enrolledStudents.length })}
           </div>
@@ -50,8 +70,10 @@ export default function CohortCard({ cohort }) {
             <ul className="cohort-students-list">
               {cohort.enrolledStudents.map((s) => (
                 <li key={s.id} className="cohort-student">
-                  <span className="cohort-student-name">{s.name}</span>
-                  <span className="cohort-student-email">{s.email}</span>
+                  <span className="cohort-student-name">{s.firstName} {s.lastName}</span>
+                  <span className={`cohort-student-status status-${s.status}`}>
+                    {t(`cohortTracker.status${s.status.charAt(0).toUpperCase() + s.status.slice(1).replace(/_([a-z])/g, (_, c) => c.toUpperCase())}`)}
+                  </span>
                 </li>
               ))}
             </ul>

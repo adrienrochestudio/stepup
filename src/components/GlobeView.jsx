@@ -58,8 +58,12 @@ export default function GlobeView({ onCountryClick, selectedCountry }) {
 
     globe.controls().autoRotate = false;
     globe.controls().enableZoom = true;
-    globe.controls().minDistance = 150;
+    globe.controls().minDistance = 110;
     globe.controls().maxDistance = 500;
+    globe.controls().enableDamping = true;
+    globe.controls().dampingFactor = 0.15;
+    globe.controls().minPolarAngle = Math.PI * 0.15;
+    globe.controls().maxPolarAngle = Math.PI * 0.85;
 
     globe.pointOfView({ lat: 48, lng: 10, altitude: 1.1 }, 0);
   }, []);
@@ -70,7 +74,7 @@ export default function GlobeView({ onCountryClick, selectedCountry }) {
     const pov = globe.pointOfView();
     const newAlt =
       dir === 'in'
-        ? Math.max(0.4, pov.altitude * 0.7)
+        ? Math.max(0.25, pov.altitude * 0.7)
         : Math.min(3, pov.altitude * 1.4);
     globe.pointOfView({ ...pov, altitude: newAlt }, 300);
   }, []);

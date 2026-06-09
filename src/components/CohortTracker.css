@@ -50,8 +50,20 @@
   margin-bottom: 0.2rem;
 }
 
-.tracker-stat-value.online {
-  color: #22c55e;
+.tracker-stat-value.status-never_connected {
+  color: #7a7a38;
+}
+
+.tracker-stat-value.status-not_started {
+  color: #fa003f;
+}
+
+.tracker-stat-value.status-in_progress {
+  color: #6ecacc;
+}
+
+.tracker-stat-value.status-completed {
+  color: #3d4712;
 }
 
 .tracker-stat-label {
@@ -155,6 +167,141 @@
 .last-active {
   color: var(--color-text-muted);
   font-size: 0.82rem;
+}
+
+/* Status badges */
+.tracker-status-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.tracker-status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.tracker-status-badge.status-never_connected {
+  background: rgba(122, 122, 56, 0.12);
+  color: #7a7a38;
+}
+
+.tracker-status-badge.status-not_started {
+  background: rgba(250, 0, 63, 0.1);
+  color: #fa003f;
+}
+
+.tracker-status-badge.status-in_progress {
+  background: rgba(110, 202, 204, 0.15);
+  color: #3a8b8d;
+}
+
+.tracker-status-badge.status-completed {
+  background: rgba(61, 71, 18, 0.1);
+  color: #3d4712;
+}
+
+.tracker-last-login {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}
+
+/* Tabs */
+.cohort-tracker-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.tracker-tab {
+  padding: 0.625rem 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.tracker-tab:hover {
+  color: var(--color-text);
+}
+
+.tracker-tab.active {
+  color: var(--color-kaki);
+  border-bottom-color: var(--color-kaki);
+}
+
+/* Actions */
+.cohort-tracker-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tracker-export-btn {
+  padding: 0.5rem 1rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.tracker-export-btn:hover {
+  border-color: var(--color-kaki);
+  color: var(--color-kaki);
+}
+
+.tracker-reminder-btn {
+  padding: 0.35rem 0.75rem;
+  background: var(--color-kaki);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.tracker-reminder-btn:hover {
+  background: #2e3510;
+}
+
+/* Certificates */
+.cohort-certificates-empty {
+  text-align: center;
+  color: var(--color-text-muted);
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+.tracker-cert-btn {
+  padding: 0.35rem 0.75rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  cursor: not-allowed;
+}
+
+.cert-coming-soon {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-top: 0.2rem;
 }
 
 @media (max-width: 768px) {

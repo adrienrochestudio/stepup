@@ -1,21 +1,21 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 import CourseCard from '../components/CourseCard';
 import EnrollModal from '../components/EnrollModal';
-import CohortTracker from '../components/CohortTracker';
 import { allCourses, mockEnrollments, getEnrolledCourses } from '../data/mockCourses';
-import { initialCohorts } from '../data/mockCohorts';
 import './Dashboard.css';
 
 export default function Dashboard() {
   const { user } = useAuth();
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const [enrollCourse, setEnrollCourse] = useState(null);
+  const [activeTab, setActiveTab] = useState('courses');
 
   const isCohortManager = user?.role === 'cohort_manager';
   const enrolled = getEnrolledCourses(mockEnrollments);
-  const enrolledIds = mockEnrollments.map((e) => e.courseId);
 
   const courses = allCourses.map((course) => {
     const enrollment = enrolled.find((e) => e.id === course.id);
@@ -29,7 +29,7 @@ export default function Dashboard() {
     setEnrollCourse(course);
   };
 
-  const handleEnrolled = (courseId) => {
+  const handleEnrolled = () => {
     setEnrollCourse(null);
   };
 
@@ -41,8 +41,19 @@ export default function Dashboard() {
       </div>
 
       {isCohortManager && (
-        <div className="dashboard-cohort-section">
-          <CohortTracker cohorts={initialCohorts} />
+        <div className="dashboard-tabs">
+          <button
+            className={`dashboard-tab ${activeTab === 'courses' ? 'active' : ''}`}
+            onClick={() => setActiveTab('courses')}
+          >
+            {t('dashboard.myCourses')}
+          </button>
+          <button
+            className={`dashboard-tab ${activeTab === 'management' ? 'active' : ''}`}
+            onClick={() => { setActiveTab('management'); navigate('/admin/cohorts'); }}
+          >
+            {t('dashboard.titleManager')}
+          </button>
         </div>
       )}
 

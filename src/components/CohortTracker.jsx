@@ -1,23 +1,67 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import * as XLSX from 'xlsx';
+import ReminderModal from './ReminderModal';
 import './CohortTracker.css';
 
-const mockLearnerActivity = [
-  { id: 's1', name: 'Alice Martin', email: 'alice@example.com', online: true, progress: 85, lastActive: '2026-06-08T14:30:00' },
-  { id: 's2', name: 'Bob Dupont', email: 'bob@example.com', online: false, progress: 62, lastActive: '2026-06-07T09:15:00' },
-  { id: 's3', name: 'Claire Moreau', email: 'claire@example.com', online: true, progress: 45, lastActive: '2026-06-08T15:00:00' },
-  { id: 's4', name: 'David Laurent', email: 'david@example.com', online: false, progress: 20, lastActive: '2026-06-05T11:00:00' },
-  { id: 's5', name: 'Emma Petit', email: 'emma@example.com', online: true, progress: 100, lastActive: '2026-06-08T13:45:00' },
-  { id: 's6', name: 'François Bernard', email: 'francois@example.com', online: false, progress: 30, lastActive: '2026-06-06T16:30:00' },
-];
+const STATUS_ORDER = ['never_connected', 'not_started', 'in_progress', 'completed'];
+
+function StatusBadge({ status, lastLogin, t }) {
+  const labels = {
+    never_connected: t('cohortTracker.statusNeverConnected'),
+    not_started: t('cohortTracker.statusNotStarted'),
+    in_progress: t('cohortTracker.statusInProgress'),
+    completed: t('cohortTracker.statusCompleted'),
+  };
+
+  return (
+    <div className="tracker-status-cell">
+      <span className={`tracker-status-badge status-${status}`}>
+        {labels[status] || status}
+      </span>
+      {status === 'in_progress' && lastLogin && (
+        <span className="tracker-last-login">
+          {new Date(lastLogin).toLocaleDateString('fr-FR', {
+            day: 'numeric', month: 'short', year: 'numeric',
+          })}
+        </span>
+      )}
+    </div>
+  );
+}
 
 export default function CohortTracker({ cohorts }) {
   const { t } = useTranslation();
   const [selectedCohort, setSelectedCohort] = useState(cohorts[0]?.id || '');
+  const [activeTab, setActiveTab] = useState('tracking');
+  const [reminderLearner, setReminderLearner] = useState(null);
 
   const cohort = cohorts.find((c) => c.id === selectedCohort);
-  const learners = mockLearnerActivity.slice(0, cohort?.enrolledStudents?.length || 3);
-  const onlineCount = learners.filter((l) => l.online).length;
+  const learners = cohort?.enrolledStudents || [];
+
+  const stats = STATUS_ORDER.reduce((acc, s) => {
+    acc[s] = learners.filter((l) => l.status === s).length;
+    return acc;
+  }, {});
+
+  const passedLearners = learners.filter((l) => l.status === 'completed');
+
+  const handleExport = () => {
+    const data = learners.map((l) => ({
+      [t('admin.modal.templateFirstName')]: l.firstName,
+      [t('admin.modal.templateLastName')]: l.lastName,
+      Email: l.email || '',
+      Username: l.username,
+      [t('cohortTracker.status')]: t(`cohortTracker.status${l.status.charAt(0).toUpperCase() + l.status.slice(1).replace(/_([a-z])/g, (_, c) => c.toUpperCase())}`),
+      [t('cohortTracker.lastActive')]: l.lastLogin ? new Date(l.lastLogin).toLocaleDateString('fr-FR') : '-',
+      [t('admin.modal.course')]: cohort?.courseTitle || '',
+    }));
+
+    const ws = XLSX.utils.json_to_sheet(data);
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, 'Apprenants');
+    XLSX.writeFile(wb, `${cohort?.name || 'cohorte'}_export.xlsx`);
+  };
 
   return (
     <div className="cohort-tracker">
@@ -41,57 +85,133 @@ export default function CohortTracker({ cohorts }) {
               <span className="tracker-stat-label">{t('cohortTracker.totalLearners')}</span>
             </div>
             <div className="tracker-stat">
-              <span className="tracker-stat-value online">{onlineCount}</span>
-              <span className="tracker-stat-label">{t('cohortTracker.online')}</span>
+              <span className="tracker-stat-value status-never_connected">{stats.never_connected}</span>
+              <span className="tracker-stat-label">{t('cohortTracker.statusNeverConnected')}</span>
             </div>
             <div className="tracker-stat">
-              <span className="tracker-stat-value">
-                {Math.round(learners.reduce((sum, l) => sum + l.progress, 0) / learners.length)}%
-              </span>
-              <span className="tracker-stat-label">{t('cohortTracker.avgProgress')}</span>
+              <span className="tracker-stat-value status-not_started">{stats.not_started}</span>
+              <span className="tracker-stat-label">{t('cohortTracker.statusNotStarted')}</span>
+            </div>
+            <div className="tracker-stat">
+              <span className="tracker-stat-value status-in_progress">{stats.in_progress}</span>
+              <span className="tracker-stat-label">{t('cohortTracker.statusInProgress')}</span>
+            </div>
+            <div className="tracker-stat">
+              <span className="tracker-stat-value status-completed">{stats.completed}</span>
+              <span className="tracker-stat-label">{t('cohortTracker.statusCompleted')}</span>
             </div>
           </div>
 
-          <div className="cohort-tracker-table-wrap">
-            <table className="cohort-tracker-table">
-              <thead>
-                <tr>
-                  <th>{t('cohortTracker.learner')}</th>
-                  <th>{t('cohortTracker.status')}</th>
-                  <th>{t('cohortTracker.progress')}</th>
-                  <th>{t('cohortTracker.lastActive')}</th>
-                </tr>
-              </thead>
-              <tbody>
-                {learners.map((learner) => (
-                  <tr key={learner.id}>
-                    <td>
-                      <div className="learner-name">{learner.name}</div>
-                      <div className="learner-email">{learner.email}</div>
-                    </td>
-                    <td>
-                      <span className={`status-dot ${learner.online ? 'online' : 'offline'}`} />
-                      {learner.online ? t('cohortTracker.connected') : t('cohortTracker.offline')}
-                    </td>
-                    <td>
-                      <div className="tracker-progress">
-                        <div className="tracker-progress-bar">
-                          <div className="tracker-progress-fill" style={{ width: `${learner.progress}%` }} />
-                        </div>
-                        <span>{learner.progress}%</span>
-                      </div>
-                    </td>
-                    <td className="last-active">
-                      {new Date(learner.lastActive).toLocaleDateString('fr-FR', {
-                        day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit'
-                      })}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          {/* Tabs */}
+          <div className="cohort-tracker-tabs">
+            <button
+              className={`tracker-tab ${activeTab === 'tracking' ? 'active' : ''}`}
+              onClick={() => setActiveTab('tracking')}
+            >
+              {t('cohortTracker.tabTracking')}
+            </button>
+            <button
+              className={`tracker-tab ${activeTab === 'certificates' ? 'active' : ''}`}
+              onClick={() => setActiveTab('certificates')}
+            >
+              {t('cohortTracker.tabCertificates')} ({passedLearners.length})
+            </button>
           </div>
+
+          {activeTab === 'tracking' && (
+            <>
+              <div className="cohort-tracker-actions">
+                <button className="tracker-export-btn" onClick={handleExport}>
+                  {t('cohortTracker.exportData')}
+                </button>
+              </div>
+
+              <div className="cohort-tracker-table-wrap">
+                <table className="cohort-tracker-table">
+                  <thead>
+                    <tr>
+                      <th>{t('cohortTracker.learner')}</th>
+                      <th>{t('cohortTracker.status')}</th>
+                      <th>{t('cohortTracker.lastActive')}</th>
+                      <th>{t('cohortTracker.actions')}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {learners.map((learner) => (
+                      <tr key={learner.id}>
+                        <td>
+                          <div className="learner-name">{learner.firstName} {learner.lastName}</div>
+                          <div className="learner-email">{learner.email || learner.username}</div>
+                        </td>
+                        <td>
+                          <StatusBadge status={learner.status} lastLogin={learner.lastLogin} t={t} />
+                        </td>
+                        <td className="last-active">
+                          {learner.lastLogin
+                            ? new Date(learner.lastLogin).toLocaleDateString('fr-FR', {
+                                day: 'numeric', month: 'short', year: 'numeric',
+                              })
+                            : '-'}
+                        </td>
+                        <td>
+                          <button
+                            className="tracker-reminder-btn"
+                            onClick={() => setReminderLearner(learner)}
+                          >
+                            {t('cohortTracker.sendReminder')}
+                          </button>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </>
+          )}
+
+          {activeTab === 'certificates' && (
+            <div className="cohort-certificates">
+              {passedLearners.length === 0 ? (
+                <p className="cohort-certificates-empty">{t('cohortTracker.noCertificates')}</p>
+              ) : (
+                <div className="cohort-tracker-table-wrap">
+                  <table className="cohort-tracker-table">
+                    <thead>
+                      <tr>
+                        <th>{t('cohortTracker.learner')}</th>
+                        <th>{t('cohortTracker.certificate')}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {passedLearners.map((learner) => (
+                        <tr key={learner.id}>
+                          <td>
+                            <div className="learner-name">{learner.firstName} {learner.lastName}</div>
+                            <div className="learner-email">{learner.email || learner.username}</div>
+                          </td>
+                          <td>
+                            <button className="tracker-cert-btn" disabled>
+                              {t('cohortTracker.downloadCertificate')}
+                            </button>
+                            <span className="cert-coming-soon">{t('cohortTracker.comingSoon')}</span>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+            </div>
+          )}
         </>
+      )}
+
+      {reminderLearner && (
+        <ReminderModal
+          learner={reminderLearner}
+          courseTitle={cohort?.courseTitle || ''}
+          onClose={() => setReminderLearner(null)}
+        />
       )}
     </div>
   );

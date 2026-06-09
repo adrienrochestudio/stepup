@@ -146,6 +146,47 @@
   color: var(--color-text-muted);
 }
 
+.cohort-student-status {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 10px;
+}
+
+.cohort-student-status.status-never_connected {
+  background: rgba(122, 122, 56, 0.12);
+  color: #7a7a38;
+}
+
+.cohort-student-status.status-not_started {
+  background: rgba(250, 0, 63, 0.1);
+  color: #fa003f;
+}
+
+.cohort-student-status.status-in_progress {
+  background: rgba(110, 202, 204, 0.15);
+  color: #3a8b8d;
+}
+
+.cohort-student-status.status-completed {
+  background: rgba(61, 71, 18, 0.1);
+  color: #3d4712;
+}
+
+.cohort-status-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.cohort-mini-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+}
+
 .cohort-empty {
   color: var(--color-text-muted);
   font-size: 0.82rem;

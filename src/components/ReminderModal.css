@@ -1,0 +1,124 @@
+.reminder-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100;
+}
+
+.reminder-modal {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 520px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.reminder-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.reminder-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--color-kaki, #3d4712);
+}
+
+.reminder-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.reminder-lang-row {
+  margin-bottom: 1rem;
+}
+
+.reminder-lang-row label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.reminder-lang-options {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.reminder-lang-btn {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #f8f9fa;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.reminder-lang-btn.active {
+  background: var(--color-kaki, #3d4712);
+  color: var(--color-white, #fff);
+  border-color: #3d4712;
+}
+
+.reminder-message {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  resize: vertical;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.reminder-send-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--color-kaki, #3d4712);
+  color: var(--color-white, #fff);
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.reminder-send-btn:hover {
+  background: #2e3510;
+}
+
+.reminder-sent {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.reminder-sent-icon {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-pomme, #bdc609);
+  color: var(--color-white, #fff);
+  font-size: 1.5rem;
+  line-height: 48px;
+  margin-bottom: 1rem;
+}
+
+.reminder-sent p {
+  color: var(--color-kaki, #3d4712);
+  font-weight: 600;
+}

@@ -103,3 +103,171 @@
 .cohort-modal-submit:hover {
   background: #2e3510;
 }
+
+.cohort-modal-wide {
+  max-width: 640px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.cohort-name-preview {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  background: var(--color-bg);
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  margin-bottom: 0.35rem;
+}
+
+.cohort-name-full {
+  font-size: 0.8rem;
+  color: var(--color-kaki);
+  margin-top: 0.25rem;
+}
+
+.cohort-promo-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.cohort-promo-row input {
+  flex: 1;
+}
+
+.cohort-promo-btn {
+  padding: 0.575rem 1rem;
+  background: var(--color-kaki);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background var(--transition-fast);
+}
+
+.cohort-promo-btn:hover {
+  background: #2e3510;
+}
+
+.cohort-promo-success {
+  background: rgba(61, 71, 18, 0.06);
+  border: 1px solid rgba(61, 71, 18, 0.2);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem;
+  margin-top: 0.35rem;
+  font-size: 0.82rem;
+  color: #3d4712;
+}
+
+.cohort-promo-success ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.cohort-promo-error {
+  color: #fa003f;
+  font-size: 0.82rem;
+  margin-top: 0.25rem;
+}
+
+.cohort-import-hint {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.cohort-import-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.cohort-import-template-btn,
+.cohort-import-btn {
+  padding: 0.5rem 0.875rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.cohort-import-template-btn {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.cohort-import-template-btn:hover {
+  border-color: var(--color-kaki);
+}
+
+.cohort-import-btn {
+  background: var(--color-pomme);
+  border: none;
+  color: #3d4712;
+  font-weight: 700;
+}
+
+.cohort-import-btn:hover {
+  filter: brightness(0.95);
+}
+
+.cohort-import-error {
+  color: #fa003f;
+  font-size: 0.82rem;
+  margin-top: 0.25rem;
+}
+
+.cohort-import-preview-wrap {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  margin-top: 0.5rem;
+}
+
+.cohort-import-preview {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.cohort-import-preview th {
+  background: var(--color-bg);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+}
+
+.cohort-import-preview td {
+  padding: 0.4rem 0.75rem;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.cohort-import-preview code {
+  background: var(--color-bg);
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.78rem;
+}
+
+.cohort-import-email-notice {
+  background: rgba(110, 202, 204, 0.1);
+  border: 1px solid rgba(110, 202, 204, 0.3);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  font-size: 0.82rem;
+  color: #3d4712;
+}

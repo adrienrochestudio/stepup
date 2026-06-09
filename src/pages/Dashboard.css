@@ -19,6 +19,34 @@
   font-size: 0.9rem;
 }
 
+.dashboard-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-tab {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.dashboard-tab:hover {
+  color: var(--color-text);
+}
+
+.dashboard-tab.active {
+  color: var(--color-kaki);
+  border-bottom-color: var(--color-kaki);
+}
+
 .dashboard-cohort-section {
   margin-bottom: 2.5rem;
 }
