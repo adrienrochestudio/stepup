@@ -28,7 +28,7 @@ export const initialCohorts = [
       { id: 's4', firstName: 'David', lastName: 'Laurent', username: 'davidlaurent', email: 'david@example.com', enrolledAt: '2025-07-15', status: 'never_connected', lastLogin: null },
       { id: 's5', firstName: 'Emma', lastName: 'Petit', username: 'emmapetit', email: 'emma@example.com', enrolledAt: '2025-07-20', status: 'in_progress', lastLogin: '2025-11-28T13:45:00' },
     ],
-    status: 'upcoming',
+    status: 'active',
   },
   {
     id: 'cohort-3',

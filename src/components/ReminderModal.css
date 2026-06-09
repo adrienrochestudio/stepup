@@ -38,6 +38,35 @@
   color: #666;
 }
 
+.reminder-email-info {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.reminder-email-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.reminder-email-row + .reminder-email-row {
+  margin-top: 0.35rem;
+}
+
+.reminder-email-label {
+  font-weight: 600;
+  color: #555;
+  min-width: 30px;
+}
+
+.reminder-email-value {
+  color: var(--color-text, #333);
+}
+
 .reminder-lang-row {
   margin-bottom: 1rem;
 }

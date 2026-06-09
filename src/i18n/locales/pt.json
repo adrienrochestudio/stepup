@@ -203,11 +203,15 @@
     "certificate": "Certificado",
     "downloadCertificate": "Transferir",
     "comingSoon": "Brevemente",
-    "noCertificates": "Nenhum formando concluiu o curso ainda."
+    "noCertificates": "Nenhum formando concluiu o curso ainda.",
+    "bulkReminder": "Lembrar os {{count}} formandos que não concluíram",
+    "bulkReminderSent": "Lembretes enviados!"
   },
   "reminder": {
     "title": "Lembrete para {{name}}",
     "language": "Língua da mensagem",
+    "from": "De:",
+    "to": "Para:",
     "send": "Enviar lembrete",
     "sent": "Lembrete enviado com sucesso!"
   },

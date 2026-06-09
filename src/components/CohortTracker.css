@@ -59,11 +59,11 @@
 }
 
 .tracker-stat-value.status-in_progress {
-  color: #6ecacc;
+  color: #888;
 }
 
 .tracker-stat-value.status-completed {
-  color: #3d4712;
+  color: #bdc609;
 }
 
 .tracker-stat-label {
@@ -196,13 +196,13 @@
 }
 
 .tracker-status-badge.status-in_progress {
-  background: rgba(110, 202, 204, 0.15);
-  color: #3a8b8d;
+  background: rgba(136, 136, 136, 0.12);
+  color: #666;
 }
 
 .tracker-status-badge.status-completed {
-  background: rgba(61, 71, 18, 0.1);
-  color: #3d4712;
+  background: rgba(189, 198, 9, 0.15);
+  color: #8a9107;
 }
 
 .tracker-last-login {
@@ -242,6 +242,28 @@
 .cohort-tracker-actions {
   display: flex;
   justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.tracker-bulk-reminder-btn {
+  padding: 0.5rem 1rem;
+  background: var(--color-kaki);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.tracker-bulk-reminder-btn:hover {
+  background: #2e3510;
+}
+
+.tracker-bulk-reminder-btn:disabled {
+  background: var(--color-pomme);
+  cursor: default;
 }
 
 .tracker-export-btn {

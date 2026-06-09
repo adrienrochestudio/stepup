@@ -21,10 +21,6 @@ export default function CohortCard({ cohort }) {
         </div>
 
         <div className="cohort-card-meta">
-          <span className={`cohort-badge cohort-badge-${cohort.status}`}>
-            {cohort.status}
-          </span>
-
           <div className="cohort-capacity">
             <div className="cohort-capacity-text">
               {cohort.enrolledStudents.length}/{cohort.maxStudents}

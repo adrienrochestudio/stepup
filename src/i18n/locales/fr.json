@@ -203,11 +203,15 @@
     "certificate": "Certificat",
     "downloadCertificate": "Télécharger",
     "comingSoon": "Bientôt disponible",
-    "noCertificates": "Aucun apprenant n'a encore validé le cours."
+    "noCertificates": "Aucun apprenant n'a encore validé le cours.",
+    "bulkReminder": "Relancer les {{count}} apprenants n'ayant pas validé",
+    "bulkReminderSent": "Relances envoyées !"
   },
   "reminder": {
     "title": "Relance pour {{name}}",
     "language": "Langue du message",
+    "from": "De :",
+    "to": "À :",
     "send": "Envoyer la relance",
     "sent": "Relance envoyée avec succès !"
   },

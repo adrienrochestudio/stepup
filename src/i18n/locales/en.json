@@ -203,11 +203,15 @@
     "certificate": "Certificate",
     "downloadCertificate": "Download",
     "comingSoon": "Coming soon",
-    "noCertificates": "No learner has completed the course yet."
+    "noCertificates": "No learner has completed the course yet.",
+    "bulkReminder": "Remind {{count}} learners who haven't completed",
+    "bulkReminderSent": "Reminders sent!"
   },
   "reminder": {
     "title": "Reminder for {{name}}",
     "language": "Message language",
+    "from": "From:",
+    "to": "To:",
     "send": "Send reminder",
     "sent": "Reminder sent successfully!"
   },

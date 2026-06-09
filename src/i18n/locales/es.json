@@ -190,11 +190,15 @@
     "certificate": "Certificado",
     "downloadCertificate": "Descargar",
     "comingSoon": "Próximamente",
-    "noCertificates": "Ningún alumno ha completado el curso todavía."
+    "noCertificates": "Ningún alumno ha completado el curso todavía.",
+    "bulkReminder": "Recordar a los {{count}} alumnos que no han completado",
+    "bulkReminderSent": "¡Recordatorios enviados!"
   },
   "reminder": {
     "title": "Recordatorio para {{name}}",
     "language": "Idioma del mensaje",
+    "from": "De:",
+    "to": "A:",
     "send": "Enviar recordatorio",
     "sent": "¡Recordatorio enviado con éxito!"
   },

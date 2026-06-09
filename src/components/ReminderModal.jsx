@@ -13,6 +13,7 @@ export default function ReminderModal({ learner, courseTitle, onClose }) {
   const { t } = useTranslation();
   const [lang, setLang] = useState('fr');
   const learnerName = `${learner.firstName} ${learner.lastName}`;
+  const recipientEmail = learner.email || `${learner.username}@pending`;
   const [message, setMessage] = useState(reminderTemplates.fr(learnerName, courseTitle));
   const [sent, setSent] = useState(false);
 
@@ -23,7 +24,8 @@ export default function ReminderModal({ learner, courseTitle, onClose }) {
 
   const handleSend = () => {
     console.log('[StepUP] Reminder email:', {
-      to: learner.email || `${learner.username}@pending`,
+      from: 'stepup@ecoprod.com',
+      to: recipientEmail,
       lang,
       message,
     });
@@ -45,6 +47,17 @@ export default function ReminderModal({ learner, courseTitle, onClose }) {
           </div>
         ) : (
           <>
+            <div className="reminder-email-info">
+              <div className="reminder-email-row">
+                <span className="reminder-email-label">{t('reminder.from')}</span>
+                <span className="reminder-email-value">stepup@ecoprod.com</span>
+              </div>
+              <div className="reminder-email-row">
+                <span className="reminder-email-label">{t('reminder.to')}</span>
+                <span className="reminder-email-value">{recipientEmail}</span>
+              </div>
+            </div>
+
             <div className="reminder-lang-row">
               <label>{t('reminder.language')}</label>
               <div className="reminder-lang-options">

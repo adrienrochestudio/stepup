@@ -203,11 +203,15 @@
     "certificate": "Zertifikat",
     "downloadCertificate": "Herunterladen",
     "comingSoon": "Demnächst verfügbar",
-    "noCertificates": "Noch kein Lernender hat den Kurs abgeschlossen."
+    "noCertificates": "Noch kein Lernender hat den Kurs abgeschlossen.",
+    "bulkReminder": "{{count}} Lernende erinnern, die noch nicht abgeschlossen haben",
+    "bulkReminderSent": "Erinnerungen gesendet!"
   },
   "reminder": {
     "title": "Erinnerung für {{name}}",
     "language": "Nachrichtensprache",
+    "from": "Von:",
+    "to": "An:",
     "send": "Erinnerung senden",
     "sent": "Erinnerung erfolgreich gesendet!"
   },

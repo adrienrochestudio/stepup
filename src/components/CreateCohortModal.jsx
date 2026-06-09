@@ -129,7 +129,7 @@ export default function CreateCohortModal({ onClose, onCreate }) {
       maxStudents: parseInt(maxStudents, 10),
       promoCode: promoResult ? promoCode.toUpperCase() : '',
       enrolledStudents,
-      status: 'upcoming',
+      status: 'active',
     };
 
     if (enrolledStudents.length > 0) {

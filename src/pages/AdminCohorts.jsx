@@ -20,9 +20,6 @@ export default function AdminCohorts() {
     <div className="admin-cohorts">
       <div className="admin-cohorts-header">
         <h1>{t('admin.title')}</h1>
-        <button className="admin-create-btn" onClick={() => setShowModal(true)}>
-          {t('admin.createCohort')}
-        </button>
       </div>
 
       <div className="admin-view-tabs">
@@ -42,6 +39,11 @@ export default function AdminCohorts() {
 
       {activeView === 'cohorts' && (
         <div className="admin-cohorts-list">
+          <div className="admin-cohorts-list-header">
+            <button className="admin-create-btn" onClick={() => setShowModal(true)}>
+              {t('admin.createCohort')}
+            </button>
+          </div>
           {cohorts.length > 0 ? (
             cohorts.map((cohort) => (
               <CohortCard key={cohort.id} cohort={cohort} />

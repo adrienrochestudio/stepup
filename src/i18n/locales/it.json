@@ -203,11 +203,15 @@
     "certificate": "Certificato",
     "downloadCertificate": "Scarica",
     "comingSoon": "Prossimamente",
-    "noCertificates": "Nessun partecipante ha ancora completato il corso."
+    "noCertificates": "Nessun partecipante ha ancora completato il corso.",
+    "bulkReminder": "Sollecita i {{count}} partecipanti che non hanno completato",
+    "bulkReminderSent": "Solleciti inviati!"
   },
   "reminder": {
     "title": "Promemoria per {{name}}",
     "language": "Lingua del messaggio",
+    "from": "Da:",
+    "to": "A:",
     "send": "Invia promemoria",
     "sent": "Promemoria inviato con successo!"
   },

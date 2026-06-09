@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 import CourseCard from '../components/CourseCard';
 import EnrollModal from '../components/EnrollModal';
@@ -10,11 +9,7 @@ import './Dashboard.css';
 export default function Dashboard() {
   const { user } = useAuth();
   const { t } = useTranslation();
-  const navigate = useNavigate();
   const [enrollCourse, setEnrollCourse] = useState(null);
-  const [activeTab, setActiveTab] = useState('courses');
-
-  const isCohortManager = user?.role === 'cohort_manager';
   const enrolled = getEnrolledCourses(mockEnrollments);
 
   const courses = allCourses.map((course) => {
@@ -40,22 +35,6 @@ export default function Dashboard() {
         <p>{t('dashboard.welcome', { name: user?.displayName || user?.email || 'Learner' })}</p>
       </div>
 
-      {isCohortManager && (
-        <div className="dashboard-tabs">
-          <button
-            className={`dashboard-tab ${activeTab === 'courses' ? 'active' : ''}`}
-            onClick={() => setActiveTab('courses')}
-          >
-            {t('dashboard.myCourses')}
-          </button>
-          <button
-            className={`dashboard-tab ${activeTab === 'management' ? 'active' : ''}`}
-            onClick={() => { setActiveTab('management'); navigate('/admin/cohorts'); }}
-          >
-            {t('dashboard.titleManager')}
-          </button>
-        </div>
-      )}
 
       <div className="dashboard-grid">
         {courses.map((course) => (

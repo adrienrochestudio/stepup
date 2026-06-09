@@ -35,16 +35,25 @@ export default function CohortTracker({ cohorts }) {
   const [selectedCohort, setSelectedCohort] = useState(cohorts[0]?.id || '');
   const [activeTab, setActiveTab] = useState('tracking');
   const [reminderLearner, setReminderLearner] = useState(null);
+  const [bulkSent, setBulkSent] = useState(false);
 
   const cohort = cohorts.find((c) => c.id === selectedCohort);
   const learners = cohort?.enrolledStudents || [];
 
-  const stats = STATUS_ORDER.reduce((acc, s) => {
-    acc[s] = learners.filter((l) => l.status === s).length;
-    return acc;
-  }, {});
-
   const passedLearners = learners.filter((l) => l.status === 'completed');
+  const notCompletedLearners = learners.filter((l) => l.status !== 'completed');
+
+  const handleBulkReminder = () => {
+    notCompletedLearners.forEach((learner) => {
+      console.log('[StepUP] Bulk reminder email:', {
+        from: 'stepup@ecoprod.com',
+        to: learner.email || `${learner.username}@pending`,
+        course: cohort?.courseTitle,
+      });
+    });
+    setBulkSent(true);
+    setTimeout(() => setBulkSent(false), 3000);
+  };
 
   const handleExport = () => {
     const data = learners.map((l) => ({
@@ -79,30 +88,6 @@ export default function CohortTracker({ cohorts }) {
 
       {cohort && (
         <>
-          <div className="cohort-tracker-stats">
-            <div className="tracker-stat">
-              <span className="tracker-stat-value">{learners.length}</span>
-              <span className="tracker-stat-label">{t('cohortTracker.totalLearners')}</span>
-            </div>
-            <div className="tracker-stat">
-              <span className="tracker-stat-value status-never_connected">{stats.never_connected}</span>
-              <span className="tracker-stat-label">{t('cohortTracker.statusNeverConnected')}</span>
-            </div>
-            <div className="tracker-stat">
-              <span className="tracker-stat-value status-not_started">{stats.not_started}</span>
-              <span className="tracker-stat-label">{t('cohortTracker.statusNotStarted')}</span>
-            </div>
-            <div className="tracker-stat">
-              <span className="tracker-stat-value status-in_progress">{stats.in_progress}</span>
-              <span className="tracker-stat-label">{t('cohortTracker.statusInProgress')}</span>
-            </div>
-            <div className="tracker-stat">
-              <span className="tracker-stat-value status-completed">{stats.completed}</span>
-              <span className="tracker-stat-label">{t('cohortTracker.statusCompleted')}</span>
-            </div>
-          </div>
-
-          {/* Tabs */}
           <div className="cohort-tracker-tabs">
             <button
               className={`tracker-tab ${activeTab === 'tracking' ? 'active' : ''}`}
@@ -121,6 +106,15 @@ export default function CohortTracker({ cohorts }) {
           {activeTab === 'tracking' && (
             <>
               <div className="cohort-tracker-actions">
+                {notCompletedLearners.length > 0 && (
+                  <button
+                    className="tracker-bulk-reminder-btn"
+                    onClick={handleBulkReminder}
+                    disabled={bulkSent}
+                  >
+                    {bulkSent ? t('cohortTracker.bulkReminderSent') : t('cohortTracker.bulkReminder', { count: notCompletedLearners.length })}
+                  </button>
+                )}
                 <button className="tracker-export-btn" onClick={handleExport}>
                   {t('cohortTracker.exportData')}
                 </button>

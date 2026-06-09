@@ -70,6 +70,12 @@
   gap: 0.75rem;
 }
 
+.admin-cohorts-list-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.75rem;
+}
+
 .admin-cohorts-empty {
   text-align: center;
   padding: 3rem;
