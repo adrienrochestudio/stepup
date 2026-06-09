@@ -48,24 +48,28 @@
     }
   },
   "map": {
-    "searchPlaceholder": "Rechercher un pays ou une ville...",
-    "region": "Région",
-    "tabs": {
-      "explore": "Explorer les données",
-      "target": "Cibler des territoires",
-      "scenarios": "Scénarios",
-      "select": "Sélectionner une donnée"
-    }
+    "searchPlaceholder": "Rechercher un pays...",
+    "noResults": "Aucun pays trouvé. Vérifiez l'orthographe.",
+    "clickHint": "Cliquez sur un pays en vert pour voir ses ressources.",
+    "addInfo": "Proposer une ressource",
+    "selectAll": "Tout sélectionner",
+    "clearAll": "Tout effacer",
+    "noData": "Aucune donnée disponible pour ce pays pour le moment.",
+    "legendData": "Ressources disponibles",
+    "legendNoData": "Pas encore de données",
+    "categories": {
+      "generalInfo": "Informations générales",
+      "sustainability": "Durabilité & logistique",
+      "resources": "Ressources"
+    },
+    "loadError": "Impossible de charger la carte. Vérifiez votre connexion."
   },
   "webinars": {
     "title": "Webinaires",
     "searchPlaceholder": "Rechercher un webinaire...",
     "noResults": "Aucun webinaire trouvé.",
     "videoNotConfigured": "URL de la vidéo non configurée",
-    "allInEnglish": "Tous les webinaires sont en anglais. Pour des ressources dans d'autres langues, consultez la",
-    "seeMap": "carte",
-    "andThe": "et les",
-    "seeCourses": "cours"
+    "intro": "Tous les webinaires sont en anglais. Pour des ressources dans d'autres langues, consultez la <map>carte</map> et les <courses>cours</courses>."
   },
   "login": {
     "titleLogin": "Content de vous revoir",
@@ -94,7 +98,7 @@
     "username": "Nom d'utilisateur",
     "usernamePlaceholder": "Généré automatiquement à partir de votre nom",
     "country": "Pays",
-    "countryPlaceholder": "ex : France",
+    "countryPlaceholder": "Sélectionnez votre pays",
     "company": "Société (optionnel)",
     "companyPlaceholder": "ex : Mon Studio de Production"
   },

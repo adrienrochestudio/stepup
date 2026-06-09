@@ -22,7 +22,7 @@ export default function CourseCard({ course, enrolled, onEnrollClick }) {
           ) : (
             <span className="course-card-badge badge-price">{course.price} &euro;</span>
           )}
-          <span className="course-card-lock-icon">&#128274;</span>
+          {!course.free && <span className="course-card-lock-icon">&#128274;</span>}
         </div>
         <div className="course-card-body">
           <h3>{title}</h3>
@@ -30,12 +30,18 @@ export default function CourseCard({ course, enrolled, onEnrollClick }) {
           <div className="course-card-meta">
             <span>{course.duration}</span>
           </div>
-          <button
-            className="course-card-cta enroll"
-            onClick={() => onEnrollClick?.(course)}
-          >
-            {t('courseCard.cta.enroll')}
-          </button>
+          {course.free ? (
+            <Link to={`/course/${course.id}`} className="course-card-cta enroll">
+              {t('courseCard.cta.not_started')}
+            </Link>
+          ) : (
+            <button
+              className="course-card-cta enroll"
+              onClick={() => onEnrollClick?.(course)}
+            >
+              {t('courseCard.cta.enroll')}
+            </button>
+          )}
         </div>
       </div>
     );

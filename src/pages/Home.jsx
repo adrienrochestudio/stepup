@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../hooks/useAuth';
 import { allCourses } from '../data/mockCourses';
@@ -13,6 +13,7 @@ function getEcoprodUrl(lang) {
 export default function Home() {
   const { t, i18n } = useTranslation();
   const { user } = useAuth();
+  const navigate = useNavigate();
   const [enrollCourse, setEnrollCourse] = useState(null);
   const [partnerPopup, setPartnerPopup] = useState(null);
 
@@ -21,11 +22,15 @@ export default function Home() {
   const otherCourses = allCourses.slice(0, -1);
 
   const handleCourseClick = (course) => {
-    if (user) {
-      setEnrollCourse(course);
-    } else {
-      window.location.href = '/login';
+    if (!user) {
+      navigate('/login');
+      return;
     }
+    if (course.free) {
+      navigate(`/course/${course.id}`);
+      return;
+    }
+    setEnrollCourse(course);
   };
 
   return (

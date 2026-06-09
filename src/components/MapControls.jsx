@@ -1,12 +1,11 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import { countryData, categoryKeys } from '../data/countryData';
 import './MapControls.css';
 
-const CATEGORY_LABELS = {
-  generalInfo: 'General Information',
-  sustainability: 'Sustainability & Logistics',
-  resources: 'Resources',
-};
+const ALL_COUNTRIES = Object.entries(countryData)
+  .map(([key, val]) => ({ key, name: val.name }))
+  .sort((a, b) => a.name.localeCompare(b.name));
 
 function getSubcategories(catKey) {
   const france = countryData.France;
@@ -24,12 +23,35 @@ export default function MapControls({
   onToggleFilter,
   onToggleAllCategory,
 }) {
+  const { t } = useTranslation();
   const [searchValue, setSearchValue] = useState('');
   const [expandedCategory, setExpandedCategory] = useState(null);
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const [noResult, setNoResult] = useState(false);
+
+  const suggestions = useMemo(() => {
+    const q = searchValue.trim().toLowerCase();
+    if (!q) return [];
+    return ALL_COUNTRIES.filter(
+      (c) =>
+        c.name.toLowerCase().includes(q) || c.key.toLowerCase().includes(q),
+    ).slice(0, 6);
+  }, [searchValue]);
+
+  const runSearch = (query) => {
+    const found = onSearch ? onSearch(query) : false;
+    setNoResult(!found);
+    setShowSuggestions(false);
+  };
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    if (onSearch) onSearch(searchValue);
+    if (searchValue.trim()) runSearch(searchValue);
+  };
+
+  const handleSuggestionClick = (country) => {
+    setSearchValue(country.name);
+    runSearch(country.name);
   };
 
   const toggleExpand = (catKey) => {
@@ -53,17 +75,41 @@ export default function MapControls({
   return (
     <div className="map-controls">
       <div className="map-controls-bar">
-        <form className="map-search" onSubmit={handleSearchSubmit}>
+        <form className="map-search" onSubmit={handleSearchSubmit} autoComplete="off">
           <svg className="map-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <circle cx="11" cy="11" r="8" />
             <path d="m21 21-4.35-4.35" />
           </svg>
           <input
             type="text"
-            placeholder="Search a country..."
+            placeholder={t('map.searchPlaceholder')}
             value={searchValue}
-            onChange={(e) => setSearchValue(e.target.value)}
+            onChange={(e) => {
+              setSearchValue(e.target.value);
+              setShowSuggestions(true);
+              setNoResult(false);
+            }}
+            onFocus={() => searchValue.trim() && setShowSuggestions(true)}
+            onBlur={() => setTimeout(() => setShowSuggestions(false), 120)}
           />
+          {showSuggestions && suggestions.length > 0 && (
+            <ul className="map-search-suggestions">
+              {suggestions.map((c) => (
+                <li key={c.key}>
+                  <button
+                    type="button"
+                    onMouseDown={(e) => e.preventDefault()}
+                    onClick={() => handleSuggestionClick(c)}
+                  >
+                    {c.name}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
+          {noResult && (
+            <span className="map-search-noresult">{t('map.noResults')}</span>
+          )}
         </form>
 
         <div className="map-category-tabs">
@@ -77,7 +123,7 @@ export default function MapControls({
                 className={`map-category-tab ${hasActive ? 'active' : ''} ${isExpanded ? 'expanded' : ''}`}
                 onClick={() => toggleExpand(catKey)}
               >
-                {CATEGORY_LABELS[catKey]}
+                {t(`map.categories.${catKey}`)}
                 {hasActive && (
                   <span className="tab-count">
                     {expandedSubs.length > 0 && expandedCategory === catKey
@@ -105,7 +151,7 @@ export default function MapControls({
               className="map-clear-filters"
               onClick={() => onToggleAllCategory(null)}
             >
-              Clear all
+              {t('map.clearAll')}
             </button>
           )}
         </div>
@@ -119,7 +165,7 @@ export default function MapControls({
               checked={allCategoryActive(expandedCategory)}
               onChange={() => onToggleAllCategory(expandedCategory)}
             />
-            <span>Select all</span>
+            <span>{t('map.selectAll')}</span>
           </label>
           <div className="map-panel-subs">
             {expandedSubs.map((sub) => {

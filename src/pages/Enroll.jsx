@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { allCourses } from '../data/mockCourses';
 import { apiFetch } from '../services/api';
@@ -8,6 +8,7 @@ import './Enroll.css';
 
 export default function Enroll() {
   const { courseId } = useParams();
+  const navigate = useNavigate();
   const { t } = useTranslation();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -24,7 +25,7 @@ export default function Enroll() {
 
     try {
       if (!isStripeConfigured) {
-        window.location.href = `/enroll/${courseId}/success?mock=true`;
+        navigate(`/enroll/${courseId}/success?mock=true`);
         return;
       }
 
@@ -61,7 +62,7 @@ export default function Enroll() {
 
           <div className="enroll-price">
             <span className="enroll-price-amount">{course.price}</span>
-            <span className="enroll-price-currency"> EUR</span>
+            <span className="enroll-price-currency"> €</span>
           </div>
 
           <button className="enroll-cta" onClick={handleCheckout} disabled={loading}>

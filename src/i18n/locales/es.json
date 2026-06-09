@@ -45,24 +45,28 @@
     }
   },
   "map": {
-    "searchPlaceholder": "Buscar país o ciudad...",
-    "region": "Región",
-    "tabs": {
-      "explore": "Explorar datos",
-      "target": "Seleccionar territorios",
-      "scenarios": "Escenarios",
-      "select": "Seleccionar datos"
-    }
+    "searchPlaceholder": "Buscar un país...",
+    "noResults": "No se encontró ningún país. Comprueba la ortografía.",
+    "clickHint": "Haz clic en un país en verde para ver sus recursos.",
+    "addInfo": "Proponer un recurso",
+    "selectAll": "Seleccionar todo",
+    "clearAll": "Borrar todo",
+    "noData": "Aún no hay datos disponibles para este país.",
+    "legendData": "Recursos disponibles",
+    "legendNoData": "Sin datos todavía",
+    "categories": {
+      "generalInfo": "Información general",
+      "sustainability": "Sostenibilidad y logística",
+      "resources": "Recursos"
+    },
+    "loadError": "No se pudo cargar el mapa. Comprueba tu conexión."
   },
   "webinars": {
     "title": "Webinarios",
     "searchPlaceholder": "Buscar webinarios...",
     "noResults": "No se encontraron webinarios.",
     "videoNotConfigured": "URL del vídeo no configurada",
-    "allInEnglish": "Todos los webinarios están en inglés. Para recursos en otros idiomas, consulta el",
-    "seeMap": "mapa",
-    "andThe": "y los",
-    "seeCourses": "cursos"
+    "intro": "Todos los webinarios están en inglés. Para recursos en otros idiomas, consulta el <map>mapa</map> y los <courses>cursos</courses>."
   },
   "login": {
     "titleLogin": "Bienvenido de nuevo",
@@ -83,7 +87,15 @@
     "roleLearner": "Alumno",
     "roleCohortManager": "Gestor de cohorte",
     "organizationName": "Nombre de la organización",
-    "organizationNamePlaceholder": "ej.: Mi Estudio de Producción"
+    "organizationNamePlaceholder": "ej.: Mi Estudio de Producción",
+    "firstName": "Nombre",
+    "firstNamePlaceholder": "María",
+    "lastName": "Apellido",
+    "lastNamePlaceholder": "García",
+    "country": "País",
+    "countryPlaceholder": "Selecciona tu país",
+    "company": "Empresa (opcional)",
+    "companyPlaceholder": "ej.: Mi Estudio de Producción"
   },
   "dashboard": {
     "title": "Mis cursos",

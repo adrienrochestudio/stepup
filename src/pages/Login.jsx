@@ -3,7 +3,12 @@ import { useNavigate, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../hooks/useAuth';
 import { isConfigured } from '../services/firebase';
+import { countryData } from '../data/countryData';
 import './Login.css';
+
+const COUNTRY_OPTIONS = [
+  ...new Set(Object.values(countryData).map((c) => c.name)),
+].sort((a, b) => a.localeCompare(b));
 
 export default function Login() {
   const { user, login, signup } = useAuth();
@@ -16,10 +21,18 @@ export default function Login() {
   const [password, setPassword] = useState('');
   const [country, setCountry] = useState('');
   const [company, setCompany] = useState('');
-  const [role, setRole] = useState('learner');
   const [organizationName, setOrganizationName] = useState('');
   const [error, setError] = useState('');
   const [submitting, setSubmitting] = useState(false);
+
+  // Learners never choose a role. Cohort managers are provisioned via the
+  // back-office; in dev mode they can be simulated with ?role=cohort_manager.
+  const params = new URLSearchParams(window.location.search);
+  const role =
+    !isConfigured && params.get('role') === 'cohort_manager'
+      ? 'cohort_manager'
+      : 'learner';
+  const isManagerSignup = role === 'cohort_manager';
 
   if (user) return <Navigate to="/dashboard" replace />;
 
@@ -84,18 +97,6 @@ export default function Login() {
                   />
                 </div>
               </div>
-
-              <div className="login-field">
-                <label htmlFor="username">{t('login.username')}</label>
-                <input
-                  id="username"
-                  type="text"
-                  value={firstName && lastName ? `${firstName} ${lastName}` : ''}
-                  readOnly
-                  className="login-field-readonly"
-                  placeholder={t('login.usernamePlaceholder')}
-                />
-              </div>
             </>
           )}
 
@@ -128,14 +129,21 @@ export default function Login() {
             <>
               <div className="login-field">
                 <label htmlFor="country">{t('login.country')}</label>
-                <input
+                <select
                   id="country"
-                  type="text"
                   value={country}
                   onChange={(e) => setCountry(e.target.value)}
-                  placeholder={t('login.countryPlaceholder')}
                   required
-                />
+                >
+                  <option value="" disabled>
+                    {t('login.countryPlaceholder')}
+                  </option>
+                  {COUNTRY_OPTIONS.map((c) => (
+                    <option key={c} value={c}>
+                      {c}
+                    </option>
+                  ))}
+                </select>
               </div>
               <div className="login-field">
                 <label htmlFor="company">{t('login.company')}</label>
@@ -150,29 +158,7 @@ export default function Login() {
             </>
           )}
 
-          {!isConfigured && (
-            <div className="login-role-selector">
-              <label>{t('login.profile')}</label>
-              <div className="login-role-options">
-                <button
-                  type="button"
-                  className={`login-role-btn ${role === 'learner' ? 'active' : ''}`}
-                  onClick={() => setRole('learner')}
-                >
-                  {t('login.roleLearner')}
-                </button>
-                <button
-                  type="button"
-                  className={`login-role-btn ${role === 'cohort_manager' ? 'active' : ''}`}
-                  onClick={() => setRole('cohort_manager')}
-                >
-                  {t('login.roleCohortManager')}
-                </button>
-              </div>
-            </div>
-          )}
-
-          {isSignup && role === 'cohort_manager' && (
+          {isSignup && isManagerSignup && (
             <div className="login-field">
               <label htmlFor="organizationName">{t('login.organizationName')}</label>
               <input

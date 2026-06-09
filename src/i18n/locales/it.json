@@ -48,24 +48,28 @@
     }
   },
   "map": {
-    "searchPlaceholder": "Cerca paese o città...",
-    "region": "Regione",
-    "tabs": {
-      "explore": "Esplora i dati",
-      "target": "Seleziona territori",
-      "scenarios": "Scenari",
-      "select": "Seleziona dati"
-    }
+    "searchPlaceholder": "Cerca un paese...",
+    "noResults": "Nessun paese trovato. Controlla l'ortografia.",
+    "clickHint": "Clicca su un paese in verde per vedere le sue risorse.",
+    "addInfo": "Proponi una risorsa",
+    "selectAll": "Seleziona tutto",
+    "clearAll": "Cancella tutto",
+    "noData": "Nessun dato disponibile per questo paese al momento.",
+    "legendData": "Risorse disponibili",
+    "legendNoData": "Ancora nessun dato",
+    "categories": {
+      "generalInfo": "Informazioni generali",
+      "sustainability": "Sostenibilità e logistica",
+      "resources": "Risorse"
+    },
+    "loadError": "Impossibile caricare la mappa. Controlla la connessione."
   },
   "webinars": {
     "title": "Webinar",
     "searchPlaceholder": "Cerca webinar...",
     "noResults": "Nessun webinar trovato.",
     "videoNotConfigured": "URL del video non configurato",
-    "allInEnglish": "Tutti i webinar sono in inglese. Per risorse in altre lingue, consulta la",
-    "seeMap": "mappa",
-    "andThe": "e i",
-    "seeCourses": "corsi"
+    "intro": "Tutti i webinar sono in inglese. Per risorse in altre lingue, consulta la <map>mappa</map> e i <courses>corsi</courses>."
   },
   "login": {
     "titleLogin": "Bentornato",
@@ -94,7 +98,7 @@
     "username": "Nome utente",
     "usernamePlaceholder": "Generato automaticamente dal tuo nome",
     "country": "Paese",
-    "countryPlaceholder": "es.: Italia",
+    "countryPlaceholder": "Seleziona il tuo paese",
     "company": "Azienda (opzionale)",
     "companyPlaceholder": "es.: Il mio studio di produzione"
   },

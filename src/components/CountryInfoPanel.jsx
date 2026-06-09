@@ -1,6 +1,9 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { getCountryData, getAvailableCategories, categoryKeys } from '../data/countryData';
 import './CountryInfoPanel.css';
+
+const CATEGORY_I18N_KEYS = ['generalInfo', 'sustainability', 'resources'];
 
 function renderContent(text) {
   if (!text) return null;
@@ -24,6 +27,7 @@ function renderContent(text) {
 }
 
 export default function CountryInfoPanel({ country, activeFilters, onClose }) {
+  const { t } = useTranslation();
   const [expandedSub, setExpandedSub] = useState(null);
   const [showCredit, setShowCredit] = useState(false);
   const data = getCountryData(country);
@@ -39,7 +43,7 @@ export default function CountryInfoPanel({ country, activeFilters, onClose }) {
             </button>
           </div>
           <p className="country-panel-empty">
-            No data available for this country yet.
+            {t('map.noData')}
           </p>
         </div>
       </div>
@@ -101,7 +105,11 @@ export default function CountryInfoPanel({ country, activeFilters, onClose }) {
 
             return (
               <div key={catKey} className="country-category">
-                <h3 className="country-category-title">{category.label}</h3>
+                <h3 className="country-category-title">
+                  {CATEGORY_I18N_KEYS.includes(catKey)
+                    ? t(`map.categories.${catKey}`)
+                    : category.label}
+                </h3>
                 <div className="country-subcategories">
                   {visibleSubs.map(([subKey, sub]) => {
                     const fullKey = `${catKey}.${subKey}`;

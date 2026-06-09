@@ -1,6 +1,8 @@
 import { useRef, useEffect, useState, useCallback, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import Globe from 'react-globe.gl';
 import { feature } from 'topojson-client';
+import { geoCentroid } from 'd3';
 import * as THREE from 'three';
 import { countryData } from '../data/countryData';
 import './GlobeView.css';
@@ -32,11 +34,13 @@ function hasData(feat) {
 }
 
 export default function GlobeView({ onCountryClick, selectedCountry }) {
+  const { t } = useTranslation();
   const globeRef = useRef();
   const containerRef = useRef();
   const [dimensions, setDimensions] = useState({ width: 800, height: 600 });
   const [countries, setCountries] = useState([]);
   const [hovered, setHovered] = useState(null);
+  const [loadError, setLoadError] = useState(false);
 
   const globeMaterial = useMemo(
     () => new THREE.MeshPhongMaterial({ color: COLOR_SEA, transparent: false }),
@@ -45,11 +49,15 @@ export default function GlobeView({ onCountryClick, selectedCountry }) {
 
   useEffect(() => {
     fetch('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json')
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) throw new Error('Failed to load map data');
+        return res.json();
+      })
       .then((topoData) => {
         const geoJson = feature(topoData, topoData.objects.countries);
         setCountries(geoJson.features);
-      });
+      })
+      .catch(() => setLoadError(true));
   }, []);
 
   useEffect(() => {
@@ -80,6 +88,20 @@ export default function GlobeView({ onCountryClick, selectedCountry }) {
 
     globe.pointOfView({ lat: 48, lng: 10, altitude: 1.1 }, 0);
   }, []);
+
+  // Fly to the selected country (works for both search and click)
+  useEffect(() => {
+    const globe = globeRef.current;
+    if (!globe || !selectedCountry || countries.length === 0) return;
+    const feat = countries.find(
+      (f) => resolveCountryName(f.properties.name || '') === selectedCountry,
+    );
+    if (!feat) return;
+    const [lng, lat] = geoCentroid(feat);
+    if (Number.isFinite(lat) && Number.isFinite(lng)) {
+      globe.pointOfView({ lat, lng, altitude: 1.0 }, 800);
+    }
+  }, [selectedCountry, countries]);
 
   const handleZoom = useCallback((dir) => {
     const globe = globeRef.current;
@@ -115,18 +137,7 @@ export default function GlobeView({ onCountryClick, selectedCountry }) {
     (feat) => {
       const name = resolveCountryName(feat.properties.name || '');
       if (onCountryClick) onCountryClick(name);
-
-      const globe = globeRef.current;
-      if (!globe) return;
-      const coords = feat.bbox
-        ? {
-            lat: (feat.bbox[1] + feat.bbox[3]) / 2,
-            lng: (feat.bbox[0] + feat.bbox[2]) / 2,
-          }
-        : null;
-      if (coords) {
-        globe.pointOfView({ ...coords, altitude: 1.0 }, 600);
-      }
+      // Recentering is handled by the selectedCountry effect above.
     },
     [onCountryClick],
   );
@@ -141,6 +152,12 @@ export default function GlobeView({ onCountryClick, selectedCountry }) {
 
   return (
     <div className="globe-container" ref={containerRef}>
+      {countries.length === 0 && (
+        <div className="globe-status">
+          {loadError ? t('map.loadError') : t('common.loading')}
+        </div>
+      )}
+
       <Globe
         ref={globeRef}
         width={dimensions.width}
@@ -163,6 +180,17 @@ export default function GlobeView({ onCountryClick, selectedCountry }) {
         onPolygonHover={handlePolygonHover}
         onPolygonClick={handlePolygonClick}
       />
+
+      <div className="globe-legend">
+        <span className="globe-legend-item">
+          <span className="globe-legend-swatch" style={{ background: COLOR_ACTIVE }} />
+          {t('map.legendData')}
+        </span>
+        <span className="globe-legend-item">
+          <span className="globe-legend-swatch" style={{ background: COLOR_INACTIVE }} />
+          {t('map.legendNoData')}
+        </span>
+      </div>
 
       <div className="globe-zoom-controls">
         <button onClick={() => handleZoom('in')} aria-label="Zoom in">

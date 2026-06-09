@@ -48,24 +48,28 @@
     }
   },
   "map": {
-    "searchPlaceholder": "Search country or city...",
-    "region": "Region",
-    "tabs": {
-      "explore": "Explore data",
-      "target": "Target territories",
-      "scenarios": "Scenarios",
-      "select": "Select data"
-    }
+    "searchPlaceholder": "Search a country...",
+    "noResults": "No country found. Check the spelling.",
+    "clickHint": "Click a country in green to see its resources.",
+    "addInfo": "Suggest a resource",
+    "selectAll": "Select all",
+    "clearAll": "Clear all",
+    "noData": "No data available for this country yet.",
+    "legendData": "Resources available",
+    "legendNoData": "No data yet",
+    "categories": {
+      "generalInfo": "General Information",
+      "sustainability": "Sustainability & Logistics",
+      "resources": "Resources"
+    },
+    "loadError": "Could not load the map. Check your connection."
   },
   "webinars": {
     "title": "Webinars",
     "searchPlaceholder": "Search webinars...",
     "noResults": "No webinars found.",
     "videoNotConfigured": "Video embed URL not configured",
-    "allInEnglish": "All webinars are in English. For resources in other languages, see the",
-    "seeMap": "map",
-    "andThe": "and the",
-    "seeCourses": "courses"
+    "intro": "All webinars are in English. For resources in other languages, see the <map>map</map> and the <courses>courses</courses>."
   },
   "login": {
     "titleLogin": "Welcome Back",
@@ -94,7 +98,7 @@
     "username": "Username",
     "usernamePlaceholder": "Auto-generated from your name",
     "country": "Country",
-    "countryPlaceholder": "e.g. France",
+    "countryPlaceholder": "Select your country",
     "company": "Company (optional)",
     "companyPlaceholder": "e.g. My Production Studio"
   },

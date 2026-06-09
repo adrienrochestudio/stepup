@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, NavLink, Outlet, useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../hooks/useAuth';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -14,9 +14,26 @@ export default function Layout() {
   const [menuOpen, setMenuOpen] = useState(false);
   const { user, logout } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
   const { t, i18n } = useTranslation();
 
   const currentLang = i18n.language?.substring(0, 2) || 'fr';
+
+  useEffect(() => {
+    const titles = {
+      '/': '',
+      '/resources/map': t('nav.map'),
+      '/resources/webinars': t('nav.webinars'),
+      '/login': t('nav.login'),
+      '/dashboard': t('nav.dashboard'),
+      '/admin/cohorts': t('admin.title'),
+      '/about/partners': t('nav.partners'),
+      '/terms': t('footer.terms'),
+      '/privacy': t('footer.privacy'),
+    };
+    const sub = titles[location.pathname];
+    document.title = sub ? `${sub} — StepUP` : 'StepUP';
+  }, [location.pathname, t]);
 
   const handleLogout = async () => {
     await logout();

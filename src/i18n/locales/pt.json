@@ -48,24 +48,28 @@
     }
   },
   "map": {
-    "searchPlaceholder": "Pesquisar país ou cidade...",
-    "region": "Região",
-    "tabs": {
-      "explore": "Explorar dados",
-      "target": "Selecionar territórios",
-      "scenarios": "Cenários",
-      "select": "Selecionar dados"
-    }
+    "searchPlaceholder": "Pesquisar um país...",
+    "noResults": "Nenhum país encontrado. Verifique a ortografia.",
+    "clickHint": "Clique num país a verde para ver os seus recursos.",
+    "addInfo": "Sugerir um recurso",
+    "selectAll": "Selecionar tudo",
+    "clearAll": "Limpar tudo",
+    "noData": "Ainda não há dados disponíveis para este país.",
+    "legendData": "Recursos disponíveis",
+    "legendNoData": "Sem dados ainda",
+    "categories": {
+      "generalInfo": "Informações gerais",
+      "sustainability": "Sustentabilidade e logística",
+      "resources": "Recursos"
+    },
+    "loadError": "Não foi possível carregar o mapa. Verifique a sua ligação."
   },
   "webinars": {
     "title": "Webinars",
     "searchPlaceholder": "Pesquisar webinars...",
     "noResults": "Nenhum webinar encontrado.",
     "videoNotConfigured": "URL do vídeo não configurado",
-    "allInEnglish": "Todos os webinars estão em inglês. Para recursos noutras línguas, consulte o",
-    "seeMap": "mapa",
-    "andThe": "e os",
-    "seeCourses": "cursos"
+    "intro": "Todos os webinars estão em inglês. Para recursos noutras línguas, consulte o <map>mapa</map> e os <courses>cursos</courses>."
   },
   "login": {
     "titleLogin": "Bem-vindo de volta",
@@ -94,7 +98,7 @@
     "username": "Nome de utilizador",
     "usernamePlaceholder": "Gerado automaticamente a partir do seu nome",
     "country": "País",
-    "countryPlaceholder": "ex.: Portugal",
+    "countryPlaceholder": "Selecione o seu país",
     "company": "Empresa (opcional)",
     "companyPlaceholder": "ex.: O Meu Estúdio de Produção"
   },

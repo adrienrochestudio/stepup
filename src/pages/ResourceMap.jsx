@@ -1,4 +1,5 @@
 import { useState, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import GlobeView from '../components/GlobeView';
 import MapControls from '../components/MapControls';
 import CountryInfoPanel from '../components/CountryInfoPanel';
@@ -15,6 +16,7 @@ function getAllSubKeys(catKey) {
 }
 
 export default function ResourceMap() {
+  const { t } = useTranslation();
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [activeFilters, setActiveFilters] = useState([]);
   const [showAddInfo, setShowAddInfo] = useState(false);
@@ -47,19 +49,26 @@ export default function ResourceMap() {
   }, []);
 
   const handleSearch = useCallback((query) => {
-    if (!query.trim()) return;
+    if (!query.trim()) return false;
     const normalized = query.trim().toLowerCase();
     const allCountryKeys = Object.keys(countryData);
-    const match = allCountryKeys.find(
-      (key) =>
-        key.toLowerCase() === normalized ||
-        countryData[key].name.toLowerCase() === normalized ||
-        key.toLowerCase().includes(normalized) ||
-        countryData[key].name.toLowerCase().includes(normalized),
-    );
+    // Prefer an exact match, then fall back to a partial match.
+    const match =
+      allCountryKeys.find(
+        (key) =>
+          key.toLowerCase() === normalized ||
+          countryData[key].name.toLowerCase() === normalized,
+      ) ||
+      allCountryKeys.find(
+        (key) =>
+          key.toLowerCase().includes(normalized) ||
+          countryData[key].name.toLowerCase().includes(normalized),
+      );
     if (match) {
       setSelectedCountry(match);
+      return true;
     }
+    return false;
   }, []);
 
   return (
@@ -76,6 +85,10 @@ export default function ResourceMap() {
           onCountryClick={handleCountryClick}
           selectedCountry={selectedCountry}
         />
+
+        {!selectedCountry && (
+          <div className="resource-map-hint">{t('map.clickHint')}</div>
+        )}
 
         {selectedCountry && (
           <CountryInfoPanel
@@ -99,7 +112,7 @@ export default function ResourceMap() {
           >
             <path d="M12 5v14M5 12h14" />
           </svg>
-          Add info
+          {t('map.addInfo')}
         </button>
       </div>
 
