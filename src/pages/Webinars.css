@@ -16,6 +16,24 @@
 
 .webinars-header h1 {
   color: var(--color-text);
+  margin-bottom: 0.25rem;
+}
+
+.webinars-subtitle {
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.webinars-subtitle a {
+  color: var(--color-kaki);
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--transition-fast);
+}
+
+.webinars-subtitle a:hover {
+  border-color: var(--color-kaki);
 }
 
 .webinars-search {

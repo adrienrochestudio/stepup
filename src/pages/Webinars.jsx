@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import WebinarCard from '../components/WebinarCard';
 import WebinarModal from '../components/WebinarModal';
@@ -23,7 +24,15 @@ export default function Webinars() {
   return (
     <div className="webinars-page">
       <div className="webinars-header">
-        <h1>{t('webinars.title')}</h1>
+        <div>
+          <h1>{t('webinars.title')}</h1>
+          <p className="webinars-subtitle">
+            {t('webinars.allInEnglish')}{' '}
+            <Link to="/resources/map">{t('webinars.seeMap')}</Link>{' '}
+            {t('webinars.andThe')}{' '}
+            <Link to="/dashboard">{t('webinars.seeCourses')}</Link>.
+          </p>
+        </div>
         <div className="webinars-search">
           <span>&#128269;</span>
           <input

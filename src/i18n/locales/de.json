@@ -4,7 +4,10 @@
     "webinars": "Webinare",
     "dashboard": "Meine Kurse",
     "login": "Anmelden",
-    "logout": "Abmelden"
+    "logout": "Abmelden",
+    "aboutUs": "Über uns",
+    "aboutEurimagesEcoprod": "Eurimages & Ecoprod",
+    "aboutPartners": "Partner"
   },
   "home": {
     "title": "Willkommen bei StepUP",
@@ -32,10 +35,14 @@
     }
   },
   "webinars": {
-    "title": "Webinar-Bibliothek",
+    "title": "Webinare",
     "searchPlaceholder": "Webinare suchen...",
     "noResults": "Keine Webinare gefunden.",
-    "videoNotConfigured": "Video-URL nicht konfiguriert"
+    "videoNotConfigured": "Video-URL nicht konfiguriert",
+    "allInEnglish": "Alle Webinare sind auf Englisch. Für Ressourcen in anderen Sprachen, siehe die",
+    "seeMap": "Karte",
+    "andThe": "und die",
+    "seeCourses": "Kurse"
   },
   "login": {
     "titleLogin": "Willkommen zurück",
@@ -170,6 +177,61 @@
     "groupCommentPlaceholder": "Weitere Details zu Ihrer Anfrage...",
     "groupSubmit": "Anfrage senden",
     "groupSent": "Ihre Anfrage wurde gesendet! Unser Team wird Sie unter der angegebenen E-Mail kontaktieren."
+  },
+  "about": {
+    "initiativeBanner": "StepUP ist eine Initiative von Eurimages, entwickelt von Ecoprod.",
+    "eurimagesEcoprod": {
+      "title": "Eurimages & Ecoprod",
+      "subtitle": "StepUP ist eine Initiative von Eurimages, entwickelt von Ecoprod, die europäische Expertise für nachhaltige audiovisuelle Produktion zusammenführt.",
+      "eurimagesDesc": "Eurimages ist der Fonds des Europarats für die Koproduktion, den Vertrieb, die Aufführung und die Digitalisierung europäischer Filmwerke. 1988 gegründet, unterstützt er die europäische Filmindustrie und fördert die kulturelle Vielfalt.",
+      "ecoprodDesc": "Ecoprod ist eine kollektive Initiative zur Begleitung der ökologischen Transformation der audiovisuellen und Filmindustrie. Durch Werkzeuge, Schulungen und Ressourcen hilft Ecoprod Fachleuten, die Umweltauswirkungen ihrer Produktionen zu reduzieren.",
+      "contact": "Kontakt"
+    },
+    "partners": {
+      "title": "Unsere Partner",
+      "subtitle": "StepUP wird von einem Netzwerk von Partnern unterstützt, die sich für nachhaltige audiovisuelle Produktion in ganz Europa einsetzen.",
+      "contact": "Kontakt"
+    }
+  },
+  "footer": {
+    "resources": "Ressourcen",
+    "learning": "Lernen",
+    "aboutUs": "Über uns",
+    "legal": "Rechtliches",
+    "terms": "Nutzungsbedingungen",
+    "privacy": "Datenschutzerklärung",
+    "copyright": "© 2025 StepUP. Alle Rechte vorbehalten."
+  },
+  "legal": {
+    "lastUpdated": "Zuletzt aktualisiert",
+    "terms": {
+      "title": "Nutzungsbedingungen",
+      "acceptance": "Annahme der Bedingungen",
+      "acceptanceText": "Durch den Zugriff auf und die Nutzung der StepUP-Plattform erklären Sie sich mit diesen Nutzungsbedingungen einverstanden. Wenn Sie mit einem Teil dieser Bedingungen nicht einverstanden sind, dürfen Sie diese Plattform nicht nutzen.",
+      "usage": "Nutzung der Plattform",
+      "usageText": "StepUP ist eine Bildungsplattform für nachhaltige audiovisuelle Produktion. Sie verpflichten sich, diese Plattform nur für rechtmäßige Zwecke und in Übereinstimmung mit diesen Bedingungen zu nutzen.",
+      "ip": "Geistiges Eigentum",
+      "ipText": "Alle Inhalte der StepUP-Plattform, einschließlich Kurse, Webinare, Videos, Texte, Grafiken und Software, sind Eigentum von StepUP, Eurimages, Ecoprod oder deren jeweiligen Lizenzgebern. Diese Inhalte sind durch Urheber- und andere Gesetze zum Schutz geistigen Eigentums geschützt.",
+      "liability": "Haftungsbeschränkung",
+      "liabilityText": "StepUP wird 'wie besehen' und 'wie verfügbar' bereitgestellt. Wir garantieren nicht, dass die Plattform ununterbrochen, sicher oder fehlerfrei sein wird. StepUP haftet nicht für indirekte, zufällige, besondere oder Folgeschaeden.",
+      "modifications": "Änderungen",
+      "modificationsText": "Wir behalten uns das Recht vor, diese Nutzungsbedingungen jederzeit zu ändern. Änderungen werden sofort nach Veröffentlichung auf der Plattform wirksam.",
+      "contact": "Kontakt",
+      "contactText": "Bei Fragen zu diesen Nutzungsbedingungen kontaktieren Sie uns unter contact@stepup-platform.eu."
+    },
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "collection": "Datenerhebung",
+      "collectionText": "Wir erheben personenbezogene Daten, die Sie freiwillig bei der Registrierung, Kursanmeldung oder Kontaktaufnahme bereitstellen. Dies kann Ihren Namen, Ihre E-Mail-Adresse und Lernfortschrittsdaten umfassen.",
+      "use": "Datenverwendung",
+      "useText": "Ihre personenbezogenen Daten werden verwendet, um unsere Dienste bereitzustellen und zu verbessern, Ihr Konto zu verwalten, Ihren Lernfortschritt zu verfolgen und mit Ihnen zu kommunizieren. Wir verkaufen Ihre personenbezogenen Daten nicht an Dritte.",
+      "cookies": "Cookies",
+      "cookiesText": "StepUP verwendet wesentliche Cookies für das ordnungsgemäße Funktionieren der Plattform. Analytische Cookies können verwendet werden, um die Nutzung der Plattform zu verstehen und die Benutzererfahrung zu verbessern.",
+      "rights": "Ihre Rechte",
+      "rightsText": "Gemäß der Datenschutz-Grundverordnung (DSGVO) haben Sie das Recht auf Zugang, Berichtigung, Löschung und Übertragbarkeit Ihrer personenbezogenen Daten. Um diese Rechte auszuüben, kontaktieren Sie uns unter privacy@stepup-platform.eu.",
+      "contact": "Kontakt",
+      "contactText": "Bei Fragen zu dieser Datenschutzerklärung kontaktieren Sie unseren Datenschutzbeauftragten unter privacy@stepup-platform.eu."
+    }
   },
   "common": {
     "loading": "Laden..."
