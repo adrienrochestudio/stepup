@@ -5,6 +5,9 @@ import './CourseCard.css';
 export default function CourseCard({ course, enrolled, onEnrollClick }) {
   const { t } = useTranslation();
 
+  const title = course.i18nKey ? t(`courses.${course.i18nKey}.title`) : course.title;
+  const description = course.i18nKey ? t(`courses.${course.i18nKey}.description`) : course.description;
+
   if (!enrolled) {
     return (
       <div className="course-card course-card-locked">
@@ -18,8 +21,8 @@ export default function CourseCard({ course, enrolled, onEnrollClick }) {
           <span className="course-card-lock-icon">&#128274;</span>
         </div>
         <div className="course-card-body">
-          <h3>{course.title}</h3>
-          <p>{course.description}</p>
+          <h3>{title}</h3>
+          <p>{description}</p>
           <div className="course-card-meta">
             <span>{course.duration}</span>
             <span>{course.modules} {t('courseCard.modules')}</span>
@@ -47,8 +50,8 @@ export default function CourseCard({ course, enrolled, onEnrollClick }) {
         </span>
       </div>
       <div className="course-card-body">
-        <h3>{course.title}</h3>
-        <p>{course.description}</p>
+        <h3>{title}</h3>
+        <p>{description}</p>
         <div className="course-card-meta">
           <span>{course.duration}</span>
           <span>{course.modules} {t('courseCard.modules')}</span>

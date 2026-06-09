@@ -11,7 +11,6 @@ import Enroll from './pages/Enroll';
 import EnrollSuccess from './pages/EnrollSuccess';
 import EnrollCancel from './pages/EnrollCancel';
 import AdminCohorts from './pages/AdminCohorts';
-import AboutEurimagesEcoprod from './pages/AboutEurimagesEcoprod';
 import Partners from './pages/Partners';
 import LegalTerms from './pages/LegalTerms';
 import PrivacyPolicy from './pages/PrivacyPolicy';
@@ -23,7 +22,6 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/resources/map" element={<ResourceMap />} />
         <Route path="/resources/webinars" element={<Webinars />} />
-        <Route path="/about/eurimages-ecoprod" element={<AboutEurimagesEcoprod />} />
         <Route path="/about/partners" element={<Partners />} />
         <Route path="/terms" element={<LegalTerms />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />

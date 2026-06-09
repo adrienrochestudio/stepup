@@ -5,24 +5,44 @@
     "dashboard": "Mis cursos",
     "login": "Iniciar sesión",
     "logout": "Cerrar sesión",
-    "aboutUs": "Sobre nosotros",
-    "aboutEurimagesEcoprod": "Eurimages & Ecoprod",
-    "aboutPartners": "Socios"
+    "partners": "Socios"
   },
   "home": {
     "title": "Bienvenido a StepUP",
     "tagline": "La plataforma e-learning de producción audiovisual sostenible",
-    "subtitle": "Fórmate en prácticas sostenibles para la industria audiovisual. Cursos online, recursos interactivos y certificaciones reconocidas.",
-    "ctaStart": "Empezar mi formación",
-    "ctaCourses": "Ir a mis cursos",
+    "subtitle": "Fórmate en prácticas sostenibles para la industria audiovisual. Cursos en línea, recursos interactivos y certificaciones reconocidas.",
+    "ctaStart": "Comenzar mi formación",
+    "ctaCourses": "Acceder a mis cursos",
     "ctaMap": "Explorar los recursos",
-    "ctaWebinars": "Ver webinarios",
-    "feature1Title": "Cursos certificados",
-    "feature1Desc": "Itinerarios formativos diseñados por expertos en eco-producción audiovisual.",
-    "feature2Title": "Recursos globales",
-    "feature2Desc": "Explora datos mundiales en un mapa interactivo y accede a webinarios exclusivos.",
-    "feature3Title": "Para toda la industria",
-    "feature3Desc": "Del cine a la animación, cursos adaptados a cada profesión del sector audiovisual."
+    "ctaWebinars": "Ver los webinarios",
+    "newBadge": "Nuevo",
+    "seeAllCourses": "Ver todos los cursos",
+    "courseCatalog": "Nuestros cursos",
+    "courseDetails": "Saber más",
+    "ecoprodTitle": "Ecoprod",
+    "ecoprodDesc": "Iniciativa colectiva dedicada al acompañamiento de la transición ecológica de la industria audiovisual y cinematográfica. Herramientas, formación y recursos para ayudar a los profesionales a reducir el impacto ambiental de sus producciones.",
+    "ecoprodCta": "Visitar ecoprod.com",
+    "eurimagesTitle": "Eurimages",
+    "eurimagesDesc": "Fondo del Consejo de Europa para la coproducción, distribución, exhibición y digitalización de obras cinematográficas europeas. Apoyo a la industria cinematográfica europea y a la diversidad cultural desde 1988.",
+    "eurimagesCta": "Visitar eurimages.org"
+  },
+  "courses": {
+    "introGreenProduction": {
+      "title": "Introducción a la producción verde",
+      "description": "Descubre los fundamentos de la producción audiovisual ambientalmente responsable. Este curso gratuito es accesible automáticamente para todos los alumnos inscritos."
+    },
+    "masteringGreenProduction": {
+      "title": "Dominar la producción verde",
+      "description": "Ve más allá de los fundamentos y domina los procesos de producción sostenible, desde la preproducción hasta la distribución."
+    },
+    "carbonFootprinting": {
+      "title": "Dominar la huella de carbono en cine y televisión",
+      "description": "Aprende a medir, informar y reducir la huella de carbono de las producciones cinematográficas y televisivas con metodologías reconocidas."
+    },
+    "greenAnimation": {
+      "title": "Animación sostenible",
+      "description": "Prácticas sostenibles específicamente adaptadas a estudios de animación: granjas de renderizado, consumo energético, colaboración remota y flujos de trabajo eco-responsables."
+    }
   },
   "map": {
     "searchPlaceholder": "Buscar país o ciudad...",
@@ -47,7 +67,7 @@
   "login": {
     "titleLogin": "Bienvenido de nuevo",
     "titleSignup": "Crear cuenta",
-    "subtitleLogin": "Inicia sesión en tu panel de formación",
+    "subtitleLogin": "Inicia sesión en tu espacio de formación",
     "subtitleSignup": "Regístrate para acceder a tus cursos",
     "email": "Correo electrónico",
     "password": "Contraseña",
@@ -63,7 +83,7 @@
     "roleLearner": "Alumno",
     "roleCohortManager": "Gestor de cohorte",
     "organizationName": "Nombre de la organización",
-    "organizationNamePlaceholder": "ej: Mi Estudio de Producción"
+    "organizationNamePlaceholder": "ej.: Mi Estudio de Producción"
   },
   "dashboard": {
     "title": "Mis cursos",
@@ -86,7 +106,7 @@
       "enroll": "Inscribirse"
     },
     "modules": "módulos",
-    "free": "Gratis"
+    "free": "Gratuito"
   },
   "course": {
     "back": "Volver",
@@ -103,44 +123,44 @@
     "redirecting": "Redirigiendo...",
     "notFound": "Curso no encontrado.",
     "success": {
-      "title": "¡Inscripción exitosa!",
-      "message": "Se ha inscrito en el curso. Puede acceder desde sus cursos.",
-      "cta": "Ir a mis cursos"
+      "title": "¡Inscripción realizada con éxito!",
+      "message": "Estás inscrito en el curso. Puedes acceder a él desde tus cursos.",
+      "cta": "Acceder a mis cursos"
     },
     "cancel": {
       "title": "Inscripción cancelada",
-      "message": "Su pago ha sido cancelado. No se ha realizado ningún cargo.",
+      "message": "Tu pago ha sido cancelado. No se ha realizado ningún cargo.",
       "cta": "Intentar de nuevo"
     }
   },
   "admin": {
     "title": "Gestión de cohortes",
     "createCohort": "+ Crear cohorte",
-    "noCohorts": "Sin cohortes. ¡Cree la primera!",
+    "noCohorts": "Sin cohortes. ¡Crea la primera!",
     "start": "Inicio",
     "end": "Fin",
-    "enrolledStudents": "Estudiantes inscritos ({{count}})",
-    "noStudents": "Sin estudiantes inscritos.",
+    "enrolledStudents": "Alumnos inscritos ({{count}})",
+    "noStudents": "Ningún alumno inscrito.",
     "tabCohorts": "Cohortes",
     "tabTracking": "Seguimiento de alumnos",
     "modal": {
       "title": "Crear nueva cohorte",
       "name": "Nombre de la cohorte",
-      "namePlaceholder": "ej: Cohorte Verano 2025",
-      "suffixPlaceholder": "Sufijo opcional (ej: Grupo A, Sesión Marzo)",
+      "namePlaceholder": "ej.: Cohorte Verano 2025",
+      "suffixPlaceholder": "Sufijo opcional (ej.: Grupo A, Sesión Marzo)",
       "fullName": "Nombre completo",
       "course": "Curso",
       "startDate": "Fecha de inicio",
       "endDate": "Fecha de fin",
-      "maxStudents": "Máximo de estudiantes",
+      "maxStudents": "Máximo de alumnos",
       "submit": "Crear cohorte",
       "promoCode": "Código promocional",
-      "promoCodePlaceholder": "Introduzca el código",
+      "promoCodePlaceholder": "Introduce el código",
       "promoApply": "Aplicar",
       "promoSuccess": "¡Código válido! Acceso a los siguientes cursos:",
-      "promoInvalid": "Código promocional inválido.",
+      "promoInvalid": "Código promocional no válido.",
       "importTitle": "Importar alumnos",
-      "importHint": "Importe un archivo Excel con columnas Nombre y Apellido. Las credenciales se generarán automáticamente.",
+      "importHint": "Importa un archivo Excel con las columnas Nombre y Apellido. Las credenciales se generarán automáticamente.",
       "downloadTemplate": "Descargar plantilla",
       "importFile": "Importar archivo",
       "importEmpty": "No se encontraron datos en el archivo.",
@@ -150,7 +170,7 @@
       "templateLastName": "Apellido",
       "username": "Nombre de usuario",
       "password": "Contraseña",
-      "emailNotice": "Se enviará un email de invitación a cada alumno con sus credenciales, el nombre del curso y el enlace de la plataforma."
+      "emailNotice": "Se enviará un correo de invitación a cada alumno con sus credenciales, el nombre del curso y el enlace a la plataforma."
     }
   },
   "cohortTracker": {
@@ -185,45 +205,38 @@
     "lastName": "Apellido",
     "firstName": "Nombre",
     "codeLabel": "Código de acceso",
-    "codePlaceholder": "Introduzca su código",
+    "codePlaceholder": "Introduce tu código",
     "codeApply": "Aplicar",
-    "codeFull": "¡Acceso completo otorgado!",
+    "codeFull": "¡Acceso completo concedido!",
     "codeDiscount": "¡Descuento del {{percent}}% aplicado!",
-    "stripeNotice": "Será redirigido a la página de pago seguro de Stripe.",
+    "stripeNotice": "Serás redirigido a la página de pago seguro de Stripe.",
     "enrollFree": "Acceder al curso",
-    "groupIntro": "Elija la fórmula adaptada a su estructura.",
+    "groupIntro": "Elige la fórmula adaptada a tu organización.",
     "groupRecommended": "Recomendado",
     "offerCohortTitle": "Grupo / Cohorte",
     "offerCohortDesc": "Para equipos que desean formar un grupo con seguimiento centralizado.",
-    "offerCohortDetail": "hasta 200 personas — degresivo más allá",
-    "offerCohortInclude1": "Un referente interno centraliza la cohorte",
+    "offerCohortDetail": "hasta 200 personas — tarifa decreciente a partir de ahí",
+    "offerCohortInclude1": "Un referente interno gestiona la cohorte",
     "offerCohortInclude2": "Acceso a todos los cursos",
     "offerCohortInclude3": "Seguimiento colectivo de los alumnos",
-    "offerCohortInclude4": "Tarifa degresiva según volumen",
+    "offerCohortInclude4": "Tarifa decreciente según volumen",
     "offerScormTitle": "Empresa / SCORM",
     "offerScormDesc": "Para grandes organizaciones con su propio LMS.",
     "offerScormPrice": "Bajo presupuesto",
     "offerScormDetail": "según el número de usuarios",
-    "offerScormInclude1": "Entrega en su LMS",
-    "offerScormInclude2": "Compatible SCORM 1.2 y 2004",
-    "offerScormInclude3": "Acompañamiento en la integración",
-    "offerScormInclude4": "Seguimiento con sus propias herramientas",
+    "offerScormInclude1": "Entrega en tu LMS",
+    "offerScormInclude2": "Compatible con SCORM 1.2 y 2004",
+    "offerScormInclude3": "Apoyo en la integración",
+    "offerScormInclude4": "Seguimiento con tus propias herramientas",
     "groupNbPersons": "Número de personas",
-    "groupNbPersonsPlaceholder": "ej: 50",
+    "groupNbPersonsPlaceholder": "ej.: 50",
     "groupComment": "Comentario",
-    "groupCommentPlaceholder": "Detalles adicionales sobre su solicitud...",
+    "groupCommentPlaceholder": "Detalles adicionales sobre tu solicitud...",
     "groupSubmit": "Enviar mi solicitud",
-    "groupSent": "¡Su solicitud ha sido enviada! Nuestro equipo le contactará en el correo indicado."
+    "groupSent": "¡Tu solicitud ha sido enviada! Nuestro equipo te contactará en el correo indicado."
   },
   "about": {
     "initiativeBanner": "StepUP es una iniciativa de Eurimages desarrollada por Ecoprod.",
-    "eurimagesEcoprod": {
-      "title": "Eurimages & Ecoprod",
-      "subtitle": "StepUP es una iniciativa de Eurimages desarrollada por Ecoprod, reuniendo la experiencia europea para una producción audiovisual sostenible.",
-      "eurimagesDesc": "Eurimages es el fondo del Consejo de Europa para la coproducción, distribución, exhibición y digitalización de obras cinematográficas europeas. Fundado en 1988, apoya la industria cinematográfica europea y promueve la diversidad cultural.",
-      "ecoprodDesc": "Ecoprod es una iniciativa colectiva dedicada a acompañar la transición ecológica de la industria audiovisual y cinematográfica. A través de herramientas, formación y recursos, Ecoprod ayuda a los profesionales a reducir el impacto ambiental de sus producciones.",
-      "contact": "Contacto"
-    },
     "partners": {
       "title": "Nuestros socios",
       "subtitle": "StepUP cuenta con el apoyo de una red de socios comprometidos con la producción audiovisual sostenible en toda Europa.",
@@ -233,41 +246,44 @@
   "footer": {
     "resources": "Recursos",
     "learning": "Formación",
-    "aboutUs": "Sobre nosotros",
+    "partners": "Socios",
     "legal": "Legal",
     "terms": "Condiciones de uso",
     "privacy": "Política de privacidad",
-    "copyright": "© 2025 StepUP. Todos los derechos reservados."
+    "copyright": "© 2025 StepUP. Todos los derechos reservados.",
+    "ecoprodDesc": "Iniciativa colectiva dedicada al acompañamiento de la transición ecológica de la industria audiovisual y cinematográfica.",
+    "eurimagesDesc": "Fondo del Consejo de Europa para la coproducción, distribución y exhibición de obras cinematográficas europeas.",
+    "visitWebsite": "Visitar el sitio"
   },
   "legal": {
     "lastUpdated": "Última actualización",
     "terms": {
       "title": "Condiciones de uso",
       "acceptance": "Aceptación de las condiciones",
-      "acceptanceText": "Al acceder y utilizar la plataforma StepUP, acepta y se compromete a cumplir las presentes condiciones de uso. Si no está de acuerdo con alguna parte de estas condiciones, no debe utilizar esta plataforma.",
+      "acceptanceText": "Al acceder y utilizar la plataforma StepUP, aceptas quedar vinculado por las presentes condiciones de uso. Si no estás de acuerdo con alguna parte de estas condiciones, no debes utilizar esta plataforma.",
       "usage": "Uso de la plataforma",
-      "usageText": "StepUP es una plataforma educativa dedicada a la producción audiovisual sostenible. Se compromete a utilizar esta plataforma únicamente con fines lícitos y de conformidad con las presentes condiciones.",
+      "usageText": "StepUP es una plataforma educativa dedicada a la producción audiovisual sostenible. Te comprometes a utilizar esta plataforma únicamente con fines lícitos y de conformidad con las presentes condiciones. No debes hacer un uso indebido de la plataforma ni intentar acceder a ella por un medio distinto a la interfaz proporcionada.",
       "ip": "Propiedad intelectual",
-      "ipText": "Todo el contenido de la plataforma StepUP, incluidos cursos, webinarios, vídeos, textos, gráficos y software, es propiedad de StepUP, Eurimages, Ecoprod o sus respectivos licenciantes. Este contenido está protegido por las leyes de propiedad intelectual.",
+      "ipText": "Todo el contenido de la plataforma StepUP, incluidos cursos, webinarios, vídeos, textos, elementos gráficos y software, es propiedad de StepUP, Eurimages, Ecoprod o de sus respectivos licenciantes. Este contenido está protegido por las leyes de propiedad intelectual.",
       "liability": "Limitación de responsabilidad",
-      "liabilityText": "StepUP se proporciona «tal cual» y «según disponibilidad». No garantizamos que la plataforma sea ininterrumpida, segura o libre de errores. StepUP no será responsable de daños indirectos, incidentales, especiales o consecuentes.",
+      "liabilityText": "StepUP se proporciona «tal cual» y «según disponibilidad». No garantizamos que la plataforma sea ininterrumpida, segura o esté libre de errores. En la máxima medida permitida por la ley, StepUP no será responsable de daños indirectos, incidentales, especiales o consecuentes.",
       "modifications": "Modificaciones",
-      "modificationsText": "Nos reservamos el derecho de modificar estas condiciones en cualquier momento. Los cambios serán efectivos inmediatamente después de su publicación en la plataforma.",
+      "modificationsText": "Nos reservamos el derecho de modificar estas condiciones de uso en cualquier momento. Las modificaciones entrarán en vigor inmediatamente tras su publicación en la plataforma. El uso continuado de StepUP tras cualquier modificación constituye la aceptación de las nuevas condiciones.",
       "contact": "Contacto",
-      "contactText": "Para cualquier consulta sobre estas condiciones de uso, contáctenos en contact@stepup-platform.eu."
+      "contactText": "Para cualquier consulta sobre estas condiciones de uso, contáctanos en contact@stepup-platform.eu."
     },
     "privacy": {
       "title": "Política de privacidad",
       "collection": "Recogida de datos",
-      "collectionText": "Recogemos información personal que usted proporciona voluntariamente al registrarse, inscribirse en cursos o contactarnos. Esto puede incluir su nombre, dirección de correo electrónico y datos de progreso de aprendizaje.",
+      "collectionText": "Recogemos información personal que proporcionas voluntariamente al registrarte, inscribirte en cursos o contactarnos. Esta puede incluir tu nombre, dirección de correo electrónico y datos de progreso de aprendizaje.",
       "use": "Uso de los datos",
-      "useText": "Sus datos personales se utilizan para proporcionar y mejorar nuestros servicios, gestionar su cuenta, hacer seguimiento de su progreso de aprendizaje y comunicarnos con usted. No vendemos su información personal a terceros.",
+      "useText": "Tus datos personales se utilizan para proporcionar y mejorar nuestros servicios, gestionar tu cuenta, hacer seguimiento de tu progreso de aprendizaje y comunicarnos contigo sobre cursos y actualizaciones. No vendemos tu información personal a terceros.",
       "cookies": "Cookies",
-      "cookiesText": "StepUP utiliza cookies esenciales para el correcto funcionamiento de la plataforma. Se pueden utilizar cookies analíticas para entender cómo se usa la plataforma y mejorar la experiencia del usuario.",
-      "rights": "Sus derechos",
-      "rightsText": "De acuerdo con el Reglamento General de Protección de Datos (RGPD), tiene derecho a acceder, rectificar, suprimir y portar sus datos personales. Para ejercer estos derechos, contáctenos en privacy@stepup-platform.eu.",
+      "cookiesText": "StepUP utiliza cookies esenciales para garantizar el correcto funcionamiento de la plataforma. Se pueden utilizar cookies analíticas para comprender cómo se usa la plataforma y mejorar la experiencia del usuario. Puedes gestionar tus preferencias de cookies en la configuración de tu navegador.",
+      "rights": "Tus derechos",
+      "rightsText": "De conformidad con el Reglamento General de Protección de Datos (RGPD), tienes derecho de acceso, rectificación, supresión y portabilidad de tus datos personales. También puedes oponerte al tratamiento de tus datos o solicitar su limitación. Para ejercer estos derechos, contáctanos en privacy@stepup-platform.eu.",
       "contact": "Contacto",
-      "contactText": "Para cualquier consulta sobre esta política de privacidad, contacte con nuestro Delegado de Protección de Datos en privacy@stepup-platform.eu."
+      "contactText": "Para cualquier consulta sobre esta política de privacidad o la protección de datos, contacta con nuestro Delegado de Protección de Datos en privacy@stepup-platform.eu."
     }
   },
   "common": {

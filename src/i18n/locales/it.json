@@ -1,0 +1,292 @@
+{
+  "nav": {
+    "map": "Mappa",
+    "webinars": "Webinar",
+    "dashboard": "I miei corsi",
+    "login": "Accedi",
+    "logout": "Esci",
+    "partners": "Partner"
+  },
+  "home": {
+    "title": "Benvenuto su StepUP",
+    "tagline": "La piattaforma e-learning per la produzione audiovisiva sostenibile",
+    "subtitle": "Formati sulle pratiche sostenibili dell'industria audiovisiva. Corsi online, risorse interattive e certificazioni riconosciute.",
+    "ctaStart": "Inizia la formazione",
+    "ctaCourses": "Accedi ai miei corsi",
+    "ctaMap": "Esplora le risorse",
+    "ctaWebinars": "Guarda i webinar",
+    "newBadge": "Nuovo",
+    "seeAllCourses": "Vedi tutti i corsi",
+    "courseCatalog": "I nostri corsi",
+    "courseDetails": "Scopri di più",
+    "ecoprodTitle": "Ecoprod",
+    "ecoprodDesc": "Iniziativa collettiva dedicata all'accompagnamento della transizione ecologica dell'industria audiovisiva e cinematografica. Strumenti, formazioni e risorse per aiutare i professionisti a ridurre l'impatto ambientale delle loro produzioni.",
+    "ecoprodCta": "Visita ecoprod.com",
+    "eurimagesTitle": "Eurimages",
+    "eurimagesDesc": "Fondo del Consiglio d'Europa per la coproduzione, la distribuzione, l'esercizio e la digitalizzazione delle opere cinematografiche europee. Sostegno all'industria cinematografica europea e alla diversità culturale dal 1988.",
+    "eurimagesCta": "Visita eurimages.org"
+  },
+  "courses": {
+    "introGreenProduction": {
+      "title": "Introduzione alla produzione verde",
+      "description": "Scopri i fondamenti della produzione audiovisiva ecologicamente responsabile. Questo corso gratuito è automaticamente accessibile a tutti i partecipanti iscritti."
+    },
+    "masteringGreenProduction": {
+      "title": "Padroneggiare la produzione verde",
+      "description": "Vai oltre le basi e padroneggia i processi di produzione sostenibile, dalla pre-produzione alla distribuzione."
+    },
+    "carbonFootprinting": {
+      "title": "Padroneggiare l'impronta di carbonio nel cinema e nella televisione",
+      "description": "Impara a misurare, rendicontare e ridurre l'impronta di carbonio delle produzioni cinematografiche e televisive con metodologie riconosciute."
+    },
+    "greenAnimation": {
+      "title": "Animazione sostenibile",
+      "description": "Pratiche sostenibili specificamente adattate agli studi di animazione: render farm, consumo energetico, collaborazione da remoto e pipeline eco-responsabili."
+    }
+  },
+  "map": {
+    "searchPlaceholder": "Cerca paese o città...",
+    "region": "Regione",
+    "tabs": {
+      "explore": "Esplora i dati",
+      "target": "Seleziona territori",
+      "scenarios": "Scenari",
+      "select": "Seleziona dati"
+    }
+  },
+  "webinars": {
+    "title": "Webinar",
+    "searchPlaceholder": "Cerca webinar...",
+    "noResults": "Nessun webinar trovato.",
+    "videoNotConfigured": "URL del video non configurato",
+    "allInEnglish": "Tutti i webinar sono in inglese. Per risorse in altre lingue, consulta la",
+    "seeMap": "mappa",
+    "andThe": "e i",
+    "seeCourses": "corsi"
+  },
+  "login": {
+    "titleLogin": "Bentornato",
+    "titleSignup": "Crea un account",
+    "subtitleLogin": "Accedi al tuo spazio di formazione",
+    "subtitleSignup": "Registrati per accedere ai tuoi corsi",
+    "email": "E-mail",
+    "password": "Password",
+    "submit": "Accedi",
+    "submitSignup": "Registrati",
+    "submitting": "Attendere...",
+    "toggleToSignup": "Non hai ancora un account?",
+    "toggleToLogin": "Hai già un account?",
+    "signUp": "Registrati",
+    "logIn": "Accedi",
+    "devMode": "Modalità Dev — Qualsiasi credenziale funziona",
+    "profile": "Profilo",
+    "roleLearner": "Partecipante",
+    "roleCohortManager": "Gestore di coorte",
+    "organizationName": "Nome dell'organizzazione",
+    "organizationNamePlaceholder": "es.: Il mio studio di produzione"
+  },
+  "dashboard": {
+    "title": "I miei corsi",
+    "titleManager": "Monitoraggio dei partecipanti",
+    "welcome": "Bentornato, {{name}}",
+    "myCourses": "I miei corsi",
+    "catalog": "Catalogo formazioni",
+    "catalogSubtitle": "Iscriviti per accedere a queste formazioni."
+  },
+  "courseCard": {
+    "status": {
+      "not_started": "Nuovo",
+      "in_progress": "In corso",
+      "completed": "Completato"
+    },
+    "cta": {
+      "not_started": "Inizia",
+      "in_progress": "Continua",
+      "completed": "Rivedi",
+      "enroll": "Iscriviti"
+    },
+    "modules": "moduli",
+    "free": "Gratuito"
+  },
+  "course": {
+    "back": "Indietro",
+    "complete": "{{progress}}% completato",
+    "notFound": "Corso non trovato.",
+    "notConfigured": "Pacchetto SCORM non configurato",
+    "notConfiguredDesc": "Carica il tuo pacchetto SCORM in <code>public/scorm/{{courseId}}/</code> e aggiorna la configurazione del corso.",
+    "modules": "moduli"
+  },
+  "enroll": {
+    "duration": "Durata",
+    "modules": "Moduli",
+    "enrollNow": "Iscriviti ora",
+    "redirecting": "Reindirizzamento...",
+    "notFound": "Corso non trovato.",
+    "success": {
+      "title": "Iscrizione avvenuta con successo!",
+      "message": "Sei iscritto al corso. Puoi accedervi dalla sezione I miei corsi.",
+      "cta": "Accedi ai miei corsi"
+    },
+    "cancel": {
+      "title": "Iscrizione annullata",
+      "message": "Il pagamento è stato annullato. Non è stato addebitato alcun importo.",
+      "cta": "Riprova"
+    }
+  },
+  "admin": {
+    "title": "Gestione delle coorti",
+    "createCohort": "+ Crea coorte",
+    "noCohorts": "Nessuna coorte. Crea la prima!",
+    "start": "Inizio",
+    "end": "Fine",
+    "enrolledStudents": "Partecipanti iscritti ({{count}})",
+    "noStudents": "Nessun partecipante iscritto.",
+    "tabCohorts": "Coorti",
+    "tabTracking": "Monitoraggio dei partecipanti",
+    "modal": {
+      "title": "Crea nuova coorte",
+      "name": "Nome della coorte",
+      "namePlaceholder": "es.: Coorte Estate 2025",
+      "suffixPlaceholder": "Suffisso opzionale (es.: Gruppo A, Sessione Marzo)",
+      "fullName": "Nome completo",
+      "course": "Corso",
+      "startDate": "Data di inizio",
+      "endDate": "Data di fine",
+      "maxStudents": "Numero massimo di partecipanti",
+      "submit": "Crea coorte",
+      "promoCode": "Codice promozionale",
+      "promoCodePlaceholder": "Inserisci il codice",
+      "promoApply": "Applica",
+      "promoSuccess": "Codice valido! Accesso ai seguenti corsi:",
+      "promoInvalid": "Codice promozionale non valido.",
+      "importTitle": "Importa partecipanti",
+      "importHint": "Importa un file Excel con le colonne Nome e Cognome. Le credenziali saranno generate automaticamente.",
+      "downloadTemplate": "Scarica modello",
+      "importFile": "Importa file",
+      "importEmpty": "Nessun dato trovato nel file.",
+      "importError": "Errore nella lettura del file.",
+      "importedCount": "{{count}} partecipante/i importato/i",
+      "templateFirstName": "Nome",
+      "templateLastName": "Cognome",
+      "username": "Nome utente",
+      "password": "Password",
+      "emailNotice": "Verrà inviata un'e-mail di invito a ogni partecipante con le proprie credenziali, il nome del corso e il link alla piattaforma."
+    }
+  },
+  "cohortTracker": {
+    "totalLearners": "Partecipanti",
+    "learner": "Partecipante",
+    "status": "Stato",
+    "lastActive": "Ultima attività",
+    "actions": "Azioni",
+    "statusNeverConnected": "Mai connesso",
+    "statusNotStarted": "Non iniziato",
+    "statusInProgress": "In corso",
+    "statusCompleted": "Completato",
+    "sendReminder": "Sollecita",
+    "exportData": "Scarica dati",
+    "tabTracking": "Monitoraggio",
+    "tabCertificates": "Certificati",
+    "certificate": "Certificato",
+    "downloadCertificate": "Scarica",
+    "comingSoon": "Prossimamente",
+    "noCertificates": "Nessun partecipante ha ancora completato il corso."
+  },
+  "reminder": {
+    "title": "Promemoria per {{name}}",
+    "language": "Lingua del messaggio",
+    "send": "Invia promemoria",
+    "sent": "Promemoria inviato con successo!"
+  },
+  "enrollModal": {
+    "tabIndividual": "Iscrizione individuale",
+    "tabGroup": "Iscrivi il mio team",
+    "email": "E-mail",
+    "lastName": "Cognome",
+    "firstName": "Nome",
+    "codeLabel": "Codice di accesso",
+    "codePlaceholder": "Inserisci il tuo codice",
+    "codeApply": "Applica",
+    "codeFull": "Accesso completo concesso!",
+    "codeDiscount": "Sconto del {{percent}}% applicato!",
+    "stripeNotice": "Sarai reindirizzato alla pagina di pagamento sicuro Stripe.",
+    "enrollFree": "Accedi al corso",
+    "groupIntro": "Scegli la formula adatta alla tua organizzazione.",
+    "groupRecommended": "Consigliato",
+    "offerCohortTitle": "Gruppo / Coorte",
+    "offerCohortDesc": "Per i team che desiderano formare un gruppo con monitoraggio centralizzato.",
+    "offerCohortDetail": "fino a 200 persone — tariffa degressiva oltre",
+    "offerCohortInclude1": "Un referente interno gestisce la coorte",
+    "offerCohortInclude2": "Accesso a tutti i corsi",
+    "offerCohortInclude3": "Monitoraggio collettivo dei partecipanti",
+    "offerCohortInclude4": "Tariffa degressiva in base al volume",
+    "offerScormTitle": "Azienda / SCORM",
+    "offerScormDesc": "Per grandi organizzazioni con il proprio LMS.",
+    "offerScormPrice": "Su preventivo",
+    "offerScormDetail": "in base al numero di utenti",
+    "offerScormInclude1": "Consegna nel vostro LMS",
+    "offerScormInclude2": "Compatibile SCORM 1.2 e 2004",
+    "offerScormInclude3": "Supporto all'integrazione",
+    "offerScormInclude4": "Monitoraggio tramite i vostri strumenti",
+    "groupNbPersons": "Numero di persone",
+    "groupNbPersonsPlaceholder": "es.: 50",
+    "groupComment": "Commento",
+    "groupCommentPlaceholder": "Dettagli aggiuntivi sulla tua richiesta...",
+    "groupSubmit": "Invia la mia richiesta",
+    "groupSent": "La tua richiesta è stata inviata! Il nostro team ti contatterà all'indirizzo indicato."
+  },
+  "about": {
+    "initiativeBanner": "StepUP è un'iniziativa di Eurimages sviluppata da Ecoprod.",
+    "partners": {
+      "title": "I nostri partner",
+      "subtitle": "StepUP è supportato da una rete di partner impegnati nella produzione audiovisiva sostenibile in tutta Europa.",
+      "contact": "Contatto"
+    }
+  },
+  "footer": {
+    "resources": "Risorse",
+    "learning": "Formazione",
+    "partners": "Partner",
+    "legal": "Note legali",
+    "terms": "Condizioni d'uso",
+    "privacy": "Informativa sulla privacy",
+    "copyright": "© 2025 StepUP. Tutti i diritti riservati.",
+    "ecoprodDesc": "Iniziativa collettiva dedicata all'accompagnamento della transizione ecologica dell'industria audiovisiva e cinematografica.",
+    "eurimagesDesc": "Fondo del Consiglio d'Europa per la coproduzione, la distribuzione e l'esercizio delle opere cinematografiche europee.",
+    "visitWebsite": "Visita il sito"
+  },
+  "legal": {
+    "lastUpdated": "Ultimo aggiornamento",
+    "terms": {
+      "title": "Condizioni d'uso",
+      "acceptance": "Accettazione delle condizioni",
+      "acceptanceText": "Accedendo e utilizzando la piattaforma StepUP, accetti di essere vincolato dalle presenti condizioni d'uso. Se non condividi una qualsiasi parte di queste condizioni, non devi utilizzare questa piattaforma.",
+      "usage": "Utilizzo della piattaforma",
+      "usageText": "StepUP è una piattaforma educativa dedicata alla produzione audiovisiva sostenibile. Ti impegni a utilizzare questa piattaforma esclusivamente per scopi leciti e in conformità con le presenti condizioni. Non devi farne un uso improprio né tentare di accedervi con mezzi diversi dall'interfaccia fornita.",
+      "ip": "Proprietà intellettuale",
+      "ipText": "Tutti i contenuti della piattaforma StepUP, inclusi corsi, webinar, video, testi, elementi grafici e software, sono di proprietà di StepUP, Eurimages, Ecoprod o dei rispettivi licenzianti. Tali contenuti sono protetti dal diritto d'autore e da altre leggi sulla proprietà intellettuale.",
+      "liability": "Limitazione di responsabilità",
+      "liabilityText": "StepUP è fornito «così com'è» e «secondo disponibilità». Non garantiamo che la piattaforma sia ininterrotta, sicura o priva di errori. Nella misura massima consentita dalla legge, StepUP non sarà responsabile per eventuali danni indiretti, incidentali, speciali o consequenziali.",
+      "modifications": "Modifiche",
+      "modificationsText": "Ci riserviamo il diritto di modificare le presenti condizioni d'uso in qualsiasi momento. Le modifiche saranno effettive immediatamente dopo la pubblicazione sulla piattaforma. L'utilizzo continuato di StepUP dopo qualsiasi modifica costituisce accettazione delle nuove condizioni.",
+      "contact": "Contatto",
+      "contactText": "Per qualsiasi domanda relativa alle presenti condizioni d'uso, contattaci all'indirizzo contact@stepup-platform.eu."
+    },
+    "privacy": {
+      "title": "Informativa sulla privacy",
+      "collection": "Raccolta dei dati",
+      "collectionText": "Raccogliamo le informazioni personali che fornisci volontariamente al momento della registrazione, dell'iscrizione ai corsi o quando ci contatti. Queste possono includere il tuo nome, indirizzo e-mail e dati di avanzamento nell'apprendimento.",
+      "use": "Utilizzo dei dati",
+      "useText": "I tuoi dati personali vengono utilizzati per fornire e migliorare i nostri servizi, gestire il tuo account, monitorare il tuo avanzamento e comunicare con te in merito a corsi e aggiornamenti. Non vendiamo le tue informazioni personali a terzi.",
+      "cookies": "Cookie",
+      "cookiesText": "StepUP utilizza cookie essenziali per garantire il corretto funzionamento della piattaforma. Possono essere utilizzati cookie analitici per comprendere come viene utilizzata la piattaforma e migliorare l'esperienza utente. Puoi gestire le tue preferenze sui cookie nelle impostazioni del browser.",
+      "rights": "I tuoi diritti",
+      "rightsText": "Ai sensi del Regolamento generale sulla protezione dei dati (GDPR), hai il diritto di accesso, rettifica, cancellazione e portabilità dei tuoi dati personali. Puoi inoltre opporti al trattamento dei tuoi dati o richiederne la limitazione. Per esercitare questi diritti, contattaci all'indirizzo privacy@stepup-platform.eu.",
+      "contact": "Contatto",
+      "contactText": "Per qualsiasi domanda relativa a questa informativa sulla privacy o alla protezione dei dati, contatta il nostro Responsabile della protezione dei dati all'indirizzo privacy@stepup-platform.eu."
+    }
+  },
+  "common": {
+    "loading": "Caricamento..."
+  }
+}

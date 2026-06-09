@@ -1,8 +1,7 @@
 export const allCourses = [
   {
     id: 'intro-eco-production',
-    title: 'Introduction à l\'éco-production',
-    description: 'Découvrez les fondamentaux de la production audiovisuelle éco-responsable. Ce cours gratuit est automatiquement accessible à tous les apprenants inscrits.',
+    i18nKey: 'introGreenProduction',
     duration: '2h',
     modules: 5,
     price: 0,
@@ -11,8 +10,7 @@ export const allCourses = [
   },
   {
     id: 'mastering-green-production',
-    title: 'Mastering Green Production',
-    description: 'Go beyond the basics and master sustainable production workflows, from pre-production to distribution.',
+    i18nKey: 'masteringGreenProduction',
     duration: '6h',
     modules: 12,
     price: 85,
@@ -21,8 +19,7 @@ export const allCourses = [
   },
   {
     id: 'carbon-footprinting-film-tv',
-    title: 'Mastering Carbon Footprinting in the Film and TV Industry',
-    description: 'Learn to measure, report and reduce the carbon footprint of film and television productions using industry-standard methodologies.',
+    i18nKey: 'carbonFootprinting',
     duration: '5h',
     modules: 10,
     price: 85,
@@ -31,8 +28,7 @@ export const allCourses = [
   },
   {
     id: 'green-animation',
-    title: 'Green Animation',
-    description: 'Sustainable practices specifically tailored for animation studios: render farms, energy use, remote collaboration, and eco-friendly pipelines.',
+    i18nKey: 'greenAnimation',
     duration: '4h',
     modules: 8,
     price: 85,

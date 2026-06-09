@@ -5,24 +5,44 @@
     "dashboard": "My Courses",
     "login": "Login",
     "logout": "Logout",
-    "aboutUs": "About Us",
-    "aboutEurimagesEcoprod": "Eurimages & Ecoprod",
-    "aboutPartners": "Partners"
+    "partners": "Partners"
   },
   "home": {
     "title": "Welcome to StepUP",
-    "tagline": "The e-learning platform for sustainable audiovisual production",
-    "subtitle": "Train in sustainable practices for the audiovisual industry. Online courses, interactive resources, and recognized certifications.",
+    "tagline": "The e-learning platform for green audiovisual production",
+    "subtitle": "Train in sustainable practices for the audiovisual industry. Online courses, interactive resources, and recognised certifications.",
     "ctaStart": "Start learning",
     "ctaCourses": "Go to my courses",
     "ctaMap": "Explore Resources",
     "ctaWebinars": "Watch Webinars",
-    "feature1Title": "Certified courses",
-    "feature1Desc": "Training paths designed by eco-production experts from the audiovisual industry.",
-    "feature2Title": "Global resources",
-    "feature2Desc": "Explore worldwide data on an interactive map and access exclusive webinars.",
-    "feature3Title": "For the entire industry",
-    "feature3Desc": "From cinema to animation, courses tailored to every profession in the audiovisual sector."
+    "newBadge": "New",
+    "seeAllCourses": "See all courses",
+    "courseCatalog": "Our courses",
+    "courseDetails": "Learn more",
+    "ecoprodTitle": "Ecoprod",
+    "ecoprodDesc": "A collective initiative supporting the ecological transition of the audiovisual and film industry. Tools, training, and resources to help professionals reduce the environmental impact of their productions.",
+    "ecoprodCta": "Visit ecoprod.com",
+    "eurimagesTitle": "Eurimages",
+    "eurimagesDesc": "The Council of Europe's fund for co-production, distribution, exhibition, and digitisation of European cinematographic works. Supporting the European film industry and cultural diversity since 1988.",
+    "eurimagesCta": "Visit eurimages.org"
+  },
+  "courses": {
+    "introGreenProduction": {
+      "title": "Introduction to Green Production",
+      "description": "Discover the fundamentals of environmentally responsible audiovisual production. This free course is automatically available to all registered learners."
+    },
+    "masteringGreenProduction": {
+      "title": "Mastering Green Production",
+      "description": "Go beyond the basics and master sustainable production workflows, from pre-production to distribution."
+    },
+    "carbonFootprinting": {
+      "title": "Mastering Carbon Footprinting in Film and TV",
+      "description": "Learn to measure, report, and reduce the carbon footprint of film and television productions using industry-standard methodologies."
+    },
+    "greenAnimation": {
+      "title": "Green Animation",
+      "description": "Sustainable practices specifically tailored for animation studios: render farms, energy use, remote collaboration, and eco-friendly pipelines."
+    }
   },
   "map": {
     "searchPlaceholder": "Search country or city...",
@@ -62,7 +82,7 @@
     "profile": "Profile",
     "roleLearner": "Learner",
     "roleCohortManager": "Cohort Manager",
-    "organizationName": "Organization name",
+    "organizationName": "Organisation name",
     "organizationNamePlaceholder": "e.g. My Production Studio"
   },
   "dashboard": {
@@ -70,8 +90,8 @@
     "titleManager": "Learner Tracking",
     "welcome": "Welcome back, {{name}}",
     "myCourses": "My Courses",
-    "catalog": "Course Catalog",
-    "catalogSubtitle": "Enroll to access these courses."
+    "catalog": "Course Catalogue",
+    "catalogSubtitle": "Enrol to access these courses."
   },
   "courseCard": {
     "status": {
@@ -83,7 +103,7 @@
       "not_started": "Start Course",
       "in_progress": "Continue",
       "completed": "Review",
-      "enroll": "Enroll"
+      "enroll": "Enrol"
     },
     "modules": "modules",
     "free": "Free"
@@ -99,16 +119,16 @@
   "enroll": {
     "duration": "Duration",
     "modules": "Modules",
-    "enrollNow": "Enroll Now",
+    "enrollNow": "Enrol Now",
     "redirecting": "Redirecting...",
     "notFound": "Course not found.",
     "success": {
-      "title": "Enrollment Successful!",
+      "title": "Enrolment Successful!",
       "message": "You have been enrolled in the course. You can now access it from your courses.",
       "cta": "Go to My Courses"
     },
     "cancel": {
-      "title": "Enrollment Cancelled",
+      "title": "Enrolment Cancelled",
       "message": "Your payment was cancelled. No charges have been made.",
       "cta": "Try Again"
     }
@@ -179,8 +199,8 @@
     "sent": "Reminder sent successfully!"
   },
   "enrollModal": {
-    "tabIndividual": "Individual enrollment",
-    "tabGroup": "Enroll my team",
+    "tabIndividual": "Individual enrolment",
+    "tabGroup": "Enrol my team",
     "email": "Email",
     "lastName": "Last name",
     "firstName": "First name",
@@ -191,17 +211,17 @@
     "codeDiscount": "{{percent}}% discount applied!",
     "stripeNotice": "You will be redirected to a secure Stripe checkout page.",
     "enrollFree": "Access course",
-    "groupIntro": "Choose the plan that fits your organization.",
+    "groupIntro": "Choose the plan that fits your organisation.",
     "groupRecommended": "Recommended",
     "offerCohortTitle": "Group / Cohort",
-    "offerCohortDesc": "For teams looking to train a group with centralized tracking.",
+    "offerCohortDesc": "For teams looking to train a group with centralised tracking.",
     "offerCohortDetail": "up to 200 people — degressive beyond",
     "offerCohortInclude1": "An internal contact manages the cohort",
     "offerCohortInclude2": "Access to all courses",
     "offerCohortInclude3": "Collective learner tracking",
     "offerCohortInclude4": "Volume-based pricing",
     "offerScormTitle": "Enterprise / SCORM",
-    "offerScormDesc": "For large organizations with their own LMS.",
+    "offerScormDesc": "For large organisations with their own LMS.",
     "offerScormPrice": "Custom quote",
     "offerScormDetail": "based on number of users",
     "offerScormInclude1": "Delivery into your LMS",
@@ -217,13 +237,6 @@
   },
   "about": {
     "initiativeBanner": "StepUP is a Eurimages initiative developed by Ecoprod.",
-    "eurimagesEcoprod": {
-      "title": "Eurimages & Ecoprod",
-      "subtitle": "StepUP is a Eurimages initiative developed by Ecoprod, bringing together European expertise for sustainable audiovisual production.",
-      "eurimagesDesc": "Eurimages is the Council of Europe's fund for the co-production, distribution, exhibition, and digitisation of European cinematographic works. Established in 1988, it supports the European film industry and promotes cultural diversity.",
-      "ecoprodDesc": "Ecoprod is a collective initiative dedicated to supporting the ecological transition of the audiovisual and cinema industry. Through tools, training, and resources, Ecoprod helps professionals reduce the environmental impact of their productions.",
-      "contact": "Contact"
-    },
     "partners": {
       "title": "Our Partners",
       "subtitle": "StepUP is supported by a network of partners committed to sustainable audiovisual production across Europe.",
@@ -233,11 +246,14 @@
   "footer": {
     "resources": "Resources",
     "learning": "Learning",
-    "aboutUs": "About Us",
+    "partners": "Partners",
     "legal": "Legal",
     "terms": "Terms of Use",
     "privacy": "Privacy Policy",
-    "copyright": "© 2025 StepUP. All rights reserved."
+    "copyright": "© 2025 StepUP. All rights reserved.",
+    "ecoprodDesc": "A collective initiative supporting the ecological transition of the audiovisual and film industry.",
+    "eurimagesDesc": "The Council of Europe's fund for co-production, distribution, and exhibition of European cinematographic works.",
+    "visitWebsite": "Visit website"
   },
   "legal": {
     "lastUpdated": "Last updated",

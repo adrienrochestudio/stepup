@@ -6,12 +6,17 @@ import LanguageSwitcher from './LanguageSwitcher';
 import Footer from './Footer';
 import './Layout.css';
 
+function getEcoprodUrl(lang) {
+  return lang === 'fr' ? 'https://ecoprod.com' : 'https://ecoprod.com/en/';
+}
+
 export default function Layout() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [aboutOpen, setAboutOpen] = useState(false);
   const { user, logout } = useAuth();
   const navigate = useNavigate();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const currentLang = i18n.language?.substring(0, 2) || 'fr';
 
   const handleLogout = async () => {
     await logout();
@@ -39,38 +44,25 @@ export default function Layout() {
           <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
             <li><NavLink to="/resources/map" onClick={() => setMenuOpen(false)}>{t('nav.map')}</NavLink></li>
             <li><NavLink to="/resources/webinars" onClick={() => setMenuOpen(false)}>{t('nav.webinars')}</NavLink></li>
-            <li
-              className="nav-dropdown"
-              onMouseEnter={() => setAboutOpen(true)}
-              onMouseLeave={() => setAboutOpen(false)}
-            >
-              <button className="nav-dropdown-trigger" type="button">
-                {t('nav.aboutUs')}
-                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M1 1l4 4 4-4" />
-                </svg>
-              </button>
-              {aboutOpen && (
-                <ul className="nav-dropdown-menu">
-                  <li>
-                    <NavLink to="/about/eurimages-ecoprod" onClick={() => { setMenuOpen(false); setAboutOpen(false); }}>
-                      {t('nav.aboutEurimagesEcoprod')}
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/about/partners" onClick={() => { setMenuOpen(false); setAboutOpen(false); }}>
-                      {t('nav.aboutPartners')}
-                    </NavLink>
-                  </li>
-                </ul>
-              )}
-            </li>
+            <li><NavLink to="/about/partners" onClick={() => setMenuOpen(false)}>{t('nav.partners')}</NavLink></li>
             {user && (
               <li><NavLink to="/dashboard" onClick={() => setMenuOpen(false)}>{t('nav.dashboard')}</NavLink></li>
             )}
             {user?.role === 'cohort_manager' && (
               <li><NavLink to="/admin/cohorts" onClick={() => setMenuOpen(false)}>{t('admin.title')}</NavLink></li>
             )}
+            <li className="nav-ecoprod-link">
+              <a
+                href={getEcoprodUrl(currentLang)}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ecoprod
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+                </svg>
+              </a>
+            </li>
           </ul>
 
           <LanguageSwitcher />
