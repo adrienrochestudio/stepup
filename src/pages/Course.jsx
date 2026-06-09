@@ -28,7 +28,6 @@ export default function Course() {
           <h1>{course.title}</h1>
           <div className="course-top-meta">
             <span>{course.duration}</span>
-            {course.modules != null && <span>{course.modules} {t('course.modules')}</span>}
           </div>
         </div>
 

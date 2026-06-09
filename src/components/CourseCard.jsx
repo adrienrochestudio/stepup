@@ -25,7 +25,6 @@ export default function CourseCard({ course, enrolled, onEnrollClick }) {
           <p>{description}</p>
           <div className="course-card-meta">
             <span>{course.duration}</span>
-            {course.modules != null && <span>{course.modules} {t('courseCard.modules')}</span>}
           </div>
           <button
             className="course-card-cta enroll"
@@ -54,7 +53,6 @@ export default function CourseCard({ course, enrolled, onEnrollClick }) {
         <p>{description}</p>
         <div className="course-card-meta">
           <span>{course.duration}</span>
-          <span>{course.modules} {t('courseCard.modules')}</span>
         </div>
         <div className="course-card-progress">
           <div className="progress-bar-track">
