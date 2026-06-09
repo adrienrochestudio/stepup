@@ -14,13 +14,12 @@ export default function Home() {
   const { t, i18n } = useTranslation();
   const { user } = useAuth();
   const [enrollCourse, setEnrollCourse] = useState(null);
-  const [expandedCourse, setExpandedCourse] = useState(null);
 
   const currentLang = i18n.language?.substring(0, 2) || 'fr';
   const latestCourse = allCourses[allCourses.length - 1];
   const otherCourses = allCourses.slice(0, -1);
 
-  const handleEnrollClick = (course) => {
+  const handleCourseClick = (course) => {
     if (user) {
       setEnrollCourse(course);
     } else {
@@ -51,7 +50,7 @@ export default function Home() {
       </section>
 
       <section className="home-latest">
-        <div className="home-latest-card">
+        <div className="home-latest-card" onClick={() => handleCourseClick(latestCourse)}>
           <div className="home-latest-badge">{t('home.newBadge')}</div>
           <div className="home-latest-content">
             <h2>{t(`courses.${latestCourse.i18nKey}.title`)}</h2>
@@ -66,15 +65,11 @@ export default function Home() {
               )}
             </div>
           </div>
-          <button
-            className="home-latest-arrow"
-            onClick={() => handleEnrollClick(latestCourse)}
-            aria-label={t('home.courseDetails')}
-          >
+          <div className="home-latest-arrow" aria-hidden="true">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
-          </button>
+          </div>
         </div>
       </section>
 
@@ -84,49 +79,29 @@ export default function Home() {
           {otherCourses.map((course) => (
             <div
               key={course.id}
-              className={`home-catalog-card ${expandedCourse === course.id ? 'expanded' : ''}`}
+              className="home-catalog-card"
+              onClick={() => handleCourseClick(course)}
             >
-              <div
-                className="home-catalog-card-header"
-                onClick={() => setExpandedCourse(expandedCourse === course.id ? null : course.id)}
-              >
-                <div className="home-catalog-card-info">
-                  <h3>{t(`courses.${course.i18nKey}.title`)}</h3>
-                  <div className="home-catalog-card-meta">
-                    <span>{course.duration}</span>
-                    <span>{course.modules} {t('courseCard.modules')}</span>
-                    {course.free ? (
-                      <span className="home-catalog-price free">{t('courseCard.free')}</span>
-                    ) : (
-                      <span className="home-catalog-price">{course.price} €</span>
-                    )}
-                  </div>
-                </div>
-                <svg
-                  className="home-catalog-chevron"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M6 9l6 6 6-6" />
-                </svg>
+              <div className="home-catalog-card-top">
+                {course.free ? (
+                  <span className="home-catalog-badge free">{t('courseCard.free')}</span>
+                ) : (
+                  <span className="home-catalog-badge">{course.price} €</span>
+                )}
               </div>
-              {expandedCourse === course.id && (
-                <div className="home-catalog-card-details">
-                  <p>{t(`courses.${course.i18nKey}.description`)}</p>
-                  <button
-                    className="home-catalog-enroll"
-                    onClick={() => handleEnrollClick(course)}
-                  >
-                    {t('courseCard.cta.enroll')}
-                  </button>
+              <h3>{t(`courses.${course.i18nKey}.title`)}</h3>
+              <p>{t(`courses.${course.i18nKey}.description`)}</p>
+              <div className="home-catalog-card-footer">
+                <div className="home-catalog-card-meta">
+                  <span>{course.duration}</span>
+                  <span>{course.modules} {t('courseCard.modules')}</span>
                 </div>
-              )}
+                <span className="home-catalog-card-arrow">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </div>
             </div>
           ))}
         </div>
@@ -142,34 +117,40 @@ export default function Home() {
 
       <section className="home-partners-section">
         <div className="home-partner-card">
-          <h3>{t('home.ecoprodTitle')}</h3>
+          <div className="home-partner-header">
+            <h3>{t('home.ecoprodTitle')}</h3>
+            <a
+              href={getEcoprodUrl(currentLang)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="home-partner-link"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {t('home.ecoprodCta')}
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+              </svg>
+            </a>
+          </div>
           <p>{t('home.ecoprodDesc')}</p>
-          <a
-            href={getEcoprodUrl(currentLang)}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="home-partner-link"
-          >
-            {t('home.ecoprodCta')}
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
-            </svg>
-          </a>
         </div>
         <div className="home-partner-card">
-          <h3>{t('home.eurimagesTitle')}</h3>
+          <div className="home-partner-header">
+            <h3>{t('home.eurimagesTitle')}</h3>
+            <a
+              href="https://www.coe.int/en/web/eurimages"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="home-partner-link"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {t('home.eurimagesCta')}
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
+              </svg>
+            </a>
+          </div>
           <p>{t('home.eurimagesDesc')}</p>
-          <a
-            href="https://www.coe.int/en/web/eurimages"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="home-partner-link"
-          >
-            {t('home.eurimagesCta')}
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
-            </svg>
-          </a>
         </div>
       </section>
 

@@ -163,12 +163,20 @@
   background: var(--color-olive);
 }
 
-.course-card-locked {
+.course-card-locked .course-card-thumb,
+.course-card-locked .course-card-body h3,
+.course-card-locked .course-card-body p,
+.course-card-locked .course-card-meta,
+.course-card-locked .course-card-lock-icon {
   opacity: 0.5;
-  transition: opacity 0.3s, transform var(--transition-fast);
+  transition: opacity 0.3s;
 }
 
-.course-card-locked:hover {
+.course-card-locked:hover .course-card-thumb,
+.course-card-locked:hover .course-card-body h3,
+.course-card-locked:hover .course-card-body p,
+.course-card-locked:hover .course-card-meta,
+.course-card-locked:hover .course-card-lock-icon {
   opacity: 0.85;
 }
 

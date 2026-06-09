@@ -44,7 +44,6 @@ export default function Layout() {
           <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
             <li><NavLink to="/resources/map" onClick={() => setMenuOpen(false)}>{t('nav.map')}</NavLink></li>
             <li><NavLink to="/resources/webinars" onClick={() => setMenuOpen(false)}>{t('nav.webinars')}</NavLink></li>
-            <li><NavLink to="/about/partners" onClick={() => setMenuOpen(false)}>{t('nav.partners')}</NavLink></li>
             {user && (
               <li><NavLink to="/dashboard" onClick={() => setMenuOpen(false)}>{t('nav.dashboard')}</NavLink></li>
             )}
