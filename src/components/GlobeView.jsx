@@ -7,10 +7,10 @@ import './GlobeView.css';
 
 const COUNTRIES_WITH_DATA = Object.keys(countryData);
 
-const COLOR_SEA = '#dfe0e2';
-const COLOR_ACTIVE = '#bdc609';
-const COLOR_INACTIVE = '#c2c4b0';
-const COLOR_HOVER = '#d5d99a';
+const COLOR_SEA = '#eef0f2';
+const COLOR_ACTIVE = '#b5be2e';
+const COLOR_INACTIVE = '#d6d9cd';
+const COLOR_HOVER = '#e2e6c4';
 const COLOR_SELECTED = '#3d4712';
 
 function hasData(feat) {
