@@ -3,7 +3,16 @@ import GlobeView from '../components/GlobeView';
 import MapControls from '../components/MapControls';
 import CountryInfoPanel from '../components/CountryInfoPanel';
 import AddInfoModal from '../components/AddInfoModal';
+import { countryData, categoryKeys } from '../data/countryData';
 import './ResourceMap.css';
+
+function getAllSubKeys(catKey) {
+  const france = countryData.France;
+  if (!france || !france[catKey]) return [];
+  return Object.keys(france[catKey].subcategories).map(
+    (k) => `${catKey}.${k}`,
+  );
+}
 
 export default function ResourceMap() {
   const [selectedCountry, setSelectedCountry] = useState(null);
@@ -14,12 +23,27 @@ export default function ResourceMap() {
     setSelectedCountry((prev) => (prev === countryName ? null : countryName));
   }, []);
 
-  const handleToggleFilter = useCallback((catKey) => {
+  const handleToggleFilter = useCallback((subFullKey) => {
     setActiveFilters((prev) =>
-      prev.includes(catKey)
-        ? prev.filter((k) => k !== catKey)
-        : [...prev, catKey],
+      prev.includes(subFullKey)
+        ? prev.filter((k) => k !== subFullKey)
+        : [...prev, subFullKey],
     );
+  }, []);
+
+  const handleToggleAllCategory = useCallback((catKey) => {
+    if (!catKey) {
+      setActiveFilters([]);
+      return;
+    }
+    const allSubs = getAllSubKeys(catKey);
+    setActiveFilters((prev) => {
+      const allActive = allSubs.every((s) => prev.includes(s));
+      if (allActive) {
+        return prev.filter((k) => !allSubs.includes(k));
+      }
+      return [...new Set([...prev, ...allSubs])];
+    });
   }, []);
 
   const handleSearch = useCallback((query) => {
@@ -36,6 +60,7 @@ export default function ResourceMap() {
         onSearch={handleSearch}
         activeFilters={activeFilters}
         onToggleFilter={handleToggleFilter}
+        onToggleAllCategory={handleToggleAllCategory}
       />
 
       <div className="resource-map-globe-area">

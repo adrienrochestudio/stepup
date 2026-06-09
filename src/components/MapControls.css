@@ -141,6 +141,49 @@
   background: var(--color-bg);
   color: var(--color-text-muted);
   white-space: nowrap;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-family: var(--font-family);
+  transition: all var(--transition-fast);
+}
+
+.map-panel-sub-tag:hover {
+  border-color: var(--color-kaki);
+  color: var(--color-kaki);
+}
+
+.map-panel-sub-tag.active {
+  background: var(--color-kaki);
+  color: var(--color-white);
+  border-color: var(--color-kaki);
+}
+
+.map-clear-filters {
+  font-family: var(--font-family);
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  padding: 0.3rem 0.4rem;
+  white-space: nowrap;
+}
+
+.map-clear-filters:hover {
+  color: var(--color-text);
+}
+
+.tab-count {
+  font-size: 0.65rem;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 0 0.3rem;
+  border-radius: 8px;
+  min-width: 16px;
+  text-align: center;
+  line-height: 1.4;
 }
 
 @media (max-width: 768px) {

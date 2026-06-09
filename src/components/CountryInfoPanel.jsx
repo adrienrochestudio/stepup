@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { getCountryData, getAvailableCategories } from '../data/countryData';
+import { getCountryData, getAvailableCategories, categoryKeys } from '../data/countryData';
 import './CountryInfoPanel.css';
 
 function renderContent(text) {
@@ -23,11 +23,7 @@ function renderContent(text) {
   });
 }
 
-export default function CountryInfoPanel({
-  country,
-  activeFilters,
-  onClose,
-}) {
+export default function CountryInfoPanel({ country, activeFilters, onClose }) {
   const [expandedSub, setExpandedSub] = useState(null);
   const data = getCountryData(country);
 
@@ -49,11 +45,8 @@ export default function CountryInfoPanel({
     );
   }
 
+  const hasFilters = activeFilters.length > 0;
   const availableCategories = getAvailableCategories(country);
-  const categoriesToShow =
-    activeFilters.length > 0
-      ? activeFilters.filter((f) => availableCategories.includes(f))
-      : availableCategories;
 
   const toggleSub = (key) => {
     setExpandedSub(expandedSub === key ? null : key);
@@ -70,42 +63,50 @@ export default function CountryInfoPanel({
         </div>
 
         <div className="country-panel-content">
-          {categoriesToShow.map((catKey) => {
+          {availableCategories.map((catKey) => {
             const category = data[catKey];
             if (!category) return null;
+
+            const subcatEntries = Object.entries(category.subcategories);
+
+            const visibleSubs = hasFilters
+              ? subcatEntries.filter(([subKey]) =>
+                  activeFilters.includes(`${catKey}.${subKey}`),
+                )
+              : subcatEntries;
+
+            if (visibleSubs.length === 0) return null;
 
             return (
               <div key={catKey} className="country-category">
                 <h3 className="country-category-title">{category.label}</h3>
                 <div className="country-subcategories">
-                  {Object.entries(category.subcategories).map(
-                    ([subKey, sub]) => {
-                      const fullKey = `${catKey}.${subKey}`;
-                      const isExpanded = expandedSub === fullKey;
+                  {visibleSubs.map(([subKey, sub]) => {
+                    const fullKey = `${catKey}.${subKey}`;
+                    const isExpanded = expandedSub === fullKey;
 
-                      return (
-                        <div
-                          key={subKey}
-                          className={`country-subcategory ${isExpanded ? 'expanded' : ''}`}
+                    return (
+                      <div
+                        key={subKey}
+                        className={`country-subcategory ${isExpanded ? 'expanded' : ''}`}
+                      >
+                        <button
+                          className="country-subcategory-toggle"
+                          onClick={() => toggleSub(fullKey)}
                         >
-                          <button
-                            className="country-subcategory-toggle"
-                            onClick={() => toggleSub(fullKey)}
-                          >
-                            <span>{sub.label}</span>
-                            <span className="toggle-icon">
-                              {isExpanded ? '−' : '+'}
-                            </span>
-                          </button>
-                          {isExpanded && (
-                            <div className="country-subcategory-content">
-                              {renderContent(sub.content)}
-                            </div>
-                          )}
-                        </div>
-                      );
-                    },
-                  )}
+                          <span>{sub.label}</span>
+                          <span className="toggle-icon">
+                            {isExpanded ? '−' : '+'}
+                          </span>
+                        </button>
+                        {isExpanded && (
+                          <div className="country-subcategory-content">
+                            {renderContent(sub.content)}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             );
