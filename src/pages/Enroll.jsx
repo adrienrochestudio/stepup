@@ -57,10 +57,12 @@ export default function Enroll() {
               <span className="enroll-detail-label">{t('enroll.duration')}</span>
               <span className="enroll-detail-value">{course.duration}</span>
             </div>
-            <div className="enroll-detail">
-              <span className="enroll-detail-label">{t('enroll.modules')}</span>
-              <span className="enroll-detail-value">{course.modules}</span>
-            </div>
+            {course.modules != null && (
+              <div className="enroll-detail">
+                <span className="enroll-detail-label">{t('enroll.modules')}</span>
+                <span className="enroll-detail-value">{course.modules}</span>
+              </div>
+            )}
           </div>
 
           <div className="enroll-price">

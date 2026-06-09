@@ -48,10 +48,18 @@ export default function ResourceMap() {
 
   const handleSearch = useCallback((query) => {
     if (!query.trim()) return;
-    const normalized = query.trim();
-    setSelectedCountry(
-      normalized.charAt(0).toUpperCase() + normalized.slice(1),
+    const normalized = query.trim().toLowerCase();
+    const allCountryKeys = Object.keys(countryData);
+    const match = allCountryKeys.find(
+      (key) =>
+        key.toLowerCase() === normalized ||
+        countryData[key].name.toLowerCase() === normalized ||
+        key.toLowerCase().includes(normalized) ||
+        countryData[key].name.toLowerCase().includes(normalized),
     );
+    if (match) {
+      setSelectedCountry(match);
+    }
   }, []);
 
   return (

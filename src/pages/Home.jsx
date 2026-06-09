@@ -57,7 +57,7 @@ export default function Home() {
             <p>{t(`courses.${latestCourse.i18nKey}.description`)}</p>
             <div className="home-latest-meta">
               <span>{latestCourse.duration}</span>
-              <span>{latestCourse.modules} {t('courseCard.modules')}</span>
+              {latestCourse.modules != null && <span>{latestCourse.modules} {t('courseCard.modules')}</span>}
               {latestCourse.free ? (
                 <span className="home-latest-price free">{t('courseCard.free')}</span>
               ) : (
@@ -94,7 +94,7 @@ export default function Home() {
               <div className="home-catalog-card-footer">
                 <div className="home-catalog-card-meta">
                   <span>{course.duration}</span>
-                  <span>{course.modules} {t('courseCard.modules')}</span>
+                  {course.modules != null && <span>{course.modules} {t('courseCard.modules')}</span>}
                 </div>
                 <span className="home-catalog-card-arrow">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

@@ -29,15 +29,15 @@
   "courses": {
     "introGreenProduction": {
       "title": "Introduction to Green Production",
-      "description": "Discover the fundamentals of environmentally responsible audiovisual production. This free course is automatically available to all registered learners."
+      "description": "A practical, hands-on course for film and TV professionals focused on sustainable production practices. Learn to produce differently, minimizing environmental impact while maintaining creativity — from set selection to crew transport, energy supply, and material sourcing."
     },
     "masteringGreenProduction": {
       "title": "Mastering Green Production",
-      "description": "Go beyond the basics and master sustainable production workflows, from pre-production to distribution."
+      "description": "Addressing urgent environmental priorities in filmmaking: key sustainability challenges, international regulations, and strategies for reducing production impact while accessing green funding opportunities — tailored for producers, film commissions, financiers, and broadcasters."
     },
     "carbonFootprinting": {
-      "title": "Mastering Carbon Footprinting in Film and TV",
-      "description": "Learn to measure, report, and reduce the carbon footprint of film and television productions using industry-standard methodologies."
+      "title": "Carbon Calculation for the Film and TV Industry",
+      "description": "Learn to measure carbon footprints in film and TV production. Covers climate issues, carbon assessment methodologies, data handling, result interpretation, sustainability labels, and carbon offsetting — with interactive exercises and case studies."
     },
     "greenAnimation": {
       "title": "Green Animation",

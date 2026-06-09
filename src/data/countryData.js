@@ -2,38 +2,39 @@ export const countryData = {
   France: {
     code: 'FRA',
     name: 'France',
+    credit: 'This factsheet was produced by Ecoprod.',
     generalInfo: {
       label: 'General Information',
       subcategories: {
         greenProductionStatus: {
           label: 'Status of green production',
           content:
-            'Green production is progressing steadily, driven by increasing demand and a dedicated group of stakeholders. While a solid core is engaged, fully mobilizing the entire sector remains a challenge. The CNC is advancing the film industry through its ambitious yet flexible Action Plan, aiming for nationwide impact. Simultaneously, companies are complying with regulations, especially in the area of Corporate Social Responsibility (CSR).',
+            'Green production is progressing gradually, driven by increasing demand and a committed group of stakeholders. The CNC advances the film industry through its Action Plan, which mandates carbon calculation. Broadcasters and production companies increasingly commit to green production standards.',
         },
         decarbonizationPlan: {
           label: 'Decarbonization plan',
           content:
-            "France's environmental protection framework targets carbon neutrality by 2050, focusing on reducing emissions and promoting renewable energy. The 2015 Energy Transition Act aims for a 40% emissions reduction by 2030 and 50% energy consumption cut by 2050. The 2020 Circular Economy Law bans single-use plastics, promotes recycling, and enforces Extended Producer Responsibility (EPR).\n\nThe 2016 Biodiversity Law enhances habitat protection, and the 1996 LAURE Law regulates air quality. Water quality is governed by the EU Water Framework Directive, while urban planning follows Grenelle Environment Laws promoting sustainable development. Additional regulations cover noise pollution, sustainable forestry, and environmental impact assessments.",
+            "France targets carbon neutrality by 2050 with a 40% emission reduction by 2030 and a 50% energy consumption cut by 2050 (2015 Energy Transition Act). The 2020 Circular Economy Law (AGEC) bans single-use plastics, promotes recycling, and enforces Extended Producer Responsibility (EPR).\n\nThe 2016 Biodiversity Law enhances habitat protection, and the 1996 LAURE Law regulates air quality. Water quality is governed by the EU Water Framework Directive, while urban planning follows the Grenelle Environment Laws promoting sustainable development.",
         },
         laws: {
           label: 'Relevant national legislation',
           content:
-            '• Reduction of Carbon Footprint: Film productions must comply with European and French regulations on reducing greenhouse gas emissions, such as the law on energy transition for green growth.\n• Waste Management: Obligation to sort and recycle filming waste in accordance with national waste legislation (AGEC law — anti-waste for a circular economy).\n• CSR Reporting: Large companies (more than 500 employees) must publish an annual CSR report detailing their social, environmental, and economic impacts, in accordance with the European directive on the disclosure of non-financial information (Directive 2014/95/EU).\n• European Regulations, like the European Directive on Industrial Emissions (IED): Some large infrastructures of the film industry must comply with European standards on emissions and environmental protection.',
+            '• Carbon Footprint Reduction: Companies must comply with national and EU greenhouse gas emission reduction standards, including the Energy Transition Law.\n• Waste Management: Productions are required to sort and recycle all waste generated on set in compliance with the AGEC Law.\n• CSR Reporting: Companies with over 500 employees must publish detailed annual reports on their social, environmental, and economic impacts (EU Directive 2014/95/EU).\n• Industrial Emissions Directive compliance for large film industry infrastructures.',
         },
         socialLegislation: {
           label: 'Social legislation',
           content:
-            '• Production companies must comply with French anti-discrimination laws (Equality and Citizenship Law of 2017) and promote equal opportunities.\n• Working Conditions: Compliance with the French Labor Code, which governs working hours, health and safety conditions at work, and the fight against harassment.',
+            '• Anti-discrimination compliance with French equality laws (Equality and Citizenship Law of 2017).\n• Working Conditions: Productions must adhere to the French Labor Code, which regulates working hours, health and safety standards.\n• Gender-based violence prevention: 2010 and 2014 laws address violence and equality.\n• CNC encourages crew parity with financial bonuses and mandatory sexual/moral harassment training.',
         },
         audiovisualRegulation: {
           label: 'Film & TV industry regulations and incentives',
           content:
-            "As part of its Action Plan!, the CNC has implemented green conditionality for its grants, requiring the provision of two carbon assessments: a preliminary carbon assessment before filming and a final carbon assessment after the end of the production. This measure applies to all live-action works, including fiction and documentary, feature films and short films, series or standalone, financed by the CNC. This conditionality is not intended as an obligation of result. Only the submission of the carbon assessment is mandatory. However, the CNC has announced potential targeted checks to verify the accuracy of the information provided.\n\nAt the regional level, Île-de-France has a green bonus system ranging from €23,000 to €75,000 for specific expenses related to innovative practices or technologies. Several regions are implementing other green measures such as funding conditioning.",
+            "The CNC's eco-conditionality requires two carbon footprints (pre-shoot and post-production) for all funded projects — fiction and documentary, feature films and short films, series or standalone (since 2024 for live-action, since 2025 for animation/video games).\n\nRegional incentives:\n• Île-de-France: €23,000–€75,000 green bonuses for innovative eco-practices.\n• Corsica: Eco-bonus for compliant productions.\n• Grand Est: Carbon footprint and environmental action plan required.\n• Southern Region: Provisional and final carbon footprint assessments mandatory.",
         },
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            'Ecoprod: Association of companies and professionals of the industry, developing tools such as a free carbon calculator, a label, training and studies on green production.\nhttps://www.ecoprod.com/fr/',
+            '• Ecoprod: Association bringing together companies and professionals of the industry, developing tools such as a free carbon calculator, a label, training and studies.\nhttps://www.ecoprod.com/fr/\n• RESSAC: National network collecting and recirculating set design/costumes through multiple resourceries (La Ressourcerie Culturelle, ArtStock, La Ressourcerie du Cinéma, La Caverne, La Réserve des Arts).',
         },
       },
     },
@@ -43,32 +44,32 @@ export const countryData = {
         trainTravel: {
           label: 'Train transport (4/5)',
           content:
-            'France has one of the most extensive and efficient train networks in Europe, with high-speed TGV services connecting major cities like Paris, Lyon, Marseille, and Bordeaux. Regional trains (TER) and Intercity services (Intercités) cover smaller towns and rural areas, ensuring comprehensive coverage. The integration with European networks and extensive urban rail systems, such as the Paris Metro and RER, further enhance accessibility. However, occasional strikes and maintenance issues can sometimes affect reliability.',
+            'France has one of the most extensive and efficient rail networks in Europe, with high-speed TGV services connecting major cities like Paris, Lyon, Marseille, and Bordeaux. Regional trains (TER) and Intercity services (Intercités) cover smaller towns and rural areas. The integration with European networks and extensive urban rail systems (Paris Metro, RER) further enhance accessibility.',
         },
         electricCars: {
           label: 'Electric cars (4/5)',
           content:
-            'In France, major car rental companies such as Hertz, Europcar, and Avis offer electric vehicles (EVs) in their fleets, especially in larger cities and popular tourist destinations. Additionally, specialized services like Bluecity and Share Now provide convenient options for short-term electric car rentals. The growing network of charging stations also supports this trend. However, the availability and accessibility of charging stations, particularly in rural areas, and the relatively higher initial cost of EVs compared to traditional vehicles slightly hinder their overall accessibility.\n\nCharging stations map: https://fr.chargemap.com/map',
+            'Major car rental companies (Hertz, Europcar, Avis) offer electric vehicles, especially in larger cities. Specialized services like Bluecity and Share Now provide short-term electric car rentals. The growing network of charging stations supports this trend, though availability in rural areas remains limited.\n\nCharging stations map: https://fr.chargemap.com/map',
         },
         gridConnection: {
-          label: 'Grid connection (3/5)',
+          label: 'Grid connection',
           content:
-            'France has a well-developed grid available for film productions, particularly in major cities like Paris, Lyon and Marseille, but also smaller cities. However, in more remote or less-developed areas, access to reliable grid connections can be a challenge.',
+            'France has a well-developed grid available for film productions, particularly in major cities (Paris, Lyon, Marseille) but also smaller cities. Less carbon-intensive due to nuclear power. In more remote or less-developed areas, access to reliable grid connections can be a challenge.',
         },
         wasteManagement: {
           label: 'Waste management rules',
           content:
-            'France waste management rules follow European Union directives and national regulations, primarily outlined in the Environmental Code. Companies producing more than 1,100 liters of waste per week must entrust the management of their waste to an approved service provider. This includes companies specializing in waste collection, transportation and recovery.\n\nSeparate systems exist for packaging, electronic waste, hazardous waste, and construction waste. Authorities conduct inspections, and non-compliance can result in fines. Businesses must report their waste management practices.',
+            'Mandatory sorting; companies producing more than 1,100 liters of waste per week must use an approved service provider. Separate systems exist for packaging, electronic waste, hazardous waste, and construction waste. Authorities conduct inspections, and non-compliance can result in fines. Businesses must report their waste management practices.',
         },
         socialRules: {
           label: 'Social rules (gender equality, inclusion)',
           content:
-            'In France, comprehensive legislation and initiatives aim to combat gender-based violence, promote inclusion, and advance gender equality. Key laws include the 2010 law on violence against women and the 2014 law for real equality between women and men, criminalizing gender-based violence, including domestic abuse and sexual harassment. Victims have access to legal protection, support services, and emergency accommodations, such as the 3919 helpline for domestic violence victims.\n\nThe CNC also promotes gender parity in film crews through a financial bonus for gender-balanced teams. Anti-discrimination laws protect against bias based on gender, sexual orientation, and disability, while workplace policies promote diversity, inclusion, and parental leave.',
+            'Comprehensive legislation combats gender-based violence, promotes inclusion, and advances gender equality. Key laws include the 2010 law on violence against women and the 2014 law for real equality between women and men. The CNC promotes gender parity in film crews through a financial bonus for gender-balanced teams. Anti-discrimination laws protect against bias based on gender, sexual orientation, and disability.',
         },
         otherFacts: {
           label: 'Other important facts',
           content:
-            'There is a national network called RESSAC (National Network of Artistic and Cultural Resource Centers) that includes several places in France. Created in 2020, this network allows cultural reuse professionals to share their expertise and work on common issues.\n\n• La Ressourcerie Culturelle in Montaigu-Vendée\n• ArtStock, with locations in Saint-Gaudens and Asnières-sur-Seine\n• La Ressourcerie du Cinéma\n• La Caverne\n• La Réserve des Arts',
+            'Labels:\n• Ecoprod Label with independent audit certification.\n• Afnor Spec 2308 guidelines.\n\nCertified Calculators:\n• Carbon\'Clap (Ecoprod)\n• SecoSet (Flying Secoya)\n• Carbon\'Stage (Greenly)\n• Carbulator (animation)',
         },
       },
     },
@@ -88,7 +89,7 @@ export const countryData = {
         trainings: {
           label: 'Trainings',
           content:
-            '• Ecoprod provides training for professionals of the industry, covered by AFDAS at 100% with no waiting period — https://www.ecoprod.com/fr/formations.html\n• The CST proposes short training sessions: "Climate change — Fundamentals and implications for the audiovisual sector", "Mastering the carbon footprint measurement tool", "Responsible audiovisual production", "Fundamentals of CSR"\n• Ecoprod proposes long training over several weeks: "Green management on set", "Implementing a green production", "Green digital production", "Green set design"\n• As part of the France 2030 plan, green production training courses are also deployed in several film schools.',
+            '• Ecoprod provides training for professionals of the industry, covered by AFDAS at 100% — https://www.ecoprod.com/fr/formations.html\n• Ecoprod proposes long training over several weeks: "Green management on set", "Implementing a green production", "Green digital production", "Green set design".\n• The CST proposes short training sessions on climate change, carbon footprint measurement, responsible production, and CSR fundamentals.\n• As part of the France 2030 plan, green production training courses are deployed in several film schools.',
         },
         tools: {
           label: 'Calculators & tools',
@@ -98,7 +99,1460 @@ export const countryData = {
         networks: {
           label: 'Networks for professionals',
           content:
-            '• Les Toiles Vertes: a network of French "green professionals" of the film industry\n• Ecoprod: a network of companies\n• The CUT! Collective: a collective of professionals of the industry',
+            '• Les Toiles Vertes: a network of French "green professionals" of the film industry.\n• Ecoprod: a network of 400+ companies.\n• The CUT! Collective: a collective of professionals of the industry.',
+        },
+      },
+    },
+  },
+
+  Belgium: {
+    code: 'BEL',
+    name: 'Belgium',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {},
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {},
+    },
+  },
+
+  Canada: {
+    code: 'CAN',
+    name: 'Canada (Québec)',
+    credit: 'This factsheet was produced by Valérie Diagneault from On tourne vert – Rolling Green.',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Most provinces operate programs similar to Rolling Green, focusing on local and international productions in Quebec.\n\n2023 Telefilm Canada Survey Results:\n• 94% consider Sustainable Green Practices (SGPP) important in their workplace.\n• 33% received support for implementing SGPP.\n• 30% use carbon calculators in the workplace.\n• 26% attended sustainable production training in the last three years.\n\nQuebec Worker Awareness:\n• 92% focus on reducing waste (e.g., going paperless, reusable bottles).\n• 85% engage in recycling/composting.\n• 83% opt for greener transportation (e.g., electric cars, hybrid).\n• 75% repurpose or donate materials (sets, costumes, food).\n\nRolling Green has accredited 105 productions since 2021 with annually increasing applications. Quebec leads Canada alongside Ontario and British Columbia but lags Europe in incentives, standards, and training.',
+        },
+        laws: {
+          label: 'Relevant national legislation',
+          content:
+            'Environmental Laws:\n• La Loi sur la qualité de l\'environnement (LQE) – governs environmental authorizations and protections.\n• Règlement interdisant les plastiques à usage unique – federal regulation banning single-use plastics.\n• Montréal Plan Climat 2020-2030 – climate action roadmap.\n• Feuille de route Montréalaise en économie circulaire 2024-2030.\n\nFederal Social Laws:\n• Canadian Charter of Rights and Freedoms.\n• Canadian Human Rights Act.\n• Employment Equity Act.\n• Accessible Canada Act.\n• Final Report of the Truth and Reconciliation Commission of Canada.\n\nProvincial Social Laws:\n• Charter of Human Rights and Freedoms.\n• Occupational Health and Safety Act.\n• Act Respecting Equal Access to Employment in Public Bodies.\n• Act to Prevent and Fight Sexual Violence in Higher Education Institutions.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'No specific regulations exist. Since 2022, Production Program applicants must submit sustainable production plans. Téléfilm Canada offers a Sustainable Development Plan for Production template.\n\nMay 2024: Téléfilm Canada launched Phase 2 of its Sustainable Development Action Plan, aiming to further integrate sustainable development into production practices.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            'Canada-wide programs:\n• Quebec: Rolling Green / On Tourne Vert.\n• British Columbia: Green Spark Group and Creative BC.\n• Ontario: Ontario Green Screen.\n• Nova Scotia: Screen Nova Scotia.\n\nSeptember 2024: A coalition called Cadre vert was formed by major Canadian organizations in content creation and funding to reduce the environmental impact of the audiovisual industry sustainably.',
+        },
+        decarbonizationPlan: {
+          label: 'Decarbonization plan',
+          content:
+            'Quebec relies on hydroelectric power for clean electricity with minimal carbon footprint. The 2019–2024 action plan by Recyc-Québec outlines strategies to improve waste management. Montreal enforces composting and recycling regulations varying by district.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        trainTravel: {
+          label: 'Train transport',
+          content:
+            'Underdeveloped, expensive, and inefficient for production travel needs.',
+        },
+        electricCars: {
+          label: 'Electric cars',
+          content:
+            'Increasingly available in Quebec due to hydroelectric power. Challenges: lack of EVs suited to audiovisual production needs and higher rental costs. Roulez vert program offers financial incentives. Quebec\'s Electric Vehicle Charging Strategy targets 116,000+ public charging stations by 2030.',
+        },
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Quebec relies on hydroelectric power for clean electricity with minimal carbon footprint. However, productions face logistical grid connection challenges, leading to diesel generator use. Rolling Green opened discussions with Hydro-Québec and Montreal to enable grid connections in popular shooting areas.',
+        },
+        wasteManagement: {
+          label: 'Waste management rules',
+          content:
+            'Montreal enforces composting and recycling regulations varying by district. Productions must adapt to localized rules for compostable and recyclable materials. Recyc-Québec provides resources including an eco-center directory for bulky and hazardous waste.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        greenConsultants: {
+          label: 'Green consultants',
+          content:
+            'No existing comprehensive list of trained professionals. Many foreign and local productions need help preparing sustainable plans. Currently considering a training program providing certifications to identify qualified green consultants.',
+        },
+        serviceProviders: {
+          label: 'Service providers',
+          content:
+            '• On Tourne Vert Directory – list of eco-responsible service providers.',
+        },
+        trainings: {
+          label: 'Trainings',
+          content:
+            'Training program for sustainable production supported by SODEC, INIS, AQPM, and QFTC: Parcours On tourne vert x SODEC.',
+        },
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            "• Albert Carbon Calculator – measures production carbon footprints.\n• Carbon'Clap – free calculator powered by Ecoprod.\n• Additional tools available on Green Toolkit Film&TV database.",
+        },
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• LinkedIn: On tourne vert company page.\n• Facebook: ontournevert.\n• Instagram: ontournevert.',
+        },
+      },
+    },
+  },
+
+  Germany: {
+    code: 'DEU',
+    name: 'Germany',
+    credit: 'This factsheet was produced by Birgit Heidsiek, founder of Green Film Shooting.',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Effective July 1, 2023, all film and TV productions receiving public funding in Germany must follow ecological production standards. Standards include 39 requirements (22 mandatory), covering all production stages regardless of company location, with up to five deviations permitted.\n\nFive standard categories:\n1. General requirements\n2. Energy use\n3. Transportation\n4. Accommodations and catering\n5. Material use',
+        },
+        decarbonizationPlan: {
+          label: 'Decarbonization plan',
+          content:
+            'Federal Climate Change Act (renewed July 17, 2024) targets: 65% emissions reduction by 2030, 88% by 2040 (vs. 1990 levels), carbon neutrality by 2045.\n\nElectricity goals by 2030: minimum 80% from renewables — 215 GW photovoltaic, 115 GW onshore wind, 30 GW offshore wind.',
+        },
+        laws: {
+          label: 'Relevant national legislation',
+          content:
+            '• Fuel Emissions Trading Act (BEHG): National emissions trading system since 2021, setting CO2 pricing for fuels in building and transportation sectors. Starting price: €25/ton (2021), transitioning to market-based pricing from 2027.\n• Circular Economy Act: Waste prevention, reuse, recycling, energy recovery, and disposal priorities.\n• 2017 Commercial Waste Ordinance: Requires separate collection of paper, glass, plastic, metal, wood, textiles, organic waste. Entities generating over 50 kg weekly must document management.',
+        },
+        socialLegislation: {
+          label: 'Social legislation & diversity',
+          content:
+            'Women comprise 47% of central roles, men 53%. Women over 50 represent only 30% of key roles. Women direct 25% of films; write 24%.\n\nSince 2015, FFA collects gender data in funding applications. Funding decision committees now fully gender-equitable. MOIN Film Fund uses a "Diversity Checklist" for applications. "OMNI Inclusion Data" platform tracks industry diversity with GDPR-compliant protection.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'Management and line producers must sign statements confirming adherence. A green consultant oversees compliance. CO2 estimation required before funding; measurement post-production using approved calculator. Final compliance report mandatory.\n\nEnergy: Certified green energy for all production sites. Generators only when grid access unavailable within 100 meters. LED required in studios; incandescent and halogen prohibited.\n\nTransportation: Flights prohibited for trips doable by train under 5 hours; private planes banned unless on-screen. At least one-third of vehicles must be CO2-efficient (electric/hybrid).\n\nAccommodations & Catering: At least 50% of accommodations in eco-certified establishments within 15 km. Minimum 50% locally sourced food or 33% organic. At least one vegetarian meal weekly; disposable tableware prohibited.\n\nMaterials: Rechargeable batteries mandatory. New wood must be FSC/PEFC certified. Costumes reused, rented, or second-hand. Paper: minimum 90% recycled fibers.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            'All German Film Commissions have agreed to apply the ecological standards:\nBaden-Württemberg, Bavaria, Berlin, Brandenburg, Bremen, Hamburg, Hessen, Mecklenburg-Vorpommern, Lower Saxony, North Rhine-Westphalia, Saarland, Saxony-Anhalt, Schleswig-Holstein, Thuringia.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        trainTravel: {
+          label: 'Train transport',
+          content:
+            'In Germany, it is possible to travel almost anywhere by train. Depending on the transfer options, travelling by train is not in any case the fastest solution.',
+        },
+        electricCars: {
+          label: 'Electric cars',
+          content:
+            'The availability of electric cars is still low. Therefore it is not possible to require from productions to use electric cars only.',
+        },
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Grid availability varies by city and rural areas. Grid connections require advance ordering, limiting production flexibility.',
+        },
+        wasteManagement: {
+          label: 'Waste management rules',
+          content:
+            'Circular Economy Act priorities: waste prevention, reuse, recycling, energy recovery, disposal.\n\n2017 Commercial Waste Ordinance requires separate collection: paper, glass, plastic, metal, wood, textiles, organic waste. Entities generating over 50 kg weekly must document management.\n\nElectrical & Battery Waste: WEEE Directive enforces producer responsibility and free consumer returns. Packaging & Batteries Acts require manufacturers to fund disposal costs.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        greenConsultants: {
+          label: 'Green consultants',
+          content:
+            'Green Consultants Association membership list with search tool:\nhttps://bvgcd.de/members/',
+        },
+        serviceProviders: {
+          label: 'Service providers',
+          content:
+            '• Green Film Shooting Green Map: https://greenfilmshooting.net/blog/en/green-map/\n• MFG Green Shooting Service Directory: https://greenshooting.mfg.de/dienstleisterverzeichnis/',
+        },
+        trainings: {
+          label: 'Trainings',
+          content:
+            '• Hochschule der Medien Stuttgart & MFG Baden-Württemberg: 14–16 weeks certification for green consultants. Topics: sustainability principles, environmental management, green film production, energy, transport, waste, carbon calculation. Cost: €1,800 — https://www.zertifikat-green-consulting.de/\n• Green Consultant Film & TV IHK: Four-module online training on production planning, budgeting, sustainability measures. Cost: €2,400 — https://www.ihk-akademie-muenchen.de/csr-nachhaltigkeit/green-consultant-film-tv/',
+        },
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            '• Sustainability in Film – FFA: https://www.ffa.de/sustainability.html\n• Ecological Production Standards (English Version): https://www.ffa.de/sustainability.html\n• Green Motion Label: https://www.ffa.de/sustainability.html\n• Carbon Calculator: https://go.greenshooting.de/de_DE/\n• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/',
+        },
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• Green Film Pro Facebook Group: https://www.facebook.com/groups/GreenFilm.pro/about/\n• Green Film Shooting Facebook Page: https://www.facebook.com/people/Greenfilmshooting_en/1',
+        },
+      },
+    },
+  },
+
+  'Czech Republic': {
+    code: 'CZE',
+    name: 'Czech Republic',
+    credit: 'This factsheet was produced by Greenfilming.cz.',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Green production has advanced over four years. In 2020, the Czech Producers Association (APA) launched greenfilming.cz to raise awareness. TV NOVA integrated sustainable practices, becoming a leader in green filming.\n\n2023 survey: 90% address waste sorting, 81% focus on materials, 78% on office operations. Twenty productions adopted eco-production policies; three have dedicated sustainability roles.\n\nMain challenge: resistance to these practices, despite growing demand, particularly from international productions.',
+        },
+        laws: {
+          label: 'Relevant national legislation',
+          content:
+            'Waste Management: Czech Waste Management Act (Act 541/2020 Sb) mandates waste prevention and encourages reuse, recycling, or energy recovery.\n\nCSR/ESG Reports: Large companies must publish annual reports on social, environmental, and economic impact (EU Directive 2014/95/EU).\n\nAnti-Discrimination Act 198/2009 Sb – guarantees equal treatment. Czech Labour Code – regulates working hours, health and safety. Gender Equality Strategy 2021-2030.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'Newly established Principles of sustainable filmmaking represent basic recommendations to reduce negative environmental impact. Czech producers can voluntarily adhere at fundamental or extended implementation levels.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            'Czech Platform for Sustainable Audiovisual Production — www.greenfilming.cz\n\nMemorandum signatories: APA, ARAS, Czech Television, FTV Prima, TV Nova, FAMU.\n\nAdditional stakeholders: Czech Film Fund, Creative Europe, Studio Beep, b.green, Planet A Collective, AKA.',
+        },
+        decarbonizationPlan: {
+          label: 'Decarbonization plan',
+          content:
+            'National Energy and Climate Plan targets 30% greenhouse gas reduction by 2030 (vs. 2005), with 44 million tonnes CO2 equivalent reduction. By 2050, a 34% reduction in emissions is expected.\n\nState Environmental Policy for 2030 (perspective to 2050) includes protection goals for water, air, hazardous substances, and biodiversity.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        trainTravel: {
+          label: 'Train transport',
+          content:
+            'The Czech Republic has a fairly extensive rail network, but some local lines are slow, and punctuality of trains can sometimes be an issue.',
+        },
+        electricCars: {
+          label: 'Electric cars',
+          content:
+            'Over 16,000 electric cars on Czech roads. Approximately 3,650 public charging points available. Electric and hybrid cars available for rent. Map of charging stations: https://fdrive.cz/mapa-nabijecich-stanic/',
+        },
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Connection to the power grid is generally good, but remote locations can pose challenges. In Prague, it is now easier to get a temporary connection thanks to PRE (Prague Energetic) which allows the application to be submitted digitally online.',
+        },
+        wasteManagement: {
+          label: 'Waste management rules',
+          content:
+            'Companies must classify waste by type and prove handover recipient. More than 600 kg hazardous waste or 100 tonnes other waste per year requires reporting.\n\nSeparate systems for paper, plastic, glass, cans, compost, cooking oils, drugs, packaging, electronic waste, hazardous waste, construction waste.\n\nUseful contacts:\n• Directory how to separate waste: https://www.samosebou.cz/kampatri/\n• Art Re Use: https://www.artreuse.cz/\n• ReUse Federation: https://www.reusefederace.cz/co-je-reuse/',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        greenConsultants: {
+          label: 'Green consultants',
+          content:
+            '• b.green – founded by Eva Dvořáková Pérez.\n• Planet A Collective – led by Adam Karásek.',
+        },
+        serviceProviders: {
+          label: 'Service providers',
+          content:
+            'No comprehensive list yet. Greenfilming.cz has started to collect such information and the Czech Platform has created a directory as one of its goals.',
+        },
+        trainings: {
+          label: 'Trainings',
+          content:
+            'FAMU announced the Green Deal project to support sustainable development in the audiovisual industry. By 2025/2026, courses for students and professionals. Currently, a semester Greenfilming course at FAMU by Michaela Rýgrová.\n\nOne-off workshops and modules organised by FAMU and APA.',
+        },
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            'Different calculators and tools are available on Green Toolkit Film&TV:\nhttps://www.greentoolkit-filmtv.eu/database/?_categories=carbon-calculator',
+        },
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• Greenfilming.cz: https://www.facebook.com/greenfilming.cz\n• Green filming in Czech and Slovak republic (Facebook group): https://www.facebook.com/groups/249341536272336',
+        },
+      },
+    },
+  },
+
+  Denmark: {
+    code: 'DNK',
+    name: 'Denmark',
+    credit: 'This factsheet was produced by Anne Helvig Frost, Laura Kornerup Jensen (SF Studios) and Caroline Gjerulff (BFTP).',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Green production is steadily advancing, propelled by growing demand and dedicated stakeholders such as broadcasters, film funds and leading production companies with dedicated sustainability managers.\n\nProductived dialogue occurs across the value chain. Tailored trainings and seminars are organized for specific departments (planning, reporting, circular economy, green manager roles, conscious costume design).\n\nYearly 1-week Green Manager course at the National Film School of Denmark. New collaborations on environmental budgeting and green storytelling.\n\nThe Nordic Ecological Standard (NES), adapted from the German Ecological Standard, was launched in September 2025 and will be effective from 2027 in all Nordic countries.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'Currently no eco-bonuses. However, broadcasters demand sustainability plans and carbon budgets before greenlighting productions, and carbon reports after. Some arrangements withhold final 10% payment until carbon report delivery.\n\nBFTP (Sustainable film and TV production) — cooperation between all Danish financing partners: The Danish Film Institute, broadcasters, regional funds, Danish Producers\' Association. Deliverables: common strategy, green production handbook, adapted certification, sustainability plan templates, seminars and trainings.\n\nThe Green Producers Club supports cultural and creative industries in achieving Paris Agreement goals. GPT (Green Producers Tool) is a research-based climate tool aligned with the GHG Protocol.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            'BFTP Alliance Partners: TV2, DR, The Danish Film Institute, Viaplay, Warner Bros/Discovery, Producer association, Film Fyn, West Danish Film Fund.\n\nThe Danish Film Institute and Producers Association emphasize social aspects including diversity, security, and working environment courses.',
+        },
+        decarbonizationPlan: {
+          label: 'Decarbonization plan',
+          content:
+            'Danish Climate Act (2020): Denmark must reduce greenhouse gas emissions by 70% by 2030 (vs. 1990) and be climate-neutral by 2050 at the latest.\n\nGuiding principles: cost-effective transition, maintaining strong welfare society, real domestic reductions (not moving emissions outside Denmark).',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        trainTravel: {
+          label: 'Train transport (3/5, 5/5 in Copenhagen)',
+          content:
+            'Denmark has an efficient rail system connecting the biggest cities. Copenhagen region has vast opportunities for regional trains and S-trains. The 3 largest cities offer fast, easy travel via subway, buses, trams, and bicycles. On productions in greater Copenhagen 50% of the crew can easily bike.',
+        },
+        electricCars: {
+          label: 'Electric cars (4/5, 5/5 in Copenhagen)',
+          content:
+            'Major Danish car rentals (Europcar, Avis) offer both electric cars and sprinter vans.\n\nCharging info: https://chargefinder.com/dk',
+        },
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Denmark maintains a highly developed and reliable electricity grid. Many places it is possible to get connected to 16 amp. Wind power accounts for around 50% of Denmark\'s electricity generation. Strong interconnections with neighboring countries through Nord Pool power market.',
+        },
+        wasteManagement: {
+          label: 'Waste management rules',
+          content:
+            'Required sorting: Paper, Cardboard, Plastic & Cartons, Glass, Metal, Bio Waste, Wood, Electronic Waste (WEEE), Hazardous Waste, Textiles, Residual Waste.\n\nFilmservice.dk provides studio and location shoot waste management setup, waste pickup, weighing, and reports.\n\nDanish Environmental Protection Agency: https://mst.dk',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        greenConsultants: {
+          label: 'Green consultants',
+          content:
+            'Contact BFTP organization, which hosts network meetings for green consultants.\n\nFull-time consultants:\n• BFTP: Caroline Gjerulff (cg@visiondenmark.dk), Laura Kornerup (lk@visiondenmark.dk).\n• SF Studios / NEMA: Anne Helvig Frost (ahn@sfstudios.dk).\n• Green Producers Club: Ege Heckmann (ege@greenproducersclub.dk).\n• DR Public Broadcaster: Pia Haldorsson (piah@dr.dk).\n\nOthers: TV2, Nordisk Film, Zentropa, Cosmo Film, University of Southern Denmark, National Film School, Danish Film Institute.',
+        },
+        serviceProviders: {
+          label: 'Service providers',
+          content:
+            'No dedicated sustainable service providers in Denmark, but most follow requests from sustainability consultants to meet demands for environmentally friendly supplies.',
+        },
+        trainings: {
+          label: 'Trainings',
+          content:
+            '• BFTP: 8 full-day training sessions for ~100 line producers and production personnel. ~60 people registered for CO2 calculation courses.\n• The National Film School of Denmark: 1-week Green Management course once a year, up to 16 people trained each year.\n• BFTP hosted major inspiration seminars for the industry.',
+        },
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            '• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/?_categories=carbon-calculator\n• BFTP website (bftp.dk): handbooks, templates, case studies.',
+        },
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• Bæredygtigere filmarbejder (more sustainable filmworkers) – Facebook group.\n• Green Profiles Denmark (Grønne profiler i film-/tv-branche).\n• Bæredygtigere kostumenetværk (more sustainable costume community) – Facebook group.\n• NEMA (Nordic Eco Media Alliance): https://nema.network',
+        },
+      },
+    },
+  },
+
+  Iceland: {
+    code: 'ISL',
+    name: 'Iceland',
+    credit: 'This factsheet was produced by Sigríður Rósa Bjarnadóttir, Karólína Stefánsdóttir, Heather Millard (USE SEE ehf) and Green Producers Club Iceland.',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'The Icelandic Film Policy 2020–2030 promotes sustainable filmmaking. All applicants to the Icelandic Film Centre must submit sustainability plans.\n\nThe Icelandic Film Centre launched a one-year pilot program with the Green Producers Club to collect carbon emissions data. Notable productions include The Mountain (2023, Green Film Certification) and True Detective: Night Country (2023, Gold EMA Seal).\n\nChallenge: island status creates barriers — high reliance on imports and limited availability of specific services.',
+        },
+        laws: {
+          label: 'Relevant national legislation',
+          content:
+            '• Film and Television Reimbursement Act No. 43/1999.\n• Film Law, Act No. 137/2001.\n• EU Regulation CSRD (Icelandic law No. 25/2023) — effective 2025.\n\nGender equality laws:\n• Act on Equal Status and Equal Rights Irrespective of Gender, No. 150/2020.\n• Act on the Administration of Matters Concerning Equality, 151/2020.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'Environmental criteria can earn bonus points in cultural testing but remain non-mandatory. Emission calculations will likely become mandatory within 1-2 years per EU CSRD requirements.\n\nIcelandic Film Centre requires sustainability and social sustainability strategies; evaluates gender equality. Tax Reimbursement currently has no sustainability requirements.',
+        },
+        decarbonizationPlan: {
+          label: 'Decarbonization plan',
+          content:
+            'Iceland ratified the Paris Agreement (2016), committing to 55% emissions reduction by 2030 (vs. 2005) and carbon neutrality by 2040. The Film Policy 2020–2030 aligns with these targets.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        trainTravel: {
+          label: 'Train transport',
+          content:
+            'Not applicable — there are no trains in Iceland.',
+        },
+        electricCars: {
+          label: 'Electric cars',
+          content:
+            'Limited availability through rentals; mostly hybrids, diesel, gas.',
+        },
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'All studios connected; rural access depends on local infrastructure.',
+        },
+        wasteManagement: {
+          label: 'Waste management rules',
+          content:
+            'Unified classification system implemented through the Fenúr initiative.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        greenConsultants: {
+          label: 'Green consultants',
+          content:
+            'Three certified professionals trained via Hochschule Der Medien:\n• Sigríður Rósa Bjarnadóttir.\n• Karólína Stefánsdóttir.\n• Heather Millard.',
+        },
+        serviceProviders: {
+          label: 'Service providers',
+          content:
+            '• Film in Iceland: production services.\n• Green Producers Club: sustainable practice network.',
+        },
+        trainings: {
+          label: 'Trainings',
+          content:
+            'USE SEE: Offering sustainability courses for film crews from 2025 onwards.',
+        },
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            '• Green Producers Tool.\n• Elsa.\n• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/?_categories=carbon-calculator',
+        },
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• Green Producers Club Iceland.',
+        },
+      },
+    },
+  },
+
+  Norway: {
+    code: 'NOR',
+    name: 'Norway',
+    credit: 'This factsheet was produced by Mads Astrup Rønning from the Green Producers Club.',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Green production is gaining momentum due to demands from broadcasters, streamers, and film institutes. The Green Producers Tool is widely adopted by NRK, DR, TV4, TV2 Denmark, TV2 Norway, Viaplay, and major production companies.',
+        },
+        laws: {
+          label: 'Relevant national legislation',
+          content:
+            '• CSRD adopted by Norwegian Parliament in June 2024.\n• Public procurement contracts must weight environmental sustainability at 30% when evaluating tenders.\n• Gender Equality and Anti-Discrimination Act.\n• Government plan combating gender-based violence.\n• Freedom to Roam (Friluftsloven): traditional right allowing access to public and private land for recreation. Land owner permission required for shooting.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'Productions must report environmental impact using The Green Producers Tool. Carbon emissions reporting increasingly required.\n\nFilm Tax Incentive allows tax deduction for qualifying production costs. Norwegian Film Institute (NFI) provides funding for sustainability-committed projects, offering 25% reimbursement on local spend for highest-ranking projects.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            'NFI developed sustainability guidelines promoting waste reduction, energy management, and environmentally friendly materials.\n\nThe Green Producers Club works in two key areas: knowledge sharing (The Club) and measurement (The Tool).\n\nRegional Film Commissions: Northern Norway, Western Norway, Oslo, Eastern Norway, Southern Norway, Bergen, Trøndelag, Møre og Romsdal, Svalbard.',
+        },
+        decarbonizationPlan: {
+          label: 'Decarbonization plan',
+          content:
+            'Norway\'s Nature Diversity Act and Pollution Control Act are the primary legislations governing environmental protection. All activities must consider their environmental impact and minimize harm to ecosystems.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        trainTravel: {
+          label: 'Train transport',
+          content:
+            'Well-developed in southern and central regions, connecting Oslo, Bergen, Trondheim, and Stavanger. Railway does not extend north of Bodø; further north requires buses or ferries.',
+        },
+        electricCars: {
+          label: 'Electric cars',
+          content:
+            'Available from Sixt, Hertz, Europcar, Avis, and GoGet car-sharing.\n\nEV Incentives: Norway offers exemptions from tolls, parking fees, and VAT for electric vehicles. Consider downloading PlugShare or ChargeMap apps.\n\nCharging networks: Norwegian Electric Vehicle Association, Recharge, Fortum Charge & Drive, Circle K, Tesla Supercharger.',
+        },
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Generally manageable, varying by location. Key companies: Statkraft, BKK, Lyse, Elvia, NorgesEnergi, Omexom. Contact utility companies well in advance. Costs vary.',
+        },
+        wasteManagement: {
+          label: 'Waste management rules',
+          content:
+            'Waste Regulations (Avfallsforskriften) require producers to manage waste responsibly with emphasis on recycling and waste reduction. Productions must sort waste into categories.\n\nKey companies: Norsk Gjenvinning, Ragn-Sells, Oslo Municipality.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        greenConsultants: {
+          label: 'Green consultants',
+          content:
+            '• Kristoffer Sindre Vittersø: kristoffer@vitterso.no\n• Oda Pedersen Taule: odaptaule@gmail.com\n• Are Syvertsen: are.syvertsen@gmail.com',
+        },
+        serviceProviders: {
+          label: 'Service providers',
+          content:
+            '• Den nasjonale filmkommisjonen / The National Film Commission.\n• True North – full production support.\n• Lofoten Film – international productions in Lofoten.\n• Loop Film – works across Norway.\n• The Location Guide.',
+        },
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            '• Green Producers Tool (via Green Producers Club).\n• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/?_categories=carbon-calculator',
+        },
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• Green Producers Club.\n• Norske Produksjonsledere – Tv-Drama og Film (Facebook).\n• Locations in Oslo / Norway (Facebook).\n• Filmmakers in Norway (Facebook).',
+        },
+      },
+    },
+  },
+
+  Sweden: {
+    code: 'SWE',
+    name: 'Sweden',
+    credit: 'This factsheet was produced by Ronny Fritsche from the Green Producers Club.',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Ecological sustainability in Swedish film and TV has gained momentum, with industry networks, tools, and training expanding. Progress in 2024 accelerated as commissioners and financiers established clearer sustainability requirements.\n\nAs of 2024, Sweden does not have a dedicated national decarbonisation plan specific to the film and TV industry. Efforts underway to establish unified standard, expected launch in 2025.\n\nNordic Ecological Standard (NES) inspired by German Ecological Standard, implementing in 2025.',
+        },
+        laws: {
+          label: 'Relevant national legislation',
+          content:
+            '• Swedish Environmental Code (Ds 200:61) — foundation of environmental legislation.\n• Right of Public Access (allemansrätten) — grants freedom to explore nature; film productions typically need permits in sensitive environments.\n• Protected Areas: nature reserves, national parks, Natura 2000 sites require special permits — https://skyddadnatur.naturvardsverket.se/\n• Discrimination Act — prohibits discrimination on seven grounds: gender, gender identity, ethnic origin, religion, disability, sexual orientation, age.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'Regional film funds require environmental plans and reporting using tools like Sustainable Film Tool.\n\nKey regional film funds: Film i Skåne, Film Stockholm, Film Gotland, Filmpool Nord, Film i Väst, Norrköping\'s Film Fund, Film Västernorrland, Film i Dalarna.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• Swedish Film Institute: published sustainability handbook, appointed sustainability coordinator Patrik Axén, Green Consultant course with Nordic participants.\n• Film & TV-producenterna: formed ecological sustainability council in 2022, collaborates with Green Producers Club, offers financial incentives for measuring climate impact.\n• Viaplay Group: guidelines require measuring climate impact using Albert or Green Producers Tool.\n• NEMA (Nordic Eco Media Alliance): https://www.nema.network/\n• SHIFT (Swedish Sustainability Association in Film and TV): https://www.ecoshift.se/\n• NEST (Northern European Sustainability Team-Up): Baltic film regions network.\n• Nordic Green Action Group: convened by Nordic Film & TV Fund.',
+        },
+        decarbonizationPlan: {
+          label: 'Decarbonization plan',
+          content:
+            'Sweden targets net-zero emissions by 2045 (Climate Act). Cutting territorial greenhouse gas emissions by at least 85% from 1990 levels. Target of 100% renewable energy by 2045.\n\nhttps://unfccc.int/sites/default/files/resource/LTS1_Sweden.pdf',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        trainTravel: {
+          label: 'Train transport',
+          content:
+            'Efficient connections: Stockholm, Gothenburg, Malmö with 3–6 hour travel times. Northern Sweden routes to Luleå take longer; popular night trains (~12 hours) widely used by film workers. International connections to Oslo, Copenhagen, Hamburg.\n\nMajor operators: SJ, Øresundståg, Snälltåget, Vy.se. Regional services: Skånetrafiken, Västtrafik, SL, and others.',
+        },
+        electricCars: {
+          label: 'Electric cars',
+          content:
+            'Availability has increased significantly. Film-specific rental providers have growing demand. Fast-charging stations widely available in urban areas. Portable charging stations available for rental for temporary production offices.',
+        },
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Main distributors: Vattenfall, Ellevio, E.ON. Sweden\'s grid is predominantly renewable: 69% hydroelectric/wind/solar, 29% nuclear, 1.2% fossil fuels — one of Europe\'s most emission-free energy mixes.\n\nElectric generators not widely available. Batteries with varying capacities emerging as key innovation.',
+        },
+        wasteManagement: {
+          label: 'Waste management rules',
+          content:
+            'Advanced waste management with strict regulations. Landfilling combustible and organic waste is prohibited. Companies must follow local municipal waste management rules.',
+        },
+        socialRules: {
+          label: 'On-set practices',
+          content:
+            'Plant-based catering: Sweden is a leader in plant-based diets; productions often adopt plant-based norms with animal-based options as special requests.\n\nSafety Representative: every shoot must appoint one for filming safety.\n\nTrusted Union Representative: must be appointed for reporting harassment or discrimination.\n\nScen & Film is a strong union; productions receiving public funding must adhere to collective agreements.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        greenConsultants: {
+          label: 'Green consultants',
+          content:
+            '• SHIFT: https://www.ecoshift.se/ — Swedish association for green consultants.',
+        },
+        trainings: {
+          label: 'Trainings',
+          content:
+            '• Stockholm Academy of Dramatic Arts: 7.5 ECTS sustainability course (spring 2025).\n• Kulturakademin: digital course in sustainable film production — https://www.kulturakademin.com/kurskatalog/hallbar-filmtv-produktion-ekologi\n• Swedish Film Institute: training sessions — https://www.youtube.com/watch?v=A54OYuj2IZQ\n• Film & TV-producenterna and film funds: recurring training sessions.',
+        },
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            "• Green Producers Club & Green Producers Tool: https://www.greenproducers.club/\n• Hållbar Film Tool: http://www.sustainablefilmtool.com/\n• Green Ice Camera: https://greenicecamera.net/\n• Carbon'Clap: https://www.ecoprod.com/fr/carbon-clap.html\n• Albert Carbon Calculator: https://wearealbert.org/\n• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/?_categories=carbon-calculator",
+        },
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• Hållbar Film- och TV-Produktion i Sverige (Facebook): https://www.facebook.com/groups/170410160034341/\n• Green Producers Club: https://www.greenproducers.club/',
+        },
+      },
+    },
+  },
+
+  Slovakia: {
+    code: 'SVK',
+    name: 'Slovakia',
+    credit: 'This factsheet was produced by Ecoprod, with the support of Valentína Hučková.',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Slovakia\'s sustainable filmmaking sector gained momentum since participation in the Green Screen project in 2018. Carbon footprint calculation is the most in-demand service due to its impact on securing funding for international co-productions.\n\nAs of June 2025, the Audiovisual Fund no longer provides extra subsidies for employing green consultants. Discussions focus on incentivizing sustainability commitments.\n\nNotable example: "The Flood" (Potopa) — a Slovak-Czech-Polish-Belgian co-production that implemented sustainability measures with certified green filming coordinator Valentína Hučková.',
+        },
+        laws: {
+          label: 'Relevant national legislation',
+          content:
+            'Slovak Audiovisual Fund (AVF) supports national films and co-productions, including eco-friendly initiatives.\n\nSocial rules:\n• Anti-Discrimination Act: addresses gender, racial, and other discrimination.\n• CEDAW Ratification.\n• National action plan for domestic violence and equal opportunities.\n• Slovakia has not ratified the Istanbul Convention on domestic violence.\n• No specific regulations targeting discrimination in Slovak filmmaking.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'Slovak Film Commission (SFC) promotes sustainable filmmaking via the EU Green Screen project, collaboration with INCIEN, workshops, training, and industry talks.\n\n• Green Call: sustainability manifesto for producers.\n• EURECA carbon calculator: developed with EU scientific partner data.\n\nTV Markíza adopted sustainable filmmaking agenda in 2022, hired Sustainable Production Coordinator, introduced Green Runner on selected series, used Albert calculator for carbon footprint calculation.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• EU Green Screen Project: SFC actively involved in reducing environmental impact.\n• Practical guidelines on energy use, waste reduction, eco-friendly transportation.\n• Carbon Footprint Calculation increasingly integrated due to European funding requirements.',
+        },
+        decarbonizationPlan: {
+          label: 'Decarbonization plan',
+          content:
+            'Slovakia aligns with EU climate goals and European Green Deal, targeting net-zero emissions by 2050.\n\nTargets 18% renewable energy by 2030; nuclear power remains key energy source. Plans to improve energy efficiency, though current measures remain modest.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        trainTravel: {
+          label: 'Train transport (3/5)',
+          content:
+            'ZSSK (national rail) criticized for suboptimal services and slow speeds reflecting infrastructure renewal delays. Free travel for students and seniors; night train connects West and East (partially under renovation).',
+        },
+        electricCars: {
+          label: 'Electric cars',
+          content:
+            'EV infrastructure steadily growing but faces coverage challenges. Charging stations increasing in larger cities (Bratislava, Košice); rural areas have limited access.\n\nCharging stations: https://nabijame.sk/',
+        },
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Getting a new grid connection is challenging. Requires robust administrative process and approval from various entities. Productions must request and pay for connection and electricity, usually a month in advance.',
+        },
+        wasteManagement: {
+          label: 'Waste management rules',
+          content:
+            'Waste separation not mandatory for households but companies must pay additional fees for waste separation. Bratislava and Košice have incinerators; other regions rely mainly on landfills.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        greenConsultants: {
+          label: 'Green consultants',
+          content:
+            'As of 2024, 2–5 individuals are actively involved as Green Consultants, with no official association.\n\nSFC Sustainability Manager List: https://www.filmcommission.sk/1120-en/sustainability-manager/',
+        },
+        serviceProviders: {
+          label: 'Service providers',
+          content:
+            'Green Platform Database maintained by SFC:\nhttps://www.filmcommission.sk/744-en/green-platform/',
+        },
+        trainings: {
+          label: 'Trainings',
+          content:
+            '2022 National-Level "Eco-Consultant Training" for sustainable filmmaking professionals:\nhttps://www.filmcommission.sk/how-to-become-a-professional-film-eco-consultant/',
+        },
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            "• Carbon'Clap – free calculator by Ecoprod.\n• SecoSet – by Flying Secoya.\n• Carbon'Stage – by Greenly.\n• Albert Carbon Calculator: https://wearealbert.org/\n• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/?_categories=carbon-calculator",
+        },
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• Facebook group "Green Filming SK+ČR": https://m.facebook.com/groups/249341536272336/',
+        },
+      },
+    },
+  },
+
+  Italy: {
+    code: 'ITA',
+    name: 'Italy',
+    credit: 'This factsheet was produced by Ludovica Chiarini from EcoMuvi, with the contribution of Lucia Marani from Stepforward, Luca Ferrario and Linnea Merzagora from Green Film, and Rossella Rovere from Zen2030.',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Sustainability in production is growing rapidly, but there is no uniform methodology, results or requirements. Green certifications have risen sharply since 2020, and streaming platforms increasingly link funding to stricter sustainability standards.\n\nItaly lacks specific decarbonisation policies for the audiovisual industry. The Labour Code governs working time and safety. Diversity, Equity, and Inclusion laws remain in development.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            '• Trentino Film Fund & Commission: first European regional funding agency to introduce green incentive (2017). GREEN FILM certificate unlocks bonus incentive.\n• Ministry of Culture (since 2020): 5 additional evaluation points for sustainability commitment.\n• January 2024 Protocol: Ministries of Culture and Environment signed protocol tying public funding to minimum environmental criteria.\n• EcoMuvi Recognition: Launched 2013, officially recognized by ACCREDIA as valid sustainability standard across EU.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• Green Film — Trentino Sviluppo Spa: European standard.\n• EcoMuvi — Accredited standard, sustainability service for productions.\n• Zen2030 — Benefit company with Environmental Protocol and GHG calculator, ISO 14064 certification.\n• Sardegna Green Film Shooting — Sardinia Film Commission standard.\n• Set Forward — Italian benefit company (since 2024), applies Green Film and Sardegna protocols with Bureau Veritas assessments.\n\nJune 2024: "National Environment & Entertainment Observatory" launched with EU funding and Ministry support.',
+        },
+        decarbonizationPlan: {
+          label: 'Decarbonization plan',
+          content:
+            'National Energy and Climate Plan (NECP, updated June 2023): aims for 40.5% renewable energy and 65% in electricity by 2030.\n\n2022 Constitutional Amendment to protect environment, biodiversity, and animals.\n\nAugust 2024: Approved five legislative decrees aligning with EU corporate sustainability reporting regulations.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        trainTravel: {
+          label: 'Train transport',
+          content:
+            'High-speed network efficient, punctual, clean, relatively affordable (Milan–Rome: 3 hours, €50–80). Main routes: Turin, Milan, Venice, Bologna, Florence, Rome, Naples, Reggio Calabria.\n\nNon-high-speed trains are generally cheap but unreliable. Regional systems managed locally across 21 regions.',
+        },
+        electricCars: {
+          label: 'Electric cars',
+          content:
+            'Relatively common for SUVs and mid-size cars. Almost impossible to find for larger vans or small city cars. Major issue: lack of charging infrastructure. As of March 2024: 54,164 charging points. Distribution uneven; northern regions better equipped.\n\nTop regions: Lombardy (10,158), Piedmont (5,841), Veneto (5,167), Lazio (5,141), Emilia-Romagna (4,516).',
+        },
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Italy\'s extensive grid accommodates typical film set power needs. Main challenge: bureaucratic process for temporary connections. Can be worked within 4–6 working days if understood, but most productions experience 30+ day delays.\n\nRecommendation: Contact local energy supplier to verify temporary connection possibility. Terna (national grid operator) provides guidelines.',
+        },
+        wasteManagement: {
+          label: 'Waste management rules',
+          content:
+            'Governed by national and regional regulations with varied practices. Hazardous waste: producers must contract licensed companies. Local authorities manage general waste with municipally contracted companies, often resulting in dishomogeneous practices.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        greenConsultants: {
+          label: 'Green consultants',
+          content:
+            'Primarily found through word-of-mouth or contacting sustainability consulting agencies. EcoMuvi leads creation of national and EU-level trade union for sustainability professionals. Consulting companies listed in initiatives section.',
+        },
+        trainings: {
+          label: 'Trainings',
+          content:
+            'TorinoFilmLab:\n• Green Film Lab (launched 2022): helps professionals apply green protocols and achieve certification.\n• Green Production Lab: brings together sustainability experts and film professionals for full sustainability plans.\n\nOpen to up to 12 European sustainability professionals and 3 teams of producers and crew.',
+        },
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            "• EcoMuvi – tracking tips and tools.\n• Green Film – tracking tips and tools.\n• Zen2030 – tools.\n• Albert Carbon Calculator.\n• Carbon'Clap – free calculator by Ecoprod.",
+        },
+        networks: {
+          label: 'Networks to join',
+          content:
+            'National Environment & Entertainment Observatory (launched June 2024).',
+        },
+      },
+    },
+  },
+
+  Portugal: {
+    code: 'PRT',
+    name: 'Portugal',
+    credit: 'This factsheet was produced by Dörte Schneider Garcia, green consultant in Portugal.',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Green production is at early stages. As of August 2025, no mandatory requirements tied to funding, though awareness is growing due to international funds like Eurimages and Creative Europe demanding sustainability commitments.\n\nPortugal Film Commission released a "Best Practices Guide" (updated 2024) and has organized green consultant training since 2021. A Green Film Lab will be held in Lisbon in November 2025.',
+        },
+        laws: {
+          label: 'Relevant national legislation',
+          content:
+            'Environmental Laws:\n• Basic Environmental Law.\n• General Waste Management Regime.\n• Environmental Damage Liability Law.\n• Environmental Impact Assessment Regime.\n• Filming in nature reserves and protected areas strictly regulated.\n\nSocial Rules:\n• Cash rebates award two points for projects led by female directors.\n• ICA aims to enhance diversity in its 2024–2028 strategy.\n• 2025 "Manual of Good Practices for Cinema and Audiovisual Media in Portugal" (Portuguese only).',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            '2024/2025 Updates:\n• Cash rebate and cash refund include one additional point for sustainability plans by certified green consultants.\n• Cash refund awards a second point if an audit verifies green measures.\n• Ad Hoc funding round in 2025 allowed sustainability plan development expenses to qualify for reimbursement.\n\nICA has not yet included funding conditions tied to sustainability in regular financing programs.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• Portugal Film Commission: Best Practice Guide and green consultants directory.\n• Green Consultants\' Association ("Repensar").\n• Council for Climate Action (APC, launched January 2025): centralizes climate transition efforts, manages Environmental Fund, EEA Grants, Social Climate Fund, Voluntary Carbon Market.',
+        },
+        decarbonizationPlan: {
+          label: 'Decarbonization plan',
+          content:
+            'Basic Climate Law (Law No. 98/2021) recognizes climate emergency.\n\nGoals: climate neutrality by 2050 (possible shift to 2045). Emission reduction: minimum 55% by 2030, 65–75% by 2040, 90% by 2050 (vs. 2005).\n\nNational Energy and Climate Plan for 2030 (PNEC, reviewed 2024): 51% renewable energy, circular economy as fundamental decarbonization axis.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        trainTravel: {
+          label: 'Train transport',
+          content:
+            'Limited network leaving some regions without service. Main North–South route (Braga–Porto–Lisbon–Faro) with fast Alfa Pendular connection and affordable tickets. Future plans include high-speed Lisbon–Porto line.',
+        },
+        electricCars: {
+          label: 'Electric cars',
+          content:
+            'Becoming more available but remain limited. Street charging expensive unless private chargers provided. As of August 2025: 6,887 charging stations, mostly in Lisbon and Porto. Rural areas have far fewer.\n\nResources: E Network or Electromaps.',
+        },
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Availability varies; easier in cities. Expected within 15 days but delays up to 30 days common. Local film commissions in Lisbon and Porto offer protocols to expedite the process.',
+        },
+        wasteManagement: {
+          label: 'Waste management rules',
+          content:
+            'Productions generating less than 1,100 liters daily use municipal systems. Exceeding 1,100 liters requires hiring waste management provider with digital transport documents. Municipal systems handle paper/cardboard, metals, plastics, glass, bio-waste, wood, textiles, packaging, used cooking oil.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        greenConsultants: {
+          label: 'Green consultants',
+          content:
+            '• Associação de Green Consultants de Portugal.\n• Portugal film production directory.\n• Cine guia listings.',
+        },
+        serviceProviders: {
+          label: 'Service providers',
+          content:
+            'No directory currently exists. Most light equipment rentals offer small battery storage units and LED lights.',
+        },
+        trainings: {
+          label: 'Trainings',
+          content:
+            'One available program based on Germany\'s "Hochschule der Medien" Stuttgart curriculum for certified green consultants.',
+        },
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            "No Portugal-specific tool. Green consultants trained to use Carbon'Clap (free by Ecoprod) and other international calculators.",
+        },
+      },
+    },
+  },
+
+  Hungary: {
+    code: 'HUN',
+    name: 'Hungary',
+    credit: 'This factsheet was produced by Green Eyes Production.',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Hungary\'s film sector increasingly incorporates sustainable practices, with the National Film Institute (NFI) driving adoption through funding incentives and consultation services. Major facilities (Astra Film Land, Korda Studios, Origo Studios) implement eco-friendly technologies. MOME embeds sustainability into academic programs.\n\nPersistent obstacles: inadequate recycling infrastructure and necessity for enhanced regulatory frameworks.',
+        },
+        laws: {
+          label: 'Relevant national legislation',
+          content:
+            '• Nature Conservation Act (1996) and Environmental Protection Act (1995): safeguard biodiversity, species and habitat protections.\n• Filming in national parks, nature reserves, or Natura 2000 sites requires permits from National Park Directorates.\n• Heavy machinery, artificial lighting, sound equipment, and drones may be restricted.\n• Legal requirement to restore damaged areas.\n• Environmental Impact Assessment (EIA) required for large-scale projects in sensitive zones.\n\nESG legislation effective January 2024.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'NFI provides a 30% tax rebate on eligible expenditure for films produced in Hungary, extendable to 37.5% by adding 7.5% non-Hungarian costs (capped at 25% of rebate).\n\nGreen filming follows industry standards and NFI sustainability criteria. Productions adhere to EU environmental guidelines and Hungary\'s new ESG legislation.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            'Key stakeholders: NFI, MTVA (broadcaster), international platforms (Netflix, HBO), educational institutions (SZFE).\n\nNFI\'s "Green Light to Sustainable Film Production" Guide: practical advice for reducing ecological footprint.\n\nNFI Fast Forward Program (FFP): annual sustainability workshop for filmmakers.',
+        },
+        decarbonizationPlan: {
+          label: 'Decarbonization plan',
+          content:
+            'Hungary reduced emissions by 43% since 1990, surpassing 2030 targets. Key initiatives: closing Mátra Power Plant post-2025, expanding renewable energy (especially solar). Focus on fair transition.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        trainTravel: {
+          label: 'Train transport',
+          content:
+            'Extensive rail network connecting major and rural areas, with Budapest as central hub (Keleti, Nyugati, Déli stations). Infrastructure issues and delays during heatwaves.',
+        },
+        electricCars: {
+          label: 'Electric cars',
+          content:
+            'EV rentals: Avis, SIXT, Hertz in Budapest.\n\n~2,491 charging stations, 521 in Budapest. Mobiliti manages ~1,500 locations. Chargers concentrate in cities, supermarket parking lots, and hotels.',
+        },
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Reliable national grid, especially in Budapest and studio towns.\n\nEnergy mix: nuclear (~50%), natural gas (30–35%), coal/lignite (10–15%), renewables (12–15%). Solar capacity exceeded 3,000 MW. Astra operates on 100% green energy.\n\nHungary lacks comprehensive battery pack rental networks.',
+        },
+        wasteManagement: {
+          label: 'Waste management rules',
+          content:
+            'Governed by Act CLXXXV of 2012, aligned with EU Waste Framework Directive. MOHU handles waste management. Mandatory separation and recycling for businesses. EPR (Extended Producer Responsibility) covers collection, recycling, disposal.\n\nHazardous waste requires separate collection by licensed companies. Annual tracking and reporting required.\n\nCompanies: Recobin, FKF Nonprofit Zrt., A.K.S.D. Kft., Alcufer, Remondis, STKH, SARPI Dorog, FE-Group, Profikomp.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        greenConsultants: {
+          label: 'Green consultants',
+          content:
+            '• Green Eyes Production: leading film sustainability consultancy — eco-friendly strategies, crew training, certifications.\n• Leverage Point Entertainment: sustainability agency founded by Zsófia Szemerédy, operates between London and Budapest.',
+        },
+        serviceProviders: {
+          label: 'Service providers',
+          content:
+            '• Activ8: waste management, plant-based catering, carbon footprint assessments.\n• Korda Studios: energy-efficient systems.\n• Astra Film Studios: eco-conscious production support.',
+        },
+        trainings: {
+          label: 'Trainings',
+          content:
+            '• Zsófia Szemerédy at MOME: trains students and professionals in sustainable film production.\n• NFI Fast Forward Program (FFP): annual sustainability workshop.\n• Many universities integrate sustainability into film curricula.',
+        },
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            "• Carbon'Clap – free calculator by Ecoprod.\n• Albert Carbon Calculator.\n• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/",
+        },
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• MAFSZ (Hungarian Association of Film and Television Producers).\n• Budapest International Documentary Festival (BIDF).\n• MADOKE (Hungarian Documentary Association).\n• Hungarian Film and Television Union.',
+        },
+      },
+    },
+  },
+
+  Spain: {
+    code: 'ESP',
+    name: 'Spain',
+    credit: 'This factsheet was produced by Paloma Andrés Urrutia at Mrs GreenFilm.',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Environmental impact reduction practices have increased significantly over four years, driven by:\n1. National and regional public funding requiring sustainability criteria.\n2. Content platforms (Netflix, Amazon MGM Studios, Movistar+) mandating sustainability requirements.\n3. Awareness programs and training at major festivals and industry events.',
+        },
+        laws: {
+          label: 'Relevant national legislation',
+          content:
+            '• Climate Change and Energy Transition Law (Ley 7/2021): targets carbon neutrality by 2050, requiring productions to measure and reduce emissions.\n• National Energy and Climate Plan (PNIEC) 2021-2030: promotes energy efficiency and renewable energy.\n• Royal Decree on Environmental Impact (RD 1040/2017): large-scale outdoor productions must assess environmental impact.\n• Biodiversity and Natural Heritage Law (Ley 42/2007): filming in protected areas requires permits.\n• Waste and Circular Economy Law (Ley 7/2022): bans single-use plastics, mandates waste separation.\n• Green tax incentives in Canary Islands, Catalonia, Basque Country, and other regions.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'ICAA has established mandatory sustainability reporting for productions receiving public funding. Sustainability expenses classified as eligible costs.\n\nRegional Programs:\n• Basque Green Film: dedicated professional resources for eco-friendly productions.\n• ICEC (Catalonia): consultancy financing program.\n• Navarra: additional funding for sustainable production.\n• Málaga and Tenerife: free sustainability seals for qualifying productions.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            'Guides and best practices by Film Offices/Commissions:\n• Asturias Film Commission — https://www.turismoasturias.es/filmcommission/rueda-en-verde\n• Valencia Film Office — https://www.valenciafilmoffice.org/rodajes-sostenibles-en-valencia\n• Barcelona Film Commission.\n• Cataluña Film Commission.\n• Madrid Film Office — https://madridfilmoffice.com/recursos-produccion-sostenible/\n• Basque Green Film — https://www.euskadi.eus/basque-green-film-bgf/web01-a2kulsus/es/\n• Academia de Cine — https://www.academiadecine.com/pdfs/guia-de-buenas-practicas-del-sello-verde/',
+        },
+        decarbonizationPlan: {
+          label: 'Decarbonization plan',
+          content:
+            'Climate Change and Energy Transition Law (2021):\n• Carbon neutrality by 2050.\n• 55% emission reduction by 2030 (vs. 1990).\n• 100% renewable electricity by 2050; at least 74% by 2030.\n• Ban on new combustion-engine car sales by 2035.\n• Carbon pricing and green taxation.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        trainTravel: {
+          label: 'Train transport (4/5)',
+          content:
+            'One of Europe\'s most modern rail systems. Extensive high-speed AVE network connecting Madrid, Barcelona, Seville, Valencia, Málaga. Liberalization with private operators: Ouigo, Iryo, Avlo offering competitive services.\n\nChallenges: connecting smaller towns; punctuality improvements needed in conventional rail.',
+        },
+        electricCars: {
+          label: 'Electric cars (2/5)',
+          content:
+            'PNIEC target: 5.5 million EVs on the road by 2030. Main rental companies expanding electric/hybrid fleets but supply still insufficient for sector demand. Over-costs reduced but remain significant.',
+        },
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Managed by Red Eléctrica de España (REE). Well-integrated with European networks. Sound stages switching to renewable operators. Most studios don\'t require generator backup. Street/public space grid connection remains challenging.',
+        },
+        wasteManagement: {
+          label: 'Waste management rules',
+          content:
+            'Law 7/2022: audiovisual production companies classified as small hazardous waste producers bear responsibility until proper waste treatment, documented through transfer documents and treatment certificates.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        greenConsultants: {
+          label: 'Green consultants',
+          content:
+            '• Mrs. Greenfilm: sustainability consulting, strategic partner for Netflix and Amazon MGM Studios.\n• Echar a Rodar: CSR and communication consulting.\n• Creast: digital solution to predict, measure, reduce carbon footprint.\n• La Tribu Verde: integrating sustainability into creative industry.\n• K is for Knowledge: consultancy on sustainable action plans.\n• ECOscena: sustainability and carbon footprint for cultural sector.\n• The Other Green: personalized sustainability strategies.',
+        },
+        trainings: {
+          label: 'Trainings',
+          content:
+            'Free Trainings: Mallorca Film Commission, Terrasa, Film Madrid, Madrid Film Office, Cantabria Film Commission, Cluster Audiovisual de Canarias, Tenerife Film Commission.\n\n• Mrs. Greenfilm: 40-hour training with Makkers School (5+ editions, 80+ students); 40-hour free training with ESCAC.\n• ECAM and Universidad de Alcalá: specialized master programs.\n• HAZ Program (RTVE): innovative sustainability training.\n• University courses: Universidad Carlos III, The Core, Universidad Complutense, Universidad Oberta de Catalunya.',
+        },
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            '• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/?_language=spanish',
+        },
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• La Claqueta Verde (LinkedIn): https://www.linkedin.com/groups/9131284/',
+        },
+      },
+    },
+  },
+
+  'Türkiye': {
+    code: 'TUR',
+    name: 'Türkiye',
+    credit: 'This factsheet was produced by Ekin Gündüz Özdemirci, Nurten Bayraktar, and Funda Apa Aslan from EkoFilm Platform.',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'A survey by EkoFilm Platform (100+ professionals) revealed strong concerns about environmental impact. While 50% understood green production, only 38% showed robust interest. Key waste sources: luxury expenses, open-buffet food waste, single-use materials.\n\nEkoFilm Platform (founded 2023) is the first institutional body to promote sustainability in Turkish film.',
+        },
+        laws: {
+          label: 'Relevant national legislation',
+          content:
+            '• National Energy Efficiency Action Plan (2018).\n• Paris Agreement Ratification (October 2021).\n• Green Deal Action Plan: Ministry of Trade initiative.\n• Draft Climate Law (2023): includes emissions trading system (ETS).\n\nLabor laws:\n• Labor Law No. 4857.\n• Occupational Health and Safety Law No. 6331.\n• Article 122 of Turkish Penal Code (hate crimes/discrimination).',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'Cash Rebate Scheme: up to 30% rebates on eligible Turkish expenses for feature films, documentaries, TV series. Managed by Ministry of Culture and Tourism (Law 5224).\n\nRequirements: Turkish co-producer or production-service provider; track record of minimum 2 feature films or 1 TV season.\n\nForeign producers receive VAT refunds for goods/services imported during filming.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• EkoFilm Platform: carbon footprint calculator, sustainable production guide, three educational modules (February 2025).\n• Yeşil Setler Mümkün (Green Sets Are Possible): partnership with Actors\' Union for awareness campaign.\n• SolarFly: solar energy on film sets.\n• Sabancı Foundation Short Film Platform: European Film Commission Sustainability Award (2023).\n• TRT World "Climate Awareness Award" (2023).',
+        },
+        decarbonizationPlan: {
+          label: 'Decarbonization plan',
+          content:
+            'Turkey committed to net-zero emissions by 2053.\n\nRenewable Energy: plans to quadruple wind/solar to 120,000 MW by 2035 (~$80 billion investment).\nInfrastructure: $28 billion for transmission grids.\nIndustrial Decarbonization: $50 billion+ in steel, cement, aluminum, fertilizer sectors.\nETS planned to align with EU Green Deal.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        trainTravel: {
+          label: 'Train transport',
+          content:
+            'High-speed rail connects Istanbul, Ankara, Eskişehir, Karaman, Konya, Sivas with expansion underway.',
+        },
+        electricCars: {
+          label: 'Electric cars',
+          content:
+            'Major rental companies (Enterprise, Europcar, Avis) offer EVs in larger cities. Rural charging stations remain limited.',
+        },
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Voltage standard: 230V/400V, 50Hz frequency.',
+        },
+        wasteManagement: {
+          label: 'Waste management rules',
+          content:
+            '• National Waste Management Plan (2023-2035).\n• National Strategy on Food Loss and Waste.\n• Zero Waste Policy (2017): targets 35% domestic waste recycling rate; voluntary certification for compliant buildings.\n• Color-coded collection system managed by local governments.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            '• EkoFilm Platform carbon calculator: free tool measuring emissions across electricity, gas, transport, generators, accommodation, waste, catering.\n• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/?_categories=carbon-calculator',
+        },
+      },
+    },
+  },
+
+  Ireland: {
+    code: 'IRL',
+    name: 'Ireland',
+    credit: 'This factsheet was produced with the contribution of Screen Ireland and Climate Innovation.',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Ireland\'s screen industry is undergoing a major sustainability shift driven by Screen Ireland. Since 2022, sustainability standards are mandatory for all Screen Ireland-funded live-action productions.\n\nAll productions must engage a Sustainability Advisor and submit both an Emissions Reduction Plan before production and an Emissions Reduction Report after completion. Use of an approved carbon calculator is mandatory.\n\nA pilot Sustainability Innovation Fund offers up to €25,000 per production for extra steps to reduce carbon footprint.',
+        },
+        laws: {
+          label: 'Relevant national legislation',
+          content:
+            '• Climate Action and Low Carbon Development Act (Amendment) 2021.\n• Waste Management (Food Waste) Regulations 2009.\n• European Union (Household Food Waste and Bio-Waste) Regulations 2015.\n• Waste Byelaws 2018.\n• Compliance with EU Habitats Directive and Birds Directive required during filming.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'Mains electricity is preferred over generators. Productions must ensure compliance with biodiversity and habitat protections, particularly under EU directives.\n\nThe sector evolved from its first sustainability advisor in 2015 (Vikings) to wide compliance in 2023.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• Future Ready Film: consultation and toolkit development led by Climate Innovation.\n• Sustainability Toolkit by Screen Ireland.\n• Participation in TorinoFilmLab\'s Green Film Lab.\n• Membership in EUFCN and Broadcasting Sustainability Network.\n• Internal Screen Ireland Green Group and Equality & Diversity Working Group.',
+        },
+        decarbonizationPlan: {
+          label: 'Decarbonization plan',
+          content:
+            'Climate Action Plan 2023 (CAP23) targets 51% cut in carbon emissions by 2030 and climate neutrality by 2050.\n\nThe audiovisual sector is required to reduce emissions by 25% by 2025 and 50% by 2030.\n\nIreland\'s 2018 screen production carbon footprint was estimated at 2,127 tonnes. Freedom to Roam does not apply; location access must be negotiated with landowners.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        trainTravel: {
+          label: 'Train transport',
+          content:
+            'Irish Rail connects major cities and supports electric vehicle charging at several stations (e.g. Heuston, Athy, Sallins).',
+        },
+        electricCars: {
+          label: 'Electric cars',
+          content:
+            'EVs increasingly used, especially in urban areas. Taxi guidelines recommend electric or hybrid models.',
+        },
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Mains power is recommended for all locations. Where unavailable, hybrid battery systems using HVO fuel are preferred.',
+        },
+        wasteManagement: {
+          label: 'Waste management rules',
+          content:
+            'Productions must implement multi-bin systems and comply with all food and waste laws. Compostable food packaging is mandatory unless reusable options are used.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        greenConsultants: {
+          label: 'Green consultants & service providers',
+          content:
+            '• Climate Innovation – national coordination of Future Ready Film.\n• Sustainable Film Alliance of Ireland (informal network).\n• Green Film Lab (TorinoFilmLab, with Irish participation).',
+        },
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            "• Screen Ireland Carbon Calculator.\n• Ecoprod's Carbon'Clap.\n• Sustainability Toolkit for Live Action.\n• Albert Calculator.\n• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/",
+        },
+      },
+    },
+  },
+
+  'United Kingdom': {
+    code: 'GBR',
+    name: 'United Kingdom',
+    credit: 'This factsheet was compiled by Leverage Point Entertainment.',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'The UK must reduce greenhouse gas emissions by 100% (net zero) by 2050 under the Climate Change Act (2008). Scotland targets net zero by 2045.\n\nIndustry standards are industry-driven rather than legislated. Key organizations with sustainability requirements: BBC, Film4/Channel 4, ITV, Fremantle, Banijay.\n\nBFI National Lottery funding requires mandatory sustainability plans.',
+        },
+        laws: {
+          label: 'Relevant national legislation',
+          content:
+            '• Climate Change Act (2008): net zero by 2050.\n• UK Sustainability Disclosure Standards (UK SDS) expected to introduce mandatory reporting.\n• Biodiversity: overseen by Natural England, Natural Resources Wales, NatureScot, Northern Ireland Environment Agency.\n• Equality Act 2010: prevents discrimination.\n• Modern Slavery Act 2015: requires reporting on forced labour prevention.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'AVEC (Audiovisual Expenditure Credit) Scheme: refundable tax credit on qualifying UK production expenditure. Currently lacks specific sustainability requirements.\n\nBFI integration: environmental sustainability expectations within funding strategy. BAFTA albert Climate Content Pledge.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            'National: BAFTA albert delivers industry-wide sustainability programs, carbon measurement, sector training.\n\nKey frameworks: Screen New Deal, Albert Annual Reviews, Albert Studio Sustainability Standard, Climate Content Pledge, National Occupational Standards, Green Rider.\n\nRegional:\n• Scotland: Culture for Climate Scotland.\n• Wales: Media Cymru "Greening the Screen", Screen New Deal Transformation Plan.\n• England: Film London sustainability programs, Screen Cornwall Green Shooting Toolkit, Screen Yorkshire.\n• Northern Ireland: Northern Ireland Screen sustainability in funding frameworks.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        trainTravel: {
+          label: 'Train transport',
+          content:
+            'Extensive National Rail network connecting England, Scotland, Wales. Northern Ireland: TransLink. London: Transport for London (TfL).\n\nBike and e-scooter hire available in major cities. HVO (Hydrotreated Vegetable Oil) increasingly used as lower-carbon diesel alternative.',
+        },
+        electricCars: {
+          label: 'Electric cars',
+          content:
+            'Charging widely available; regional variation. Zap-Map provides charger locations.\n\nNational hire companies offer EVs. Industry-specific unit car suppliers increasing availability. Urban electric taxi fleets (including TX electric black cab) widely available.',
+        },
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Victoria Park grid cabinet in London via Film London\'s Grid Project — the UK\'s first industry-specific grid connection for film/TV. Several grid connection projects under development.\n\nGrid Knowledge Blog by Leverage Point Entertainment offers insights on temporary grid access.',
+        },
+        wasteManagement: {
+          label: 'Waste management rules',
+          content:
+            'Productions must comply with statutory Duty of Care: waste correctly stored, segregated, and disposed of using licensed waste carriers.\n\nEngland: Simpler Recycling reforms mandate separation of key recyclable materials and food waste for composting or anaerobic digestion.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        greenConsultants: {
+          label: 'Green consultants',
+          content:
+            '• Leverage Point Entertainment.\n• Earth to Action.\n• Creative Zero.\n• Neptune Sustainability.\n• Picture Zero.\n• Sustainable Film.\n• Sally Mills Consulting.\n• Greenshoot.',
+        },
+        serviceProviders: {
+          label: 'Service providers',
+          content:
+            '• ALBERT Suppliers Directory.\n• Northern Ireland Screen Sustainable Suppliers.\n• Sustainable Screens Scotland.',
+        },
+        trainings: {
+          label: 'Trainings',
+          content:
+            '• ALBERT Academy (various courses).\n• ScreenSkills: "Introduction to Sustainability for the Screen Industries".\n• Carbon Literacy Training.\n• Film London/Green Shoot: Green Runner Training.\n• Picture Zero: Sustainability and Education Training.',
+        },
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            'Production Carbon Measurement:\n• ALBERT Carbon Calculator.\n• AdGreen Carbon Calculator.\n• Greenshoot Carbon Calculator (Film London).\n\nToolkits:\n• Julie\'s Bicycle — Creative Climate Tools.\n• Theatre Green Book.\n• Film & TV Sustainability Resources Map (by Mairi Claire Bowser).\n• WRAP — Waste reduction & circular economy.\n• Ellen MacArthur Foundation — Circular Economy.\n• The Carbon Literacy Project.',
+        },
+        networks: {
+          label: 'Networks to join',
+          content:
+            'Coordinated through BAFTA albert, BFI, and regional screen agencies (England, Scotland, Wales, Northern Ireland).',
+        },
+      },
+    },
+  },
+
+  Poland: {
+    code: 'POL',
+    name: 'Poland',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {},
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {},
+    },
+  },
+
+  'United States of America': {
+    code: 'USA',
+    name: 'United States of America',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {},
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {},
+    },
+  },
+
+  Netherlands: {
+    code: 'NLD',
+    name: 'Netherlands',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {},
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {},
+    },
+  },
+
+  Austria: {
+    code: 'AUT',
+    name: 'Austria',
+    credit: 'This factsheet was produced with the contribution of Evergreen Prisma & the Austrian Film Institute/Green Filming Department.',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Austria\'s Green Filming & Funding Network integrates sustainability into filmmaking through mandatory regulations, professional training, and national/transnational cooperation. Key institutions: Austrian Film Institute (ÖFI) and Evergreen Prisma — Competence Center for Green Filming Europe.\n\nGreen Funding Structure: 30% automatic grant + additional 5% Green Bonus.\n\nTimeline: 2018 synergy model created; 2021 ÖFI implemented mandatory Final Green Report; 2023 financial green funding introduced; January 2025: animation criteria catalogue and child welfare concept (KIWOK) launched.',
+        },
+        laws: {
+          label: 'Relevant national legislation',
+          content:
+            '• Film Location Act 2023 (FISA+) — incentives for ecological film production.\n• Film Funding Act 2023 (ÖFI amendments).\n• Code of Ethics: all funding institutions committed to binding professional conduct guidelines.\n• Anti-discrimination, anti-harassment measures, internal/external confidant access.\n• KIWOK (Child Welfare Concept): project-specific Child Participation Plan required.\n• Working time: 8h/day, 40h/week standard; max 12h/day, 60h/week with overtime.\n• Filming in protected areas requires permits; large-scale sets may trigger EIA.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'ÖFI Selective Funding: fulfill minimum 20 of 25 MUST-criteria or hold UZ 76 certification.\nGreen Bonus ÖFI+: meet 22 of 25 MUST-criteria.\nFISA+ Green Bonus: meet all 25 MUST-criteria.\n\nMandatory: certified Green Film Consultant, Final Green Report for every funded project.\n\nAdditional eligible costs: consultant fees, UZ76 certification costs, advisor/auditor fees.\n\n5% Green Bonus also available for cinema distribution meeting ecological minimum standards.\n\nFunding bodies: ÖFI, FISA+, Federal Ministry, Filmfond Vienna.\n\nAustrian Ecolabel (UZ76): product certification for film production companies covering feature films, documentaries, animation, cinema releases.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            'Evergreen Prisma: started 2018, grown to Competence Center for Green Filming Europe. Digital platform: ~950,000 page views, 240,000 users from 135 countries.\n\nEvergreen Prisma Academy: 8 generations of Green Film Consultants trained (~90 filmmakers, 63% women). Founded Association of Green Film Consultants Austria (VGFCA) in 2021.\n\nInnovative programs: yearly Pilot Projects, Creative Labs, Green Practice Kit, Carbon Calculator by KlimAktiv.\n\nAwards: 2020 Makers & Shakers, 2021 European Cultural Brand Award, 2022 Liese Prokop Women Prize, Global Production Awards finalist 2023-2025.\n\nCO/PRO-EUROPE Working Group (founded 2022): transnational harmonization with Germany, South Tyrol, Nordic region (NES). Cross-border recognition of green consultants and reports.',
+        },
+        decarbonizationPlan: {
+          label: 'Decarbonization plan',
+          content:
+            'Climate neutrality target: 2040. Renewable Energy Expansion Act: 100% renewable electricity by 2030 (annual balance). 2024 achievement: 87.5% renewable electricity.\n\nEnergy mix (2023): hydropower 61.65%, wind 12.15%, solar 5.06%, biomass 4.47%, natural gas 15.08%.\n\nMobility Master Plan 2030 for decarbonizing transport. Austria ranked 6th worldwide (out of 193 UN states) in SDG progress.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        trainTravel: {
+          label: 'Train transport',
+          content:
+            'Dense, mostly electrified ÖBB and WestBahn network with frequent national and cross-border connections including night trains.',
+        },
+        electricCars: {
+          label: 'Electric cars',
+          content:
+            '2024: 19,500 public AC charging points, 3,800 fast DC chargers, 1,300+ high-power chargers. 200,000+ battery-electric vehicles registered.',
+        },
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Urban/studio locations: primary grid connection. Mobile options: battery systems and HVO/hybrid generators (limited availability).\n\n85% of electricity from renewables (2023).',
+        },
+        wasteManagement: {
+          label: 'Waste management rules',
+          content:
+            'Separate collection mandatory for bio-waste, paper/cardboard, glass, metals, plastics, and composite packaging.\n\nJanuary 2025: new deposit system for plastic bottles and beverage cans introduced to increase recycling rate.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        greenConsultants: {
+          label: 'Green consultants',
+          content:
+            '• VGFCA (Association of Green Film Consultants Austria): https://www.vgfca.at/\n• Evergreen Prisma Academy-trained consultants.\n• Trained institutional consultants at: ÖFI (2), Cine Tirol (2), Federal Ministry (1), Film Fund Vienna (1), LAFC (3), FISA+ (1).',
+        },
+        trainings: {
+          label: 'Trainings',
+          content:
+            '• Green Film Consultant Austria (GFCA): complex, country-specific training with international focus via Evergreen Prisma Academy.\n• Yearly Evergreen Prisma Pilot Projects and Creative Labs for young talents.',
+        },
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            '• Carbon Calculator for Film & TV Austria by KlimAktiv: https://evergreenprisma.greenshooting.at/en_GB/\n• Evergreen Practice Kit: templates, Green Filming Check, Final Green Report templates.\n• TOPICALS: digital module covering social sustainability (filming with children, drones, animals, fairpay, intimacy coordination, workplace safety, protected areas).\n• European Map of Green Incentives.\n• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/',
+        },
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• Green Filming Austria Working Group (chaired by ÖFI Green Filming Department).\n• VGFCA.\n• CO/PRO-EUROPE Working Group.\n• We_Do! Advice Center: https://we-do.filmschaffende.at/\n• VERA Vertrauensstelle: https://vera-vertrauensstelle.at/',
         },
       },
     },

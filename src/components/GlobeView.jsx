@@ -7,6 +7,18 @@ import './GlobeView.css';
 
 const COUNTRIES_WITH_DATA = Object.keys(countryData);
 
+// Map TopoJSON names to countryData keys when they differ
+const TOPOJSON_TO_DATA = {
+  'Czechia': 'Czech Republic',
+  'Turkey': 'Türkiye',
+  'United States': 'United States of America',
+};
+
+function resolveCountryName(topoName) {
+  if (COUNTRIES_WITH_DATA.includes(topoName)) return topoName;
+  return TOPOJSON_TO_DATA[topoName] || topoName;
+}
+
 const COLOR_SEA = '#f8f9f7';
 const COLOR_ACTIVE = '#9aad1e';
 const COLOR_INACTIVE = '#b8c29a';
@@ -15,7 +27,8 @@ const COLOR_SELECTED = '#3d4712';
 
 function hasData(feat) {
   const name = feat.properties.ADMIN || feat.properties.name || '';
-  return COUNTRIES_WITH_DATA.includes(name);
+  const resolved = resolveCountryName(name);
+  return COUNTRIES_WITH_DATA.includes(resolved);
 }
 
 export default function GlobeView({ onCountryClick, selectedCountry }) {
@@ -82,8 +95,9 @@ export default function GlobeView({ onCountryClick, selectedCountry }) {
   const getPolygonCapColor = useCallback(
     (feat) => {
       const name = feat.properties.name || '';
-      if (selectedCountry === name) return COLOR_SELECTED;
-      if (hovered === name) return COLOR_HOVER;
+      const resolved = resolveCountryName(name);
+      if (selectedCountry === resolved) return COLOR_SELECTED;
+      if (hovered === resolved) return COLOR_HOVER;
       if (hasData(feat)) return COLOR_ACTIVE;
       return COLOR_INACTIVE;
     },
@@ -93,13 +107,13 @@ export default function GlobeView({ onCountryClick, selectedCountry }) {
   const getPolygonSideColor = useCallback(() => 'rgba(0,0,0,0.05)', []);
 
   const handlePolygonHover = useCallback((feat) => {
-    setHovered(feat ? feat.properties.name || '' : null);
+    setHovered(feat ? resolveCountryName(feat.properties.name || '') : null);
     document.body.style.cursor = feat ? 'pointer' : 'default';
   }, []);
 
   const handlePolygonClick = useCallback(
     (feat) => {
-      const name = feat.properties.name || '';
+      const name = resolveCountryName(feat.properties.name || '');
       if (onCountryClick) onCountryClick(name);
 
       const globe = globeRef.current;
@@ -143,7 +157,7 @@ export default function GlobeView({ onCountryClick, selectedCountry }) {
         polygonSideColor={getPolygonSideColor}
         polygonStrokeColor={() => 'rgba(255,255,255,0.3)'}
         polygonAltitude={(feat) =>
-          selectedCountry === (feat.properties.name || '') ? 0.015 : 0.004
+          selectedCountry === resolveCountryName(feat.properties.name || '') ? 0.015 : 0.004
         }
         polygonLabel={getPolygonLabel}
         onPolygonHover={handlePolygonHover}

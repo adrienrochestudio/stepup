@@ -2,8 +2,8 @@ export const allCourses = [
   {
     id: 'intro-eco-production',
     i18nKey: 'introGreenProduction',
-    duration: '2h',
-    modules: 5,
+    duration: '1h30',
+    modules: 4,
     price: 0,
     free: true,
     scormPackageUrl: '',
@@ -11,8 +11,8 @@ export const allCourses = [
   {
     id: 'mastering-green-production',
     i18nKey: 'masteringGreenProduction',
-    duration: '6h',
-    modules: 12,
+    duration: '3h',
+    modules: 6,
     price: 85,
     free: false,
     scormPackageUrl: '',
@@ -20,8 +20,8 @@ export const allCourses = [
   {
     id: 'carbon-footprinting-film-tv',
     i18nKey: 'carbonFootprinting',
-    duration: '5h',
-    modules: 10,
+    duration: '2h',
+    modules: 14,
     price: 85,
     free: false,
     scormPackageUrl: '',
@@ -29,8 +29,8 @@ export const allCourses = [
   {
     id: 'green-animation',
     i18nKey: 'greenAnimation',
-    duration: '4h',
-    modules: 8,
+    duration: '1h30',
+    modules: null,
     price: 85,
     free: false,
     scormPackageUrl: '',

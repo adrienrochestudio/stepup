@@ -41,10 +41,46 @@
   flex-shrink: 0;
 }
 
+.country-panel-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
 .country-panel-header h2 {
   margin: 0;
   font-size: 1rem;
   font-weight: 600;
+}
+
+.country-credit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  color: var(--color-white);
+  border: none;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.country-credit-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.country-credit-banner {
+  padding: 0.5rem 1rem;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  color: var(--color-kaki);
+  background: rgba(189, 198, 9, 0.1);
+  border-bottom: 1px solid var(--color-border);
+  font-style: italic;
+  flex-shrink: 0;
 }
 
 .country-panel-close {

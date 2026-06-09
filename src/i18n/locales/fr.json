@@ -29,15 +29,15 @@
   "courses": {
     "introGreenProduction": {
       "title": "Introduction à l'éco-production",
-      "description": "Découvrez les fondamentaux de la production audiovisuelle éco-responsable. Ce cours gratuit est automatiquement accessible à tous les apprenants inscrits."
+      "description": "Un cours pratique pour les professionnels du cinéma et de la télévision, axé sur les pratiques de production durables. Apprenez à produire autrement, en minimisant l'impact environnemental tout en préservant la créativité — du choix des décors au transport des équipes, en passant par l'énergie et l'approvisionnement."
     },
     "masteringGreenProduction": {
       "title": "Maîtriser l'éco-production",
-      "description": "Allez au-delà des fondamentaux et maîtrisez les processus de production durable, de la pré-production à la distribution."
+      "description": "Les enjeux environnementaux urgents de la production audiovisuelle : défis de durabilité, réglementations internationales et stratégies de réduction d'impact tout en accédant aux financements verts — adapté aux producteurs, commissions du film, financeurs et diffuseurs."
     },
     "carbonFootprinting": {
-      "title": "Maîtriser le bilan carbone dans le cinéma et la télévision",
-      "description": "Apprenez à mesurer, rapporter et réduire l'empreinte carbone des productions cinématographiques et télévisuelles à l'aide de méthodologies reconnues."
+      "title": "Le bilan carbone dans le cinéma et la télévision",
+      "description": "Apprenez à mesurer l'empreinte carbone des productions audiovisuelles. Couvre les enjeux climatiques, les méthodologies de bilan carbone, le traitement des données, l'interprétation des résultats, les labels durables et la compensation — avec exercices interactifs et études de cas."
     },
     "greenAnimation": {
       "title": "Animation éco-responsable",
