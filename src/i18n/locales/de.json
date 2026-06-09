@@ -8,9 +8,9 @@
     "partners": "Partner"
   },
   "home": {
-    "title": "Willkommen bei StepUP",
-    "tagline": "Die E-Learning-Plattform für nachhaltige audiovisuelle Produktion",
-    "subtitle": "Bilden Sie sich in nachhaltigen Praktiken der audiovisuellen Industrie weiter. Online-Kurse, interaktive Ressourcen und anerkannte Zertifizierungen.",
+    "title": "Grün drehen lernen — Schritt für Schritt",
+    "tagline": "Online-Kurse für nachhaltige Film- und TV-Produktion.",
+    "subtitle": "",
     "ctaStart": "Ausbildung starten",
     "ctaCourses": "Zu meinen Kursen",
     "ctaMap": "Ressourcen erkunden",
@@ -24,7 +24,10 @@
     "ecoprodCta": "ecoprod.com besuchen",
     "eurimagesTitle": "Eurimages",
     "eurimagesDesc": "Fonds des Europarats für die Koproduktion, den Vertrieb, die Aufführung und die Digitalisierung europäischer Filmwerke. Unterstützung der europäischen Filmindustrie und kulturellen Vielfalt seit 1988.",
-    "eurimagesCta": "eurimages.org besuchen"
+    "eurimagesCta": "eurimages.org besuchen",
+    "newsletterTitle": "Bleiben Sie informiert",
+    "newsletterDesc": "Abonnieren Sie unseren Newsletter für Neuigkeiten zur nachhaltigen Produktion.",
+    "newsletterCta": "Newsletter abonnieren"
   },
   "courses": {
     "introGreenProduction": {
@@ -83,7 +86,17 @@
     "roleLearner": "Lernende/r",
     "roleCohortManager": "Kohortenmanager",
     "organizationName": "Name Ihrer Organisation",
-    "organizationNamePlaceholder": "z. B. Mein Produktionsstudio"
+    "organizationNamePlaceholder": "z. B. Mein Produktionsstudio",
+    "firstName": "Vorname",
+    "firstNamePlaceholder": "Anna",
+    "lastName": "Nachname",
+    "lastNamePlaceholder": "Müller",
+    "username": "Benutzername",
+    "usernamePlaceholder": "Automatisch aus Ihrem Namen generiert",
+    "country": "Land",
+    "countryPlaceholder": "z. B. Deutschland",
+    "company": "Unternehmen (optional)",
+    "companyPlaceholder": "z. B. Mein Produktionsstudio"
   },
   "dashboard": {
     "title": "Meine Kurse",
@@ -247,6 +260,7 @@
     "resources": "Ressourcen",
     "learning": "Ausbildung",
     "partners": "Partner",
+    "contact": "Kontakt",
     "legal": "Rechtliches",
     "terms": "Nutzungsbedingungen",
     "privacy": "Datenschutzerklärung",

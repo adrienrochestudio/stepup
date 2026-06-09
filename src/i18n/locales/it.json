@@ -8,9 +8,9 @@
     "partners": "Partner"
   },
   "home": {
-    "title": "Benvenuto su StepUP",
-    "tagline": "La piattaforma e-learning per la produzione audiovisiva sostenibile",
-    "subtitle": "Formati sulle pratiche sostenibili dell'industria audiovisiva. Corsi online, risorse interattive e certificazioni riconosciute.",
+    "title": "Produci green, impara con StepUP",
+    "tagline": "Corsi online per i professionisti del cinema e dell'audiovisivo.",
+    "subtitle": "",
     "ctaStart": "Inizia la formazione",
     "ctaCourses": "Accedi ai miei corsi",
     "ctaMap": "Esplora le risorse",
@@ -24,7 +24,10 @@
     "ecoprodCta": "Visita ecoprod.com",
     "eurimagesTitle": "Eurimages",
     "eurimagesDesc": "Fondo del Consiglio d'Europa per la coproduzione, la distribuzione, l'esercizio e la digitalizzazione delle opere cinematografiche europee. Sostegno all'industria cinematografica europea e alla diversità culturale dal 1988.",
-    "eurimagesCta": "Visita eurimages.org"
+    "eurimagesCta": "Visita eurimages.org",
+    "newsletterTitle": "Resta aggiornato",
+    "newsletterDesc": "Iscriviti alla nostra newsletter per le ultime novità sulla produzione sostenibile.",
+    "newsletterCta": "Iscriviti alla newsletter"
   },
   "courses": {
     "introGreenProduction": {
@@ -83,7 +86,17 @@
     "roleLearner": "Partecipante",
     "roleCohortManager": "Gestore di coorte",
     "organizationName": "Nome dell'organizzazione",
-    "organizationNamePlaceholder": "es.: Il mio studio di produzione"
+    "organizationNamePlaceholder": "es.: Il mio studio di produzione",
+    "firstName": "Nome",
+    "firstNamePlaceholder": "Maria",
+    "lastName": "Cognome",
+    "lastNamePlaceholder": "Rossi",
+    "username": "Nome utente",
+    "usernamePlaceholder": "Generato automaticamente dal tuo nome",
+    "country": "Paese",
+    "countryPlaceholder": "es.: Italia",
+    "company": "Azienda (opzionale)",
+    "companyPlaceholder": "es.: Il mio studio di produzione"
   },
   "dashboard": {
     "title": "I miei corsi",
@@ -247,6 +260,7 @@
     "resources": "Risorse",
     "learning": "Formazione",
     "partners": "Partner",
+    "contact": "Contatto",
     "legal": "Note legali",
     "terms": "Condizioni d'uso",
     "privacy": "Informativa sulla privacy",

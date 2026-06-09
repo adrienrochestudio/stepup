@@ -82,6 +82,13 @@ export default function Footer() {
               <li><Link to="/privacy">{t('footer.privacy')}</Link></li>
             </ul>
           </div>
+
+          <div className="footer-col">
+            <h4>{t('footer.contact')}</h4>
+            <ul>
+              <li><a href="mailto:stepup@ecoprod.com">stepup@ecoprod.com</a></li>
+            </ul>
+          </div>
         </div>
 
         <div className="footer-initiative">

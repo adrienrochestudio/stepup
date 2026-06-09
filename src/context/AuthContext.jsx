@@ -42,12 +42,12 @@ export function AuthProvider({ children }) {
     return mockUser;
   }, []);
 
-  const signup = useCallback(async (email, password, role = 'learner', organizationName = '') => {
+  const signup = useCallback(async (email, password, role = 'learner', organizationName = '', extra = {}) => {
     if (isConfigured && auth) {
       const result = await createUserWithEmailAndPassword(auth, email, password);
       return result.user;
     }
-    const mockUser = { uid: 'mock-uid', email, displayName: email.split('@')[0], role, organizationName };
+    const mockUser = { uid: 'mock-uid', email, displayName: extra.displayName || email.split('@')[0], role, organizationName, ...extra };
     localStorage.setItem(MOCK_USER_KEY, JSON.stringify(mockUser));
     setUser(mockUser);
     return mockUser;

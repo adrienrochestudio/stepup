@@ -10,8 +10,12 @@ export default function Login() {
   const navigate = useNavigate();
   const { t } = useTranslation();
   const [isSignup, setIsSignup] = useState(false);
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [country, setCountry] = useState('');
+  const [company, setCompany] = useState('');
   const [role, setRole] = useState('learner');
   const [organizationName, setOrganizationName] = useState('');
   const [error, setError] = useState('');
@@ -26,7 +30,8 @@ export default function Login() {
 
     try {
       if (isSignup) {
-        await signup(email, password, role, organizationName);
+        const displayName = `${firstName} ${lastName}`;
+        await signup(email, password, role, organizationName, { firstName, lastName, displayName, country, company });
       } else {
         await login(email, password, role);
       }
@@ -53,6 +58,47 @@ export default function Login() {
         )}
 
         <form className="login-form" onSubmit={handleSubmit}>
+          {isSignup && (
+            <>
+              <div className="login-field-row">
+                <div className="login-field">
+                  <label htmlFor="firstName">{t('login.firstName')}</label>
+                  <input
+                    id="firstName"
+                    type="text"
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
+                    placeholder={t('login.firstNamePlaceholder')}
+                    required
+                  />
+                </div>
+                <div className="login-field">
+                  <label htmlFor="lastName">{t('login.lastName')}</label>
+                  <input
+                    id="lastName"
+                    type="text"
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
+                    placeholder={t('login.lastNamePlaceholder')}
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="login-field">
+                <label htmlFor="username">{t('login.username')}</label>
+                <input
+                  id="username"
+                  type="text"
+                  value={firstName && lastName ? `${firstName} ${lastName}` : ''}
+                  readOnly
+                  className="login-field-readonly"
+                  placeholder={t('login.usernamePlaceholder')}
+                />
+              </div>
+            </>
+          )}
+
           <div className="login-field">
             <label htmlFor="email">{t('login.email')}</label>
             <input
@@ -77,6 +123,32 @@ export default function Login() {
               minLength={6}
             />
           </div>
+
+          {isSignup && (
+            <>
+              <div className="login-field">
+                <label htmlFor="country">{t('login.country')}</label>
+                <input
+                  id="country"
+                  type="text"
+                  value={country}
+                  onChange={(e) => setCountry(e.target.value)}
+                  placeholder={t('login.countryPlaceholder')}
+                  required
+                />
+              </div>
+              <div className="login-field">
+                <label htmlFor="company">{t('login.company')}</label>
+                <input
+                  id="company"
+                  type="text"
+                  value={company}
+                  onChange={(e) => setCompany(e.target.value)}
+                  placeholder={t('login.companyPlaceholder')}
+                />
+              </div>
+            </>
+          )}
 
           {!isConfigured && (
             <div className="login-role-selector">

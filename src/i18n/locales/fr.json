@@ -8,9 +8,9 @@
     "partners": "Partenaires"
   },
   "home": {
-    "title": "Bienvenue sur StepUP",
-    "tagline": "La plateforme e-learning de l'éco-production audiovisuelle",
-    "subtitle": "Formez-vous aux pratiques durables de l'industrie audiovisuelle. Cours en ligne, ressources interactives et certifications reconnues.",
+    "title": "Mettez-vous à l'éco-production !",
+    "tagline": "Plateforme d'e-learning pour les professionnels du cinéma et de l'audiovisuel.",
+    "subtitle": "",
     "ctaStart": "Commencer ma formation",
     "ctaCourses": "Accéder à mes cours",
     "ctaMap": "Explorer les ressources",
@@ -24,7 +24,10 @@
     "ecoprodCta": "Visiter ecoprod.com",
     "eurimagesTitle": "Eurimages",
     "eurimagesDesc": "Fonds du Conseil de l'Europe pour la coproduction, la distribution, l'exploitation et la numérisation des œuvres cinématographiques européennes. Soutien à l'industrie cinématographique européenne et à la diversité culturelle depuis 1988.",
-    "eurimagesCta": "Visiter eurimages.org"
+    "eurimagesCta": "Visiter eurimages.org",
+    "newsletterTitle": "Restez informé",
+    "newsletterDesc": "Abonnez-vous à notre newsletter pour suivre l'actualité de l'éco-production.",
+    "newsletterCta": "S'abonner à la newsletter"
   },
   "courses": {
     "introGreenProduction": {
@@ -83,7 +86,17 @@
     "roleLearner": "Apprenant",
     "roleCohortManager": "Gestionnaire de cohorte",
     "organizationName": "Nom de votre structure",
-    "organizationNamePlaceholder": "ex : Mon Studio de Production"
+    "organizationNamePlaceholder": "ex : Mon Studio de Production",
+    "firstName": "Prénom",
+    "firstNamePlaceholder": "Marie",
+    "lastName": "Nom",
+    "lastNamePlaceholder": "Dupont",
+    "username": "Nom d'utilisateur",
+    "usernamePlaceholder": "Généré automatiquement à partir de votre nom",
+    "country": "Pays",
+    "countryPlaceholder": "ex : France",
+    "company": "Société (optionnel)",
+    "companyPlaceholder": "ex : Mon Studio de Production"
   },
   "dashboard": {
     "title": "Mes cours",
@@ -247,6 +260,7 @@
     "resources": "Ressources",
     "learning": "Formation",
     "partners": "Partenaires",
+    "contact": "Contact",
     "legal": "Mentions légales",
     "terms": "Conditions d'utilisation",
     "privacy": "Politique de confidentialité",

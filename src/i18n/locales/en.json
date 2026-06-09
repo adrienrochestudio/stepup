@@ -8,9 +8,9 @@
     "partners": "Partners"
   },
   "home": {
-    "title": "Welcome to StepUP",
-    "tagline": "The e-learning platform for green audiovisual production",
-    "subtitle": "Train in sustainable practices for the audiovisual industry. Online courses, interactive resources, and recognised certifications.",
+    "title": "Learn green film production, step by step",
+    "tagline": "Practical online courses for film and TV professionals.",
+    "subtitle": "",
     "ctaStart": "Start learning",
     "ctaCourses": "Go to my courses",
     "ctaMap": "Explore Resources",
@@ -24,7 +24,10 @@
     "ecoprodCta": "Visit ecoprod.com",
     "eurimagesTitle": "Eurimages",
     "eurimagesDesc": "The Council of Europe's fund for co-production, distribution, exhibition, and digitisation of European cinematographic works. Supporting the European film industry and cultural diversity since 1988.",
-    "eurimagesCta": "Visit eurimages.org"
+    "eurimagesCta": "Visit eurimages.org",
+    "newsletterTitle": "Stay in the loop",
+    "newsletterDesc": "Subscribe to our newsletter for the latest on green production.",
+    "newsletterCta": "Subscribe to newsletter"
   },
   "courses": {
     "introGreenProduction": {
@@ -83,7 +86,17 @@
     "roleLearner": "Learner",
     "roleCohortManager": "Cohort Manager",
     "organizationName": "Organisation name",
-    "organizationNamePlaceholder": "e.g. My Production Studio"
+    "organizationNamePlaceholder": "e.g. My Production Studio",
+    "firstName": "First name",
+    "firstNamePlaceholder": "Jane",
+    "lastName": "Last name",
+    "lastNamePlaceholder": "Doe",
+    "username": "Username",
+    "usernamePlaceholder": "Auto-generated from your name",
+    "country": "Country",
+    "countryPlaceholder": "e.g. France",
+    "company": "Company (optional)",
+    "companyPlaceholder": "e.g. My Production Studio"
   },
   "dashboard": {
     "title": "My Courses",
@@ -247,6 +260,7 @@
     "resources": "Resources",
     "learning": "Learning",
     "partners": "Partners",
+    "contact": "Contact",
     "legal": "Legal",
     "terms": "Terms of Use",
     "privacy": "Privacy Policy",

@@ -33,7 +33,7 @@ export default function Home() {
       <section className="home-hero">
         <h1>{t('home.title')}</h1>
         <p className="home-tagline">{t('home.tagline')}</p>
-        <p className="home-subtitle">{t('home.subtitle')}</p>
+        {t('home.subtitle') && <p className="home-subtitle">{t('home.subtitle')}</p>}
         <div className="home-cta">
           {user ? (
             <Link to="/dashboard" className="cta-primary">
