@@ -7,10 +7,10 @@ import './GlobeView.css';
 
 const COUNTRIES_WITH_DATA = Object.keys(countryData);
 
-const COLOR_SEA = '#eef0f2';
-const COLOR_ACTIVE = '#b5be2e';
-const COLOR_INACTIVE = '#d6d9cd';
-const COLOR_HOVER = '#e2e6c4';
+const COLOR_SEA = '#f6f7f5';
+const COLOR_ACTIVE = '#a8b820';
+const COLOR_INACTIVE = '#c5cdab';
+const COLOR_HOVER = '#d8dfc0';
 const COLOR_SELECTED = '#3d4712';
 
 function hasData(feat) {
@@ -132,7 +132,9 @@ export default function GlobeView({ onCountryClick, selectedCountry }) {
         backgroundColor="#ffffff"
         globeImageUrl=""
         showGlobe={true}
-        showAtmosphere={false}
+        showAtmosphere={true}
+        atmosphereColor="rgba(140, 160, 80, 0.15)"
+        atmosphereAltitude={0.12}
         globeMaterial={globeMaterial}
         polygonsData={countries}
         polygonCapColor={getPolygonCapColor}
