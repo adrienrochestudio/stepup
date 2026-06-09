@@ -50,6 +50,35 @@
   margin-top: 0.2rem;
 }
 
+.course-lang-selector {
+  display: flex;
+  gap: 0.375rem;
+}
+
+.course-lang-btn {
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: inherit;
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+  color: var(--color-text-light);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.course-lang-btn:hover {
+  border-color: var(--color-kaki);
+  color: var(--color-kaki);
+}
+
+.course-lang-btn.active {
+  background: var(--color-kaki);
+  color: var(--color-white);
+  border-color: var(--color-kaki);
+}
+
 .course-top-progress {
   min-width: 120px;
   text-align: right;

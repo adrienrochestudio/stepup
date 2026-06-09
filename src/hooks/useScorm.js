@@ -2,34 +2,67 @@ import { useState, useRef, useCallback, useEffect } from 'react';
 
 const STORAGE_PREFIX = 'stepup_scorm_';
 
-export function useScorm(courseId) {
+function loadLangState(courseId, lang) {
+  try {
+    const raw = localStorage.getItem(`${STORAGE_PREFIX}${courseId}_${lang}`);
+    return raw ? JSON.parse(raw) : null;
+  } catch { return null; }
+}
+
+function getUnifiedStatus(courseId, languages) {
+  let bestProgress = 0;
+  let isCompleted = false;
+  let isInProgress = false;
+
+  for (const lang of languages) {
+    const state = loadLangState(courseId, lang);
+    if (!state) continue;
+    if (state.progress > bestProgress) bestProgress = state.progress;
+    if (state.status === 'completed' || state.status === 'passed') isCompleted = true;
+    if (state.status === 'incomplete' || state.status === 'browsed') isInProgress = true;
+  }
+
+  const status = isCompleted ? 'completed' : isInProgress ? 'in_progress' : 'not attempted';
+  return { progress: bestProgress, status };
+}
+
+export function useScorm(courseId, lang = 'en') {
   const [progress, setProgress] = useState(0);
   const [status, setStatus] = useState('not attempted');
+  const [unifiedStatus, setUnifiedStatus] = useState({ progress: 0, status: 'not attempted' });
   const [initialized, setInitialized] = useState(false);
   const apiRef = useRef(null);
+  const progressRef = useRef(0);
+  const statusRef = useRef('not attempted');
 
-  // Load saved state from localStorage
+  const availableLanguages = ['en', 'fr'];
+
   useEffect(() => {
-    const saved = localStorage.getItem(`${STORAGE_PREFIX}${courseId}`);
+    const saved = loadLangState(courseId, lang);
     if (saved) {
-      try {
-        const data = JSON.parse(saved);
-        setProgress(data.progress || 0);
-        setStatus(data.status || 'not attempted');
-      } catch { /* ignore */ }
+      setProgress(saved.progress || 0);
+      progressRef.current = saved.progress || 0;
+      setStatus(saved.status || 'not attempted');
+      statusRef.current = saved.status || 'not attempted';
+    } else {
+      setProgress(0);
+      progressRef.current = 0;
+      setStatus('not attempted');
+      statusRef.current = 'not attempted';
     }
-  }, [courseId]);
+    setUnifiedStatus(getUnifiedStatus(courseId, availableLanguages));
+  }, [courseId, lang]);
 
   const saveState = useCallback((prog, stat) => {
-    localStorage.setItem(`${STORAGE_PREFIX}${courseId}`, JSON.stringify({
+    localStorage.setItem(`${STORAGE_PREFIX}${courseId}_${lang}`, JSON.stringify({
       progress: prog,
       status: stat,
       lastAccessed: new Date().toISOString(),
     }));
-  }, [courseId]);
+    setUnifiedStatus(getUnifiedStatus(courseId, availableLanguages));
+  }, [courseId, lang]);
 
   const initializeApi = useCallback((iframeWindow) => {
-    // Create a SCORM 1.2 API object that the SCORM content can find
     const api = {
       _data: {},
       LMSInitialize: () => { setInitialized(true); return 'true'; },
@@ -39,50 +72,54 @@ export function useScorm(courseId) {
         api._data[key] = value;
 
         if (key === 'cmi.core.lesson_status') {
+          statusRef.current = value;
           setStatus(value);
-          saveState(progress, value);
+          saveState(progressRef.current, value);
         }
         if (key === 'cmi.core.score.raw') {
           const prog = parseInt(value, 10);
           if (!isNaN(prog)) {
+            progressRef.current = prog;
             setProgress(prog);
-            saveState(prog, status);
+            saveState(prog, statusRef.current);
           }
         }
         if (key === 'cmi.suspend_data') {
-          saveState(progress, status);
+          saveState(progressRef.current, statusRef.current);
         }
 
         return 'true';
       },
-      LMSCommit: () => { saveState(progress, status); return 'true'; },
+      LMSCommit: () => { saveState(progressRef.current, statusRef.current); return 'true'; },
       LMSGetLastError: () => '0',
       LMSGetErrorString: () => '',
       LMSGetDiagnostic: () => '',
     };
 
-    // Inject API into iframe window for SCORM 1.2
     try {
       iframeWindow.API = api;
     } catch {
-      // Cross-origin — can't inject
+      // Cross-origin
     }
 
     apiRef.current = api;
     return api;
-  }, [courseId, progress, status, saveState]);
+  }, [courseId, lang, saveState]);
 
   const terminate = useCallback(() => {
-    saveState(progress, status);
+    saveState(progressRef.current, statusRef.current);
     setInitialized(false);
     apiRef.current = null;
-  }, [progress, status, saveState]);
+  }, [saveState]);
 
   return {
     progress,
     status,
+    unifiedStatus,
     initialized,
     initializeApi,
     terminate,
   };
 }
+
+export { getUnifiedStatus };

@@ -22,6 +22,12 @@
   position: relative;
 }
 
+.course-card-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .course-card-thumb-icon {
   font-size: 2rem;
   opacity: 0.15;

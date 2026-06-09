@@ -8,11 +8,15 @@ export default function CourseCard({ course, enrolled, onEnrollClick }) {
   const title = course.i18nKey ? t(`courses.${course.i18nKey}.title`) : course.title;
   const description = course.i18nKey ? t(`courses.${course.i18nKey}.description`) : course.description;
 
+  const thumbContent = course.image
+    ? <img src={course.image} alt={title} className="course-card-thumb-img" />
+    : <span className="course-card-thumb-icon">&#128218;</span>;
+
   if (!enrolled) {
     return (
       <div className="course-card course-card-locked">
         <div className="course-card-thumb catalog">
-          <span className="course-card-thumb-icon">&#128218;</span>
+          {thumbContent}
           {course.free ? (
             <span className="course-card-badge badge-free">{t('courseCard.free')}</span>
           ) : (
@@ -43,7 +47,7 @@ export default function CourseCard({ course, enrolled, onEnrollClick }) {
   return (
     <div className="course-card">
       <div className="course-card-thumb">
-        <span className="course-card-thumb-icon">&#128218;</span>
+        {thumbContent}
         <span className={`course-card-badge badge-${status}`}>
           {t(`courseCard.status.${status}`)}
         </span>

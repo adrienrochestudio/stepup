@@ -3,9 +3,9 @@ import { useTranslation } from 'react-i18next';
 import { useScorm } from '../hooks/useScorm';
 import './ScormPlayer.css';
 
-export default function ScormPlayer({ courseId, scormUrl }) {
+export default function ScormPlayer({ courseId, scormUrl, lang }) {
   const iframeRef = useRef(null);
-  const { initializeApi, terminate } = useScorm(courseId);
+  const { initializeApi, terminate } = useScorm(courseId, lang);
   const { t } = useTranslation();
 
   useEffect(() => {

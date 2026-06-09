@@ -6,7 +6,11 @@ export const allCourses = [
     modules: 4,
     price: 0,
     free: true,
-    scormPackageUrl: '',
+    image: '/stepup/images/courses/intro-eco-production.png',
+    scormPackages: {
+      en: '/stepup/scorm/intro-eco-production/en/index.html',
+      fr: '/stepup/scorm/intro-eco-production/fr/index.html',
+    },
   },
   {
     id: 'mastering-green-production',
@@ -15,7 +19,11 @@ export const allCourses = [
     modules: 6,
     price: 85,
     free: false,
-    scormPackageUrl: '',
+    image: '/stepup/images/courses/mastering-green-production.png',
+    scormPackages: {
+      en: '',
+      fr: '',
+    },
   },
   {
     id: 'carbon-footprinting-film-tv',
@@ -24,7 +32,11 @@ export const allCourses = [
     modules: 14,
     price: 85,
     free: false,
-    scormPackageUrl: '',
+    image: '/stepup/images/courses/carbon-footprinting-film-tv.png',
+    scormPackages: {
+      en: '/stepup/scorm/carbon-footprinting-film-tv/en/index.html',
+      fr: '/stepup/scorm/carbon-footprinting-film-tv/fr/index.html',
+    },
   },
   {
     id: 'green-animation',
@@ -33,7 +45,11 @@ export const allCourses = [
     modules: null,
     price: 85,
     free: false,
-    scormPackageUrl: '',
+    image: '/stepup/images/courses/green-animation.png',
+    scormPackages: {
+      en: '/stepup/scorm/green-animation/en/index.html',
+      fr: '/stepup/scorm/green-animation/fr/index.html',
+    },
   },
 ];
 
