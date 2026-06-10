@@ -59,25 +59,26 @@ export default function Home() {
             <span className="home-hero-line">{t('home.titleSuffix')}</span>
           </h1>
           <p className="home-tagline">{t('home.tagline')}</p>
-          <div className="home-cta">
-            {user ? (
-              <Link to="/dashboard" className="cta-primary">
-                {t('home.ctaCourses')}
-              </Link>
-            ) : (
-              <Link to="/login" className="cta-primary">
-                {t('home.ctaStart')}
-              </Link>
-            )}
-            <Link to="/resources/map" className="cta-secondary">
-              {t('home.ctaMap')}
-            </Link>
-          </div>
         </div>
         <div className="home-hero-visual">
           <img src={`${import.meta.env.BASE_URL}images/imagecomputer.png`} alt="" />
         </div>
       </section>
+
+      <div className="home-cta">
+        {user ? (
+          <Link to="/dashboard" className="cta-primary">
+            {t('home.ctaCourses')}
+          </Link>
+        ) : (
+          <Link to="/login" className="cta-primary">
+            {t('home.ctaStart')}
+          </Link>
+        )}
+        <Link to="/resources/map" className="cta-secondary">
+          {t('home.ctaMap')}
+        </Link>
+      </div>
 
       <div className="home-courses-band">
       <section className="home-latest">
@@ -104,7 +105,7 @@ export default function Home() {
       <section className="home-catalog">
         <h2>{t('home.courseCatalog')}</h2>
         <p className="home-catalog-audience">
-          {t('home.audiencePrefix')}{' '}
+          <span className="home-catalog-audience-prefix">{t('home.audiencePrefix')}</span>
           <RotatingTitleWord
             items={t('home.audienceRotating', { returnObjects: true })}
             interval={2800}

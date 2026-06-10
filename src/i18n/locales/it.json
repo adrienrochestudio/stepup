@@ -300,7 +300,21 @@
     "partners": {
       "title": "I nostri partner",
       "subtitle": "StepUP è supportato da una rete di partner impegnati nella produzione audiovisiva sostenibile in tutta Europa.",
-      "contact": "Contatto"
+      "items": {
+        "bftp": "La Bæredygtig Film og TV Produktion (bftp) è un'alleanza danese dedicata a ridurre l'impatto ambientale delle produzioni audiovisive, offrendo orientamento e risorse per pratiche più sostenibili.",
+        "bgreen": "B.Green è un'iniziativa ceca che promuove la sostenibilità nella produzione cinematografica riducendo l'impronta di carbonio e privilegiando le risorse locali e rinnovabili.",
+        "ecomuvi": "EcoMuvi, accreditato da ACCREDIA, definisce uno standard internazionale di sostenibilità per le produzioni audiovisive. Dal documentario alla fiction, garantisce i più alti standard ambientali, sociali ed economici in ogni progetto.",
+        "green-eyes": "Green Eyes è una società di consulenza sulla sostenibilità con sede in Ungheria e nel Regno Unito per l'industria del cinema e della televisione, che supporta le produzioni con politiche ecologiche, coordinamento sul set e strategie di riduzione del carbonio.",
+        "green-producers-club": "Il Green Producers Club sostiene le industrie creative attraverso la condivisione di conoscenze (The Club) e la misurazione dell'impatto (The Tool), aiutando i produttori a pianificare, monitorare e ridurre le emissioni delle loro produzioni.",
+        "green-filming-cz": "Greenfilming.cz è una piattaforma ceca che offre strumenti, consigli pratici e un database di fornitori ecologici per promuovere pratiche sostenibili nella produzione audiovisiva.",
+        "green-film-shooting": "Green Film Shooting informa i professionisti della creazione su misure ecologiche, approcci sostenibili e soluzioni innovative per la produzione cinematografica e mediatica.",
+        "on-tourne-vert": "On Tourne Vert è un'associazione del Québec che sostiene la transizione ecologica dell'industria audiovisiva attraverso strumenti, risorse e un accreditamento di produzione sostenibile.",
+        "films4future": "Films for Future è un collettivo olandese che promuove la sostenibilità nella produzione cinematografica e televisiva attraverso la collaborazione del settore e pratiche ecologiche.",
+        "wallimage": "Wallimage è un fondo pubblico belga che sostiene l'industria audiovisiva della Vallonia attraverso il cofinanziamento di progetti, gli investimenti nelle imprese e il finanziamento di produzioni cinematografiche, televisive e di videogiochi.",
+        "annee-helvig-frost": "Annee Helvig Frost è un'esperta di sostenibilità nell'industria del cinema e della televisione danese e nordica, nonché cofondatrice della Nordic Eco Media Alliance (NEMA).",
+        "valentina-huckova": "Valentína Hučková è coordinatrice e consulente certificata in riprese ecologiche, specializzata in produzione cinematografica sostenibile, riduzione del carbonio e formazione attraverso workshop su arte e media sostenibili.",
+        "dorte-schneider-garcia": "Dörte Schneider Garcia, aiuto regista tedesca con sede in Portogallo, è consulente certificata in sostenibilità e promuove la produzione cinematografica sostenibile e la formazione del settore."
+      }
     }
   },
   "footer": {

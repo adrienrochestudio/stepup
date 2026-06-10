@@ -1,12 +1,6 @@
 import { useTranslation } from 'react-i18next';
+import partners from '../data/partners';
 import './Partners.css';
-
-const partners = Array.from({ length: 12 }, (_, i) => ({
-  id: i + 1,
-  name: `Partner ${i + 1}`,
-  description: `Supporting sustainable audiovisual production across Europe.`,
-  contactUrl: '#',
-}));
 
 export default function Partners() {
   const { t } = useTranslation();
@@ -21,14 +15,22 @@ export default function Partners() {
       <div className="partners-grid">
         {partners.map((partner) => (
           <div key={partner.id} className="partner-card">
-            <div className="partner-logo">
-              <div className="partner-logo-placeholder">Logo</div>
-            </div>
-            <h3>{partner.name}</h3>
-            <p>{partner.description}</p>
-            <a href={partner.contactUrl} className="partner-contact">
-              {t('about.partners.contact')}
+            <a
+              href={partner.url}
+              className="partner-logo-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={partner.name}
+            >
+              <img
+                src={`${import.meta.env.BASE_URL}${partner.logo}`}
+                alt={partner.name}
+                className="partner-logo-img"
+                loading="lazy"
+              />
             </a>
+            <h3>{partner.name}</h3>
+            <p>{t(`about.partners.items.${partner.id}`)}</p>
           </div>
         ))}
       </div>

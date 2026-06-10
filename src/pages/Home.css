@@ -19,7 +19,7 @@
 .home-hero-text {
   flex: 1;
   min-width: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .home-hero-visual {
@@ -61,15 +61,18 @@
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 1.6;
-  max-width: 480px;
-  margin: 0 auto 2rem;
+  max-width: 460px;
+  margin: 0;
 }
 
+/* CTA row sits below the hero columns and is centered on the whole page. */
 .home-cta {
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0 2rem 1rem;
+  margin-top: -1.5rem;
 }
 
 .home-cta a {
@@ -230,15 +233,27 @@
   margin: 0.6rem auto 0;
 }
 
-/* Rotating "courses designed for ..." line under the section title. */
+/* Rotating "courses designed for ..." line under the section title.
+   Split into two halves anchored at the page center: the prefix is
+   right-aligned in the left half (so it never moves), and only the
+   rotating phrase in the right half changes. */
 .home-catalog-audience {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.4em;
+  align-items: baseline;
   color: var(--color-text-light);
   font-size: 1rem;
   margin: -0.75rem 0 1.75rem;
 }
 
+.home-catalog-audience-prefix {
+  text-align: right;
+  white-space: nowrap;
+}
+
 .home-catalog-audience .rotating-word {
+  justify-self: start;
   color: var(--color-kaki);
   font-weight: 600;
 }
@@ -499,16 +514,33 @@
 @media (max-width: 768px) {
   .home-hero {
     flex-direction: column;
-    text-align: center;
-    padding: 4rem 1.5rem 3rem;
+    align-items: flex-start;
+    padding: 3.5rem 1.5rem 2rem;
     gap: 2rem;
   }
 
   .home-hero-visual {
     flex-basis: auto;
     max-width: 360px;
+    align-self: center;
   }
 
+  /* Stack the audience line and shrink it so phrases fit on small screens. */
+  .home-catalog-audience {
+    display: block;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+
+  .home-catalog-audience-prefix {
+    display: block;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .home-catalog-audience .rotating-word {
+    font-size: 0.92em;
+  }
 
   .home-latest {
     padding: 0 1.5rem 2rem;
