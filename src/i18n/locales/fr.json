@@ -34,7 +34,20 @@
     "newsletterTitle": "Restez informé",
     "newsletterDesc": "Abonnez-vous à notre newsletter pour suivre l'actualité de l'éco-production.",
     "newsletterCta": "S'abonner à la newsletter",
-    "partnersIntro": "StepUP est une initiative d'Eurimages développée par Ecoprod."
+    "partnersIntro": "StepUP est une initiative d'Eurimages développée par Ecoprod.",
+    "audiencePrefix": "Des cours conçus pour",
+    "audienceRotating": [
+      "les sociétés de production",
+      "les professionnels du cinéma",
+      "les professionnels de l'animation",
+      "les équipes techniques",
+      "les écoles de cinéma et d'audiovisuel",
+      "les étudiants",
+      "les professionnels de la publicité",
+      "les diffuseurs et plateformes",
+      "les commissions du film et festivals",
+      "celles et ceux qui veulent un métier plus responsable"
+    ]
   },
   "courses": {
     "introGreenProduction": {
@@ -69,7 +82,26 @@
       "sustainability": "Durabilité & logistique",
       "resources": "Ressources"
     },
-    "loadError": "Impossible de charger la carte. Vérifiez votre connexion."
+    "loadError": "Impossible de charger la carte. Vérifiez votre connexion.",
+    "subcategories": {
+      "greenProductionStatus": "État de l'éco-production",
+      "decarbonizationPlan": "Plan de décarbonation",
+      "laws": "Législation nationale pertinente",
+      "socialLegislation": "Législation sociale",
+      "audiovisualRegulation": "Réglementations et incitations de l'industrie audiovisuelle",
+      "existingInitiatives": "Initiatives existantes",
+      "trainTravel": "Transport ferroviaire",
+      "electricCars": "Voitures électriques",
+      "gridConnection": "Raccordement au réseau électrique",
+      "wasteManagement": "Règles de gestion des déchets",
+      "socialRules": "Règles sociales (égalité de genre, inclusion)",
+      "otherFacts": "Autres faits importants",
+      "greenConsultants": "Éco-référents",
+      "serviceProviders": "Prestataires de services",
+      "trainings": "Formations",
+      "tools": "Calculateurs et outils",
+      "networks": "Réseaux de professionnels"
+    }
   },
   "webinars": {
     "title": "Webinaires",

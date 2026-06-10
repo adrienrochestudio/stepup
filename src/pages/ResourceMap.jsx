@@ -20,10 +20,21 @@ export default function ResourceMap() {
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [activeFilters, setActiveFilters] = useState([]);
   const [showAddInfo, setShowAddInfo] = useState(false);
+  // 'visible' until the first click on the globe, then 'fading', then gone.
+  const [hintState, setHintState] = useState('visible');
+
+  const dismissHint = useCallback(() => {
+    setHintState((prev) => {
+      if (prev !== 'visible') return prev;
+      setTimeout(() => setHintState('gone'), 1600);
+      return 'fading';
+    });
+  }, []);
 
   const handleCountryClick = useCallback((countryName) => {
+    dismissHint();
     setSelectedCountry((prev) => (prev === countryName ? null : countryName));
-  }, []);
+  }, [dismissHint]);
 
   const handleToggleFilter = useCallback((subFullKey) => {
     setActiveFilters((prev) =>
@@ -65,11 +76,12 @@ export default function ResourceMap() {
           countryData[key].name.toLowerCase().includes(normalized),
       );
     if (match) {
+      dismissHint();
       setSelectedCountry(match);
       return true;
     }
     return false;
-  }, []);
+  }, [dismissHint]);
 
   return (
     <div className="resource-map">
@@ -86,8 +98,10 @@ export default function ResourceMap() {
           selectedCountry={selectedCountry}
         />
 
-        {!selectedCountry && (
-          <div className="resource-map-hint">{t('map.clickHint')}</div>
+        {hintState !== 'gone' && (
+          <div className={`resource-map-hint ${hintState === 'fading' ? 'fading' : ''}`}>
+            {t('map.clickHint')}
+          </div>
         )}
 
         {selectedCountry && (

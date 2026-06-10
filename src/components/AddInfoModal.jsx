@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { categoryKeys, countryData } from '../data/countryData';
+import { categoryKeys } from '../data/countryData';
 import './AddInfoModal.css';
 
 const CATEGORY_META = {
@@ -58,16 +58,29 @@ const FIELD_LABELS = {
 };
 
 export default function AddInfoModal({ onClose }) {
+  const [mode, setMode] = useState('add');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     organization: '',
     country: '',
     fields: {},
+    amendmentSection: '',
+    amendmentText: '',
   });
+  const [selectedTopics, setSelectedTopics] = useState([]);
+  const [error, setError] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
+  const toggleTopic = (field) => {
+    setError('');
+    setSelectedTopics((prev) =>
+      prev.includes(field) ? prev.filter((f) => f !== field) : [...prev, field],
+    );
+  };
+
   const handleFieldChange = (field, value) => {
+    setError('');
     setFormData((prev) => ({
       ...prev,
       fields: { ...prev.fields, [field]: value },
@@ -76,8 +89,18 @@ export default function AddInfoModal({ onClose }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (mode === 'add') {
+      const filled = selectedTopics.some((f) => formData.fields[f]?.trim());
+      if (!filled) {
+        setError('Pick at least one topic and write a few words — one is enough!');
+        return;
+      }
+    } else if (!formData.amendmentText.trim()) {
+      setError('Please describe what you think should be corrected.');
+      return;
+    }
     // In production this would POST to an API for admin review
-    console.log('Submission for review:', formData);
+    console.log('Submission for review:', { mode, ...formData });
     setSubmitted(true);
   };
 
@@ -89,8 +112,9 @@ export default function AddInfoModal({ onClose }) {
             <div className="addinfo-success-icon">✓</div>
             <h3>Thank you!</h3>
             <p>
-              Your contribution has been submitted for review. An administrator
-              will validate the information before it is published.
+              {mode === 'add'
+                ? 'Your contribution has been submitted for review. An administrator will validate the information before it is published.'
+                : 'Your correction request has been sent to the administrators. Nothing changes on the page until they review and validate it.'}
             </p>
             <button className="addinfo-btn-primary" onClick={onClose}>
               Close
@@ -105,13 +129,32 @@ export default function AddInfoModal({ onClose }) {
     <div className="addinfo-overlay" onClick={onClose}>
       <div className="addinfo-modal" onClick={(e) => e.stopPropagation()}>
         <div className="addinfo-header">
-          <h2>Contribute country information</h2>
+          <h2>Suggest a resource</h2>
           <button className="addinfo-close" onClick={onClose}>
             ×
           </button>
         </div>
 
         <form className="addinfo-form" onSubmit={handleSubmit}>
+          <div className="addinfo-mode-switch" role="tablist">
+            <button
+              type="button"
+              className={`addinfo-mode-btn ${mode === 'add' ? 'active' : ''}`}
+              onClick={() => { setMode('add'); setError(''); }}
+            >
+              <strong>Add information</strong>
+              <span>Share a resource, contact or fact you know about</span>
+            </button>
+            <button
+              type="button"
+              className={`addinfo-mode-btn ${mode === 'amend' ? 'active' : ''}`}
+              onClick={() => { setMode('amend'); setError(''); }}
+            >
+              <strong>I don&apos;t agree with this page</strong>
+              <span>Suggest a correction to existing information</span>
+            </button>
+          </div>
+
           <div className="addinfo-section addinfo-identity">
             <h3>Your details</h3>
             <div className="addinfo-row">
@@ -163,27 +206,97 @@ export default function AddInfoModal({ onClose }) {
             </label>
           </div>
 
-          {categoryKeys.map((catKey) => {
-            const meta = CATEGORY_META[catKey];
-            return (
-              <div key={catKey} className="addinfo-section">
-                <h3>{meta.label}</h3>
-                {meta.fields.map((field) => (
-                  <label key={field} className="addinfo-field">
-                    {FIELD_LABELS[field]}
-                    <textarea
-                      rows={3}
-                      value={formData.fields[field] || ''}
-                      onChange={(e) =>
-                        handleFieldChange(field, e.target.value)
-                      }
-                      placeholder="Leave empty if not applicable"
-                    />
-                  </label>
-                ))}
-              </div>
-            );
-          })}
+          {mode === 'add' && (
+            <div className="addinfo-section">
+              <h3>What would you like to share?</h3>
+              <p className="addinfo-hint">
+                Pick only the topics you know about — a single link or tip
+                already helps. You never need to fill in everything.
+              </p>
+              {categoryKeys.map((catKey) => {
+                const meta = CATEGORY_META[catKey];
+                return (
+                  <div key={catKey} className="addinfo-topic-group">
+                    <span className="addinfo-topic-group-label">{meta.label}</span>
+                    <div className="addinfo-topic-chips">
+                      {meta.fields.map((field) => (
+                        <button
+                          key={field}
+                          type="button"
+                          className={`addinfo-topic-chip ${selectedTopics.includes(field) ? 'active' : ''}`}
+                          onClick={() => toggleTopic(field)}
+                        >
+                          {selectedTopics.includes(field) ? '✓ ' : '+ '}
+                          {FIELD_LABELS[field]}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                );
+              })}
+
+              {selectedTopics.length > 0 && (
+                <div className="addinfo-selected-topics">
+                  {selectedTopics.map((field) => (
+                    <label key={field} className="addinfo-field">
+                      {FIELD_LABELS[field]}
+                      <textarea
+                        rows={3}
+                        autoFocus={selectedTopics[selectedTopics.length - 1] === field}
+                        value={formData.fields[field] || ''}
+                        onChange={(e) => handleFieldChange(field, e.target.value)}
+                        placeholder="A name, a link, a short description — anything useful"
+                      />
+                    </label>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+
+          {mode === 'amend' && (
+            <div className="addinfo-section">
+              <h3>What should be corrected?</h3>
+              <p className="addinfo-hint">
+                Your suggestion will not change the page directly — it is sent
+                to the administrators, who review and validate it first.
+              </p>
+              <label>
+                Section concerned (optional)
+                <select
+                  value={formData.amendmentSection}
+                  onChange={(e) =>
+                    setFormData({ ...formData, amendmentSection: e.target.value })
+                  }
+                >
+                  <option value="">— Whole page / not sure —</option>
+                  {categoryKeys.map((catKey) => (
+                    <optgroup key={catKey} label={CATEGORY_META[catKey].label}>
+                      {CATEGORY_META[catKey].fields.map((field) => (
+                        <option key={field} value={field}>
+                          {FIELD_LABELS[field]}
+                        </option>
+                      ))}
+                    </optgroup>
+                  ))}
+                </select>
+              </label>
+              <label className="addinfo-field">
+                Your correction *
+                <textarea
+                  rows={5}
+                  value={formData.amendmentText}
+                  onChange={(e) => {
+                    setError('');
+                    setFormData({ ...formData, amendmentText: e.target.value });
+                  }}
+                  placeholder="What is inaccurate or outdated, and what should it say instead? Sources are welcome."
+                />
+              </label>
+            </div>
+          )}
+
+          {error && <p className="addinfo-error">{error}</p>}
 
           <div className="addinfo-actions">
             <button type="button" className="addinfo-btn-cancel" onClick={onClose}>

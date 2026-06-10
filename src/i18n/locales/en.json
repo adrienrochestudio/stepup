@@ -19,7 +19,7 @@
     "subtitle": "",
     "ctaStart": "Start learning",
     "ctaCourses": "Go to my courses",
-    "ctaMap": "Explore Resources",
+    "ctaMap": "Explore resources",
     "ctaWebinars": "Watch Webinars",
     "newBadge": "New",
     "seeAllCourses": "See all courses",
@@ -34,7 +34,20 @@
     "newsletterTitle": "Stay in the loop",
     "newsletterDesc": "Subscribe to our newsletter for the latest on green production.",
     "newsletterCta": "Subscribe to newsletter",
-    "partnersIntro": "StepUP is a Eurimages initiative developed by Ecoprod."
+    "partnersIntro": "StepUP is a Eurimages initiative developed by Ecoprod.",
+    "audiencePrefix": "Courses designed for",
+    "audienceRotating": [
+      "production companies",
+      "film & TV professionals",
+      "animation professionals",
+      "technical crews",
+      "film and media schools",
+      "students",
+      "advertising professionals",
+      "broadcasters and streamers",
+      "film commissions and festivals",
+      "anyone who wants to work more sustainably"
+    ]
   },
   "courses": {
     "introGreenProduction": {
@@ -69,7 +82,26 @@
       "sustainability": "Sustainability & Logistics",
       "resources": "Resources"
     },
-    "loadError": "Could not load the map. Check your connection."
+    "loadError": "Could not load the map. Check your connection.",
+    "subcategories": {
+      "greenProductionStatus": "Status of green production",
+      "decarbonizationPlan": "Decarbonization plan",
+      "laws": "Relevant national legislation",
+      "socialLegislation": "Social legislation",
+      "audiovisualRegulation": "Film & TV industry regulations and incentives",
+      "existingInitiatives": "Existing initiatives",
+      "trainTravel": "Train transport",
+      "electricCars": "Electric cars",
+      "gridConnection": "Grid connection",
+      "wasteManagement": "Waste management rules",
+      "socialRules": "Social rules (gender equality, inclusion)",
+      "otherFacts": "Other important facts",
+      "greenConsultants": "Green consultants",
+      "serviceProviders": "Service providers",
+      "trainings": "Trainings",
+      "tools": "Calculators & tools",
+      "networks": "Networks for professionals"
+    }
   },
   "webinars": {
     "title": "Webinars",

@@ -5,6 +5,17 @@ import './CountryInfoPanel.css';
 
 const CATEGORY_I18N_KEYS = ['generalInfo', 'sustainability', 'resources'];
 
+// Subcategory titles are translated via i18n; only the content stays in
+// English. Ratings like "(4/5)" are country-specific, so they are kept
+// from the data label and re-appended after the translated title.
+function subcategoryLabel(t, subKey, rawLabel) {
+  const rating = rawLabel?.match(/\(\d\/5\)\s*$/);
+  const base = t(`map.subcategories.${subKey}`, {
+    defaultValue: rawLabel?.replace(/\s*\(\d\/5\)\s*$/, '') || subKey,
+  });
+  return rating ? `${base} ${rating[0].trim()}` : base;
+}
+
 function renderContent(text) {
   if (!text) return null;
   const urlRegex = /(https?:\/\/[^\s]+)/g;
@@ -124,7 +135,7 @@ export default function CountryInfoPanel({ country, activeFilters, onClose }) {
                           className="country-subcategory-toggle"
                           onClick={() => toggleSub(fullKey)}
                         >
-                          <span>{sub.label}</span>
+                          <span>{subcategoryLabel(t, subKey, sub.label)}</span>
                           <span className="toggle-icon">
                             {isExpanded ? '−' : '+'}
                           </span>

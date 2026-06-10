@@ -34,7 +34,20 @@
     "newsletterTitle": "Fique a par de tudo",
     "newsletterDesc": "Subscreva a nossa newsletter para novidades sobre produção sustentável.",
     "newsletterCta": "Subscrever newsletter",
-    "partnersIntro": "StepUP é uma iniciativa da Eurimages desenvolvida pela Ecoprod."
+    "partnersIntro": "StepUP é uma iniciativa da Eurimages desenvolvida pela Ecoprod.",
+    "audiencePrefix": "Cursos concebidos para",
+    "audienceRotating": [
+      "produtoras",
+      "profissionais de cinema e TV",
+      "profissionais de animação",
+      "equipas técnicas",
+      "escolas de cinema e audiovisual",
+      "estudantes",
+      "profissionais de publicidade",
+      "emissoras e plataformas",
+      "film commissions e festivais",
+      "quem quer trabalhar de forma mais sustentável"
+    ]
   },
   "courses": {
     "introGreenProduction": {
@@ -69,7 +82,26 @@
       "sustainability": "Sustentabilidade e logística",
       "resources": "Recursos"
     },
-    "loadError": "Não foi possível carregar o mapa. Verifique a sua ligação."
+    "loadError": "Não foi possível carregar o mapa. Verifique a sua ligação.",
+    "subcategories": {
+      "greenProductionStatus": "Estado da produção sustentável",
+      "decarbonizationPlan": "Plano de descarbonização",
+      "laws": "Legislação nacional relevante",
+      "socialLegislation": "Legislação social",
+      "audiovisualRegulation": "Regulamentações e incentivos do setor audiovisual",
+      "existingInitiatives": "Iniciativas existentes",
+      "trainTravel": "Transporte ferroviário",
+      "electricCars": "Carros elétricos",
+      "gridConnection": "Ligação à rede elétrica",
+      "wasteManagement": "Regras de gestão de resíduos",
+      "socialRules": "Regras sociais (igualdade de género, inclusão)",
+      "otherFacts": "Outros factos importantes",
+      "greenConsultants": "Consultores sustentáveis",
+      "serviceProviders": "Prestadores de serviços",
+      "trainings": "Formações",
+      "tools": "Calculadoras e ferramentas",
+      "networks": "Redes de profissionais"
+    }
   },
   "webinars": {
     "title": "Webinars",

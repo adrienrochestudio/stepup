@@ -16,8 +16,10 @@
   backface-visibility: hidden;
 }
 
+/* The outgoing text fades fast and the incoming one starts slightly later,
+   so the two never visibly overlap mid-flip. */
 .rotating-word-item.in {
-  animation: rotating-word-in 550ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: rotating-word-in 480ms cubic-bezier(0.22, 1, 0.36, 1) 180ms both;
 }
 
 .rotating-word-item.out {
@@ -25,7 +27,7 @@
   left: 0;
   right: 0;
   top: 0;
-  animation: rotating-word-out 550ms cubic-bezier(0.55, 0, 0.55, 0.2) both;
+  animation: rotating-word-out 420ms cubic-bezier(0.5, 0, 0.7, 0.4) both;
   pointer-events: none;
 }
 
@@ -45,12 +47,15 @@
 }
 
 @keyframes rotating-word-out {
-  from {
+  0% {
     opacity: 1;
     transform: translateY(0) rotateX(0deg);
     transform-origin: 50% 0%;
   }
-  to {
+  55% {
+    opacity: 0;
+  }
+  100% {
     opacity: 0;
     transform: translateY(55%) rotateX(-75deg);
     transform-origin: 50% 0%;

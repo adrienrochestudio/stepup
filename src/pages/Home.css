@@ -69,6 +69,24 @@
   flex-wrap: wrap;
 }
 
+/* Rotating audience line under the CTAs — same flip as the title,
+   but in the regular text colors. */
+.home-audience {
+  margin-top: 1.5rem;
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+}
+
+.home-audience .rotating-word {
+  display: inline-block;
+  font-size: 1em;
+  height: auto;
+  line-height: inherit;
+  color: var(--color-kaki);
+  font-weight: 600;
+  vertical-align: bottom;
+}
+
 .home-cta a {
   display: inline-flex;
   align-items: center;

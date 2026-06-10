@@ -176,7 +176,9 @@ export default function MapControls({
                   className={`map-panel-sub-tag ${isActive ? 'active' : ''}`}
                   onClick={() => onToggleFilter(sub.fullKey)}
                 >
-                  {sub.label}
+                  {t(`map.subcategories.${sub.key}`, {
+                    defaultValue: sub.label.replace(/\s*\(\d\/5\)\s*$/, ''),
+                  })}
                 </button>
               );
             })}

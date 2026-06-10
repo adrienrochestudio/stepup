@@ -34,7 +34,20 @@
     "newsletterTitle": "Bleiben Sie informiert",
     "newsletterDesc": "Abonnieren Sie unseren Newsletter für Neuigkeiten zur nachhaltigen Produktion.",
     "newsletterCta": "Newsletter abonnieren",
-    "partnersIntro": "StepUP ist eine Initiative von Eurimages, entwickelt von Ecoprod."
+    "partnersIntro": "StepUP ist eine Initiative von Eurimages, entwickelt von Ecoprod.",
+    "audiencePrefix": "Kurse für",
+    "audienceRotating": [
+      "Produktionsfirmen",
+      "Film- und TV-Schaffende",
+      "Animationsprofis",
+      "technische Teams",
+      "Film- und Medienschulen",
+      "Studierende",
+      "Werbeprofis",
+      "Sender und Streaming-Plattformen",
+      "Filmkommissionen und Festivals",
+      "alle, die nachhaltiger arbeiten möchten"
+    ]
   },
   "courses": {
     "introGreenProduction": {
@@ -69,7 +82,26 @@
       "sustainability": "Nachhaltigkeit & Logistik",
       "resources": "Ressourcen"
     },
-    "loadError": "Karte konnte nicht geladen werden. Prüfen Sie Ihre Verbindung."
+    "loadError": "Karte konnte nicht geladen werden. Prüfen Sie Ihre Verbindung.",
+    "subcategories": {
+      "greenProductionStatus": "Stand der grünen Produktion",
+      "decarbonizationPlan": "Dekarbonisierungsplan",
+      "laws": "Relevante nationale Gesetzgebung",
+      "socialLegislation": "Sozialgesetzgebung",
+      "audiovisualRegulation": "Regelungen und Anreize der Film- und TV-Branche",
+      "existingInitiatives": "Bestehende Initiativen",
+      "trainTravel": "Bahnverkehr",
+      "electricCars": "Elektroautos",
+      "gridConnection": "Netzanschluss",
+      "wasteManagement": "Abfallregeln",
+      "socialRules": "Soziale Regeln (Gleichstellung, Inklusion)",
+      "otherFacts": "Weitere wichtige Fakten",
+      "greenConsultants": "Green Consultants",
+      "serviceProviders": "Dienstleister",
+      "trainings": "Schulungen",
+      "tools": "Rechner und Tools",
+      "networks": "Netzwerke für Fachleute"
+    }
   },
   "webinars": {
     "title": "Webinare",

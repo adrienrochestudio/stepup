@@ -59,21 +59,15 @@ export default function Home() {
               {t('home.ctaMap')}
             </Link>
           </div>
+          <p className="home-audience">
+            {t('home.audiencePrefix')}{' '}
+            <RotatingTitleWord
+              items={t('home.audienceRotating', { returnObjects: true })}
+            />
+          </p>
         </div>
         <div className="home-hero-visual">
-          <img
-            src={`${import.meta.env.BASE_URL}images/hero-laptop.png`}
-            alt=""
-            onError={(e) => {
-              const img = e.currentTarget;
-              if (!img.dataset.fallback) {
-                img.dataset.fallback = '1';
-                img.src = `${import.meta.env.BASE_URL}images/hero-laptop-placeholder.svg`;
-              } else {
-                img.closest('.home-hero-visual').style.display = 'none';
-              }
-            }}
-          />
+          <img src={`${import.meta.env.BASE_URL}images/imagecomputer.png`} alt="" />
         </div>
       </section>
 

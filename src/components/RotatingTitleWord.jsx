@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './RotatingTitleWord.css';
 
-export default function RotatingTitleWord({ items, interval = 2500 }) {
+export default function RotatingTitleWord({ items, interval = 3500 }) {
   const [state, setState] = useState({ index: 0, prev: null });
 
   useEffect(() => {

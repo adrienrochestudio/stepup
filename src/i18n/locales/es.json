@@ -31,7 +31,20 @@
     "eurimagesTitle": "Eurimages",
     "eurimagesDesc": "Fondo del Consejo de Europa para la coproducción, distribución, exhibición y digitalización de obras cinematográficas europeas. Apoyo a la industria cinematográfica europea y a la diversidad cultural desde 1988.",
     "eurimagesCta": "Visitar eurimages.org",
-    "partnersIntro": "StepUP es una iniciativa de Eurimages desarrollada por Ecoprod."
+    "partnersIntro": "StepUP es una iniciativa de Eurimages desarrollada por Ecoprod.",
+    "audiencePrefix": "Cursos diseñados para",
+    "audienceRotating": [
+      "productoras",
+      "profesionales del cine y la TV",
+      "profesionales de la animación",
+      "equipos técnicos",
+      "escuelas de cine y audiovisual",
+      "estudiantes",
+      "profesionales de la publicidad",
+      "cadenas y plataformas",
+      "film commissions y festivales",
+      "quienes quieren trabajar de forma más sostenible"
+    ]
   },
   "courses": {
     "introGreenProduction": {
@@ -66,7 +79,26 @@
       "sustainability": "Sostenibilidad y logística",
       "resources": "Recursos"
     },
-    "loadError": "No se pudo cargar el mapa. Comprueba tu conexión."
+    "loadError": "No se pudo cargar el mapa. Comprueba tu conexión.",
+    "subcategories": {
+      "greenProductionStatus": "Estado de la producción sostenible",
+      "decarbonizationPlan": "Plan de descarbonización",
+      "laws": "Legislación nacional pertinente",
+      "socialLegislation": "Legislación social",
+      "audiovisualRegulation": "Regulaciones e incentivos del sector audiovisual",
+      "existingInitiatives": "Iniciativas existentes",
+      "trainTravel": "Transporte ferroviario",
+      "electricCars": "Coches eléctricos",
+      "gridConnection": "Conexión a la red eléctrica",
+      "wasteManagement": "Normas de gestión de residuos",
+      "socialRules": "Normas sociales (igualdad de género, inclusión)",
+      "otherFacts": "Otros datos importantes",
+      "greenConsultants": "Consultores sostenibles",
+      "serviceProviders": "Proveedores de servicios",
+      "trainings": "Formaciones",
+      "tools": "Calculadoras y herramientas",
+      "networks": "Redes de profesionales"
+    }
   },
   "webinars": {
     "title": "Webinarios",
