@@ -23,6 +23,7 @@ import SalesTerms from './pages/SalesTerms';
 const ResourceMap = lazy(() => import('./pages/ResourceMap'));
 const Course = lazy(() => import('./pages/Course'));
 const AdminCohorts = lazy(() => import('./pages/AdminCohorts'));
+const AdminBackoffice = lazy(() => import('./pages/AdminBackoffice'));
 
 export default function App() {
   return (
@@ -48,8 +49,12 @@ export default function App() {
         <Route path="/enroll/:courseId/success" element={<EnrollSuccess />} />
         <Route path="/enroll/:courseId/cancel" element={<EnrollCancel />} />
 
-        <Route element={<ProtectedRoute />}>
+        <Route element={<ProtectedRoute requireRole={['cohort_manager', 'admin']} />}>
           <Route path="/admin/cohorts" element={<AdminCohorts />} />
+        </Route>
+
+        <Route element={<ProtectedRoute requireRole="admin" />}>
+          <Route path="/admin" element={<AdminBackoffice />} />
         </Route>
       </Route>
     </Routes>

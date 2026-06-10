@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useAuth } from '../hooks/useAuth';
 import { apiFetch } from '../services/api';
 import { isStripeConfigured } from '../services/stripe';
+import { addSubmission } from '../services/submissions';
 import './EnrollModal.css';
 
 export default function EnrollModal({ course, onClose, onEnrolled }) {
@@ -12,14 +13,18 @@ export default function EnrollModal({ course, onClose, onEnrolled }) {
 
   if (!course) return null;
 
+  const title = course.i18nKey ? t(`courses.${course.i18nKey}.title`) : course.title;
+  const description = course.i18nKey ? t(`courses.${course.i18nKey}.description`) : course.description;
+  const resolvedCourse = { ...course, title, description };
+
   return (
     <div className="enroll-modal-overlay" onClick={onClose}>
       <div className="enroll-modal" onClick={(e) => e.stopPropagation()}>
         <button className="enroll-modal-close" onClick={onClose}>&times;</button>
 
         <div className="enroll-modal-header">
-          <h2>{course.title}</h2>
-          <p>{course.description}</p>
+          <h2>{title}</h2>
+          <p>{description}</p>
         </div>
 
         <div className="enroll-modal-tabs">
@@ -39,9 +44,9 @@ export default function EnrollModal({ course, onClose, onEnrolled }) {
 
         <div className="enroll-modal-body">
           {tab === 'individual' ? (
-            <IndividualForm course={course} user={user} onEnrolled={onEnrolled} />
+            <IndividualForm course={resolvedCourse} user={user} onEnrolled={onEnrolled} />
           ) : (
-            <GroupForm course={course} user={user} />
+            <GroupForm course={resolvedCourse} user={user} />
           )}
         </div>
       </div>
@@ -72,12 +77,15 @@ function IndividualForm({ course, user, onEnrolled }) {
     setLoading(true);
 
     try {
-      if (isFree) {
-        if (onEnrolled) onEnrolled(course.id);
-        return;
-      }
-
-      if (!isStripeConfigured) {
+      if (isFree || !isStripeConfigured) {
+        addSubmission('enrollment', {
+          email: user?.email || '',
+          firstName: user?.displayName?.split(' ')[0] || '',
+          lastName: user?.displayName?.split(' ').slice(1).join(' ') || '',
+          courseTitle: course.title,
+          price: isFree ? 0 : displayPrice,
+          code: code.trim() || undefined,
+        });
         if (onEnrolled) onEnrolled(course.id);
         return;
       }
@@ -189,6 +197,13 @@ function GroupForm({ course, user }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    addSubmission('group_request', {
+      offer: selectedOffer,
+      courseTitle: course?.title || '',
+      nbPersons: nbPersons || null,
+      email: user?.email || '',
+      comment: comment.trim(),
+    });
     setSent(true);
   };
 

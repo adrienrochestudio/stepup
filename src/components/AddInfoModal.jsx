@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { categoryKeys } from '../data/countryData';
+import { addSubmission } from '../services/submissions';
 import './AddInfoModal.css';
 
 const CATEGORY_META = {
@@ -99,8 +100,9 @@ export default function AddInfoModal({ onClose }) {
       setError('Please describe what you think should be corrected.');
       return;
     }
-    // In production this would POST to an API for admin review
-    console.log('Submission for review:', { mode, ...formData });
+    // Stored locally until a real backend exists; the admin back-office
+    // (/admin) reads this store to review submissions.
+    addSubmission(mode === 'add' ? 'map_contribution' : 'map_amendment', formData);
     setSubmitted(true);
   };
 

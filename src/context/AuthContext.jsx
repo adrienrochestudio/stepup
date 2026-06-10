@@ -6,15 +6,24 @@ export const AuthContext = createContext(null);
 
 const MOCK_USER_KEY = 'stepup_mock_user';
 
-// DEV ONLY: while Firebase is not configured, always start signed in as a
-// cohort manager so the back-office is reachable without logging in.
+// The single super-admin account. Any login with this email gets the
+// 'admin' role and full access to the back-office (/admin). When real
+// Firebase auth is wired up, enforce this with a custom claim instead.
+export const ADMIN_EMAIL = 'adrienroche@ecoprod.com';
+
+function roleForEmail(email, fallbackRole = 'learner') {
+  return email?.trim().toLowerCase() === ADMIN_EMAIL ? 'admin' : fallbackRole;
+}
+
+// DEV ONLY: while Firebase is not configured, always start signed in as the
+// super-admin so the whole back-office is reachable without logging in.
 // Remove this default (revert to `null`) once real auth is wired up.
 const DEV_DEFAULT_USER = {
-  uid: 'dev-cohort-manager',
-  email: 'manager@stepup.dev',
-  displayName: 'Cohort Manager',
-  role: 'cohort_manager',
-  organizationName: 'StepUP Demo',
+  uid: 'dev-admin',
+  email: ADMIN_EMAIL,
+  displayName: 'Adrien Roche',
+  role: 'admin',
+  organizationName: 'Ecoprod',
 };
 
 export function AuthProvider({ children }) {
@@ -24,7 +33,7 @@ export function AuthProvider({ children }) {
         const saved = localStorage.getItem(MOCK_USER_KEY);
         if (saved) {
           const parsed = JSON.parse(saved);
-          if (parsed?.role === 'cohort_manager') return parsed;
+          if (parsed?.role === 'cohort_manager' || parsed?.role === 'admin') return parsed;
         }
       } catch { /* ignore */ }
       localStorage.setItem(MOCK_USER_KEY, JSON.stringify(DEV_DEFAULT_USER));
@@ -52,7 +61,7 @@ export function AuthProvider({ children }) {
       const result = await signInWithEmailAndPassword(auth, email, password);
       return result.user;
     }
-    const mockUser = { uid: 'mock-uid', email, displayName: email.split('@')[0], role };
+    const mockUser = { uid: 'mock-uid', email, displayName: email.split('@')[0], role: roleForEmail(email, role) };
     localStorage.setItem(MOCK_USER_KEY, JSON.stringify(mockUser));
     setUser(mockUser);
     return mockUser;
@@ -63,7 +72,7 @@ export function AuthProvider({ children }) {
       const result = await createUserWithEmailAndPassword(auth, email, password);
       return result.user;
     }
-    const mockUser = { uid: 'mock-uid', email, displayName: extra.displayName || email.split('@')[0], role, organizationName, ...extra };
+    const mockUser = { uid: 'mock-uid', email, displayName: extra.displayName || email.split('@')[0], role: roleForEmail(email, role), organizationName, ...extra };
     localStorage.setItem(MOCK_USER_KEY, JSON.stringify(mockUser));
     setUser(mockUser);
     return mockUser;

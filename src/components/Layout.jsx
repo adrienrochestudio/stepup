@@ -27,6 +27,7 @@ export default function Layout() {
       '/login': t('nav.login'),
       '/dashboard': t('nav.dashboard'),
       '/admin/cohorts': t('admin.title'),
+      '/admin': t('backoffice.title'),
       '/about/partners': t('nav.partners'),
       '/terms': t('footer.terms'),
       '/privacy': t('footer.privacy'),
@@ -64,8 +65,11 @@ export default function Layout() {
             {user && (
               <li><NavLink to="/dashboard" onClick={() => setMenuOpen(false)}>{t('nav.dashboard')}</NavLink></li>
             )}
-            {user?.role === 'cohort_manager' && (
+            {(user?.role === 'cohort_manager' || user?.role === 'admin') && (
               <li><NavLink to="/admin/cohorts" onClick={() => setMenuOpen(false)}>{t('admin.title')}</NavLink></li>
+            )}
+            {user?.role === 'admin' && (
+              <li><NavLink to="/admin" end onClick={() => setMenuOpen(false)}>{t('backoffice.navLink')}</NavLink></li>
             )}
             <li className="nav-ecoprod-link">
               <a
