@@ -1,22 +1,30 @@
+import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import ProtectedRoute from './components/ProtectedRoute';
 import Home from './pages/Home';
-import ResourceMap from './pages/ResourceMap';
 import Webinars from './pages/Webinars';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
-import Course from './pages/Course';
 import Enroll from './pages/Enroll';
 import EnrollSuccess from './pages/EnrollSuccess';
 import EnrollCancel from './pages/EnrollCancel';
-import AdminCohorts from './pages/AdminCohorts';
 import Partners from './pages/Partners';
 import LegalTerms from './pages/LegalTerms';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 
+// Heavy, occasionally-visited routes are code-split so their large
+// dependencies stay out of the initial bundle:
+//  - ResourceMap pulls in react-globe.gl + three (~tens of MB of source)
+//  - Course loads the SCORM runtime (scorm-again)
+//  - AdminCohorts loads the xlsx parser
+const ResourceMap = lazy(() => import('./pages/ResourceMap'));
+const Course = lazy(() => import('./pages/Course'));
+const AdminCohorts = lazy(() => import('./pages/AdminCohorts'));
+
 export default function App() {
   return (
+    <Suspense fallback={<div style={{ minHeight: '60vh' }} />}>
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
@@ -41,5 +49,6 @@ export default function App() {
         </Route>
       </Route>
     </Routes>
+    </Suspense>
   );
 }
