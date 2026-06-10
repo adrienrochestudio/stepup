@@ -1736,7 +1736,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• EcoVision Seal (Selo EcoVision) — a certification run by Panvision since 2021, based on the UN Sustainable Development Goals, with a carbon calculator calibrated to Latin America, a catalogue of companies and professionals, consulting and training.\n• Cinema Verde — audiovisual production with socio-environmental responsibility: https://cinemaverde.com.br/\n• Aquarela — became the first production company in central-west Brazil to offset the carbon of all its activities (2020).',
+            '• EcoVision (Selo EcoVision) — a sustainability programme run by Panvision since 2021, based on the UN Sustainable Development Goals, with a free carbon calculator calibrated to Latin America (built with ProMálaga, Spain; a 2025 version was launched with Petrobras), a catalogue of companies and professionals, consulting and training: https://www.panvision.com.br/ecovision.php\n• Cinema Verde — audiovisual production with socio-environmental responsibility: https://cinemaverde.com.br/\n• Aquarela — became the first production company in central-west Brazil to offset the carbon of all its activities (2020).',
         },
       },
     },
@@ -1752,7 +1752,236 @@ export const countryData = {
           content:
             'Sustainability consultancies advise productions across development, pre-production, shooting and post-production. Examples include Panvision (EcoVision), Cinema Verde and Pindorama Filmes.',
         },
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            '• EcoVision carbon calculator (free, Latin-America-calibrated) by Panvision: https://www.panvision.com.br/ecovision.php',
+        },
       },
+    },
+  },
+
+  'South Africa': {
+    code: 'ZAF',
+    name: 'South Africa',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Green production is growing quickly, led by the non-profit GREENSET and reinforced by streamers (Netflix, HBO) that increasingly require sustainability measures on their South African shoots. The country is home to the first large green studio in Africa.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• GREENSET — non-profit established in 2020 under the SA Film Academy. It trains young "Eco Stewards" and "Green PAs" to roll out best practices and to measure carbon on set, using a bespoke film carbon calculator built with Credible Carbon (46 industry-specific indicators). It has earned 10 EMA Gold Seals and several albert certifications on international productions (e.g. Warrior S3, One Piece): https://safilmacademy.org/greenset/\n• Atlantic Green Studio — in 2023 GREENSET and Homebrew Films converted Atlantic Studios (Montague Gardens, Cape Town) into the first large sustainable "Green Studio" in Africa, running 80%+ on renewables.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            '• GREENSET / Credible Carbon film carbon calculator (46 film-specific indicators).\n• BAFTA albert carbon calculator: https://wearealbert.org/',
+        },
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• GREENSET: https://safilmacademy.org/greenset/ (X/Twitter: @GreensetZa).',
+        },
+      },
+    },
+  },
+
+  Morocco: {
+    code: 'MAR',
+    name: 'Morocco',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Morocco is a major international shooting destination (notably around Ouarzazate). Given water stress and energy constraints, eco-production is being structured by Green Production Maroc in partnership with the national film centre (CCM), aiming to make the country a model of responsible filming in Africa.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'Green Production Maroc supports the sector\'s ecological transition through training, certification and shared tools, working with the Centre Cinématographique Marocain (CCM) and executive producers. It offers the Green Production® Label, a standard recognised by IMANOR (the Moroccan standardisation body), allowing productions to demonstrate their environmental commitment.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• Green Production Maroc — label, training (e.g. "Environmental Reference" and energy-efficiency courses), technical guides, checklists and a directory of green service providers: https://www.greenproduction.ma/',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            '• Green Production Maroc — guides, checklists and green supplier directory: https://www.greenproduction.ma/',
+        },
+      },
+    },
+  },
+
+  Australia: {
+    code: 'AUS',
+    name: 'Australia',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Green production is industry-led and scaling quickly. Sustainable Screens Australia (SSA), launched in 2022 with backing from Paramount ANZ, Netflix, ABC and SBS, is building a national framework, training and a shared carbon calculator for the screen sector.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'Sustainable Screens Australia adopts and administers the BAFTA albert carbon calculator for Australia, offering free training and support to productions, department-specific guides and checklists, and curated Sustainable Suppliers lists. Adam Liaw was announced co-chair in 2024. Docklands Studios Melbourne became Australia\'s first GreenPower-accredited film studio.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• Sustainable Screens Australia: https://www.sustainablescreens.au/\n• Tools & resources (guides, checklists, supplier lists): https://www.sustainablescreens.au/tools-resources',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            '• BAFTA albert carbon calculator (administered for Australia by SSA): https://wearealbert.org/\n• Sustainable Screens Australia — Tools & Resources: https://www.sustainablescreens.au/tools-resources',
+        },
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• Sustainable Screens Australia (membership): https://www.sustainablescreens.au/',
+        },
+      },
+    },
+  },
+
+  'New Zealand': {
+    code: 'NZL',
+    name: 'New Zealand',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Aotearoa New Zealand pairs a long-standing best-practice guide with a newer industry-wide collaboration and a funding incentive. The Government\'s 5% rebate uplift (on the NZSPG) now carries mandatory sustainability requirements: productions must submit a Sustainability Action Plan, engage a sustainability manager and report their carbon emissions.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• Greenlit — industry-wide sustainability collaboration that supported 50+ productions in its first year: https://greenlit.org.nz/\n• "Greening the Screen" — environmentally responsible principles for screen production, owned by the Ministry for the Environment and licensed to Film New Zealand: https://environment.govt.nz/publications/greening-the-screen/greening-the-screen/',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• Greenlit (Aotearoa New Zealand screen sustainability): https://greenlit.org.nz/',
+        },
+      },
+    },
+  },
+
+  Bangladesh: {
+    code: 'BGD',
+    name: 'Bangladesh',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Green filmmaking in Bangladesh is driven largely through film education rather than industry regulation. The International Academy of Film and Media (IAFM) runs an international residency dedicated to sustainable production and is a member of the Green Film School Alliance (USA).',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• IAFM — ECO Film Lab: International Film Residency, a paperless, plastic-free program fostering sustainable production and environmentally conscious storytelling among emerging filmmakers and film schools (a 2026 edition was held in Bandarban): https://ecofilmlab.iafmedu.net/\n• The ECO Film Lab short film "NISHI" received the 35th Environmental Media Association (EMA) Award (2025) in Los Angeles.\n• IAFM is a member of the Green Film School Alliance (GFSA), USA.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        trainings: {
+          label: 'Trainings',
+          content:
+            '• IAFM ECO Film Lab — international residency on sustainable and green filmmaking: https://ecofilmlab.iafmedu.net/',
+        },
+      },
+    },
+  },
+
+  India: {
+    code: 'IND',
+    name: 'India',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Green production is emerging and not yet the norm; the industry largely operates outside formal carbon auditing or green certification. Awareness is growing through individual films, OTT/streaming pilots and a small number of consultancies, but there is no national green-production framework.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• "Aisa Yeh Jahaan" (2015) — widely reported as India\'s first carbon-neutral film, offsetting its emissions in collaboration with the Centre for Environmental Research and Education (CERE), Mumbai.\n• Some OTT/streaming productions have piloted on-set measures such as waste diversion and reduced single-use plastics.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {},
     },
   },
 };
