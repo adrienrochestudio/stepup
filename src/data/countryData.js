@@ -111,7 +111,23 @@ export const countryData = {
     credit: null,
     generalInfo: {
       label: 'General Information',
-      subcategories: {},
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Belgium is federal, so green production is organised regionally, each fund with its own scheme. Adoption is growing steadily, driven by regional film funds that award bonus points for sustainability plans and for engaging eco-consultants. There is no single national framework; productions follow the rules of the region funding them.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'Wallonia — Wallimage runs "Green Film Wallonia": a green-filming plan earns extra points in co-production selection sessions, and additional costs of eco-responsible measures are eligible for funding (on average ~50% covered). Wallimage is developing a Green Manager training scheme.\n\nFlanders — the Flanders Audiovisual Fund (VAF) created the "eMission" label for sustainable productions; sustainable action is a formal requirement within its creation support.\n\nBrussels-Capital Region — screen.brussels supports a sustainable-filming pilot with eco-consultants and awards up to 2 bonus points (1 if the company has an environmental consultant, 1 if it holds the regional "Ecodynamic" label). It published a guide to environmentally friendly filming in the region.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• Wallimage — Green Film Wallonia: https://www.wallimage.be/en/\n• Flanders Audiovisual Fund (VAF) — eMission label: https://www.vaf.be/en\n• screen.brussels — Eco-filming: https://screen.brussels/en/eco-filming\n\nBelgian funds take part in European green-screen cooperation between film commissions.',
+        },
+      },
     },
     sustainability: {
       label: 'Sustainability & Logistics',
@@ -119,7 +135,13 @@ export const countryData = {
     },
     resources: {
       label: 'Resources',
-      subcategories: {},
+      subcategories: {
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            '• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/',
+        },
+      },
     },
   },
 
@@ -1424,7 +1446,23 @@ export const countryData = {
     credit: null,
     generalInfo: {
       label: 'General Information',
-      subcategories: {},
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Green production is developing, led by regional film commissions and the producers\' guild rather than by a national mandate. Łódź has been a frontrunner, certifying professionals as ambassadors of the international "Green Screen" programme.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'The Łódź Film Commission, operator of the Łódź Film Fund, awards up to 5 points for sustainability: 3 points for engaging an eco-consultant, 1 point for submitting a sustainable production plan, and 1 point for a sustainable transport plan.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• KIPA (Polish Audiovisual Producers Chamber of Commerce) — Green Audiovisual Production Lab: https://kipa.pl/en/\n• Green Film Lab workshops held in Warsaw in partnership with the Polish Film Institute (PISF).\n• Łódź Film Commission — "Green Screen" programme ambassadors.',
+        },
+      },
     },
     sustainability: {
       label: 'Sustainability & Logistics',
@@ -1432,7 +1470,13 @@ export const countryData = {
     },
     resources: {
       label: 'Resources',
-      subcategories: {},
+      subcategories: {
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            '• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/',
+        },
+      },
     },
   },
 
@@ -1442,7 +1486,23 @@ export const countryData = {
     credit: null,
     generalInfo: {
       label: 'General Information',
-      subcategories: {},
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'There is no federal sustainability mandate. Green production in the US is industry-led, driven mainly by the major studios and streamers and by professional peer networks rather than by public funding. Coordination happens largely through shared industry tools and informal professional networks.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'Industry-led rather than legislated. The major studios and streamers coordinate through the Sustainable Production Alliance (SPA) and use the Green Production Guide\'s shared tools: PEAR (Production Environmental Accounting Report) and PEACH (Production Environmental Actions Checklist).',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• Green Production Guide — established 2010 by the Producers Guild of America Foundation (PGA Green) and major studios; free toolkit plus a worldwide database of sustainable vendors: https://greenproductionguide.com/\n• Sustainable Production Alliance (SPA) — consortium of major film, TV and streaming companies.\n• Producers Guild of America — PGA Green sustainability programme: https://producersguild.org/sustainability/\n\nNote: Earth Angel, a leading US sustainable-production consultancy, ceased operations in 2025.',
+        },
+      },
     },
     sustainability: {
       label: 'Sustainability & Logistics',
@@ -1450,7 +1510,13 @@ export const countryData = {
     },
     resources: {
       label: 'Resources',
-      subcategories: {},
+      subcategories: {
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            '• Green Production Guide — PEAR & PEACH: https://greenproductionguide.com/tools/\n• albert carbon calculator (used by some US productions): https://wearealbert.org/',
+        },
+      },
     },
   },
 
@@ -1460,7 +1526,23 @@ export const countryData = {
     credit: null,
     generalInfo: {
       label: 'General Information',
-      subcategories: {},
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Green production is well established and increasingly tied to funding. Since 2024, a predicted production carbon footprint (calculated with the albert carbon calculator) and a carbon action plan are mandatory when applying to the Netherlands Film Fund for the realisation of a feature film.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'The Netherlands Film Fund compensates eligible eco-consultant costs — either through a dedicated eco-consultancy track with GreenScreen eco-consultants who collaborate with the Fund, or through independent hiring. From 2024, the predicted carbon footprint and carbon action plan are required when submitting for further realisation. The Fund also organises trainings and inspiration sessions sharing best practices.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            'Green Film Making — founded 2015, facilitated by the Netherlands Film Fund and led by sustainability manager Els Rientjes. It provides a department-based toolkit (art, catering, energy, location, production, transport) and the "Film Harvest Map" (filmoogstkaart.nl) identifying clean-energy access points and green vendors near filming locations.\nhttps://greenfilmmaking.com/',
+        },
+      },
     },
     sustainability: {
       label: 'Sustainability & Logistics',
@@ -1468,7 +1550,13 @@ export const countryData = {
     },
     resources: {
       label: 'Resources',
-      subcategories: {},
+      subcategories: {
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            '• albert carbon calculator (mandatory for Film Fund applications from 2024): https://wearealbert.org/\n• Green Film Making toolkit & Film Harvest Map: https://greenfilmmaking.com/\n• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/',
+        },
+      },
     },
   },
 
@@ -1553,6 +1641,116 @@ export const countryData = {
           label: 'Networks to join',
           content:
             '• Green Filming Austria Working Group (chaired by ÖFI Green Filming Department).\n• VGFCA.\n• CO/PRO-EUROPE Working Group.\n• We_Do! Advice Center: https://we-do.filmschaffende.at/\n• VERA Vertrauensstelle: https://vera-vertrauensstelle.at/',
+        },
+      },
+    },
+  },
+
+  Finland: {
+    code: 'FIN',
+    name: 'Finland',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Promoting ecological, social and financial responsibility is a focus of the Finnish Film Foundation\'s (SES) 2024–2026 strategy. The Foundation supports more sustainable production, exhibition and distribution through training, communication and support criteria, in cooperation with other industry operators. Measured emissions of Finnish productions averaged about 6.5 tCO₂e/hour in 2021–2023, the majority generated by logistics.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• Ekosetti — a guidebook to environmentally sustainable audiovisual production in Finland, published 2019 (English version 2020). A 2025 follow-up, "Ekosetti in Euros", focuses on the economics of production sustainability, alongside an Excel costing tool: https://ekosetti.fi/en/ekosetti-in-english/\n• APFI (Audiovisual Producers Finland) — ecological sustainability programme: https://apfi.fi/en/sustainable-industry/ecological-sustainability/\n• Finnish Film Foundation (SES) — Sustainability Sprint and environmental sustainability plan: https://www.ses.fi/en/accountability/',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            '• Ekosetti guidebook & "Ekosetti in Euros" Excel tool: https://ekosetti.fi/en/ekosetti-in-english/\n• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/',
+        },
+      },
+    },
+  },
+
+  Greece: {
+    code: 'GRC',
+    name: 'Greece',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Greece is at an early, formalising stage. In 2024 a Sustainability Standard workshop, supported by EKOME and the WaterBear Network, began shaping the country\'s first guidelines for sustainable film production. National sustainability requirements tied to funding are still being developed.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'EKOME manages a 40% cash rebate and tax-relief scheme for audiovisual production. The 2024 "Creative Greece" law (Law 5105/2024) modernised the incentive framework with the stated aim of making the audiovisual sector friendlier and more sustainable. EKOME and the Greek Film Center have been brought together into the Hellenic Film and Audiovisual Center (EKKOMED).',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• EKOME — National Centre of Audiovisual Media and Communication (cash rebate, Film Offices Network): https://www.ekkomed.gr/\n• 2024 Sustainability Standard workshop (EKOME + WaterBear Network) — first national guidelines for sustainable production.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            '• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/',
+        },
+      },
+    },
+  },
+
+  Brazil: {
+    code: 'BRA',
+    name: 'Brazil',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Green production in Brazil is emerging and largely company- and consultancy-led; there is no national green-production mandate. Awareness has grown since 2020, with a number of producers beginning to measure or offset their carbon footprint and adopt eco-responsible practices.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• EcoVision Seal (Selo EcoVision) — a certification run by Panvision since 2021, based on the UN Sustainable Development Goals, with a carbon calculator calibrated to Latin America, a catalogue of companies and professionals, consulting and training.\n• Cinema Verde — audiovisual production with socio-environmental responsibility: https://cinemaverde.com.br/\n• Aquarela — became the first production company in central-west Brazil to offset the carbon of all its activities (2020).',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        greenConsultants: {
+          label: 'Green consultants',
+          content:
+            'Sustainability consultancies advise productions across development, pre-production, shooting and post-production. Examples include Panvision (EcoVision), Cinema Verde and Pindorama Filmes.',
         },
       },
     },
