@@ -1984,6 +1984,146 @@ export const countryData = {
       subcategories: {},
     },
   },
+
+  Togo: {
+    code: 'TGO',
+    name: 'Togo',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Togo\'s film sector is young and being structured — a Cinema and Animated Image Code (2021), the national centre CNCIA and the support fund FoNSICA were set up in 2021–2022. Ecological cinema is at a grassroots, festival-driven stage rather than tied to production regulation.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• Festival EcoProd Afrique — a Lomé-based festival promoting more ecological cinema across Africa, active in the Togolese audiovisual scene (linked to filmmaker Israel Tounou, creator of Togo\'s first TV cinema programme "Ciné Art"): https://www.facebook.com/festivalecoprodafrique/',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• Festival EcoProd Afrique (Lomé): https://www.facebook.com/festivalecoprodafrique/',
+        },
+      },
+    },
+  },
+
+  Mexico: {
+    code: 'MEX',
+    name: 'Mexico',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Green production is consultancy-led and growing; there is no national mandate. Pioneering productions have begun certifying their sustainability with international seals, supported by streamers and Latin-American consultancies.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• EcoFilming — a Latin-American sustainability consultancy that measures production carbon footprints (GHG Protocol, BAFTA albert, PEAR) and advised "La Rueda de la Suerte", reported as the first entertainment production in Mexico to earn the Environmental Media Association (EMA) Gold Seal: https://www.ecofilming.green/',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            '• EcoFilming (consultancy & carbon measurement): https://www.ecofilming.green/\n• BAFTA albert carbon calculator: https://wearealbert.org/',
+        },
+      },
+    },
+  },
+
+  Argentina: {
+    code: 'ARG',
+    name: 'Argentina',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Sustainable production is advancing through industry associations and festivals rather than a binding national rule. A dedicated programme provides practical tools and guidance toward carbon-neutral productions.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• APAC (Asociación de Productoras Audiovisuales Publicitarias) — "Producción Audiovisual Sustentable" programme: an online toolkit with a carbon-footprint calculator, a manual of sustainable practices and checklists by department, aimed at carbon-neutral production: https://www.asociacionapac.org/produccionaudiovisualsustentable/\n• "Reina Animal" — first feature reported to apply the programme and offset its footprint (carob trees planted in Villa Allende, Córdoba).\n• FINCA — sustainable-cinema / green-production strand: https://finca.imd.org.ar/en/sustainable-filmmaking/',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            '• APAC carbon-footprint calculator & sustainable-practices manual: https://www.asociacionapac.org/produccionaudiovisualsustentable/',
+        },
+      },
+    },
+  },
+
+  Colombia: {
+    code: 'COL',
+    name: 'Colombia',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Sustainable production is led by Proimágenes Colombia and the Bogotá Film Commission, which since 2023 have run an "eco-sustainability route" with training, best-practice guidance and a Bogotá-specific carbon calculator. Productions are encouraged to appoint dedicated sustainability staff (ecoconsultores / ecomanagers / ecopas).',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• Bogotá Film Commission — "ruta de ecosostenibilidad" (since 2023): training on waste and good practices by department, plus a carbon-footprint calculator adapted to Bogotá: https://comisionfilmicacolombia.com/en/procedures/sustainableproduction/\n• Proimágenes Colombia — promotes reducing the socio-environmental impact of audiovisual productions: https://www.proimagenescolombia.com/',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            '• Bogotá audiovisual carbon-footprint calculator (Bogotá Film Commission): https://comisionfilmicacolombia.com/en/procedures/sustainableproduction/',
+        },
+      },
+    },
+  },
 };
 
 export const categoryKeys = ['generalInfo', 'sustainability', 'resources'];
