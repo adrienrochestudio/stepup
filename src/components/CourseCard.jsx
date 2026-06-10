@@ -17,10 +17,8 @@ export default function CourseCard({ course, enrolled, onEnrollClick }) {
       <div className="course-card course-card-locked">
         <div className="course-card-thumb catalog">
           {thumbContent}
-          {course.free ? (
+          {course.free && (
             <span className="course-card-badge badge-free">{t('courseCard.free')}</span>
-          ) : (
-            <span className="course-card-badge badge-price">{course.price} &euro;</span>
           )}
           {!course.free && <span className="course-card-lock-icon">&#128274;</span>}
         </div>

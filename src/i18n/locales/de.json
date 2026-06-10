@@ -8,7 +8,13 @@
     "partners": "Partner"
   },
   "home": {
-    "title": "Grün drehen lernen — Schritt für Schritt",
+    "titlePrefix": "Lernen Sie",
+    "titleRotating": [
+      "grüne Filmproduktion",
+      "nachhaltige Animation",
+      "CO₂-Bilanzierung"
+    ],
+    "titleSuffix": "Schritt für Schritt",
     "tagline": "Online-Kurse für nachhaltige Film- und TV-Produktion.",
     "subtitle": "",
     "ctaStart": "Ausbildung starten",
@@ -20,14 +26,15 @@
     "courseCatalog": "Unsere Kurse",
     "courseDetails": "Mehr erfahren",
     "ecoprodTitle": "Ecoprod",
-    "ecoprodDesc": "Kollektive Initiative zur Begleitung der ökologischen Transformation der audiovisuellen und Filmindustrie. Werkzeuge, Schulungen und Ressourcen, die Fachleuten helfen, die Umweltauswirkungen ihrer Produktionen zu reduzieren.",
+    "ecoprodDesc": "Die wegweisende Initiative für Nachhaltigkeit in Film, Fernsehen und Werbung.",
     "ecoprodCta": "ecoprod.com besuchen",
     "eurimagesTitle": "Eurimages",
     "eurimagesDesc": "Fonds des Europarats für die Koproduktion, den Vertrieb, die Aufführung und die Digitalisierung europäischer Filmwerke. Unterstützung der europäischen Filmindustrie und kulturellen Vielfalt seit 1988.",
     "eurimagesCta": "eurimages.org besuchen",
     "newsletterTitle": "Bleiben Sie informiert",
     "newsletterDesc": "Abonnieren Sie unseren Newsletter für Neuigkeiten zur nachhaltigen Produktion.",
-    "newsletterCta": "Newsletter abonnieren"
+    "newsletterCta": "Newsletter abonnieren",
+    "partnersIntro": "StepUP ist eine Initiative von Eurimages, entwickelt von Ecoprod."
   },
   "courses": {
     "introGreenProduction": {
@@ -44,7 +51,7 @@
     },
     "greenAnimation": {
       "title": "Nachhaltige Animation",
-      "description": "Nachhaltige Praktiken speziell für Animationsstudios: Renderfarmen, Energieverbrauch, Remote-Zusammenarbeit und umweltfreundliche Pipelines."
+      "description": "Nachhaltige Animationsproduktion für Studios: Verstehen Sie die strukturellen Auswirkungen von Energieverbrauch, digitaler Infrastruktur, Ausstattung, Mobilität und Alltagspraktiken — und lernen Sie, Maßnahmen zu priorisieren und einen realistischen, wirksamen Nachhaltigkeitsansatz aufzubauen, ohne kreative Qualität oder Produktionseffizienz zu beeinträchtigen."
     }
   },
   "map": {

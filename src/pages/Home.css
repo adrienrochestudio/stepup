@@ -7,13 +7,31 @@
 
 .home-hero {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  gap: 3rem;
   padding: 6rem 2rem 4rem;
-  max-width: 680px;
+  max-width: 1080px;
   margin: 0 auto;
+  width: 100%;
+}
+
+.home-hero-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.home-hero-visual {
+  flex: 0 1 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-hero-visual img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .home-hero h1 {
@@ -22,6 +40,11 @@
   font-weight: 700;
   letter-spacing: -0.03em;
   margin-bottom: 0.75rem;
+  line-height: 1.15;
+}
+
+.home-hero-line {
+  display: block;
 }
 
 .home-tagline {
@@ -44,7 +67,6 @@
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .home-cta a {
@@ -298,6 +320,13 @@
   position: relative;
 }
 
+.home-partners-intro {
+  text-align: center;
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  margin-bottom: 1.25rem;
+}
+
 .home-partner-logos {
   display: flex;
   align-items: center;
@@ -431,7 +460,19 @@
 
 @media (max-width: 768px) {
   .home-hero {
+    flex-direction: column;
+    text-align: center;
     padding: 4rem 1.5rem 3rem;
+    gap: 2rem;
+  }
+
+  .home-hero-visual {
+    flex-basis: auto;
+    max-width: 360px;
+  }
+
+  .home-cta {
+    justify-content: center;
   }
 
   .home-hero h1 {

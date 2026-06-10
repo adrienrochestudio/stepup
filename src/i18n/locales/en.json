@@ -8,7 +8,13 @@
     "partners": "Partners"
   },
   "home": {
-    "title": "Learn green film production, step by step",
+    "titlePrefix": "Learn",
+    "titleRotating": [
+      "green film production",
+      "green animation",
+      "how to make a carbon footprint"
+    ],
+    "titleSuffix": "step by step",
     "tagline": "Practical online courses for film and TV professionals.",
     "subtitle": "",
     "ctaStart": "Start learning",
@@ -20,14 +26,15 @@
     "courseCatalog": "Our courses",
     "courseDetails": "Learn more",
     "ecoprodTitle": "Ecoprod",
-    "ecoprodDesc": "A collective initiative supporting the ecological transition of the audiovisual and film industry. Tools, training, and resources to help professionals reduce the environmental impact of their productions.",
+    "ecoprodDesc": "The pioneering initiative driving sustainability in film, TV, and advertising.",
     "ecoprodCta": "Visit ecoprod.com",
     "eurimagesTitle": "Eurimages",
     "eurimagesDesc": "The Council of Europe's fund for co-production, distribution, exhibition, and digitisation of European cinematographic works. Supporting the European film industry and cultural diversity since 1988.",
     "eurimagesCta": "Visit eurimages.org",
     "newsletterTitle": "Stay in the loop",
     "newsletterDesc": "Subscribe to our newsletter for the latest on green production.",
-    "newsletterCta": "Subscribe to newsletter"
+    "newsletterCta": "Subscribe to newsletter",
+    "partnersIntro": "StepUP is a Eurimages initiative developed by Ecoprod."
   },
   "courses": {
     "introGreenProduction": {
@@ -44,7 +51,7 @@
     },
     "greenAnimation": {
       "title": "Green Animation",
-      "description": "Sustainable practices specifically tailored for animation studios: render farms, energy use, remote collaboration, and eco-friendly pipelines."
+      "description": "Sustainable animation production for studios: understand the structural impacts of energy use, digital infrastructure, equipment, mobility, and everyday practices — and learn to prioritize actions and build a realistic, effective sustainability approach without compromising creative quality or production efficiency."
     }
   },
   "map": {

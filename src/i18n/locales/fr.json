@@ -8,7 +8,13 @@
     "partners": "Partenaires"
   },
   "home": {
-    "title": "Mettez-vous à l'éco-production !",
+    "titlePrefix": "Formez-vous",
+    "titleRotating": [
+      "à l'éco-production",
+      "à l'animation éco-responsable",
+      "au bilan carbone"
+    ],
+    "titleSuffix": "étape par étape",
     "tagline": "Plateforme d'e-learning pour les professionnels du cinéma et de l'audiovisuel.",
     "subtitle": "",
     "ctaStart": "Commencer ma formation",
@@ -20,14 +26,15 @@
     "courseCatalog": "Nos formations",
     "courseDetails": "En savoir plus",
     "ecoprodTitle": "Ecoprod",
-    "ecoprodDesc": "Initiative collective dédiée à l'accompagnement de la transition écologique de l'industrie audiovisuelle et cinématographique. Outils, formations et ressources pour aider les professionnels à réduire l'impact environnemental de leurs productions.",
+    "ecoprodDesc": "L'initiative pionnière au service de la durabilité dans le cinéma, la télévision et la publicité.",
     "ecoprodCta": "Visiter ecoprod.com",
     "eurimagesTitle": "Eurimages",
     "eurimagesDesc": "Fonds du Conseil de l'Europe pour la coproduction, la distribution, l'exploitation et la numérisation des œuvres cinématographiques européennes. Soutien à l'industrie cinématographique européenne et à la diversité culturelle depuis 1988.",
     "eurimagesCta": "Visiter eurimages.org",
     "newsletterTitle": "Restez informé",
     "newsletterDesc": "Abonnez-vous à notre newsletter pour suivre l'actualité de l'éco-production.",
-    "newsletterCta": "S'abonner à la newsletter"
+    "newsletterCta": "S'abonner à la newsletter",
+    "partnersIntro": "StepUP est une initiative d'Eurimages développée par Ecoprod."
   },
   "courses": {
     "introGreenProduction": {
@@ -44,7 +51,7 @@
     },
     "greenAnimation": {
       "title": "Animation éco-responsable",
-      "description": "Pratiques durables spécifiquement adaptées aux studios d'animation : fermes de rendu, consommation énergétique, collaboration à distance et pipelines éco-responsables."
+      "description": "La production d'animation éco-responsable pour les studios : comprendre les impacts structurels liés à l'énergie, aux infrastructures numériques, au matériel, à la mobilité et aux pratiques quotidiennes — et apprendre à prioriser les actions pour construire une démarche de durabilité réaliste et efficace, sans compromettre la qualité créative ni l'efficacité de production."
     }
   },
   "map": {

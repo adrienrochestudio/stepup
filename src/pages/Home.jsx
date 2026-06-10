@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useAuth } from '../hooks/useAuth';
 import { allCourses } from '../data/mockCourses';
 import EnrollModal from '../components/EnrollModal';
+import RotatingTitleWord from '../components/RotatingTitleWord';
 import './Home.css';
 
 function getEcoprodUrl(lang) {
@@ -36,22 +37,43 @@ export default function Home() {
   return (
     <div className="home">
       <section className="home-hero">
-        <h1>{t('home.title')}</h1>
-        <p className="home-tagline">{t('home.tagline')}</p>
-        {t('home.subtitle') && <p className="home-subtitle">{t('home.subtitle')}</p>}
-        <div className="home-cta">
-          {user ? (
-            <Link to="/dashboard" className="cta-primary">
-              {t('home.ctaCourses')}
+        <div className="home-hero-text">
+          <h1>
+            <span className="home-hero-line">{t('home.titlePrefix')}</span>
+            <RotatingTitleWord items={t('home.titleRotating', { returnObjects: true })} />
+            <span className="home-hero-line">{t('home.titleSuffix')}</span>
+          </h1>
+          <p className="home-tagline">{t('home.tagline')}</p>
+          {t('home.subtitle') && <p className="home-subtitle">{t('home.subtitle')}</p>}
+          <div className="home-cta">
+            {user ? (
+              <Link to="/dashboard" className="cta-primary">
+                {t('home.ctaCourses')}
+              </Link>
+            ) : (
+              <Link to="/login" className="cta-primary">
+                {t('home.ctaStart')}
+              </Link>
+            )}
+            <Link to="/resources/map" className="cta-secondary">
+              {t('home.ctaMap')}
             </Link>
-          ) : (
-            <Link to="/login" className="cta-primary">
-              {t('home.ctaStart')}
-            </Link>
-          )}
-          <Link to="/resources/map" className="cta-secondary">
-            {t('home.ctaMap')}
-          </Link>
+          </div>
+        </div>
+        <div className="home-hero-visual">
+          <img
+            src={`${import.meta.env.BASE_URL}images/hero-laptop.png`}
+            alt=""
+            onError={(e) => {
+              const img = e.currentTarget;
+              if (!img.dataset.fallback) {
+                img.dataset.fallback = '1';
+                img.src = `${import.meta.env.BASE_URL}images/hero-laptop-placeholder.svg`;
+              } else {
+                img.closest('.home-hero-visual').style.display = 'none';
+              }
+            }}
+          />
         </div>
       </section>
 
@@ -63,10 +85,8 @@ export default function Home() {
             <p>{t(`courses.${latestCourse.i18nKey}.description`)}</p>
             <div className="home-latest-meta">
               <span>{latestCourse.duration}</span>
-              {latestCourse.free ? (
+              {latestCourse.free && (
                 <span className="home-latest-price free">{t('courseCard.free')}</span>
-              ) : (
-                <span className="home-latest-price">{latestCourse.price} €</span>
               )}
             </div>
           </div>
@@ -87,13 +107,11 @@ export default function Home() {
               className="home-catalog-card"
               onClick={() => handleCourseClick(course)}
             >
-              <div className="home-catalog-card-top">
-                {course.free ? (
+              {course.free && (
+                <div className="home-catalog-card-top">
                   <span className="home-catalog-badge free">{t('courseCard.free')}</span>
-                ) : (
-                  <span className="home-catalog-badge">{course.price} €</span>
-                )}
-              </div>
+                </div>
+              )}
               <h3>{t(`courses.${course.i18nKey}.title`)}</h3>
               <p>{t(`courses.${course.i18nKey}.description`)}</p>
               <div className="home-catalog-card-footer">
@@ -120,6 +138,7 @@ export default function Home() {
       </section>
 
       <section className="home-partners-section">
+        <p className="home-partners-intro">{t('home.partnersIntro')}</p>
         <div className="home-partner-logos">
           <button
             className="home-partner-logo-btn"

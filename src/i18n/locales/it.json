@@ -8,7 +8,13 @@
     "partners": "Partner"
   },
   "home": {
-    "title": "Produci green, impara con StepUP",
+    "titlePrefix": "Impara",
+    "titleRotating": [
+      "la produzione cinematografica green",
+      "l'animazione sostenibile",
+      "a calcolare l'impronta di carbonio"
+    ],
+    "titleSuffix": "passo dopo passo",
     "tagline": "Corsi online per i professionisti del cinema e dell'audiovisivo.",
     "subtitle": "",
     "ctaStart": "Inizia la formazione",
@@ -20,14 +26,15 @@
     "courseCatalog": "I nostri corsi",
     "courseDetails": "Scopri di più",
     "ecoprodTitle": "Ecoprod",
-    "ecoprodDesc": "Iniziativa collettiva dedicata all'accompagnamento della transizione ecologica dell'industria audiovisiva e cinematografica. Strumenti, formazioni e risorse per aiutare i professionisti a ridurre l'impatto ambientale delle loro produzioni.",
+    "ecoprodDesc": "L'iniziativa pionieristica che promuove la sostenibilità nel cinema, nella TV e nella pubblicità.",
     "ecoprodCta": "Visita ecoprod.com",
     "eurimagesTitle": "Eurimages",
     "eurimagesDesc": "Fondo del Consiglio d'Europa per la coproduzione, la distribuzione, l'esercizio e la digitalizzazione delle opere cinematografiche europee. Sostegno all'industria cinematografica europea e alla diversità culturale dal 1988.",
     "eurimagesCta": "Visita eurimages.org",
     "newsletterTitle": "Resta aggiornato",
     "newsletterDesc": "Iscriviti alla nostra newsletter per le ultime novità sulla produzione sostenibile.",
-    "newsletterCta": "Iscriviti alla newsletter"
+    "newsletterCta": "Iscriviti alla newsletter",
+    "partnersIntro": "StepUP è un'iniziativa di Eurimages sviluppata da Ecoprod."
   },
   "courses": {
     "introGreenProduction": {
@@ -44,7 +51,7 @@
     },
     "greenAnimation": {
       "title": "Animazione sostenibile",
-      "description": "Pratiche sostenibili specificamente adattate agli studi di animazione: render farm, consumo energetico, collaborazione da remoto e pipeline eco-responsabili."
+      "description": "Produzione di animazione sostenibile per gli studi: comprendi gli impatti strutturali di energia, infrastrutture digitali, attrezzature, mobilità e pratiche quotidiane — e impara a dare priorità alle azioni e a costruire un approccio alla sostenibilità realistico ed efficace, senza compromettere la qualità creativa o l'efficienza produttiva."
     }
   },
   "map": {

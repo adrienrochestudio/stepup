@@ -1,0 +1,68 @@
+/* Own block line with a fixed height so the lines around it never move.
+   Sized in em so it scales with the surrounding title. */
+.rotating-word {
+  display: block;
+  position: relative;
+  perspective: 700px;
+  color: var(--color-pomme);
+  white-space: nowrap;
+  font-size: 0.75em;
+  line-height: 1.4;
+  height: 1.4em;
+}
+
+.rotating-word-item {
+  display: inline-block;
+  backface-visibility: hidden;
+}
+
+.rotating-word-item.in {
+  animation: rotating-word-in 550ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.rotating-word-item.out {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  animation: rotating-word-out 550ms cubic-bezier(0.55, 0, 0.55, 0.2) both;
+  pointer-events: none;
+}
+
+/* The new text tips in from the top face of the cube,
+   the old one tips away through the bottom face. */
+@keyframes rotating-word-in {
+  from {
+    opacity: 0;
+    transform: translateY(-55%) rotateX(75deg);
+    transform-origin: 50% 100%;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotateX(0deg);
+    transform-origin: 50% 100%;
+  }
+}
+
+@keyframes rotating-word-out {
+  from {
+    opacity: 1;
+    transform: translateY(0) rotateX(0deg);
+    transform-origin: 50% 0%;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(55%) rotateX(-75deg);
+    transform-origin: 50% 0%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rotating-word-item.in,
+  .rotating-word-item.out {
+    animation: none;
+  }
+  .rotating-word-item.out {
+    display: none;
+  }
+}

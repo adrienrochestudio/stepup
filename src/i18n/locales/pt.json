@@ -8,7 +8,13 @@
     "partners": "Parceiros"
   },
   "home": {
-    "title": "Aprenda a produzir de forma sustentável",
+    "titlePrefix": "Aprenda",
+    "titleRotating": [
+      "produção audiovisual sustentável",
+      "animação sustentável",
+      "a calcular a pegada de carbono"
+    ],
+    "titleSuffix": "passo a passo",
     "tagline": "Cursos online para profissionais do cinema e do audiovisual.",
     "subtitle": "",
     "ctaStart": "Começar a formação",
@@ -20,14 +26,15 @@
     "courseCatalog": "As nossas formações",
     "courseDetails": "Saber mais",
     "ecoprodTitle": "Ecoprod",
-    "ecoprodDesc": "Iniciativa coletiva dedicada ao acompanhamento da transição ecológica da indústria audiovisual e cinematográfica. Ferramentas, formações e recursos para ajudar os profissionais a reduzir o impacto ambiental das suas produções.",
+    "ecoprodDesc": "A iniciativa pioneira que impulsiona a sustentabilidade no cinema, na televisão e na publicidade.",
     "ecoprodCta": "Visitar ecoprod.com",
     "eurimagesTitle": "Eurimages",
     "eurimagesDesc": "Fundo do Conselho da Europa para a coprodução, distribuição, exibição e digitalização de obras cinematográficas europeias. Apoio à indústria cinematográfica europeia e à diversidade cultural desde 1988.",
     "eurimagesCta": "Visitar eurimages.org",
     "newsletterTitle": "Fique a par de tudo",
     "newsletterDesc": "Subscreva a nossa newsletter para novidades sobre produção sustentável.",
-    "newsletterCta": "Subscrever newsletter"
+    "newsletterCta": "Subscrever newsletter",
+    "partnersIntro": "StepUP é uma iniciativa da Eurimages desenvolvida pela Ecoprod."
   },
   "courses": {
     "introGreenProduction": {
@@ -44,7 +51,7 @@
     },
     "greenAnimation": {
       "title": "Animação sustentável",
-      "description": "Práticas sustentáveis especificamente adaptadas a estúdios de animação: render farms, consumo energético, colaboração remota e pipelines eco-responsáveis."
+      "description": "Produção de animação sustentável para estúdios: compreenda os impactos estruturais da energia, da infraestrutura digital, dos equipamentos, da mobilidade e das práticas quotidianas — e aprenda a priorizar ações e a construir uma abordagem de sustentabilidade realista e eficaz, sem comprometer a qualidade criativa nem a eficiência de produção."
     }
   },
   "map": {
