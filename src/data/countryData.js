@@ -2124,6 +2124,159 @@ export const countryData = {
       },
     },
   },
+
+  Estonia: {
+    code: 'EST',
+    name: 'Estonia',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Green production is at an early, grassroots stage — a national institutional framework is not yet in place, and momentum comes mainly from the cross-border Baltic Green Film network and from the animation sector. Estonia has a strong stop-motion tradition led by Nukufilm, the world\'s oldest still-running puppet-animation studio (founded 1957, Tallinn).',
+        },
+        decarbonizationPlan: {
+          label: 'Decarbonization plan',
+          content:
+            'Estonia targets climate neutrality by 2050 and 100% renewable electricity by 2030. It plans to stop generating electricity from oil shale by 2035 and to phase out oil shale in energy entirely by 2040 — a major shift, as oil shale long made Estonia\'s power among the most carbon-intensive in the EU (source: IEA, https://www.iea.org/countries/estonia).',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• Baltic Green Film — a sustainability initiative and knowledge-sharing network across Estonia, Latvia and Lithuania, offering training and building a regional pool of experts: https://balticgreenfilm.com/\n• Stop-motion sustainability: a 2022 Tallinn seminar began work on a first sustainable production guide for stop-motion films; the ANIMARKT 2024 Stop Motion Forum required each submitted project to include a sustainable production plan (10% of the evaluation).',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Estonia\'s grid synchronised with the Continental European network (together with Latvia and Lithuania) in February 2025, ending reliance on the Russian system. Electricity has historically been oil-shale-based and carbon-intensive, but is shifting quickly to wind and solar, with a target of 100% renewable electricity by 2030.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            'There is no national, film-specific carbon calculator or local certification scheme yet (the sector is at a grassroots stage). Estonian productions use established international tools — the credible, widely recognised ones are BAFTA albert (https://wearealbert.org/) and the Green Producers Tool (https://www.greenproducers.club/).\n• Baltic Green Film: https://balticgreenfilm.com/',
+        },
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• Baltic Green Film (Estonia/Latvia/Lithuania): https://balticgreenfilm.com/\n• Nukufilm — stop-motion studio, Tallinn: https://nukufilm.ee/en/',
+        },
+      },
+    },
+  },
+
+  Latvia: {
+    code: 'LVA',
+    name: 'Latvia',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Green production is at an early, grassroots stage; a national institutional framework is not yet in place. Momentum comes mainly from the cross-border Baltic Green Film network, with the National Film Centre of Latvia (under the Ministry of Culture) as the national body.',
+        },
+        decarbonizationPlan: {
+          label: 'Decarbonization plan',
+          content:
+            'Latvia targets climate neutrality by 2050, with greenhouse-gas cuts of 65% by 2030 and 85% by 2040 (vs. 1990) and 57% of total energy from renewables by 2030. Its electricity is already about three-quarters renewable, mostly hydropower (the Daugava river) and biomass (sources: IEA; Latvia National Energy & Climate Plan).',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• Baltic Green Film — regional sustainability network (Estonia/Latvia/Lithuania): https://balticgreenfilm.com/\n• National Film Centre of Latvia (Nacionālais Kino centrs): https://www.nkc.gov.lv/en',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Latvia\'s grid synchronised with the Continental European network in February 2025. Electricity is predominantly renewable (about three-quarters), led by hydropower on the Daugava and biomass — a relatively low-carbon grid for productions.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            'There is no national, film-specific carbon calculator or local certification scheme yet; Latvian productions rely on established international tools — the credible, widely recognised ones are BAFTA albert (https://wearealbert.org/) and the Green Producers Tool (https://www.greenproducers.club/).\n• Baltic Green Film: https://balticgreenfilm.com/',
+        },
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• Baltic Green Film: https://balticgreenfilm.com/\n• National Film Centre of Latvia: https://www.nkc.gov.lv/en',
+        },
+      },
+    },
+  },
+
+  Lithuania: {
+    code: 'LTU',
+    name: 'Lithuania',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Green production is at an early, grassroots stage, driven mainly by the cross-border Baltic Green Film network and the Baltic Film & Creative Tech Cluster, with the Lithuanian Film Centre (LKC) as the national body. A formal national framework is not yet in place.',
+        },
+        decarbonizationPlan: {
+          label: 'Decarbonization plan',
+          content:
+            'Lithuania targets net-zero emissions by 2050, with greenhouse-gas cuts of 70% by 2030 and 85% by 2040 (vs. 1990). It aims to move from electricity importer to net exporter by 2030, expanding wind (including offshore) and solar (source: IEA, https://www.iea.org/countries/lithuania).',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• Baltic Green Film — regional sustainability network (Estonia/Latvia/Lithuania): https://balticgreenfilm.com/\n• Baltic Film & Creative Tech Cluster — GreenCCircle project on sustainability skills and training: https://www.film-creative.tech/\n• Lithuanian Film Centre (LKC): https://www.lkc.lt/en/',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Lithuania\'s grid synchronised with the Continental European network in February 2025, ending reliance on the Russian system. The country closed the Ignalina nuclear plant in 2009 and now relies on imports plus fast-growing wind and solar, aiming to become a net electricity exporter by 2030.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            'There is no national, film-specific carbon calculator or local certification scheme yet; Lithuanian productions use established international tools — the credible, widely recognised ones are BAFTA albert (https://wearealbert.org/) and the Green Producers Tool (https://www.greenproducers.club/).\n• Baltic Green Film: https://balticgreenfilm.com/',
+        },
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• Baltic Green Film: https://balticgreenfilm.com/\n• Baltic Film & Creative Tech Cluster: https://www.film-creative.tech/',
+        },
+      },
+    },
+  },
 };
 
 export const categoryKeys = ['generalInfo', 'sustainability', 'resources'];
