@@ -56,7 +56,7 @@ export default function Home() {
                 if (course) handleCourseClick(course);
               }}
             />
-            <span className="home-hero-line">
+            <span className="home-hero-line home-hero-suffix">
               {t('home.titleSuffix')}
               {t('home.titleSuffixNote') && <sup className="home-hero-asterisk">*</sup>}
             </span>

@@ -56,18 +56,27 @@
   display: block;
 }
 
-.home-hero-asterisk {
+/* The always-English "step by step" suffix stays quieter than the rest
+   of the title (brand wordplay, not a key message). */
+.home-hero-suffix {
   font-size: 0.6em;
-  vertical-align: super;
+  font-weight: 600;
   color: var(--color-text-light);
+}
+
+.home-hero-asterisk {
+  font-size: 0.5em;
+  vertical-align: super;
+  color: var(--color-text-muted);
+  opacity: 0.7;
 }
 
 /* Discreet translation of the always-English "step by step" suffix. */
 .home-hero-footnote {
-  font-size: 0.7rem;
+  font-size: 0.62rem;
   font-style: italic;
-  color: var(--color-text-light);
-  opacity: 0.7;
+  color: var(--color-text-muted);
+  opacity: 0.55;
   margin-bottom: 0.5rem;
 }
 
