@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import PartnersIntro from './PartnersIntro';
 import './Footer.css';
 
 function getEcoprodUrl(lang) {
@@ -20,7 +21,7 @@ export default function Footer() {
               alt="StepUP"
               className="footer-logo"
             />
-            <p>{t('home.partnersIntro')}</p>
+            <p><PartnersIntro text={t('home.partnersIntro')} lang={currentLang} /></p>
           </div>
 
           <div className="footer-col">

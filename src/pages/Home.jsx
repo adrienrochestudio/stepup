@@ -5,11 +5,20 @@ import { useAuth } from '../hooks/useAuth';
 import { allCourses } from '../data/mockCourses';
 import EnrollModal from '../components/EnrollModal';
 import RotatingTitleWord from '../components/RotatingTitleWord';
+import PartnersIntro from '../components/PartnersIntro';
 import './Home.css';
 
 function getEcoprodUrl(lang) {
   return lang === 'fr' ? 'https://ecoprod.com' : 'https://ecoprod.com/en/';
 }
+
+// Course targets for the rotating title phrases, in the same order as
+// home.titleRotating in every locale: eco-production, animation, carbon.
+const TITLE_COURSE_IDS = [
+  'intro-eco-production',
+  'green-animation',
+  'carbon-footprinting-film-tv',
+];
 
 export default function Home() {
   const { t, i18n } = useTranslation();
@@ -40,11 +49,16 @@ export default function Home() {
         <div className="home-hero-text">
           <h1>
             <span className="home-hero-line">{t('home.titlePrefix')}</span>
-            <RotatingTitleWord items={t('home.titleRotating', { returnObjects: true })} />
+            <RotatingTitleWord
+              items={t('home.titleRotating', { returnObjects: true })}
+              onItemClick={(i) => {
+                const course = allCourses.find((c) => c.id === TITLE_COURSE_IDS[i]);
+                if (course) handleCourseClick(course);
+              }}
+            />
             <span className="home-hero-line">{t('home.titleSuffix')}</span>
           </h1>
-          <p className="home-tagline">{t('home.tagline')}</p>
-          {t('home.subtitle') && <p className="home-subtitle">{t('home.subtitle')}</p>}
+          <p className="home-audience">{t('home.audienceLine')}</p>
           <div className="home-cta">
             {user ? (
               <Link to="/dashboard" className="cta-primary">
@@ -59,12 +73,6 @@ export default function Home() {
               {t('home.ctaMap')}
             </Link>
           </div>
-          <p className="home-audience">
-            {t('home.audiencePrefix')}{' '}
-            <RotatingTitleWord
-              items={t('home.audienceRotating', { returnObjects: true })}
-            />
-          </p>
         </div>
         <div className="home-hero-visual">
           <img src={`${import.meta.env.BASE_URL}images/imagecomputer.png`} alt="" />
@@ -134,7 +142,9 @@ export default function Home() {
       </div>
 
       <section className="home-partners-section">
-        <p className="home-partners-intro">{t('home.partnersIntro')}</p>
+        <p className="home-partners-intro">
+          <PartnersIntro text={t('home.partnersIntro')} lang={currentLang} />
+        </p>
         <div className="home-partner-logos">
           <button
             className="home-partner-logo-btn"

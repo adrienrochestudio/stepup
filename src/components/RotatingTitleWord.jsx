@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './RotatingTitleWord.css';
 
-export default function RotatingTitleWord({ items, interval = 3500 }) {
+export default function RotatingTitleWord({ items, interval = 3500, onItemClick }) {
   const [state, setState] = useState({ index: 0, prev: null });
 
   useEffect(() => {
@@ -23,7 +23,17 @@ export default function RotatingTitleWord({ items, interval = 3500 }) {
         </span>
       )}
       <span key={`in-${state.index}`} className="rotating-word-item in">
-        {items[state.index]}
+        {onItemClick ? (
+          <button
+            type="button"
+            className="rotating-word-link"
+            onClick={() => onItemClick(state.index)}
+          >
+            {items[state.index]}
+          </button>
+        ) : (
+          items[state.index]
+        )}
       </span>
     </span>
   );

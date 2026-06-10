@@ -1,8 +1,10 @@
 import { useTranslation } from 'react-i18next';
+import PartnersIntro from '../components/PartnersIntro';
 import './AboutEurimagesEcoprod.css';
 
 export default function AboutEurimagesEcoprod() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentLang = i18n.language?.substring(0, 2) || 'fr';
 
   return (
     <div className="about-page">
@@ -36,7 +38,7 @@ export default function AboutEurimagesEcoprod() {
       </div>
 
       <div className="about-initiative-banner">
-        <p>{t('about.initiativeBanner')}</p>
+        <p><PartnersIntro text={t('about.initiativeBanner')} lang={currentLang} /></p>
       </div>
     </div>
   );

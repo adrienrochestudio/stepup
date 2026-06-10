@@ -1,0 +1,139 @@
+<?xml version="1.0" ?>
+<manifest identifier="vR12DXjsCIJtDfvUrmBOCJm3DWAUMp-ps8CTrXAB" version="1"
+  xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+  xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+                      http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <adlcp:location>metadata.xml</adlcp:location>
+  </metadata>
+  <organizations default="articulate_rise">
+      <organization identifier="articulate_rise">
+      <title>Carbon footprint fundamentals</title>
+      <item identifier="i1" identifierref="r1" isvisible="true">
+        <title>Carbon footprint fundamentals</title>
+        <adlcp:datafromlms>datafromlms</adlcp:datafromlms>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="r1" type="webcontent" adlcp:scormtype="sco" href="scormdriver/indexAPI.html">
+      <!-- SCORMDRIVER STUFF -->
+      <file href="scormdriver/indexAPI.html" />
+      <file href="scormdriver/preloadIntegrity.js" />
+      <file href="scormdriver/driverOptions.js" />
+      <file href="scormdriver/AICCComm.html" />
+      <file href="scormdriver/auto-scripts/AutoBookmark.js" />
+      <file href="scormdriver/auto-scripts/AutoCompleteSCO.js" />
+      <file href="scormdriver/auto-scripts/CourseExit.js" />
+      <file href="scormdriver/blank.html" />
+      <file href="scormdriver/goodbye.html" />
+      <file href="scormdriver/scormdriver.js" />
+      <file href="scormdriver/browsersniff.js" />
+
+      <!-- RUNTIME COMMON STUFF -->
+      <file href="scormcontent/index.html" />
+
+      
+        <file href="scormcontent/lib/lzwcompress.js"/>
+      
+
+      <!-- FRONTEND BUNDLE ASSETS -->
+      <file href="scormcontent/lib/rise/1d2201d6.js" />
+<file href="scormcontent/lib/rise/0e858ba7.css" />
+<file href="scormcontent/lib/rise/78b3b468.js" />
+<file href="scormcontent/lib/rise/ff85f5a8.css" />
+<file href="scormcontent/lib/rise/b3853e2d.js" />
+<file href="scormcontent/lib/rise/9aede266.ttf" />
+<file href="scormcontent/lib/rise/bff47411.woff" />
+<file href="scormcontent/lib/rise/277dfde6.js" />
+<file href="scormcontent/lib/rise/9faaad3f.js" />
+<file href="scormcontent/lib/rise/2e25f4c1.js" />
+<file href="scormcontent/lib/rise/76830a3e.js" />
+<file href="scormcontent/lib/rise/3125981b.js" />
+<file href="scormcontent/lib/rise/79b568ad.js" />
+<file href="scormcontent/lib/rise/11bf0b9c.js" />
+<file href="scormcontent/lib/rise/7a0e4fff.js" />
+<file href="scormcontent/lib/rise/64c13194.js" />
+<file href="scormcontent/lib/rise/8716f7be.js" />
+<file href="scormcontent/lib/rise/d4f1495e.js" />
+<file href="scormcontent/lib/rise/7011befd.js" />
+<file href="scormcontent/lib/rise/578ab21f.js" />
+<file href="scormcontent/lib/rise/90f65467.js" />
+<file href="scormcontent/lib/rise/2d62667c.js" />
+<file href="scormcontent/lib/rise/c5e219b3.js" />
+<file href="scormcontent/lib/rise/4399a96b.js" />
+<file href="scormcontent/lib/rise/86e2c05d.js" />
+<file href="scormcontent/lib/rise/26eb66fd.js" />
+<file href="scormcontent/lib/learn_dist/entry.js" />
+<file href="scormcontent/lib/learn_dist/9b1f8619.js" />
+<file href="scormcontent/lib/learn_dist/b954bbcb.css" />
+<file href="scormcontent/lib/learn_dist/7443b0a5.js" />
+<file href="scormcontent/lib/mondrian/entry.js" />
+<file href="scormcontent/lib/mondrian/f83f0ba2.js" />
+<file href="scormcontent/lib/mondrian/27b65238.js" />
+<file href="scormcontent/lib/mondrian/f4e16173.js" />
+<file href="scormcontent/lib/mondrian/3868877e.js" />
+<file href="scormcontent/lib/mondrian/5d56aa22.js" />
+<file href="scormcontent/lib/sandbox/sandbox.html" />
+<file href="scormcontent/lib/sandbox/c77685df.js" />
+<file href="scormcontent/lib/sandbox/4adfab46.css" />
+
+
+      <!-- RUNTIME CONTENT STUFF -->
+      <file href="scormcontent/lib/fonts/BeVietnam-Bold.woff" />
+<file href="scormcontent/lib/fonts/BeVietnam-Italic.woff" />
+<file href="scormcontent/lib/fonts/BeVietnam-Regular.woff" />
+<file href="scormcontent/lib/fonts/Lato2-Regular.woff" />
+<file href="scormcontent/lib/fonts/Lato2-Light.woff" />
+<file href="scormcontent/lib/fonts/Lato2-Italic.woff" />
+<file href="scormcontent/lib/fonts/Lato2-Bold.woff" />
+<file href="scormcontent/lib/fonts/Lato2-Black.woff" />
+<file href="scormcontent/lib/fonts/Inter-Medium.woff" />
+<file href="scormcontent/lib/fonts/Inter-Black.woff" />
+<file href="scormcontent/lib/fonts/Inter-Bold.woff" />
+<file href="scormcontent/lib/fonts/Inter-Regular.woff" />
+<file href="scormcontent/lib/fonts/Inter-Light.woff" />
+<file href="scormcontent/assets/qY01cnxerLL3Ona6.svg" />
+<file href="scormcontent/assets/Graphs%20StepUP%20V4%20car.png" />
+<file href="scormcontent/assets/ZCzSJW/Graphs%20StepUP%20V4%20car.png" />
+<file href="scormcontent/assets/a4Tmer/Graphs%20StepUP%20V4%20car.png" />
+<file href="scormcontent/assets/Zwq-eB/quote_background.jpg" />
+<file href="scormcontent/assets/Capture%20d%E2%80%99e.png" />
+<file href="scormcontent/assets/7PzsAw/Graphs%20StepUP%20V4%20car.png" />
+<file href="scormcontent/assets/IMG-DFW-FLT-Flying-mag-vid.jpg" />
+<file href="scormcontent/assets/KpphL7/Capture%20d%E2%80%99e.png" />
+<file href="scormcontent/assets/StepUP.png" />
+<file href="scormcontent/assets/xy-AUQ/Capture%20d%E2%80%99e.png" />
+<file href="scormcontent/assets/stock-image.jpg" />
+<file href="scormcontent/assets/Graphs%20StepUP%20V4.png" />
+<file href="scormcontent/assets/YX6pGg/Capture%20d%E2%80%99e.png" />
+<file href="scormcontent/assets/H1feIf/Capture%20d%E2%80%99e.png" />
+<file href="scormcontent/assets/mnBJ-B/Capture%20d%E2%80%99e.png" />
+<file href="scormcontent/assets/Ecoprod-photo-de-profil-5.png" />
+<file href="scormcontent/assets/albert.jpg" />
+<file href="scormcontent/assets/Capture%20d%E2%80%99e.jpg" />
+<file href="scormcontent/assets/eureca_BANNER_618x614px-im.png" />
+<file href="scormcontent/assets/7wxi8ca68x6skm655phw03kivd.png" />
+<file href="scormcontent/assets/Logo-Flying-Secoya-portrai.png" />
+<file href="scormcontent/assets/StepUp_Intro_CarbonClap_Vi.mp4" />
+<file href="scormcontent/assets/StepUp_Intro_CarbonClap_Vi.jpg" />
+<file href="scormcontent/assets/Fsnb5I/StepUp_Intro_CarbonClap_Vi.mp4" />
+<file href="scormcontent/assets/m2mgUT/StepUp_Intro_CarbonClap_Vi.jpg" />
+<file href="scormcontent/assets/qS-ABh/StepUp_Intro_CarbonClap_Vi.mp4" />
+<file href="scormcontent/assets/HoOkGI/StepUp_Intro_CarbonClap_Vi.jpg" />
+<file href="scormcontent/assets/L6OsmB/StepUp_Intro_CarbonClap_Vi.mp4" />
+<file href="scormcontent/assets/jaEfuu/StepUp_Intro_CarbonClap_Vi.jpg" />
+<file href="scormcontent/assets/mRbCGL/stock-image.jpg" />
+<file href="scormcontent/assets/the%20end.png" />
+<file href="scormcontent/assets/9NzzFM/stock-image.jpg" />
+<file href="scormcontent/assets/npzQjD/stock-image.jpg" />
+<file href="scormcontent/assets/kKwYMm/Graphs%20StepUP%20V4%20car.png" />
+<file href="scormcontent/assets/mnlT_uvA9Oj06bax.png" />
+
+    </resource>
+  </resources>
+</manifest>

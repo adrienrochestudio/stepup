@@ -10,8 +10,8 @@
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  padding: 6rem 2rem 4rem;
-  max-width: 1080px;
+  padding: 5rem 2rem 4rem;
+  max-width: 1160px;
   margin: 0 auto;
   width: 100%;
 }
@@ -19,10 +19,11 @@
 .home-hero-text {
   flex: 1;
   min-width: 0;
+  text-align: center;
 }
 
 .home-hero-visual {
-  flex: 0 1 420px;
+  flex: 0 1 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,23 +79,13 @@
   justify-content: center;
 }
 
-/* Rotating audience line under the CTAs — same flip as the title,
-   but in the regular text colors. */
+/* Audience line — static subtitle between the title and the CTAs. */
 .home-audience {
-  margin-top: 1.5rem;
   color: var(--color-text-light);
-  font-size: 0.9rem;
-  text-align: center;
-}
-
-.home-audience .rotating-word {
-  display: inline-block;
-  font-size: 1em;
-  height: auto;
-  line-height: inherit;
-  color: var(--color-kaki);
-  font-weight: 600;
-  vertical-align: bottom;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  max-width: 560px;
+  margin: 0.5rem auto 2rem;
 }
 
 .home-cta a {
@@ -468,25 +459,26 @@
   background: #2e3510;
 }
 
-/* Newsletter — strong full-width band before the footer */
+/* Newsletter — compact, light closing note before the footer */
 .home-newsletter {
-  background: var(--color-kaki);
-  padding: 3rem 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0.5rem 2rem 2.5rem;
   width: 100%;
   text-align: center;
 }
 
 .home-newsletter h2 {
-  color: var(--color-white);
-  font-size: 1.4rem;
+  color: var(--color-kaki);
+  font-size: 1.05rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
 .home-newsletter p {
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 0.9rem;
-  margin-bottom: 1.5rem;
+  color: var(--color-text-light);
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
 }
 
 .home-newsletter-btn {
@@ -495,10 +487,10 @@
   gap: 0.5rem;
   background: var(--color-pomme);
   color: var(--color-kaki);
-  padding: 0.75rem 2rem;
+  padding: 0.55rem 1.5rem;
   border-radius: var(--radius-sm);
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   transition: opacity var(--transition-fast), transform var(--transition-fast);
 }
 
@@ -562,7 +554,7 @@
   }
 
   .home-newsletter {
-    padding: 2.5rem 1.5rem;
+    padding: 0.5rem 1.5rem 2rem;
   }
 }
 
