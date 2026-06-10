@@ -14,7 +14,7 @@
       "animação sustentável",
       "a calcular a pegada de carbono"
     ],
-    "titleSuffix": "passo a passo",
+    "titleSuffix": "step by step",
     "tagline": "Cursos online para profissionais do cinema e do audiovisual.",
     "subtitle": "",
     "ctaStart": "Começar a formação",
@@ -46,7 +46,8 @@
       "profissionais de publicidade",
       "emissoras e plataformas",
       "quem quer trabalhar de forma mais sustentável"
-    ]
+    ],
+    "titleSuffixNote": "passo a passo"
   },
   "courses": {
     "introGreenProduction": {

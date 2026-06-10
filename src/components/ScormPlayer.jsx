@@ -3,6 +3,11 @@ import { useTranslation } from 'react-i18next';
 import { useScorm } from '../hooks/useScorm';
 import './ScormPlayer.css';
 
+// Les vrais packages SCORM ne sont pas embarqués dans la démo (fichiers trop
+// lourds). Tant que ce drapeau est à true, le lecteur affiche un message à la
+// place de l'iframe. Repassez-le à false une fois les packages réels déposés.
+const SCORM_DEMO_MODE = true;
+
 export default function ScormPlayer({ courseId, scormUrl, lang }) {
   const iframeRef = useRef(null);
   const { initializeApi, terminate } = useScorm(courseId, lang);
@@ -26,6 +31,22 @@ export default function ScormPlayer({ courseId, scormUrl, lang }) {
       terminate();
     };
   }, [scormUrl, initializeApi, terminate]);
+
+  if (SCORM_DEMO_MODE) {
+    return (
+      <div className="scorm-player">
+        <div className="scorm-player-demo">
+          <span className="scorm-player-demo-icon" aria-hidden="true">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <path d="m10 8 6 4-6 4V8z" />
+            </svg>
+          </span>
+          <p className="scorm-player-demo-text">{t('course.demoNotice')}</p>
+        </div>
+      </div>
+    );
+  }
 
   if (!scormUrl) {
     return (

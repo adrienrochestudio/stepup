@@ -46,7 +46,8 @@
       "advertising professionals",
       "broadcasters and streamers",
       "anyone who wants to work more sustainably"
-    ]
+    ],
+    "titleSuffixNote": ""
   },
   "courses": {
     "introGreenProduction": {
@@ -170,7 +171,8 @@
     "notFound": "Course not found.",
     "notConfigured": "SCORM Package Not Configured",
     "notConfiguredDesc": "Upload your SCORM package to <code>public/scorm/{{courseId}}/</code> and update the course configuration.",
-    "modules": "modules"
+    "modules": "modules",
+    "demoNotice": "This site is a demo and the files are too large — imagine the course is right here!"
   },
   "enroll": {
     "duration": "Duration",
@@ -187,7 +189,9 @@
       "title": "Enrolment Cancelled",
       "message": "Your payment was cancelled. No charges have been made.",
       "cta": "Try Again"
-    }
+    },
+    "withdrawalConsent": "I request immediate access to the course and expressly acknowledge that I waive my 14-day right of withdrawal as soon as access is granted (Art. L221-28 13° of the French Consumer Code).",
+    "consentRequired": "Please accept the waiver of the right of withdrawal to continue."
   },
   "admin": {
     "title": "Cohort Manager",
@@ -328,7 +332,9 @@
     "copyright": "© 2025 StepUP. All rights reserved.",
     "ecoprodDesc": "A collective initiative supporting the ecological transition of the audiovisual and film industry.",
     "eurimagesDesc": "The Council of Europe's fund for co-production, distribution, and exhibition of European cinematographic works.",
-    "visitWebsite": "Visit website"
+    "visitWebsite": "Visit website",
+    "notice": "Legal notice",
+    "sales": "Terms of sale"
   },
   "legal": {
     "lastUpdated": "Last updated",
@@ -359,6 +365,50 @@
       "rightsText": "In accordance with the General Data Protection Regulation (GDPR), you have the right to access, rectify, delete, and port your personal data. You may also object to the processing of your data or request restriction of processing. To exercise these rights, contact us at privacy@stepup-platform.eu.",
       "contact": "Contact",
       "contactText": "For any questions regarding this Privacy Policy or data protection, please contact our Data Protection Officer at privacy@stepup-platform.eu."
+    },
+    "notice": {
+      "title": "Legal Notice",
+      "intro": "In accordance with Articles 6-III and 19 of French Law no. 2004-575 of 21 June 2004 on Confidence in the Digital Economy (LCEN), users of the StepUP website and platform are informed of the identity of the parties involved in its creation and operation.",
+      "editor": "Site Publisher",
+      "editorName": "Legal name",
+      "editorStatus": "Legal status",
+      "editorStatusValue": "Non-profit association governed by the French law of 1 July 1901",
+      "editorAddress": "Registered office",
+      "editorSiret": "SIRET number",
+      "editorEmail": "Contact",
+      "publication": "Publication Director",
+      "publicationText": "The publication director is Pervenche Beurier, Managing Director of the Ecoprod association.",
+      "hosting": "Hosting",
+      "hostingText": "The site is currently hosted by GitHub, Inc., 88 Colin P. Kelly Jr Street, San Francisco, CA 94107, USA. This information will be updated if the site migrates to another host.",
+      "ip": "Intellectual Property",
+      "ipText": "All content on the StepUP platform (e-learning courses, webinars, videos, text, graphics, logos and software) is protected by intellectual property law and remains the property of the Ecoprod association, Eurimages or their respective licensors. Any reproduction, representation or distribution, in whole or in part, without prior written authorisation is prohibited.",
+      "data": "Personal Data",
+      "dataText": "The processing of your personal data is described in our Privacy Policy, accessible from the site footer.",
+      "contact": "Contact",
+      "contactText": "For any question regarding the site or this legal notice, please write to us at stepup@ecoprod.com."
+    },
+    "sales": {
+      "title": "Terms of Sale",
+      "object": "1. Purpose and Scope",
+      "objectText": "These terms of sale govern the sale of online (e-learning) courses offered by the Ecoprod association through the StepUP platform. Any order of a paid course implies the user's full acceptance of these terms.",
+      "services": "2. Description of Courses",
+      "servicesText": "StepUP offers online training modules in SCORM format, accessible remotely from a web browser after creating an account. Some courses are free, others are paid. The description, estimated duration and content of each course are specified on its page.",
+      "price": "3. Pricing",
+      "priceText": "Prices are stated in euros. The price that applies is the one displayed on the course page at the time of the order. Ecoprod reserves the right to change its prices at any time, it being understood that the course is billed at the rate in force when the order is confirmed.",
+      "order": "4. Order and Payment",
+      "orderText": "The order is confirmed after selecting the course, accepting these terms and paying online. Payment is made by credit card via our secure payment provider Stripe. Ecoprod does not have access to the user's banking details. The order is confirmed by a summary e-mail.",
+      "access": "5. Course Access",
+      "accessText": "Access to the course opens immediately after payment confirmation, from the user's dashboard. Access is strictly personal: login credentials must not be shared. The user's progress and results are saved to allow the course to be resumed and a certificate of completion to be issued.",
+      "withdrawal": "6. Right of Withdrawal",
+      "withdrawalText": "Under Article L221-18 of the French Consumer Code, the consumer normally has 14 days to exercise a right of withdrawal. However, as this is digital content supplied on an intangible medium whose performance begins immediately, the user expressly acknowledges, when confirming the order, waiving the right of withdrawal as soon as access to the course begins, in accordance with Article L221-28 13° of the French Consumer Code. No refund may be claimed once access to the course has been opened.",
+      "duration": "7. Access Duration",
+      "durationText": "Unless otherwise stated on the course page, access to a purchased course is guaranteed for a minimum period specified at the time of purchase, from payment confirmation. Ecoprod strives to keep the platform available but cannot be held liable for temporary unavailability due to maintenance or force majeure.",
+      "certificate": "8. Certificate of Completion",
+      "certificateText": "On completing a course under the required conditions (in particular the required completion rate), a certificate of completion may be issued to the user. This certificate attests solely to the completion of the course. It does not constitute a diploma, a qualification, or a state-recognised professional certification. StepUP courses are not Qualiopi-certified and are not registered with the French national register of professional certifications (RNCP) or the specific register (RS). As such, they are not eligible for vocational training funding (CPF, OPCO, etc.), unless expressly stated otherwise on the course page.",
+      "claims": "9. Complaints and Mediation",
+      "claimsText": "Any complaint may be sent to stepup@ecoprod.com. Under Articles L612-1 et seq. of the French Consumer Code, consumers have the right to use a consumer mediator free of charge to seek an amicable resolution of a dispute. [The details of the competent mediator will be specified here.]",
+      "law": "10. Governing Law and Disputes",
+      "lawText": "These terms are governed by French law. In the event of a dispute, and failing an amicable settlement, the French courts shall have jurisdiction. Users residing in the European Union may also use the European Commission's online dispute resolution platform."
     }
   },
   "common": {

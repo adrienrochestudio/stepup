@@ -31,3 +31,23 @@
   font-size: 0.9rem;
   line-height: 1.8;
 }
+
+.legal-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.legal-info li {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  line-height: 1.9;
+}
+
+.legal-info strong {
+  color: var(--color-text);
+}
+
+.legal-info a {
+  color: var(--color-kaki);
+}

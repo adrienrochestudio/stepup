@@ -14,7 +14,7 @@
       "animación sostenible",
       "el cálculo de la huella de carbono"
     ],
-    "titleSuffix": "paso a paso",
+    "titleSuffix": "step by step",
     "tagline": "La plataforma e-learning de producción audiovisual sostenible",
     "subtitle": "",
     "ctaStart": "Comenzar mi formación",
@@ -43,7 +43,8 @@
       "profesionales de la publicidad",
       "cadenas y plataformas",
       "quienes quieren trabajar de forma más sostenible"
-    ]
+    ],
+    "titleSuffixNote": "paso a paso"
   },
   "courses": {
     "introGreenProduction": {

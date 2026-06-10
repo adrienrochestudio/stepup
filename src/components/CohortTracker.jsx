@@ -43,6 +43,12 @@ export default function CohortTracker({ cohorts }) {
   const passedLearners = learners.filter((l) => l.status === 'completed');
   const notCompletedLearners = learners.filter((l) => l.status !== 'completed');
 
+  const capacityPct = cohort ? (learners.length / cohort.maxStudents) * 100 : 0;
+  const statusCounts = learners.reduce((acc, s) => {
+    acc[s.status] = (acc[s.status] || 0) + 1;
+    return acc;
+  }, {});
+
   const handleBulkReminder = () => {
     notCompletedLearners.forEach((learner) => {
       console.log('[StepUP] Bulk reminder email:', {
@@ -74,20 +80,58 @@ export default function CohortTracker({ cohorts }) {
 
   return (
     <div className="cohort-tracker">
-      <div className="cohort-tracker-controls">
-        <select
-          value={selectedCohort}
-          onChange={(e) => setSelectedCohort(e.target.value)}
-          className="cohort-select"
-        >
+      {cohorts.length > 1 && (
+        <div className="cohort-switcher">
           {cohorts.map((c) => (
-            <option key={c.id} value={c.id}>{c.name}</option>
+            <button
+              key={c.id}
+              className={`cohort-switch-btn ${c.id === selectedCohort ? 'active' : ''}`}
+              onClick={() => setSelectedCohort(c.id)}
+            >
+              {c.name}
+            </button>
           ))}
-        </select>
-      </div>
+        </div>
+      )}
 
       {cohort && (
         <>
+          <div className="cohort-board-header">
+            <div className="cohort-board-title">
+              <h2>{cohort.name}</h2>
+              <span className="cohort-board-course">{cohort.courseTitle}</span>
+            </div>
+            <div className="cohort-board-meta">
+              <span className="cohort-board-dates">
+                <strong>{t('admin.start')}:</strong> {cohort.startDate}
+                {'  ·  '}
+                <strong>{t('admin.end')}:</strong> {cohort.endDate}
+              </span>
+              <div className="cohort-capacity">
+                <div className="cohort-capacity-text">
+                  {learners.length}/{cohort.maxStudents}
+                </div>
+                <div className="cohort-capacity-bar">
+                  <div className="cohort-capacity-fill" style={{ width: `${capacityPct}%` }} />
+                </div>
+              </div>
+            </div>
+            <div className="cohort-status-summary">
+              {statusCounts.completed > 0 && (
+                <span className="cohort-mini-badge status-completed">{statusCounts.completed} {t('cohortTracker.statusCompleted')}</span>
+              )}
+              {statusCounts.in_progress > 0 && (
+                <span className="cohort-mini-badge status-in_progress">{statusCounts.in_progress} {t('cohortTracker.statusInProgress')}</span>
+              )}
+              {statusCounts.not_started > 0 && (
+                <span className="cohort-mini-badge status-not_started">{statusCounts.not_started} {t('cohortTracker.statusNotStarted')}</span>
+              )}
+              {statusCounts.never_connected > 0 && (
+                <span className="cohort-mini-badge status-never_connected">{statusCounts.never_connected} {t('cohortTracker.statusNeverConnected')}</span>
+              )}
+            </div>
+          </div>
+
           <div className="cohort-tracker-tabs">
             <button
               className={`tracker-tab ${activeTab === 'tracking' ? 'active' : ''}`}

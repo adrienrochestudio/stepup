@@ -68,7 +68,11 @@ export default function Footer() {
         <div className="footer-bottom">
           <p className="footer-copyright">{t('footer.copyright')}</p>
           <div className="footer-bottom-links">
+            <Link to="/legal-notice">{t('footer.notice')}</Link>
+            <span className="footer-sep">|</span>
             <Link to="/terms">{t('footer.terms')}</Link>
+            <span className="footer-sep">|</span>
+            <Link to="/terms-of-sale">{t('footer.sales')}</Link>
             <span className="footer-sep">|</span>
             <Link to="/privacy">{t('footer.privacy')}</Link>
           </div>

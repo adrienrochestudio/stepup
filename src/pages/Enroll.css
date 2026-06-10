@@ -85,6 +85,31 @@
   color: var(--color-text-light);
 }
 
+.enroll-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 1.25rem;
+  padding: 0.875rem 1rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.enroll-consent input {
+  margin-top: 0.15rem;
+  flex-shrink: 0;
+  accent-color: var(--color-kaki);
+  cursor: pointer;
+}
+
+.enroll-consent span {
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--color-text-light);
+}
+
 .enroll-cta {
   width: 100%;
   padding: 0.875rem;

@@ -14,7 +14,7 @@
       "nachhaltige Animation",
       "CO₂-Bilanzierung"
     ],
-    "titleSuffix": "Schritt für Schritt",
+    "titleSuffix": "step by step",
     "tagline": "Online-Kurse für nachhaltige Film- und TV-Produktion.",
     "subtitle": "",
     "ctaStart": "Ausbildung starten",
@@ -46,7 +46,8 @@
       "Werbeprofis",
       "Sender und Streaming-Plattformen",
       "alle, die nachhaltiger arbeiten möchten"
-    ]
+    ],
+    "titleSuffixNote": "Schritt für Schritt"
   },
   "courses": {
     "introGreenProduction": {

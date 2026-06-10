@@ -14,7 +14,7 @@
       "à l'animation éco-responsable",
       "au bilan carbone"
     ],
-    "titleSuffix": "étape par étape",
+    "titleSuffix": "step by step",
     "tagline": "Plateforme d'e-learning pour les professionnels du cinéma et de l'audiovisuel.",
     "subtitle": "",
     "ctaStart": "Commencer ma formation",
@@ -46,7 +46,8 @@
       "les professionnels de la publicité",
       "les diffuseurs et plateformes",
       "celles et ceux qui veulent un métier plus responsable"
-    ]
+    ],
+    "titleSuffixNote": "étape par étape"
   },
   "courses": {
     "introGreenProduction": {
@@ -170,7 +171,8 @@
     "notFound": "Cours introuvable.",
     "notConfigured": "Package SCORM non configuré",
     "notConfiguredDesc": "Déposez votre package SCORM dans <code>public/scorm/{{courseId}}/</code> et mettez à jour la configuration du cours.",
-    "modules": "modules"
+    "modules": "modules",
+    "demoNotice": "Le site est en démo et les fichiers sont trop lourds, il faut imaginer que le cours est là !"
   },
   "enroll": {
     "duration": "Durée",
@@ -187,7 +189,9 @@
       "title": "Inscription annulée",
       "message": "Votre paiement a été annulé. Aucun frais n'a été prélevé.",
       "cta": "Réessayer"
-    }
+    },
+    "withdrawalConsent": "Je demande à accéder immédiatement à la formation et je reconnais renoncer expressément à mon droit de rétractation de 14 jours dès l'ouverture de l'accès (art. L221-28 13° du Code de la consommation).",
+    "consentRequired": "Veuillez accepter la renonciation au droit de rétractation pour continuer."
   },
   "admin": {
     "title": "Gestion des cohortes",
@@ -328,7 +332,9 @@
     "copyright": "© 2025 StepUP. Tous droits réservés.",
     "ecoprodDesc": "Initiative collective dédiée à l'accompagnement de la transition écologique de l'industrie audiovisuelle et cinématographique.",
     "eurimagesDesc": "Fonds du Conseil de l'Europe pour la coproduction, la distribution et l'exploitation des œuvres cinématographiques européennes.",
-    "visitWebsite": "Visiter le site"
+    "visitWebsite": "Visiter le site",
+    "notice": "Mentions légales",
+    "sales": "Conditions de vente"
   },
   "legal": {
     "lastUpdated": "Dernière mise à jour",
@@ -359,6 +365,50 @@
       "rightsText": "Conformément au Règlement général sur la protection des données (RGPD), vous disposez d'un droit d'accès, de rectification, de suppression et de portabilité de vos données personnelles. Vous pouvez également vous opposer au traitement de vos données ou en demander la limitation. Pour exercer ces droits, contactez-nous à privacy@stepup-platform.eu.",
       "contact": "Contact",
       "contactText": "Pour toute question relative à cette politique de confidentialité ou à la protection des données, veuillez contacter notre Délégué à la protection des données à privacy@stepup-platform.eu."
+    },
+    "notice": {
+      "title": "Mentions légales",
+      "intro": "Conformément aux dispositions des articles 6-III et 19 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique (LCEN), les utilisateurs du site et de la plateforme StepUP sont informés de l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.",
+      "editor": "Éditeur du site",
+      "editorName": "Raison sociale",
+      "editorStatus": "Statut juridique",
+      "editorStatusValue": "Association à but non lucratif régie par la loi du 1er juillet 1901",
+      "editorAddress": "Siège social",
+      "editorSiret": "Numéro SIRET",
+      "editorEmail": "Contact",
+      "publication": "Directeur de la publication",
+      "publicationText": "Le directeur de la publication est Pervenche Beurier, déléguée générale de l'association Ecoprod.",
+      "hosting": "Hébergement",
+      "hostingText": "Le site est actuellement hébergé par GitHub, Inc., 88 Colin P. Kelly Jr Street, San Francisco, CA 94107, États-Unis. Cette information sera mise à jour en cas de migration vers un autre hébergeur.",
+      "ip": "Propriété intellectuelle",
+      "ipText": "L'ensemble des contenus de la plateforme StepUP (cours e-learning, webinaires, vidéos, textes, éléments graphiques, logos et logiciels) est protégé par le droit de la propriété intellectuelle et reste la propriété de l'association Ecoprod, d'Eurimages ou de leurs concédants respectifs. Toute reproduction, représentation ou diffusion, totale ou partielle, sans autorisation écrite préalable est interdite.",
+      "data": "Données personnelles",
+      "dataText": "Le traitement de vos données personnelles est décrit dans notre Politique de confidentialité, accessible depuis le pied de page du site.",
+      "contact": "Contact",
+      "contactText": "Pour toute question relative au site ou aux présentes mentions légales, vous pouvez nous écrire à stepup@ecoprod.com."
+    },
+    "sales": {
+      "title": "Conditions générales de vente",
+      "object": "1. Objet et champ d'application",
+      "objectText": "Les présentes conditions générales de vente (CGV) régissent la vente des formations en ligne (e-learning) proposées par l'association Ecoprod via la plateforme StepUP. Toute commande d'une formation payante implique l'acceptation pleine et entière des présentes CGV par l'utilisateur.",
+      "services": "2. Description des formations",
+      "servicesText": "StepUP propose des modules de formation en ligne au format SCORM, accessibles à distance depuis un navigateur web après création d'un compte. Certaines formations sont gratuites, d'autres sont payantes. Le descriptif, la durée estimée et le contenu de chaque formation sont précisés sur sa fiche.",
+      "price": "3. Prix",
+      "priceText": "Les prix sont indiqués en euros. L'association Ecoprod étant non assujettie à la TVA (le cas échéant), la mention « TVA non applicable, art. 293 B du CGI » peut s'appliquer. Le prix applicable est celui affiché sur la fiche de la formation au moment de la commande. Ecoprod se réserve le droit de modifier ses prix à tout moment, étant entendu que la formation est facturée sur la base du tarif en vigueur lors de la validation de la commande.",
+      "order": "4. Commande et paiement",
+      "orderText": "La commande est validée après sélection de la formation, acceptation des présentes CGV et paiement en ligne. Le paiement s'effectue par carte bancaire via notre prestataire de paiement sécurisé Stripe. Ecoprod n'a pas accès aux données bancaires de l'utilisateur. La commande est confirmée par l'envoi d'un e-mail récapitulatif.",
+      "access": "5. Accès à la formation",
+      "accessText": "L'accès à la formation est ouvert immédiatement après confirmation du paiement, depuis le tableau de bord de l'utilisateur. L'accès est strictement personnel : les identifiants de connexion ne doivent pas être partagés. La progression et les résultats de l'utilisateur sont enregistrés afin de permettre la reprise de la formation et l'édition d'une attestation de suivi.",
+      "withdrawal": "6. Droit de rétractation",
+      "withdrawalText": "Conformément à l'article L221-18 du Code de la consommation, le consommateur dispose en principe d'un délai de 14 jours pour exercer son droit de rétractation. Toutefois, s'agissant d'un contenu numérique fourni sur un support immatériel dont l'exécution commence immédiatement, l'utilisateur reconnaît, en validant sa commande, renoncer expressément à son droit de rétractation dès le début de l'accès à la formation, conformément à l'article L221-28 13° du Code de la consommation. Aucun remboursement ne pourra être réclamé une fois l'accès à la formation ouvert.",
+      "duration": "7. Durée d'accès",
+      "durationText": "Sauf mention contraire sur la fiche de la formation, l'accès à une formation achetée est garanti pour une durée minimale précisée lors de l'achat à compter de la confirmation du paiement. Ecoprod s'efforce d'assurer la disponibilité de la plateforme mais ne saurait être tenue responsable d'une indisponibilité temporaire pour maintenance ou cas de force majeure.",
+      "certificate": "8. Attestation de suivi",
+      "certificateText": "À l'issue d'une formation suivie dans les conditions requises (notamment le taux de complétion exigé), une attestation de suivi pourra être délivrée à l'utilisateur. Cette attestation atteste uniquement du suivi de la formation. Elle ne constitue en aucun cas un diplôme, un titre, ni une certification professionnelle reconnue par l'État. Les formations StepUP ne sont pas certifiées Qualiopi et ne sont pas enregistrées au Répertoire national des certifications professionnelles (RNCP) ni au Répertoire spécifique (RS). À ce titre, elles ne sont pas éligibles à un financement au titre de la formation professionnelle (CPF, OPCO, etc.), sauf mention expresse contraire sur la fiche de la formation.",
+      "claims": "9. Réclamations et médiation",
+      "claimsText": "Toute réclamation peut être adressée à stepup@ecoprod.com. Conformément aux articles L612-1 et suivants du Code de la consommation, le consommateur a le droit de recourir gratuitement à un médiateur de la consommation en vue de la résolution amiable d'un litige. [Les coordonnées du médiateur compétent seront précisées ici.]",
+      "law": "10. Droit applicable et litiges",
+      "lawText": "Les présentes CGV sont soumises au droit français. En cas de litige, et à défaut de résolution amiable, les tribunaux français seront compétents. Les utilisateurs résidant dans l'Union européenne peuvent également recourir à la plateforme de règlement en ligne des litiges de la Commission européenne."
     }
   },
   "common": {

@@ -4,6 +4,139 @@
   gap: 1.25rem;
 }
 
+/* Segmented cohort switcher (only shown when there are 2+ cohorts) */
+.cohort-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.3rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  align-self: flex-start;
+  max-width: 100%;
+}
+
+.cohort-switch-btn {
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-family);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.cohort-switch-btn:hover {
+  color: var(--color-kaki);
+}
+
+.cohort-switch-btn.active {
+  background: var(--color-white);
+  color: var(--color-kaki);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Unified cohort header (name, course, dates, capacity, status summary) */
+.cohort-board-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.125rem 1.25rem;
+}
+
+.cohort-board-title h2 {
+  font-size: 1.05rem;
+  color: var(--color-text);
+  margin-bottom: 0.15rem;
+}
+
+.cohort-board-course {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
+
+.cohort-board-meta {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cohort-board-dates {
+  font-size: 0.82rem;
+  color: var(--color-text-light);
+}
+
+.cohort-board-dates strong {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.cohort-capacity {
+  text-align: right;
+}
+
+.cohort-capacity-text {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.2rem;
+}
+
+.cohort-capacity-bar {
+  width: 96px;
+  height: 4px;
+  background: var(--color-border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.cohort-capacity-fill {
+  height: 100%;
+  background: var(--color-kaki);
+  border-radius: 2px;
+}
+
+.cohort-status-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.cohort-mini-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.2rem 0.55rem;
+  border-radius: 10px;
+}
+
+.cohort-mini-badge.status-never_connected {
+  background: rgba(122, 122, 56, 0.12);
+  color: #7a7a38;
+}
+
+.cohort-mini-badge.status-not_started {
+  background: rgba(250, 0, 63, 0.1);
+  color: #fa003f;
+}
+
+.cohort-mini-badge.status-in_progress {
+  background: rgba(136, 136, 136, 0.12);
+  color: #666;
+}
+
+.cohort-mini-badge.status-completed {
+  background: rgba(189, 198, 9, 0.15);
+  color: #8a9107;
+}
+
 .cohort-tracker-controls {
   display: flex;
   gap: 0.875rem;

@@ -35,3 +35,29 @@
 .scorm-player-empty h3 {
   color: var(--color-text);
 }
+
+.scorm-player-demo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  min-height: 500px;
+  padding: 3rem 2rem;
+  text-align: center;
+  background: linear-gradient(160deg, var(--color-bg) 0%, var(--color-white) 100%);
+}
+
+.scorm-player-demo-icon {
+  color: var(--color-pomme);
+  opacity: 0.9;
+}
+
+.scorm-player-demo-text {
+  max-width: 30rem;
+  color: var(--color-kaki);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.6;
+}

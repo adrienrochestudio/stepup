@@ -12,6 +12,8 @@ import EnrollCancel from './pages/EnrollCancel';
 import Partners from './pages/Partners';
 import LegalTerms from './pages/LegalTerms';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import MentionsLegales from './pages/MentionsLegales';
+import SalesTerms from './pages/SalesTerms';
 
 // Heavy, occasionally-visited routes are code-split so their large
 // dependencies stay out of the initial bundle:
@@ -33,6 +35,8 @@ export default function App() {
         <Route path="/about/partners" element={<Partners />} />
         <Route path="/terms" element={<LegalTerms />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/legal-notice" element={<MentionsLegales />} />
+        <Route path="/terms-of-sale" element={<SalesTerms />} />
         <Route path="/login" element={<Login />} />
 
         <Route element={<ProtectedRoute />}>

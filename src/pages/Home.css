@@ -56,6 +56,21 @@
   display: block;
 }
 
+.home-hero-asterisk {
+  font-size: 0.6em;
+  vertical-align: super;
+  color: var(--color-text-light);
+}
+
+/* Discreet translation of the always-English "step by step" suffix. */
+.home-hero-footnote {
+  font-size: 0.7rem;
+  font-style: italic;
+  color: var(--color-text-light);
+  opacity: 0.7;
+  margin-bottom: 0.5rem;
+}
+
 .home-tagline {
   color: var(--color-text-light);
   font-size: 1.1rem;
@@ -493,22 +508,13 @@
   margin-bottom: 1rem;
 }
 
-.home-newsletter-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: var(--color-pomme);
+/* Newsletter call-to-action is a bold inline text link (not a button) that
+   highlights when hovered/clicked — see .link-highlight in global.css. */
+.home-newsletter-link {
+  display: inline-block;
   color: var(--color-kaki);
-  padding: 0.55rem 1.5rem;
-  border-radius: var(--radius-sm);
   font-weight: 700;
-  font-size: 0.85rem;
-  transition: opacity var(--transition-fast), transform var(--transition-fast);
-}
-
-.home-newsletter-btn:hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
+  font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {

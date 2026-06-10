@@ -14,7 +14,7 @@
       "l'animazione sostenibile",
       "a calcolare l'impronta di carbonio"
     ],
-    "titleSuffix": "passo dopo passo",
+    "titleSuffix": "step by step",
     "tagline": "Corsi online per i professionisti del cinema e dell'audiovisivo.",
     "subtitle": "",
     "ctaStart": "Inizia la formazione",
@@ -46,7 +46,8 @@
       "professionisti della pubblicità",
       "emittenti e piattaforme",
       "chi vuole lavorare in modo più sostenibile"
-    ]
+    ],
+    "titleSuffixNote": "passo dopo passo"
   },
   "courses": {
     "introGreenProduction": {

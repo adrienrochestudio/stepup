@@ -12,6 +12,7 @@ export default function Enroll() {
   const { t } = useTranslation();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [withdrawalConsent, setWithdrawalConsent] = useState(false);
 
   const course = allCourses.find((c) => c.id === courseId);
 
@@ -19,8 +20,18 @@ export default function Enroll() {
     return <div className="enroll-page"><p className="enroll-not-found">{t('enroll.notFound')}</p></div>;
   }
 
+  // La renonciation au droit de rétractation n'est requise que pour les
+  // formations payantes (contenu numérique fourni immédiatement).
+  const isPaid = course.price > 0;
+
   const handleCheckout = async () => {
     setError('');
+
+    if (isPaid && !withdrawalConsent) {
+      setError(t('enroll.consentRequired'));
+      return;
+    }
+
     setLoading(true);
 
     try {
@@ -65,7 +76,22 @@ export default function Enroll() {
             <span className="enroll-price-currency"> €</span>
           </div>
 
-          <button className="enroll-cta" onClick={handleCheckout} disabled={loading}>
+          {isPaid && (
+            <label className="enroll-consent">
+              <input
+                type="checkbox"
+                checked={withdrawalConsent}
+                onChange={(e) => setWithdrawalConsent(e.target.checked)}
+              />
+              <span>{t('enroll.withdrawalConsent')}</span>
+            </label>
+          )}
+
+          <button
+            className="enroll-cta"
+            onClick={handleCheckout}
+            disabled={loading || (isPaid && !withdrawalConsent)}
+          >
             {loading ? t('enroll.redirecting') : t('enroll.enrollNow')}
           </button>
 
