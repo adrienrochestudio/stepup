@@ -18,20 +18,27 @@ function subcategoryLabel(t, subKey, rawLabel) {
 
 function renderContent(text) {
   if (!text) return null;
+  // Capturing group → split keeps the URLs at odd indices. We then peel any
+  // trailing punctuation (e.g. a closing paren or period that follows a URL
+  // in prose) off the link so the href stays valid and the punctuation
+  // renders as plain text.
   const urlRegex = /(https?:\/\/[^\s]+)/g;
   return text.split('\n').map((line, i) => {
     const parts = line.split(urlRegex);
     return (
       <p key={i} className="content-line">
-        {parts.map((part, j) =>
-          urlRegex.test(part) ? (
-            <a key={j} href={part} target="_blank" rel="noopener noreferrer">
-              {part}
-            </a>
-          ) : (
-            <span key={j}>{part}</span>
-          ),
-        )}
+        {parts.map((part, j) => {
+          if (j % 2 === 0) return <span key={j}>{part}</span>;
+          const [, href, trailing] = part.match(/^(.*?)([.,;:)\]]*)$/);
+          return (
+            <span key={j}>
+              <a href={href} target="_blank" rel="noopener noreferrer">
+                {href}
+              </a>
+              {trailing}
+            </span>
+          );
+        })}
       </p>
     );
   });
