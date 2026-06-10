@@ -71,6 +71,7 @@ export default function Home() {
         </div>
       </section>
 
+      <div className="home-courses-band">
       <section className="home-latest">
         <div className="home-latest-card" onClick={() => handleCourseClick(latestCourse)}>
           <div className="home-latest-badge">{t('home.newBadge')}</div>
@@ -130,6 +131,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      </div>
 
       <section className="home-partners-section">
         <p className="home-partners-intro">{t('home.partnersIntro')}</p>

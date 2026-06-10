@@ -13,40 +13,16 @@ export default function Footer() {
   return (
     <footer className="site-footer">
       <div className="footer-content">
-        <div className="footer-top">
-          <div className="footer-org">
-            <h4>Ecoprod</h4>
-            <p>{t('footer.ecoprodDesc')}</p>
-            <a
-              href={getEcoprodUrl(currentLang)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="footer-org-link"
-            >
-              {t('footer.visitWebsite')}
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
-              </svg>
-            </a>
+        <div className="footer-main">
+          <div className="footer-brand">
+            <img
+              src={`${import.meta.env.BASE_URL}logo.png`}
+              alt="StepUP"
+              className="footer-logo"
+            />
+            <p>{t('home.partnersIntro')}</p>
           </div>
-          <div className="footer-org">
-            <h4>Eurimages</h4>
-            <p>{t('footer.eurimagesDesc')}</p>
-            <a
-              href="https://www.coe.int/en/web/eurimages"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="footer-org-link"
-            >
-              {t('footer.visitWebsite')}
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
-              </svg>
-            </a>
-          </div>
-        </div>
 
-        <div className="footer-columns">
           <div className="footer-col">
             <h4>{t('footer.resources')}</h4>
             <ul>
@@ -72,14 +48,11 @@ export default function Footer() {
                   Ecoprod
                 </a>
               </li>
-            </ul>
-          </div>
-
-          <div className="footer-col">
-            <h4>{t('footer.legal')}</h4>
-            <ul>
-              <li><Link to="/terms">{t('footer.terms')}</Link></li>
-              <li><Link to="/privacy">{t('footer.privacy')}</Link></li>
+              <li>
+                <a href="https://www.coe.int/en/web/eurimages" target="_blank" rel="noopener noreferrer">
+                  Eurimages
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -89,10 +62,6 @@ export default function Footer() {
               <li><a href="mailto:stepup@ecoprod.com">stepup@ecoprod.com</a></li>
             </ul>
           </div>
-        </div>
-
-        <div className="footer-initiative">
-          <p>{t('about.initiativeBanner')}</p>
         </div>
 
         <div className="footer-bottom">

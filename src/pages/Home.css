@@ -34,13 +34,21 @@
   display: block;
 }
 
+/* Sized so the longest rotating phrase fits on one line at the same
+   font size as the fixed lines. */
 .home-hero h1 {
   color: var(--color-kaki);
-  font-size: 2.75rem;
+  font-size: clamp(1.5rem, 1rem + 1.6vw, 2.3rem);
   font-weight: 700;
   letter-spacing: -0.03em;
   margin-bottom: 0.75rem;
-  line-height: 1.15;
+  line-height: 1.2;
+}
+
+.home-hero h1 .rotating-word {
+  font-size: 1em;
+  line-height: 1.2;
+  height: 1.2em;
 }
 
 .home-hero-line {
@@ -67,6 +75,7 @@
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* Rotating audience line under the CTAs — same flip as the title,
@@ -75,6 +84,7 @@
   margin-top: 1.5rem;
   color: var(--color-text-light);
   font-size: 0.9rem;
+  text-align: center;
 }
 
 .home-audience .rotating-word {
@@ -118,11 +128,21 @@
   background: rgba(61, 71, 18, 0.04);
 }
 
+/* Courses band — groups the highlight and the catalog on a tinted
+   background so the section reads as one block. */
+.home-courses-band {
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border-light);
+  border-bottom: 1px solid var(--color-border-light);
+  padding: 3rem 0 3.5rem;
+  margin-top: 1.5rem;
+}
+
 /* Latest course highlight */
 .home-latest {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 2rem 3rem;
+  padding: 0 2rem 2.5rem;
   width: 100%;
 }
 
@@ -130,7 +150,7 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  background: var(--color-bg);
+  background: var(--color-white);
   border-radius: var(--radius-md);
   padding: 2rem;
   position: relative;
@@ -213,15 +233,26 @@
 .home-catalog {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 2rem 3rem;
+  padding: 0 2rem;
   width: 100%;
 }
 
 .home-catalog h2 {
-  color: var(--color-text);
-  font-size: 1.25rem;
+  color: var(--color-kaki);
+  font-size: 1.4rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.home-catalog h2::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--color-pomme);
+  margin: 0.6rem auto 0;
 }
 
 .home-catalog-grid {
@@ -333,16 +364,17 @@
 .home-partners-section {
   max-width: 960px;
   margin: 0 auto;
-  padding: 1rem 2rem 3rem;
+  padding: 3.5rem 2rem;
   width: 100%;
   position: relative;
 }
 
 .home-partners-intro {
   text-align: center;
-  color: var(--color-text-light);
-  font-size: 0.9rem;
-  margin-bottom: 1.25rem;
+  color: var(--color-text);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
 }
 
 .home-partner-logos {
@@ -436,26 +468,25 @@
   background: #2e3510;
 }
 
-/* Newsletter section */
+/* Newsletter — strong full-width band before the footer */
 .home-newsletter {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 2rem 2rem 4rem;
+  background: var(--color-kaki);
+  padding: 3rem 2rem;
   width: 100%;
   text-align: center;
 }
 
 .home-newsletter h2 {
-  color: var(--color-kaki);
-  font-size: 1.25rem;
+  color: var(--color-white);
+  font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
 .home-newsletter p {
-  color: var(--color-text-light);
-  font-size: 0.88rem;
-  margin-bottom: 1.25rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
 }
 
 .home-newsletter-btn {
@@ -489,13 +520,6 @@
     max-width: 360px;
   }
 
-  .home-cta {
-    justify-content: center;
-  }
-
-  .home-hero h1 {
-    font-size: 2rem;
-  }
 
   .home-latest {
     padding: 0 1.5rem 2rem;
@@ -538,7 +562,7 @@
   }
 
   .home-newsletter {
-    padding: 1.5rem 1.5rem 3rem;
+    padding: 2.5rem 1.5rem;
   }
 }
 
