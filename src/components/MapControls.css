@@ -6,7 +6,13 @@
   z-index: 20;
 }
 
-.map-controls-bar {
+/* Search lives on its own row, visually separated from the filters below. */
+.map-controls-search {
+  padding: 0.625rem 1rem;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.map-controls-filters {
   display: flex;
   align-items: center;
   gap: 0.625rem;
@@ -14,12 +20,21 @@
   flex-wrap: wrap;
 }
 
+.map-filters-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
 .map-search {
   display: flex;
   align-items: center;
   gap: 0.45rem;
-  min-width: 180px;
-  max-width: 220px;
+  width: 100%;
+  max-width: 320px;
   position: relative;
 }
 

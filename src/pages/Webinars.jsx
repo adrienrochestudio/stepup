@@ -37,7 +37,6 @@ export default function Webinars() {
           </p>
         </div>
         <div className="webinars-search">
-          <span>&#128269;</span>
           <input
             type="text"
             placeholder={t('webinars.searchPlaceholder')}

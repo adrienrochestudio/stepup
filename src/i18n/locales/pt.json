@@ -35,7 +35,18 @@
     "newsletterDesc": "Subscreva a nossa newsletter para novidades sobre produção sustentável.",
     "newsletterCta": "Subscrever newsletter",
     "partnersIntro": "StepUP é uma iniciativa da Eurimages desenvolvida pela Ecoprod.",
-    "audienceLine": "Cursos concebidos para produtoras, profissionais de cinema, TV, animação e publicidade, equipas técnicas, escolas e estudantes — e para quem quer trabalhar de forma mais sustentável."
+    "audiencePrefix": "Cursos concebidos para",
+    "audienceRotating": [
+      "produtoras",
+      "profissionais de cinema e TV",
+      "profissionais de animação",
+      "equipas técnicas",
+      "escolas de cinema e audiovisual",
+      "estudantes",
+      "profissionais de publicidade",
+      "emissoras e plataformas",
+      "quem quer trabalhar de forma mais sustentável"
+    ]
   },
   "courses": {
     "introGreenProduction": {
@@ -89,7 +100,8 @@
       "trainings": "Formações",
       "tools": "Calculadoras e ferramentas",
       "networks": "Redes de profissionais"
-    }
+    },
+    "filterLabel": "Filtrar por tema"
   },
   "webinars": {
     "title": "Webinars",

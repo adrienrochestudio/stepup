@@ -74,7 +74,7 @@ export default function MapControls({
 
   return (
     <div className="map-controls">
-      <div className="map-controls-bar">
+      <div className="map-controls-search">
         <form className="map-search" onSubmit={handleSearchSubmit} autoComplete="off">
           <svg className="map-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <circle cx="11" cy="11" r="8" />
@@ -111,7 +111,10 @@ export default function MapControls({
             <span className="map-search-noresult">{t('map.noResults')}</span>
           )}
         </form>
+      </div>
 
+      <div className="map-controls-filters">
+        <span className="map-filters-label">{t('map.filterLabel')}</span>
         <div className="map-category-tabs">
           {categoryKeys.map((catKey) => {
             const hasActive = hasCategoryActive(catKey);

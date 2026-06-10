@@ -32,7 +32,18 @@
     "eurimagesDesc": "Fondo del Consejo de Europa para la coproducción, distribución, exhibición y digitalización de obras cinematográficas europeas. Apoyo a la industria cinematográfica europea y a la diversidad cultural desde 1988.",
     "eurimagesCta": "Visitar eurimages.org",
     "partnersIntro": "StepUP es una iniciativa de Eurimages desarrollada por Ecoprod.",
-    "audienceLine": "Cursos diseñados para productoras, profesionales del cine, la TV, la animación y la publicidad, equipos técnicos, escuelas y estudiantes — y para quienes quieren trabajar de forma más sostenible."
+    "audiencePrefix": "Cursos diseñados para",
+    "audienceRotating": [
+      "productoras",
+      "profesionales del cine y la TV",
+      "profesionales de la animación",
+      "equipos técnicos",
+      "escuelas de cine y audiovisual",
+      "estudiantes",
+      "profesionales de la publicidad",
+      "cadenas y plataformas",
+      "quienes quieren trabajar de forma más sostenible"
+    ]
   },
   "courses": {
     "introGreenProduction": {
@@ -86,7 +97,8 @@
       "trainings": "Formaciones",
       "tools": "Calculadoras y herramientas",
       "networks": "Redes de profesionales"
-    }
+    },
+    "filterLabel": "Filtrar por tema"
   },
   "webinars": {
     "title": "Webinarios",

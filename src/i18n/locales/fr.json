@@ -35,7 +35,18 @@
     "newsletterDesc": "Abonnez-vous à notre newsletter pour suivre l'actualité de l'éco-production.",
     "newsletterCta": "S'abonner à la newsletter",
     "partnersIntro": "StepUP est une initiative d'Eurimages développée par Ecoprod.",
-    "audienceLine": "Des cours conçus pour les sociétés de production, les professionnels du cinéma, de la télévision, de l'animation et de la publicité, les équipes techniques, les écoles, les étudiants — et toutes celles et ceux qui veulent un métier plus responsable."
+    "audiencePrefix": "Des cours conçus pour",
+    "audienceRotating": [
+      "les sociétés de production",
+      "les professionnels du cinéma",
+      "les professionnels de l'animation",
+      "les équipes techniques",
+      "les écoles de cinéma et d'audiovisuel",
+      "les étudiants",
+      "les professionnels de la publicité",
+      "les diffuseurs et plateformes",
+      "celles et ceux qui veulent un métier plus responsable"
+    ]
   },
   "courses": {
     "introGreenProduction": {
@@ -67,7 +78,7 @@
     "legendNoData": "Pas encore de données",
     "categories": {
       "generalInfo": "Informations générales",
-      "sustainability": "Durabilité & logistique",
+      "sustainability": "Logistique",
       "resources": "Ressources"
     },
     "loadError": "Impossible de charger la carte. Vérifiez votre connexion.",
@@ -89,7 +100,8 @@
       "trainings": "Formations",
       "tools": "Calculateurs et outils",
       "networks": "Réseaux de professionnels"
-    }
+    },
+    "filterLabel": "Filtrer par thème"
   },
   "webinars": {
     "title": "Webinaires",

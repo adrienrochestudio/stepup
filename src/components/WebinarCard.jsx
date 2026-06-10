@@ -10,7 +10,20 @@ export default function WebinarCard({ webinar, onClick }) {
   return (
     <article className="webinar-card" onClick={() => onClick(webinar)}>
       <div className="webinar-card-thumb">
-        <div className="webinar-card-play">&#9654;</div>
+        {webinar.thumbnail && (
+          <img
+            src={webinar.thumbnail}
+            alt=""
+            className="webinar-card-thumb-img"
+            loading="lazy"
+            onError={(e) => { e.currentTarget.style.display = 'none'; }}
+          />
+        )}
+        <div className="webinar-card-play" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </div>
         <span className="webinar-card-duration">{webinar.duration}</span>
       </div>
       <div className="webinar-card-body">

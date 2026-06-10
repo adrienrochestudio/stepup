@@ -7,7 +7,7 @@ export const mockWebinars = [
     duration: '60 min',
     speaker: 'StepUP',
     embedUrl: 'https://s.streamlike.com/gmafjq',
-    thumbnail: null,
+    thumbnail: 'https://cfcdn.streamlike.com/c/bb739bec60362566/medias/003ee8689df57e8a/cover/cover.jpg',
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const mockWebinars = [
     duration: '55 min',
     speaker: 'StepUP',
     embedUrl: 'https://s.streamlike.com/hnjkqw',
-    thumbnail: null,
+    thumbnail: 'https://cfcdn.streamlike.com/c/bb739bec60362566/medias/9e16807c221313a1/cover/cover.jpg',
   },
   {
     id: 3,
@@ -27,6 +27,6 @@ export const mockWebinars = [
     duration: '60 min',
     speaker: 'StepUP',
     embedUrl: 'https://s.streamlike.com/nfnvxh',
-    thumbnail: null,
+    thumbnail: 'https://cfcdn.streamlike.com/c/bb739bec60362566/medias/9a4d867a5ded0e93/cover/cover.jpg',
   },
 ];

@@ -10,7 +10,14 @@ export default function CourseCard({ course, enrolled, onEnrollClick }) {
 
   const thumbContent = course.image
     ? <img src={course.image} alt={title} className="course-card-thumb-img" />
-    : <span className="course-card-thumb-icon">&#128218;</span>;
+    : (
+      <span className="course-card-thumb-icon" aria-hidden="true">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+        </svg>
+      </span>
+    );
 
   if (!enrolled) {
     return (
@@ -20,7 +27,6 @@ export default function CourseCard({ course, enrolled, onEnrollClick }) {
           {course.free && (
             <span className="course-card-badge badge-free">{t('courseCard.free')}</span>
           )}
-          {!course.free && <span className="course-card-lock-icon">&#128274;</span>}
         </div>
         <div className="course-card-body">
           <h3>{title}</h3>

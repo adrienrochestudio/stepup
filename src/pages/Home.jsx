@@ -58,7 +58,7 @@ export default function Home() {
             />
             <span className="home-hero-line">{t('home.titleSuffix')}</span>
           </h1>
-          <p className="home-audience">{t('home.audienceLine')}</p>
+          <p className="home-tagline">{t('home.tagline')}</p>
           <div className="home-cta">
             {user ? (
               <Link to="/dashboard" className="cta-primary">
@@ -103,6 +103,14 @@ export default function Home() {
 
       <section className="home-catalog">
         <h2>{t('home.courseCatalog')}</h2>
+        <p className="home-catalog-audience">
+          {t('home.audiencePrefix')}{' '}
+          <RotatingTitleWord
+            items={t('home.audienceRotating', { returnObjects: true })}
+            interval={2800}
+            variant="inline"
+          />
+        </p>
         <div className="home-catalog-grid">
           {otherCourses.map((course) => (
             <div

@@ -6,13 +6,29 @@ export const AuthContext = createContext(null);
 
 const MOCK_USER_KEY = 'stepup_mock_user';
 
+// DEV ONLY: while Firebase is not configured, always start signed in as a
+// cohort manager so the back-office is reachable without logging in.
+// Remove this default (revert to `null`) once real auth is wired up.
+const DEV_DEFAULT_USER = {
+  uid: 'dev-cohort-manager',
+  email: 'manager@stepup.dev',
+  displayName: 'Cohort Manager',
+  role: 'cohort_manager',
+  organizationName: 'StepUP Demo',
+};
+
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(() => {
     if (!isConfigured) {
       try {
         const saved = localStorage.getItem(MOCK_USER_KEY);
-        return saved ? JSON.parse(saved) : null;
-      } catch { return null; }
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          if (parsed?.role === 'cohort_manager') return parsed;
+        }
+      } catch { /* ignore */ }
+      localStorage.setItem(MOCK_USER_KEY, JSON.stringify(DEV_DEFAULT_USER));
+      return DEV_DEFAULT_USER;
     }
     return null;
   });

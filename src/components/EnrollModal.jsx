@@ -195,7 +195,11 @@ function GroupForm({ course, user }) {
   if (sent) {
     return (
       <div className="enroll-group-success">
-        <span className="enroll-group-success-icon">&#9989;</span>
+        <span className="enroll-group-success-icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M20 6 9 17l-5-5" />
+          </svg>
+        </span>
         <p>{t('enrollModal.groupSent')}</p>
       </div>
     );

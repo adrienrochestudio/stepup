@@ -109,7 +109,11 @@ export default function AddInfoModal({ onClose }) {
       <div className="addinfo-overlay" onClick={onClose}>
         <div className="addinfo-modal" onClick={(e) => e.stopPropagation()}>
           <div className="addinfo-success">
-            <div className="addinfo-success-icon">✓</div>
+            <div className="addinfo-success-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+            </div>
             <h3>Thank you!</h3>
             <p>
               {mode === 'add'
@@ -226,7 +230,9 @@ export default function AddInfoModal({ onClose }) {
                           className={`addinfo-topic-chip ${selectedTopics.includes(field) ? 'active' : ''}`}
                           onClick={() => toggleTopic(field)}
                         >
-                          {selectedTopics.includes(field) ? '✓ ' : '+ '}
+                          <span className="addinfo-topic-chip-mark" aria-hidden="true">
+                            {selectedTopics.includes(field) ? '–' : '+'}
+                          </span>
                           {FIELD_LABELS[field]}
                         </button>
                       ))}
