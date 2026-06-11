@@ -75,6 +75,7 @@
     "clickHint": "Click a country in green to see its resources.",
     "addInfo": "Suggest a resource",
     "selectAll": "Select all",
+    "refine": "Refine",
     "clearAll": "Clear all",
     "noData": "No data available for this country yet.",
     "legendData": "Resources available",

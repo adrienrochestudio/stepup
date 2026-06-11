@@ -75,6 +75,7 @@
     "clickHint": "Cliquez sur un pays en vert pour voir ses ressources.",
     "addInfo": "Proposer une ressource",
     "selectAll": "Tout sélectionner",
+    "refine": "Affiner",
     "clearAll": "Tout effacer",
     "noData": "Aucune donnée disponible pour ce pays pour le moment.",
     "legendData": "Ressources disponibles",

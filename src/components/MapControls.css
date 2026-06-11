@@ -120,9 +120,7 @@
 
 .map-category-tab {
   display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  padding: 0.375rem 0.75rem;
+  align-items: stretch;
   border-radius: 20px;
   font-family: var(--font-family);
   font-size: 0.75rem;
@@ -130,7 +128,7 @@
   border: 1px solid var(--color-border);
   color: var(--color-text-light);
   background: var(--color-white);
-  cursor: pointer;
+  overflow: hidden;
   transition: all var(--transition-fast);
   white-space: nowrap;
 }
@@ -140,27 +138,72 @@
   color: var(--color-kaki);
 }
 
+/* Some sub-topics checked (partial selection): tinted. */
 .map-category-tab.active {
+  border-color: var(--color-kaki);
+  color: var(--color-kaki);
+  background: color-mix(in srgb, var(--color-kaki) 12%, var(--color-white));
+}
+
+/* Whole category selected: solid. */
+.map-category-tab.full {
   background: var(--color-kaki);
   color: var(--color-white);
   border-color: var(--color-kaki);
 }
 
-.map-category-tab.expanded {
-  border-color: var(--color-kaki);
-  color: var(--color-kaki);
+.map-cat-main,
+.map-cat-refine {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  transition: background var(--transition-fast);
 }
 
-.map-category-tab.active.expanded {
-  color: var(--color-white);
+.map-cat-main {
+  gap: 0.35rem;
+  padding: 0.375rem 0.55rem 0.375rem 0.45rem;
 }
 
-.tab-chevron {
+.map-cat-refine {
+  padding: 0.375rem 0.45rem;
+  border-left: 1px solid color-mix(in srgb, currentColor 22%, transparent);
+}
+
+.map-cat-refine:hover {
+  background: color-mix(in srgb, currentColor 12%, transparent);
+}
+
+.map-cat-refine svg {
   transition: transform var(--transition-fast);
 }
 
-.tab-chevron.open {
+.map-cat-refine.open svg {
   transform: rotate(180deg);
+}
+
+.map-cat-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  border: 1.5px solid currentColor;
+  font-size: 0.62rem;
+  line-height: 1;
+  opacity: 0.8;
+}
+
+.map-category-tab.full .map-cat-check {
+  background: var(--color-white);
+  color: var(--color-kaki);
+  border-color: var(--color-white);
+  opacity: 1;
 }
 
 .map-category-panel {
@@ -178,24 +221,6 @@
     opacity: 1;
     max-height: 200px;
   }
-}
-
-.map-panel-toggle {
-  display: flex;
-  align-items: center;
-  gap: 0.45rem;
-  font-size: 0.78rem;
-  font-weight: 500;
-  color: var(--color-text);
-  cursor: pointer;
-  margin-bottom: 0.375rem;
-}
-
-.map-panel-toggle input[type='checkbox'] {
-  accent-color: var(--color-kaki);
-  width: 14px;
-  height: 14px;
-  cursor: pointer;
 }
 
 .map-panel-subs {

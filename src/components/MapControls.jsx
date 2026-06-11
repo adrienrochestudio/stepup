@@ -62,16 +62,6 @@ export default function MapControls({
     ? getSubcategories(expandedCategory)
     : [];
 
-  const hasCategoryActive = (catKey) => {
-    const subs = getSubcategories(catKey);
-    return subs.some((s) => activeFilters.includes(s.fullKey));
-  };
-
-  const allCategoryActive = (catKey) => {
-    const subs = getSubcategories(catKey);
-    return subs.length > 0 && subs.every((s) => activeFilters.includes(s.fullKey));
-  };
-
   return (
     <div className="map-controls">
       <div className="map-controls-search">
@@ -117,35 +107,44 @@ export default function MapControls({
         <span className="map-filters-label">{t('map.filterLabel')}</span>
         <div className="map-category-tabs">
           {categoryKeys.map((catKey) => {
-            const hasActive = hasCategoryActive(catKey);
+            const subs = getSubcategories(catKey);
+            const activeCount = subs.filter((s) =>
+              activeFilters.includes(s.fullKey),
+            ).length;
+            const allActive = subs.length > 0 && activeCount === subs.length;
             const isExpanded = expandedCategory === catKey;
 
             return (
-              <button
+              <div
                 key={catKey}
-                className={`map-category-tab ${hasActive ? 'active' : ''} ${isExpanded ? 'expanded' : ''}`}
-                onClick={() => toggleExpand(catKey)}
+                className={`map-category-tab ${activeCount > 0 ? 'active' : ''} ${allActive ? 'full' : ''} ${isExpanded ? 'expanded' : ''}`}
               >
-                {t(`map.categories.${catKey}`)}
-                {hasActive && (
-                  <span className="tab-count">
-                    {expandedSubs.length > 0 && expandedCategory === catKey
-                      ? expandedSubs.filter((s) => activeFilters.includes(s.fullKey)).length
-                      : getSubcategories(catKey).filter((s) => activeFilters.includes(s.fullKey)).length}
-                  </span>
-                )}
-                <svg
-                  className={`tab-chevron ${isExpanded ? 'open' : ''}`}
-                  width="12"
-                  height="12"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
+                <button
+                  type="button"
+                  className="map-cat-main"
+                  onClick={() => onToggleAllCategory(catKey)}
+                  aria-pressed={activeCount > 0}
                 >
-                  <path d="m6 9 6 6 6-6" />
-                </svg>
-              </button>
+                  <span className="map-cat-check" aria-hidden="true">
+                    {allActive ? '✓' : ''}
+                  </span>
+                  {t(`map.categories.${catKey}`)}
+                  {activeCount > 0 && !allActive && (
+                    <span className="tab-count">{activeCount}</span>
+                  )}
+                </button>
+                <button
+                  type="button"
+                  className={`map-cat-refine ${isExpanded ? 'open' : ''}`}
+                  onClick={() => toggleExpand(catKey)}
+                  aria-label={t('map.refine')}
+                  title={t('map.refine')}
+                >
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </button>
+              </div>
             );
           })}
 
@@ -162,14 +161,6 @@ export default function MapControls({
 
       {expandedCategory && (
         <div className="map-category-panel">
-          <label className="map-panel-toggle">
-            <input
-              type="checkbox"
-              checked={allCategoryActive(expandedCategory)}
-              onChange={() => onToggleAllCategory(expandedCategory)}
-            />
-            <span>{t('map.selectAll')}</span>
-          </label>
           <div className="map-panel-subs">
             {expandedSubs.map((sub) => {
               const isActive = activeFilters.includes(sub.fullKey);
