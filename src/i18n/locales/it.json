@@ -35,19 +35,8 @@
     "newsletterDesc": "Iscriviti alla nostra newsletter per le ultime novità sulla produzione sostenibile.",
     "newsletterCta": "Iscriviti alla newsletter",
     "partnersIntro": "StepUP è un'iniziativa di Eurimages sviluppata da Ecoprod.",
-    "audiencePrefix": "Corsi pensati per",
-    "audienceRotating": [
-      "case di produzione",
-      "professionisti del cinema e della TV",
-      "professionisti dell'animazione",
-      "troupe tecniche",
-      "scuole di cinema e audiovisivo",
-      "studenti",
-      "professionisti della pubblicità",
-      "emittenti e piattaforme",
-      "chi vuole lavorare in modo più sostenibile"
-    ],
-    "titleSuffixNote": "passo dopo passo"
+    "titleSuffixNote": "passo dopo passo",
+    "audienceLine": "Corsi pensati per i professionisti del cinema, della televisione, dell'animazione e della pubblicità, oltre che per scuole e studenti."
   },
   "courses": {
     "introGreenProduction": {
@@ -379,5 +368,36 @@
   },
   "common": {
     "loading": "Caricamento..."
+  },
+  "addInfo": {
+    "title": "Proponi una risorsa",
+    "close": "Chiudi",
+    "cancel": "Annulla",
+    "submit": "Invia per revisione",
+    "modeAdd": "Aggiungi informazione",
+    "modeAddDesc": "Condividi una risorsa, un contatto o un fatto che conosci",
+    "modeAmend": "Non sono d'accordo con questa pagina",
+    "modeAmendDesc": "Suggerisci una correzione a un'informazione esistente",
+    "langNote": "Scrivi il tuo contributo in inglese. La mappa è consultata in tutto il mondo, quindi manteniamo tutte le voci in inglese per uniformità.",
+    "yourDetails": "I tuoi dati",
+    "fullName": "Nome completo",
+    "emailLabel": "E-mail",
+    "organization": "Organizzazione / Struttura",
+    "country": "Paese",
+    "countryPlaceholder": "es.: Germania, Spagna...",
+    "addQuestion": "Cosa vuoi condividere?",
+    "addHint": "Scegli solo i temi che conosci: un semplice link o consiglio aiuta già. Non devi mai compilare tutto.",
+    "fieldPlaceholder": "Un nome, un link, una breve descrizione, tutto ciò che è utile",
+    "amendQuestion": "Cosa andrebbe corretto?",
+    "amendHint": "Il tuo suggerimento non modifica direttamente la pagina. Viene inviato agli amministratori, che lo esaminano e lo convalidano.",
+    "sectionLabel": "Sezione interessata (facoltativo)",
+    "wholePage": "Intera pagina / non sono sicuro",
+    "correctionLabel": "La tua correzione",
+    "correctionPlaceholder": "Cosa è impreciso o obsoleto e cosa dovrebbe dire invece? Le fonti sono benvenute.",
+    "errNoTopic": "Scegli almeno un tema e scrivi qualche parola, ne basta una!",
+    "errNoCorrection": "Descrivi cosa pensi debba essere corretto.",
+    "thankYou": "Grazie!",
+    "successAdd": "Il tuo contributo è stato inviato per la revisione. Un amministratore convaliderà l'informazione prima della pubblicazione.",
+    "successAmend": "La tua richiesta di correzione è stata inviata agli amministratori. Nulla cambia nella pagina finché non viene esaminata e convalidata."
   }
 }

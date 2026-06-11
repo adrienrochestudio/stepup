@@ -35,19 +35,8 @@
     "newsletterDesc": "Subscribe to our newsletter for the latest on green production.",
     "newsletterCta": "Subscribe to newsletter",
     "partnersIntro": "StepUP is a Eurimages initiative developed by Ecoprod.",
-    "audiencePrefix": "Courses designed for",
-    "audienceRotating": [
-      "production companies",
-      "film & TV professionals",
-      "animation professionals",
-      "technical crews",
-      "film and media schools",
-      "students",
-      "advertising professionals",
-      "broadcasters and streamers",
-      "anyone who wants to work more sustainably"
-    ],
-    "titleSuffixNote": ""
+    "titleSuffixNote": "",
+    "audienceLine": "Courses built for professionals in film, TV, animation and advertising, as well as schools and students."
   },
   "courses": {
     "introGreenProduction": {
@@ -491,5 +480,36 @@
     "statusPending": "Pending",
     "requestedBy": "Requested by",
     "approve": "Approve"
+  },
+  "addInfo": {
+    "title": "Suggest a resource",
+    "close": "Close",
+    "cancel": "Cancel",
+    "submit": "Submit for review",
+    "modeAdd": "Add information",
+    "modeAddDesc": "Share a resource, contact or fact you know about",
+    "modeAmend": "I don't agree with this page",
+    "modeAmendDesc": "Suggest a correction to existing information",
+    "langNote": "Please write your contribution in English. The map is read worldwide, so we keep all entries in English for universality.",
+    "yourDetails": "Your details",
+    "fullName": "Full name",
+    "emailLabel": "Email",
+    "organization": "Organization / Structure",
+    "country": "Country",
+    "countryPlaceholder": "e.g. Germany, Spain...",
+    "addQuestion": "What would you like to share?",
+    "addHint": "Pick only the topics you know about, a single link or tip already helps. You never need to fill in everything.",
+    "fieldPlaceholder": "A name, a link, a short description, anything useful",
+    "amendQuestion": "What should be corrected?",
+    "amendHint": "Your suggestion will not change the page directly. It is sent to the administrators, who review and validate it first.",
+    "sectionLabel": "Section concerned (optional)",
+    "wholePage": "Whole page / not sure",
+    "correctionLabel": "Your correction",
+    "correctionPlaceholder": "What is inaccurate or outdated, and what should it say instead? Sources are welcome.",
+    "errNoTopic": "Pick at least one topic and write a few words, one is enough!",
+    "errNoCorrection": "Please describe what you think should be corrected.",
+    "thankYou": "Thank you!",
+    "successAdd": "Your contribution has been submitted for review. An administrator will validate the information before it is published.",
+    "successAmend": "Your correction request has been sent to the administrators. Nothing changes on the page until they review and validate it."
   }
 }

@@ -1,68 +1,41 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { categoryKeys } from '../data/countryData';
 import { addSubmission } from '../services/submissions';
 import './AddInfoModal.css';
 
-const CATEGORY_META = {
-  generalInfo: {
-    label: 'General Information',
-    fields: [
-      'greenProductionStatus',
-      'decarbonizationPlan',
-      'laws',
-      'socialLegislation',
-      'audiovisualRegulation',
-      'existingInitiatives',
-    ],
-  },
-  sustainability: {
-    label: 'Sustainability & Logistics',
-    fields: [
-      'trainTravel',
-      'electricCars',
-      'gridConnection',
-      'wasteManagement',
-      'socialRules',
-      'otherFacts',
-    ],
-  },
-  resources: {
-    label: 'Resources',
-    fields: [
-      'greenConsultants',
-      'consultancies',
-      'serviceProviders',
-      'trainings',
-      'tools',
-      'networks',
-      'caseStudies',
-    ],
-  },
-};
-
-const FIELD_LABELS = {
-  greenProductionStatus: 'Status of green production',
-  decarbonizationPlan: 'Decarbonization plan',
-  laws: 'Relevant national legislation',
-  socialLegislation: 'Social legislation',
-  audiovisualRegulation: 'Film & TV industry regulations and incentives',
-  existingInitiatives: 'Existing initiatives',
-  trainTravel: 'Train transport',
-  electricCars: 'Electric cars availability',
-  gridConnection: 'Grid connection',
-  wasteManagement: 'Waste management rules',
-  socialRules: 'Social rules (gender equality, inclusion)',
-  otherFacts: 'Other important facts',
-  greenConsultants: 'Eco-coordinators (hireable professionals & directories)',
-  consultancies: 'Sustainability consultancies (private firms)',
-  serviceProviders: 'Service providers',
-  trainings: 'Trainings',
-  tools: 'Calculators & tools',
-  networks: 'Networks for professionals',
-  caseStudies: 'Case studies & reports',
+// Topic fields per category. Labels are pulled from the already-translated
+// map.* keys so the form stays consistent with the map UI.
+const CATEGORY_FIELDS = {
+  generalInfo: [
+    'greenProductionStatus',
+    'decarbonizationPlan',
+    'laws',
+    'socialLegislation',
+    'audiovisualRegulation',
+    'existingInitiatives',
+  ],
+  sustainability: [
+    'trainTravel',
+    'electricCars',
+    'gridConnection',
+    'wasteManagement',
+    'socialRules',
+    'otherFacts',
+  ],
+  resources: [
+    'greenConsultants',
+    'consultancies',
+    'serviceProviders',
+    'trainings',
+    'tools',
+    'networks',
+    'caseStudies',
+  ],
 };
 
 export default function AddInfoModal({ onClose, initialCountry = '' }) {
+  const { t } = useTranslation();
   const [mode, setMode] = useState('add');
   const [formData, setFormData] = useState({
     name: '',
@@ -76,6 +49,9 @@ export default function AddInfoModal({ onClose, initialCountry = '' }) {
   const [selectedTopics, setSelectedTopics] = useState([]);
   const [error, setError] = useState('');
   const [submitted, setSubmitted] = useState(false);
+
+  const catLabel = (catKey) => t(`map.categories.${catKey}`);
+  const fieldLabel = (field) => t(`map.subcategories.${field}`);
 
   const toggleTopic = (field) => {
     setError('');
@@ -97,11 +73,11 @@ export default function AddInfoModal({ onClose, initialCountry = '' }) {
     if (mode === 'add') {
       const filled = selectedTopics.some((f) => formData.fields[f]?.trim());
       if (!filled) {
-        setError('Pick at least one topic and write a few words, one is enough!');
+        setError(t('addInfo.errNoTopic'));
         return;
       }
     } else if (!formData.amendmentText.trim()) {
-      setError('Please describe what you think should be corrected.');
+      setError(t('addInfo.errNoCorrection'));
       return;
     }
     // Stored locally until a real backend exists; the admin back-office
@@ -120,14 +96,10 @@ export default function AddInfoModal({ onClose, initialCountry = '' }) {
                 <path d="M20 6 9 17l-5-5" />
               </svg>
             </div>
-            <h3>Thank you!</h3>
-            <p>
-              {mode === 'add'
-                ? 'Your contribution has been submitted for review. An administrator will validate the information before it is published.'
-                : 'Your correction request has been sent to the administrators. Nothing changes on the page until they review and validate it.'}
-            </p>
+            <h3>{t('addInfo.thankYou')}</h3>
+            <p>{mode === 'add' ? t('addInfo.successAdd') : t('addInfo.successAmend')}</p>
             <button className="addinfo-btn-primary" onClick={onClose}>
-              Close
+              {t('addInfo.close')}
             </button>
           </div>
         </div>
@@ -139,8 +111,8 @@ export default function AddInfoModal({ onClose, initialCountry = '' }) {
     <div className="addinfo-overlay" onClick={onClose}>
       <div className="addinfo-modal" onClick={(e) => e.stopPropagation()}>
         <div className="addinfo-header">
-          <h2>Suggest a resource</h2>
-          <button className="addinfo-close" onClick={onClose}>
+          <h2>{t('addInfo.title')}</h2>
+          <button className="addinfo-close" onClick={onClose} aria-label={t('addInfo.close')}>
             ×
           </button>
         </div>
@@ -152,29 +124,26 @@ export default function AddInfoModal({ onClose, initialCountry = '' }) {
               className={`addinfo-mode-btn ${mode === 'add' ? 'active' : ''}`}
               onClick={() => { setMode('add'); setError(''); }}
             >
-              <strong>Add information</strong>
-              <span>Share a resource, contact or fact you know about</span>
+              <strong>{t('addInfo.modeAdd')}</strong>
+              <span>{t('addInfo.modeAddDesc')}</span>
             </button>
             <button
               type="button"
               className={`addinfo-mode-btn ${mode === 'amend' ? 'active' : ''}`}
               onClick={() => { setMode('amend'); setError(''); }}
             >
-              <strong>I don&apos;t agree with this page</strong>
-              <span>Suggest a correction to existing information</span>
+              <strong>{t('addInfo.modeAmend')}</strong>
+              <span>{t('addInfo.modeAmendDesc')}</span>
             </button>
           </div>
 
-          <p className="addinfo-lang-note">
-            Please write your contribution in English. The map is read
-            worldwide, so we keep all entries in English for universality.
-          </p>
+          <p className="addinfo-lang-note">{t('addInfo.langNote')}</p>
 
           <div className="addinfo-section addinfo-identity">
-            <h3>Your details</h3>
+            <h3>{t('addInfo.yourDetails')}</h3>
             <div className="addinfo-row">
               <label>
-                Full name *
+                {t('addInfo.fullName')} *
                 <input
                   type="text"
                   required
@@ -185,7 +154,7 @@ export default function AddInfoModal({ onClose, initialCountry = '' }) {
                 />
               </label>
               <label>
-                Email *
+                {t('addInfo.emailLabel')} *
                 <input
                   type="email"
                   required
@@ -196,7 +165,7 @@ export default function AddInfoModal({ onClose, initialCountry = '' }) {
                 />
               </label>
               <label>
-                Organization / Structure *
+                {t('addInfo.organization')} *
                 <input
                   type="text"
                   required
@@ -208,11 +177,11 @@ export default function AddInfoModal({ onClose, initialCountry = '' }) {
               </label>
             </div>
             <label>
-              Country *
+              {t('addInfo.country')} *
               <input
                 type="text"
                 required
-                placeholder="e.g. Germany, Spain..."
+                placeholder={t('addInfo.countryPlaceholder')}
                 value={formData.country}
                 onChange={(e) =>
                   setFormData({ ...formData, country: e.target.value })
@@ -223,46 +192,40 @@ export default function AddInfoModal({ onClose, initialCountry = '' }) {
 
           {mode === 'add' && (
             <div className="addinfo-section">
-              <h3>What would you like to share?</h3>
-              <p className="addinfo-hint">
-                Pick only the topics you know about, a single link or tip
-                already helps. You never need to fill in everything.
-              </p>
-              {categoryKeys.map((catKey) => {
-                const meta = CATEGORY_META[catKey];
-                return (
-                  <div key={catKey} className="addinfo-topic-group">
-                    <span className="addinfo-topic-group-label">{meta.label}</span>
-                    <div className="addinfo-topic-chips">
-                      {meta.fields.map((field) => (
-                        <button
-                          key={field}
-                          type="button"
-                          className={`addinfo-topic-chip ${selectedTopics.includes(field) ? 'active' : ''}`}
-                          onClick={() => toggleTopic(field)}
-                        >
-                          <span className="addinfo-topic-chip-mark" aria-hidden="true">
-                            {selectedTopics.includes(field) ? '–' : '+'}
-                          </span>
-                          {FIELD_LABELS[field]}
-                        </button>
-                      ))}
-                    </div>
+              <h3>{t('addInfo.addQuestion')}</h3>
+              <p className="addinfo-hint">{t('addInfo.addHint')}</p>
+              {categoryKeys.map((catKey) => (
+                <div key={catKey} className="addinfo-topic-group">
+                  <span className="addinfo-topic-group-label">{catLabel(catKey)}</span>
+                  <div className="addinfo-topic-chips">
+                    {CATEGORY_FIELDS[catKey].map((field) => (
+                      <button
+                        key={field}
+                        type="button"
+                        className={`addinfo-topic-chip ${selectedTopics.includes(field) ? 'active' : ''}`}
+                        onClick={() => toggleTopic(field)}
+                      >
+                        <span className="addinfo-topic-chip-mark" aria-hidden="true">
+                          {selectedTopics.includes(field) ? '–' : '+'}
+                        </span>
+                        {fieldLabel(field)}
+                      </button>
+                    ))}
                   </div>
-                );
-              })}
+                </div>
+              ))}
 
               {selectedTopics.length > 0 && (
                 <div className="addinfo-selected-topics">
                   {selectedTopics.map((field) => (
                     <label key={field} className="addinfo-field">
-                      {FIELD_LABELS[field]}
+                      {fieldLabel(field)}
                       <textarea
                         rows={3}
                         autoFocus={selectedTopics[selectedTopics.length - 1] === field}
                         value={formData.fields[field] || ''}
                         onChange={(e) => handleFieldChange(field, e.target.value)}
-                        placeholder="A name, a link, a short description, anything useful"
+                        placeholder={t('addInfo.fieldPlaceholder')}
                       />
                     </label>
                   ))}
@@ -273,25 +236,22 @@ export default function AddInfoModal({ onClose, initialCountry = '' }) {
 
           {mode === 'amend' && (
             <div className="addinfo-section">
-              <h3>What should be corrected?</h3>
-              <p className="addinfo-hint">
-                Your suggestion will not change the page directly. It is sent
-                to the administrators, who review and validate it first.
-              </p>
+              <h3>{t('addInfo.amendQuestion')}</h3>
+              <p className="addinfo-hint">{t('addInfo.amendHint')}</p>
               <label>
-                Section concerned (optional)
+                {t('addInfo.sectionLabel')}
                 <select
                   value={formData.amendmentSection}
                   onChange={(e) =>
                     setFormData({ ...formData, amendmentSection: e.target.value })
                   }
                 >
-                  <option value="">Whole page / not sure</option>
+                  <option value="">{t('addInfo.wholePage')}</option>
                   {categoryKeys.map((catKey) => (
-                    <optgroup key={catKey} label={CATEGORY_META[catKey].label}>
-                      {CATEGORY_META[catKey].fields.map((field) => (
+                    <optgroup key={catKey} label={catLabel(catKey)}>
+                      {CATEGORY_FIELDS[catKey].map((field) => (
                         <option key={field} value={field}>
-                          {FIELD_LABELS[field]}
+                          {fieldLabel(field)}
                         </option>
                       ))}
                     </optgroup>
@@ -299,7 +259,7 @@ export default function AddInfoModal({ onClose, initialCountry = '' }) {
                 </select>
               </label>
               <label className="addinfo-field">
-                Your correction *
+                {t('addInfo.correctionLabel')} *
                 <textarea
                   rows={5}
                   value={formData.amendmentText}
@@ -307,7 +267,7 @@ export default function AddInfoModal({ onClose, initialCountry = '' }) {
                     setError('');
                     setFormData({ ...formData, amendmentText: e.target.value });
                   }}
-                  placeholder="What is inaccurate or outdated, and what should it say instead? Sources are welcome."
+                  placeholder={t('addInfo.correctionPlaceholder')}
                 />
               </label>
             </div>
@@ -317,10 +277,10 @@ export default function AddInfoModal({ onClose, initialCountry = '' }) {
 
           <div className="addinfo-actions">
             <button type="button" className="addinfo-btn-cancel" onClick={onClose}>
-              Cancel
+              {t('addInfo.cancel')}
             </button>
             <button type="submit" className="addinfo-btn-primary">
-              Submit for review
+              {t('addInfo.submit')}
             </button>
           </div>
         </form>

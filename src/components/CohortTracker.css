@@ -129,7 +129,7 @@
 
 .cohort-mini-badge.status-in_progress {
   background: rgba(136, 136, 136, 0.12);
-  color: #666;
+  color: var(--color-text-light);
 }
 
 .cohort-mini-badge.status-completed {
@@ -192,7 +192,7 @@
 }
 
 .tracker-stat-value.status-in_progress {
-  color: #888;
+  color: var(--color-text-muted);
 }
 
 .tracker-stat-value.status-completed {
@@ -261,7 +261,7 @@
 }
 
 .status-dot.online {
-  background: #22c55e;
+  background: var(--color-success);
 }
 
 .status-dot.offline {
@@ -330,7 +330,7 @@
 
 .tracker-status-badge.status-in_progress {
   background: rgba(136, 136, 136, 0.12);
-  color: #666;
+  color: var(--color-text-light);
 }
 
 .tracker-status-badge.status-completed {

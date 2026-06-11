@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import i18n from '../i18n';
 import * as XLSX from 'xlsx';
 import CohortTracker from '../components/CohortTracker';
 import CreateCohortModal from '../components/CreateCohortModal';
@@ -34,8 +34,11 @@ function courseTitle(t, courseId) {
   return course ? t(`courses.${course.i18nKey}.title`) : courseId;
 }
 
+// The back-office is an internal admin tool and stays in French regardless
+// of the site language.
+const t = i18n.getFixedT('fr');
+
 export default function AdminBackoffice() {
-  const { t } = useTranslation();
   const [section, setSection] = useState('overview');
   const [submissions, setSubmissions] = useState(getSubmissions);
   const [accounts, setAccounts] = useState(initialAccounts);

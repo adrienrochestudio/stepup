@@ -52,7 +52,7 @@
 }
 
 .bo-nav-badge {
-  background: #e25b4a;
+  background: var(--color-danger);
   color: var(--color-white);
   font-size: 0.68rem;
   font-weight: 700;
@@ -133,7 +133,7 @@
 }
 
 .bo-kpi-alert .bo-kpi-value {
-  color: #e25b4a;
+  color: var(--color-danger);
 }
 
 .bo-kpi-label {
@@ -163,7 +163,7 @@
 }
 
 .bo-sub-card.status-rejected {
-  border-left-color: #e25b4a;
+  border-left-color: var(--color-danger);
   opacity: 0.6;
 }
 
@@ -253,8 +253,8 @@
 
 .bo-sub-actions button.danger:hover,
 .bo-row-actions button.danger:hover {
-  border-color: #e25b4a;
-  color: #e25b4a;
+  border-color: var(--color-danger);
+  color: var(--color-danger);
 }
 
 /* Inbox filters */

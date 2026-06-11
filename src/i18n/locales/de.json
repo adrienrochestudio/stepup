@@ -35,19 +35,8 @@
     "newsletterDesc": "Abonnieren Sie unseren Newsletter für Neuigkeiten zur nachhaltigen Produktion.",
     "newsletterCta": "Newsletter abonnieren",
     "partnersIntro": "StepUP ist eine Initiative von Eurimages, entwickelt von Ecoprod.",
-    "audiencePrefix": "Kurse für",
-    "audienceRotating": [
-      "Produktionsfirmen",
-      "Film- und TV-Schaffende",
-      "Animationsprofis",
-      "technische Teams",
-      "Film- und Medienschulen",
-      "Studierende",
-      "Werbeprofis",
-      "Sender und Streaming-Plattformen",
-      "alle, die nachhaltiger arbeiten möchten"
-    ],
-    "titleSuffixNote": "Schritt für Schritt"
+    "titleSuffixNote": "Schritt für Schritt",
+    "audienceLine": "Kurse für Profis aus Film, Fernsehen, Animation und Werbung sowie für Schulen und Studierende."
   },
   "courses": {
     "introGreenProduction": {
@@ -379,5 +368,36 @@
   },
   "common": {
     "loading": "Laden..."
+  },
+  "addInfo": {
+    "title": "Eine Ressource vorschlagen",
+    "close": "Schließen",
+    "cancel": "Abbrechen",
+    "submit": "Zur Prüfung einreichen",
+    "modeAdd": "Information hinzufügen",
+    "modeAddDesc": "Teilen Sie eine Ressource, einen Kontakt oder eine Information, die Sie kennen",
+    "modeAmend": "Ich bin mit dieser Seite nicht einverstanden",
+    "modeAmendDesc": "Eine Korrektur zu bestehenden Informationen vorschlagen",
+    "langNote": "Bitte verfassen Sie Ihren Beitrag auf Englisch. Die Karte wird weltweit gelesen, daher halten wir alle Einträge der Einheitlichkeit halber auf Englisch.",
+    "yourDetails": "Ihre Angaben",
+    "fullName": "Vollständiger Name",
+    "emailLabel": "E-Mail",
+    "organization": "Organisation / Struktur",
+    "country": "Land",
+    "countryPlaceholder": "z. B. Deutschland, Spanien...",
+    "addQuestion": "Was möchten Sie teilen?",
+    "addHint": "Wählen Sie nur die Themen, die Sie kennen: Ein einziger Link oder Tipp hilft bereits. Sie müssen nie alles ausfüllen.",
+    "fieldPlaceholder": "Ein Name, ein Link, eine kurze Beschreibung, alles Nützliche",
+    "amendQuestion": "Was sollte korrigiert werden?",
+    "amendHint": "Ihr Vorschlag ändert die Seite nicht direkt. Er wird an die Administratoren gesendet, die ihn prüfen und freigeben.",
+    "sectionLabel": "Betroffener Abschnitt (optional)",
+    "wholePage": "Ganze Seite / nicht sicher",
+    "correctionLabel": "Ihre Korrektur",
+    "correctionPlaceholder": "Was ist ungenau oder veraltet, und was sollte stattdessen dort stehen? Quellen sind willkommen.",
+    "errNoTopic": "Wählen Sie mindestens ein Thema und schreiben Sie ein paar Worte, eines genügt!",
+    "errNoCorrection": "Bitte beschreiben Sie, was Ihrer Meinung nach korrigiert werden sollte.",
+    "thankYou": "Danke!",
+    "successAdd": "Ihr Beitrag wurde zur Prüfung eingereicht. Ein Administrator prüft die Information vor der Veröffentlichung.",
+    "successAmend": "Ihre Korrekturanfrage wurde an die Administratoren gesendet. An der Seite ändert sich nichts, bis sie geprüft und freigegeben wurde."
   }
 }

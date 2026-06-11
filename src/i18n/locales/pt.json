@@ -35,19 +35,8 @@
     "newsletterDesc": "Subscreva a nossa newsletter para novidades sobre produção sustentável.",
     "newsletterCta": "Subscrever newsletter",
     "partnersIntro": "StepUP é uma iniciativa da Eurimages desenvolvida pela Ecoprod.",
-    "audiencePrefix": "Cursos concebidos para",
-    "audienceRotating": [
-      "produtoras",
-      "profissionais de cinema e TV",
-      "profissionais de animação",
-      "equipas técnicas",
-      "escolas de cinema e audiovisual",
-      "estudantes",
-      "profissionais de publicidade",
-      "emissoras e plataformas",
-      "quem quer trabalhar de forma mais sustentável"
-    ],
-    "titleSuffixNote": "passo a passo"
+    "titleSuffixNote": "passo a passo",
+    "audienceLine": "Cursos pensados para profissionais do cinema, da televisão, da animação e da publicidade, e também para escolas e estudantes."
   },
   "courses": {
     "introGreenProduction": {
@@ -379,5 +368,36 @@
   },
   "common": {
     "loading": "A carregar..."
+  },
+  "addInfo": {
+    "title": "Sugerir um recurso",
+    "close": "Fechar",
+    "cancel": "Cancelar",
+    "submit": "Enviar para revisão",
+    "modeAdd": "Adicionar informação",
+    "modeAddDesc": "Partilhe um recurso, contacto ou facto que conheça",
+    "modeAmend": "Não concordo com esta página",
+    "modeAmendDesc": "Sugerir uma correção à informação existente",
+    "langNote": "Por favor, escreva a sua contribuição em inglês. O mapa é consultado em todo o mundo, por isso mantemos todas as entradas em inglês por uniformidade.",
+    "yourDetails": "Os seus dados",
+    "fullName": "Nome completo",
+    "emailLabel": "E-mail",
+    "organization": "Organização / Estrutura",
+    "country": "País",
+    "countryPlaceholder": "ex.: Alemanha, Espanha...",
+    "addQuestion": "O que gostaria de partilhar?",
+    "addHint": "Escolha apenas os temas que conhece: um simples link ou dica já ajuda. Nunca precisa de preencher tudo.",
+    "fieldPlaceholder": "Um nome, um link, uma breve descrição, tudo o que for útil",
+    "amendQuestion": "O que deveria ser corrigido?",
+    "amendHint": "A sua sugestão não altera a página diretamente. É enviada aos administradores, que a revêem e validam.",
+    "sectionLabel": "Secção em causa (opcional)",
+    "wholePage": "Página inteira / não tenho a certeza",
+    "correctionLabel": "A sua correção",
+    "correctionPlaceholder": "O que está incorreto ou desatualizado e o que deveria dizer? As fontes são bem-vindas.",
+    "errNoTopic": "Escolha pelo menos um tema e escreva algumas palavras, basta uma!",
+    "errNoCorrection": "Por favor, descreva o que acha que deveria ser corrigido.",
+    "thankYou": "Obrigado!",
+    "successAdd": "A sua contribuição foi enviada para revisão. Um administrador validará a informação antes de ser publicada.",
+    "successAmend": "O seu pedido de correção foi enviado aos administradores. Nada muda na página até ser revisto e validado."
   }
 }

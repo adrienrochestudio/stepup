@@ -32,19 +32,8 @@
     "eurimagesDesc": "Fondo del Consejo de Europa para la coproducción, distribución, exhibición y digitalización de obras cinematográficas europeas. Apoyo a la industria cinematográfica europea y a la diversidad cultural desde 1988.",
     "eurimagesCta": "Visitar eurimages.org",
     "partnersIntro": "StepUP es una iniciativa de Eurimages desarrollada por Ecoprod.",
-    "audiencePrefix": "Cursos diseñados para",
-    "audienceRotating": [
-      "productoras",
-      "profesionales del cine y la TV",
-      "profesionales de la animación",
-      "equipos técnicos",
-      "escuelas de cine y audiovisual",
-      "estudiantes",
-      "profesionales de la publicidad",
-      "cadenas y plataformas",
-      "quienes quieren trabajar de forma más sostenible"
-    ],
-    "titleSuffixNote": "paso a paso"
+    "titleSuffixNote": "paso a paso",
+    "audienceLine": "Cursos pensados para profesionales del cine, la televisión, la animación y la publicidad, además de escuelas y estudiantes."
   },
   "courses": {
     "introGreenProduction": {
@@ -373,5 +362,36 @@
   },
   "common": {
     "loading": "Cargando..."
+  },
+  "addInfo": {
+    "title": "Proponer un recurso",
+    "close": "Cerrar",
+    "cancel": "Cancelar",
+    "submit": "Enviar para revisión",
+    "modeAdd": "Añadir información",
+    "modeAddDesc": "Comparte un recurso, contacto o dato que conozcas",
+    "modeAmend": "No estoy de acuerdo con esta página",
+    "modeAmendDesc": "Sugerir una corrección a la información existente",
+    "langNote": "Por favor, redacta tu contribución en inglés. El mapa se consulta en todo el mundo, por eso mantenemos todas las entradas en inglés por universalidad.",
+    "yourDetails": "Tus datos",
+    "fullName": "Nombre completo",
+    "emailLabel": "Correo electrónico",
+    "organization": "Organización / Estructura",
+    "country": "País",
+    "countryPlaceholder": "ej.: Alemania, España...",
+    "addQuestion": "¿Qué te gustaría compartir?",
+    "addHint": "Elige solo los temas que conozcas: un simple enlace o consejo ya ayuda. Nunca necesitas rellenarlo todo.",
+    "fieldPlaceholder": "Un nombre, un enlace, una breve descripción, cualquier cosa útil",
+    "amendQuestion": "¿Qué habría que corregir?",
+    "amendHint": "Tu sugerencia no cambia la página directamente. Se envía a los administradores, que la revisan y validan.",
+    "sectionLabel": "Sección afectada (opcional)",
+    "wholePage": "Toda la página / no estoy seguro",
+    "correctionLabel": "Tu corrección",
+    "correctionPlaceholder": "¿Qué es inexacto u obsoleto y qué debería decir en su lugar? Las fuentes son bienvenidas.",
+    "errNoTopic": "Elige al menos un tema y escribe unas palabras, ¡con una basta!",
+    "errNoCorrection": "Por favor, describe lo que crees que debería corregirse.",
+    "thankYou": "¡Gracias!",
+    "successAdd": "Tu contribución se ha enviado para revisión. Un administrador validará la información antes de publicarla.",
+    "successAmend": "Tu solicitud de corrección se ha enviado a los administradores. Nada cambia en la página hasta que la revisen y validen."
   }
 }

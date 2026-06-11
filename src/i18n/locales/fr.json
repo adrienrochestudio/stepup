@@ -35,19 +35,8 @@
     "newsletterDesc": "Abonnez-vous à notre newsletter pour suivre l'actualité de l'éco-production.",
     "newsletterCta": "S'abonner à la newsletter",
     "partnersIntro": "StepUP est une initiative d'Eurimages développée par Ecoprod.",
-    "audiencePrefix": "Des cours conçus pour",
-    "audienceRotating": [
-      "les sociétés de production",
-      "les professionnels du cinéma",
-      "les professionnels de l'animation",
-      "les équipes techniques",
-      "les écoles de cinéma et d'audiovisuel",
-      "les étudiants",
-      "les professionnels de la publicité",
-      "les diffuseurs et plateformes",
-      "celles et ceux qui veulent un métier plus responsable"
-    ],
-    "titleSuffixNote": "étape par étape"
+    "titleSuffixNote": "étape par étape",
+    "audienceLine": "Des cours pensés pour les professionnels du cinéma, de la télévision, de l'animation et de la publicité, mais aussi pour les écoles et les étudiants."
   },
   "courses": {
     "introGreenProduction": {
@@ -491,5 +480,36 @@
     "statusPending": "En attente",
     "requestedBy": "Demandeur",
     "approve": "Valider"
+  },
+  "addInfo": {
+    "title": "Proposer une ressource",
+    "close": "Fermer",
+    "cancel": "Annuler",
+    "submit": "Envoyer pour validation",
+    "modeAdd": "Ajouter une information",
+    "modeAddDesc": "Partagez une ressource, un contact ou un fait que vous connaissez",
+    "modeAmend": "Je ne suis pas d'accord avec cette page",
+    "modeAmendDesc": "Suggérer une correction d'une information existante",
+    "langNote": "Merci de rédiger votre contribution en anglais. La carte est consultée dans le monde entier, nous gardons donc toutes les entrées en anglais par souci d'universalité.",
+    "yourDetails": "Vos coordonnées",
+    "fullName": "Nom complet",
+    "emailLabel": "E-mail",
+    "organization": "Organisation / Structure",
+    "country": "Pays",
+    "countryPlaceholder": "ex : Allemagne, Espagne...",
+    "addQuestion": "Que souhaitez-vous partager ?",
+    "addHint": "Choisissez uniquement les thèmes que vous connaissez : un simple lien ou conseil aide déjà. Vous n'avez jamais besoin de tout remplir.",
+    "fieldPlaceholder": "Un nom, un lien, une courte description, tout ce qui peut être utile",
+    "amendQuestion": "Que faudrait-il corriger ?",
+    "amendHint": "Votre suggestion ne modifie pas la page directement. Elle est envoyée aux administrateurs, qui la relisent et la valident.",
+    "sectionLabel": "Section concernée (facultatif)",
+    "wholePage": "Page entière / je ne sais pas",
+    "correctionLabel": "Votre correction",
+    "correctionPlaceholder": "Qu'est-ce qui est inexact ou obsolète, et que devrait-il indiquer à la place ? Les sources sont les bienvenues.",
+    "errNoTopic": "Choisissez au moins un thème et écrivez quelques mots, un seul suffit !",
+    "errNoCorrection": "Merci de décrire ce qui devrait être corrigé.",
+    "thankYou": "Merci !",
+    "successAdd": "Votre contribution a été envoyée pour validation. Un administrateur vérifiera l'information avant sa publication.",
+    "successAmend": "Votre demande de correction a été envoyée aux administrateurs. Rien ne change sur la page tant qu'ils ne l'ont pas validée."
   }
 }

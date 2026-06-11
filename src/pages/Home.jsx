@@ -110,14 +110,7 @@ export default function Home() {
 
       <section className="home-catalog">
         <h2>{t('home.courseCatalog')}</h2>
-        <p className="home-catalog-audience">
-          <span className="home-catalog-audience-prefix">{t('home.audiencePrefix')}</span>
-          <RotatingTitleWord
-            items={t('home.audienceRotating', { returnObjects: true })}
-            interval={2800}
-            variant="inline"
-          />
-        </p>
+        <p className="home-catalog-audience">{t('home.audienceLine')}</p>
         <div className="home-catalog-grid">
           {otherCourses.map((course) => (
             <div

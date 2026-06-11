@@ -14,6 +14,12 @@
   --color-border: #e8e8e6;
   --color-border-light: #f0f0ee;
 
+  /* Semantic status colors, kept within the brand's green/earthy world
+     instead of generic UI greens/reds. */
+  --color-success: #5e7c14;
+  --color-warning: #c08a1e;
+  --color-danger: #c0492f;
+
   --font-family: 'Montserrat', sans-serif;
 
   --nav-height: 64px;
