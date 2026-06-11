@@ -10,6 +10,36 @@
   isolation: isolate;
 }
 
+.resource-map-intro {
+  flex-shrink: 0;
+  padding: 0.125rem 0.25rem 0;
+}
+
+.resource-map-intro h1 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-kaki);
+  line-height: 1.3;
+}
+
+.resource-map-intro p {
+  margin: 0.2rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--color-text-light);
+  max-width: 60rem;
+}
+
+@media (max-width: 640px) {
+  .resource-map-intro h1 {
+    font-size: 1rem;
+  }
+  .resource-map-intro p {
+    font-size: 0.75rem;
+  }
+}
+
 .resource-map-globe-area {
   flex: 1;
   position: relative;

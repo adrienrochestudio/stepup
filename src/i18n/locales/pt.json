@@ -68,6 +68,8 @@
     }
   },
   "map": {
+    "introTitle": "A ecoprodução audiovisual no mundo",
+    "introSubtitle": "Explore, país por país, as regulamentações, os apoios, as calculadoras de carbono, as formações e os contactos para produções mais sustentáveis (cinema, TV, publicidade, animação). {{count}} países documentados.",
     "searchPlaceholder": "Pesquisar entre {{count}} países...",
     "noResults": "Nenhum país encontrado. Verifique a ortografia.",
     "clickHint": "Clique num país a verde para ver os seus recursos.",

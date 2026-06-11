@@ -68,6 +68,8 @@
     }
   },
   "map": {
+    "introTitle": "L'eco-produzione audiovisiva nel mondo",
+    "introSubtitle": "Esplora, paese per paese, le normative, gli incentivi, i calcolatori di carbonio, le formazioni e i contatti per produzioni più sostenibili (cinema, TV, pubblicità, animazione). {{count}} paesi documentati.",
     "searchPlaceholder": "Cerca tra {{count}} paesi...",
     "noResults": "Nessun paese trovato. Controlla l'ortografia.",
     "clickHint": "Clicca su un paese in verde per vedere le sue risorse.",

@@ -84,8 +84,15 @@ export default function ResourceMap() {
     return false;
   }, [dismissHint]);
 
+  const countryCount = Object.keys(countryData).length;
+
   return (
     <div className="resource-map">
+      <header className="resource-map-intro">
+        <h1>{t('map.introTitle')}</h1>
+        <p>{t('map.introSubtitle', { count: countryCount })}</p>
+      </header>
+
       <MapControls
         onSearch={handleSearch}
         activeFilters={activeFilters}
