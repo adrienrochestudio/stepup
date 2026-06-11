@@ -84,7 +84,12 @@ export const countryData = {
         greenConsultants: {
           label: 'Green consultants',
           content:
-            '• Flying Secoya: green consultancy for productions, a carbon calculator and a label, https://www.flyingsecoya.com/\n• A Better Prod: green consultancy for productions: https://www.abetterprod.com/\n• The Ecoprod directory for green consultants and professionals: https://ecoprod.com/annuaire/\n• A list of green consultants by Nausicä: https://nausicacinemadurable.fr/2023/04/25/charges-deco-production/',
+            'Hireable eco-coordinators (éco-référents) and the directories to find them:\n• ACCEPTE: French association of eco-production coordinators (éco-référents), working to structure and professionalise the role; its members are bookable green coordinators.\n• The Ecoprod directory of green professionals and consultants: https://ecoprod.com/annuaire/\n• A list of green professionals by Nausicä: https://nausicacinemadurable.fr/2023/04/25/charges-deco-production/',
+        },
+        consultancies: {
+          label: 'Sustainability consultancies',
+          content:
+            'Private firms offering green-production consultancy:\n• Flying Secoya: green consultancy for productions, with a carbon calculator and a label: https://www.flyingsecoya.com/\n• A Better Prod: green consultancy for productions: https://www.abetterprod.com/',
         },
         serviceProviders: {
           label: 'Service providers',
@@ -416,8 +421,8 @@ export const countryData = {
     resources: {
       label: 'Resources',
       subcategories: {
-        greenConsultants: {
-          label: 'Green consultants',
+        consultancies: {
+          label: 'Sustainability consultancies',
           content:
             '• b.green - founded by Eva Dvořáková Pérez.\n• Planet A Collective - led by Adam Karásek.',
         },
@@ -1139,8 +1144,8 @@ export const countryData = {
     resources: {
       label: 'Resources',
       subcategories: {
-        greenConsultants: {
-          label: 'Green consultants',
+        consultancies: {
+          label: 'Sustainability consultancies',
           content:
             '• Green Eyes Production: leading film sustainability consultancy: eco-friendly strategies, crew training, certifications.\n• Leverage Point Entertainment: sustainability agency founded by Zsófia Szemerédy, operates between London and Budapest.',
         },
@@ -1235,8 +1240,8 @@ export const countryData = {
           content:
             '• Academia de Cine, "Sello Verde" good-practices guide (PDF): https://www.academiadecine.com/pdfs/guia-de-buenas-practicas-del-sello-verde/',
         },
-        greenConsultants: {
-          label: 'Green consultants',
+        consultancies: {
+          label: 'Sustainability consultancies',
           content:
             '• Mrs. Greenfilm: sustainability consulting, strategic partner for Netflix and Amazon MGM Studios.\n• Echar a Rodar: CSR and communication consulting.\n• Creast: digital solution to predict, measure, reduce carbon footprint.\n• La Tribu Verde: integrating sustainability into creative industry.\n• K is for Knowledge: consultancy on sustainable action plans.\n• ECOscena: sustainability and carbon footprint for cultural sector.\n• The Other Green: personalized sustainability strategies.',
         },
@@ -1473,8 +1478,8 @@ export const countryData = {
           content:
             '• albert case studies from film and TV productions: https://wearealbert.org/case-studies/\n• albert resources hub, annual reviews and reports: https://wearealbert.org/resources/',
         },
-        greenConsultants: {
-          label: 'Green consultants',
+        consultancies: {
+          label: 'Sustainability consultancies',
           content:
             '• Leverage Point Entertainment.\n• Earth to Action.\n• Creative Zero.\n• Neptune Sustainability.\n• Picture Zero.\n• Sustainable Film.\n• Sally Mills Consulting.\n• Greenshoot.',
         },
@@ -1866,8 +1871,8 @@ export const countryData = {
     resources: {
       label: 'Resources',
       subcategories: {
-        greenConsultants: {
-          label: 'Green consultants',
+        consultancies: {
+          label: 'Sustainability consultancies',
           content:
             'Sustainability consultancies advise productions across development, pre-production, shooting and post-production. Examples include Panvision (EcoVision), Cinema Verde and Pindorama Filmes.',
         },

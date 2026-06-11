@@ -30,6 +30,7 @@ const CATEGORY_META = {
     label: 'Resources',
     fields: [
       'greenConsultants',
+      'consultancies',
       'serviceProviders',
       'trainings',
       'tools',
@@ -52,7 +53,8 @@ const FIELD_LABELS = {
   wasteManagement: 'Waste management rules',
   socialRules: 'Social rules (gender equality, inclusion)',
   otherFacts: 'Other important facts',
-  greenConsultants: 'Green consultants',
+  greenConsultants: 'Eco-coordinators (hireable professionals & directories)',
+  consultancies: 'Sustainability consultancies (private firms)',
   serviceProviders: 'Service providers',
   trainings: 'Trainings',
   tools: 'Calculators & tools',
