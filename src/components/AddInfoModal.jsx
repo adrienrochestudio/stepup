@@ -34,6 +34,7 @@ const CATEGORY_META = {
       'trainings',
       'tools',
       'networks',
+      'caseStudies',
     ],
   },
 };
@@ -56,6 +57,7 @@ const FIELD_LABELS = {
   trainings: 'Trainings',
   tools: 'Calculators & tools',
   networks: 'Networks for professionals',
+  caseStudies: 'Case studies & reports',
 };
 
 export default function AddInfoModal({ onClose, initialCountry = '' }) {

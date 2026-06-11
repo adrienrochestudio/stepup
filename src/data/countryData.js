@@ -76,25 +76,30 @@ export const countryData = {
     resources: {
       label: 'Resources',
       subcategories: {
+        caseStudies: {
+          label: 'Case studies & reports',
+          content:
+            '• CNC, "Écologie et développement durable" dossier: studies, reports and the eco-conditionality action plan: https://www.cnc.fr/cinema/dossiers/ecologie-et-developpement-durable_1451402',
+        },
         greenConsultants: {
           label: 'Green consultants',
           content:
-            '• Flying Secoya: green consultancy for productions, a carbon calculator and a label, https://www.flyingsecoya.com/\n• A Better Prod: green consultancy for productions: https://www.abetterprod.com/\n• The Ecoprod directory for green consultants and professionals: https://www.ecoprod.com/fr/les-outils-pour-agir/professionnels-les-de-l-eco-production.html\n• A list of green consultants by Nausicä: https://nausicacinemadurable.fr/2023/04/25/charges-deco-production/',
+            '• Flying Secoya: green consultancy for productions, a carbon calculator and a label, https://www.flyingsecoya.com/\n• A Better Prod: green consultancy for productions: https://www.abetterprod.com/\n• The Ecoprod directory for green consultants and professionals: https://ecoprod.com/annuaire/\n• A list of green consultants by Nausicä: https://nausicacinemadurable.fr/2023/04/25/charges-deco-production/',
         },
         serviceProviders: {
           label: 'Service providers',
           content:
-            '• A list of green service providers by Ecoprod: https://www.ecoprod.com/fr/les-outils-pour-agir/ressources-utiles.html\n• A list of green service providers by Nausicä: https://nausicacinemadurable.fr/2023/06/13/liste-de-prestataires-eco-responsables-de-laudiovisuel-en-france/\n• A list of green service providers and other initiatives by the CUT! Collective: https://www.cut-collectif.fr/les-actions/',
+            '• A list of green service providers by Ecoprod: https://ecoprod.com/annuaire/\n• A list of green service providers by Nausicä: https://nausicacinemadurable.fr/2023/06/13/liste-de-prestataires-eco-responsables-de-laudiovisuel-en-france/\n• A list of green service providers and other initiatives by the CUT! Collective: https://www.cut-collectif.fr/les-actions/',
         },
         trainings: {
           label: 'Trainings',
           content:
-            '• Ecoprod provides training for professionals of the industry, covered by AFDAS at 100%, https://www.ecoprod.com/fr/formations.html\n• Ecoprod proposes long training over several weeks: "Green management on set", "Implementing a green production", "Green digital production", "Green set design".\n• The CST proposes short training sessions on climate change, carbon footprint measurement, responsible production, and CSR fundamentals.\n• As part of the France 2030 plan, green production training courses are deployed in several film schools.',
+            '• Ecoprod provides training for professionals of the industry, covered by AFDAS at 100%, https://ecoprod.com/nos-formations/\n• Ecoprod proposes long training over several weeks: "Green management on set", "Implementing a green production", "Green digital production", "Green set design".\n• The CST proposes short training sessions on climate change, carbon footprint measurement, responsible production, and CSR fundamentals.\n• As part of the France 2030 plan, green production training courses are deployed in several film schools.',
         },
         tools: {
           label: 'Calculators & tools',
           content:
-            "The CNC has certified 3 calculators:\n• Carbon'Clap, free calculator powered by Ecoprod: https://www.ecoprod.com/fr/carbon-clap.html\n• SecoSet powered by Flying Secoya: https://www.flyingsecoya.com/\n• Carbon'Stage powered by Greenly: https://greenly.earth/fr-fr/climate-app-store/calculateur-production-audiovisuelle",
+            "The CNC has certified 3 calculators:\n• Carbon'Clap, free calculator powered by Ecoprod: https://ecoprod.com/carbon-clap/\n• SecoSet powered by Flying Secoya: https://www.flyingsecoya.com/\n• Carbon'Stage powered by Greenly: https://greenly.earth/fr-fr/climate-app-store/calculateur-production-audiovisuelle",
         },
         networks: {
           label: 'Networks for professionals',
@@ -214,6 +219,11 @@ export const countryData = {
     resources: {
       label: 'Resources',
       subcategories: {
+        caseStudies: {
+          label: 'Case studies & reports',
+          content:
+            '• On tourne vert / Rolling Green, guides, tools and production case studies: https://ontournevert.com/en/',
+        },
         greenConsultants: {
           label: 'Green consultants',
           content:
@@ -310,6 +320,11 @@ export const countryData = {
     resources: {
       label: 'Resources',
       subcategories: {
+        caseStudies: {
+          label: 'Case studies & reports',
+          content:
+            '• Green Film Shooting, European magazine documenting green production cases (English): https://greenfilmshooting.net/blog/en/',
+        },
         greenConsultants: {
           label: 'Green consultants',
           content:
@@ -328,7 +343,7 @@ export const countryData = {
         tools: {
           label: 'Calculators & tools',
           content:
-            '• Sustainability in Film - FFA: https://www.ffa.de/sustainability.html\n• Ecological Production Standards (English Version): https://www.ffa.de/sustainability.html\n• Green Motion Label: https://www.ffa.de/sustainability.html\n• Carbon Calculator: https://go.greenshooting.de/de_DE/\n• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/',
+            '• Sustainability in Film - FFA: https://www.ffa.de/\n• Ecological Production Standards (English Version): https://www.ffa.de/\n• Green Motion Label: https://www.ffa.de/\n• Carbon Calculator: https://go.greenshooting.de/de_DE/\n• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/',
         },
         networks: {
           label: 'Networks to join',
@@ -394,7 +409,7 @@ export const countryData = {
         wasteManagement: {
           label: 'Waste management rules',
           content:
-            'Companies must classify waste by type and prove handover recipient. More than 600 kg hazardous waste or 100 tonnes other waste per year requires reporting.\n\nSeparate systems for paper, plastic, glass, cans, compost, cooking oils, drugs, packaging, electronic waste, hazardous waste, construction waste.\n\nUseful contacts:\n• Directory how to separate waste: https://www.samosebou.cz/kampatri/\n• Art Re Use: https://www.artreuse.cz/\n• ReUse Federation: https://www.reusefederace.cz/co-je-reuse/',
+            'Companies must classify waste by type and prove handover recipient. More than 600 kg hazardous waste or 100 tonnes other waste per year requires reporting.\n\nSeparate systems for paper, plastic, glass, cans, compost, cooking oils, drugs, packaging, electronic waste, hazardous waste, construction waste.\n\nUseful contacts:\n• Directory how to separate waste: https://www.samosebou.cz/kampatri/\n• Art Re Use: https://www.artreuse.cz/\n• ReUse Federation: https://www.reusefederace.cz/',
         },
       },
     },
@@ -487,6 +502,11 @@ export const countryData = {
     resources: {
       label: 'Resources',
       subcategories: {
+        caseStudies: {
+          label: 'Case studies & reports',
+          content:
+            '• BFTP (Sustainable Film and TV Production): green production handbook, templates and case studies: https://bftp.dk',
+        },
         greenConsultants: {
           label: 'Green consultants',
           content:
@@ -510,7 +530,7 @@ export const countryData = {
         networks: {
           label: 'Networks to join',
           content:
-            '• Bæredygtigere filmarbejder (more sustainable filmworkers) - Facebook group.\n• Green Profiles Denmark (Grønne profiler i film-/tv-branche).\n• Bæredygtigere kostumenetværk (more sustainable costume community) - Facebook group.\n• NEMA (Nordic Eco Media Alliance): https://nema.network',
+            '• Bæredygtigere filmarbejder (more sustainable filmworkers) - Facebook group.\n• Green Profiles Denmark (Grønne profiler i film-/tv-branche).\n• Bæredygtigere kostumenetværk (more sustainable costume community) - Facebook group.\n• NEMA (Nordic Eco Media Alliance).',
         },
       },
     },
@@ -718,7 +738,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• Swedish Film Institute: published sustainability handbook, appointed sustainability coordinator Patrik Axén, Green Consultant course with Nordic participants.\n• Film & TV-producenterna: formed ecological sustainability council in 2022, collaborates with Green Producers Club, offers financial incentives for measuring climate impact.\n• Viaplay Group: guidelines require measuring climate impact using Albert or Green Producers Tool.\n• NEMA (Nordic Eco Media Alliance): https://www.nema.network/\n• SHIFT (Swedish Sustainability Association in Film and TV): https://www.ecoshift.se/\n• NEST (Northern European Sustainability Team-Up): Baltic film regions network.\n• Nordic Green Action Group: convened by Nordic Film & TV Fund.',
+            '• Swedish Film Institute: published sustainability handbook, appointed sustainability coordinator Patrik Axén, Green Consultant course with Nordic participants.\n• Film & TV-producenterna: formed ecological sustainability council in 2022, collaborates with Green Producers Club, offers financial incentives for measuring climate impact.\n• Viaplay Group: guidelines require measuring climate impact using Albert or Green Producers Tool.\n• NEMA (Nordic Eco Media Alliance).\n• SHIFT (Swedish Sustainability Association in Film and TV).\n• NEST (Northern European Sustainability Team-Up): Baltic film regions network.\n• Nordic Green Action Group: convened by Nordic Film & TV Fund.',
         },
         decarbonizationPlan: {
           label: 'Decarbonization plan',
@@ -760,10 +780,15 @@ export const countryData = {
     resources: {
       label: 'Resources',
       subcategories: {
+        caseStudies: {
+          label: 'Case studies & reports',
+          content:
+            '• Swedish Film Institute sustainability pages, including its sustainability handbook: https://www.filminstitutet.se/en/about-us/sustainability/',
+        },
         greenConsultants: {
           label: 'Green consultants',
           content:
-            '• SHIFT: Swedish association for green consultants: https://www.ecoshift.se/',
+            '• SHIFT: Swedish association for green consultants.',
         },
         trainings: {
           label: 'Trainings',
@@ -773,7 +798,7 @@ export const countryData = {
         tools: {
           label: 'Calculators & tools',
           content:
-            "• Green Producers Club & Green Producers Tool: https://www.greenproducers.club/\n• Hållbar Film Tool: http://www.sustainablefilmtool.com/\n• Green Ice Camera: https://greenicecamera.net/\n• Carbon'Clap: https://www.ecoprod.com/fr/carbon-clap.html\n• Albert Carbon Calculator: https://wearealbert.org/\n• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/?_categories=carbon-calculator",
+            "• Green Producers Club & Green Producers Tool: https://www.greenproducers.club/\n• Hållbar Film Tool: http://www.sustainablefilmtool.com/\n• Green Ice Camera.\n• Carbon'Clap: https://ecoprod.com/carbon-clap/\n• Albert Carbon Calculator: https://wearealbert.org/\n• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/?_categories=carbon-calculator",
         },
         networks: {
           label: 'Networks to join',
@@ -932,6 +957,11 @@ export const countryData = {
     resources: {
       label: 'Resources',
       subcategories: {
+        caseStudies: {
+          label: 'Case studies & reports',
+          content:
+            '• GREEN FILM, certification documents and the list of certified productions: https://www.green.film/certification/',
+        },
         greenConsultants: {
           label: 'Green consultants',
           content:
@@ -1018,6 +1048,11 @@ export const countryData = {
     resources: {
       label: 'Resources',
       subcategories: {
+        caseStudies: {
+          label: 'Case studies & reports',
+          content:
+            '• Portugal Film Commission, sustainability page with the Best Practices Guide: https://portugalfilmcommission.com/en/sustainability/',
+        },
         greenConsultants: {
           label: 'Green consultants',
           content:
@@ -1158,7 +1193,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            'Guides and best practices by Film Offices/Commissions:\n• Asturias Film Commission: https://www.turismoasturias.es/filmcommission/rueda-en-verde\n• Valencia Film Office: https://www.valenciafilmoffice.org/rodajes-sostenibles-en-valencia\n• Barcelona Film Commission.\n• Cataluña Film Commission.\n• Madrid Film Office: https://madridfilmoffice.com/recursos-produccion-sostenible/\n• Basque Green Film: https://www.euskadi.eus/basque-green-film-bgf/web01-a2kulsus/es/\n• Academia de Cine: https://www.academiadecine.com/pdfs/guia-de-buenas-practicas-del-sello-verde/',
+            'Guides and best practices by Film Offices/Commissions:\n• Asturias Film Commission ("Rueda en verde" guide).\n• Valencia Film Office: https://www.valenciafilmoffice.org/rodajes-sostenibles-en-valencia\n• Barcelona Film Commission.\n• Cataluña Film Commission.\n• Madrid Film Office: https://madridfilmoffice.com/recursos-produccion-sostenible/\n• Basque Green Film: https://www.euskadi.eus/basque-green-film-bgf/web01-a2kulsus/es/\n• Academia de Cine: https://www.academiadecine.com/pdfs/guia-de-buenas-practicas-del-sello-verde/',
         },
         decarbonizationPlan: {
           label: 'Decarbonization plan',
@@ -1195,6 +1230,11 @@ export const countryData = {
     resources: {
       label: 'Resources',
       subcategories: {
+        caseStudies: {
+          label: 'Case studies & reports',
+          content:
+            '• Academia de Cine, "Sello Verde" good-practices guide (PDF): https://www.academiadecine.com/pdfs/guia-de-buenas-practicas-del-sello-verde/',
+        },
         greenConsultants: {
           label: 'Green consultants',
           content:
@@ -1352,6 +1392,11 @@ export const countryData = {
     resources: {
       label: 'Resources',
       subcategories: {
+        caseStudies: {
+          label: 'Case studies & reports',
+          content:
+            '• Screen Ireland sustainability hub: toolkit, reports and production case studies: https://www.screenireland.ie/sustainability',
+        },
         greenConsultants: {
           label: 'Green consultants & service providers',
           content:
@@ -1423,6 +1468,11 @@ export const countryData = {
     resources: {
       label: 'Resources',
       subcategories: {
+        caseStudies: {
+          label: 'Case studies & reports',
+          content:
+            '• albert case studies from film and TV productions: https://wearealbert.org/case-studies/\n• albert resources hub, annual reviews and reports: https://wearealbert.org/resources/',
+        },
         greenConsultants: {
           label: 'Green consultants',
           content:
@@ -1537,6 +1587,11 @@ export const countryData = {
     resources: {
       label: 'Resources',
       subcategories: {
+        caseStudies: {
+          label: 'Case studies & reports',
+          content:
+            '• Sustainable Production Alliance, Scope 3 white paper (PDF): https://greenproductionguide.com/wp-content/uploads/2024/03/Sustainable-Production-Alliance_Scope-3-Whitepaper.pdf\n• Example of a real production sustainability report (PDF, 2022): https://greenproductionguide.com/wp-content/uploads/2022/03/RBW-S2_Sustainability-Report_Revised_03.2022.pdf',
+        },
         tools: {
           label: 'Calculators & tools',
           content:
@@ -1584,6 +1639,11 @@ export const countryData = {
     resources: {
       label: 'Resources',
       subcategories: {
+        caseStudies: {
+          label: 'Case studies & reports',
+          content:
+            '• Green Film Making, projects and case studies from Dutch productions: https://greenfilmmaking.com/projects/',
+        },
         tools: {
           label: 'Calculators & tools',
           content:
@@ -1673,7 +1733,7 @@ export const countryData = {
         networks: {
           label: 'Networks to join',
           content:
-            '• Green Filming Austria Working Group (chaired by ÖFI Green Filming Department).\n• VGFCA.\n• CO/PRO-EUROPE Working Group.\n• We_Do! Advice Center: https://we-do.filmschaffende.at/\n• VERA Vertrauensstelle: https://vera-vertrauensstelle.at/',
+            '• Green Filming Austria Working Group (chaired by ÖFI Green Filming Department).\n• VGFCA.\n• CO/PRO-EUROPE Working Group.\n• We_Do! Advice Center.\n• VERA Vertrauensstelle: https://vera-vertrauensstelle.at/',
         },
       },
     },
@@ -1712,6 +1772,11 @@ export const countryData = {
     resources: {
       label: 'Resources',
       subcategories: {
+        caseStudies: {
+          label: 'Case studies & reports',
+          content:
+            '• "Ekosetti in Euros" (2025), report on the economics of sustainable production, alongside the Ekosetti guidebook: https://ekosetti.fi/en/ekosetti-in-english/',
+        },
         tools: {
           label: 'Calculators & tools',
           content:
@@ -1858,6 +1923,11 @@ export const countryData = {
     resources: {
       label: 'Resources',
       subcategories: {
+        caseStudies: {
+          label: 'Case studies & reports',
+          content:
+            '• The Callsheet feature on GREENSET\'s work across South African sets (2024): https://thecallsheet.co.za/2024/11/27/greenset-integrates-sustainability-into-every-step-of-the-filmmaking-process/',
+        },
         tools: {
           label: 'Calculators & tools',
           content:
@@ -1992,7 +2062,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• Greenlit: industry-wide sustainability collaboration that supported 50+ productions in its first year: https://greenlit.org.nz/\n• "Greening the Screen": environmentally responsible principles for screen production, owned by the Ministry for the Environment and licensed to Film New Zealand: https://environment.govt.nz/publications/greening-the-screen/greening-the-screen/',
+            '• Greenlit: industry-wide sustainability collaboration that supported 50+ productions in its first year: https://greenlit.org.nz/\n• "Greening the Screen": environmentally responsible principles for screen production, owned by the Ministry for the Environment and licensed to Film New Zealand: https://environment.govt.nz/publications/greening-the-screen/',
         },
       },
     },
@@ -2014,6 +2084,11 @@ export const countryData = {
     resources: {
       label: 'Resources',
       subcategories: {
+        caseStudies: {
+          label: 'Case studies & reports',
+          content:
+            '• Greenlit case studies from Aotearoa productions: https://greenlit.org.nz/case-studies/',
+        },
         networks: {
           label: 'Networks to join',
           content:
@@ -2733,12 +2808,12 @@ export const countryData = {
         audiovisualRegulation: {
           label: 'Film & TV industry regulations and incentives',
           content:
-            'Filming in national parks and game reserves requires an Environmental Filming and Photography Permit, and successful applicants sign a Memorandum of Agreement with the Government before shooting. The national Filming Guidelines (2019) set out a wildlife code of conduct that crews must follow: https://www.gov.bw/natural-resources/environmental-filming-and-photography-permit',
+            'Filming in national parks and game reserves requires an Environmental Filming and Photography Permit, and successful applicants sign a Memorandum of Agreement with the Government before shooting. The national Filming Guidelines (2019) set out a wildlife code of conduct that crews must follow: https://www.gov.bw/sites/default/files/2020-03/Filming_Guidelines_2019_Final_(2)%5B1%5D.pdf',
         },
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• Government of Botswana, Ministry of Environment and Tourism: Environmental Filming and Photography Permit and Filming Guidelines (2019): https://www.gov.bw/natural-resources/environmental-filming-and-photography-permit',
+            '• Government of Botswana, Ministry of Environment and Tourism: Environmental Filming and Photography Permit and Filming Guidelines (2019): https://www.gov.bw/sites/default/files/2020-03/Filming_Guidelines_2019_Final_(2)%5B1%5D.pdf',
         },
       },
     },
@@ -2763,7 +2838,7 @@ export const countryData = {
         networks: {
           label: 'Networks to join',
           content:
-            '• Government of Botswana, Environmental Filming and Photography Permit: https://www.gov.bw/natural-resources/environmental-filming-and-photography-permit',
+            '• Government of Botswana, Environmental Filming and Photography Permit: https://www.gov.bw/sites/default/files/2020-03/Filming_Guidelines_2019_Final_(2)%5B1%5D.pdf',
         },
       },
     },
@@ -2899,7 +2974,7 @@ export const countryData = {
         networks: {
           label: 'Networks to join',
           content:
-            '• Tanzania National Parks Authority (TANAPA): https://www.tanzaniaparks.go.tz/\n• Tanzania Film Board.',
+            '• Tanzania National Parks Authority (TANAPA).\n• Tanzania Film Board.',
         },
       },
     },

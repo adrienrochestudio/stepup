@@ -86,6 +86,7 @@
     },
     "loadError": "Impossible de charger la carte. Vérifiez votre connexion.",
     "subcategories": {
+      "caseStudies": "Études de cas et rapports",
       "greenProductionStatus": "État de l'éco-production",
       "decarbonizationPlan": "Plan de décarbonation",
       "laws": "Législation nationale pertinente",

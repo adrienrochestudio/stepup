@@ -83,6 +83,7 @@
     },
     "loadError": "No se pudo cargar el mapa. Comprueba tu conexión.",
     "subcategories": {
+      "caseStudies": "Estudios de caso e informes",
       "greenProductionStatus": "Estado de la producción sostenible",
       "decarbonizationPlan": "Plan de descarbonización",
       "laws": "Legislación nacional pertinente",

@@ -86,6 +86,7 @@
     },
     "loadError": "Impossibile caricare la mappa. Controlla la connessione.",
     "subcategories": {
+      "caseStudies": "Casi studio e report",
       "greenProductionStatus": "Stato della produzione green",
       "decarbonizationPlan": "Piano di decarbonizzazione",
       "laws": "Legislazione nazionale pertinente",

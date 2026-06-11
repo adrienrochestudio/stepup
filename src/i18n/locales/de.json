@@ -86,6 +86,7 @@
     },
     "loadError": "Karte konnte nicht geladen werden. Prüfen Sie Ihre Verbindung.",
     "subcategories": {
+      "caseStudies": "Fallstudien und Berichte",
       "greenProductionStatus": "Stand der grünen Produktion",
       "decarbonizationPlan": "Dekarbonisierungsplan",
       "laws": "Relevante nationale Gesetzgebung",
