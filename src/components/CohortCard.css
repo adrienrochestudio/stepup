@@ -10,6 +10,43 @@
   border-color: rgba(61, 71, 18, 0.2);
 }
 
+.cohort-card-pending {
+  border-left: 3px solid #d4a017;
+  opacity: 0.85;
+}
+
+.cohort-card-rejected {
+  border-left: 3px solid #e25b4a;
+  opacity: 0.5;
+}
+
+.cohort-card-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.cohort-badge {
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.cohort-badge-pending {
+  background: #fdf0d5;
+  color: #9a6b00;
+}
+
+.cohort-badge-rejected {
+  background: #fbe3e0;
+  color: #b03a2e;
+}
+
 .cohort-card-header {
   padding: 1rem 1.25rem;
   display: flex;

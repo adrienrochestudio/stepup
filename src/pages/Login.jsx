@@ -19,6 +19,7 @@ export default function Login() {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [jobTitle, setJobTitle] = useState('');
   const [country, setCountry] = useState('');
   const [company, setCompany] = useState('');
   const [organizationName, setOrganizationName] = useState('');
@@ -44,7 +45,7 @@ export default function Login() {
     try {
       if (isSignup) {
         const displayName = `${firstName} ${lastName}`;
-        await signup(email, password, role, organizationName, { firstName, lastName, displayName, country, company });
+        await signup(email, password, role, organizationName, { firstName, lastName, displayName, jobTitle, country, company });
       } else {
         await login(email, password, role);
       }
@@ -127,6 +128,17 @@ export default function Login() {
 
           {isSignup && (
             <>
+              <div className="login-field">
+                <label htmlFor="jobTitle">{t('login.jobTitle')}</label>
+                <input
+                  id="jobTitle"
+                  type="text"
+                  value={jobTitle}
+                  onChange={(e) => setJobTitle(e.target.value)}
+                  placeholder={t('login.jobTitlePlaceholder')}
+                  required
+                />
+              </div>
               <div className="login-field">
                 <label htmlFor="country">{t('login.country')}</label>
                 <select

@@ -147,7 +147,9 @@
     "usernamePlaceholder": "Généré automatiquement à partir de votre nom",
     "country": "Pays",
     "countryPlaceholder": "Sélectionnez votre pays",
-    "company": "Société (optionnel)",
+    "jobTitle": "Fonction / Role",
+    "jobTitlePlaceholder": "ex : Directeur de production",
+    "company": "Societe (optionnel)",
     "companyPlaceholder": "ex : Mon Studio de Production"
   },
   "dashboard": {
@@ -204,7 +206,12 @@
   "admin": {
     "title": "Gestion des cohortes",
     "createCohort": "+ Créer une cohorte",
-    "noCohorts": "Aucune cohorte. Créez la première !",
+    "noCohorts": "Aucune cohorte. Creez la premiere !",
+    "quota": "{{used}}/{{max}} cohortes utilisees",
+    "quotaFull": "Quota de cohortes atteint",
+    "pendingNotice": "{{count}} cohorte(s) en attente de validation par l'administrateur",
+    "statusPending": "En attente",
+    "statusRejected": "Refusee",
     "start": "Début",
     "end": "Fin",
     "enrolledStudents": "Apprenants inscrits ({{count}})",
@@ -475,6 +482,14 @@
     "sendCertificate": "Envoyer le certificat",
     "certSent": "Certificat envoyé !",
     "section": "Section",
-    "persons": "personnes"
+    "persons": "personnes",
+    "searchPlaceholder": "Rechercher un compte...",
+    "colJobTitle": "Fonction",
+    "quota": "Quota",
+    "pendingApproval": "En attente de validation",
+    "typeCohortRequest": "Demande de cohorte",
+    "statusPending": "En attente",
+    "requestedBy": "Demandeur",
+    "approve": "Valider"
   }
 }

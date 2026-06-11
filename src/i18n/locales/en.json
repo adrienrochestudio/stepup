@@ -147,6 +147,8 @@
     "usernamePlaceholder": "Auto-generated from your name",
     "country": "Country",
     "countryPlaceholder": "Select your country",
+    "jobTitle": "Role / Job title",
+    "jobTitlePlaceholder": "e.g. Production Manager",
     "company": "Company (optional)",
     "companyPlaceholder": "e.g. My Production Studio"
   },
@@ -205,6 +207,11 @@
     "title": "Cohort Manager",
     "createCohort": "+ Create Cohort",
     "noCohorts": "No cohorts yet. Create your first one!",
+    "quota": "{{used}}/{{max}} cohorts used",
+    "quotaFull": "Cohort quota reached",
+    "pendingNotice": "{{count}} cohort(s) awaiting admin approval",
+    "statusPending": "Pending",
+    "statusRejected": "Rejected",
     "start": "Start",
     "end": "End",
     "enrolledStudents": "Enrolled Students ({{count}})",
@@ -475,6 +482,14 @@
     "sendCertificate": "Send certificate",
     "certSent": "Certificate sent!",
     "section": "Section",
-    "persons": "people"
+    "persons": "people",
+    "searchPlaceholder": "Search accounts...",
+    "colJobTitle": "Job title",
+    "quota": "Quota",
+    "pendingApproval": "Pending approval",
+    "typeCohortRequest": "Cohort request",
+    "statusPending": "Pending",
+    "requestedBy": "Requested by",
+    "approve": "Approve"
   }
 }

@@ -148,6 +148,8 @@
     "country": "Paese",
     "countryPlaceholder": "Seleziona il tuo paese",
     "company": "Azienda (opzionale)",
+    "jobTitle": "Ruolo / Funzione",
+    "jobTitlePlaceholder": "es.: Direttore di produzione",
     "companyPlaceholder": "es.: Il mio studio di produzione"
   },
   "dashboard": {
@@ -202,6 +204,11 @@
     "title": "Gestione delle coorti",
     "createCohort": "+ Crea coorte",
     "noCohorts": "Nessuna coorte. Crea la prima!",
+    "quota": "{{used}}/{{max}} coorti utilizzate",
+    "quotaFull": "Quota coorti raggiunta",
+    "pendingNotice": "{{count}} coorte/i in attesa di approvazione",
+    "statusPending": "In attesa",
+    "statusRejected": "Rifiutata",
     "start": "Inizio",
     "end": "Fine",
     "enrolledStudents": "Partecipanti iscritti ({{count}})",

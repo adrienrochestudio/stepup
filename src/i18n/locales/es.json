@@ -143,7 +143,9 @@
     "country": "País",
     "countryPlaceholder": "Selecciona tu país",
     "company": "Empresa (opcional)",
-    "companyPlaceholder": "ej.: Mi Estudio de Producción"
+    "jobTitle": "Cargo / Funcion",
+    "jobTitlePlaceholder": "ej.: Director de produccion",
+    "companyPlaceholder": "ej.: Mi Estudio de Produccion"
   },
   "dashboard": {
     "title": "Mis cursos",
@@ -197,6 +199,11 @@
     "title": "Gestión de cohortes",
     "createCohort": "+ Crear cohorte",
     "noCohorts": "Sin cohortes. ¡Crea la primera!",
+    "quota": "{{used}}/{{max}} cohortes utilizadas",
+    "quotaFull": "Cuota de cohortes alcanzada",
+    "pendingNotice": "{{count}} cohorte(s) pendiente(s) de aprobacion",
+    "statusPending": "Pendiente",
+    "statusRejected": "Rechazada",
     "start": "Inicio",
     "end": "Fin",
     "enrolledStudents": "Alumnos inscritos ({{count}})",

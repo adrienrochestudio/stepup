@@ -4,7 +4,7 @@ import * as XLSX from 'xlsx';
 import CohortTracker from '../components/CohortTracker';
 import CreateCohortModal from '../components/CreateCohortModal';
 import { initialCohorts } from '../data/mockCohorts';
-import { initialAccounts } from '../data/mockAccounts';
+import { initialAccounts, platformStats } from '../data/mockAccounts';
 import { allCourses } from '../data/mockCourses';
 import {
   getSubmissions,
@@ -13,6 +13,7 @@ import {
 import './AdminBackoffice.css';
 
 const SECTIONS = ['overview', 'inbox', 'accounts', 'cohorts', 'promoCodes', 'certificates'];
+const ACCOUNTS_PER_PAGE = 10;
 
 const SUBMISSION_TYPE_KEYS = {
   map_contribution: 'typeMapContribution',
@@ -46,17 +47,40 @@ export default function AdminBackoffice() {
   const [newPromo, setNewPromo] = useState('');
   const [inboxFilter, setInboxFilter] = useState('all');
   const [certSent, setCertSent] = useState({});
+  const [accountSearch, setAccountSearch] = useState('');
+  const [accountRoleFilter, setAccountRoleFilter] = useState('all');
+  const [accountPage, setAccountPage] = useState(1);
 
   const newCount = submissions.filter((s) => s.status === 'new').length;
+  const pendingCohorts = cohorts.filter((c) => c.status === 'pending_approval');
 
   const learners = accounts.filter((a) => a.role === 'learner');
   const managers = accounts.filter((a) => a.role === 'cohort_manager');
 
-  const completions = learners.flatMap((l) => l.courses || []).filter((c) => c.status === 'completed');
-  const inProgress = learners.flatMap((l) => l.courses || []).filter((c) => c.status === 'in_progress');
-
   const completedLearners = learners.filter((l) =>
     (l.courses || []).some((c) => c.status === 'completed'),
+  );
+
+  const filteredAccounts = useMemo(() => {
+    let list = accounts;
+    if (accountRoleFilter !== 'all') {
+      list = list.filter((a) => a.role === accountRoleFilter);
+    }
+    if (accountSearch.trim()) {
+      const q = accountSearch.toLowerCase();
+      list = list.filter((a) =>
+        `${a.firstName} ${a.lastName} ${a.email} ${a.organization} ${a.country} ${a.jobTitle || ''}`
+          .toLowerCase()
+          .includes(q),
+      );
+    }
+    return list;
+  }, [accounts, accountRoleFilter, accountSearch]);
+
+  const totalAccountPages = Math.max(1, Math.ceil(filteredAccounts.length / ACCOUNTS_PER_PAGE));
+  const pagedAccounts = filteredAccounts.slice(
+    (accountPage - 1) * ACCOUNTS_PER_PAGE,
+    accountPage * ACCOUNTS_PER_PAGE,
   );
 
   const visibleSubmissions = useMemo(() => {
@@ -90,6 +114,18 @@ export default function AdminBackoffice() {
           ? { ...a, restrictions: { ...a.restrictions, canExport: !a.restrictions?.canExport } }
           : a,
       ),
+    );
+  };
+
+  const handleApproveCohort = (id) => {
+    setCohorts((prev) =>
+      prev.map((c) => (c.id === id ? { ...c, status: 'active' } : c)),
+    );
+  };
+
+  const handleRejectCohort = (id) => {
+    setCohorts((prev) =>
+      prev.map((c) => (c.id === id ? { ...c, status: 'rejected' } : c)),
     );
   };
 
@@ -185,6 +221,9 @@ export default function AdminBackoffice() {
               {key === 'inbox' && newCount > 0 && (
                 <span className="bo-nav-badge">{newCount}</span>
               )}
+              {key === 'cohorts' && pendingCohorts.length > 0 && (
+                <span className="bo-nav-badge">{pendingCohorts.length}</span>
+              )}
             </button>
           ))}
         </nav>
@@ -199,27 +238,27 @@ export default function AdminBackoffice() {
             <h1>{t('backoffice.nav.overview')}</h1>
             <div className="bo-kpis">
               <div className="bo-kpi">
-                <span className="bo-kpi-value">{accounts.length}</span>
+                <span className="bo-kpi-value">{platformStats.totalAccounts.toLocaleString()}</span>
                 <span className="bo-kpi-label">{t('backoffice.kpiAccounts')}</span>
               </div>
               <div className="bo-kpi">
-                <span className="bo-kpi-value">{managers.length}</span>
+                <span className="bo-kpi-value">{platformStats.totalManagers}</span>
                 <span className="bo-kpi-label">{t('backoffice.kpiManagers')}</span>
               </div>
               <div className="bo-kpi">
-                <span className="bo-kpi-value">{cohorts.length}</span>
+                <span className="bo-kpi-value">{platformStats.totalCohorts}</span>
                 <span className="bo-kpi-label">{t('backoffice.kpiCohorts')}</span>
               </div>
               <div className="bo-kpi">
-                <span className="bo-kpi-value">{inProgress.length}</span>
+                <span className="bo-kpi-value">{platformStats.coursesInProgress}</span>
                 <span className="bo-kpi-label">{t('backoffice.kpiInProgress')}</span>
               </div>
               <div className="bo-kpi">
-                <span className="bo-kpi-value">{completions.length}</span>
+                <span className="bo-kpi-value">{platformStats.coursesCompleted}</span>
                 <span className="bo-kpi-label">{t('backoffice.kpiCompletions')}</span>
               </div>
               <div className="bo-kpi bo-kpi-alert">
-                <span className="bo-kpi-value">{newCount}</span>
+                <span className="bo-kpi-value">{newCount + pendingCohorts.length}</span>
                 <span className="bo-kpi-label">{t('backoffice.kpiPending')}</span>
               </div>
             </div>
@@ -285,21 +324,41 @@ export default function AdminBackoffice() {
 
         {section === 'accounts' && (
           <section>
-            <h1>{t('backoffice.nav.accounts')}</h1>
+            <h1>{t('backoffice.nav.accounts')} <span className="bo-count">({platformStats.totalAccounts.toLocaleString()})</span></h1>
+            <div className="bo-accounts-toolbar">
+              <input
+                type="text"
+                className="bo-search"
+                placeholder={t('backoffice.searchPlaceholder')}
+                value={accountSearch}
+                onChange={(e) => { setAccountSearch(e.target.value); setAccountPage(1); }}
+              />
+              <div className="bo-inbox-filters">
+                {['all', 'learner', 'cohort_manager', 'admin'].map((r) => (
+                  <button
+                    key={r}
+                    className={`bo-filter-btn ${accountRoleFilter === r ? 'active' : ''}`}
+                    onClick={() => { setAccountRoleFilter(r); setAccountPage(1); }}
+                  >
+                    {r === 'all' ? t('backoffice.filterAll') : t(`backoffice.role_${r}`)}
+                  </button>
+                ))}
+              </div>
+            </div>
             <div className="bo-table-wrap">
               <table className="bo-table">
                 <thead>
                   <tr>
                     <th>{t('backoffice.colName')}</th>
                     <th>{t('backoffice.colRole')}</th>
+                    <th>{t('backoffice.colJobTitle')}</th>
                     <th>{t('backoffice.colOrganization')}</th>
-                    <th>{t('backoffice.colCourses')}</th>
                     <th>{t('backoffice.colStatus')}</th>
                     <th>{t('cohortTracker.actions')}</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {accounts.map((a) => (
+                  {pagedAccounts.map((a) => (
                     <tr key={a.id} className={a.status === 'suspended' ? 'suspended' : ''}>
                       <td>
                         <div className="learner-name">{a.firstName} {a.lastName}</div>
@@ -308,26 +367,21 @@ export default function AdminBackoffice() {
                       <td>
                         <span className={`bo-role-badge role-${a.role}`}>{t(`backoffice.role_${a.role}`)}</span>
                         {a.role === 'cohort_manager' && (
-                          <label className="bo-restriction-toggle">
-                            <input
-                              type="checkbox"
-                              checked={!!a.restrictions?.canExport}
-                              onChange={() => handleToggleManagerExport(a.id)}
-                            />
-                            {t('backoffice.canExport')}
-                          </label>
+                          <div className="bo-manager-meta">
+                            <span className="bo-muted">{t('backoffice.quota')}: {a.restrictions?.usedCohorts || 0}/{a.restrictions?.maxCohorts || 0}</span>
+                            <label className="bo-restriction-toggle">
+                              <input
+                                type="checkbox"
+                                checked={!!a.restrictions?.canExport}
+                                onChange={() => handleToggleManagerExport(a.id)}
+                              />
+                              {t('backoffice.canExport')}
+                            </label>
+                          </div>
                         )}
                       </td>
+                      <td className="bo-muted">{a.jobTitle || '-'}</td>
                       <td>{a.organization}<br /><span className="bo-muted">{a.country}</span></td>
-                      <td>
-                        {(a.courses || []).length === 0
-                          ? '-'
-                          : (a.courses || []).map((c) => (
-                              <div key={c.courseId} className="bo-course-line">
-                                {courseTitle(t, c.courseId)} · {c.progress}%
-                              </div>
-                            ))}
-                      </td>
                       <td>
                         <span className={`bo-status-badge status-${a.status}`}>
                           {t(`backoffice.status_${a.status}`)}
@@ -350,18 +404,57 @@ export default function AdminBackoffice() {
                 </tbody>
               </table>
             </div>
+            {totalAccountPages > 1 && (
+              <div className="bo-pagination">
+                <button disabled={accountPage <= 1} onClick={() => setAccountPage((p) => p - 1)}>&laquo;</button>
+                <span>{accountPage} / {totalAccountPages}</span>
+                <button disabled={accountPage >= totalAccountPages} onClick={() => setAccountPage((p) => p + 1)}>&raquo;</button>
+              </div>
+            )}
           </section>
         )}
 
         {section === 'cohorts' && (
           <section>
             <div className="bo-section-head">
-              <h1>{t('backoffice.nav.cohorts')}</h1>
+              <h1>{t('backoffice.nav.cohorts')} <span className="bo-count">({platformStats.totalCohorts})</span></h1>
               <button className="bo-primary-btn" onClick={() => setShowCohortModal(true)}>
                 {t('admin.createCohort')}
               </button>
             </div>
-            <CohortTracker cohorts={cohorts} />
+
+            {pendingCohorts.length > 0 && (
+              <div className="bo-pending-section">
+                <h2>{t('backoffice.pendingApproval')} ({pendingCohorts.length})</h2>
+                <div className="bo-sub-list">
+                  {pendingCohorts.map((c) => (
+                    <div key={c.id} className="bo-sub-card status-new">
+                      <div className="bo-sub-head">
+                        <span className="bo-sub-type">{t('backoffice.typeCohortRequest')}</span>
+                        <span className="bo-sub-status status-new">{t('backoffice.statusPending')}</span>
+                        <span className="bo-sub-date">{formatDate(c.startDate)}</span>
+                      </div>
+                      <p className="bo-sub-meta">
+                        <strong>{c.name}</strong>
+                      </p>
+                      <p className="bo-sub-field">
+                        {t('backoffice.requestedBy')}: {c.managerName} · {c.courseTitle} · {c.maxStudents} {t('backoffice.persons')}
+                      </p>
+                      <div className="bo-sub-actions">
+                        <button onClick={() => handleApproveCohort(c.id)}>
+                          {t('backoffice.approve')}
+                        </button>
+                        <button className="danger" onClick={() => handleRejectCohort(c.id)}>
+                          {t('backoffice.markRejected')}
+                        </button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <CohortTracker cohorts={cohorts.filter((c) => c.status === 'active')} />
           </section>
         )}
 

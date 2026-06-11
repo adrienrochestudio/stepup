@@ -12,11 +12,18 @@ export default function CohortCard({ cohort }) {
     return acc;
   }, {});
 
+  const isPending = cohort.status === 'pending_approval';
+  const isRejected = cohort.status === 'rejected';
+
   return (
-    <div className="cohort-card">
+    <div className={`cohort-card ${isPending ? 'cohort-card-pending' : ''} ${isRejected ? 'cohort-card-rejected' : ''}`}>
       <div className="cohort-card-header" onClick={() => setExpanded(!expanded)}>
         <div className="cohort-card-info">
-          <h3>{cohort.name}</h3>
+          <div className="cohort-card-title-row">
+            <h3>{cohort.name}</h3>
+            {isPending && <span className="cohort-badge cohort-badge-pending">{t('admin.statusPending')}</span>}
+            {isRejected && <span className="cohort-badge cohort-badge-rejected">{t('admin.statusRejected')}</span>}
+          </div>
           <span className="cohort-card-course">{cohort.courseTitle}</span>
         </div>
 

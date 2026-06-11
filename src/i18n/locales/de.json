@@ -148,6 +148,8 @@
     "country": "Land",
     "countryPlaceholder": "Land auswählen",
     "company": "Unternehmen (optional)",
+    "jobTitle": "Funktion / Rolle",
+    "jobTitlePlaceholder": "z. B. Produktionsleiter",
     "companyPlaceholder": "z. B. Mein Produktionsstudio"
   },
   "dashboard": {
@@ -202,6 +204,11 @@
     "title": "Kohortenverwaltung",
     "createCohort": "+ Kohorte erstellen",
     "noCohorts": "Keine Kohorten. Erstellen Sie die erste!",
+    "quota": "{{used}}/{{max}} Kohorten verwendet",
+    "quotaFull": "Kohorten-Kontingent erreicht",
+    "pendingNotice": "{{count}} Kohorte(n) warten auf Genehmigung",
+    "statusPending": "Ausstehend",
+    "statusRejected": "Abgelehnt",
     "start": "Beginn",
     "end": "Ende",
     "enrolledStudents": "Eingeschriebene Teilnehmer ({{count}})",
