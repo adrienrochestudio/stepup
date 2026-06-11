@@ -562,6 +562,11 @@ export const countryData = {
           content:
             'Unified classification system implemented through the Fenúr initiative.',
         },
+        otherFacts: {
+          label: 'Filming in natural environments',
+          content:
+            'Iceland\'s volcanic landscapes are exceptionally fragile: the moss covering lava fields can take decades to a century to recover from a single tyre track or footprint. Off-road driving is illegal nationwide (punishable by fines or imprisonment), and filming or photography in protected areas requires a permit from the Environment Agency of Iceland (via island.is). Keep vehicles on marked roads, keep crews on established paths, and restore any disturbed ground.',
+        },
       },
     },
     resources: {
@@ -1796,6 +1801,16 @@ export const countryData = {
           content:
             'Set construction is one of the biggest sources of hard-to-recycle waste on shoots, in particular polyurethane and polystyrene scenery. GREENSET runs a programme to cut and divert this set waste, and its Green PAs sort and recycle on set, with materials reused or passed on where possible rather than sent to landfill.',
         },
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'South Africa\'s grid is coal-heavy (coal provides roughly 80% of electricity, generated mostly by Eskom) and reliability remains fragile after years of load-shedding, so on-grid power carries a high carbon footprint and productions often plan backup power. This is exactly why solar and battery solutions are taking off on South African sets, from the Atlantic Green Studio (80%+ renewable) to solar-hybrid units used on streamer productions.',
+        },
+        otherFacts: {
+          label: 'Filming in natural environments',
+          content:
+            'Filming in national parks requires a SANParks film permit, assessed for impact and issued only after payment; filming without one can mean fines and confiscation of footage. Crew limits apply (at Table Mountain National Park, stills crews are capped at 15 and commercial crews at 30, and feature productions are not permitted), and drones are strictly prohibited in all SANParks parks. The Cape region is a global biodiversity hotspot: keep to tracks and protect fynbos and wildlife.',
+        },
       },
     },
     resources: {
@@ -1842,7 +1857,18 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Morocco\'s electricity is still mostly fossil-based (coal around 64% in 2023, with wind around 15% and solar around 5%), but the country is investing heavily in renewables, targeting 52% of capacity by 2030. The flagship Noor Ouarzazate solar complex (582 MW, one of the largest in the world) sits near the country\'s main studio hub, and on-set solar and battery solutions are a natural fit for desert shoots.',
+        },
+        otherFacts: {
+          label: 'Filming in natural environments',
+          content:
+            'Morocco\'s desert and mountain locations are fragile and water-stressed, and water use is a central constraint for productions (a point stressed by Green Production Maroc). Keep vehicles on existing tracks to protect desert surfaces and vegetation, plan water consumption carefully, carry all waste back out, and respect protected areas and local communities\' land and water access.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -1924,7 +1950,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        otherFacts: {
+          label: 'Filming in natural environments',
+          content:
+            'Commercial filming on public conservation land (about a third of the country) requires a concession from the Department of Conservation (DOC), with daily fees based on crew size. DOC and Film New Zealand jointly publish a Code of Practice for filming on conservation land, covering animals, pyrotechnics and helicopter or vehicle use. Plan ahead, keep clear of wildlife and sensitive vegetation, and leave locations as found: https://www.doc.govt.nz/get-involved/apply-for-permits/business-or-activity/filming/',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -2572,6 +2604,11 @@ export const countryData = {
     sustainability: {
       label: 'Sustainability & Logistics',
       subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Kenya has one of the cleanest grids in Africa: around 90% of its electricity is renewable, led by geothermal (about 46%) with hydropower, wind (including the Lake Turkana wind farm) and solar, and the country targets fully clean generation by 2030. Plugging into the grid is therefore a genuinely low-carbon option in cities; in remote locations, reliability varies and productions still bring backup power.',
+        },
         otherFacts: {
           label: 'Filming in natural environments',
           content:
@@ -2660,7 +2697,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Nigeria\'s national grid (mostly gas-fired, with hydropower around 20%) is unreliable, with repeated nationwide collapses, so most productions, like most businesses, run on diesel or petrol generators; backup generators are estimated to produce around 40% of all electricity consumed in the country. That makes cleaner mobile power (batteries, solar-hybrid units, generator right-sizing) one of the single biggest levers for greener shoots in Nigeria.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
