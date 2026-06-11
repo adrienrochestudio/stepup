@@ -2673,6 +2673,517 @@ export const countryData = {
       },
     },
   },
+
+  Rwanda: {
+    code: 'RWA',
+    name: 'Rwanda',
+    credit: null,
+    sources: 'Rwanda Development Board, Rwanda Film Office',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'In Rwanda, sustainability for productions runs mainly through conservation. The country is a prime wildlife-filming destination (mountain gorillas in Volcanoes National Park), and access is tightly managed to protect the animals and their habitat rather than through carbon paperwork.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'Filming is overseen by the Rwanda Film Office and the Rwanda Development Board (RDB). Gorilla and park filming needs a dedicated filming permit, separate from a tourist trekking permit; applicants submit the project purpose, crew size and equipment, and the RDB reviews it against conservation priorities.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        otherFacts: {
+          label: 'Filming in natural environments',
+          content:
+            'Gorilla filming follows the same conservation limits as a normal visit: small crews, a maximum of one hour with the animals, and a safe distance kept at all times. Work with park officials, avoid littering, and do not disturb wildlife or habitats.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• Rwanda Development Board / Rwanda Film Office: https://rdb.rw/',
+        },
+      },
+    },
+  },
+
+  Tanzania: {
+    code: 'TZA',
+    name: 'Tanzania',
+    credit: null,
+    sources: 'Tanzania Film Board, TANAPA',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Tanzania is a major wildlife-filming destination (the Serengeti, Ngorongoro, Kilimanjaro), and sustainability is framed first as protecting those ecosystems. Access to parks is regulated, with fees that fund conservation.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'Filming needs a permit from the Tanzania Film Board, and shooting in national parks also requires a permit from the Tanzania National Parks Authority (TANAPA). As an example, filming in the Serengeti or Nyerere carried a fee of about 300 US dollars per day (2024 to 2025), covering camping and conservation. Productions also clear permits with the Ministry of Defence and the civil aviation authority (TCAA).',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        otherFacts: {
+          label: 'Filming in natural environments',
+          content:
+            'Drone filming is heavily restricted to protect wildlife: drones must fly above a set minimum height, operate under park-staff supervision, and never over river crossings in the Serengeti. Keep a safe distance from animals and follow park guidance.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• Tanzania National Parks Authority (TANAPA): https://www.tanzaniaparks.go.tz/\n• Tanzania Film Board.',
+        },
+      },
+    },
+  },
+
+  Namibia: {
+    code: 'NAM',
+    name: 'Namibia',
+    credit: null,
+    sources: 'Namibia Film Commission',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Namibia is globally known for community-based conservation, and its deserts and parks are popular filming locations. Sustainability for productions centres on protecting fragile habitats and wildlife while shooting on location.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'Filming is coordinated by the Namibia Film Commission; shooting in national parks and protected areas needs permits from the relevant authorities (the Ministry of Environment, Forestry and Tourism or park management). An environmental officer is required on set each day of filming in a national park, with additional fees.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        otherFacts: {
+          label: 'Filming in natural environments',
+          content:
+            'Inside parks and protected areas, certain activities are restricted to safeguard wildlife and habitat, including flying drones, lighting fires, disturbing animals or entering sensitive areas. Keep a respectful distance and follow the park management guidelines.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• Namibia Film Commission: https://nfc.na/',
+        },
+      },
+    },
+  },
+
+  Uganda: {
+    code: 'UGA',
+    name: 'Uganda',
+    credit: null,
+    sources: 'Uganda Wildlife Authority, Media Council of Uganda',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Uganda is a wildlife-filming destination (mountain gorillas and chimpanzees in Bwindi and other parks), and sustainability is framed first as conservation. Filming fees help fund protected areas and local communities.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'Filming in parks needs a commercial filming permit from the Uganda Wildlife Authority (UWA), plus media accreditation from the Media Council of Uganda. For gorilla filming, UWA caps crews at 8 people per group and requires a safe distance of at least 10 metres. UWA charges a filming fee (around 40% of the activity) plus a monitoring fee (around 10%).',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        otherFacts: {
+          label: 'Filming in natural environments',
+          content:
+            'Crew-size limits and distance rules are conservation measures: keep groups small, stay back from the animals, follow ranger guidance, and avoid anything that changes wildlife behaviour.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• Uganda Wildlife Authority (UWA): https://ugandawildlife.org/',
+        },
+      },
+    },
+  },
+
+  Romania: {
+    code: 'ROU',
+    name: 'Romania',
+    credit: null,
+    sources: 'Green Screen (Interreg Europe), Bucharest-Ilfov RDA',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Romania took part in European policy work on greening the screen sector, though a binding national green-production scheme is not yet in place. As an EU member it is bound by the EU goal of climate neutrality by 2050.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• Green Screen (Interreg Europe, 2017 to 2021): a partnership of eight European film regions to cut the film and TV carbon footprint. The Bucharest-Ilfov Regional Development Agency was the Romanian partner and developed a regional action plan: https://www.interregeurope.eu/greenscreen',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            'No national film-specific calculator yet; Romanian productions use established international tools, the credible ones being BAFTA albert (https://wearealbert.org/) and Ecoprod\'s Carbon\'Clap (https://ecoprod.com/).',
+        },
+      },
+    },
+  },
+
+  Zimbabwe: {
+    code: 'ZWE',
+    name: 'Zimbabwe',
+    credit: null,
+    sources: 'ZimParks',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Zimbabwe is a wildlife-filming destination (Hwange, Mana Pools, Victoria Falls, Lake Kariba), and sustainability is framed first as protecting these protected areas. There is no formal green-production scheme we could verify.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'Filming in protected areas is regulated by the Zimbabwe Parks and Wildlife Management Authority (ZimParks) under the Parks and Wildlife Act (Chapter 20:14). Commercial, documentary and educational filming is charged per day, and commercial equipment used without the proper permit can be impounded.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        otherFacts: {
+          label: 'Filming in natural environments',
+          content:
+            'Secure ZimParks permits before filming in any national park, safari area or reserve, keep a safe distance from wildlife, and follow the authority guidance on access and conduct.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• Zimbabwe Parks and Wildlife Management Authority (ZimParks): https://www.zimparks.org.zw/',
+        },
+      },
+    },
+  },
+
+  Senegal: {
+    code: 'SEN',
+    name: 'Senegal',
+    credit: null,
+    sources: 'FOPICA, Direction de la Cinématographie',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Public information on green production in Senegal is currently limited, and we could not verify a dedicated national framework. The sector is structured around public funding, which also supports animation. If you know of green-production initiatives here, please contribute.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• FOPICA (Fonds de Promotion de l\'Industrie Cinématographique et Audiovisuelle): the national fund supporting film and audiovisual works of all genres, including animation. Created in 2002 and launched in 2013, later raised to about 2 billion CFA francs.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {},
+    },
+  },
+
+  Ghana: {
+    code: 'GHA',
+    name: 'Ghana',
+    credit: null,
+    sources: 'National Film Authority',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Public information on green production in Ghana is currently limited, and we could not verify a dedicated national framework. The National Film Authority regulates and supports the sector; productions must meet general environmental, health and safety requirements when obtaining permits. If you know of green-production initiatives here, please contribute.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• National Film Authority (NFA): established under the Development and Classification of Film Act, 2016 (Act 935): https://nfa.gov.gh/',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {},
+    },
+  },
+
+  Egypt: {
+    code: 'EGY',
+    name: 'Egypt',
+    credit: null,
+    sources: 'Egypt Film Commission',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Egypt is one of the largest film hubs in the Arab world, but public information on green production is currently limited and we could not verify a dedicated national framework. If you know of green-production initiatives here, please contribute.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• Egypt Film Commission (EFC): the one-stop shop for shooting approvals and permits, also working on production incentives: https://egyptfilming.com/',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {},
+    },
+  },
+
+  Tunisia: {
+    code: 'TUN',
+    name: 'Tunisia',
+    credit: null,
+    sources: 'CNCI',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Public information on green production in Tunisia is currently limited, and we could not verify a dedicated national framework. The sector is structured around public funding, which also supports animation. If you know of green-production initiatives here, please contribute.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• CNCI (Centre National du Cinéma et de l\'Image): the public body that funds and organises film and animation production in Tunisia, with a bilateral Franco-Tunisian co-production fund since 2019: https://cnci.tn/',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {},
+    },
+  },
+
+  Croatia: {
+    code: 'HRV',
+    name: 'Croatia',
+    credit: null,
+    sources: 'HAVC (Croatian Audiovisual Centre)',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Public information on a dedicated green-production scheme in Croatia is currently limited, and we could not verify one. As an EU member, Croatia is bound by the EU goal of climate neutrality by 2050. If you know of green-production initiatives here, please contribute.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'The Croatian Audiovisual Centre (HAVC) runs the national incentive, a cash rebate of up to 25% of qualifying Croatian spend, through its Filming in Croatia programme: https://filmingincroatia.hr/',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {},
+    },
+  },
+
+  Bulgaria: {
+    code: 'BGR',
+    name: 'Bulgaria',
+    credit: null,
+    sources: 'Bulgarian National Film Center',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Public information on a dedicated green-production scheme in Bulgaria is currently limited, and we could not verify one. As an EU member, Bulgaria is bound by the EU goal of climate neutrality by 2050. If you know of green-production initiatives here, please contribute.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'The Bulgarian National Film Center administers the national incentive, a cash rebate of up to 25% of eligible local spend for film and high-end TV: https://www.nfc.bg/en/',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {},
+    },
+  },
+
+  Georgia: {
+    code: 'GEO',
+    name: 'Georgia',
+    credit: null,
+    sources: 'Georgian National Film Center, Enterprise Georgia',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Public information on green production in Georgia is currently limited, and we could not verify a dedicated national scheme, though the film office encourages responsible, low-impact shooting in the country\'s landscapes. If you know of green-production initiatives here, please contribute.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'The Georgian National Film Center supports national cinema, and the "Film in Georgia" programme (run by Enterprise Georgia) offers a cash rebate of 20 to 25% on qualified spend: https://www.enterprisegeorgia.gov.ge/en/business-development/filmingeorgia',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {},
+    },
+  },
+
+  'South Korea': {
+    code: 'KOR',
+    name: 'South Korea',
+    credit: null,
+    sources: 'SIEFF, Korea Green Foundation',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'In South Korea, the most visible environmental engagement of the screen sector is through awareness rather than a production standard. We could not verify a national green-production framework. If you know of one, please contribute.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            'Awareness (not a production standard): the Seoul International Eco Film Festival (SIEFF), founded in 2004 by the Korea Green Foundation, is one of the largest environmental film festivals in Asia and a member of the Green Film Network. It raises awareness through cinema rather than setting on-set standards.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {},
+    },
+  },
+
+  Japan: {
+    code: 'JPN',
+    name: 'Japan',
+    credit: null,
+    sources: 'limited public sources',
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'We currently have little Japan-specific information on green production, and we could not verify a national framework. Japan has committed to national carbon neutrality by 2050, and productions are beginning to adopt eco-practices (LED lighting, battery and hybrid power, waste reduction), but this is not yet formalised for the screen sector nationally. If you know of green-production initiatives in Japan, please contribute.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {},
+    },
+  },
 };
 
 export const categoryKeys = ['generalInfo', 'sustainability', 'resources'];
