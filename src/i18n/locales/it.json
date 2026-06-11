@@ -72,7 +72,7 @@
     "introSubtitle": "Normative, incentivi, strumenti e contatti per produzioni più sostenibili, paese per paese.",
     "searchPlaceholder": "Cerca tra {{count}} paesi...",
     "noResults": "Nessun paese trovato. Controlla l'ortografia.",
-    "clickHint": "Clicca su un paese per esplorare la sua eco-produzione.",
+    "clickHint": "Clicca su un paese per esplorare le informazioni disponibili sull'eco-produzione.",
     "addInfo": "Proponi una risorsa",
     "selectAll": "Seleziona tutto",
     "refine": "Affina",
@@ -108,7 +108,7 @@
       "networks": "Reti di professionisti"
     },
     "filterLabel": "Filtra per tema",
-    "langNote": "Per sobrietà digitale e per limitare l'archiviazione dei dati, le informazioni della mappa sono in inglese. Suggeriamo di copiare il testo in un traduttore automatico come DeepL, o di attivare un componente di traduzione automatica nel browser.",
+    "langNote": "Se non parli inglese: per sobrietà digitale e per limitare l'archiviazione dei dati, i contenuti della mappa sono in inglese. Suggeriamo di copiare il testo in un traduttore automatico come DeepL, o di attivare un componente di traduzione automatica nel browser.",
     "langNoteLink": "Apri DeepL",
     "langNoteToggle": "Info in inglese"
   },

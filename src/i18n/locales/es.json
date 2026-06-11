@@ -69,7 +69,7 @@
     "introSubtitle": "Regulaciones, ayudas, herramientas y contactos para rodajes más sostenibles, país por país.",
     "searchPlaceholder": "Buscar entre {{count}} países...",
     "noResults": "No se encontró ningún país. Comprueba la ortografía.",
-    "clickHint": "Haz clic en un país para explorar su ecoproducción.",
+    "clickHint": "Haz clic en un país para explorar la información disponible sobre ecoproducción.",
     "addInfo": "Proponer un recurso",
     "selectAll": "Seleccionar todo",
     "refine": "Afinar",
@@ -105,7 +105,7 @@
       "networks": "Redes de profesionales"
     },
     "filterLabel": "Filtrar por tema",
-    "langNote": "Por sobriedad digital y para limitar el almacenamiento de datos, la información del mapa está en inglés. Sugerimos copiar el texto en un traductor automático como DeepL, o activar un complemento de traducción automática en tu navegador.",
+    "langNote": "Si no hablas inglés: por sobriedad digital y para limitar el almacenamiento de datos, el contenido del mapa está en inglés. Sugerimos copiar el texto en un traductor automático como DeepL, o activar un complemento de traducción automática en tu navegador.",
     "langNoteLink": "Abrir DeepL",
     "langNoteToggle": "Info en inglés"
   },

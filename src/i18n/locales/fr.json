@@ -72,7 +72,7 @@
     "introSubtitle": "Réglementations, aides, outils et contacts pour des tournages plus durables, pays par pays.",
     "searchPlaceholder": "Rechercher parmi {{count}} pays...",
     "noResults": "Aucun pays trouvé. Vérifiez l'orthographe.",
-    "clickHint": "Cliquez sur un pays pour explorer son éco-production.",
+    "clickHint": "Cliquez sur un pays pour explorer les informations disponibles relatives à l'éco-production.",
     "addInfo": "Proposer une ressource",
     "selectAll": "Tout sélectionner",
     "refine": "Affiner",
@@ -108,7 +108,7 @@
       "networks": "Réseaux de professionnels"
     },
     "filterLabel": "Filtrer par thème",
-    "langNote": "Par souci de sobriété numérique et de stockage de données, les informations de la carte sont en anglais. Nous vous suggérons de copier les textes dans un traducteur automatique comme DeepL, ou d'activer un module de traduction automatique dans votre navigateur.",
+    "langNote": "Si vous ne parlez pas anglais : par souci de sobriété numérique et de stockage de données, les informations de la carte sont en anglais. Nous vous suggérons de copier les textes dans un traducteur automatique comme DeepL, ou d'activer un module de traduction automatique dans votre navigateur.",
     "langNoteLink": "Ouvrir DeepL",
     "langNoteToggle": "Infos en anglais"
   },

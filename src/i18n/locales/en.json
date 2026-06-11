@@ -72,7 +72,7 @@
     "introSubtitle": "Regulations, incentives, tools and contacts for more sustainable film and TV production, country by country.",
     "searchPlaceholder": "Search among {{count}} countries...",
     "noResults": "No country found. Check the spelling.",
-    "clickHint": "Click a country to explore its green production.",
+    "clickHint": "Click a country to explore the available information on green film production.",
     "addInfo": "Suggest a resource",
     "selectAll": "Select all",
     "refine": "Refine",
@@ -108,7 +108,7 @@
       "networks": "Networks for professionals"
     },
     "filterLabel": "Filter by topic",
-    "langNote": "For digital sobriety and to limit data storage, the map's information is kept in English. We suggest copying the text into an automatic translator such as DeepL, or enabling an automatic translation add-on in your browser.",
+    "langNote": "If you do not speak English: for digital sobriety and to limit data storage, the map's content is kept in English. We suggest copying the text into an automatic translator such as DeepL, or enabling an automatic translation add-on in your browser.",
     "langNoteLink": "Open DeepL",
     "langNoteToggle": "Info in English"
   },

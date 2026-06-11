@@ -44,6 +44,7 @@ export default function GlobeView({ onCountryClick, selectedCountry }) {
   const [hovered, setHovered] = useState(null);
   const [loadError, setLoadError] = useState(false);
   const [showLangNote, setShowLangNote] = useState(false);
+  const langNoteRef = useRef(null);
 
   const globeMaterial = useMemo(
     () => new THREE.MeshPhongMaterial({ color: COLOR_SEA, transparent: false }),
@@ -62,6 +63,21 @@ export default function GlobeView({ onCountryClick, selectedCountry }) {
       })
       .catch(() => setLoadError(true));
   }, []);
+
+  useEffect(() => {
+    if (!showLangNote) return undefined;
+    const onDown = (e) => {
+      if (langNoteRef.current && !langNoteRef.current.contains(e.target)) {
+        setShowLangNote(false);
+      }
+    };
+    document.addEventListener('mousedown', onDown);
+    document.addEventListener('touchstart', onDown);
+    return () => {
+      document.removeEventListener('mousedown', onDown);
+      document.removeEventListener('touchstart', onDown);
+    };
+  }, [showLangNote]);
 
   useEffect(() => {
     const el = containerRef.current;
@@ -169,8 +185,8 @@ export default function GlobeView({ onCountryClick, selectedCountry }) {
         globeImageUrl=""
         showGlobe={true}
         showAtmosphere={true}
-        atmosphereColor="#c8d490"
-        atmosphereAltitude={0.08}
+        atmosphereColor="#9aad1e"
+        atmosphereAltitude={0.22}
         globeMaterial={globeMaterial}
         polygonsData={countries}
         polygonCapColor={getPolygonCapColor}
@@ -194,7 +210,7 @@ export default function GlobeView({ onCountryClick, selectedCountry }) {
           {t('map.legendNoData')}
         </span>
 
-        <div className="globe-langnote">
+        <div className="globe-langnote" ref={langNoteRef}>
           <button
             type="button"
             className="globe-langnote-btn"

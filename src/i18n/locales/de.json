@@ -72,7 +72,7 @@
     "introSubtitle": "Vorschriften, Förderungen, Tools und Kontakte für nachhaltigere Produktionen, Land für Land.",
     "searchPlaceholder": "Unter {{count}} Ländern suchen...",
     "noResults": "Kein Land gefunden. Bitte Schreibweise prüfen.",
-    "clickHint": "Klicken Sie auf ein Land, um seine grüne Filmproduktion zu erkunden.",
+    "clickHint": "Klicken Sie auf ein Land, um die verfügbaren Informationen zur grünen Filmproduktion zu erkunden.",
     "addInfo": "Ressource vorschlagen",
     "selectAll": "Alle auswählen",
     "refine": "Verfeinern",
@@ -108,7 +108,7 @@
       "networks": "Netzwerke für Fachleute"
     },
     "filterLabel": "Nach Thema filtern",
-    "langNote": "Aus Gründen der digitalen Sparsamkeit und Datenspeicherung sind die Informationen der Karte auf Englisch. Wir empfehlen, den Text in einen automatischen Übersetzer wie DeepL zu kopieren oder ein automatisches Übersetzungs-Add-on im Browser zu aktivieren.",
+    "langNote": "Wenn Sie kein Englisch sprechen: Aus Gründen der digitalen Sparsamkeit und Datenspeicherung sind die Inhalte der Karte auf Englisch. Wir empfehlen, den Text in einen automatischen Übersetzer wie DeepL zu kopieren oder ein automatisches Übersetzungs-Add-on im Browser zu aktivieren.",
     "langNoteLink": "DeepL öffnen",
     "langNoteToggle": "Infos auf Englisch"
   },

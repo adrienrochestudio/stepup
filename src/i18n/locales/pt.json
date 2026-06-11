@@ -72,7 +72,7 @@
     "introSubtitle": "Regulamentações, apoios, ferramentas e contactos para produções mais sustentáveis, país por país.",
     "searchPlaceholder": "Pesquisar entre {{count}} países...",
     "noResults": "Nenhum país encontrado. Verifique a ortografia.",
-    "clickHint": "Clique num país para explorar a sua ecoprodução.",
+    "clickHint": "Clique num país para explorar as informações disponíveis sobre ecoprodução.",
     "addInfo": "Sugerir um recurso",
     "selectAll": "Selecionar tudo",
     "refine": "Refinar",
@@ -108,7 +108,7 @@
       "networks": "Redes de profissionais"
     },
     "filterLabel": "Filtrar por tema",
-    "langNote": "Por sobriedade digital e para limitar o armazenamento de dados, as informações do mapa estão em inglês. Sugerimos copiar o texto para um tradutor automático como o DeepL, ou ativar um plugin de tradução automática no navegador.",
+    "langNote": "Se não fala inglês: por sobriedade digital e para limitar o armazenamento de dados, os conteúdos do mapa estão em inglês. Sugerimos copiar o texto para um tradutor automático como o DeepL, ou ativar um plugin de tradução automática no navegador.",
     "langNoteLink": "Abrir DeepL",
     "langNoteToggle": "Info em inglês"
   },
