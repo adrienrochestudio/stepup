@@ -185,8 +185,8 @@ export default function GlobeView({ onCountryClick, selectedCountry }) {
         globeImageUrl=""
         showGlobe={true}
         showAtmosphere={true}
-        atmosphereColor="#b3c252"
-        atmosphereAltitude={0.15}
+        atmosphereColor="#bccb6f"
+        atmosphereAltitude={0.11}
         globeMaterial={globeMaterial}
         polygonsData={countries}
         polygonCapColor={getPolygonCapColor}
