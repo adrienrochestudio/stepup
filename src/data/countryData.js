@@ -34,7 +34,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• Ecoprod: Association bringing together companies and professionals of the industry, developing tools such as a free carbon calculator, a label, training and studies.\nhttps://www.ecoprod.com/fr/\n• RESSAC: National network collecting and recirculating set design/costumes through multiple resourceries (La Ressourcerie Culturelle, ArtStock, La Ressourcerie du Cinéma, La Caverne, La Réserve des Arts).',
+            '• Ecoprod: Association bringing together companies and professionals of the industry, developing tools such as a free carbon calculator, a label, training and studies.\nhttps://www.ecoprod.com/fr/\n• RESSAC: National network collecting and recirculating set design/costumes through multiple resourceries (La Ressourcerie Culturelle, ArtStock, La Ressourcerie du Cinéma, La Caverne, La Réserve des Arts).\n• Concrete example (solar): Bonne Pioche\'s feature "C\'est le monde à l\'envers!" (2024, Nicolas Vanier) powered its base camp with on-site solar panels and a battery storage station (supplied by TYVA Energie) and ran electric vehicles, to avoid diesel generators: https://bonnepioche.fr/',
         },
       },
     },
@@ -1782,7 +1782,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        wasteManagement: {
+          label: 'Waste management rules',
+          content:
+            'Set construction is one of the biggest sources of hard-to-recycle waste on shoots, in particular polyurethane and polystyrene scenery. GREENSET runs a programme to cut and divert this set waste, and its Green PAs sort and recycle on set, with materials reused or passed on where possible rather than sent to landfill.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -2508,6 +2514,133 @@ export const countryData = {
           label: 'Networks to join',
           content:
             '• Costa Rica Film Commission: https://www.costaricafilmcommission.org/\n• SINAC (National System of Conservation Areas): permits for filming in national parks and reserves.',
+        },
+      },
+    },
+  },
+
+  Kenya: {
+    code: 'KEN',
+    name: 'Kenya',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Kenya is a major natural-location destination, and its green credentials run mainly through wildlife conservation rather than carbon paperwork. Filming in parks and reserves is tied to conservation rules, and part of the fees is reinvested in protecting the habitats that productions rely on.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'Filming is licensed by the Kenya Film Commission and the Kenya Film and Classification Board (Film and Stage Plays Act, Cap. 222). Shooting in national parks, reserves or other protected areas needs a permit from the Kenya Wildlife Service (KWS) under the Wildlife Conservation and Management Act (2013), and productions must follow KWS conservation guidelines. Where a shoot has significant environmental impact, KWS may levy an environmental restoration fee (reported at around 15% of the fees paid): https://kenyafilmcommission.go.ke/',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• Kenya Film Commission: https://kenyafilmcommission.go.ke/\n• Kenya Wildlife Service (KWS), permits and conservation guidelines for protected areas: https://kws.go.ke/',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        otherFacts: {
+          label: 'Filming in natural environments',
+          content:
+            'Filming in Kenya\'s parks and reserves means working under KWS conservation rules: keep to authorised areas and tracks, do not disturb, bait or feed wildlife, minimise your footprint and waste, and budget for the environmental restoration fee where impact is significant.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• Kenya Film Commission: https://kenyafilmcommission.go.ke/\n• Kenya Wildlife Service (KWS): https://kws.go.ke/',
+        },
+      },
+    },
+  },
+
+  Botswana: {
+    code: 'BWA',
+    name: 'Botswana',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Botswana protects its wildlife and wild places through some of the strictest filming rules in Africa. Much of its appeal (the Okavango Delta, the Kalahari) lies inside protected areas, so sustainability here is framed first as wildlife welfare and habitat protection rather than carbon accounting.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'Filming in national parks and game reserves requires an Environmental Filming and Photography Permit, and successful applicants sign a Memorandum of Agreement with the Government before shooting. The national Filming Guidelines (2019) set out a wildlife code of conduct that crews must follow: https://www.gov.bw/natural-resources/environmental-filming-and-photography-permit',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• Government of Botswana, Ministry of Environment and Tourism: Environmental Filming and Photography Permit and Filming Guidelines (2019): https://www.gov.bw/natural-resources/environmental-filming-and-photography-permit',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        otherFacts: {
+          label: 'Filming in natural environments',
+          content:
+            'Botswana\'s wildlife code of conduct prohibits using sound recordings to attract animals and bans darting animals for filming. Only licensed professionals may handle or capture wildlife; where a capture is filmed it must be supervised by an approved veterinary officer and the crew must not interfere. Foreign crews must clear compliance before permits and visas are issued.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• Government of Botswana, Environmental Filming and Photography Permit: https://www.gov.bw/natural-resources/environmental-filming-and-photography-permit',
+        },
+      },
+    },
+  },
+
+  Nigeria: {
+    code: 'NGA',
+    name: 'Nigeria',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Nigeria\'s screen sector (Nollywood, one of the world\'s largest by output) is engaging with sustainability mainly through storytelling and awareness so far, rather than a formal green-production framework. Practical green production is emerging, with some productions reducing waste, using digital sets and more efficient equipment.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            'Awareness (not production standards): Nollywood is increasingly used for environmental storytelling, and the African SDG Film Festival, hosted by the recycling company Chanja Datti, uses film to advance the UN Sustainable Development Goals. These are advocacy and awareness efforts.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {},
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        trainings: {
+          label: 'Trainings',
+          content:
+            'Training specifically in green production is still limited, and should not be confused with the awareness efforts above. General producer-development schemes such as Film Lab Africa (funded by the British Council) build broader sector capacity, but they are not sustainability-specific.',
         },
       },
     },
