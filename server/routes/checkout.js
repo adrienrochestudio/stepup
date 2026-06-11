@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import { stripe, webhookSecret } from '../services/stripe.js';
+import { safeOrigin } from '../config.js';
 
 const router = Router();
 
@@ -25,6 +26,9 @@ router.post('/create-session', async (req, res) => {
     return res.status(404).json({ error: 'Course not found' });
   }
 
+  // Validate the origin before using it in redirect URLs (open-redirect guard).
+  const origin = safeOrigin(req);
+
   try {
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
@@ -37,8 +41,8 @@ router.post('/create-session', async (req, res) => {
         quantity: 1,
       }],
       mode: 'payment',
-      success_url: `${req.headers.origin}/enroll/${courseId}/success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${req.headers.origin}/enroll/${courseId}/cancel`,
+      success_url: `${origin}/enroll/${courseId}/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${origin}/enroll/${courseId}/cancel`,
       metadata: { courseId },
     });
 

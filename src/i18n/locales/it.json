@@ -221,7 +221,7 @@
       "promoSuccess": "Codice valido! Accesso ai seguenti corsi:",
       "promoInvalid": "Codice promozionale non valido.",
       "importTitle": "Importa partecipanti",
-      "importHint": "Importa un file Excel con le colonne Nome e Cognome. Le credenziali saranno generate automaticamente.",
+      "importHint": "Importa un file CSV (.csv) con le colonne Nome e Cognome. Le credenziali saranno generate automaticamente.",
       "downloadTemplate": "Scarica modello",
       "importFile": "Importa file",
       "importEmpty": "Nessun dato trovato nel file.",

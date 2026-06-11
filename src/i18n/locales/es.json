@@ -216,7 +216,7 @@
       "promoSuccess": "¡Código válido! Acceso a los siguientes cursos:",
       "promoInvalid": "Código promocional no válido.",
       "importTitle": "Importar alumnos",
-      "importHint": "Importa un archivo Excel con las columnas Nombre y Apellido. Las credenciales se generarán automáticamente.",
+      "importHint": "Importa un archivo CSV (.csv) con las columnas Nombre y Apellido. Las credenciales se generarán automáticamente.",
       "downloadTemplate": "Descargar plantilla",
       "importFile": "Importar archivo",
       "importEmpty": "No se encontraron datos en el archivo.",

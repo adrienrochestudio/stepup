@@ -224,7 +224,7 @@
       "promoSuccess": "Valid code! Access to the following courses:",
       "promoInvalid": "Invalid promo code.",
       "importTitle": "Import Learners",
-      "importHint": "Import an Excel file with First Name and Last Name columns. Credentials will be generated automatically.",
+      "importHint": "Import a CSV (.csv) file with First Name and Last Name columns. Credentials will be generated automatically.",
       "downloadTemplate": "Download template",
       "importFile": "Import file",
       "importEmpty": "No data found in the file.",

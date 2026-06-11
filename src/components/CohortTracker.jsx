@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import * as XLSX from 'xlsx';
+import { objectsToCsv, downloadCsv } from '../services/csv';
 import ReminderModal from './ReminderModal';
 import './CohortTracker.css';
 
@@ -72,10 +72,7 @@ export default function CohortTracker({ cohorts }) {
       [t('admin.modal.course')]: cohort?.courseTitle || '',
     }));
 
-    const ws = XLSX.utils.json_to_sheet(data);
-    const wb = XLSX.utils.book_new();
-    XLSX.utils.book_append_sheet(wb, ws, 'Apprenants');
-    XLSX.writeFile(wb, `${cohort?.name || 'cohorte'}_export.xlsx`);
+    downloadCsv(`${cohort?.name || 'cohorte'}_export.csv`, objectsToCsv(data));
   };
 
   return (

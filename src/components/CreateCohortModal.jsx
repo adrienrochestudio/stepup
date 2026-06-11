@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useAuth } from '../hooks/useAuth';
 import { allCourses } from '../data/mockCourses';
 import { validatePromoCode } from '../data/mockPromoCodes';
-import * as XLSX from 'xlsx';
+import { parseCsv, rowsToCsv, downloadCsv } from '../services/csv';
 import './CreateCohortModal.css';
 
 function generatePassword() {
@@ -67,11 +67,9 @@ export default function CreateCohortModal({ onClose, onCreate }) {
     const reader = new FileReader();
     reader.onload = (evt) => {
       try {
-        const wb = XLSX.read(evt.target.result, { type: 'array' });
-        const ws = wb.Sheets[wb.SheetNames[0]];
-        const rows = XLSX.utils.sheet_to_json(ws, { header: 1 });
+        const rows = parseCsv(String(evt.target.result));
 
-        const dataRows = rows.slice(1).filter((r) => r[0] && r[1]);
+        const dataRows = rows.slice(1).filter((r) => r[0]?.trim() && r[1]?.trim());
         if (dataRows.length === 0) {
           setImportError(t('admin.modal.importEmpty'));
           return;
@@ -97,18 +95,16 @@ export default function CreateCohortModal({ onClose, onCreate }) {
         setImportError(t('admin.modal.importError'));
       }
     };
-    reader.readAsArrayBuffer(file);
+    reader.readAsText(file);
   };
 
   const handleDownloadTemplate = () => {
-    const ws = XLSX.utils.aoa_to_sheet([
+    const csv = rowsToCsv([
       [t('admin.modal.templateFirstName'), t('admin.modal.templateLastName')],
       ['Jean', 'Dupont'],
       ['Marie', 'Martin'],
     ]);
-    const wb = XLSX.utils.book_new();
-    XLSX.utils.book_append_sheet(wb, ws, 'Apprenants');
-    XLSX.writeFile(wb, 'template_apprenants.xlsx');
+    downloadCsv('template_apprenants.csv', csv);
   };
 
   const handleSubmit = (e) => {
@@ -247,7 +243,7 @@ export default function CreateCohortModal({ onClose, onCreate }) {
               <input
                 ref={fileInputRef}
                 type="file"
-                accept=".xlsx,.xls,.csv"
+                accept=".csv,text/csv"
                 onChange={handleFileImport}
                 style={{ display: 'none' }}
               />

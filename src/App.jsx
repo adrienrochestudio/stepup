@@ -19,7 +19,6 @@ import SalesTerms from './pages/SalesTerms';
 // dependencies stay out of the initial bundle:
 //  - ResourceMap pulls in react-globe.gl + three (~tens of MB of source)
 //  - Course loads the SCORM runtime (scorm-again)
-//  - AdminCohorts loads the xlsx parser
 const ResourceMap = lazy(() => import('./pages/ResourceMap'));
 const Course = lazy(() => import('./pages/Course'));
 const AdminCohorts = lazy(() => import('./pages/AdminCohorts'));

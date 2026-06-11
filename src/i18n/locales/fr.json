@@ -224,7 +224,7 @@
       "promoSuccess": "Code valide ! Accès aux cours suivants :",
       "promoInvalid": "Code promotionnel invalide.",
       "importTitle": "Importer les apprenants",
-      "importHint": "Importez un fichier Excel avec les colonnes Prénom et Nom. Les identifiants seront générés automatiquement.",
+      "importHint": "Importez un fichier CSV (.csv) avec les colonnes Prénom et Nom. Les identifiants seront générés automatiquement.",
       "downloadTemplate": "Télécharger le modèle",
       "importFile": "Importer un fichier",
       "importEmpty": "Aucune donnée trouvée dans le fichier.",

@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import i18n from '../i18n';
-import * as XLSX from 'xlsx';
+import { objectsToCsv, downloadCsv } from '../services/csv';
 import CohortTracker from '../components/CohortTracker';
 import CreateCohortModal from '../components/CreateCohortModal';
 import { initialCohorts } from '../data/mockCohorts';
@@ -163,10 +163,7 @@ export default function AdminBackoffice() {
         .map((c) => `${courseTitle(t, c.courseId)} (${c.progress}%)`)
         .join(' | '),
     }));
-    const ws = XLSX.utils.json_to_sheet(rows);
-    const wb = XLSX.utils.book_new();
-    XLSX.utils.book_append_sheet(wb, ws, 'Accounts');
-    XLSX.writeFile(wb, 'stepup_reporting_global.xlsx');
+    downloadCsv('stepup_reporting_global.csv', objectsToCsv(rows));
   };
 
   const renderSubmissionDetail = (s) => {

@@ -221,7 +221,7 @@
       "promoSuccess": "Código válido! Acesso aos seguintes cursos:",
       "promoInvalid": "Código promocional inválido.",
       "importTitle": "Importar formandos",
-      "importHint": "Importe um ficheiro Excel com as colunas Nome e Apelido. As credenciais serão geradas automaticamente.",
+      "importHint": "Importe um ficheiro CSV (.csv) com as colunas Nome e Apelido. As credenciais serão geradas automaticamente.",
       "downloadTemplate": "Transferir modelo",
       "importFile": "Importar ficheiro",
       "importEmpty": "Nenhum dado encontrado no ficheiro.",

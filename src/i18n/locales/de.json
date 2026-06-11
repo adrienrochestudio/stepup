@@ -221,7 +221,7 @@
       "promoSuccess": "Gültiger Code! Zugang zu folgenden Kursen:",
       "promoInvalid": "Ungültiger Promo-Code.",
       "importTitle": "Lernende importieren",
-      "importHint": "Importieren Sie eine Excel-Datei mit den Spalten Vorname und Nachname. Die Zugangsdaten werden automatisch generiert.",
+      "importHint": "Importieren Sie eine CSV-Datei (.csv) mit den Spalten Vorname und Nachname. Die Zugangsdaten werden automatisch generiert.",
       "downloadTemplate": "Vorlage herunterladen",
       "importFile": "Datei importieren",
       "importEmpty": "Keine Daten in der Datei gefunden.",
