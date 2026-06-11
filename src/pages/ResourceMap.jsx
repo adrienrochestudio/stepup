@@ -20,6 +20,7 @@ export default function ResourceMap() {
   const [selectedCountry, setSelectedCountry] = useState(null);
   const [activeFilters, setActiveFilters] = useState([]);
   const [showAddInfo, setShowAddInfo] = useState(false);
+  const [addInfoCountry, setAddInfoCountry] = useState('');
   // 'visible' until the first click on the globe, then 'fading', then gone.
   const [hintState, setHintState] = useState('visible');
 
@@ -109,12 +110,19 @@ export default function ResourceMap() {
             country={selectedCountry}
             activeFilters={activeFilters}
             onClose={() => setSelectedCountry(null)}
+            onContribute={(name) => {
+              setAddInfoCountry(name || '');
+              setShowAddInfo(true);
+            }}
           />
         )}
 
         <button
           className="resource-map-add-btn"
-          onClick={() => setShowAddInfo(true)}
+          onClick={() => {
+            setAddInfoCountry('');
+            setShowAddInfo(true);
+          }}
         >
           <svg
             width="16"
@@ -130,7 +138,12 @@ export default function ResourceMap() {
         </button>
       </div>
 
-      {showAddInfo && <AddInfoModal onClose={() => setShowAddInfo(false)} />}
+      {showAddInfo && (
+        <AddInfoModal
+          initialCountry={addInfoCountry}
+          onClose={() => setShowAddInfo(false)}
+        />
+      )}
     </div>
   );
 }

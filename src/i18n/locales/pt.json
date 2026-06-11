@@ -68,7 +68,7 @@
     }
   },
   "map": {
-    "searchPlaceholder": "Pesquisar um país...",
+    "searchPlaceholder": "Pesquisar entre {{count}} países...",
     "noResults": "Nenhum país encontrado. Verifique a ortografia.",
     "clickHint": "Clique num país a verde para ver os seus recursos.",
     "addInfo": "Sugerir um recurso",

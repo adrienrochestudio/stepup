@@ -58,13 +58,13 @@ const FIELD_LABELS = {
   networks: 'Networks for professionals',
 };
 
-export default function AddInfoModal({ onClose }) {
+export default function AddInfoModal({ onClose, initialCountry = '' }) {
   const [mode, setMode] = useState('add');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     organization: '',
-    country: '',
+    country: initialCountry,
     fields: {},
     amendmentSection: '',
     amendmentText: '',
@@ -160,6 +160,11 @@ export default function AddInfoModal({ onClose }) {
               <span>Suggest a correction to existing information</span>
             </button>
           </div>
+
+          <p className="addinfo-lang-note">
+            Please write your contribution in English. The map is read
+            worldwide, so we keep all entries in English for universality.
+          </p>
 
           <div className="addinfo-section addinfo-identity">
             <h3>Your details</h3>

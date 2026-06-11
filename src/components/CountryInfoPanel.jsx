@@ -44,7 +44,7 @@ function renderContent(text) {
   });
 }
 
-export default function CountryInfoPanel({ country, activeFilters, onClose }) {
+export default function CountryInfoPanel({ country, activeFilters, onClose, onContribute }) {
   const { t } = useTranslation();
   const [expandedSub, setExpandedSub] = useState(null);
   const [showCredit, setShowCredit] = useState(false);
@@ -81,7 +81,7 @@ export default function CountryInfoPanel({ country, activeFilters, onClose }) {
         <div className="country-panel-header">
           <div className="country-panel-title-row">
             <h2>{data.name}</h2>
-            {data.credit && (
+            {(data.credit || data.sources) && (
               <button
                 className="country-credit-btn"
                 onClick={() => setShowCredit(!showCredit)}
@@ -100,9 +100,25 @@ export default function CountryInfoPanel({ country, activeFilters, onClose }) {
             ×
           </button>
         </div>
-        {showCredit && data.credit && (
+        {showCredit && (data.credit || data.sources) && (
           <div className="country-credit-banner">
-            {data.credit}
+            {data.credit ? (
+              data.credit
+            ) : (
+              <>
+                This factsheet was compiled by the StepUP team from publicly
+                available resources: {data.sources}. If you have information or
+                comments, please{' '}
+                <button
+                  type="button"
+                  className="country-credit-contribute"
+                  onClick={() => onContribute && onContribute(data.name)}
+                >
+                  contribute
+                </button>
+                .
+              </>
+            )}
           </div>
         )}
 

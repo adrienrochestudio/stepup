@@ -68,7 +68,7 @@
     }
   },
   "map": {
-    "searchPlaceholder": "Land suchen...",
+    "searchPlaceholder": "Unter {{count}} Ländern suchen...",
     "noResults": "Kein Land gefunden. Bitte Schreibweise prüfen.",
     "clickHint": "Klicken Sie auf ein grünes Land, um seine Ressourcen zu sehen.",
     "addInfo": "Ressource vorschlagen",

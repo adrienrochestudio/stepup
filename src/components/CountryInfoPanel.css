@@ -82,6 +82,18 @@
   flex-shrink: 0;
 }
 
+.country-credit-contribute {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-style: italic;
+  color: var(--color-kaki);
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .country-panel-close {
   width: 28px;
   height: 28px;

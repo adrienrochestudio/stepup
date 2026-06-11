@@ -82,7 +82,7 @@ export default function MapControls({
           </svg>
           <input
             type="text"
-            placeholder={t('map.searchPlaceholder')}
+            placeholder={t('map.searchPlaceholder', { count: ALL_COUNTRIES.length })}
             value={searchValue}
             onChange={(e) => {
               setSearchValue(e.target.value);

@@ -109,6 +109,7 @@ export const countryData = {
     code: 'BEL',
     name: 'Belgium',
     credit: null,
+    sources: 'Wallimage, VAF, screen.brussels',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -1444,6 +1445,7 @@ export const countryData = {
     code: 'POL',
     name: 'Poland',
     credit: null,
+    sources: 'KIPA, Łódź Film Commission, Polish Film Institute',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -1484,6 +1486,7 @@ export const countryData = {
     code: 'USA',
     name: 'United States of America',
     credit: null,
+    sources: 'Green Production Guide, Producers Guild of America, Sustainable Production Alliance',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -1524,6 +1527,7 @@ export const countryData = {
     code: 'NLD',
     name: 'Netherlands',
     credit: null,
+    sources: 'Green Film Making, Netherlands Film Fund',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -1650,6 +1654,7 @@ export const countryData = {
     code: 'FIN',
     name: 'Finland',
     credit: null,
+    sources: 'Ekosetti, APFI, Finnish Film Foundation',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -1685,6 +1690,7 @@ export const countryData = {
     code: 'GRC',
     name: 'Greece',
     credit: null,
+    sources: 'EKOME, Hellenic Film and Audiovisual Center',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -1725,6 +1731,7 @@ export const countryData = {
     code: 'BRA',
     name: 'Brazil',
     credit: null,
+    sources: 'Panvision (EcoVision), Cinema Verde',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -1765,6 +1772,7 @@ export const countryData = {
     code: 'ZAF',
     name: 'South Africa',
     credit: null,
+    sources: 'GREENSET, SA Film Academy, The Callsheet',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -1811,6 +1819,7 @@ export const countryData = {
     code: 'MAR',
     name: 'Morocco',
     credit: null,
+    sources: 'Green Production Maroc',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -1851,6 +1860,7 @@ export const countryData = {
     code: 'AUS',
     name: 'Australia',
     credit: null,
+    sources: 'Sustainable Screens Australia',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -1896,6 +1906,7 @@ export const countryData = {
     code: 'NZL',
     name: 'New Zealand',
     credit: null,
+    sources: 'Greenlit, Greening the Screen',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -1931,6 +1942,7 @@ export const countryData = {
     code: 'BGD',
     name: 'Bangladesh',
     credit: null,
+    sources: 'IAFM Eco Film Lab',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -1966,6 +1978,7 @@ export const countryData = {
     code: 'IND',
     name: 'India',
     credit: null,
+    sources: 'press and industry coverage',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -1995,6 +2008,7 @@ export const countryData = {
     code: 'TGO',
     name: 'Togo',
     credit: null,
+    sources: 'Festival Ecoprod Afrique, press coverage',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -2006,7 +2020,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• Festival EcoProd Afrique: a Lomé-based festival promoting more ecological cinema across Africa, active in the Togolese audiovisual scene (linked to filmmaker Israel Tounou, creator of Togo\'s first TV cinema programme "Ciné Art"): https://www.facebook.com/festivalecoprodafrique/',
+            '• Festival Ecoprod Afrique: a Lomé-based festival created to promote more ecological cinema across Africa, linked to filmmaker Israel Tounou (creator of Togo\'s first TV cinema programme "Ciné Art"). Note: it has not been held in the last few years and its current status is unclear: https://www.facebook.com/festivalecoprodafrique/',
         },
       },
     },
@@ -2020,7 +2034,7 @@ export const countryData = {
         networks: {
           label: 'Networks to join',
           content:
-            '• Festival EcoProd Afrique (Lomé): https://www.facebook.com/festivalecoprodafrique/',
+            '• Festival Ecoprod Afrique (Lomé, status currently unclear): https://www.facebook.com/festivalecoprodafrique/',
         },
       },
     },
@@ -2030,6 +2044,7 @@ export const countryData = {
     code: 'MEX',
     name: 'Mexico',
     credit: null,
+    sources: 'EcoFilming',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -2065,6 +2080,7 @@ export const countryData = {
     code: 'ARG',
     name: 'Argentina',
     credit: null,
+    sources: 'APAC, FINCA',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -2100,6 +2116,7 @@ export const countryData = {
     code: 'COL',
     name: 'Colombia',
     credit: null,
+    sources: 'Bogotá Film Commission, Proimágenes Colombia',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -2135,6 +2152,7 @@ export const countryData = {
     code: 'EST',
     name: 'Estonia',
     credit: null,
+    sources: 'Baltic Green Film, IEA',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -2186,6 +2204,7 @@ export const countryData = {
     code: 'LVA',
     name: 'Latvia',
     credit: null,
+    sources: 'Baltic Green Film, National Film Centre of Latvia, IEA',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -2237,6 +2256,7 @@ export const countryData = {
     code: 'LTU',
     name: 'Lithuania',
     credit: null,
+    sources: 'Baltic Green Film, Lithuanian Film Centre, IEA',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -2288,6 +2308,7 @@ export const countryData = {
     code: 'CHE',
     name: 'Switzerland',
     credit: null,
+    sources: 'Sustainable Arts',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -2334,6 +2355,7 @@ export const countryData = {
     code: 'LUX',
     name: 'Luxembourg',
     credit: null,
+    sources: 'Film Fund Luxembourg, IEA',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -2380,6 +2402,7 @@ export const countryData = {
     code: 'SVN',
     name: 'Slovenia',
     credit: null,
+    sources: 'Slovenian Film Centre, IEA',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -2426,6 +2449,7 @@ export const countryData = {
     code: 'SRB',
     name: 'Serbia',
     credit: null,
+    sources: 'IESI, IEA',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -2472,6 +2496,7 @@ export const countryData = {
     code: 'CRI',
     name: 'Costa Rica',
     credit: null,
+    sources: 'Costa Rica Film Commission, SINAC',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -2523,6 +2548,7 @@ export const countryData = {
     code: 'KEN',
     name: 'Kenya',
     credit: null,
+    sources: 'Kenya Film Commission, Kenya Wildlife Service',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -2569,6 +2595,7 @@ export const countryData = {
     code: 'BWA',
     name: 'Botswana',
     credit: null,
+    sources: 'Government of Botswana (filming permits)',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -2615,6 +2642,7 @@ export const countryData = {
     code: 'NGA',
     name: 'Nigeria',
     credit: null,
+    sources: 'Nollywood press coverage, African SDG Film Festival',
     generalInfo: {
       label: 'General Information',
       subcategories: {

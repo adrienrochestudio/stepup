@@ -68,7 +68,7 @@
     }
   },
   "map": {
-    "searchPlaceholder": "Search a country...",
+    "searchPlaceholder": "Search among {{count}} countries...",
     "noResults": "No country found. Check the spelling.",
     "clickHint": "Click a country in green to see its resources.",
     "addInfo": "Suggest a resource",
