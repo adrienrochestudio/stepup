@@ -2277,6 +2277,190 @@ export const countryData = {
       },
     },
   },
+
+  Switzerland: {
+    code: 'CHE',
+    name: 'Switzerland',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Green production is gaining ground, coordinated mainly by the funding and support bodies rather than by binding national rules. The shared platform Sustainable Arts brings sustainability to the film and wider cultural sector.',
+        },
+        decarbonizationPlan: {
+          label: 'Decarbonization plan',
+          content:
+            'Switzerland has a legal target of net-zero greenhouse-gas emissions by 2050, set by the Climate and Innovation Act approved by referendum in June 2023. Its electricity is already largely low-carbon — predominantly hydropower (around 60%) and nuclear (about a third).',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• Sustainable Arts — sustainability platform for the cultural sector, backed by the Zürich Film Foundation (Filmstiftung), Migros Engagement/Kulturprozent and Cinéforom; offers a carbon calculator for cultural/film productions plus checklists and guides: https://sustainablearts.ch/en/sustainability-in-the-film-industry/\n• nachhaltigfilmen.ch — Swiss research and resources on sustainable filmmaking.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Switzerland\'s grid is largely low-carbon, dominated by hydropower (around 60%) and nuclear (about a third), so productions connecting to the mains draw relatively clean electricity.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            '• Carbon calculator for cultural/film productions via Sustainable Arts: https://sustainablearts.ch/en/sustainability-in-the-film-industry/\n\nNote: Sustainable Arts provides tools and guidance, not a certified label — there is no Swiss film-specific certification with independent third-party verification. The credible, widely recognised international calculators are BAFTA albert (https://wearealbert.org/) and Ecoprod\'s Carbon\'Clap (https://ecoprod.com/).',
+        },
+      },
+    },
+  },
+
+  Luxembourg: {
+    code: 'LUX',
+    name: 'Luxembourg',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Green production is at an early stage and not yet tied to binding criteria. Film Fund Luxembourg states a general commitment to sustainable practices, and EU Creative Europe applications require a "Green Strategy", but there is no published national green-production certification or carbon-reporting requirement yet.',
+        },
+        decarbonizationPlan: {
+          label: 'Decarbonization plan',
+          content:
+            'Luxembourg targets net-zero greenhouse-gas emissions and 100% renewable electricity by 2050, with a 55% emissions cut by 2030 (National Climate Law). The country imports the large majority of its electricity (around 97%), so a production\'s grid footprint depends heavily on the wider European mix.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• Film Fund Luxembourg — supports the sector and states a commitment to eco-responsible practices and reducing waste: https://filmfund.lu/en/about-us/missions-and-values/',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Luxembourg imports around 97% of its electricity, so on-grid productions draw largely on the surrounding European mix rather than domestic generation; domestic output is mostly renewable but small.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            'No national film-specific carbon calculator or certification yet. Luxembourg productions use established international tools — the credible, widely recognised ones are BAFTA albert (https://wearealbert.org/) and Ecoprod\'s Carbon\'Clap (https://ecoprod.com/).',
+        },
+      },
+    },
+  },
+
+  Slovenia: {
+    code: 'SVN',
+    name: 'Slovenia',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Green production is emerging; there is no binding national green-production scheme yet. EU Creative Europe applications require a "Green Strategy" and awareness is rising, but a dedicated Slovenian certification or carbon calculator is not in place.',
+        },
+        decarbonizationPlan: {
+          label: 'Decarbonization plan',
+          content:
+            'Slovenia targets climate neutrality by 2050 and has adopted a strategy to phase out coal by 2033. Its electricity is already fairly low-carbon — about a third from the single-unit Krško nuclear plant, plus hydropower — with the remaining coal generation (around 30%) being phased out.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• Slovenian Film Centre (SFC) — national film body: https://www.film-center.si/\n• The EU Creative Europe "Green Strategy" requirement applies to EU-funded applications.',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Slovenia\'s electricity is relatively low-carbon — roughly a third from the Krško nuclear plant plus hydropower — with its remaining coal generation (around 30%) due to be phased out by 2033.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            'No national film-specific carbon calculator or certification yet; Slovenian productions use established international tools — the credible, widely recognised ones are BAFTA albert (https://wearealbert.org/) and Ecoprod\'s Carbon\'Clap (https://ecoprod.com/).',
+        },
+      },
+    },
+  },
+
+  Serbia: {
+    code: 'SRB',
+    name: 'Serbia',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Green production is driven by grassroots organisations rather than by the public funding body: Film Center Serbia runs the cash-rebate scheme but has no green-production requirement. The main mover is IESI, which is building regional standards, training and tools.',
+        },
+        decarbonizationPlan: {
+          label: 'Decarbonization plan',
+          content:
+            'Serbia is not an EU member and its grid is coal-heavy: in 2024 about 60% of electricity came from coal (mostly lignite), roughly 30% from hydropower and around 10% from other renewables — so on-grid productions have a comparatively high carbon footprint. As an Energy Community member Serbia has pledged carbon neutrality by 2050, but the coal phase-out is at an early stage.',
+        },
+        existingInitiatives: {
+          label: 'Existing initiatives',
+          content:
+            '• IESI (Initiative for Ecological Standardization and Innovation) — a Belgrade-based organisation working on the sustainable and digital transformation of the audiovisual industry in the Balkans and Eastern Europe. Projects: Circular Cinema (waste / circular economy), Zelena mreža / Green Network (eco-managers and consultants), Eko vozila / Eco Vehicles, and the GAVIS platform: https://iesi.eco/',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Serbia\'s grid is coal-heavy — around 60% lignite in 2024, with roughly 30% hydropower and about 10% other renewables — giving productions a relatively high-carbon electricity footprint compared with most of Europe.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        tools: {
+          label: 'Calculators & tools',
+          content:
+            '• IESI offers a regional rating system, an eco-calculator and green-production "certification": https://iesi.eco/\n\nImportant: IESI\'s rating, calculator and certification are run in-house; the public information does not state any independent third-party verification, so it should be treated as a self-administered scheme rather than an externally audited certification. The established international calculators are BAFTA albert (https://wearealbert.org/) and Ecoprod\'s Carbon\'Clap (https://ecoprod.com/).',
+        },
+      },
+    },
+  },
 };
 
 export const categoryKeys = ['generalInfo', 'sustainability', 'resources'];
