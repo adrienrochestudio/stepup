@@ -1,4 +1,4 @@
-# StepUP Platform — Claude Code Project Brief
+# StepUP Platform: Claude Code Project Brief
 
 ## 🎯 Vision & Goals
 

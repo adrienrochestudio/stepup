@@ -130,7 +130,7 @@
   background: rgba(61, 71, 18, 0.04);
 }
 
-/* Courses band — groups the highlight and the catalog on a tinted
+/* Courses band: groups the highlight and the catalog on a tinted
    background so the section reads as one block. */
 .home-courses-band {
   background: var(--color-bg);
@@ -231,7 +231,7 @@
   background: #2e3510;
 }
 
-/* Course catalog — card grid */
+/* Course catalog: card grid */
 .home-catalog {
   max-width: 960px;
   margin: 0 auto;
@@ -387,7 +387,7 @@
   opacity: 0.7;
 }
 
-/* Partners section — logo buttons with popup */
+/* Partners section: logo buttons with popup */
 .home-partners-section {
   max-width: 960px;
   margin: 0 auto;
@@ -495,7 +495,7 @@
   background: #2e3510;
 }
 
-/* Newsletter — compact, light closing note before the footer */
+/* Newsletter: compact, light closing note before the footer */
 .home-newsletter {
   max-width: 960px;
   margin: 0 auto;
@@ -518,7 +518,7 @@
 }
 
 /* Newsletter call-to-action is a bold inline text link (not a button) that
-   highlights when hovered/clicked — see .link-highlight in global.css. */
+   highlights when hovered/clicked: see .link-highlight in global.css. */
 .home-newsletter-link {
   display: inline-block;
   color: var(--color-kaki);

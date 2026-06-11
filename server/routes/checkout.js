@@ -3,7 +3,7 @@ import { stripe, webhookSecret } from '../services/stripe.js';
 
 const router = Router();
 
-// Course prices (cents) — will move to DB later
+// Course prices (cents), will move to DB later
 const coursePrices = {
   'eco-prod-101': { amount: 9900, name: 'Éco-production : Les Fondamentaux' },
   'label-ecoprod': { amount: 14900, name: 'Obtenir le Label Ecoprod' },

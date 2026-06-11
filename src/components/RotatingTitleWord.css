@@ -5,7 +5,7 @@
   white-space: nowrap;
 }
 
-/* Block variant — own line with a fixed height (em-sized) so the title
+/* Block variant: own line with a fixed height (em-sized) so the title
    lines around it never move. */
 .rotating-word--block {
   display: block;
@@ -14,7 +14,7 @@
   height: 1.4em;
 }
 
-/* Inline variant — flows within a sentence (e.g. under "Nos formations"). */
+/* Inline variant: flows within a sentence (e.g. under "Nos formations"). */
 .rotating-word--inline {
   display: inline-block;
   vertical-align: bottom;
@@ -27,7 +27,7 @@
   backface-visibility: hidden;
 }
 
-/* Clickable rotating phrase — inherits the title look, gets a soft
+/* Clickable rotating phrase: inherits the title look, gets a soft
    highlight on hover (no underline). */
 .rotating-word-link {
   font: inherit;

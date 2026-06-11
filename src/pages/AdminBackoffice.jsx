@@ -22,7 +22,7 @@ const SUBMISSION_TYPE_KEYS = {
 };
 
 function formatDate(iso) {
-  if (!iso) return '—';
+  if (!iso) return '-';
   return new Date(iso).toLocaleDateString('fr-FR', {
     day: 'numeric', month: 'short', year: 'numeric',
   });
@@ -119,7 +119,7 @@ export default function AdminBackoffice() {
       [t('backoffice.colOrganization')]: a.organization,
       [t('login.country')]: a.country,
       [t('backoffice.colStatus')]: t(`backoffice.status_${a.status}`),
-      [t('cohortTracker.lastActive')]: a.lastLogin ? formatDate(a.lastLogin) : '—',
+      [t('cohortTracker.lastActive')]: a.lastLogin ? formatDate(a.lastLogin) : '-',
       [t('backoffice.colCourses')]: (a.courses || [])
         .map((c) => `${courseTitle(t, c.courseId)} (${c.progress}%)`)
         .join(' | '),
@@ -321,7 +321,7 @@ export default function AdminBackoffice() {
                       <td>{a.organization}<br /><span className="bo-muted">{a.country}</span></td>
                       <td>
                         {(a.courses || []).length === 0
-                          ? '—'
+                          ? '-'
                           : (a.courses || []).map((c) => (
                               <div key={c.courseId} className="bo-course-line">
                                 {courseTitle(t, c.courseId)} · {c.progress}%

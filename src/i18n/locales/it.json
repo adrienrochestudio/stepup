@@ -64,7 +64,7 @@
     },
     "greenAnimation": {
       "title": "Animazione sostenibile",
-      "description": "Produzione di animazione sostenibile per gli studi: comprendi gli impatti strutturali di energia, infrastrutture digitali, attrezzature, mobilità e pratiche quotidiane — e impara a dare priorità alle azioni e a costruire un approccio alla sostenibilità realistico ed efficace, senza compromettere la qualità creativa o l'efficienza produttiva."
+      "description": "Produzione di animazione sostenibile per gli studi: comprendi gli impatti strutturali di energia, infrastrutture digitali, attrezzature, mobilità e pratiche quotidiane, e impara a dare priorità alle azioni e a costruire un approccio alla sostenibilità realistico ed efficace, senza compromettere la qualità creativa o l'efficienza produttiva."
     }
   },
   "map": {
@@ -125,7 +125,7 @@
     "toggleToLogin": "Hai già un account?",
     "signUp": "Registrati",
     "logIn": "Accedi",
-    "devMode": "Modalità Dev — Qualsiasi credenziale funziona",
+    "devMode": "Modalità Dev, Qualsiasi credenziale funziona",
     "profile": "Profilo",
     "roleLearner": "Partecipante",
     "roleCohortManager": "Gestore di coorte",
@@ -276,7 +276,7 @@
     "groupRecommended": "Consigliato",
     "offerCohortTitle": "Gruppo / Coorte",
     "offerCohortDesc": "Per i team che desiderano formare un gruppo con monitoraggio centralizzato.",
-    "offerCohortDetail": "fino a 200 persone — tariffa degressiva oltre",
+    "offerCohortDetail": "fino a 200 persone, tariffa degressiva oltre",
     "offerCohortInclude1": "Un referente interno gestisce la coorte",
     "offerCohortInclude2": "Accesso a tutti i corsi",
     "offerCohortInclude3": "Monitoraggio collettivo dei partecipanti",

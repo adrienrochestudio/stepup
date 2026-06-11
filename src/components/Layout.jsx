@@ -33,7 +33,7 @@ export default function Layout() {
       '/privacy': t('footer.privacy'),
     };
     const sub = titles[location.pathname];
-    document.title = sub ? `${sub} — StepUP` : 'StepUP';
+    document.title = sub ? `${sub} · StepUP` : 'StepUP';
   }, [location.pathname, t]);
 
   const handleLogout = async () => {

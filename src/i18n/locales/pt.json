@@ -64,7 +64,7 @@
     },
     "greenAnimation": {
       "title": "Animação sustentável",
-      "description": "Produção de animação sustentável para estúdios: compreenda os impactos estruturais da energia, da infraestrutura digital, dos equipamentos, da mobilidade e das práticas quotidianas — e aprenda a priorizar ações e a construir uma abordagem de sustentabilidade realista e eficaz, sem comprometer a qualidade criativa nem a eficiência de produção."
+      "description": "Produção de animação sustentável para estúdios: compreenda os impactos estruturais da energia, da infraestrutura digital, dos equipamentos, da mobilidade e das práticas quotidianas, e aprenda a priorizar ações e a construir uma abordagem de sustentabilidade realista e eficaz, sem comprometer a qualidade criativa nem a eficiência de produção."
     }
   },
   "map": {
@@ -125,7 +125,7 @@
     "toggleToLogin": "Já tem conta?",
     "signUp": "Registar",
     "logIn": "Iniciar sessão",
-    "devMode": "Modo Dev — Quaisquer credenciais funcionam",
+    "devMode": "Modo Dev, Quaisquer credenciais funcionam",
     "profile": "Perfil",
     "roleLearner": "Formando",
     "roleCohortManager": "Gestor de coorte",
@@ -276,7 +276,7 @@
     "groupRecommended": "Recomendado",
     "offerCohortTitle": "Grupo / Coorte",
     "offerCohortDesc": "Para equipas que pretendem formar um grupo com acompanhamento centralizado.",
-    "offerCohortDetail": "até 200 pessoas — tarifa degressiva além disso",
+    "offerCohortDetail": "até 200 pessoas, tarifa degressiva além disso",
     "offerCohortInclude1": "Um referente interno gere a coorte",
     "offerCohortInclude2": "Acesso a todos os cursos",
     "offerCohortInclude3": "Acompanhamento coletivo dos formandos",

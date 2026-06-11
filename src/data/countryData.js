@@ -29,7 +29,7 @@ export const countryData = {
         audiovisualRegulation: {
           label: 'Film & TV industry regulations and incentives',
           content:
-            "The CNC's eco-conditionality requires two carbon footprints (pre-shoot and post-production) for all funded projects — fiction and documentary, feature films and short films, series or standalone (since 2024 for live-action, since 2025 for animation/video games).\n\nRegional incentives:\n• Île-de-France: €23,000–€75,000 green bonuses for innovative eco-practices.\n• Corsica: Eco-bonus for compliant productions.\n• Grand Est: Carbon footprint and environmental action plan required.\n• Southern Region: Provisional and final carbon footprint assessments mandatory.",
+            "The CNC's eco-conditionality requires two carbon footprints (pre-shoot and post-production) for all funded projects, fiction and documentary, feature films and short films, series or standalone (since 2024 for live-action, since 2025 for animation/video games).\n\nRegional incentives:\n• Île-de-France: €23,000-€75,000 green bonuses for innovative eco-practices.\n• Corsica: Eco-bonus for compliant productions.\n• Grand Est: Carbon footprint and environmental action plan required.\n• Southern Region: Provisional and final carbon footprint assessments mandatory.",
         },
         existingInitiatives: {
           label: 'Existing initiatives',
@@ -79,22 +79,22 @@ export const countryData = {
         greenConsultants: {
           label: 'Green consultants',
           content:
-            '• Flying Secoya: green consultancy for productions, a carbon calculator and a label — https://www.flyingsecoya.com/\n• A Better Prod: green consultancy for productions — https://www.abetterprod.com/\n• The Ecoprod directory for green consultants and professionals — https://www.ecoprod.com/fr/les-outils-pour-agir/professionnels-les-de-l-eco-production.html\n• A list of green consultants by Nausicä — https://nausicacinemadurable.fr/2023/04/25/charges-deco-production/',
+            '• Flying Secoya: green consultancy for productions, a carbon calculator and a label, https://www.flyingsecoya.com/\n• A Better Prod: green consultancy for productions: https://www.abetterprod.com/\n• The Ecoprod directory for green consultants and professionals: https://www.ecoprod.com/fr/les-outils-pour-agir/professionnels-les-de-l-eco-production.html\n• A list of green consultants by Nausicä: https://nausicacinemadurable.fr/2023/04/25/charges-deco-production/',
         },
         serviceProviders: {
           label: 'Service providers',
           content:
-            '• A list of green service providers by Ecoprod — https://www.ecoprod.com/fr/les-outils-pour-agir/ressources-utiles.html\n• A list of green service providers by Nausicä — https://nausicacinemadurable.fr/2023/06/13/liste-de-prestataires-eco-responsables-de-laudiovisuel-en-france/\n• A list of green service providers and other initiatives by the CUT! Collective — https://www.cut-collectif.fr/les-actions/',
+            '• A list of green service providers by Ecoprod: https://www.ecoprod.com/fr/les-outils-pour-agir/ressources-utiles.html\n• A list of green service providers by Nausicä: https://nausicacinemadurable.fr/2023/06/13/liste-de-prestataires-eco-responsables-de-laudiovisuel-en-france/\n• A list of green service providers and other initiatives by the CUT! Collective: https://www.cut-collectif.fr/les-actions/',
         },
         trainings: {
           label: 'Trainings',
           content:
-            '• Ecoprod provides training for professionals of the industry, covered by AFDAS at 100% — https://www.ecoprod.com/fr/formations.html\n• Ecoprod proposes long training over several weeks: "Green management on set", "Implementing a green production", "Green digital production", "Green set design".\n• The CST proposes short training sessions on climate change, carbon footprint measurement, responsible production, and CSR fundamentals.\n• As part of the France 2030 plan, green production training courses are deployed in several film schools.',
+            '• Ecoprod provides training for professionals of the industry, covered by AFDAS at 100%, https://www.ecoprod.com/fr/formations.html\n• Ecoprod proposes long training over several weeks: "Green management on set", "Implementing a green production", "Green digital production", "Green set design".\n• The CST proposes short training sessions on climate change, carbon footprint measurement, responsible production, and CSR fundamentals.\n• As part of the France 2030 plan, green production training courses are deployed in several film schools.',
         },
         tools: {
           label: 'Calculators & tools',
           content:
-            "The CNC has certified 3 calculators:\n• Carbon'Clap, free calculator powered by Ecoprod — https://www.ecoprod.com/fr/carbon-clap.html\n• SecoSet powered by Flying Secoya — https://www.flyingsecoya.com/\n• Carbon'Stage powered by Greenly — https://greenly.earth/fr-fr/climate-app-store/calculateur-production-audiovisuelle",
+            "The CNC has certified 3 calculators:\n• Carbon'Clap, free calculator powered by Ecoprod: https://www.ecoprod.com/fr/carbon-clap.html\n• SecoSet powered by Flying Secoya: https://www.flyingsecoya.com/\n• Carbon'Stage powered by Greenly: https://greenly.earth/fr-fr/climate-app-store/calculateur-production-audiovisuelle",
         },
         networks: {
           label: 'Networks for professionals',
@@ -120,12 +120,12 @@ export const countryData = {
         audiovisualRegulation: {
           label: 'Film & TV industry regulations and incentives',
           content:
-            'Wallonia — Wallimage runs "Green Film Wallonia": a green-filming plan earns extra points in co-production selection sessions, and additional costs of eco-responsible measures are eligible for funding (on average ~50% covered). Wallimage is developing a Green Manager training scheme.\n\nFlanders — the Flanders Audiovisual Fund (VAF) created the "eMission" label for sustainable productions; sustainable action is a formal requirement within its creation support.\n\nBrussels-Capital Region — screen.brussels supports a sustainable-filming pilot with eco-consultants and awards up to 2 bonus points (1 if the company has an environmental consultant, 1 if it holds the regional "Ecodynamic" label). It published a guide to environmentally friendly filming in the region.',
+            'Wallonia, Wallimage runs "Green Film Wallonia": a green-filming plan earns extra points in co-production selection sessions, and additional costs of eco-responsible measures are eligible for funding (on average ~50% covered). Wallimage is developing a Green Manager training scheme.\n\nFlanders, the Flanders Audiovisual Fund (VAF) created the "eMission" label for sustainable productions; sustainable action is a formal requirement within its creation support.\n\nBrussels-Capital Region, screen.brussels supports a sustainable-filming pilot with eco-consultants and awards up to 2 bonus points (1 if the company has an environmental consultant, 1 if it holds the regional "Ecodynamic" label). It published a guide to environmentally friendly filming in the region.',
         },
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• Wallimage — Green Film Wallonia: https://www.wallimage.be/en/\n• Flanders Audiovisual Fund (VAF) — eMission label: https://www.vaf.be/en\n• screen.brussels — Eco-filming: https://screen.brussels/en/eco-filming\n\nBelgian funds take part in European green-screen cooperation between film commissions.',
+            '• Wallimage: Green Film Wallonia: https://www.wallimage.be/en/\n• Flanders Audiovisual Fund (VAF): eMission label: https://www.vaf.be/en\n• screen.brussels: Eco-filming: https://screen.brussels/en/eco-filming\n\nBelgian funds take part in European green-screen cooperation between film commissions.',
         },
       },
     },
@@ -148,7 +148,7 @@ export const countryData = {
   Canada: {
     code: 'CAN',
     name: 'Canada (Québec)',
-    credit: 'This factsheet was produced by Valérie Diagneault from On tourne vert – Rolling Green.',
+    credit: 'This factsheet was produced by Valérie Diagneault from On tourne vert - Rolling Green.',
     generalInfo: {
       label: 'General Information',
       subcategories: {
@@ -160,7 +160,7 @@ export const countryData = {
         laws: {
           label: 'Relevant national legislation',
           content:
-            'Environmental Laws:\n• La Loi sur la qualité de l\'environnement (LQE) – governs environmental authorizations and protections.\n• Règlement interdisant les plastiques à usage unique – federal regulation banning single-use plastics.\n• Montréal Plan Climat 2020-2030 – climate action roadmap.\n• Feuille de route Montréalaise en économie circulaire 2024-2030.\n\nFederal Social Laws:\n• Canadian Charter of Rights and Freedoms.\n• Canadian Human Rights Act.\n• Employment Equity Act.\n• Accessible Canada Act.\n• Final Report of the Truth and Reconciliation Commission of Canada.\n\nProvincial Social Laws:\n• Charter of Human Rights and Freedoms.\n• Occupational Health and Safety Act.\n• Act Respecting Equal Access to Employment in Public Bodies.\n• Act to Prevent and Fight Sexual Violence in Higher Education Institutions.',
+            'Environmental Laws:\n• La Loi sur la qualité de l\'environnement (LQE) - governs environmental authorizations and protections.\n• Règlement interdisant les plastiques à usage unique - federal regulation banning single-use plastics.\n• Montréal Plan Climat 2020-2030 - climate action roadmap.\n• Feuille de route Montréalaise en économie circulaire 2024-2030.\n\nFederal Social Laws:\n• Canadian Charter of Rights and Freedoms.\n• Canadian Human Rights Act.\n• Employment Equity Act.\n• Accessible Canada Act.\n• Final Report of the Truth and Reconciliation Commission of Canada.\n\nProvincial Social Laws:\n• Charter of Human Rights and Freedoms.\n• Occupational Health and Safety Act.\n• Act Respecting Equal Access to Employment in Public Bodies.\n• Act to Prevent and Fight Sexual Violence in Higher Education Institutions.',
         },
         audiovisualRegulation: {
           label: 'Film & TV industry regulations and incentives',
@@ -175,7 +175,7 @@ export const countryData = {
         decarbonizationPlan: {
           label: 'Decarbonization plan',
           content:
-            'Quebec relies on hydroelectric power for clean electricity with minimal carbon footprint. The 2019–2024 action plan by Recyc-Québec outlines strategies to improve waste management. Montreal enforces composting and recycling regulations varying by district.',
+            'Quebec relies on hydroelectric power for clean electricity with minimal carbon footprint. The 2019-2024 action plan by Recyc-Québec outlines strategies to improve waste management. Montreal enforces composting and recycling regulations varying by district.',
         },
       },
     },
@@ -215,7 +215,7 @@ export const countryData = {
         serviceProviders: {
           label: 'Service providers',
           content:
-            '• On Tourne Vert Directory – list of eco-responsible service providers.',
+            '• On Tourne Vert Directory - list of eco-responsible service providers.',
         },
         trainings: {
           label: 'Trainings',
@@ -225,7 +225,7 @@ export const countryData = {
         tools: {
           label: 'Calculators & tools',
           content:
-            "• Albert Carbon Calculator – measures production carbon footprints.\n• Carbon'Clap – free calculator powered by Ecoprod.\n• Additional tools available on Green Toolkit Film&TV database.",
+            "• Albert Carbon Calculator - measures production carbon footprints.\n• Carbon'Clap - free calculator powered by Ecoprod.\n• Additional tools available on Green Toolkit Film&TV database.",
         },
         networks: {
           label: 'Networks to join',
@@ -251,7 +251,7 @@ export const countryData = {
         decarbonizationPlan: {
           label: 'Decarbonization plan',
           content:
-            'Federal Climate Change Act (renewed July 17, 2024) targets: 65% emissions reduction by 2030, 88% by 2040 (vs. 1990 levels), carbon neutrality by 2045.\n\nElectricity goals by 2030: minimum 80% from renewables — 215 GW photovoltaic, 115 GW onshore wind, 30 GW offshore wind.',
+            'Federal Climate Change Act (renewed July 17, 2024) targets: 65% emissions reduction by 2030, 88% by 2040 (vs. 1990 levels), carbon neutrality by 2045.\n\nElectricity goals by 2030: minimum 80% from renewables, 215 GW photovoltaic, 115 GW onshore wind, 30 GW offshore wind.',
         },
         laws: {
           label: 'Relevant national legislation',
@@ -316,12 +316,12 @@ export const countryData = {
         trainings: {
           label: 'Trainings',
           content:
-            '• Hochschule der Medien Stuttgart & MFG Baden-Württemberg: 14–16 weeks certification for green consultants. Topics: sustainability principles, environmental management, green film production, energy, transport, waste, carbon calculation. Cost: €1,800 — https://www.zertifikat-green-consulting.de/\n• Green Consultant Film & TV IHK: Four-module online training on production planning, budgeting, sustainability measures. Cost: €2,400 — https://www.ihk-akademie-muenchen.de/csr-nachhaltigkeit/green-consultant-film-tv/',
+            '• Hochschule der Medien Stuttgart & MFG Baden-Württemberg: 14-16 weeks certification for green consultants. Topics: sustainability principles, environmental management, green film production, energy, transport, waste, carbon calculation. Cost: €1,800, https://www.zertifikat-green-consulting.de/\n• Green Consultant Film & TV IHK: Four-module online training on production planning, budgeting, sustainability measures. Cost: €2,400, https://www.ihk-akademie-muenchen.de/csr-nachhaltigkeit/green-consultant-film-tv/',
         },
         tools: {
           label: 'Calculators & tools',
           content:
-            '• Sustainability in Film – FFA: https://www.ffa.de/sustainability.html\n• Ecological Production Standards (English Version): https://www.ffa.de/sustainability.html\n• Green Motion Label: https://www.ffa.de/sustainability.html\n• Carbon Calculator: https://go.greenshooting.de/de_DE/\n• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/',
+            '• Sustainability in Film - FFA: https://www.ffa.de/sustainability.html\n• Ecological Production Standards (English Version): https://www.ffa.de/sustainability.html\n• Green Motion Label: https://www.ffa.de/sustainability.html\n• Carbon Calculator: https://go.greenshooting.de/de_DE/\n• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/',
         },
         networks: {
           label: 'Networks to join',
@@ -347,7 +347,7 @@ export const countryData = {
         laws: {
           label: 'Relevant national legislation',
           content:
-            'Waste Management: Czech Waste Management Act (Act 541/2020 Sb) mandates waste prevention and encourages reuse, recycling, or energy recovery.\n\nCSR/ESG Reports: Large companies must publish annual reports on social, environmental, and economic impact (EU Directive 2014/95/EU).\n\nAnti-Discrimination Act 198/2009 Sb – guarantees equal treatment. Czech Labour Code – regulates working hours, health and safety. Gender Equality Strategy 2021-2030.',
+            'Waste Management: Czech Waste Management Act (Act 541/2020 Sb) mandates waste prevention and encourages reuse, recycling, or energy recovery.\n\nCSR/ESG Reports: Large companies must publish annual reports on social, environmental, and economic impact (EU Directive 2014/95/EU).\n\nAnti-Discrimination Act 198/2009 Sb - guarantees equal treatment. Czech Labour Code - regulates working hours, health and safety. Gender Equality Strategy 2021-2030.',
         },
         audiovisualRegulation: {
           label: 'Film & TV industry regulations and incentives',
@@ -357,7 +357,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            'Czech Platform for Sustainable Audiovisual Production — www.greenfilming.cz\n\nMemorandum signatories: APA, ARAS, Czech Television, FTV Prima, TV Nova, FAMU.\n\nAdditional stakeholders: Czech Film Fund, Creative Europe, Studio Beep, b.green, Planet A Collective, AKA.',
+            'Czech Platform for Sustainable Audiovisual Production, www.greenfilming.cz\n\nMemorandum signatories: APA, ARAS, Czech Television, FTV Prima, TV Nova, FAMU.\n\nAdditional stakeholders: Czech Film Fund, Creative Europe, Studio Beep, b.green, Planet A Collective, AKA.',
         },
         decarbonizationPlan: {
           label: 'Decarbonization plan',
@@ -397,7 +397,7 @@ export const countryData = {
         greenConsultants: {
           label: 'Green consultants',
           content:
-            '• b.green – founded by Eva Dvořáková Pérez.\n• Planet A Collective – led by Adam Karásek.',
+            '• b.green - founded by Eva Dvořáková Pérez.\n• Planet A Collective - led by Adam Karásek.',
         },
         serviceProviders: {
           label: 'Service providers',
@@ -438,7 +438,7 @@ export const countryData = {
         audiovisualRegulation: {
           label: 'Film & TV industry regulations and incentives',
           content:
-            'Currently no eco-bonuses. However, broadcasters demand sustainability plans and carbon budgets before greenlighting productions, and carbon reports after. Some arrangements withhold final 10% payment until carbon report delivery.\n\nBFTP (Sustainable film and TV production) — cooperation between all Danish financing partners: The Danish Film Institute, broadcasters, regional funds, Danish Producers\' Association. Deliverables: common strategy, green production handbook, adapted certification, sustainability plan templates, seminars and trainings.\n\nThe Green Producers Club supports cultural and creative industries in achieving Paris Agreement goals. GPT (Green Producers Tool) is a research-based climate tool aligned with the GHG Protocol.',
+            'Currently no eco-bonuses. However, broadcasters demand sustainability plans and carbon budgets before greenlighting productions, and carbon reports after. Some arrangements withhold final 10% payment until carbon report delivery.\n\nBFTP (Sustainable film and TV production), cooperation between all Danish financing partners: The Danish Film Institute, broadcasters, regional funds, Danish Producers\' Association. Deliverables: common strategy, green production handbook, adapted certification, sustainability plan templates, seminars and trainings.\n\nThe Green Producers Club supports cultural and creative industries in achieving Paris Agreement goals. GPT (Green Producers Tool) is a research-based climate tool aligned with the GHG Protocol.',
         },
         existingInitiatives: {
           label: 'Existing initiatives',
@@ -503,7 +503,7 @@ export const countryData = {
         networks: {
           label: 'Networks to join',
           content:
-            '• Bæredygtigere filmarbejder (more sustainable filmworkers) – Facebook group.\n• Green Profiles Denmark (Grønne profiler i film-/tv-branche).\n• Bæredygtigere kostumenetværk (more sustainable costume community) – Facebook group.\n• NEMA (Nordic Eco Media Alliance): https://nema.network',
+            '• Bæredygtigere filmarbejder (more sustainable filmworkers) - Facebook group.\n• Green Profiles Denmark (Grønne profiler i film-/tv-branche).\n• Bæredygtigere kostumenetværk (more sustainable costume community) - Facebook group.\n• NEMA (Nordic Eco Media Alliance): https://nema.network',
         },
       },
     },
@@ -519,12 +519,12 @@ export const countryData = {
         greenProductionStatus: {
           label: 'Status of green production',
           content:
-            'The Icelandic Film Policy 2020–2030 promotes sustainable filmmaking. All applicants to the Icelandic Film Centre must submit sustainability plans.\n\nThe Icelandic Film Centre launched a one-year pilot program with the Green Producers Club to collect carbon emissions data. Notable productions include The Mountain (2023, Green Film Certification) and True Detective: Night Country (2023, Gold EMA Seal).\n\nChallenge: island status creates barriers — high reliance on imports and limited availability of specific services.',
+            'The Icelandic Film Policy 2020-2030 promotes sustainable filmmaking. All applicants to the Icelandic Film Centre must submit sustainability plans.\n\nThe Icelandic Film Centre launched a one-year pilot program with the Green Producers Club to collect carbon emissions data. Notable productions include The Mountain (2023, Green Film Certification) and True Detective: Night Country (2023, Gold EMA Seal).\n\nChallenge: island status creates barriers, high reliance on imports and limited availability of specific services.',
         },
         laws: {
           label: 'Relevant national legislation',
           content:
-            '• Film and Television Reimbursement Act No. 43/1999.\n• Film Law, Act No. 137/2001.\n• EU Regulation CSRD (Icelandic law No. 25/2023) — effective 2025.\n\nGender equality laws:\n• Act on Equal Status and Equal Rights Irrespective of Gender, No. 150/2020.\n• Act on the Administration of Matters Concerning Equality, 151/2020.',
+            '• Film and Television Reimbursement Act No. 43/1999.\n• Film Law, Act No. 137/2001.\n• EU Regulation CSRD (Icelandic law No. 25/2023): effective 2025.\n\nGender equality laws:\n• Act on Equal Status and Equal Rights Irrespective of Gender, No. 150/2020.\n• Act on the Administration of Matters Concerning Equality, 151/2020.',
         },
         audiovisualRegulation: {
           label: 'Film & TV industry regulations and incentives',
@@ -534,7 +534,7 @@ export const countryData = {
         decarbonizationPlan: {
           label: 'Decarbonization plan',
           content:
-            'Iceland ratified the Paris Agreement (2016), committing to 55% emissions reduction by 2030 (vs. 2005) and carbon neutrality by 2040. The Film Policy 2020–2030 aligns with these targets.',
+            'Iceland ratified the Paris Agreement (2016), committing to 55% emissions reduction by 2030 (vs. 2005) and carbon neutrality by 2040. The Film Policy 2020-2030 aligns with these targets.',
         },
       },
     },
@@ -544,7 +544,7 @@ export const countryData = {
         trainTravel: {
           label: 'Train transport',
           content:
-            'Not applicable — there are no trains in Iceland.',
+            'Not applicable, there are no trains in Iceland.',
         },
         electricCars: {
           label: 'Electric cars',
@@ -665,7 +665,7 @@ export const countryData = {
         serviceProviders: {
           label: 'Service providers',
           content:
-            '• Den nasjonale filmkommisjonen / The National Film Commission.\n• True North – full production support.\n• Lofoten Film – international productions in Lofoten.\n• Loop Film – works across Norway.\n• The Location Guide.',
+            '• Den nasjonale filmkommisjonen / The National Film Commission.\n• True North - full production support.\n• Lofoten Film - international productions in Lofoten.\n• Loop Film - works across Norway.\n• The Location Guide.',
         },
         tools: {
           label: 'Calculators & tools',
@@ -675,7 +675,7 @@ export const countryData = {
         networks: {
           label: 'Networks to join',
           content:
-            '• Green Producers Club.\n• Norske Produksjonsledere – Tv-Drama og Film (Facebook).\n• Locations in Oslo / Norway (Facebook).\n• Filmmakers in Norway (Facebook).',
+            '• Green Producers Club.\n• Norske Produksjonsledere - Tv-Drama og Film (Facebook).\n• Locations in Oslo / Norway (Facebook).\n• Filmmakers in Norway (Facebook).',
         },
       },
     },
@@ -696,7 +696,7 @@ export const countryData = {
         laws: {
           label: 'Relevant national legislation',
           content:
-            '• Swedish Environmental Code (Ds 200:61) — foundation of environmental legislation.\n• Right of Public Access (allemansrätten) — grants freedom to explore nature; film productions typically need permits in sensitive environments.\n• Protected Areas: nature reserves, national parks, Natura 2000 sites require special permits — https://skyddadnatur.naturvardsverket.se/\n• Discrimination Act — prohibits discrimination on seven grounds: gender, gender identity, ethnic origin, religion, disability, sexual orientation, age.',
+            '• Swedish Environmental Code (Ds 200:61): foundation of environmental legislation.\n• Right of Public Access (allemansrätten): grants freedom to explore nature; film productions typically need permits in sensitive environments.\n• Protected Areas: nature reserves, national parks, Natura 2000 sites require special permits, https://skyddadnatur.naturvardsverket.se/\n• Discrimination Act: prohibits discrimination on seven grounds: gender, gender identity, ethnic origin, religion, disability, sexual orientation, age.',
         },
         audiovisualRegulation: {
           label: 'Film & TV industry regulations and incentives',
@@ -721,7 +721,7 @@ export const countryData = {
         trainTravel: {
           label: 'Train transport',
           content:
-            'Efficient connections: Stockholm, Gothenburg, Malmö with 3–6 hour travel times. Northern Sweden routes to Luleå take longer; popular night trains (~12 hours) widely used by film workers. International connections to Oslo, Copenhagen, Hamburg.\n\nMajor operators: SJ, Øresundståg, Snälltåget, Vy.se. Regional services: Skånetrafiken, Västtrafik, SL, and others.',
+            'Efficient connections: Stockholm, Gothenburg, Malmö with 3-6 hour travel times. Northern Sweden routes to Luleå take longer; popular night trains (~12 hours) widely used by film workers. International connections to Oslo, Copenhagen, Hamburg.\n\nMajor operators: SJ, Øresundståg, Snälltåget, Vy.se. Regional services: Skånetrafiken, Västtrafik, SL, and others.',
         },
         electricCars: {
           label: 'Electric cars',
@@ -731,7 +731,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Main distributors: Vattenfall, Ellevio, E.ON. Sweden\'s grid is predominantly renewable: 69% hydroelectric/wind/solar, 29% nuclear, 1.2% fossil fuels — one of Europe\'s most emission-free energy mixes.\n\nElectric generators not widely available. Batteries with varying capacities emerging as key innovation.',
+            'Main distributors: Vattenfall, Ellevio, E.ON. Sweden\'s grid is predominantly renewable: 69% hydroelectric/wind/solar, 29% nuclear, 1.2% fossil fuels, one of Europe\'s most emission-free energy mixes.\n\nElectric generators not widely available. Batteries with varying capacities emerging as key innovation.',
         },
         wasteManagement: {
           label: 'Waste management rules',
@@ -751,12 +751,12 @@ export const countryData = {
         greenConsultants: {
           label: 'Green consultants',
           content:
-            '• SHIFT: https://www.ecoshift.se/ — Swedish association for green consultants.',
+            '• SHIFT: Swedish association for green consultants: https://www.ecoshift.se/',
         },
         trainings: {
           label: 'Trainings',
           content:
-            '• Stockholm Academy of Dramatic Arts: 7.5 ECTS sustainability course (spring 2025).\n• Kulturakademin: digital course in sustainable film production — https://www.kulturakademin.com/kurskatalog/hallbar-filmtv-produktion-ekologi\n• Swedish Film Institute: training sessions — https://www.youtube.com/watch?v=A54OYuj2IZQ\n• Film & TV-producenterna and film funds: recurring training sessions.',
+            '• Stockholm Academy of Dramatic Arts: 7.5 ECTS sustainability course (spring 2025).\n• Kulturakademin: digital course in sustainable film production: https://www.kulturakademin.com/kurskatalog/hallbar-filmtv-produktion-ekologi\n• Swedish Film Institute: training sessions: https://www.youtube.com/watch?v=A54OYuj2IZQ\n• Film & TV-producenterna and film funds: recurring training sessions.',
         },
         tools: {
           label: 'Calculators & tools',
@@ -782,7 +782,7 @@ export const countryData = {
         greenProductionStatus: {
           label: 'Status of green production',
           content:
-            'Slovakia\'s sustainable filmmaking sector gained momentum since participation in the Green Screen project in 2018. Carbon footprint calculation is the most in-demand service due to its impact on securing funding for international co-productions.\n\nAs of June 2025, the Audiovisual Fund no longer provides extra subsidies for employing green consultants. Discussions focus on incentivizing sustainability commitments.\n\nNotable example: "The Flood" (Potopa) — a Slovak-Czech-Polish-Belgian co-production that implemented sustainability measures with certified green filming coordinator Valentína Hučková.',
+            'Slovakia\'s sustainable filmmaking sector gained momentum since participation in the Green Screen project in 2018. Carbon footprint calculation is the most in-demand service due to its impact on securing funding for international co-productions.\n\nAs of June 2025, the Audiovisual Fund no longer provides extra subsidies for employing green consultants. Discussions focus on incentivizing sustainability commitments.\n\nNotable example: "The Flood" (Potopa), a Slovak-Czech-Polish-Belgian co-production that implemented sustainability measures with certified green filming coordinator Valentína Hučková.',
         },
         laws: {
           label: 'Relevant national legislation',
@@ -837,7 +837,7 @@ export const countryData = {
         greenConsultants: {
           label: 'Green consultants',
           content:
-            'As of 2024, 2–5 individuals are actively involved as Green Consultants, with no official association.\n\nSFC Sustainability Manager List: https://www.filmcommission.sk/1120-en/sustainability-manager/',
+            'As of 2024, 2-5 individuals are actively involved as Green Consultants, with no official association.\n\nSFC Sustainability Manager List: https://www.filmcommission.sk/1120-en/sustainability-manager/',
         },
         serviceProviders: {
           label: 'Service providers',
@@ -852,7 +852,7 @@ export const countryData = {
         tools: {
           label: 'Calculators & tools',
           content:
-            "• Carbon'Clap – free calculator by Ecoprod.\n• SecoSet – by Flying Secoya.\n• Carbon'Stage – by Greenly.\n• Albert Carbon Calculator: https://wearealbert.org/\n• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/?_categories=carbon-calculator",
+            "• Carbon'Clap - free calculator by Ecoprod.\n• SecoSet - by Flying Secoya.\n• Carbon'Stage - by Greenly.\n• Albert Carbon Calculator: https://wearealbert.org/\n• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/?_categories=carbon-calculator",
         },
         networks: {
           label: 'Networks to join',
@@ -883,7 +883,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• Green Film — Trentino Sviluppo Spa: European standard.\n• EcoMuvi — Accredited standard, sustainability service for productions.\n• Zen2030 — Benefit company with Environmental Protocol and GHG calculator, ISO 14064 certification.\n• Sardegna Green Film Shooting — Sardinia Film Commission standard.\n• Set Forward — Italian benefit company (since 2024), applies Green Film and Sardegna protocols with Bureau Veritas assessments.\n\nJune 2024: "National Environment & Entertainment Observatory" launched with EU funding and Ministry support.',
+            '• Green Film: Trentino Sviluppo Spa: European standard.\n• EcoMuvi: Accredited standard, sustainability service for productions.\n• Zen2030: Benefit company with Environmental Protocol and GHG calculator, ISO 14064 certification.\n• Sardegna Green Film Shooting: Sardinia Film Commission standard.\n• Set Forward: Italian benefit company (since 2024), applies Green Film and Sardegna protocols with Bureau Veritas assessments.\n\nJune 2024: "National Environment & Entertainment Observatory" launched with EU funding and Ministry support.',
         },
         decarbonizationPlan: {
           label: 'Decarbonization plan',
@@ -898,7 +898,7 @@ export const countryData = {
         trainTravel: {
           label: 'Train transport',
           content:
-            'High-speed network efficient, punctual, clean, relatively affordable (Milan–Rome: 3 hours, €50–80). Main routes: Turin, Milan, Venice, Bologna, Florence, Rome, Naples, Reggio Calabria.\n\nNon-high-speed trains are generally cheap but unreliable. Regional systems managed locally across 21 regions.',
+            'High-speed network efficient, punctual, clean, relatively affordable (Milan-Rome: 3 hours, €50-80). Main routes: Turin, Milan, Venice, Bologna, Florence, Rome, Naples, Reggio Calabria.\n\nNon-high-speed trains are generally cheap but unreliable. Regional systems managed locally across 21 regions.',
         },
         electricCars: {
           label: 'Electric cars',
@@ -908,7 +908,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Italy\'s extensive grid accommodates typical film set power needs. Main challenge: bureaucratic process for temporary connections. Can be worked within 4–6 working days if understood, but most productions experience 30+ day delays.\n\nRecommendation: Contact local energy supplier to verify temporary connection possibility. Terna (national grid operator) provides guidelines.',
+            'Italy\'s extensive grid accommodates typical film set power needs. Main challenge: bureaucratic process for temporary connections. Can be worked within 4-6 working days if understood, but most productions experience 30+ day delays.\n\nRecommendation: Contact local energy supplier to verify temporary connection possibility. Terna (national grid operator) provides guidelines.',
         },
         wasteManagement: {
           label: 'Waste management rules',
@@ -933,7 +933,7 @@ export const countryData = {
         tools: {
           label: 'Calculators & tools',
           content:
-            "• EcoMuvi – tracking tips and tools.\n• Green Film – tracking tips and tools.\n• Zen2030 – tools.\n• Albert Carbon Calculator.\n• Carbon'Clap – free calculator by Ecoprod.",
+            "• EcoMuvi - tracking tips and tools.\n• Green Film - tracking tips and tools.\n• Zen2030 - tools.\n• Albert Carbon Calculator.\n• Carbon'Clap - free calculator by Ecoprod.",
         },
         networks: {
           label: 'Networks to join',
@@ -959,7 +959,7 @@ export const countryData = {
         laws: {
           label: 'Relevant national legislation',
           content:
-            'Environmental Laws:\n• Basic Environmental Law.\n• General Waste Management Regime.\n• Environmental Damage Liability Law.\n• Environmental Impact Assessment Regime.\n• Filming in nature reserves and protected areas strictly regulated.\n\nSocial Rules:\n• Cash rebates award two points for projects led by female directors.\n• ICA aims to enhance diversity in its 2024–2028 strategy.\n• 2025 "Manual of Good Practices for Cinema and Audiovisual Media in Portugal" (Portuguese only).',
+            'Environmental Laws:\n• Basic Environmental Law.\n• General Waste Management Regime.\n• Environmental Damage Liability Law.\n• Environmental Impact Assessment Regime.\n• Filming in nature reserves and protected areas strictly regulated.\n\nSocial Rules:\n• Cash rebates award two points for projects led by female directors.\n• ICA aims to enhance diversity in its 2024-2028 strategy.\n• 2025 "Manual of Good Practices for Cinema and Audiovisual Media in Portugal" (Portuguese only).',
         },
         audiovisualRegulation: {
           label: 'Film & TV industry regulations and incentives',
@@ -974,7 +974,7 @@ export const countryData = {
         decarbonizationPlan: {
           label: 'Decarbonization plan',
           content:
-            'Basic Climate Law (Law No. 98/2021) recognizes climate emergency.\n\nGoals: climate neutrality by 2050 (possible shift to 2045). Emission reduction: minimum 55% by 2030, 65–75% by 2040, 90% by 2050 (vs. 2005).\n\nNational Energy and Climate Plan for 2030 (PNEC, reviewed 2024): 51% renewable energy, circular economy as fundamental decarbonization axis.',
+            'Basic Climate Law (Law No. 98/2021) recognizes climate emergency.\n\nGoals: climate neutrality by 2050 (possible shift to 2045). Emission reduction: minimum 55% by 2030, 65-75% by 2040, 90% by 2050 (vs. 2005).\n\nNational Energy and Climate Plan for 2030 (PNEC, reviewed 2024): 51% renewable energy, circular economy as fundamental decarbonization axis.',
         },
       },
     },
@@ -984,7 +984,7 @@ export const countryData = {
         trainTravel: {
           label: 'Train transport',
           content:
-            'Limited network leaving some regions without service. Main North–South route (Braga–Porto–Lisbon–Faro) with fast Alfa Pendular connection and affordable tickets. Future plans include high-speed Lisbon–Porto line.',
+            'Limited network leaving some regions without service. Main North-South route (Braga-Porto-Lisbon-Faro) with fast Alfa Pendular connection and affordable tickets. Future plans include high-speed Lisbon-Porto line.',
         },
         electricCars: {
           label: 'Electric cars',
@@ -1080,7 +1080,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Reliable national grid, especially in Budapest and studio towns.\n\nEnergy mix: nuclear (~50%), natural gas (30–35%), coal/lignite (10–15%), renewables (12–15%). Solar capacity exceeded 3,000 MW. Astra operates on 100% green energy.\n\nHungary lacks comprehensive battery pack rental networks.',
+            'Reliable national grid, especially in Budapest and studio towns.\n\nEnergy mix: nuclear (~50%), natural gas (30-35%), coal/lignite (10-15%), renewables (12-15%). Solar capacity exceeded 3,000 MW. Astra operates on 100% green energy.\n\nHungary lacks comprehensive battery pack rental networks.',
         },
         wasteManagement: {
           label: 'Waste management rules',
@@ -1095,7 +1095,7 @@ export const countryData = {
         greenConsultants: {
           label: 'Green consultants',
           content:
-            '• Green Eyes Production: leading film sustainability consultancy — eco-friendly strategies, crew training, certifications.\n• Leverage Point Entertainment: sustainability agency founded by Zsófia Szemerédy, operates between London and Budapest.',
+            '• Green Eyes Production: leading film sustainability consultancy: eco-friendly strategies, crew training, certifications.\n• Leverage Point Entertainment: sustainability agency founded by Zsófia Szemerédy, operates between London and Budapest.',
         },
         serviceProviders: {
           label: 'Service providers',
@@ -1110,7 +1110,7 @@ export const countryData = {
         tools: {
           label: 'Calculators & tools',
           content:
-            "• Carbon'Clap – free calculator by Ecoprod.\n• Albert Carbon Calculator.\n• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/",
+            "• Carbon'Clap - free calculator by Ecoprod.\n• Albert Carbon Calculator.\n• Green Toolkit Film&TV: https://www.greentoolkit-filmtv.eu/database/",
         },
         networks: {
           label: 'Networks to join',
@@ -1146,7 +1146,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            'Guides and best practices by Film Offices/Commissions:\n• Asturias Film Commission — https://www.turismoasturias.es/filmcommission/rueda-en-verde\n• Valencia Film Office — https://www.valenciafilmoffice.org/rodajes-sostenibles-en-valencia\n• Barcelona Film Commission.\n• Cataluña Film Commission.\n• Madrid Film Office — https://madridfilmoffice.com/recursos-produccion-sostenible/\n• Basque Green Film — https://www.euskadi.eus/basque-green-film-bgf/web01-a2kulsus/es/\n• Academia de Cine — https://www.academiadecine.com/pdfs/guia-de-buenas-practicas-del-sello-verde/',
+            'Guides and best practices by Film Offices/Commissions:\n• Asturias Film Commission: https://www.turismoasturias.es/filmcommission/rueda-en-verde\n• Valencia Film Office: https://www.valenciafilmoffice.org/rodajes-sostenibles-en-valencia\n• Barcelona Film Commission.\n• Cataluña Film Commission.\n• Madrid Film Office: https://madridfilmoffice.com/recursos-produccion-sostenible/\n• Basque Green Film: https://www.euskadi.eus/basque-green-film-bgf/web01-a2kulsus/es/\n• Academia de Cine: https://www.academiadecine.com/pdfs/guia-de-buenas-practicas-del-sello-verde/',
         },
         decarbonizationPlan: {
           label: 'Decarbonization plan',
@@ -1343,7 +1343,7 @@ export const countryData = {
         greenConsultants: {
           label: 'Green consultants & service providers',
           content:
-            '• Climate Innovation – national coordination of Future Ready Film.\n• Sustainable Film Alliance of Ireland (informal network).\n• Green Film Lab (TorinoFilmLab, with Irish participation).',
+            '• Climate Innovation - national coordination of Future Ready Film.\n• Sustainable Film Alliance of Ireland (informal network).\n• Green Film Lab (TorinoFilmLab, with Irish participation).',
         },
         tools: {
           label: 'Calculators & tools',
@@ -1399,7 +1399,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Victoria Park grid cabinet in London via Film London\'s Grid Project — the UK\'s first industry-specific grid connection for film/TV. Several grid connection projects under development.\n\nGrid Knowledge Blog by Leverage Point Entertainment offers insights on temporary grid access.',
+            'Victoria Park grid cabinet in London via Film London\'s Grid Project, the UK\'s first industry-specific grid connection for film/TV. Several grid connection projects under development.\n\nGrid Knowledge Blog by Leverage Point Entertainment offers insights on temporary grid access.',
         },
         wasteManagement: {
           label: 'Waste management rules',
@@ -1429,7 +1429,7 @@ export const countryData = {
         tools: {
           label: 'Calculators & tools',
           content:
-            'Production Carbon Measurement:\n• ALBERT Carbon Calculator.\n• AdGreen Carbon Calculator.\n• Greenshoot Carbon Calculator (Film London).\n\nToolkits:\n• Julie\'s Bicycle — Creative Climate Tools.\n• Theatre Green Book.\n• Film & TV Sustainability Resources Map (by Mairi Claire Bowser).\n• WRAP — Waste reduction & circular economy.\n• Ellen MacArthur Foundation — Circular Economy.\n• The Carbon Literacy Project.',
+            'Production Carbon Measurement:\n• ALBERT Carbon Calculator.\n• AdGreen Carbon Calculator.\n• Greenshoot Carbon Calculator (Film London).\n\nToolkits:\n• Julie\'s Bicycle: Creative Climate Tools.\n• Theatre Green Book.\n• Film & TV Sustainability Resources Map (by Mairi Claire Bowser).\n• WRAP: Waste reduction & circular economy.\n• Ellen MacArthur Foundation: Circular Economy.\n• The Carbon Literacy Project.',
         },
         networks: {
           label: 'Networks to join',
@@ -1460,7 +1460,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• KIPA (Polish Audiovisual Producers Chamber of Commerce) — Green Audiovisual Production Lab: https://kipa.pl/en/\n• Green Film Lab workshops held in Warsaw in partnership with the Polish Film Institute (PISF).\n• Łódź Film Commission — "Green Screen" programme ambassadors.',
+            '• KIPA (Polish Audiovisual Producers Chamber of Commerce): Green Audiovisual Production Lab: https://kipa.pl/en/\n• Green Film Lab workshops held in Warsaw in partnership with the Polish Film Institute (PISF).\n• Łódź Film Commission: "Green Screen" programme ambassadors.',
         },
       },
     },
@@ -1500,7 +1500,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• Green Production Guide — established 2010 by the Producers Guild of America Foundation (PGA Green) and major studios; free toolkit plus a worldwide database of sustainable vendors: https://greenproductionguide.com/\n• Sustainable Production Alliance (SPA) — consortium of major film, TV and streaming companies.\n• Producers Guild of America — PGA Green sustainability programme: https://producersguild.org/sustainability/\n\nNote: Earth Angel, a leading US sustainable-production consultancy, ceased operations in 2025.',
+            '• Green Production Guide: established 2010 by the Producers Guild of America Foundation (PGA Green) and major studios; free toolkit plus a worldwide database of sustainable vendors: https://greenproductionguide.com/\n• Sustainable Production Alliance (SPA): consortium of major film, TV and streaming companies.\n• Producers Guild of America: PGA Green sustainability programme: https://producersguild.org/sustainability/\n\nNote: Earth Angel, a leading US sustainable-production consultancy, ceased operations in 2025.',
         },
       },
     },
@@ -1514,7 +1514,7 @@ export const countryData = {
         tools: {
           label: 'Calculators & tools',
           content:
-            '• Green Production Guide — PEAR & PEACH: https://greenproductionguide.com/tools/\n• albert carbon calculator (used by some US productions): https://wearealbert.org/',
+            '• Green Production Guide: PEAR & PEACH: https://greenproductionguide.com/tools/\n• albert carbon calculator (used by some US productions): https://wearealbert.org/',
         },
       },
     },
@@ -1535,12 +1535,12 @@ export const countryData = {
         audiovisualRegulation: {
           label: 'Film & TV industry regulations and incentives',
           content:
-            'The Netherlands Film Fund compensates eligible eco-consultant costs — either through a dedicated eco-consultancy track with GreenScreen eco-consultants who collaborate with the Fund, or through independent hiring. From 2024, the predicted carbon footprint and carbon action plan are required when submitting for further realisation. The Fund also organises trainings and inspiration sessions sharing best practices.',
+            'The Netherlands Film Fund compensates eligible eco-consultant costs, either through a dedicated eco-consultancy track with GreenScreen eco-consultants who collaborate with the Fund, or through independent hiring. From 2024, the predicted carbon footprint and carbon action plan are required when submitting for further realisation. The Fund also organises trainings and inspiration sessions sharing best practices.',
         },
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            'Green Film Making — founded 2015, facilitated by the Netherlands Film Fund and led by sustainability manager Els Rientjes. It provides a department-based toolkit (art, catering, energy, location, production, transport) and the "Film Harvest Map" (filmoogstkaart.nl) identifying clean-energy access points and green vendors near filming locations.\nhttps://greenfilmmaking.com/',
+            'Green Film Making, founded 2015, facilitated by the Netherlands Film Fund and led by sustainability manager Els Rientjes. It provides a department-based toolkit (art, catering, energy, location, production, transport) and the "Film Harvest Map" (filmoogstkaart.nl) identifying clean-energy access points and green vendors near filming locations.\nhttps://greenfilmmaking.com/',
         },
       },
     },
@@ -1570,12 +1570,12 @@ export const countryData = {
         greenProductionStatus: {
           label: 'Status of green production',
           content:
-            'Austria\'s Green Filming & Funding Network integrates sustainability into filmmaking through mandatory regulations, professional training, and national/transnational cooperation. Key institutions: Austrian Film Institute (ÖFI) and Evergreen Prisma — Competence Center for Green Filming Europe.\n\nGreen Funding Structure: 30% automatic grant + additional 5% Green Bonus.\n\nTimeline: 2018 synergy model created; 2021 ÖFI implemented mandatory Final Green Report; 2023 financial green funding introduced; January 2025: animation criteria catalogue and child welfare concept (KIWOK) launched.',
+            'Austria\'s Green Filming & Funding Network integrates sustainability into filmmaking through mandatory regulations, professional training, and national/transnational cooperation. Key institutions: Austrian Film Institute (ÖFI) and Evergreen Prisma, Competence Center for Green Filming Europe.\n\nGreen Funding Structure: 30% automatic grant + additional 5% Green Bonus.\n\nTimeline: 2018 synergy model created; 2021 ÖFI implemented mandatory Final Green Report; 2023 financial green funding introduced; January 2025: animation criteria catalogue and child welfare concept (KIWOK) launched.',
         },
         laws: {
           label: 'Relevant national legislation',
           content:
-            '• Film Location Act 2023 (FISA+) — incentives for ecological film production.\n• Film Funding Act 2023 (ÖFI amendments).\n• Code of Ethics: all funding institutions committed to binding professional conduct guidelines.\n• Anti-discrimination, anti-harassment measures, internal/external confidant access.\n• KIWOK (Child Welfare Concept): project-specific Child Participation Plan required.\n• Working time: 8h/day, 40h/week standard; max 12h/day, 60h/week with overtime.\n• Filming in protected areas requires permits; large-scale sets may trigger EIA.',
+            '• Film Location Act 2023 (FISA+): incentives for ecological film production.\n• Film Funding Act 2023 (ÖFI amendments).\n• Code of Ethics: all funding institutions committed to binding professional conduct guidelines.\n• Anti-discrimination, anti-harassment measures, internal/external confidant access.\n• KIWOK (Child Welfare Concept): project-specific Child Participation Plan required.\n• Working time: 8h/day, 40h/week standard; max 12h/day, 60h/week with overtime.\n• Filming in protected areas requires permits; large-scale sets may trigger EIA.',
         },
         audiovisualRegulation: {
           label: 'Film & TV industry regulations and incentives',
@@ -1656,12 +1656,12 @@ export const countryData = {
         greenProductionStatus: {
           label: 'Status of green production',
           content:
-            'Promoting ecological, social and financial responsibility is a focus of the Finnish Film Foundation\'s (SES) 2024–2026 strategy. The Foundation supports more sustainable production, exhibition and distribution through training, communication and support criteria, in cooperation with other industry operators. Measured emissions of Finnish productions averaged about 6.5 tCO₂e/hour in 2021–2023, the majority generated by logistics.',
+            'Promoting ecological, social and financial responsibility is a focus of the Finnish Film Foundation\'s (SES) 2024-2026 strategy. The Foundation supports more sustainable production, exhibition and distribution through training, communication and support criteria, in cooperation with other industry operators. Measured emissions of Finnish productions averaged about 6.5 tCO₂e/hour in 2021-2023, the majority generated by logistics.',
         },
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• Ekosetti — a guidebook to environmentally sustainable audiovisual production in Finland, published 2019 (English version 2020). A 2025 follow-up, "Ekosetti in Euros", focuses on the economics of production sustainability, alongside an Excel costing tool: https://ekosetti.fi/en/ekosetti-in-english/\n• APFI (Audiovisual Producers Finland) — ecological sustainability programme: https://apfi.fi/en/sustainable-industry/ecological-sustainability/\n• Finnish Film Foundation (SES) — Sustainability Sprint and environmental sustainability plan: https://www.ses.fi/en/accountability/',
+            '• Ekosetti: a guidebook to environmentally sustainable audiovisual production in Finland, published 2019 (English version 2020). A 2025 follow-up, "Ekosetti in Euros", focuses on the economics of production sustainability, alongside an Excel costing tool: https://ekosetti.fi/en/ekosetti-in-english/\n• APFI (Audiovisual Producers Finland): ecological sustainability programme: https://apfi.fi/en/sustainable-industry/ecological-sustainability/\n• Finnish Film Foundation (SES): Sustainability Sprint and environmental sustainability plan: https://www.ses.fi/en/accountability/',
         },
       },
     },
@@ -1701,7 +1701,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• EKOME — National Centre of Audiovisual Media and Communication (cash rebate, Film Offices Network): https://www.ekkomed.gr/\n• 2024 Sustainability Standard workshop (EKOME + WaterBear Network) — first national guidelines for sustainable production.',
+            '• EKOME: National Centre of Audiovisual Media and Communication (cash rebate, Film Offices Network): https://www.ekkomed.gr/\n• 2024 Sustainability Standard workshop (EKOME + WaterBear Network): first national guidelines for sustainable production.',
         },
       },
     },
@@ -1736,7 +1736,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• EcoVision (Selo EcoVision) — a sustainability programme run by Panvision since 2021, based on the UN Sustainable Development Goals, with a free carbon calculator calibrated to Latin America (built with ProMálaga, Spain; a 2025 version was launched with Petrobras), a catalogue of companies and professionals, consulting and training: https://www.panvision.com.br/ecovision.php\n• Cinema Verde — audiovisual production with socio-environmental responsibility: https://cinemaverde.com.br/\n• Aquarela — became the first production company in central-west Brazil to offset the carbon of all its activities (2020).',
+            '• EcoVision (Selo EcoVision): a sustainability programme run by Panvision since 2021, based on the UN Sustainable Development Goals, with a free carbon calculator calibrated to Latin America (built with ProMálaga, Spain; a 2025 version was launched with Petrobras), a catalogue of companies and professionals, consulting and training: https://www.panvision.com.br/ecovision.php\n• Cinema Verde: audiovisual production with socio-environmental responsibility: https://cinemaverde.com.br/\n• Aquarela: became the first production company in central-west Brazil to offset the carbon of all its activities (2020).',
         },
       },
     },
@@ -1776,7 +1776,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• GREENSET — non-profit established in 2020 under the SA Film Academy. It trains young "Eco Stewards" and "Green PAs" to roll out best practices and to measure carbon on set, using a bespoke film carbon calculator built with Credible Carbon (46 industry-specific indicators). It has earned 10 EMA Gold Seals and several albert certifications on international productions (e.g. Warrior S3, One Piece): https://safilmacademy.org/greenset/\n• Atlantic Green Studio — in 2023 GREENSET and Homebrew Films converted Atlantic Studios (Montague Gardens, Cape Town) into the first large sustainable "Green Studio" in Africa, running 80%+ on renewables.',
+            '• GREENSET: non-profit established in 2020 under the SA Film Academy. It trains young "Eco Stewards" and "Green PAs" to roll out best practices and to measure carbon on set, using a bespoke film carbon calculator built with Credible Carbon (46 industry-specific indicators). It has earned 10 EMA Gold Seals and several albert certifications on international productions (e.g. Warrior S3, One Piece): https://safilmacademy.org/greenset/\n• Atlantic Green Studio: in 2023 GREENSET and Homebrew Films converted Atlantic Studios (Montague Gardens, Cape Town) into the first large sustainable "Green Studio" in Africa, running 80%+ on renewables.',
         },
       },
     },
@@ -1821,7 +1821,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• Green Production Maroc — label, training (e.g. "Environmental Reference" and energy-efficiency courses), technical guides, checklists and a directory of green service providers: https://www.greenproduction.ma/',
+            '• Green Production Maroc: label, training (e.g. "Environmental Reference" and energy-efficiency courses), technical guides, checklists and a directory of green service providers: https://www.greenproduction.ma/',
         },
       },
     },
@@ -1835,7 +1835,7 @@ export const countryData = {
         tools: {
           label: 'Calculators & tools',
           content:
-            '• Green Production Maroc — guides, checklists and green supplier directory: https://www.greenproduction.ma/',
+            '• Green Production Maroc: guides, checklists and green supplier directory: https://www.greenproduction.ma/',
         },
       },
     },
@@ -1875,7 +1875,7 @@ export const countryData = {
         tools: {
           label: 'Calculators & tools',
           content:
-            '• BAFTA albert carbon calculator (administered for Australia by SSA): https://wearealbert.org/\n• Sustainable Screens Australia — Tools & Resources: https://www.sustainablescreens.au/tools-resources',
+            '• BAFTA albert carbon calculator (administered for Australia by SSA): https://wearealbert.org/\n• Sustainable Screens Australia: Tools & Resources: https://www.sustainablescreens.au/tools-resources',
         },
         networks: {
           label: 'Networks to join',
@@ -1901,7 +1901,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• Greenlit — industry-wide sustainability collaboration that supported 50+ productions in its first year: https://greenlit.org.nz/\n• "Greening the Screen" — environmentally responsible principles for screen production, owned by the Ministry for the Environment and licensed to Film New Zealand: https://environment.govt.nz/publications/greening-the-screen/greening-the-screen/',
+            '• Greenlit: industry-wide sustainability collaboration that supported 50+ productions in its first year: https://greenlit.org.nz/\n• "Greening the Screen": environmentally responsible principles for screen production, owned by the Ministry for the Environment and licensed to Film New Zealand: https://environment.govt.nz/publications/greening-the-screen/greening-the-screen/',
         },
       },
     },
@@ -1936,7 +1936,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• IAFM — ECO Film Lab: International Film Residency, a paperless, plastic-free program fostering sustainable production and environmentally conscious storytelling among emerging filmmakers and film schools (a 2026 edition was held in Bandarban): https://ecofilmlab.iafmedu.net/\n• The ECO Film Lab short film "NISHI" received the 35th Environmental Media Association (EMA) Award (2025) in Los Angeles.\n• IAFM is a member of the Green Film School Alliance (GFSA), USA.',
+            '• IAFM: ECO Film Lab: International Film Residency, a paperless, plastic-free program fostering sustainable production and environmentally conscious storytelling among emerging filmmakers and film schools (a 2026 edition was held in Bandarban): https://ecofilmlab.iafmedu.net/\n• The ECO Film Lab short film "NISHI" received the 35th Environmental Media Association (EMA) Award (2025) in Los Angeles.\n• IAFM is a member of the Green Film School Alliance (GFSA), USA.',
         },
       },
     },
@@ -1950,7 +1950,7 @@ export const countryData = {
         trainings: {
           label: 'Trainings',
           content:
-            '• IAFM ECO Film Lab — international residency on sustainable and green filmmaking: https://ecofilmlab.iafmedu.net/',
+            '• IAFM ECO Film Lab: international residency on sustainable and green filmmaking: https://ecofilmlab.iafmedu.net/',
         },
       },
     },
@@ -1971,7 +1971,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• "Aisa Yeh Jahaan" (2015) — widely reported as India\'s first carbon-neutral film, offsetting its emissions in collaboration with the Centre for Environmental Research and Education (CERE), Mumbai.\n• Some OTT/streaming productions have piloted on-set measures such as waste diversion and reduced single-use plastics.',
+            '• "Aisa Yeh Jahaan" (2015): widely reported as India\'s first carbon-neutral film, offsetting its emissions in collaboration with the Centre for Environmental Research and Education (CERE), Mumbai.\n• Some OTT/streaming productions have piloted on-set measures such as waste diversion and reduced single-use plastics.',
         },
       },
     },
@@ -1995,12 +1995,12 @@ export const countryData = {
         greenProductionStatus: {
           label: 'Status of green production',
           content:
-            'Togo\'s film sector is young and being structured — a Cinema and Animated Image Code (2021), the national centre CNCIA and the support fund FoNSICA were set up in 2021–2022. Ecological cinema is at a grassroots, festival-driven stage rather than tied to production regulation.',
+            'Togo\'s film sector is young and being structured, a Cinema and Animated Image Code (2021), the national centre CNCIA and the support fund FoNSICA were set up in 2021-2022. Ecological cinema is at a grassroots, festival-driven stage rather than tied to production regulation.',
         },
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• Festival EcoProd Afrique — a Lomé-based festival promoting more ecological cinema across Africa, active in the Togolese audiovisual scene (linked to filmmaker Israel Tounou, creator of Togo\'s first TV cinema programme "Ciné Art"): https://www.facebook.com/festivalecoprodafrique/',
+            '• Festival EcoProd Afrique: a Lomé-based festival promoting more ecological cinema across Africa, active in the Togolese audiovisual scene (linked to filmmaker Israel Tounou, creator of Togo\'s first TV cinema programme "Ciné Art"): https://www.facebook.com/festivalecoprodafrique/',
         },
       },
     },
@@ -2035,7 +2035,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• EcoFilming — a Latin-American sustainability consultancy that measures production carbon footprints (GHG Protocol, BAFTA albert, PEAR) and advised "La Rueda de la Suerte", reported as the first entertainment production in Mexico to earn the Environmental Media Association (EMA) Gold Seal: https://www.ecofilming.green/',
+            '• EcoFilming: a Latin-American sustainability consultancy that measures production carbon footprints (GHG Protocol, BAFTA albert, PEAR) and advised "La Rueda de la Suerte", reported as the first entertainment production in Mexico to earn the Environmental Media Association (EMA) Gold Seal: https://www.ecofilming.green/',
         },
       },
     },
@@ -2070,7 +2070,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• APAC (Asociación de Productoras Audiovisuales Publicitarias) — "Producción Audiovisual Sustentable" programme: an online toolkit with a carbon-footprint calculator, a manual of sustainable practices and checklists by department, aimed at carbon-neutral production: https://www.asociacionapac.org/produccionaudiovisualsustentable/\n• "Reina Animal" — first feature reported to apply the programme and offset its footprint (carob trees planted in Villa Allende, Córdoba).\n• FINCA — sustainable-cinema / green-production strand: https://finca.imd.org.ar/en/sustainable-filmmaking/',
+            '• APAC (Asociación de Productoras Audiovisuales Publicitarias): "Producción Audiovisual Sustentable" programme: an online toolkit with a carbon-footprint calculator, a manual of sustainable practices and checklists by department, aimed at carbon-neutral production: https://www.asociacionapac.org/produccionaudiovisualsustentable/\n• "Reina Animal": first feature reported to apply the programme and offset its footprint (carob trees planted in Villa Allende, Córdoba).\n• FINCA: sustainable-cinema / green-production strand: https://finca.imd.org.ar/en/sustainable-filmmaking/',
         },
       },
     },
@@ -2105,7 +2105,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• Bogotá Film Commission — "ruta de ecosostenibilidad" (since 2023): training on waste and good practices by department, plus a carbon-footprint calculator adapted to Bogotá: https://comisionfilmicacolombia.com/en/procedures/sustainableproduction/\n• Proimágenes Colombia — promotes reducing the socio-environmental impact of audiovisual productions: https://www.proimagenescolombia.com/',
+            '• Bogotá Film Commission: "ruta de ecosostenibilidad" (since 2023): training on waste and good practices by department, plus a carbon-footprint calculator adapted to Bogotá: https://comisionfilmicacolombia.com/en/procedures/sustainableproduction/\n• Proimágenes Colombia: promotes reducing the socio-environmental impact of audiovisual productions: https://www.proimagenescolombia.com/',
         },
       },
     },
@@ -2135,17 +2135,17 @@ export const countryData = {
         greenProductionStatus: {
           label: 'Status of green production',
           content:
-            'Green production is at an early, grassroots stage — a national institutional framework is not yet in place, and momentum comes mainly from the cross-border Baltic Green Film network and from the animation sector. Estonia has a strong stop-motion tradition led by Nukufilm, the world\'s oldest still-running puppet-animation studio (founded 1957, Tallinn).',
+            'Green production is at an early, grassroots stage, a national institutional framework is not yet in place, and momentum comes mainly from the cross-border Baltic Green Film network and from the animation sector. Estonia has a strong stop-motion tradition led by Nukufilm, the world\'s oldest still-running puppet-animation studio (founded 1957, Tallinn).',
         },
         decarbonizationPlan: {
           label: 'Decarbonization plan',
           content:
-            'Estonia targets climate neutrality by 2050 and 100% renewable electricity by 2030. It plans to stop generating electricity from oil shale by 2035 and to phase out oil shale in energy entirely by 2040 — a major shift, as oil shale long made Estonia\'s power among the most carbon-intensive in the EU (source: IEA, https://www.iea.org/countries/estonia).',
+            'Estonia targets climate neutrality by 2050 and 100% renewable electricity by 2030. It plans to stop generating electricity from oil shale by 2035 and to phase out oil shale in energy entirely by 2040, a major shift, as oil shale long made Estonia\'s power among the most carbon-intensive in the EU (source: IEA, https://www.iea.org/countries/estonia).',
         },
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• Baltic Green Film — a sustainability initiative and knowledge-sharing network across Estonia, Latvia and Lithuania, offering training and building a regional pool of experts: https://balticgreenfilm.com/\n• Stop-motion sustainability: a 2022 Tallinn seminar began work on a first sustainable production guide for stop-motion films; the ANIMARKT 2024 Stop Motion Forum required each submitted project to include a sustainable production plan (10% of the evaluation).',
+            '• Baltic Green Film: a sustainability initiative and knowledge-sharing network across Estonia, Latvia and Lithuania, offering training and building a regional pool of experts: https://balticgreenfilm.com/\n• Stop-motion sustainability: a 2022 Tallinn seminar began work on a first sustainable production guide for stop-motion films; the ANIMARKT 2024 Stop Motion Forum required each submitted project to include a sustainable production plan (10% of the evaluation).',
         },
       },
     },
@@ -2165,12 +2165,12 @@ export const countryData = {
         tools: {
           label: 'Calculators & tools',
           content:
-            'There is no national, film-specific carbon calculator or local certification scheme yet (the sector is at a grassroots stage). Estonian productions use established international tools — the credible, widely recognised ones are BAFTA albert (https://wearealbert.org/) and the Green Producers Tool (https://www.greenproducers.club/).\n• Baltic Green Film: https://balticgreenfilm.com/',
+            'There is no national, film-specific carbon calculator or local certification scheme yet (the sector is at a grassroots stage). Estonian productions use established international tools, the credible, widely recognised ones are BAFTA albert (https://wearealbert.org/) and the Green Producers Tool (https://www.greenproducers.club/).\n• Baltic Green Film: https://balticgreenfilm.com/',
         },
         networks: {
           label: 'Networks to join',
           content:
-            '• Baltic Green Film (Estonia/Latvia/Lithuania): https://balticgreenfilm.com/\n• Nukufilm — stop-motion studio, Tallinn: https://nukufilm.ee/en/',
+            '• Baltic Green Film (Estonia/Latvia/Lithuania): https://balticgreenfilm.com/\n• Nukufilm: stop-motion studio, Tallinn: https://nukufilm.ee/en/',
         },
       },
     },
@@ -2196,7 +2196,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• Baltic Green Film — regional sustainability network (Estonia/Latvia/Lithuania): https://balticgreenfilm.com/\n• National Film Centre of Latvia (Nacionālais Kino centrs): https://www.nkc.gov.lv/en',
+            '• Baltic Green Film: regional sustainability network (Estonia/Latvia/Lithuania): https://balticgreenfilm.com/\n• National Film Centre of Latvia (Nacionālais Kino centrs): https://www.nkc.gov.lv/en',
         },
       },
     },
@@ -2206,7 +2206,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Latvia\'s grid synchronised with the Continental European network in February 2025. Electricity is predominantly renewable (about three-quarters), led by hydropower on the Daugava and biomass — a relatively low-carbon grid for productions.',
+            'Latvia\'s grid synchronised with the Continental European network in February 2025. Electricity is predominantly renewable (about three-quarters), led by hydropower on the Daugava and biomass, a relatively low-carbon grid for productions.',
         },
       },
     },
@@ -2216,7 +2216,7 @@ export const countryData = {
         tools: {
           label: 'Calculators & tools',
           content:
-            'There is no national, film-specific carbon calculator or local certification scheme yet; Latvian productions rely on established international tools — the credible, widely recognised ones are BAFTA albert (https://wearealbert.org/) and the Green Producers Tool (https://www.greenproducers.club/).\n• Baltic Green Film: https://balticgreenfilm.com/',
+            'There is no national, film-specific carbon calculator or local certification scheme yet; Latvian productions rely on established international tools, the credible, widely recognised ones are BAFTA albert (https://wearealbert.org/) and the Green Producers Tool (https://www.greenproducers.club/).\n• Baltic Green Film: https://balticgreenfilm.com/',
         },
         networks: {
           label: 'Networks to join',
@@ -2247,7 +2247,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• Baltic Green Film — regional sustainability network (Estonia/Latvia/Lithuania): https://balticgreenfilm.com/\n• Baltic Film & Creative Tech Cluster — GreenCCircle project on sustainability skills and training: https://www.film-creative.tech/\n• Lithuanian Film Centre (LKC): https://www.lkc.lt/en/',
+            '• Baltic Green Film: regional sustainability network (Estonia/Latvia/Lithuania): https://balticgreenfilm.com/\n• Baltic Film & Creative Tech Cluster: GreenCCircle project on sustainability skills and training: https://www.film-creative.tech/\n• Lithuanian Film Centre (LKC): https://www.lkc.lt/en/',
         },
       },
     },
@@ -2267,7 +2267,7 @@ export const countryData = {
         tools: {
           label: 'Calculators & tools',
           content:
-            'There is no national, film-specific carbon calculator or local certification scheme yet; Lithuanian productions use established international tools — the credible, widely recognised ones are BAFTA albert (https://wearealbert.org/) and the Green Producers Tool (https://www.greenproducers.club/).\n• Baltic Green Film: https://balticgreenfilm.com/',
+            'There is no national, film-specific carbon calculator or local certification scheme yet; Lithuanian productions use established international tools, the credible, widely recognised ones are BAFTA albert (https://wearealbert.org/) and the Green Producers Tool (https://www.greenproducers.club/).\n• Baltic Green Film: https://balticgreenfilm.com/',
         },
         networks: {
           label: 'Networks to join',
@@ -2293,12 +2293,12 @@ export const countryData = {
         decarbonizationPlan: {
           label: 'Decarbonization plan',
           content:
-            'Switzerland has a legal target of net-zero greenhouse-gas emissions by 2050, set by the Climate and Innovation Act approved by referendum in June 2023. Its electricity is already largely low-carbon — predominantly hydropower (around 60%) and nuclear (about a third).',
+            'Switzerland has a legal target of net-zero greenhouse-gas emissions by 2050, set by the Climate and Innovation Act approved by referendum in June 2023. Its electricity is already largely low-carbon, predominantly hydropower (around 60%) and nuclear (about a third).',
         },
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• Sustainable Arts — sustainability platform for the cultural sector, backed by the Zürich Film Foundation (Filmstiftung), Migros Engagement/Kulturprozent and Cinéforom; offers a carbon calculator for cultural/film productions plus checklists and guides: https://sustainablearts.ch/en/sustainability-in-the-film-industry/\n• nachhaltigfilmen.ch — Swiss research and resources on sustainable filmmaking.',
+            '• Sustainable Arts: sustainability platform for the cultural sector, backed by the Zürich Film Foundation (Filmstiftung), Migros Engagement/Kulturprozent and Cinéforom; offers a carbon calculator for cultural/film productions plus checklists and guides: https://sustainablearts.ch/en/sustainability-in-the-film-industry/\n• nachhaltigfilmen.ch: Swiss research and resources on sustainable filmmaking.',
         },
       },
     },
@@ -2318,7 +2318,7 @@ export const countryData = {
         tools: {
           label: 'Calculators & tools',
           content:
-            '• Carbon calculator for cultural/film productions via Sustainable Arts: https://sustainablearts.ch/en/sustainability-in-the-film-industry/\n\nNote: Sustainable Arts provides tools and guidance, not a certified label — there is no Swiss film-specific certification with independent third-party verification. The credible, widely recognised international calculators are BAFTA albert (https://wearealbert.org/) and Ecoprod\'s Carbon\'Clap (https://ecoprod.com/).',
+            '• Carbon calculator for cultural/film productions via Sustainable Arts: https://sustainablearts.ch/en/sustainability-in-the-film-industry/\n\nNote: Sustainable Arts provides tools and guidance, not a certified label, there is no Swiss film-specific certification with independent third-party verification. The credible, widely recognised international calculators are BAFTA albert (https://wearealbert.org/) and Ecoprod\'s Carbon\'Clap (https://ecoprod.com/).',
         },
       },
     },
@@ -2344,7 +2344,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• Film Fund Luxembourg — supports the sector and states a commitment to eco-responsible practices and reducing waste: https://filmfund.lu/en/about-us/missions-and-values/',
+            '• Film Fund Luxembourg: supports the sector and states a commitment to eco-responsible practices and reducing waste: https://filmfund.lu/en/about-us/missions-and-values/',
         },
       },
     },
@@ -2364,7 +2364,7 @@ export const countryData = {
         tools: {
           label: 'Calculators & tools',
           content:
-            'No national film-specific carbon calculator or certification yet. Luxembourg productions use established international tools — the credible, widely recognised ones are BAFTA albert (https://wearealbert.org/) and Ecoprod\'s Carbon\'Clap (https://ecoprod.com/).',
+            'No national film-specific carbon calculator or certification yet. Luxembourg productions use established international tools, the credible, widely recognised ones are BAFTA albert (https://wearealbert.org/) and Ecoprod\'s Carbon\'Clap (https://ecoprod.com/).',
         },
       },
     },
@@ -2385,12 +2385,12 @@ export const countryData = {
         decarbonizationPlan: {
           label: 'Decarbonization plan',
           content:
-            'Slovenia targets climate neutrality by 2050 and has adopted a strategy to phase out coal by 2033. Its electricity is already fairly low-carbon — about a third from the single-unit Krško nuclear plant, plus hydropower — with the remaining coal generation (around 30%) being phased out.',
+            'Slovenia targets climate neutrality by 2050 and has adopted a strategy to phase out coal by 2033. Its electricity is already fairly low-carbon, about a third from the single-unit Krško nuclear plant, plus hydropower, with the remaining coal generation (around 30%) being phased out.',
         },
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• Slovenian Film Centre (SFC) — national film body: https://www.film-center.si/\n• The EU Creative Europe "Green Strategy" requirement applies to EU-funded applications.',
+            '• Slovenian Film Centre (SFC): national film body: https://www.film-center.si/\n• The EU Creative Europe "Green Strategy" requirement applies to EU-funded applications.',
         },
       },
     },
@@ -2400,7 +2400,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Slovenia\'s electricity is relatively low-carbon — roughly a third from the Krško nuclear plant plus hydropower — with its remaining coal generation (around 30%) due to be phased out by 2033.',
+            'Slovenia\'s electricity is relatively low-carbon, roughly a third from the Krško nuclear plant plus hydropower, with its remaining coal generation (around 30%) due to be phased out by 2033.',
         },
       },
     },
@@ -2410,7 +2410,7 @@ export const countryData = {
         tools: {
           label: 'Calculators & tools',
           content:
-            'No national film-specific carbon calculator or certification yet; Slovenian productions use established international tools — the credible, widely recognised ones are BAFTA albert (https://wearealbert.org/) and Ecoprod\'s Carbon\'Clap (https://ecoprod.com/).',
+            'No national film-specific carbon calculator or certification yet; Slovenian productions use established international tools, the credible, widely recognised ones are BAFTA albert (https://wearealbert.org/) and Ecoprod\'s Carbon\'Clap (https://ecoprod.com/).',
         },
       },
     },
@@ -2431,12 +2431,12 @@ export const countryData = {
         decarbonizationPlan: {
           label: 'Decarbonization plan',
           content:
-            'Serbia is not an EU member and its grid is coal-heavy: in 2024 about 60% of electricity came from coal (mostly lignite), roughly 30% from hydropower and around 10% from other renewables — so on-grid productions have a comparatively high carbon footprint. As an Energy Community member Serbia has pledged carbon neutrality by 2050, but the coal phase-out is at an early stage.',
+            'Serbia is not an EU member and its grid is coal-heavy: in 2024 about 60% of electricity came from coal (mostly lignite), roughly 30% from hydropower and around 10% from other renewables, so on-grid productions have a comparatively high carbon footprint. As an Energy Community member Serbia has pledged carbon neutrality by 2050, but the coal phase-out is at an early stage.',
         },
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• IESI (Initiative for Ecological Standardization and Innovation) — a Belgrade-based organisation working on the sustainable and digital transformation of the audiovisual industry in the Balkans and Eastern Europe. Projects: Circular Cinema (waste / circular economy), Zelena mreža / Green Network (eco-managers and consultants), Eko vozila / Eco Vehicles, and the GAVIS platform: https://iesi.eco/',
+            '• IESI (Initiative for Ecological Standardization and Innovation): a Belgrade-based organisation working on the sustainable and digital transformation of the audiovisual industry in the Balkans and Eastern Europe. Projects: Circular Cinema (waste / circular economy), Zelena mreža / Green Network (eco-managers and consultants), Eko vozila / Eco Vehicles, and the GAVIS platform: https://iesi.eco/',
         },
       },
     },
@@ -2446,7 +2446,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Serbia\'s grid is coal-heavy — around 60% lignite in 2024, with roughly 30% hydropower and about 10% other renewables — giving productions a relatively high-carbon electricity footprint compared with most of Europe.',
+            'Serbia\'s grid is coal-heavy, around 60% lignite in 2024, with roughly 30% hydropower and about 10% other renewables, giving productions a relatively high-carbon electricity footprint compared with most of Europe.',
         },
       },
     },

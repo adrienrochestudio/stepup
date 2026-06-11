@@ -36,7 +36,7 @@ const SEED = [
       organization: 'Film Centar Zagreb',
       country: 'Croatia',
       fields: {
-        greenConsultants: 'Zelena Produkcija — green consulting for HRT productions, contact: info@zelenaprodukcija.hr',
+        greenConsultants: 'Zelena Produkcija, green consulting for HRT productions, contact: info@zelenaprodukcija.hr',
       },
     },
   },
@@ -51,7 +51,7 @@ const SEED = [
       organization: 'CineGreen',
       country: 'Italy',
       amendmentSection: 'trainTravel',
-      amendmentText: 'The train transport rating for Italy seems outdated — Frecciarossa now covers Naples–Milan in under 5h and regional coverage has improved.',
+      amendmentText: 'The train transport rating for Italy seems outdated, Frecciarossa now covers Naples-Milan in under 5h and regional coverage has improved.',
     },
   },
   {

@@ -61,7 +61,7 @@
     },
     "greenAnimation": {
       "title": "Animación sostenible",
-      "description": "Producción de animación sostenible para estudios: comprende los impactos estructurales del consumo energético, la infraestructura digital, los equipos, la movilidad y las prácticas cotidianas — y aprende a priorizar acciones y construir un enfoque de sostenibilidad realista y eficaz sin comprometer la calidad creativa ni la eficiencia de producción."
+      "description": "Producción de animación sostenible para estudios: comprende los impactos estructurales del consumo energético, la infraestructura digital, los equipos, la movilidad y las prácticas cotidianas, y aprende a priorizar acciones y construir un enfoque de sostenibilidad realista y eficaz sin comprometer la calidad creativa ni la eficiencia de producción."
     }
   },
   "map": {
@@ -122,7 +122,7 @@
     "toggleToLogin": "¿Ya tienes cuenta?",
     "signUp": "Registrarse",
     "logIn": "Iniciar sesión",
-    "devMode": "Modo Dev — Cualquier credencial funciona",
+    "devMode": "Modo Dev, Cualquier credencial funciona",
     "profile": "Perfil",
     "roleLearner": "Alumno",
     "roleCohortManager": "Gestor de cohorte",
@@ -271,7 +271,7 @@
     "groupRecommended": "Recomendado",
     "offerCohortTitle": "Grupo / Cohorte",
     "offerCohortDesc": "Para equipos que desean formar un grupo con seguimiento centralizado.",
-    "offerCohortDetail": "hasta 200 personas — tarifa decreciente a partir de ahí",
+    "offerCohortDetail": "hasta 200 personas, tarifa decreciente a partir de ahí",
     "offerCohortInclude1": "Un referente interno gestiona la cohorte",
     "offerCohortInclude2": "Acceso a todos los cursos",
     "offerCohortInclude3": "Seguimiento colectivo de los alumnos",

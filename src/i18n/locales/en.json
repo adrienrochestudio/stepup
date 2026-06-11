@@ -52,19 +52,19 @@
   "courses": {
     "introGreenProduction": {
       "title": "Introduction to Green Production",
-      "description": "A practical, hands-on course for film and TV professionals focused on sustainable production practices. Learn to produce differently, minimizing environmental impact while maintaining creativity — from set selection to crew transport, energy supply, and material sourcing."
+      "description": "A practical, hands-on course for film and TV professionals focused on sustainable production practices. Learn to produce differently, minimizing environmental impact while maintaining creativity, from set selection to crew transport, energy supply, and material sourcing."
     },
     "masteringGreenProduction": {
       "title": "Mastering Green Production",
-      "description": "Addressing urgent environmental priorities in filmmaking: key sustainability challenges, international regulations, and strategies for reducing production impact while accessing green funding opportunities — tailored for producers, film commissions, financiers, and broadcasters."
+      "description": "Addressing urgent environmental priorities in filmmaking: key sustainability challenges, international regulations, and strategies for reducing production impact while accessing green funding opportunities, tailored for producers, film commissions, financiers, and broadcasters."
     },
     "carbonFootprinting": {
       "title": "Carbon Calculation for the Film and TV Industry",
-      "description": "Learn to measure carbon footprints in film and TV production. Covers climate issues, carbon assessment methodologies, data handling, result interpretation, sustainability labels, and carbon offsetting — with interactive exercises and case studies."
+      "description": "Learn to measure carbon footprints in film and TV production. Covers climate issues, carbon assessment methodologies, data handling, result interpretation, sustainability labels, and carbon offsetting, with interactive exercises and case studies."
     },
     "greenAnimation": {
       "title": "Green Animation",
-      "description": "Sustainable animation production for studios: understand the structural impacts of energy use, digital infrastructure, equipment, mobility, and everyday practices — and learn to prioritize actions and build a realistic, effective sustainability approach without compromising creative quality or production efficiency."
+      "description": "Sustainable animation production for studios: understand the structural impacts of energy use, digital infrastructure, equipment, mobility, and everyday practices, and learn to prioritize actions and build a realistic, effective sustainability approach without compromising creative quality or production efficiency."
     }
   },
   "map": {
@@ -125,7 +125,7 @@
     "toggleToLogin": "Already have an account?",
     "signUp": "Sign Up",
     "logIn": "Log In",
-    "devMode": "Dev Mode — Any credentials work",
+    "devMode": "Dev Mode, Any credentials work",
     "profile": "Profile",
     "roleLearner": "Learner",
     "roleCohortManager": "Cohort Manager",
@@ -172,7 +172,7 @@
     "notConfigured": "SCORM Package Not Configured",
     "notConfiguredDesc": "Upload your SCORM package to <code>public/scorm/{{courseId}}/</code> and update the course configuration.",
     "modules": "modules",
-    "demoNotice": "This site is a demo and the files are too large — imagine the course is right here!"
+    "demoNotice": "This site is a demo and the files are too large, imagine the course is right here!"
   },
   "enroll": {
     "duration": "Duration",
@@ -279,7 +279,7 @@
     "groupRecommended": "Recommended",
     "offerCohortTitle": "Group / Cohort",
     "offerCohortDesc": "For teams looking to train a group with centralised tracking.",
-    "offerCohortDetail": "up to 200 people — degressive beyond",
+    "offerCohortDetail": "up to 200 people, degressive beyond",
     "offerCohortInclude1": "An internal contact manages the cohort",
     "offerCohortInclude2": "Access to all courses",
     "offerCohortInclude3": "Collective learner tracking",

@@ -64,7 +64,7 @@
     },
     "greenAnimation": {
       "title": "Nachhaltige Animation",
-      "description": "Nachhaltige Animationsproduktion für Studios: Verstehen Sie die strukturellen Auswirkungen von Energieverbrauch, digitaler Infrastruktur, Ausstattung, Mobilität und Alltagspraktiken — und lernen Sie, Maßnahmen zu priorisieren und einen realistischen, wirksamen Nachhaltigkeitsansatz aufzubauen, ohne kreative Qualität oder Produktionseffizienz zu beeinträchtigen."
+      "description": "Nachhaltige Animationsproduktion für Studios: Verstehen Sie die strukturellen Auswirkungen von Energieverbrauch, digitaler Infrastruktur, Ausstattung, Mobilität und Alltagspraktiken, und lernen Sie, Maßnahmen zu priorisieren und einen realistischen, wirksamen Nachhaltigkeitsansatz aufzubauen, ohne kreative Qualität oder Produktionseffizienz zu beeinträchtigen."
     }
   },
   "map": {
@@ -125,7 +125,7 @@
     "toggleToLogin": "Bereits ein Konto?",
     "signUp": "Registrieren",
     "logIn": "Anmelden",
-    "devMode": "Dev-Modus — Alle Anmeldedaten funktionieren",
+    "devMode": "Dev-Modus, Alle Anmeldedaten funktionieren",
     "profile": "Profil",
     "roleLearner": "Lernende/r",
     "roleCohortManager": "Kohortenmanager",
@@ -276,7 +276,7 @@
     "groupRecommended": "Empfohlen",
     "offerCohortTitle": "Gruppe / Kohorte",
     "offerCohortDesc": "Für Teams, die eine Gruppe mit zentralem Tracking schulen möchten.",
-    "offerCohortDetail": "bis zu 200 Personen — degressiver Tarif darüber hinaus",
+    "offerCohortDetail": "bis zu 200 Personen, degressiver Tarif darüber hinaus",
     "offerCohortInclude1": "Ein interner Ansprechpartner verwaltet die Kohorte",
     "offerCohortInclude2": "Zugang zu allen Kursen",
     "offerCohortInclude3": "Kollektives Lernenden-Tracking",

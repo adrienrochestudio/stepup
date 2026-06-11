@@ -93,7 +93,7 @@ export default function AddInfoModal({ onClose }) {
     if (mode === 'add') {
       const filled = selectedTopics.some((f) => formData.fields[f]?.trim());
       if (!filled) {
-        setError('Pick at least one topic and write a few words — one is enough!');
+        setError('Pick at least one topic and write a few words, one is enough!');
         return;
       }
     } else if (!formData.amendmentText.trim()) {
@@ -216,7 +216,7 @@ export default function AddInfoModal({ onClose }) {
             <div className="addinfo-section">
               <h3>What would you like to share?</h3>
               <p className="addinfo-hint">
-                Pick only the topics you know about — a single link or tip
+                Pick only the topics you know about, a single link or tip
                 already helps. You never need to fill in everything.
               </p>
               {categoryKeys.map((catKey) => {
@@ -253,7 +253,7 @@ export default function AddInfoModal({ onClose }) {
                         autoFocus={selectedTopics[selectedTopics.length - 1] === field}
                         value={formData.fields[field] || ''}
                         onChange={(e) => handleFieldChange(field, e.target.value)}
-                        placeholder="A name, a link, a short description — anything useful"
+                        placeholder="A name, a link, a short description, anything useful"
                       />
                     </label>
                   ))}
@@ -266,7 +266,7 @@ export default function AddInfoModal({ onClose }) {
             <div className="addinfo-section">
               <h3>What should be corrected?</h3>
               <p className="addinfo-hint">
-                Your suggestion will not change the page directly — it is sent
+                Your suggestion will not change the page directly. It is sent
                 to the administrators, who review and validate it first.
               </p>
               <label>
@@ -277,7 +277,7 @@ export default function AddInfoModal({ onClose }) {
                     setFormData({ ...formData, amendmentSection: e.target.value })
                   }
                 >
-                  <option value="">— Whole page / not sure —</option>
+                  <option value="">Whole page / not sure</option>
                   {categoryKeys.map((catKey) => (
                     <optgroup key={catKey} label={CATEGORY_META[catKey].label}>
                       {CATEGORY_META[catKey].fields.map((field) => (
