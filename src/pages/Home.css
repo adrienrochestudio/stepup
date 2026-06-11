@@ -56,14 +56,6 @@
   display: block;
 }
 
-/* The always-English "step by step" suffix stays quieter than the rest
-   of the title (brand wordplay, not a key message). */
-.home-hero-suffix {
-  font-size: 0.6em;
-  font-weight: 600;
-  color: var(--color-text-light);
-}
-
 .home-hero-asterisk {
   font-size: 0.5em;
   vertical-align: super;
