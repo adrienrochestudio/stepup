@@ -132,7 +132,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Belgium\'s grid is relatively low-carbon: nuclear supplied around 42% of electricity in 2024, with wind and solar growing fast; gas covers much of the rest.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -1473,7 +1479,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Poland\'s grid is still coal-heavy (around 56% in 2024, a record low) with renewables at about 29% and rising, so on-grid power remains carbon-intensive for now.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -1514,7 +1526,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'The US grid averaged about 43% natural gas, 18% nuclear and 24% renewables in 2024, but the mix varies enormously by state, so check the local utility where you shoot.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -1555,7 +1573,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'More than half of Dutch electricity came from renewables in 2024, driven by offshore and onshore wind plus solar, so grid power is getting cleaner quickly.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -1677,7 +1701,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'About 95% of Finland\'s electricity production was fossil-free in 2024 (nuclear around 38%, plus wind and hydro), one of the cleanest grids in Europe.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -1718,7 +1748,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Renewables covered about 48% of Greek electricity in 2024 (wind, solar, biomass), with gas around 41% and lignite down to roughly 4%, a rapid clean-up of the grid.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -1754,7 +1790,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Brazil has one of the cleanest large grids in the world: about 88% renewable in 2024, led by hydropower (around 48%) with fast-growing wind and solar.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -1909,7 +1951,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Renewables supplied about 36% of Australian electricity in 2024 (solar around 18%, wind around 12%) with coal near 45% and falling; the mix varies a lot by state.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -1951,6 +1999,11 @@ export const countryData = {
     sustainability: {
       label: 'Sustainability & Logistics',
       subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Around 87% of New Zealand\'s electricity is renewable, dominated by hydropower with a large geothermal share, so grid connections are a genuinely low-carbon choice.',
+        },
         otherFacts: {
           label: 'Filming in natural environments',
           content:
@@ -1992,7 +2045,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Bangladesh\'s grid runs mostly on natural gas (around 43%) and coal (around 28%), with significant imports; renewables remain marginal so far, and backup generators are common during shortfalls.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -2028,7 +2087,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'India\'s grid is coal-heavy (coal provides roughly three-quarters of generation) even as solar and wind grow quickly, and productions commonly carry diesel backup; cleaner mobile power is a major lever.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -2058,7 +2123,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Togo has historically imported most of its electricity from neighbouring countries, and is building domestic solar capacity, including the 50 MW Blitta plant, one of the largest solar farms in West Africa.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -2094,7 +2165,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Mexico\'s grid runs mostly on natural gas (around 60%), with renewables near 20 to 25%; the government has announced a 45% renewable target for 2030.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -2130,7 +2207,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Argentina\'s electricity came roughly 49% from gas, 25% from hydro, 11% from wind and 7% from nuclear in 2024, a mid-carbon grid with a growing wind share.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -2166,7 +2249,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Colombia\'s grid is about 70% hydropower, making on-grid power low-carbon in normal years, though droughts can swing the mix back toward gas and coal.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -2656,6 +2745,11 @@ export const countryData = {
     sustainability: {
       label: 'Sustainability & Logistics',
       subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Botswana generates from domestic coal (the Morupule plants) topped up with substantial imports from the regional power pool, so on-grid electricity is carbon-intensive; the country\'s solar potential is vast.',
+        },
         otherFacts: {
           label: 'Filming in natural environments',
           content:
@@ -2740,6 +2834,11 @@ export const countryData = {
     sustainability: {
       label: 'Sustainability & Logistics',
       subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Rwanda\'s electricity comes largely from hydropower plus the KivuWatt plant, which turns methane dissolved in Lake Kivu into power (around 30% of national consumption), an unusual local solution.',
+        },
         otherFacts: {
           label: 'Filming in natural environments',
           content:
@@ -2782,6 +2881,11 @@ export const countryData = {
     sustainability: {
       label: 'Sustainability & Logistics',
       subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Tanzania\'s mix shifted strongly to hydropower as the 2,115 MW Julius Nyerere plant came online (hydro is now around 59% of installed capacity, gas around 35%), cutting the grid\'s carbon intensity.',
+        },
         otherFacts: {
           label: 'Filming in natural environments',
           content:
@@ -2824,6 +2928,11 @@ export const countryData = {
     sustainability: {
       label: 'Sustainability & Logistics',
       subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Namibia imports a large share of its electricity from the Southern African Power Pool; domestic generation is led by the Ruacana hydropower station, and the country\'s solar potential is among the best in the world.',
+        },
         otherFacts: {
           label: 'Filming in natural environments',
           content:
@@ -2866,6 +2975,11 @@ export const countryData = {
     sustainability: {
       label: 'Sustainability & Logistics',
       subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Uganda\'s grid is overwhelmingly clean: with the 600 MW Karuma plant commissioned in 2024, generation is around 93% renewable, led by hydropower.',
+        },
         otherFacts: {
           label: 'Filming in natural environments',
           content:
@@ -2907,7 +3021,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Romania\'s grid is about two-thirds low-carbon, led by hydropower (around 22%) and nuclear (around 19%) plus growing wind and solar.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -2944,6 +3064,11 @@ export const countryData = {
     sustainability: {
       label: 'Sustainability & Logistics',
       subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Zimbabwe depends on Kariba hydropower and coal, plus imports; drought slashed Kariba output in 2024 and brought long load-shedding hours, so productions should plan power carefully and favour battery or solar backup over diesel where possible.',
+        },
         otherFacts: {
           label: 'Filming in natural environments',
           content:
@@ -2985,7 +3110,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Senegal\'s electricity is still mostly oil-fired (over 80% in 2024), with wind (Taiba Ndiaye) and solar growing; on-grid power is carbon-intensive, which makes battery and solar solutions attractive.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -3015,7 +3146,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Ghana\'s grid mixes hydropower (around 39%, led by the Akosombo dam) with gas-fired thermal generation (around 60%), a moderate carbon intensity by regional standards.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -3045,7 +3182,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Egypt\'s grid runs overwhelmingly on natural gas (around 80%), with hydro from the Aswan dam and fast-growing solar, including the giant Benban park (around 1.8 GW).',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -3075,7 +3218,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Tunisia\'s electricity is about 97% gas-fired, with a national target of 35% renewable capacity by 2030, so on-grid power is currently carbon-intensive.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -3105,7 +3254,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'About three-quarters of Croatia\'s net electricity generation was renewable in 2024, led by hydropower with a growing wind share, a relatively clean grid for productions.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -3135,7 +3290,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Bulgaria\'s grid is anchored by nuclear power (around 40% in 2024) with coal near 29% and solar rising, so it is mid-carbon and improving.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -3165,7 +3326,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Georgia\'s electricity is mostly hydropower (around 75 to 80%), with gas covering the rest, making the grid relatively low-carbon, though seasonal.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -3195,7 +3362,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'South Korea\'s electricity in 2024 was roughly 30% nuclear, 30% coal and 29% gas, with renewables near 10%, a grid in transition.',
+        },
+      },
     },
     resources: {
       label: 'Resources',
@@ -3220,7 +3393,13 @@ export const countryData = {
     },
     sustainability: {
       label: 'Sustainability & Logistics',
-      subcategories: {},
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Japan\'s grid in fiscal 2024 ran on roughly 29% LNG, 28% coal, 27% renewables and 8% nuclear, so on-grid power remains fairly carbon-intensive and varies by region.',
+        },
+      },
     },
     resources: {
       label: 'Resources',

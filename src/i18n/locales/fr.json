@@ -69,7 +69,7 @@
   },
   "map": {
     "introTitle": "L'éco-production audiovisuelle dans le monde",
-    "introSubtitle": "Explorez, pays par pays, les réglementations, aides, calculateurs carbone, formations et contacts pour des tournages plus durables (cinéma, télévision, publicité, animation). {{count}} pays documentés.",
+    "introSubtitle": "Réglementations, aides, outils et contacts pour des tournages plus durables, pays par pays.",
     "searchPlaceholder": "Rechercher parmi {{count}} pays...",
     "noResults": "Aucun pays trouvé. Vérifiez l'orthographe.",
     "clickHint": "Cliquez sur un pays en vert pour voir ses ressources.",
