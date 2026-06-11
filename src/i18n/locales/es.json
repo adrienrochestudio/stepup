@@ -65,18 +65,18 @@
     }
   },
   "map": {
-    "introTitle": "La ecoproducción audiovisual en el mundo",
+    "introTitle": "La ecoproducción en el mundo",
     "introSubtitle": "Regulaciones, ayudas, herramientas y contactos para rodajes más sostenibles, país por país.",
     "searchPlaceholder": "Buscar entre {{count}} países...",
     "noResults": "No se encontró ningún país. Comprueba la ortografía.",
-    "clickHint": "Haz clic en un país en verde para ver sus recursos.",
+    "clickHint": "Haz clic en un país para explorar su ecoproducción.",
     "addInfo": "Proponer un recurso",
     "selectAll": "Seleccionar todo",
     "refine": "Afinar",
     "clearAll": "Borrar todo",
     "noData": "Aún no hay datos disponibles para este país.",
-    "legendData": "Recursos disponibles",
-    "legendNoData": "Sin datos todavía",
+    "legendData": "Información disponible",
+    "legendNoData": "Aún sin información",
     "categories": {
       "generalInfo": "Información general",
       "sustainability": "Sostenibilidad y logística",
@@ -103,7 +103,10 @@
       "tools": "Calculadoras y herramientas",
       "networks": "Redes de profesionales"
     },
-    "filterLabel": "Filtrar por tema"
+    "filterLabel": "Filtrar por tema",
+    "langNote": "Por sobriedad digital y para limitar el almacenamiento de datos, la información del mapa está en inglés. Sugerimos copiar el texto en un traductor automático como DeepL, o activar un complemento de traducción automática en tu navegador.",
+    "langNoteLink": "Abrir DeepL",
+    "langNoteToggle": "Info en inglés"
   },
   "webinars": {
     "title": "Webinarios",

@@ -364,7 +364,7 @@ export const countryData = {
         greenProductionStatus: {
           label: 'Status of green production',
           content:
-            'Green production has advanced over four years. In 2020, the Czech Producers Association (APA) launched greenfilming.cz to raise awareness. TV NOVA integrated sustainable practices, becoming a leader in green filming.\n\n2023 survey: 90% address waste sorting, 81% focus on materials, 78% on office operations. Twenty productions adopted eco-production policies; three have dedicated sustainability roles.\n\nMain challenge: resistance to these practices, despite growing demand, particularly from international productions.',
+            'Green production has advanced over four years. In 2020, the Czech Producers Association (APA) launched greenfilming.cz to raise awareness. TV NOVA integrated sustainable practices, becoming a leader in green filming.\n\n2023 survey: 90% address waste sorting, 81% focus on materials, 78% on office operations. Twenty productions adopted green production policies; three have dedicated sustainability roles.\n\nMain challenge: resistance to these practices, despite growing demand, particularly from international productions.',
         },
         laws: {
           label: 'Relevant national legislation',
@@ -1953,7 +1953,7 @@ export const countryData = {
         greenProductionStatus: {
           label: 'Status of green production',
           content:
-            'Morocco is a major international shooting destination (notably around Ouarzazate). Given water stress and energy constraints, eco-production is being structured by Green Production Maroc in partnership with the national film centre (CCM), aiming to make the country a model of responsible filming in Africa.',
+            'Morocco is a major international shooting destination (notably around Ouarzazate). Given water stress and energy constraints, sustainable production is being structured by Green Production Maroc in partnership with the national film centre (CCM), aiming to make the country a model of responsible filming in Africa.',
         },
         audiovisualRegulation: {
           label: 'Film & TV industry regulations and incentives',

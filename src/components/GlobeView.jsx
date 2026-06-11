@@ -23,7 +23,9 @@ function resolveCountryName(topoName) {
 
 const COLOR_SEA = '#f8f9f7';
 const COLOR_ACTIVE = '#9aad1e';
-const COLOR_INACTIVE = '#b8c29a';
+// Kept close to COLOR_ACTIVE on purpose: the contrast between countries with
+// and without data should stay gentle, not stark.
+const COLOR_INACTIVE = '#aab978';
 const COLOR_HOVER = '#cdd6b0';
 const COLOR_SELECTED = '#3d4712';
 
@@ -41,6 +43,7 @@ export default function GlobeView({ onCountryClick, selectedCountry }) {
   const [countries, setCountries] = useState([]);
   const [hovered, setHovered] = useState(null);
   const [loadError, setLoadError] = useState(false);
+  const [showLangNote, setShowLangNote] = useState(false);
 
   const globeMaterial = useMemo(
     () => new THREE.MeshPhongMaterial({ color: COLOR_SEA, transparent: false }),
@@ -190,6 +193,31 @@ export default function GlobeView({ onCountryClick, selectedCountry }) {
           <span className="globe-legend-swatch" style={{ background: COLOR_INACTIVE }} />
           {t('map.legendNoData')}
         </span>
+
+        <div className="globe-langnote">
+          <button
+            type="button"
+            className="globe-langnote-btn"
+            onClick={() => setShowLangNote((v) => !v)}
+            aria-expanded={showLangNote}
+            title={t('map.langNote')}
+          >
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="16" x2="12" y2="12" />
+              <line x1="12" y1="8" x2="12.01" y2="8" />
+            </svg>
+            {t('map.langNoteToggle')}
+          </button>
+          {showLangNote && (
+            <div className="globe-langnote-pop">
+              <p>{t('map.langNote')}</p>
+              <a href="https://www.deepl.com/translator" target="_blank" rel="noopener noreferrer">
+                {t('map.langNoteLink')}
+              </a>
+            </div>
+          )}
+        </div>
       </div>
 
       <div className="globe-zoom-controls">

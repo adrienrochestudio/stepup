@@ -76,6 +76,66 @@
   color: var(--color-text);
 }
 
+/* The legend itself ignores pointer events; this note re-enables them so the
+   info button stays clickable. */
+.globe-langnote {
+  position: relative;
+  pointer-events: auto;
+  margin-top: 0.15rem;
+  padding-top: 0.3rem;
+  border-top: 1px solid var(--color-border-light, rgba(0, 0, 0, 0.08));
+}
+
+.globe-langnote-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  border: none;
+  background: transparent;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: 0.68rem;
+  font-weight: 500;
+}
+
+.globe-langnote-btn:hover {
+  color: var(--color-kaki);
+}
+
+.globe-langnote-pop {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  width: 232px;
+  max-width: 70vw;
+  padding: 0.6rem 0.7rem;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+  font-family: var(--font-family);
+  font-size: 0.7rem;
+  line-height: 1.45;
+  color: var(--color-text);
+  z-index: 30;
+}
+
+.globe-langnote-pop p {
+  margin: 0 0 0.4rem;
+}
+
+.globe-langnote-pop a {
+  color: var(--color-kaki);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.globe-langnote-pop a:hover {
+  text-decoration: underline;
+}
+
 .globe-legend-swatch {
   width: 12px;
   height: 12px;

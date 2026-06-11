@@ -68,18 +68,18 @@
     }
   },
   "map": {
-    "introTitle": "Grüne Produktion für Film und TV, weltweit",
+    "introTitle": "Grüne Filmproduktion weltweit",
     "introSubtitle": "Vorschriften, Förderungen, Tools und Kontakte für nachhaltigere Produktionen, Land für Land.",
     "searchPlaceholder": "Unter {{count}} Ländern suchen...",
     "noResults": "Kein Land gefunden. Bitte Schreibweise prüfen.",
-    "clickHint": "Klicken Sie auf ein grünes Land, um seine Ressourcen zu sehen.",
+    "clickHint": "Klicken Sie auf ein Land, um seine grüne Filmproduktion zu erkunden.",
     "addInfo": "Ressource vorschlagen",
     "selectAll": "Alle auswählen",
     "refine": "Verfeinern",
     "clearAll": "Alle löschen",
     "noData": "Für dieses Land sind noch keine Daten verfügbar.",
-    "legendData": "Ressourcen verfügbar",
-    "legendNoData": "Noch keine Daten",
+    "legendData": "Informationen verfügbar",
+    "legendNoData": "Noch keine Informationen",
     "categories": {
       "generalInfo": "Allgemeine Informationen",
       "sustainability": "Nachhaltigkeit & Logistik",
@@ -106,7 +106,10 @@
       "tools": "Rechner und Tools",
       "networks": "Netzwerke für Fachleute"
     },
-    "filterLabel": "Nach Thema filtern"
+    "filterLabel": "Nach Thema filtern",
+    "langNote": "Aus Gründen der digitalen Sparsamkeit und Datenspeicherung sind die Informationen der Karte auf Englisch. Wir empfehlen, den Text in einen automatischen Übersetzer wie DeepL zu kopieren oder ein automatisches Übersetzungs-Add-on im Browser zu aktivieren.",
+    "langNoteLink": "DeepL öffnen",
+    "langNoteToggle": "Infos auf Englisch"
   },
   "webinars": {
     "title": "Webinare",

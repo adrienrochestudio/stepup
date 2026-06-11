@@ -68,18 +68,18 @@
     }
   },
   "map": {
-    "introTitle": "Eco-production for film and TV, worldwide",
+    "introTitle": "Green film production around the world",
     "introSubtitle": "Regulations, incentives, tools and contacts for more sustainable film and TV production, country by country.",
     "searchPlaceholder": "Search among {{count}} countries...",
     "noResults": "No country found. Check the spelling.",
-    "clickHint": "Click a country in green to see its resources.",
+    "clickHint": "Click a country to explore its green production.",
     "addInfo": "Suggest a resource",
     "selectAll": "Select all",
     "refine": "Refine",
     "clearAll": "Clear all",
     "noData": "No data available for this country yet.",
-    "legendData": "Resources available",
-    "legendNoData": "No data yet",
+    "legendData": "Information available",
+    "legendNoData": "No information yet",
     "categories": {
       "generalInfo": "General Information",
       "sustainability": "Sustainability & Logistics",
@@ -106,7 +106,10 @@
       "tools": "Calculators & tools",
       "networks": "Networks for professionals"
     },
-    "filterLabel": "Filter by topic"
+    "filterLabel": "Filter by topic",
+    "langNote": "For digital sobriety and to limit data storage, the map's information is kept in English. We suggest copying the text into an automatic translator such as DeepL, or enabling an automatic translation add-on in your browser.",
+    "langNoteLink": "Open DeepL",
+    "langNoteToggle": "Info in English"
   },
   "webinars": {
     "title": "Webinars",
