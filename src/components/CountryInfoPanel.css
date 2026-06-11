@@ -1,3 +1,6 @@
+/* The overlay must NOT swallow clicks: the globe stays interactive while a
+   panel is open, so clicking another country switches panels directly. Only
+   the panel itself captures the pointer. */
 .country-panel-overlay {
   position: absolute;
   inset: 0;
@@ -5,10 +8,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.35);
-  backdrop-filter: blur(6px);
   animation: panelFadeIn 0.2s ease-out;
   padding: 2rem;
+  pointer-events: none;
 }
 
 @keyframes panelFadeIn {
@@ -17,7 +19,8 @@
 }
 
 .country-panel {
-  background: rgba(255, 255, 255, 0.95);
+  pointer-events: auto;
+  background: rgba(255, 255, 255, 0.97);
   backdrop-filter: blur(12px);
   overflow: hidden;
   display: flex;

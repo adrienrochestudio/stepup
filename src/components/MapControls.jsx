@@ -62,18 +62,12 @@ export default function MapControls({
     ? getSubcategories(expandedCategory)
     : [];
 
-  // No explicit filters means everything is shown, so the UI renders every
-  // chip as checked; unchecking one starts filtering.
-  const implicitAll = activeFilters.length === 0;
-
   const hasCategoryActive = (catKey) => {
-    if (implicitAll) return true;
     const subs = getSubcategories(catKey);
     return subs.some((s) => activeFilters.includes(s.fullKey));
   };
 
   const allCategoryActive = (catKey) => {
-    if (implicitAll) return true;
     const subs = getSubcategories(catKey);
     return subs.length > 0 && subs.every((s) => activeFilters.includes(s.fullKey));
   };
@@ -133,7 +127,7 @@ export default function MapControls({
                 onClick={() => toggleExpand(catKey)}
               >
                 {t(`map.categories.${catKey}`)}
-                {hasActive && !implicitAll && (
+                {hasActive && (
                   <span className="tab-count">
                     {expandedSubs.length > 0 && expandedCategory === catKey
                       ? expandedSubs.filter((s) => activeFilters.includes(s.fullKey)).length
@@ -178,7 +172,7 @@ export default function MapControls({
           </label>
           <div className="map-panel-subs">
             {expandedSubs.map((sub) => {
-              const isActive = implicitAll || activeFilters.includes(sub.fullKey);
+              const isActive = activeFilters.includes(sub.fullKey);
               return (
                 <button
                   key={sub.key}

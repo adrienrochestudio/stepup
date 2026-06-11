@@ -54,7 +54,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'France has a well-developed grid available for film productions, particularly in major cities (Paris, Lyon, Marseille) but also smaller cities. Less carbon-intensive due to nuclear power. In more remote or less-developed areas, access to reliable grid connections can be a challenge.',
+            'France has a well-developed grid available for film productions, particularly in major cities (Paris, Lyon, Marseille) but also smaller cities. Less carbon-intensive due to nuclear power. In more remote or less-developed areas, access to reliable grid connections can be a challenge.\n\nEnergy mix source: https://ourworldindata.org/energy/country/france (Our World in Data).',
         },
         wasteManagement: {
           label: 'Waste management rules',
@@ -141,7 +141,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Belgium\'s grid is relatively low-carbon: nuclear supplied around 42% of electricity in 2024, with wind and solar growing fast; gas covers much of the rest.',
+            'Belgium\'s grid is relatively low-carbon: nuclear supplied around 42% of electricity in 2024, with wind and solar growing fast; gas covers much of the rest.\n\nEnergy mix source: https://ourworldindata.org/energy/country/belgium (Our World in Data).',
         },
       },
     },
@@ -207,7 +207,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Quebec relies on hydroelectric power for clean electricity with minimal carbon footprint. However, productions face logistical grid connection challenges, leading to diesel generator use. Rolling Green opened discussions with Hydro-Québec and Montreal to enable grid connections in popular shooting areas.',
+            'Quebec relies on hydroelectric power for clean electricity with minimal carbon footprint. However, productions face logistical grid connection challenges, leading to diesel generator use. Rolling Green opened discussions with Hydro-Québec and Montreal to enable grid connections in popular shooting areas.\n\nEnergy mix source: https://ourworldindata.org/energy/country/canada (Our World in Data).',
         },
         wasteManagement: {
           label: 'Waste management rules',
@@ -308,7 +308,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Grid availability varies by city and rural areas. Grid connections require advance ordering, limiting production flexibility.',
+            'Grid availability varies by city and rural areas. Grid connections require advance ordering, limiting production flexibility.\n\nEnergy mix source: https://ourworldindata.org/energy/country/germany (Our World in Data).',
         },
         wasteManagement: {
           label: 'Waste management rules',
@@ -404,7 +404,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Connection to the power grid is generally good, but remote locations can pose challenges. In Prague, it is now easier to get a temporary connection thanks to PRE (Prague Energetic) which allows the application to be submitted digitally online.',
+            'Connection to the power grid is generally good, but remote locations can pose challenges. In Prague, it is now easier to get a temporary connection thanks to PRE (Prague Energetic) which allows the application to be submitted digitally online.\n\nEnergy mix source: https://ourworldindata.org/energy/country/czechia (Our World in Data).',
         },
         wasteManagement: {
           label: 'Waste management rules',
@@ -490,7 +490,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Denmark maintains a highly developed and reliable electricity grid. Many places it is possible to get connected to 16 amp. Wind power accounts for around 50% of Denmark\'s electricity generation. Strong interconnections with neighboring countries through Nord Pool power market.',
+            'Denmark maintains a highly developed and reliable electricity grid. Many places it is possible to get connected to 16 amp. Wind power accounts for around 50% of Denmark\'s electricity generation. Strong interconnections with neighboring countries through Nord Pool power market.\n\nEnergy mix source: https://ourworldindata.org/energy/country/denmark (Our World in Data).',
         },
         wasteManagement: {
           label: 'Waste management rules',
@@ -581,7 +581,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'All studios connected; rural access depends on local infrastructure.',
+            'All studios connected; rural access depends on local infrastructure.\n\nEnergy mix source: https://ourworldindata.org/energy/country/iceland (Our World in Data).',
         },
         wasteManagement: {
           label: 'Waste management rules',
@@ -677,7 +677,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Generally manageable, varying by location. Key companies: Statkraft, BKK, Lyse, Elvia, NorgesEnergi, Omexom. Contact utility companies well in advance. Costs vary.',
+            'Generally manageable, varying by location. Key companies: Statkraft, BKK, Lyse, Elvia, NorgesEnergi, Omexom. Contact utility companies well in advance. Costs vary.\n\nEnergy mix source: https://ourworldindata.org/energy/country/norway (Our World in Data).',
         },
         wasteManagement: {
           label: 'Waste management rules',
@@ -763,7 +763,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Main distributors: Vattenfall, Ellevio, E.ON. Sweden\'s grid is predominantly renewable: 69% hydroelectric/wind/solar, 29% nuclear, 1.2% fossil fuels, one of Europe\'s most emission-free energy mixes.\n\nElectric generators not widely available. Batteries with varying capacities emerging as key innovation.',
+            'Main distributors: Vattenfall, Ellevio, E.ON. Sweden\'s grid is predominantly renewable: 69% hydroelectric/wind/solar, 29% nuclear, 1.2% fossil fuels, one of Europe\'s most emission-free energy mixes.\n\nElectric generators not widely available. Batteries with varying capacities emerging as key innovation.\n\nEnergy mix source: https://ourworldindata.org/energy/country/sweden (Our World in Data).',
         },
         wasteManagement: {
           label: 'Waste management rules',
@@ -859,7 +859,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Getting a new grid connection is challenging. Requires robust administrative process and approval from various entities. Productions must request and pay for connection and electricity, usually a month in advance.',
+            'Getting a new grid connection is challenging. Requires robust administrative process and approval from various entities. Productions must request and pay for connection and electricity, usually a month in advance.\n\nEnergy mix source: https://ourworldindata.org/energy/country/slovakia (Our World in Data).',
         },
         wasteManagement: {
           label: 'Waste management rules',
@@ -945,7 +945,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Italy\'s extensive grid accommodates typical film set power needs. Main challenge: bureaucratic process for temporary connections. Can be worked within 4-6 working days if understood, but most productions experience 30+ day delays.\n\nRecommendation: Contact local energy supplier to verify temporary connection possibility. Terna (national grid operator) provides guidelines.',
+            'Italy\'s extensive grid accommodates typical film set power needs. Main challenge: bureaucratic process for temporary connections. Can be worked within 4-6 working days if understood, but most productions experience 30+ day delays.\n\nRecommendation: Contact local energy supplier to verify temporary connection possibility. Terna (national grid operator) provides guidelines.\n\nEnergy mix source: https://ourworldindata.org/energy/country/italy (Our World in Data).',
         },
         wasteManagement: {
           label: 'Waste management rules',
@@ -1036,7 +1036,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Availability varies; easier in cities. Expected within 15 days but delays up to 30 days common. Local film commissions in Lisbon and Porto offer protocols to expedite the process.',
+            'Availability varies; easier in cities. Expected within 15 days but delays up to 30 days common. Local film commissions in Lisbon and Porto offer protocols to expedite the process.\n\nEnergy mix source: https://ourworldindata.org/energy/country/portugal (Our World in Data).',
         },
         wasteManagement: {
           label: 'Waste management rules',
@@ -1127,7 +1127,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Reliable national grid, especially in Budapest and studio towns.\n\nEnergy mix: nuclear (~50%), natural gas (30-35%), coal/lignite (10-15%), renewables (12-15%). Solar capacity exceeded 3,000 MW. Astra operates on 100% green energy.\n\nHungary lacks comprehensive battery pack rental networks.',
+            'Reliable national grid, especially in Budapest and studio towns.\n\nEnergy mix: nuclear (~50%), natural gas (30-35%), coal/lignite (10-15%), renewables (12-15%). Solar capacity exceeded 3,000 MW. Astra operates on 100% green energy.\n\nHungary lacks comprehensive battery pack rental networks.\n\nEnergy mix source: https://ourworldindata.org/energy/country/hungary (Our World in Data).',
         },
         wasteManagement: {
           label: 'Waste management rules',
@@ -1218,7 +1218,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Managed by Red Eléctrica de España (REE). Well-integrated with European networks. Sound stages switching to renewable operators. Most studios don\'t require generator backup. Street/public space grid connection remains challenging.',
+            'Managed by Red Eléctrica de España (REE). Well-integrated with European networks. Sound stages switching to renewable operators. Most studios don\'t require generator backup. Street/public space grid connection remains challenging.\n\nEnergy mix source: https://ourworldindata.org/energy/country/spain (Our World in Data).',
         },
         wasteManagement: {
           label: 'Waste management rules',
@@ -1309,7 +1309,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Voltage standard: 230V/400V, 50Hz frequency.',
+            'Voltage standard: 230V/400V, 50Hz frequency.\n\nEnergy mix source: https://ourworldindata.org/energy/country/turkey (Our World in Data).',
         },
         wasteManagement: {
           label: 'Waste management rules',
@@ -1380,7 +1380,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Mains power is recommended for all locations. Where unavailable, hybrid battery systems using HVO fuel are preferred.',
+            'Mains power is recommended for all locations. Where unavailable, hybrid battery systems using HVO fuel are preferred.\n\nEnergy mix source: https://ourworldindata.org/energy/country/ireland (Our World in Data).',
         },
         wasteManagement: {
           label: 'Waste management rules',
@@ -1456,7 +1456,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Victoria Park grid cabinet in London via Film London\'s Grid Project, the UK\'s first industry-specific grid connection for film/TV. Several grid connection projects under development.\n\nGrid Knowledge Blog by Leverage Point Entertainment offers insights on temporary grid access.',
+            'Victoria Park grid cabinet in London via Film London\'s Grid Project, the UK\'s first industry-specific grid connection for film/TV. Several grid connection projects under development.\n\nGrid Knowledge Blog by Leverage Point Entertainment offers insights on temporary grid access.\n\nEnergy mix source: https://ourworldindata.org/energy/country/united-kingdom (Our World in Data).',
         },
         wasteManagement: {
           label: 'Waste management rules',
@@ -1533,7 +1533,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Poland\'s grid is still coal-heavy (around 56% in 2024, a record low) with renewables at about 29% and rising, so on-grid power remains carbon-intensive for now.',
+            'Poland\'s grid is still coal-heavy (around 56% in 2024, a record low) with renewables at about 29% and rising, so on-grid power remains carbon-intensive for now.\n\nEnergy mix source: https://ourworldindata.org/energy/country/poland (Our World in Data).',
         },
       },
     },
@@ -1580,7 +1580,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'The US grid averaged about 43% natural gas, 18% nuclear and 24% renewables in 2024, but the mix varies enormously by state, so check the local utility where you shoot.',
+            'The US grid averaged about 43% natural gas, 18% nuclear and 24% renewables in 2024, but the mix varies enormously by state, so check the local utility where you shoot.\n\nEnergy mix source: https://ourworldindata.org/energy/country/united-states (Our World in Data).',
         },
       },
     },
@@ -1632,7 +1632,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'More than half of Dutch electricity came from renewables in 2024, driven by offshore and onshore wind plus solar, so grid power is getting cleaner quickly.',
+            'More than half of Dutch electricity came from renewables in 2024, driven by offshore and onshore wind plus solar, so grid power is getting cleaner quickly.\n\nEnergy mix source: https://ourworldindata.org/energy/country/netherlands (Our World in Data).',
         },
       },
     },
@@ -1703,7 +1703,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Urban/studio locations: primary grid connection. Mobile options: battery systems and HVO/hybrid generators (limited availability).\n\n85% of electricity from renewables (2023).',
+            'Urban/studio locations: primary grid connection. Mobile options: battery systems and HVO/hybrid generators (limited availability).\n\n85% of electricity from renewables (2023).\n\nEnergy mix source: https://ourworldindata.org/energy/country/austria (Our World in Data).',
         },
         wasteManagement: {
           label: 'Waste management rules',
@@ -1765,7 +1765,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'About 95% of Finland\'s electricity production was fossil-free in 2024 (nuclear around 38%, plus wind and hydro), one of the cleanest grids in Europe.',
+            'About 95% of Finland\'s electricity production was fossil-free in 2024 (nuclear around 38%, plus wind and hydro), one of the cleanest grids in Europe.\n\nEnergy mix source: https://ourworldindata.org/energy/country/finland (Our World in Data).',
         },
       },
     },
@@ -1817,7 +1817,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Renewables covered about 48% of Greek electricity in 2024 (wind, solar, biomass), with gas around 41% and lignite down to roughly 4%, a rapid clean-up of the grid.',
+            'Renewables covered about 48% of Greek electricity in 2024 (wind, solar, biomass), with gas around 41% and lignite down to roughly 4%, a rapid clean-up of the grid.\n\nEnergy mix source: https://ourworldindata.org/energy/country/greece (Our World in Data).',
         },
       },
     },
@@ -1859,7 +1859,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Brazil has one of the cleanest large grids in the world: about 88% renewable in 2024, led by hydropower (around 48%) with fast-growing wind and solar.',
+            'Brazil has one of the cleanest large grids in the world: about 88% renewable in 2024, led by hydropower (around 48%) with fast-growing wind and solar.\n\nEnergy mix source: https://ourworldindata.org/energy/country/brazil (Our World in Data).',
         },
       },
     },
@@ -1911,7 +1911,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'South Africa\'s grid is coal-heavy (coal provides roughly 80% of electricity, generated mostly by Eskom) and reliability remains fragile after years of load-shedding, so on-grid power carries a high carbon footprint and productions often plan backup power. This is exactly why solar and battery solutions are taking off on South African sets, from the Atlantic Green Studio (80%+ renewable) to solar-hybrid units used on streamer productions.',
+            'South Africa\'s grid is coal-heavy (coal provides roughly 80% of electricity, generated mostly by Eskom) and reliability remains fragile after years of load-shedding, so on-grid power carries a high carbon footprint and productions often plan backup power. This is exactly why solar and battery solutions are taking off on South African sets, from the Atlantic Green Studio (80%+ renewable) to solar-hybrid units used on streamer productions.\n\nEnergy mix source: https://ourworldindata.org/energy/country/south-africa (Our World in Data).',
         },
         otherFacts: {
           label: 'Filming in natural environments',
@@ -1973,7 +1973,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Morocco\'s electricity is still mostly fossil-based (coal around 64% in 2023, with wind around 15% and solar around 5%), but the country is investing heavily in renewables, targeting 52% of capacity by 2030. The flagship Noor Ouarzazate solar complex (582 MW, one of the largest in the world) sits near the country\'s main studio hub, and on-set solar and battery solutions are a natural fit for desert shoots.',
+            'Morocco\'s electricity is still mostly fossil-based (coal around 64% in 2023, with wind around 15% and solar around 5%), but the country is investing heavily in renewables, targeting 52% of capacity by 2030. The flagship Noor Ouarzazate solar complex (582 MW, one of the largest in the world) sits near the country\'s main studio hub, and on-set solar and battery solutions are a natural fit for desert shoots.\n\nEnergy mix source: https://ourworldindata.org/energy/country/morocco (Our World in Data).',
         },
         otherFacts: {
           label: 'Filming in natural environments',
@@ -2025,7 +2025,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Renewables supplied about 36% of Australian electricity in 2024 (solar around 18%, wind around 12%) with coal near 45% and falling; the mix varies a lot by state.',
+            'Renewables supplied about 36% of Australian electricity in 2024 (solar around 18%, wind around 12%) with coal near 45% and falling; the mix varies a lot by state.\n\nEnergy mix source: https://ourworldindata.org/energy/country/australia (Our World in Data).',
         },
       },
     },
@@ -2072,7 +2072,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Around 87% of New Zealand\'s electricity is renewable, dominated by hydropower with a large geothermal share, so grid connections are a genuinely low-carbon choice.',
+            'Around 87% of New Zealand\'s electricity is renewable, dominated by hydropower with a large geothermal share, so grid connections are a genuinely low-carbon choice.\n\nEnergy mix source: https://ourworldindata.org/energy/country/new-zealand (Our World in Data).',
         },
         otherFacts: {
           label: 'Filming in natural environments',
@@ -2124,7 +2124,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Bangladesh\'s grid runs mostly on natural gas (around 43%) and coal (around 28%), with significant imports; renewables remain marginal so far, and backup generators are common during shortfalls.',
+            'Bangladesh\'s grid runs mostly on natural gas (around 43%) and coal (around 28%), with significant imports; renewables remain marginal so far, and backup generators are common during shortfalls.\n\nEnergy mix source: https://ourworldindata.org/energy/country/bangladesh (Our World in Data).',
         },
       },
     },
@@ -2166,7 +2166,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'India\'s grid is coal-heavy (coal provides roughly three-quarters of generation) even as solar and wind grow quickly, and productions commonly carry diesel backup; cleaner mobile power is a major lever.',
+            'India\'s grid is coal-heavy (coal provides roughly three-quarters of generation) even as solar and wind grow quickly, and productions commonly carry diesel backup; cleaner mobile power is a major lever.\n\nEnergy mix source: https://ourworldindata.org/energy/country/india (Our World in Data).',
         },
       },
     },
@@ -2202,7 +2202,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Togo has historically imported most of its electricity from neighbouring countries, and is building domestic solar capacity, including the 50 MW Blitta plant, one of the largest solar farms in West Africa.',
+            'Togo has historically imported most of its electricity from neighbouring countries, and is building domestic solar capacity, including the 50 MW Blitta plant, one of the largest solar farms in West Africa.\n\nEnergy mix source: https://ourworldindata.org/energy/country/togo (Our World in Data).',
         },
       },
     },
@@ -2244,7 +2244,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Mexico\'s grid runs mostly on natural gas (around 60%), with renewables near 20 to 25%; the government has announced a 45% renewable target for 2030.',
+            'Mexico\'s grid runs mostly on natural gas (around 60%), with renewables near 20 to 25%; the government has announced a 45% renewable target for 2030.\n\nEnergy mix source: https://ourworldindata.org/energy/country/mexico (Our World in Data).',
         },
       },
     },
@@ -2286,7 +2286,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Argentina\'s electricity came roughly 49% from gas, 25% from hydro, 11% from wind and 7% from nuclear in 2024, a mid-carbon grid with a growing wind share.',
+            'Argentina\'s electricity came roughly 49% from gas, 25% from hydro, 11% from wind and 7% from nuclear in 2024, a mid-carbon grid with a growing wind share.\n\nEnergy mix source: https://ourworldindata.org/energy/country/argentina (Our World in Data).',
         },
       },
     },
@@ -2328,7 +2328,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Colombia\'s grid is about 70% hydropower, making on-grid power low-carbon in normal years, though droughts can swing the mix back toward gas and coal.',
+            'Colombia\'s grid is about 70% hydropower, making on-grid power low-carbon in normal years, though droughts can swing the mix back toward gas and coal.\n\nEnergy mix source: https://ourworldindata.org/energy/country/colombia (Our World in Data).',
         },
       },
     },
@@ -2375,7 +2375,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Estonia\'s grid synchronised with the Continental European network (together with Latvia and Lithuania) in February 2025, ending reliance on the Russian system. Electricity has historically been oil-shale-based and carbon-intensive, but is shifting quickly to wind and solar, with a target of 100% renewable electricity by 2030.',
+            'Estonia\'s grid synchronised with the Continental European network (together with Latvia and Lithuania) in February 2025, ending reliance on the Russian system. Electricity has historically been oil-shale-based and carbon-intensive, but is shifting quickly to wind and solar, with a target of 100% renewable electricity by 2030.\n\nEnergy mix source: https://ourworldindata.org/energy/country/estonia (Our World in Data).',
         },
       },
     },
@@ -2427,7 +2427,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Latvia\'s grid synchronised with the Continental European network in February 2025. Electricity is predominantly renewable (about three-quarters), led by hydropower on the Daugava and biomass, a relatively low-carbon grid for productions.',
+            'Latvia\'s grid synchronised with the Continental European network in February 2025. Electricity is predominantly renewable (about three-quarters), led by hydropower on the Daugava and biomass, a relatively low-carbon grid for productions.\n\nEnergy mix source: https://ourworldindata.org/energy/country/latvia (Our World in Data).',
         },
       },
     },
@@ -2479,7 +2479,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Lithuania\'s grid synchronised with the Continental European network in February 2025, ending reliance on the Russian system. The country closed the Ignalina nuclear plant in 2009 and now relies on imports plus fast-growing wind and solar, aiming to become a net electricity exporter by 2030.',
+            'Lithuania\'s grid synchronised with the Continental European network in February 2025, ending reliance on the Russian system. The country closed the Ignalina nuclear plant in 2009 and now relies on imports plus fast-growing wind and solar, aiming to become a net electricity exporter by 2030.\n\nEnergy mix source: https://ourworldindata.org/energy/country/lithuania (Our World in Data).',
         },
       },
     },
@@ -2531,7 +2531,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Switzerland\'s grid is largely low-carbon, dominated by hydropower (around 60%) and nuclear (about a third), so productions connecting to the mains draw relatively clean electricity.',
+            'Switzerland\'s grid is largely low-carbon, dominated by hydropower (around 60%) and nuclear (about a third), so productions connecting to the mains draw relatively clean electricity.\n\nEnergy mix source: https://ourworldindata.org/energy/country/switzerland (Our World in Data).',
         },
       },
     },
@@ -2578,7 +2578,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Luxembourg imports around 97% of its electricity, so on-grid productions draw largely on the surrounding European mix rather than domestic generation; domestic output is mostly renewable but small.',
+            'Luxembourg imports around 97% of its electricity, so on-grid productions draw largely on the surrounding European mix rather than domestic generation; domestic output is mostly renewable but small.\n\nEnergy mix source: https://ourworldindata.org/energy/country/luxembourg (Our World in Data).',
         },
       },
     },
@@ -2625,7 +2625,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Slovenia\'s electricity is relatively low-carbon, roughly a third from the Krško nuclear plant plus hydropower, with its remaining coal generation (around 30%) due to be phased out by 2033.',
+            'Slovenia\'s electricity is relatively low-carbon, roughly a third from the Krško nuclear plant plus hydropower, with its remaining coal generation (around 30%) due to be phased out by 2033.\n\nEnergy mix source: https://ourworldindata.org/energy/country/slovenia (Our World in Data).',
         },
       },
     },
@@ -2672,7 +2672,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Serbia\'s grid is coal-heavy, around 60% lignite in 2024, with roughly 30% hydropower and about 10% other renewables, giving productions a relatively high-carbon electricity footprint compared with most of Europe.',
+            'Serbia\'s grid is coal-heavy, around 60% lignite in 2024, with roughly 30% hydropower and about 10% other renewables, giving productions a relatively high-carbon electricity footprint compared with most of Europe.\n\nEnergy mix source: https://ourworldindata.org/energy/country/serbia (Our World in Data).',
         },
       },
     },
@@ -2719,7 +2719,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Costa Rica\'s electricity is almost entirely renewable (around 98 to 99%, led by hydropower and geothermal, with wind and solar), so productions drawing on the grid use very low-carbon power.',
+            'Costa Rica\'s electricity is almost entirely renewable (around 98 to 99%, led by hydropower and geothermal, with wind and solar), so productions drawing on the grid use very low-carbon power.\n\nEnergy mix source: https://ourworldindata.org/energy/country/costa-rica (Our World in Data).',
         },
         otherFacts: {
           label: 'Filming in natural environments',
@@ -2771,7 +2771,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Kenya has one of the cleanest grids in Africa: around 90% of its electricity is renewable, led by geothermal (about 46%) with hydropower, wind (including the Lake Turkana wind farm) and solar, and the country targets fully clean generation by 2030. Plugging into the grid is therefore a genuinely low-carbon option in cities; in remote locations, reliability varies and productions still bring backup power.',
+            'Kenya has one of the cleanest grids in Africa: around 90% of its electricity is renewable, led by geothermal (about 46%) with hydropower, wind (including the Lake Turkana wind farm) and solar, and the country targets fully clean generation by 2030. Plugging into the grid is therefore a genuinely low-carbon option in cities; in remote locations, reliability varies and productions still bring backup power.\n\nEnergy mix source: https://ourworldindata.org/energy/country/kenya (Our World in Data).',
         },
         otherFacts: {
           label: 'Filming in natural environments',
@@ -2823,7 +2823,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Botswana generates from domestic coal (the Morupule plants) topped up with substantial imports from the regional power pool, so on-grid electricity is carbon-intensive; the country\'s solar potential is vast.',
+            'Botswana generates from domestic coal (the Morupule plants) topped up with substantial imports from the regional power pool, so on-grid electricity is carbon-intensive; the country\'s solar potential is vast.\n\nEnergy mix source: https://ourworldindata.org/energy/country/botswana (Our World in Data).',
         },
         otherFacts: {
           label: 'Filming in natural environments',
@@ -2870,7 +2870,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Nigeria\'s national grid (mostly gas-fired, with hydropower around 20%) is unreliable, with repeated nationwide collapses, so most productions, like most businesses, run on diesel or petrol generators; backup generators are estimated to produce around 40% of all electricity consumed in the country. That makes cleaner mobile power (batteries, solar-hybrid units, generator right-sizing) one of the single biggest levers for greener shoots in Nigeria.',
+            'Nigeria\'s national grid (mostly gas-fired, with hydropower around 20%) is unreliable, with repeated nationwide collapses, so most productions, like most businesses, run on diesel or petrol generators; backup generators are estimated to produce around 40% of all electricity consumed in the country. That makes cleaner mobile power (batteries, solar-hybrid units, generator right-sizing) one of the single biggest levers for greener shoots in Nigeria.\n\nEnergy mix source: https://ourworldindata.org/energy/country/nigeria (Our World in Data).',
         },
       },
     },
@@ -2912,7 +2912,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Rwanda\'s electricity comes largely from hydropower plus the KivuWatt plant, which turns methane dissolved in Lake Kivu into power (around 30% of national consumption), an unusual local solution.',
+            'Rwanda\'s electricity comes largely from hydropower plus the KivuWatt plant, which turns methane dissolved in Lake Kivu into power (around 30% of national consumption), an unusual local solution.\n\nEnergy mix source: https://ourworldindata.org/energy/country/rwanda (Our World in Data).',
         },
         otherFacts: {
           label: 'Filming in natural environments',
@@ -2959,7 +2959,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Tanzania\'s mix shifted strongly to hydropower as the 2,115 MW Julius Nyerere plant came online (hydro is now around 59% of installed capacity, gas around 35%), cutting the grid\'s carbon intensity.',
+            'Tanzania\'s mix shifted strongly to hydropower as the 2,115 MW Julius Nyerere plant came online (hydro is now around 59% of installed capacity, gas around 35%), cutting the grid\'s carbon intensity.\n\nEnergy mix source: https://ourworldindata.org/energy/country/tanzania (Our World in Data).',
         },
         otherFacts: {
           label: 'Filming in natural environments',
@@ -3006,7 +3006,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Namibia imports a large share of its electricity from the Southern African Power Pool; domestic generation is led by the Ruacana hydropower station, and the country\'s solar potential is among the best in the world.',
+            'Namibia imports a large share of its electricity from the Southern African Power Pool; domestic generation is led by the Ruacana hydropower station, and the country\'s solar potential is among the best in the world.\n\nEnergy mix source: https://ourworldindata.org/energy/country/namibia (Our World in Data).',
         },
         otherFacts: {
           label: 'Filming in natural environments',
@@ -3053,7 +3053,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Uganda\'s grid is overwhelmingly clean: with the 600 MW Karuma plant commissioned in 2024, generation is around 93% renewable, led by hydropower.',
+            'Uganda\'s grid is overwhelmingly clean: with the 600 MW Karuma plant commissioned in 2024, generation is around 93% renewable, led by hydropower.\n\nEnergy mix source: https://ourworldindata.org/energy/country/uganda (Our World in Data).',
         },
         otherFacts: {
           label: 'Filming in natural environments',
@@ -3100,7 +3100,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Romania\'s grid is about two-thirds low-carbon, led by hydropower (around 22%) and nuclear (around 19%) plus growing wind and solar.',
+            'Romania\'s grid is about two-thirds low-carbon, led by hydropower (around 22%) and nuclear (around 19%) plus growing wind and solar.\n\nEnergy mix source: https://ourworldindata.org/energy/country/romania (Our World in Data).',
         },
       },
     },
@@ -3142,7 +3142,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Zimbabwe depends on Kariba hydropower and coal, plus imports; drought slashed Kariba output in 2024 and brought long load-shedding hours, so productions should plan power carefully and favour battery or solar backup over diesel where possible.',
+            'Zimbabwe depends on Kariba hydropower and coal, plus imports; drought slashed Kariba output in 2024 and brought long load-shedding hours, so productions should plan power carefully and favour battery or solar backup over diesel where possible.\n\nEnergy mix source: https://ourworldindata.org/energy/country/zimbabwe (Our World in Data).',
         },
         otherFacts: {
           label: 'Filming in natural environments',
@@ -3189,7 +3189,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Senegal\'s electricity is still mostly oil-fired (over 80% in 2024), with wind (Taiba Ndiaye) and solar growing; on-grid power is carbon-intensive, which makes battery and solar solutions attractive.',
+            'Senegal\'s electricity is still mostly oil-fired (over 80% in 2024), with wind (Taiba Ndiaye) and solar growing; on-grid power is carbon-intensive, which makes battery and solar solutions attractive.\n\nEnergy mix source: https://ourworldindata.org/energy/country/senegal (Our World in Data).',
         },
       },
     },
@@ -3225,7 +3225,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Ghana\'s grid mixes hydropower (around 39%, led by the Akosombo dam) with gas-fired thermal generation (around 60%), a moderate carbon intensity by regional standards.',
+            'Ghana\'s grid mixes hydropower (around 39%, led by the Akosombo dam) with gas-fired thermal generation (around 60%), a moderate carbon intensity by regional standards.\n\nEnergy mix source: https://ourworldindata.org/energy/country/ghana (Our World in Data).',
         },
       },
     },
@@ -3261,7 +3261,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Egypt\'s grid runs overwhelmingly on natural gas (around 80%), with hydro from the Aswan dam and fast-growing solar, including the giant Benban park (around 1.8 GW).',
+            'Egypt\'s grid runs overwhelmingly on natural gas (around 80%), with hydro from the Aswan dam and fast-growing solar, including the giant Benban park (around 1.8 GW).\n\nEnergy mix source: https://ourworldindata.org/energy/country/egypt (Our World in Data).',
         },
       },
     },
@@ -3297,7 +3297,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Tunisia\'s electricity is about 97% gas-fired, with a national target of 35% renewable capacity by 2030, so on-grid power is currently carbon-intensive.',
+            'Tunisia\'s electricity is about 97% gas-fired, with a national target of 35% renewable capacity by 2030, so on-grid power is currently carbon-intensive.\n\nEnergy mix source: https://ourworldindata.org/energy/country/tunisia (Our World in Data).',
         },
       },
     },
@@ -3333,7 +3333,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'About three-quarters of Croatia\'s net electricity generation was renewable in 2024, led by hydropower with a growing wind share, a relatively clean grid for productions.',
+            'About three-quarters of Croatia\'s net electricity generation was renewable in 2024, led by hydropower with a growing wind share, a relatively clean grid for productions.\n\nEnergy mix source: https://ourworldindata.org/energy/country/croatia (Our World in Data).',
         },
       },
     },
@@ -3369,7 +3369,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Bulgaria\'s grid is anchored by nuclear power (around 40% in 2024) with coal near 29% and solar rising, so it is mid-carbon and improving.',
+            'Bulgaria\'s grid is anchored by nuclear power (around 40% in 2024) with coal near 29% and solar rising, so it is mid-carbon and improving.\n\nEnergy mix source: https://ourworldindata.org/energy/country/bulgaria (Our World in Data).',
         },
       },
     },
@@ -3405,7 +3405,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Georgia\'s electricity is mostly hydropower (around 75 to 80%), with gas covering the rest, making the grid relatively low-carbon, though seasonal.',
+            'Georgia\'s electricity is mostly hydropower (around 75 to 80%), with gas covering the rest, making the grid relatively low-carbon, though seasonal.\n\nEnergy mix source: https://ourworldindata.org/energy/country/georgia (Our World in Data).',
         },
       },
     },
@@ -3441,7 +3441,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'South Korea\'s electricity in 2024 was roughly 30% nuclear, 30% coal and 29% gas, with renewables near 10%, a grid in transition.',
+            'South Korea\'s electricity in 2024 was roughly 30% nuclear, 30% coal and 29% gas, with renewables near 10%, a grid in transition.\n\nEnergy mix source: https://ourworldindata.org/energy/country/south-korea (Our World in Data).',
         },
       },
     },
@@ -3472,7 +3472,7 @@ export const countryData = {
         gridConnection: {
           label: 'Grid connection',
           content:
-            'Japan\'s grid in fiscal 2024 ran on roughly 29% LNG, 28% coal, 27% renewables and 8% nuclear, so on-grid power remains fairly carbon-intensive and varies by region.',
+            'Japan\'s grid in fiscal 2024 ran on roughly 29% LNG, 28% coal, 27% renewables and 8% nuclear, so on-grid power remains fairly carbon-intensive and varies by region.\n\nEnergy mix source: https://ourworldindata.org/energy/country/japan (Our World in Data).',
         },
       },
     },

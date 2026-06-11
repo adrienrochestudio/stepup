@@ -71,6 +71,14 @@ export default function CountryInfoPanel({ country, activeFilters, onClose, onCo
   const hasFilters = activeFilters.length > 0;
   const availableCategories = getAvailableCategories(country);
 
+  // Pages with only a handful of entries get an explicit "help us complete
+  // this" note in the credit banner.
+  const subCount = categoryKeys.reduce(
+    (n, k) => n + Object.keys(data[k]?.subcategories || {}).length,
+    0,
+  );
+  const isSparse = subCount <= 4;
+
   const toggleSub = (key) => {
     setExpandedSub(expandedSub === key ? null : key);
   };
@@ -107,8 +115,10 @@ export default function CountryInfoPanel({ country, activeFilters, onClose, onCo
             ) : (
               <>
                 This factsheet was compiled by the StepUP team from publicly
-                available resources: {data.sources}. If you have information or
-                comments, please{' '}
+                available resources: {data.sources}.
+                {isSparse &&
+                  ' This page is still light on information, and we would love to complete it.'}{' '}
+                If you have information or comments, please{' '}
                 <button
                   type="button"
                   className="country-credit-contribute"

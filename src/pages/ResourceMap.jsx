@@ -15,9 +15,6 @@ function getAllSubKeys(catKey) {
   );
 }
 
-function getEverySubKey() {
-  return categoryKeys.flatMap(getAllSubKeys);
-}
 
 export default function ResourceMap() {
   const { t } = useTranslation();
@@ -41,18 +38,14 @@ export default function ResourceMap() {
     setSelectedCountry((prev) => (prev === countryName ? null : countryName));
   }, [dismissHint]);
 
-  // Empty activeFilters means "everything shown" and the UI renders all
-  // chips as checked. Toggling from that state starts from the full set and
-  // unchecks the clicked chip; re-checking everything folds back to empty.
+  // No chip selected = the panel shows everything. Checking a chip narrows
+  // the panel to the checked topics only; "clear all" unchecks everything.
   const handleToggleFilter = useCallback((subFullKey) => {
-    setActiveFilters((prev) => {
-      const all = getEverySubKey();
-      const base = prev.length === 0 ? all : prev;
-      const next = base.includes(subFullKey)
-        ? base.filter((k) => k !== subFullKey)
-        : [...base, subFullKey];
-      return next.length === all.length ? [] : next;
-    });
+    setActiveFilters((prev) =>
+      prev.includes(subFullKey)
+        ? prev.filter((k) => k !== subFullKey)
+        : [...prev, subFullKey],
+    );
   }, []);
 
   const handleToggleAllCategory = useCallback((catKey) => {
@@ -62,13 +55,11 @@ export default function ResourceMap() {
     }
     const allSubs = getAllSubKeys(catKey);
     setActiveFilters((prev) => {
-      const all = getEverySubKey();
-      const base = prev.length === 0 ? all : prev;
-      const allActive = allSubs.every((s) => base.includes(s));
-      const next = allActive
-        ? base.filter((k) => !allSubs.includes(k))
-        : [...new Set([...base, ...allSubs])];
-      return next.length === all.length ? [] : next;
+      const allActive = allSubs.every((s) => prev.includes(s));
+      if (allActive) {
+        return prev.filter((k) => !allSubs.includes(k));
+      }
+      return [...new Set([...prev, ...allSubs])];
     });
   }, []);
 
