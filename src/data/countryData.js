@@ -1966,7 +1966,7 @@ export const countryData = {
         greenProductionStatus: {
           label: 'Status of green production',
           content:
-            'Green production is emerging and not yet the norm; the industry largely operates outside formal carbon auditing or green certification. Awareness is growing through individual films, OTT/streaming pilots and a small number of consultancies, but there is no national green-production framework.',
+            'India approaches sustainability on its own terms. Reuse, repair and resource-efficient, low-waste ways of working are long part of its production culture, even where formal carbon auditing and green certification remain uncommon. Measured, certified green production is still developing, advanced by individual films, OTT/streaming pilots and a small number of consultancies, with no single national framework so far.',
         },
         existingInitiatives: {
           label: 'Existing initiatives',
@@ -2436,7 +2436,7 @@ export const countryData = {
         existingInitiatives: {
           label: 'Existing initiatives',
           content:
-            '• IESI (Initiative for Ecological Standardization and Innovation): a Belgrade-based organisation working on the sustainable and digital transformation of the audiovisual industry in the Balkans and Eastern Europe. Projects: Circular Cinema (waste / circular economy), Zelena mreža / Green Network (eco-managers and consultants), Eko vozila / Eco Vehicles, and the GAVIS platform: https://iesi.eco/',
+            '• IESI (Initiative for Ecological Standardization and Innovation): a Belgrade-based organisation working on the sustainable and digital transformation of the audiovisual industry in the Balkans and Eastern Europe. Projects: Circular Cinema (set-waste circular economy, which also trains informal waste collectors and integrates them into formal channels), Zelena mreža / Green Network (eco-managers and consultants), Eko vozila / Eco Vehicles, and the GAVIS platform: https://iesi.eco/',
         },
       },
     },
@@ -2457,6 +2457,57 @@ export const countryData = {
           label: 'Calculators & tools',
           content:
             '• IESI offers a regional rating system, an eco-calculator and green-production "certification": https://iesi.eco/\n\nImportant: IESI\'s rating, calculator and certification are run in-house; the public information does not state any independent third-party verification, so it should be treated as a self-administered scheme rather than an externally audited certification. The established international calculators are BAFTA albert (https://wearealbert.org/) and Ecoprod\'s Carbon\'Clap (https://ecoprod.com/).',
+        },
+      },
+    },
+  },
+
+  'Costa Rica': {
+    code: 'CRI',
+    name: 'Costa Rica',
+    credit: null,
+    generalInfo: {
+      label: 'General Information',
+      subcategories: {
+        greenProductionStatus: {
+          label: 'Status of green production',
+          content:
+            'Costa Rica\'s sustainability model is built around nature first. The country holds roughly 6.5% of the world\'s biodiversity and protects more than a quarter of its territory as national parks and reserves, and it positions itself as a destination for ecological shooting on a near-fully renewable grid. The Costa Rica Film Commission supports productions and emphasises low-impact filming in natural locations rather than carbon paperwork.',
+        },
+        decarbonizationPlan: {
+          label: 'Decarbonization plan',
+          content:
+            'Costa Rica runs one of the cleanest grids in the world (around 98 to 99% renewable, mostly hydropower and geothermal, with wind and solar) and pursues its National Decarbonization Plan 2018 to 2050, targeting net-zero emissions by 2050. Conservation is central: over 28% of the land is protected.',
+        },
+        audiovisualRegulation: {
+          label: 'Film & TV industry regulations and incentives',
+          content:
+            'Filming in protected areas is managed by SINAC (National System of Conservation Areas), which permits national parks and reserves individually, with a per-day fee that depends on the project. A standard permit takes up to about 15 days; national parks may take longer. The Costa Rica Film Commission coordinates permits and promotes sustainable shooting: https://www.costaricafilmcommission.org/',
+        },
+      },
+    },
+    sustainability: {
+      label: 'Sustainability & Logistics',
+      subcategories: {
+        gridConnection: {
+          label: 'Grid connection',
+          content:
+            'Costa Rica\'s electricity is almost entirely renewable (around 98 to 99%, led by hydropower and geothermal, with wind and solar), so productions drawing on the grid use very low-carbon power.',
+        },
+        otherFacts: {
+          label: 'Filming in natural environments',
+          content:
+            'Recommendations for productions shooting in nature (in Costa Rica and beyond):\n• Secure the right permits for every protected area (in Costa Rica, each reserve is permitted separately through SINAC).\n• Follow Leave No Trace practices and carry all waste back out for proper disposal.\n• Never bait, chase, feed or manipulate wildlife; film animals only in their natural behaviour (see the American Humane "Wildlife Guidelines for Filmed Media").\n• Keep to established trails and access points, flag and protect sensitive habitats, and use mats or temporary pathways over fragile ground.\n• Work with local conservationists or an on-site ecological supervisor who knows the terrain and the species at risk.',
+        },
+      },
+    },
+    resources: {
+      label: 'Resources',
+      subcategories: {
+        networks: {
+          label: 'Networks to join',
+          content:
+            '• Costa Rica Film Commission: https://www.costaricafilmcommission.org/\n• SINAC (National System of Conservation Areas): permits for filming in national parks and reserves.',
         },
       },
     },
