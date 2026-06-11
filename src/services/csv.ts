@@ -5,7 +5,7 @@
 // Guard against CSV / formula injection: a cell starting with = + - @ (or a
 // control char) can execute as a formula when the file is opened in a
 // spreadsheet. Neutralise it by prefixing a single quote.
-function sanitizeCell(value) {
+function sanitizeCell(value: unknown): string {
   let s = value == null ? '' : String(value);
   if (/^[=+\-@\t\r]/.test(s)) s = `'${s}`;
   const needsQuotes = /[",\n\r]/.test(s);
@@ -14,13 +14,16 @@ function sanitizeCell(value) {
 }
 
 // rows: array of arrays of cells -> CSV text (CRLF line endings).
-export function rowsToCsv(rows) {
+export function rowsToCsv(rows: unknown[][]): string {
   return rows.map((row) => row.map(sanitizeCell).join(',')).join('\r\n');
 }
 
 // objects: array of plain objects. Columns are taken from `columns` or the
 // keys of the first object. A header row is included.
-export function objectsToCsv(objects, columns) {
+export function objectsToCsv(
+  objects: Record<string, unknown>[],
+  columns?: string[],
+): string {
   if (!objects || objects.length === 0) return '';
   const cols = columns || Object.keys(objects[0]);
   const body = objects.map((o) => cols.map((c) => o[c]));
@@ -28,7 +31,7 @@ export function objectsToCsv(objects, columns) {
 }
 
 // Trigger a client-side download. A BOM is prepended so Excel detects UTF-8.
-export function downloadCsv(filename, csvText) {
+export function downloadCsv(filename: string, csvText: string): void {
   const blob = new Blob(['﻿' + csvText], {
     type: 'text/csv;charset=utf-8;',
   });
@@ -45,14 +48,14 @@ export function downloadCsv(filename, csvText) {
 // Parse CSV text into an array of rows (array of string cells). Handles quoted
 // fields, escaped quotes, and commas/newlines inside quotes. Accepts ',' or
 // ';' as the delimiter (Excel often uses ';' in some locales).
-export function parseCsv(text) {
+export function parseCsv(text: string): string[][] {
   const firstBreak = text.indexOf('\n');
   const firstLine = firstBreak === -1 ? text : text.slice(0, firstBreak);
   const delimiter =
     firstLine.split(';').length > firstLine.split(',').length ? ';' : ',';
 
-  const rows = [];
-  let row = [];
+  const rows: string[][] = [];
+  let row: string[] = [];
   let cell = '';
   let inQuotes = false;
 

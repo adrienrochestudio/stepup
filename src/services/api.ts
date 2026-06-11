@@ -1,6 +1,9 @@
 const API_URL = import.meta.env.VITE_API_URL || '';
 
-export async function apiFetch(path, options = {}) {
+export async function apiFetch<T = unknown>(
+  path: string,
+  options: RequestInit = {},
+): Promise<T> {
   const response = await fetch(`${API_URL}${path}`, {
     headers: {
       'Content-Type': 'application/json',
@@ -13,5 +16,5 @@ export async function apiFetch(path, options = {}) {
     throw new Error(`API error: ${response.status}`);
   }
 
-  return response.json();
+  return response.json() as Promise<T>;
 }

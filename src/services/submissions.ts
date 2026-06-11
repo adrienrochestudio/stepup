@@ -4,27 +4,25 @@
 // display and process submissions made in this browser. The exported API is
 // shaped like the future HTTP client so swapping in a backend later only
 // changes this file.
+import type { Submission, SubmissionType, SubmissionStatus } from '../types';
 
 const STORE_KEY = 'stepup_submissions';
 
-// type: 'map_contribution' | 'map_amendment' | 'group_request' | 'enrollment'
-// status: 'new' | 'processed' | 'rejected'
-
-function readAll() {
+function readAll(): Submission[] | null {
   try {
     const raw = localStorage.getItem(STORE_KEY);
-    return raw ? JSON.parse(raw) : null;
+    return raw ? (JSON.parse(raw) as Submission[]) : null;
   } catch {
     return null;
   }
 }
 
-function writeAll(items) {
+function writeAll(items: Submission[]): void {
   localStorage.setItem(STORE_KEY, JSON.stringify(items));
 }
 
 // Demo submissions so the inbox is never empty on first visit.
-const SEED = [
+const SEED: Submission[] = [
   {
     id: 'sub-demo-1',
     type: 'map_contribution',
@@ -36,7 +34,8 @@ const SEED = [
       organization: 'Film Centar Zagreb',
       country: 'Croatia',
       fields: {
-        greenConsultants: 'Zelena Produkcija, green consulting for HRT productions, contact: info@zelenaprodukcija.hr',
+        greenConsultants:
+          'Zelena Produkcija, green consulting for HRT productions, contact: info@zelenaprodukcija.hr',
       },
     },
   },
@@ -51,7 +50,8 @@ const SEED = [
       organization: 'CineGreen',
       country: 'Italy',
       amendmentSection: 'trainTravel',
-      amendmentText: 'The train transport rating for Italy seems outdated, Frecciarossa now covers Naples-Milan in under 5h and regional coverage has improved.',
+      amendmentText:
+        'The train transport rating for Italy seems outdated, Frecciarossa now covers Naples-Milan in under 5h and regional coverage has improved.',
     },
   },
   {
@@ -61,10 +61,11 @@ const SEED = [
     createdAt: '2026-06-10T09:45:00',
     payload: {
       offer: 'cohort',
-      courseTitle: 'Maîtriser l\'éco-production',
+      courseTitle: "Maîtriser l'éco-production",
       nbPersons: 35,
       email: 'formation@studiopilote.fr',
-      comment: 'Nous souhaitons former nos équipes de production sur Q3. Possible de démarrer en septembre ?',
+      comment:
+        'Nous souhaitons former nos équipes de production sur Q3. Possible de démarrer en septembre ?',
     },
   },
   {
@@ -82,22 +83,25 @@ const SEED = [
   },
 ];
 
-function ensureSeeded() {
+function ensureSeeded(): Submission[] {
   const existing = readAll();
   if (existing) return existing;
   writeAll(SEED);
   return SEED;
 }
 
-export function getSubmissions() {
+export function getSubmissions(): Submission[] {
   return [...ensureSeeded()].sort(
-    (a, b) => new Date(b.createdAt) - new Date(a.createdAt),
+    (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime(),
   );
 }
 
-export function addSubmission(type, payload) {
+export function addSubmission(
+  type: SubmissionType,
+  payload: Record<string, unknown>,
+): Submission {
   const items = ensureSeeded();
-  const submission = {
+  const submission: Submission = {
     id: `sub-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
     type,
     status: 'new',
@@ -108,14 +112,15 @@ export function addSubmission(type, payload) {
   return submission;
 }
 
-export function setSubmissionStatus(id, status) {
-  const items = ensureSeeded().map((s) =>
-    s.id === id ? { ...s, status } : s,
-  );
+export function setSubmissionStatus(
+  id: string,
+  status: SubmissionStatus,
+): Submission[] {
+  const items = ensureSeeded().map((s) => (s.id === id ? { ...s, status } : s));
   writeAll(items);
   return items;
 }
 
-export function countNewSubmissions() {
+export function countNewSubmissions(): number {
   return ensureSeeded().filter((s) => s.status === 'new').length;
 }
