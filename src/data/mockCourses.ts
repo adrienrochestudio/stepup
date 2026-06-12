@@ -1,4 +1,6 @@
-export const allCourses = [
+import type { Course, Enrollment } from '../types';
+
+export const allCourses: Course[] = [
   {
     id: 'intro-eco-production',
     i18nKey: 'introGreenProduction',
@@ -53,7 +55,7 @@ export const allCourses = [
   },
 ];
 
-export const mockEnrollments = [
+export const mockEnrollments: Enrollment[] = [
   {
     courseId: 'intro-eco-production',
     progress: 35,
@@ -62,14 +64,14 @@ export const mockEnrollments = [
   },
 ];
 
-export function getEnrolledCourses(enrollments) {
+export function getEnrolledCourses(enrollments: Enrollment[]) {
   return enrollments.map((enrollment) => {
     const course = allCourses.find((c) => c.id === enrollment.courseId);
     return { ...course, ...enrollment };
   });
 }
 
-export function getCatalogCourses(enrollments) {
+export function getCatalogCourses(enrollments: Enrollment[]) {
   const enrolledIds = enrollments.map((e) => e.courseId);
   return allCourses.filter((c) => !enrolledIds.includes(c.id));
 }

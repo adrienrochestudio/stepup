@@ -1,4 +1,4 @@
-export const countryData = {
+export const countryData: Record<string, any> = {
   France: {
     code: 'FRA',
     name: 'France',
@@ -3490,11 +3490,11 @@ export const countryData = {
 
 export const categoryKeys = ['generalInfo', 'sustainability', 'resources'];
 
-export function getCountryData(countryName) {
+export function getCountryData(countryName: string) {
   return countryData[countryName] || null;
 }
 
-export function getAvailableCategories(countryName) {
+export function getAvailableCategories(countryName: string): string[] {
   const data = countryData[countryName];
   if (!data) return [];
   return categoryKeys.filter(
