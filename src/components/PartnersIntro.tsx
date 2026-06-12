@@ -3,7 +3,7 @@
 // (brand rule). Eurimages and Ecoprod stay clickable and highlight on click.
 const INITIATIVE_EN = 'StepUP is a Eurimages initiative developed by Ecoprod.';
 
-export default function PartnersIntro({ lang }) {
+export default function PartnersIntro({ lang }: { lang?: string }) {
   const ecoprodUrl = lang === 'fr' ? 'https://ecoprod.com' : 'https://ecoprod.com/en/';
   const parts = INITIATIVE_EN.split(/(Eurimages|Ecoprod)/);
 

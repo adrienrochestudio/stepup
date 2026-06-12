@@ -1,10 +1,9 @@
 import { Navigate, Outlet } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../hooks/useAuth';
+import type { Role } from '../types';
 
-
-
-export default function ProtectedRoute({ requireRole }) {
+export default function ProtectedRoute({ requireRole }: { requireRole?: Role | Role[] }) {
   const { user, loading } = useAuth();
   const { t } = useTranslation();
 
@@ -12,7 +11,7 @@ export default function ProtectedRoute({ requireRole }) {
   if (!user) return <Navigate to="/login" replace />;
   if (requireRole) {
     const allowed = Array.isArray(requireRole) ? requireRole : [requireRole];
-    if (!allowed.includes(user.role)) return <Navigate to="/dashboard" replace />;
+    if (!user.role || !allowed.includes(user.role)) return <Navigate to="/dashboard" replace />;
   }
 
   return <Outlet />;

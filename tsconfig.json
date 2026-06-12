@@ -6,6 +6,9 @@
     "moduleResolution": "bundler",
     "jsx": "react-jsx",
     "strict": true,
+    /* Migration step: props/params are not yet all typed. Keep every other
+       strict check (incl. strictNullChecks) and tighten this per-file later. */
+    "noImplicitAny": false,
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "isolatedModules": true,

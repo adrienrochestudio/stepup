@@ -21,14 +21,14 @@ export default function Course() {
 
   const [selectedLang, setSelectedLang] = useState(availableLangs[0] || 'en');
 
-  const { unifiedStatus } = useScorm(id, selectedLang);
+  const { unifiedStatus } = useScorm(id ?? '', selectedLang);
 
   if (!course) {
     return <div className="course-page"><p className="course-not-found">{t('course.notFound')}</p></div>;
   }
 
   const scormUrl = course.scormPackages?.[selectedLang] || '';
-  const displayProgress = unifiedStatus.progress || course.progress || 0;
+  const displayProgress = unifiedStatus.progress || 0;
 
   return (
     <div className="course-page">
@@ -38,7 +38,7 @@ export default function Course() {
         </Link>
 
         <div className="course-top-info">
-          <h1>{course.i18nKey ? t(`courses.${course.i18nKey}.title`) : course.title}</h1>
+          <h1>{t(`courses.${course.i18nKey}.title`)}</h1>
           <div className="course-top-meta">
             <span>{course.duration}</span>
           </div>

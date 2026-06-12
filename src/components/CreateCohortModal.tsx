@@ -20,7 +20,7 @@ function buildUsername(firstName, lastName) {
 export default function CreateCohortModal({ onClose, onCreate }) {
   const { t } = useTranslation();
   const { user } = useAuth();
-  const fileInputRef = useRef(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const orgName = user?.organizationName || '';
   const currentYear = new Date().getFullYear();
@@ -32,14 +32,15 @@ export default function CreateCohortModal({ onClose, onCreate }) {
   const [maxStudents, setMaxStudents] = useState(20);
 
   const [promoCode, setPromoCode] = useState('');
-  const [promoResult, setPromoResult] = useState(null);
+  const [promoResult, setPromoResult] = useState<any>(null);
   const [promoError, setPromoError] = useState(false);
 
-  const [importedLearners, setImportedLearners] = useState([]);
+  const [importedLearners, setImportedLearners] = useState<any[]>([]);
   const [importError, setImportError] = useState('');
 
   const selectedCourse = allCourses.find((c) => c.id === courseId);
-  const autoName = [orgName, selectedCourse?.title, currentYear].filter(Boolean).join(' - ');
+  const selectedCourseTitle = selectedCourse ? t(`courses.${selectedCourse.i18nKey}.title`) : '';
+  const autoName = [orgName, selectedCourseTitle, currentYear].filter(Boolean).join(' - ');
   const fullName = suffix ? `${autoName} - ${suffix}` : autoName;
 
   useEffect(() => {
@@ -67,7 +68,7 @@ export default function CreateCohortModal({ onClose, onCreate }) {
     const reader = new FileReader();
     reader.onload = (evt) => {
       try {
-        const rows = parseCsv(String(evt.target.result));
+        const rows = parseCsv(String(evt.target?.result || ''));
 
         const dataRows = rows.slice(1).filter((r) => r[0]?.trim() && r[1]?.trim());
         if (dataRows.length === 0) {
@@ -119,10 +120,10 @@ export default function CreateCohortModal({ onClose, onCreate }) {
       id: `cohort-${Date.now()}`,
       name: fullName,
       courseId,
-      courseTitle: selectedCourse?.title || '',
+      courseTitle: selectedCourseTitle,
       startDate,
       endDate,
-      maxStudents: parseInt(maxStudents, 10),
+      maxStudents,
       promoCode: promoResult ? promoCode.toUpperCase() : '',
       enrolledStudents,
       status: 'active',
@@ -133,7 +134,7 @@ export default function CreateCohortModal({ onClose, onCreate }) {
         to: s.email || `${s.username}@pending`,
         username: s.username,
         password: s.password,
-        course: selectedCourse?.title,
+        course: selectedCourseTitle,
         site: window.location.origin,
       })));
     }
@@ -173,7 +174,7 @@ export default function CreateCohortModal({ onClose, onCreate }) {
             <label>{t('admin.modal.course')}</label>
             <select value={courseId} onChange={(e) => setCourseId(e.target.value)}>
               {allCourses.map((c) => (
-                <option key={c.id} value={c.id}>{c.title}</option>
+                <option key={c.id} value={c.id}>{t(`courses.${c.i18nKey}.title`)}</option>
               ))}
             </select>
           </div>
@@ -196,7 +197,7 @@ export default function CreateCohortModal({ onClose, onCreate }) {
               <div className="cohort-promo-success">
                 {t('admin.modal.promoSuccess')}
                 <ul>
-                  {promoResult.courses.map((c) => <li key={c.id}>{c.title}</li>)}
+                  {promoResult.courses.map((c: any) => <li key={c.id}>{t(`courses.${c.i18nKey}.title`)}</li>)}
                 </ul>
               </div>
             )}
@@ -224,7 +225,7 @@ export default function CreateCohortModal({ onClose, onCreate }) {
               min="1"
               max="200"
               value={maxStudents}
-              onChange={(e) => setMaxStudents(e.target.value)}
+              onChange={(e) => setMaxStudents(Number(e.target.value))}
               required
             />
           </div>

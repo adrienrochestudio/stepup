@@ -41,7 +41,7 @@ const t = i18n.getFixedT('fr');
 export default function AdminBackoffice() {
   const [section, setSection] = useState('overview');
   const [submissions, setSubmissions] = useState(getSubmissions);
-  const [accounts, setAccounts] = useState(initialAccounts);
+  const [accounts, setAccounts] = useState<any[]>(initialAccounts);
   const [cohorts, setCohorts] = useState(initialCohorts);
   const [showCohortModal, setShowCohortModal] = useState(false);
   const [promoCodes, setPromoCodes] = useState([
@@ -173,7 +173,7 @@ export default function AdminBackoffice() {
         return (
           <>
             <p className="bo-sub-meta">{p.name} · {p.email} · {p.organization} · <strong>{p.country}</strong></p>
-            {Object.entries(p.fields || {}).filter(([, v]) => v?.trim()).map(([k, v]) => (
+            {Object.entries((p.fields || {}) as Record<string, string>).filter(([, v]) => v?.trim()).map(([k, v]) => (
               <p key={k} className="bo-sub-field"><strong>{k}</strong> : {v}</p>
             ))}
           </>

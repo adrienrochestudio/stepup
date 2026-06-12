@@ -37,7 +37,15 @@ const CATEGORY_FIELDS = {
 export default function AddInfoModal({ onClose, initialCountry = '' }) {
   const { t } = useTranslation();
   const [mode, setMode] = useState('add');
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<{
+    name: string;
+    email: string;
+    organization: string;
+    country: string;
+    fields: Record<string, string>;
+    amendmentSection: string;
+    amendmentText: string;
+  }>({
     name: '',
     email: '',
     organization: '',
@@ -46,7 +54,7 @@ export default function AddInfoModal({ onClose, initialCountry = '' }) {
     amendmentSection: '',
     amendmentText: '',
   });
-  const [selectedTopics, setSelectedTopics] = useState([]);
+  const [selectedTopics, setSelectedTopics] = useState<string[]>([]);
   const [error, setError] = useState('');
   const [submitted, setSubmitted] = useState(false);
 

@@ -9,7 +9,7 @@ import './ScormPlayer.css';
 const SCORM_DEMO_MODE = true;
 
 export default function ScormPlayer({ courseId, scormUrl, lang }) {
-  const iframeRef = useRef(null);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
   const { initializeApi, terminate } = useScorm(courseId, lang);
   const { t } = useTranslation();
 
@@ -19,7 +19,7 @@ export default function ScormPlayer({ courseId, scormUrl, lang }) {
 
     const handleLoad = () => {
       try {
-        initializeApi(iframe.contentWindow);
+        initializeApi(iframe.contentWindow as any);
       } catch {
         // Cross-origin content
       }

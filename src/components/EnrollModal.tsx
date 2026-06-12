@@ -59,7 +59,7 @@ function IndividualForm({ course, user, onEnrolled }) {
   const [code, setCode] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const [codeApplied, setCodeApplied] = useState(null);
+  const [codeApplied, setCodeApplied] = useState<{ type: string; discount: number } | null>(null);
 
   const handleApplyCode = () => {
     if (!code.trim()) return;
@@ -90,7 +90,7 @@ function IndividualForm({ course, user, onEnrolled }) {
         return;
       }
 
-      const { url } = await apiFetch('/api/checkout/create-session', {
+      const { url } = await apiFetch<{ url?: string }>('/api/checkout/create-session', {
         method: 'POST',
         body: JSON.stringify({
           courseId: course.id,
@@ -102,7 +102,7 @@ function IndividualForm({ course, user, onEnrolled }) {
         window.location.href = url;
       }
     } catch (err) {
-      setError(err.message || 'Checkout failed.');
+      setError((err as Error).message || 'Checkout failed.');
     } finally {
       setLoading(false);
     }

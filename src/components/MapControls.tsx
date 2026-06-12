@@ -10,7 +10,7 @@ const ALL_COUNTRIES = Object.entries(countryData)
 function getSubcategories(catKey) {
   const france = countryData.France;
   if (!france || !france[catKey]) return [];
-  return Object.entries(france[catKey].subcategories).map(([key, val]) => ({
+  return Object.entries(france[catKey].subcategories).map(([key, val]: [string, any]) => ({
     key,
     fullKey: `${catKey}.${key}`,
     label: val.label,

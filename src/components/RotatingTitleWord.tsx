@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './RotatingTitleWord.css';
 
 export default function RotatingTitleWord({ items, interval = 3500, onItemClick, variant = 'block' }) {
-  const [state, setState] = useState({ index: 0, prev: null });
+  const [state, setState] = useState<{ index: number; prev: number | null }>({ index: 0, prev: null });
 
   useEffect(() => {
     setState({ index: 0, prev: null });

@@ -51,7 +51,7 @@ export default function Login() {
       }
       navigate('/dashboard');
     } catch (err) {
-      setError(err.message || 'Authentication failed');
+      setError((err as Error).message || 'Authentication failed');
     } finally {
       setSubmitting(false);
     }

@@ -155,7 +155,7 @@ export default function CountryInfoPanel({ country, activeFilters, onClose, onCo
                     : category.label}
                 </h3>
                 <div className="country-subcategories">
-                  {visibleSubs.map(([subKey, sub]) => {
+                  {visibleSubs.map(([subKey, sub]: [string, any]) => {
                     const fullKey = `${catKey}.${subKey}`;
                     const isExpanded = expandedSub === fullKey;
 

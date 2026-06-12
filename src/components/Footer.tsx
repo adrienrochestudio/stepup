@@ -21,7 +21,7 @@ export default function Footer() {
               alt="StepUP"
               className="footer-logo"
             />
-            <p><PartnersIntro text={t('home.partnersIntro')} lang={currentLang} /></p>
+            <p><PartnersIntro lang={currentLang} /></p>
           </div>
 
           <div className="footer-col">

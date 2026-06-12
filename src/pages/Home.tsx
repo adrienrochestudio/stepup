@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../hooks/useAuth';
 import { allCourses } from '../data/mockCourses';
+import type { Course } from '../types';
 import EnrollModal from '../components/EnrollModal';
 import RotatingTitleWord from '../components/RotatingTitleWord';
 import PartnersIntro from '../components/PartnersIntro';
@@ -24,8 +25,8 @@ export default function Home() {
   const { t, i18n } = useTranslation();
   const { user } = useAuth();
   const navigate = useNavigate();
-  const [enrollCourse, setEnrollCourse] = useState(null);
-  const [partnerPopup, setPartnerPopup] = useState(null);
+  const [enrollCourse, setEnrollCourse] = useState<Course | null>(null);
+  const [partnerPopup, setPartnerPopup] = useState<string | null>(null);
 
   const currentLang = i18n.language?.substring(0, 2) || 'fr';
   const latestCourse = allCourses[allCourses.length - 1];
@@ -151,7 +152,7 @@ export default function Home() {
 
       <section className="home-partners-section">
         <p className="home-partners-intro">
-          <PartnersIntro text={t('home.partnersIntro')} lang={currentLang} />
+          <PartnersIntro lang={currentLang} />
         </p>
         <div className="home-partner-logos">
           <button

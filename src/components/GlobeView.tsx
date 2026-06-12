@@ -37,14 +37,14 @@ function hasData(feat) {
 
 export default function GlobeView({ onCountryClick, selectedCountry }) {
   const { t } = useTranslation();
-  const globeRef = useRef();
-  const containerRef = useRef();
+  const globeRef = useRef<any>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const [dimensions, setDimensions] = useState({ width: 800, height: 600 });
-  const [countries, setCountries] = useState([]);
-  const [hovered, setHovered] = useState(null);
+  const [countries, setCountries] = useState<any[]>([]);
+  const [hovered, setHovered] = useState<string | null>(null);
   const [loadError, setLoadError] = useState(false);
   const [showLangNote, setShowLangNote] = useState(false);
-  const langNoteRef = useRef(null);
+  const langNoteRef = useRef<HTMLDivElement>(null);
 
   const globeMaterial = useMemo(
     () => new THREE.MeshPhongMaterial({ color: COLOR_SEA, transparent: false }),
@@ -192,7 +192,7 @@ export default function GlobeView({ onCountryClick, selectedCountry }) {
         polygonCapColor={getPolygonCapColor}
         polygonSideColor={getPolygonSideColor}
         polygonStrokeColor={() => 'rgba(255,255,255,0.3)'}
-        polygonAltitude={(feat) =>
+        polygonAltitude={(feat: any) =>
           selectedCountry === resolveCountryName(feat.properties.name || '') ? 0.015 : 0.004
         }
         polygonLabel={getPolygonLabel}

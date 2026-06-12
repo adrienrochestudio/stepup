@@ -6,7 +6,7 @@ import App from './App';
 import './i18n';
 import './styles/global.css';
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter basename="/stepup">
       <AuthProvider>

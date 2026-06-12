@@ -40,7 +40,7 @@ export default function Enroll() {
         return;
       }
 
-      const { url } = await apiFetch('/api/checkout/create-session', {
+      const { url } = await apiFetch<{ url?: string }>('/api/checkout/create-session', {
         method: 'POST',
         body: JSON.stringify({ courseId }),
       });
@@ -49,7 +49,7 @@ export default function Enroll() {
         window.location.href = url;
       }
     } catch (err) {
-      setError(err.message || 'Checkout failed.');
+      setError((err as Error).message || 'Checkout failed.');
     } finally {
       setLoading(false);
     }
@@ -59,8 +59,8 @@ export default function Enroll() {
     <div className="enroll-page">
       <div className="enroll-card">
         <div className="enroll-card-header">
-          <h1>{course.title}</h1>
-          <p>{course.description}</p>
+          <h1>{t(`courses.${course.i18nKey}.title`)}</h1>
+          <p>{t(`courses.${course.i18nKey}.description`)}</p>
         </div>
 
         <div className="enroll-card-body">

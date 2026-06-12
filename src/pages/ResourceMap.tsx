@@ -18,8 +18,8 @@ function getAllSubKeys(catKey) {
 
 export default function ResourceMap() {
   const { t } = useTranslation();
-  const [selectedCountry, setSelectedCountry] = useState(null);
-  const [activeFilters, setActiveFilters] = useState([]);
+  const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
+  const [activeFilters, setActiveFilters] = useState<string[]>([]);
   const [showAddInfo, setShowAddInfo] = useState(false);
   const [addInfoCountry, setAddInfoCountry] = useState('');
   // 'visible' until the first click on the globe, then 'fading', then gone.
